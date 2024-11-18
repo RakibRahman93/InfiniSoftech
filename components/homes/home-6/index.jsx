@@ -26,16 +26,13 @@ export default function Home6({ onePage = false, dark = false }) {
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
               <h2 className="section-caption-fancy mb-20 mb-xs-10">About Us</h2>
               <h3 className="section-title mb-30 mb-xs-20 wow fadeInUp">
-                The best way to create stanning layouts for your website.
+                Bringing Your Vision to Reality with Technological Solutions.
               </h3>
               <p
                 className="section-descr mb-40 mb-sm-20 wow fadeInUp"
                 data-wow-delay="0.06s"
               >
-                Although web design has a fairly recent history. It has become a
-                large part of people's everyday lives. It is hard to imagine the
-                Internet without animated graphics, different styles of
-                typography, background, videos and music.
+                We specialize in custom website design & development, mobile application design & development, UI/UX design, and prototyping to bring your vision to life.
               </p>
               <div className="local-scroll wow fadeInUp" data-wow-delay="0.12s">
                 {onePage ? (

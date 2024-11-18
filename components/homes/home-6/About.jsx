@@ -8,7 +8,7 @@ export default function About() {
           <div className="composition-1">
             <div className="composition-1-image-1">
               <Image
-                src="/assets/images/demo-fancy/section-image-1.jpg"
+                src="/assets/images/sample design.png"
                 width={480}
                 height={358}
                 alt="Image Description"
@@ -16,7 +16,7 @@ export default function About() {
             </div>
             <div className="composition-1-image-2">
               <Image
-                src="/assets/images/demo-fancy/section-image-2.jpg"
+                src="/assets/images/sample design 2.png"
                 width={440}
                 height={330}
                 alt="Image Description"
@@ -56,7 +56,7 @@ export default function About() {
           <div className="composition-2">
             <div className="composition-2-image-1 mt-xs-0">
               <Image
-                src="/assets/images/demo-fancy/section-image-3.jpg"
+                src="/assets/images/sample design 4.png"
                 width={372}
                 height={500}
                 alt="Image Description"
@@ -64,7 +64,7 @@ export default function About() {
             </div>
             <div className="composition-2-image-2">
               <Image
-                src="/assets/images/demo-fancy/section-image-4.jpg"
+                src="/assets/images/sample design 3.png"
                 alt="Image Description"
                 width={440}
                 height={330}
@@ -91,7 +91,7 @@ export default function About() {
           <div className="composition-3">
             <div className="composition-3-image-1">
               <Image
-                src="/assets/images/demo-fancy/section-image-6.jpg"
+                src="/assets/images/sample design 6.png"
                 width={500}
                 height={372}
                 alt="Image Description"
@@ -99,7 +99,7 @@ export default function About() {
             </div>
             <div className="composition-3-image-2">
               <Image
-                src="/assets/images/demo-fancy/section-image-5.jpg"
+                src="/assets/images/sample design 5.png"
                 width={440}
                 height={330}
                 alt="Image Description"

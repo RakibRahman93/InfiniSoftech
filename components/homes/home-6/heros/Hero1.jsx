@@ -22,15 +22,15 @@ export default function Hero1() {
                 </h2>
                 <h1 className="hs-title-10 mb-30">
                   <span className="wow charsAnimIn" data-splitting="chars">
-                    Make your{" "}
+                    Transforming Ideas Into {" "}
                     <span className="mark-decoration-3-wrap color-secondary-1-white">
-                      beautiful
+                      Impactful
                       <b
                         className="mark-decoration-3 wow scalexIn"
                         data-wow-delay="1.1s"
                       />
                     </span>{" "}
-                    web presence easily
+                    Digital Solutions
                   </span>
                 </h1>
                 <p
@@ -39,7 +39,7 @@ export default function Hero1() {
                   data-wow-duration="1.2s"
                   data-wow-offset={0}
                 >
-                  Your trusted partner in creating cutting-edge websites, apps,
+                  Your trusted partner in creating professional websites, mobile apps,
                   and prototypes for a tech-driven world.
                 </p>
                 <div
@@ -84,7 +84,7 @@ export default function Hero1() {
               <div className="w-100 wow fadeInLeft" data-wow-delay="0.7s">
                 <div className="position-relative mt-40 mb-20">
                   <Image
-                    src="/assets/images/demo-fancy/hs-image.png"
+                    src="/assets/images/hero image.svg"
                     width={1200}
                     height={678}
                     alt="Image Description"
@@ -97,12 +97,12 @@ export default function Hero1() {
                     data-rellax-speed="-0.7"
                     data-rellax-percentage="0.5"
                   >
-                    <Image
-                      src="/assets/images/demo-fancy/decoration-1.svg"
+                    {/* <Image
+                      src="/assets/images/shapes.svg"
                       width={159}
                       height={74}
                       alt=""
-                    />
+                    /> */}
                   </div>
                   {/* End Decorative Waves */}
                 </div>
