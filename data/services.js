@@ -106,23 +106,23 @@ export const serviceItems = [
 export const services3 = [
   {
     src: "/assets/images/demo-fancy/services/service-1.png",
-    title: "Branding",
-    text: "A type of marketing agency, group or a firm which specializes in creating brands, people and their careers marketed as brands.",
+    title: "Website Design & Development",
+    text: "Stunning, responsive websites crafted to captivate your audience and drive results. From sleek designs to seamless functionality, we bring your digital vision to life.",
   },
   {
     src: "/assets/images/demo-fancy/services/service-2.png",
-    title: "Web Design",
-    text: "A static website stores a unique file for every page of a static website. Each time that page is requested, the same content is returned.",
+    title: "Mobile Application Design & Development",
+    text: "From concept to launch, we design and develop cutting-edge mobile apps that blend intuitive user experiences with robust functionality.",
   },
   {
     src: "/assets/images/demo-fancy/services/service-3.png",
-    title: "Development",
-    text: "There are three kinds of web developer specialization: front-end developer, back-end developer, and full-stack developer.",
+    title: "UIUX",
+    text: "Creating intuitive, visually stunning designs that put users first. Our UI/UX services ensure seamless navigation, engaging interfaces, and a delightful experience that keeps your audience coming back for more.",
   },
   {
     src: "/assets/images/demo-fancy/services/service-4.png",
-    title: "Marketing",
-    text: "Marketing refers to activities a company undertakes to promote the buying or selling of a product, service, or good.",
+    title: "Prototyping",
+    text: "Transform your ideas into interactive prototypes that bring your vision to life. Test, iterate, and refine your concept before development, ensuring a smoother, more efficient path to your final product.",
   },
 ];
 

@@ -112,7 +112,7 @@ export default function Home6({ onePage = false, dark = false }) {
                 Our Services
               </h2>
               <h3 className="section-title mb-0 mb-sm-20">
-                We provide the full stack of&nbsp;the best digital solutions.
+              Building the Future of Your Business, Digitally.
               </h3>
             </div>
             <div className="col-md-4 col-lg-6 d-flex align-items-end">
