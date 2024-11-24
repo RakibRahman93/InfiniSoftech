@@ -5,16 +5,18 @@ import RelatedProjects5 from "@/components/portfolio/relatedProjects/RelatedProj
 import Link from "next/link";
 import { fancyMultipage } from "@/data/menu";
 import Image from "next/image";
-import { allPortfolios } from "@/data/portfolio";
+import { portfolios6 } from "@/data/portfolio";
 export const metadata = {
   title:
-    "Fancy Portfolio Single || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "Portfolio Single",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "",
 };
 export default function FancyPortfolioSinglePage({ params }) {
-  const portfolioItem =
-    allPortfolios.filter((elm) => elm.id == params.id)[0] || allPortfolios[0];
+  const portfolioItem = portfolios6.filter((elm) => elm.id == params.id)[0] || portfolios6[0];
+
+    // const object = params
+    console.warn('portfolioItem', portfolioItem)
   return (
     <>
       <div className="theme-fancy">
@@ -65,7 +67,7 @@ export default function FancyPortfolioSinglePage({ params }) {
                       className="section-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Branding, UI/UX Design, No-code Development
+                      Branding, UI/UX Design, Mobile & Web App Development
                     </p>
                   </div>
                 </div>
@@ -125,7 +127,7 @@ export default function FancyPortfolioSinglePage({ params }) {
                         {/* Photo Item */}
                         <div className="mb-30 wow fadeInUp">
                           <Image
-                            src="/assets/images/demo-fancy/portfolio/project-3-large.jpg"
+                            src={portfolioItem.imgExtra}
                             className="round"
                             loading="lazy"
                             width={1200}
@@ -137,7 +139,7 @@ export default function FancyPortfolioSinglePage({ params }) {
                         {/* Photo Item */}
                         <div className="mb-30 wow fadeInUp">
                           <Image
-                            src="/assets/images/demo-fancy/portfolio/project-5-large.jpg"
+                            src={portfolioItem.imgSrc}
                             className="round"
                             loading="lazy"
                             width={1200}

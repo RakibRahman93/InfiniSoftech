@@ -97,10 +97,10 @@ export const features2 = [
 ];
 
 export const features3 = [
-  { text: "We're professional" },
-  { text: "We're creative" },
-  { text: "We're honest" },
-  { text: "We're friendly" },
+  { text: "We're Professional" },
+  { text: "Tailored Strategies" },
+  { text: "Expert Developers" },
+  { text: "Latest Technology" },
 ];
 
 export const features4 = [

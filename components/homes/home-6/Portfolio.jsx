@@ -65,6 +65,8 @@ export default function Portfolio() {
           <Gallery>
             {/* Work Item (Lightbox) */}
             {filtered.map((item, index) => (
+              console.warn('item', item),
+              
               <li
                 key={index}
                 className={`work-item mix ${item.categories.join(" ")}`}
@@ -102,6 +104,7 @@ export default function Portfolio() {
                     <Link
                       href={`/fancy-portfolio-single/${item.id}`}
                       className={"work-ext-link"}
+                      // query={item}
                     >
                       <div className="work-img">
                         <Image
