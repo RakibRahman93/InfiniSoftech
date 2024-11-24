@@ -334,7 +334,7 @@ export const portfolios6 = [
   {
     id: 37,
     categories: ["branding", "design"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/food-app.png",
+    imgSrc: "/assets/images/demo-fancy/portfolio/food-app-screen.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/food-app-preview.png",
     title: "FreshGo Mobile App",
     description: "Food Delivery App",
