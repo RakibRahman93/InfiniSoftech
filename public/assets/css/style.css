@@ -231,7 +231,8 @@ Primary use: Multipurpose Template
     var(--color-primary-2) 67%,
     var(--color-primary-1) 100%
   );
-  --gradient-gray-light-1: linear-gradient(0deg, #f5f5f5 0%, #fff 100%);
+  --gradient-gray-light-1: linear-gradient(10deg, #d62ec0 0%, #ffd8fa 100%);
+  --gradient-brand-light-1: linear-gradient(0deg, #ffd8fa 0%, #ffd8fa 100%);
   --gradient-gray-light-2: linear-gradient(0deg, #fff 0%, #f5f5f5 100%);
   --gradient-dark-alpha-1: linear-gradient(
     90deg,
@@ -1704,7 +1705,7 @@ a.btn-mod:focus {
 
 .btn-mod.btn-color {
   color: #fff;
-  background: var(--color-dark-1);
+  background: var(--color-primarydark-4);
 }
 .btn-mod.btn-color-light {
   color: var(--color-primarydark-4);
@@ -4966,12 +4967,12 @@ a.logo:hover {
   padding: 7px 12px;
   font-size: 14px;
   font-weight: 500;
-  color: var(--color-gray-light-1);
+  color: var(--color-primarydark-4);
   text-transform: uppercase;
   letter-spacing: 0.037em;
   background-image: linear-gradient(
     15deg,
-    var(--color-dark-4) 100%,
+    var(--color-primary-light-1-a) 100%,
     transparent 100%
   );
   border-radius: 100px;

@@ -21,14 +21,14 @@ export default function Home6MainDemoMultiPage() {
           </nav>
           <main id="main">
             <section
-              className="home-section bg-gradient-gray-light-1 bg-scroll scrollSpysection"
+              className="home-section bg-scroll scrollSpysection"
               id="home"
             >
               <div className="bg-shape-1 wow fadeIn">
                 <Image
                   width="1443"
                   height="844"
-                  src="/assets/images/demo-fancy/bg-shape-1.svg"
+                  src="/assets/images/demo-fancy/image.svg"
                   alt=""
                 />
               </div>

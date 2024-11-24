@@ -17,7 +17,7 @@ export default function Newsletter() {
                 className="w-100"
               />
             </div>
-            <div className="small text-gray text-center">
+            {/* <div className="small text-gray text-center">
               Illustration by{" "}
               <a
                 href="https://icons8.com/illustrations/author/TQQ1qAnr9rn5"
@@ -35,7 +35,7 @@ export default function Newsletter() {
                 Ouch
               </a>
               !
-            </div>
+            </div> */}
           </div>
         </div>
         {/* End Images */}
@@ -77,11 +77,11 @@ export default function Newsletter() {
                   <span>Subscribe</span>
                 </button>
               </div>
-              <div className="form-tip">
+              {/* <div className="form-tip">
                 <i className="icon-info size-16" /> By sending the form you
                 agree to the <a href="#">Terms &amp; Conditions</a> and{" "}
                 <a href="#">Privacy Policy</a>.
-              </div>
+              </div> */}
               <div
                 id="subscribe-result"
                 role="region"

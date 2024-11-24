@@ -19,23 +19,22 @@ export default function Footer6() {
         <div className="col-lg-3 text-gray mb-md-50">
           <div className="mb-30">
             <Image
-              src="/assets/images/demo-fancy/logo-white.png"
+              src="/assets/images/InfiniSoft logo black.png"
               alt="Your Company Logo"
               width={154}
               height={35}
             />
           </div>
           <p>
-            Integer auctor aliquet martor, sed lorem malesuada eros blandit
-            eget. Proin lacinia mortoc id odio vestibulum.
+          Bringing your vision to reality with limitless possibilities. 
           </p>
           <div className="clearlinks">
             <strong>T.</strong>
-            <a href="tel:+18376528800">+1 837 652 8800</a>
+            <a href="tel:+8801858333238">+8801858333238</a>
           </div>
           <div className="clearlinks">
-            <strong>E.</strong>
-            <a href="mailto:ibthemes21@gmail.com">ibthemes21@gmail.com</a>
+            <strong>E. </strong>
+            <a href="mailto:info@infinisoftech.com">info@infinisoftech.com</a>
           </div>
         </div>
         <div className="col-lg-7 offset-lg-2">
@@ -78,10 +77,10 @@ export default function Footer6() {
       {/* Footer Text */}
       <div className="row text-gray">
         <div className="col-md-4 col-lg-3">
-          <b>© IB-Themes {new Date().getFullYear()}.</b>
+          <b>©InfiniSoft Technology. {new Date().getFullYear()}.</b>
         </div>
         <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
-          <b>Based in London, United Kingdom.</b>
+          <b>Bringing your vision to reality with limitless possibilities.</b>
           {/* Back to Top Link */}
           <div
             className="local-scroll float-end mt-n20 mt-sm-10"

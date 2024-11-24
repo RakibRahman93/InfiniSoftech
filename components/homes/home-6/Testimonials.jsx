@@ -41,13 +41,11 @@ export default function Testimonials() {
               Testimonials
             </h2>
             <h3 className="section-title-small mb-30">
-              We help brands to stand out in the ever-changing digital
-              landscape.
+              We Help Brands To Stand Out In The Ever-Changing Digital
+              Landscape.
             </h3>
             <p className="section-descr mb-30">
-              A static website stores a unique file for every page of a static
-              website. Each time that page is requested, the same content is
-              returned.
+              Hear from our satisfied clients! Discover how InfiniSoft has transformed ideas into impactful digital solutions.
             </p>
             {/* Numbers */}
             <div className="row">

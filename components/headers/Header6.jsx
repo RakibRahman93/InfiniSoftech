@@ -21,11 +21,11 @@ export default function Header6({ links }) {
             className="light-mode-logo"
           />
           <Image
-            src="/assets/images/demo-fancy/logo-white.png"
+            src="/assets/images/logo.svg"
             alt="Your Company Logo"
             width={154}
             height={35}
-            className="dark-mode-logo"
+            className="light-mode-logo"
           />
         </a>
       </div>

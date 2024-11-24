@@ -134,23 +134,23 @@ export const testimonialItems = [
 
 export const testimonials5 = [
   {
-    text: "Beautifull template, nice code and easy to customize. Optimization and structure are verry good for SEO basics.",
-    author: "Thomas Johnson",
-    position: "UI/ UX Designer",
+    text: "Beautifully redesigned our website to give a modern & asthetic look. Now the website looks & performs better.",
+    author: "831 Angels",
+    position: "CEO",
     imgSrc: "/assets/images/demo-fancy/user-1.jpg",
     altText: "Image description is here",
     extraClass: "mt-50 mt-sm-0",
   },
   {
-    text: "The support is one of the absolute best I've ever had the pleasure of interacting with. Quick, courteous, and extremely helpful!",
-    author: "Emma Kande",
-    position: "3D Artist",
+    text: "InfiniSoft exceeded our expectations in building our company website! Outstanding work, delivering a website that perfectly reflects our brand.",
+    author: "Team Mahir",
+    position: "Founder & CEO",
     imgSrc: "/assets/images/demo-fancy/user-2.jpg",
     altText: "Image description is here",
     extraClass: "",
   },
   {
-    text: "This template is so beautiful and has such wonderful new options. It is updated often which gives me even more quality.",
+    text: "I appreciate their attention to details & timely execution.",
     author: "Peter Rebel",
     position: "Business Owner",
     imgSrc: "/assets/images/demo-fancy/user-3.jpg",

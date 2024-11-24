@@ -18,7 +18,7 @@ export default function Hero1() {
                   className="section-caption-fancy mb-30 mb-xs-20 wow fadeInUp"
                   data-wow-duration="1.2s"
                 >
-                  InfiniSoft Technology
+                  Bringing Your Ideas To Life
                 </h2>
                 <h1 className="hs-title-10 mb-30">
                   <span className="wow charsAnimIn" data-splitting="chars">

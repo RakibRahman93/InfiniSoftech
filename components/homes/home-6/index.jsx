@@ -112,7 +112,7 @@ export default function Home6({ onePage = false, dark = false }) {
                 Our Services
               </h2>
               <h3 className="section-title mb-0 mb-sm-20">
-              Building the Future of Your Business, Digitally.
+              Building The Future Of Your Business, Digitally.
               </h3>
             </div>
             <div className="col-md-4 col-lg-6 d-flex align-items-end">
@@ -214,14 +214,14 @@ export default function Home6({ onePage = false, dark = false }) {
         {dark ? <TestimonialsDark /> : <Testimonials />}
       </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-      <section
+      {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
         id="blog"
       >
         <Blog />
-      </section>
+      </section> */}
 
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
 
@@ -234,14 +234,14 @@ export default function Home6({ onePage = false, dark = false }) {
       >
         <Newsletter />
       </section>
-      <section
+      {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
         id="pricing"
       >
         <Pricing />
-      </section>
+      </section> */}
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
         className={`page-section  scrollSpysection  ${

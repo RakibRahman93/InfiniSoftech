@@ -323,10 +323,10 @@ export const portfolios5 = [
 export const portfolios6 = [
   {
     id: 36,
-    categories: ["development"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/project-1.jpg",
-    title: "Medium Scene",
-    description: "Lightbox",
+    categories: ["design"],
+    imgSrc: "/assets/images/demo-fancy/portfolio/project-1.svg",
+    title: "Pizza Delivery App",
+    description: "UIUX Design",
     lightbox: true,
     lightboxLink: "/assets/images/demo-fancy/portfolio/project-1-large.jpg",
   },

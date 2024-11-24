@@ -29,7 +29,7 @@ export default function Service() {
         {/* End Services Item */}
       </div>
       {/* End Services Grid */}
-      <div className="small text-gray text-center mt-60 mt-sm-40">
+      {/* <div className="small text-gray text-center mt-60 mt-sm-40">
         Illustrations by{" "}
         <a
           href="https://www.instagram.com/b0g3nta"
@@ -47,7 +47,8 @@ export default function Service() {
           Ouch
         </a>
         !
-      </div>{" "}
+      </div> */}
+      {" "}
     </>
   );
 }

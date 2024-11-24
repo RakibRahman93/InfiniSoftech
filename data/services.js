@@ -115,12 +115,12 @@ export const services3 = [
     text: "From concept to launch, we design and develop cutting-edge mobile apps that blend intuitive user experiences with robust functionality.",
   },
   {
-    src: "/assets/images/demo-fancy/services/service-3.png",
+    src: "/assets/images/demo-fancy/services/uiux.png",
     title: "UIUX",
     text: "Creating intuitive, visually stunning designs that put users first. Our UI/UX services ensure seamless navigation, engaging interfaces, and a delightful experience that keeps your audience coming back for more.",
   },
   {
-    src: "/assets/images/demo-fancy/services/service-4.png",
+    src: "/assets/images/demo-fancy/services/prototyping.png",
     title: "Prototyping",
     text: "Transform your ideas into interactive prototypes that bring your vision to life. Test, iterate, and refine your concept before development, ensuring a smoother, more efficient path to your final product.",
   },

@@ -10,7 +10,7 @@ export default function Contact() {
         <div className="col-lg-4 mb-md-50 mb-sm-30 position-relative z-index-1">
           <h2 className="section-caption-fancy mb-20 mb-xs-10">Contact Us</h2>
           <h3 className="section-title mb-50 mb-sm-30">
-            We’re open to talk to good people.
+          Get In Touch With Us Today!
           </h3>
           {/* Contact Information */}
           <div className="row">
@@ -154,9 +154,7 @@ export default function Contact() {
                     {/* Inform Tip */}
                     <div className="form-tip w-100 pt-3 mt-sm-20">
                       <i className="icon-info size-16" />
-                      All the fields are required. By sending the form you agree
-                      to the <a href="#">Terms &amp; Conditions</a> and{" "}
-                      <a href="#">Privacy Policy</a>.
+                      All the fields are required. We will get back to you as soon as possible.
                     </div>
                     {/* End Inform Tip */}
                   </div>
