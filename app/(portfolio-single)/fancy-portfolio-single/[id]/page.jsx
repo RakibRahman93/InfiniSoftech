@@ -165,7 +165,7 @@ export default function FancyPortfolioSinglePage({ params }) {
               <hr className="mt-0 mb-0" />
               {/* End Divider */}
               {/* Work Navigation */}
-              <div className="work-navigation clearfix">
+              {/* <div className="work-navigation clearfix">
                 <Link href={`/main-portfolio-single-3/1`} className="work-prev">
                   <span>
                     <i className="mi-arrow-left size-24 align-middle color-primary-1" />
@@ -184,7 +184,7 @@ export default function FancyPortfolioSinglePage({ params }) {
                     <i className="mi-arrow-right size-24 align-middle color-primary-1" />
                   </span>
                 </Link>
-              </div>
+              </div> */}
               {/* End Work Navigation */}
             </>
           </main>

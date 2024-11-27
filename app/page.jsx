@@ -7,9 +7,9 @@ import Image from "next/image";
 
 export const metadata = {
   title:
-    "Home 6 Main Demo MultiPage || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "InfiniSoft Technology",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "Custom website, mobile app design & development. UIUX & prototyping services.",
 };
 export default function Home6MainDemoMultiPage() {
   return (

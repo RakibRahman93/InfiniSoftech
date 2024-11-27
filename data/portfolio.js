@@ -344,7 +344,7 @@ export const portfolios6 = [
   {
     id: 38,
     categories: ["branding"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/Shopping website.png",
+    imgSrc: "/assets/images/demo-fancy/portfolio/Shopping website.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/Shopping website layout.svg",
     title: "ShopSphere",
     description: "Ecommerce Website",
@@ -374,11 +374,11 @@ export const portfolios6 = [
   {
     id: 41,
     categories: ["design", "branding"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/project-6.jpg",
-    imgExtra: "/assets/images/demo-fancy/portfolio/food-app-preview.png",
-    title: "Design System",
-    description: "Lightbox",
-    lightbox: true,
+    imgSrc: "/assets/images/demo-fancy/portfolio/Prototype.svg",
+    imgExtra: "/assets/images/demo-fancy/portfolio/Prototype screens.svg",
+    title: "Prototype",
+    description: "Web & Mobile Applications Prototypes",
+    lightbox: false,
     lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
   },
 ];
