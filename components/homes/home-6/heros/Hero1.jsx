@@ -51,7 +51,7 @@ export default function Hero1() {
                     href="#about"
                     className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
                   >
-                    <span>Discover now</span>
+                    <span>Book A Free Call</span>
                   </a>{" "}
                   <a
                     onClick={() => setOpen(true)}
@@ -64,14 +64,14 @@ export default function Hero1() {
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
                         ></i>{" "}
-                        How we work?
+                        How we work
                       </span>
                       <span className="btn-animate-y-2" aria-hidden="true">
                         <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
                         ></i>{" "}
-                        How we work?
+                        How we work
                       </span>
                     </span>
                   </a>

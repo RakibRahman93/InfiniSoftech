@@ -2,6 +2,7 @@ import AnimatedText from "@/components/common/AnimatedText";
 import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
 import About from "@/components/homes/home-6/About";
+import Aboutt from "@/components/homes/home-1/About";
 import Features from "@/components/homes/home-6/Features";
 import Testimonials from "@/components/homes/home-6/Testimonials";
 import TestimonialsDark from "@/components/homes/home-6/TestimonialsDark";
@@ -12,9 +13,9 @@ const onePage = false;
 const dark = false;
 export const metadata = {
   title:
-    "Fancy About || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "About Us",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "",
 };
 export default function FancyAboutPage() {
   return (
@@ -44,7 +45,8 @@ export default function FancyAboutPage() {
                       <span className="wow charsAnimIn" data-splitting="chars">
                         <AnimatedText text="About" />
                         <span className="mark-decoration-3-wrap">
-                          <AnimatedText text="Studio" />
+                          <AnimatedText text="Company
+                          " />
                           <b
                             className="mark-decoration-3 wow scalexIn"
                             data-wow-delay="0.5s"
@@ -63,7 +65,7 @@ export default function FancyAboutPage() {
                 </div>
               </div>
             </section>
-            <section
+            {/* <section
               className={`page-section  scrollSpysection ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
@@ -71,34 +73,30 @@ export default function FancyAboutPage() {
             >
               <div className="container position-relative">
                 <div className="row mb-xs-40">
-                  <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
-                    <p
+                  <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center"> */}
+                    {/* <p
                       className="section-descr mb-40 mb-sm-20 wow fadeInUp"
                       data-wow-delay="0.06s"
                     >
-                      Although web design has a fairly recent history. It has
-                      become a large part of people's everyday lives. It is hard
-                      to imagine the Internet without animated graphics,
-                      different styles of typography, background, videos and
-                      music.
+                      At InfiniSoft Technology, we turn visions into reality with tailored software solutions, including web development, mobile apps, and exceptional UI/UX design.
                     </p>
                     <div
                       className="local-scroll wow fadeInUp"
                       data-wow-delay="0.12s"
-                    >
-                      <Link
+                    > */}
+                      {/* <Link
                         href={`/fancy-services${dark ? "-dark" : ""}`}
                         className="link-hover-anim"
                         data-link-animate="y"
-                      >
-                        <span className="link-strong link-strong-unhovered">
+                      > */}
+                        {/* <span className="link-strong link-strong-unhovered">
                           View our services{" "}
                           <i
                             className="mi-arrow-right size-24"
                             aria-hidden="true"
                           ></i>
-                        </span>
-                        <span
+                        </span> */}
+                        {/* <span
                           className="link-strong link-strong-hovered"
                           aria-hidden="true"
                         >
@@ -111,19 +109,104 @@ export default function FancyAboutPage() {
                       </Link>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* Images Composition */}
-                <About />
+                {/* <About /> */}
                 {/* End Images Composition */}
-              </div>
-            </section>
-            <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
+              {/* </div>
+            </section> */}
+            {/* <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} /> */}
             <section
               className={`page-section  ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
             >
-              <Features />
+              {/* <Features /> */}
+              <section
+        className={` scrollSpysection ${
+          dark ? "bg-dark-1 light-content" : ""
+        }`}
+        id="about"
+      >
+        <div className="container position-relative">
+          <div className="row mb-60 mb-xs-30">
+            <div className="col-md-6">
+              <h2 className="section-caption mb-xs-10">Our Story</h2>
+              <h3 className="section-title mb-0">
+                <AnimatedText text="Transform Ideas Into Powerful Digital Solutions" />
+              </h3>
+            </div>
+            <div className="col-md-5 offset-md-1 relative text-start text-md-end pt-40 pt-sm-20 local-scroll">
+              {/* Decorative Dots */}
+              <div
+                className="decoration-2 d-none d-md-block"
+                data-rellax-y=""
+                data-rellax-speed="0.7"
+                data-rellax-percentage="-0.2"
+              >
+                <Image
+                  width="103"
+                  height="223"
+                  src="/assets/images/decoration-2.svg"
+                  alt=""
+                />
+              </div>
+              {/* End Decorative Dots */}
+
+              {/* {onePage ? (
+                <a
+                  href="#team"
+                  className="link-hover-anim underline align-middle"
+                  data-link-animate="y"
+                >
+                  <span className="link-strong link-strong-unhovered">
+                    Learn more about us{" "}
+                    <i
+                      className="mi-arrow-right size-18"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <span
+                    className="link-strong link-strong-hovered"
+                    aria-hidden="true"
+                  >
+                    Learn more about us{" "}
+                    <i
+                      className="mi-arrow-right size-18"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </a>
+              ) : (
+                <Link
+                  href={`/main-pages-about-1${dark ? "-dark" : ""}`}
+                  className="link-hover-anim underline align-middle"
+                  data-link-animate="y"
+                >
+                  <span className="link-strong link-strong-unhovered">
+                    Learn more about us{" "}
+                    <i
+                      className="mi-arrow-right size-18"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <span
+                    className="link-strong link-strong-hovered"
+                    aria-hidden="true"
+                  >
+                    Learn more about us{" "}
+                    <i
+                      className="mi-arrow-right size-18"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </Link>
+              )} */}
+            </div>
+          </div>
+          <Aboutt />
+        </div>
+      </section>
             </section>
             <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
             <section

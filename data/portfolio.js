@@ -323,7 +323,7 @@ export const portfolios5 = [
 export const portfolios6 = [
   {
     id: 36,
-    categories: ["design"],
+    categories: ["design", "branding"],
     imgSrc: "/assets/images/demo-fancy/portfolio/project-1.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/food-app-preview.png",
     title: "Pizza Delivery App",
@@ -343,7 +343,7 @@ export const portfolios6 = [
   },
   {
     id: 38,
-    categories: ["branding"],
+    categories: ["branding", "desisgn", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/Shopping website.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/Shopping website layout.svg",
     title: "ShopSphere",
@@ -353,9 +353,9 @@ export const portfolios6 = [
   },
   {
     id: 39,
-    categories: ["design", "development"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/automobile website2.svg",
-    imgExtra: "/assets/images/demo-fancy/portfolio/automobile website.svg",
+    categories: ["design", "development","branding"],
+    imgSrc: "/assets/images/demo-fancy/portfolio/automobile website.svg",
+    imgExtra: "/assets/images/demo-fancy/portfolio/automobile website2.svg",
     title: "Autohub Canada",
     description: "Automobile",
     lightbox: false,
@@ -363,7 +363,7 @@ export const portfolios6 = [
   },
   {
     id: 40,
-    categories: ["design"],
+    categories: ["design","branding","development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/admin dashboard.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/admin dashboard 1.svg",
     title: "Web Application",
@@ -378,6 +378,16 @@ export const portfolios6 = [
     imgExtra: "/assets/images/demo-fancy/portfolio/Prototype screens.svg",
     title: "Prototype",
     description: "Web & Mobile Applications Prototypes",
+    lightbox: false,
+    lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
+  },
+  {
+    id: 42,
+    categories: ["design", "branding", "development"],
+    imgSrc: "/assets/images/demo-fancy/portfolio/Team mahir.svg",
+    imgExtra: "/assets/images/demo-fancy/portfolio/Team mahir screens.svg",
+    title: "Website Design & Development",
+    description: "Team Mahir Professional Website",
     lightbox: false,
     lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
   },

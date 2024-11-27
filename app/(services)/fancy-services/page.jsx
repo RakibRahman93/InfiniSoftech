@@ -81,7 +81,7 @@ export default function FancyServicesPage() {
               } `}
               id="pricing"
             >
-              <Pricing />
+              {/* <Pricing /> */}
             </section>
           </main>
           <footer className="page-section footer bg-dark-1 light-content pb-30">

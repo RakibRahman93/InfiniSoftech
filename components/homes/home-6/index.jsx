@@ -147,7 +147,7 @@ export default function Home6({ onePage = false, dark = false }) {
                 ) : (
                   <>
                     {" "}
-                    <Link
+                    {/* <Link
                       href={`/fancy-services${dark ? "-dark" : ""}`}
                       className="link-hover-anim"
                       data-link-animate="y"
@@ -169,7 +169,7 @@ export default function Home6({ onePage = false, dark = false }) {
                           aria-hidden="true"
                         ></i>
                       </span>
-                    </Link>
+                    </Link> */}
                   </>
                 )}
               </div>
@@ -185,6 +185,7 @@ export default function Home6({ onePage = false, dark = false }) {
       >
         <Features />
       </section>
+      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} /> 
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
@@ -223,17 +224,17 @@ export default function Home6({ onePage = false, dark = false }) {
         <Blog />
       </section> */}
 
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
+      {/* <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} /> */}
 
-      <section
+      {/* <section
         className={`page-section ${
           dark
             ? "bg-dark-1 bg-gradient-gray-dark-1 light-content"
             : "bg-gradient-gray-light-1 "
         } bg-scroll`}
-      >
-        <Newsletter />
-      </section>
+      > */}
+        {/* <Newsletter /> */}
+      {/* </section> */}
       {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""

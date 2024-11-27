@@ -1,7 +1,7 @@
 <svg width="1600" height="1150" viewBox="0 0 1600 1150" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_2205_56)">
 <rect width="1600" height="1150" fill="white"/>
-<rect width="1600" height="1316" fill="black"/>
+<rect width="1600" height="1316" fill="#484848"/>
 <rect x="134" y="605.819" width="646" height="544.407" fill="url(#pattern0_2205_56)"/>
 <path d="M134 130C134 118.954 142.954 110 154 110H760C771.046 110 780 118.954 780 130V605.819H134V130Z" fill="url(#pattern1_2205_56)"/>
 <rect x="860" y="498" width="688" height="217" fill="url(#pattern2_2205_56)"/>

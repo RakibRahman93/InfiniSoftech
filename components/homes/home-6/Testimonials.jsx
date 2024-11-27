@@ -49,7 +49,7 @@ export default function Testimonials() {
             </p>
             {/* Numbers */}
             <div className="row">
-              {numberItems2.map((item, index) => (
+              {/* {numberItems2.map((item, index) => (
                 <div
                   key={index}
                   className={`col-md-6 number-1-item ${
@@ -59,7 +59,7 @@ export default function Testimonials() {
                   <div className="number-1-title">{item.title}</div>
                   <div className="number-1-descr">{item.description}</div>
                 </div>
-              ))}
+              ))} */}
             </div>
             {/* End Numbers */}
           </div>

@@ -71,12 +71,12 @@ export default function Contact() {
             {/* Decorative Image */}
             <div className="decoration-11 d-none d-xl-block">
               <div className="wow fadeInUp">
-                <Image
+                {/* <Image
                   src="/assets/images/demo-fancy/contact-section-image.png"
                   width={225}
                   height={250}
                   alt=""
-                />
+                /> */}
               </div>
             </div>
             {/* End Decorative Image */}

@@ -9,9 +9,9 @@ export default function About() {
           {/* Image */}
           <div className="position-relative overflow-hidden">
             <Image
-              width={960}
+              width={660}
               height={539}
-              src="/assets/images/about-image.jpg"
+              src="/assets/images/demo-fancy/about.jpg"
               className="image-fullwidth relative"
               alt="Image Description"
             />
