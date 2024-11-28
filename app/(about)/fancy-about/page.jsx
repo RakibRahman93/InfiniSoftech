@@ -237,7 +237,7 @@ export default function FancyAboutPage() {
                   <Image
                     width={386}
                     height={400}
-                    src="/assets/images/promo-3.jpg"
+                    src="/assets/images/sample design 3.png"
                     alt="Image Description"
                     className="wow scaleOutIn"
                     data-wow-duration="1.2s"
@@ -248,7 +248,7 @@ export default function FancyAboutPage() {
                   <Image
                     width={810}
                     height={512}
-                    src="/assets/images/promo-4.jpg"
+                    src="/assets/images/sample design 9.jpg"
                     alt="Image Description"
                     className="wow scaleOutIn"
                     data-wow-duration="1.2s"
@@ -264,7 +264,7 @@ export default function FancyAboutPage() {
                   <Image
                     width={386}
                     height={500}
-                    src="/assets/images/promo-5.jpg"
+                    src="/assets/images/sample design 4.png"
                     alt="Image Description"
                     className="wow scaleOutIn"
                     data-wow-duration="1.2s"
@@ -287,16 +287,16 @@ export default function FancyAboutPage() {
                   {onePage ? (
                     <a
                       href="#contact"
-                      className="btn btn-mod btn-large btn-round btn-hover-anim"
+                      className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                     >
-                      <span>Start a Project</span>
+                      <span>Book A Free Call</span>
                     </a>
                   ) : (
                     <Link
                       href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
-                      className="btn btn-mod btn-large btn-round btn-hover-anim"
+                      className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                     >
-                      <span>Start a Project</span>
+                      <span>Book A Free Call</span>
                     </Link>
                   )}
                 </div>
@@ -306,15 +306,15 @@ export default function FancyAboutPage() {
           </div>
         </div>
       </section>
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-      <section
+      {/* <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} /> */}
+      {/* <section
         className={`page-section  ${
           dark ? "bg-dark-1 light-content z-index-1" : ""
         }`}
       >
-        <div className="container position-relative">
+        <div className="container position-relative"> */}
           {/* Decorative Waves */}
-          <div
+          {/* <div
             className="decoration-3 d-none d-sm-block"
             data-rellax-y=""
             data-rellax-speed="-0.7"
@@ -327,26 +327,25 @@ export default function FancyAboutPage() {
               src="/assets/images/decoration-3.svg"
               alt=""
             />
-          </div>
+          </div> */}
           {/* End Decorative Waves */}
-          <div className="row text-center wow fadeInUp">
+          {/* <div className="row text-center wow fadeInUp">
             <div className="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
               <p className="section-descr mb-50 mb-sm-30">
-                The power of design help us to solve complex problems and
-                cultivate business solutions.
+              Ready to bring your vision to life? Let’s build something amazing together. Contact us today to get started!
               </p>
               <div className="local-scroll">
                 {onePage ? (
                   <a
                     href="#contact"
-                    className="btn btn-mod btn-large btn-round btn-hover-anim"
+                    className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                   >
                     <span>Contact us</span>
                   </a>
                 ) : (
                   <Link
                     href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
-                    className="btn btn-mod btn-large btn-round btn-hover-anim"
+                    className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                   >
                     <span>Contact us</span>
                   </Link>
@@ -355,7 +354,7 @@ export default function FancyAboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
@@ -364,13 +363,13 @@ export default function FancyAboutPage() {
       </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       
-            <section
+            {/* <section
               className={`page-section  ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
             >
               {dark ? <TestimonialsDark /> : <Testimonials />}
-            </section>
+            </section> */}
           </main>
           <footer className="page-section footer bg-dark-1 light-content pb-30">
             <Footer6 />

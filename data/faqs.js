@@ -3,25 +3,25 @@ export const faqs = [
     id: 1,
     question: "01. Discussion",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.",
+      "The discussion phase is where we collaborate with you to understand your goals, challenges, and requirements. We listen closely to your vision and ensure that every detail is aligned with your expectations, setting a strong foundation for the project.",
   },
   {
     id: 2,
     question: "02. Design",
     answer:
-      "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet dignissim pellentesque felis.",
+      "In the design phase, we bring your vision to life through creative and user-centric designs. Our team focuses on creating visually appealing and intuitive interfaces that provide a seamless user experience while reflecting your brand’s identity.",
   },
   {
     id: 3,
     question: "03. Development",
     answer:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.",
+      "During the development phase, our experts build and integrate all the technical elements needed to bring the design to life. We use cutting-edge technology to ensure robust functionality, security, and scalability, ensuring your product performs at its best.",
   },
   {
     id: 4,
     question: "04. Production",
     answer:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.",
+      "The production phase is where everything comes together. After thorough testing and optimization, we deploy the final product to the desired platform, ensuring smooth operation and successful launch, ready to deliver value to your users.",
   },
 ];
 

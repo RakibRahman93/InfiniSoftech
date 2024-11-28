@@ -1,8 +1,8 @@
 export const teamMembers = [
   {
-    name: "Thomas Johnson",
-    role: "Developer, co-founder",
-    image: "/assets/images/team/team-1.jpg",
+    name: "Md Rakib Rahman",
+    role: "Founder, CTO",
+    image: "/assets/images/team/Rakib Rahman.png",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
       { platform: "Twitter", icon: "fa-twitter", url: "#" },
@@ -10,9 +10,9 @@ export const teamMembers = [
     ],
   },
   {
-    name: "Emma Johnson",
-    role: "UI/UX Designer, co-founder",
-    image: "/assets/images/team/team-2.jpg",
+    name: "Mohammed",
+    role: "Product Designer",
+    image: "/assets/images/team/Mohammed.jpeg",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
       { platform: "Twitter", icon: "fa-twitter", url: "#" },
@@ -20,9 +20,9 @@ export const teamMembers = [
     ],
   },
   {
-    name: "Marta Laning",
-    role: "Web developer",
-    image: "/assets/images/team/team-4.jpg",
+    name: "Shohrab Hossain",
+    role: "Software Engineer",
+    image: "/assets/images/team/Shohrab.jpeg",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
       { platform: "Twitter", icon: "fa-twitter", url: "#" },
@@ -30,8 +30,8 @@ export const teamMembers = [
     ],
   },
   {
-    name: "Marta Laning",
-    role: "Art director, designer",
+    name: "Riya",
+    role: "Digital Marketing & Content Strategist",
     image: "/assets/images/team/team-3.jpg",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
