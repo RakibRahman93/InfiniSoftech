@@ -9,6 +9,9 @@ import TestimonialsDark from "@/components/homes/home-6/TestimonialsDark";
 import { fancyMultipage } from "@/data/menu";
 import Image from "next/image";
 import Link from "next/link";
+import Team from "@/components/homes/home-1/Team";
+import Benefits from "@/components/homes/home-1/Benefits";
+import Faqs from "@/components/homes/home-1/Faq";
 const onePage = false;
 const dark = false;
 export const metadata = {
@@ -209,6 +212,156 @@ export default function FancyAboutPage() {
       </section>
             </section>
             <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
+            <section
+        className={`page-section  scrollSpysection  ${
+          dark ? "bg-dark-2 light-content" : "bg-gray-light-1 "
+        }`}
+        id="team"
+      >
+        <Team />
+      </section>
+      <section
+        className={`page-section  ${
+          dark ? "bg-dark-1 light-content z-index-1" : ""
+        }`}
+      >
+        <div className="container position-relative">
+          {/* Decorative Waves */}
+          <div
+            className="decoration-3 d-none d-sm-block"
+            data-rellax-y=""
+            data-rellax-speed="-0.7"
+            data-rellax-percentage="0.5"
+          >
+            <Image
+              width={148}
+              height={148}
+              className="svg-shape"
+              src="/assets/images/decoration-3.svg"
+              alt=""
+            />
+          </div>
+          {/* End Decorative Waves */}
+          <div className="row text-center wow fadeInUp">
+            <div className="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+              <p className="section-descr mb-50 mb-sm-30">
+                The power of design help us to solve complex problems and
+                cultivate business solutions.
+              </p>
+              <div className="local-scroll">
+                {onePage ? (
+                  <a
+                    href="#contact"
+                    className="btn btn-mod btn-large btn-round btn-hover-anim"
+                  >
+                    <span>Contact us</span>
+                  </a>
+                ) : (
+                  <Link
+                    href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
+                    className="btn btn-mod btn-large btn-round btn-hover-anim"
+                  >
+                    <span>Contact us</span>
+                  </Link>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
+      <section
+        className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
+      >
+        <Benefits />{" "}
+      </section>
+      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
+      <section
+        className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
+      >
+        <div className="container position-relative">
+          <div className="row">
+            {/* Images */}
+            <div className="col-lg-7 d-flex align-items-start mb-md-60 mb-xs-30">
+              <div className="call-action-2-images">
+                <div
+                  className="call-action-2-image-1"
+                  data-rellax-y=""
+                  data-rellax-speed="0.5"
+                  data-rellax-percentage="0.7"
+                >
+                  <Image
+                    width={386}
+                    height={400}
+                    src="/assets/images/promo-3.jpg"
+                    alt="Image Description"
+                    className="wow scaleOutIn"
+                    data-wow-duration="1.2s"
+                    data-wow-offset={255}
+                  />
+                </div>
+                <div className="call-action-2-image-2">
+                  <Image
+                    width={810}
+                    height={512}
+                    src="/assets/images/promo-4.jpg"
+                    alt="Image Description"
+                    className="wow scaleOutIn"
+                    data-wow-duration="1.2s"
+                    data-wow-offset={134}
+                  />
+                </div>
+                <div
+                  className="call-action-2-image-3"
+                  data-rellax-y=""
+                  data-rellax-speed="-0.5"
+                  data-rellax-percentage="0.5"
+                >
+                  <Image
+                    width={386}
+                    height={500}
+                    src="/assets/images/promo-5.jpg"
+                    alt="Image Description"
+                    className="wow scaleOutIn"
+                    data-wow-duration="1.2s"
+                    data-wow-offset={0}
+                  />
+                </div>
+              </div>
+            </div>
+            {/* End Images */}
+            {/* Text */}
+            <div className="col-lg-5 d-flex align-items-center">
+              <div
+                className="wow fadeInUp"
+                data-wow-duration="1.2s"
+                data-wow-offset={255}
+              >
+                <h2 className="section-title mb-50 mb-sm-20">How we work?</h2>
+                <Faqs />
+                <div className="local-scroll">
+                  {onePage ? (
+                    <a
+                      href="#contact"
+                      className="btn btn-mod btn-large btn-round btn-hover-anim"
+                    >
+                      <span>Start a Project</span>
+                    </a>
+                  ) : (
+                    <Link
+                      href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
+                      className="btn btn-mod btn-large btn-round btn-hover-anim"
+                    >
+                      <span>Start a Project</span>
+                    </Link>
+                  )}
+                </div>
+              </div>
+            </div>
+            {/* End Text */}
+          </div>
+        </div>
+      </section>
             <section
               className={`page-section  ${
                 dark ? "bg-dark-1 light-content" : ""
