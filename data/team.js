@@ -4,9 +4,9 @@ export const teamMembers = [
     role: "Founder, CTO",
     image: "/assets/images/team/Rakib Rahman.png",
     socials: [
-      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Twitter", icon: "fa-twitter", url: "#" },
-      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+      // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Linkedin", icon: "fa-linkedin", url: "#" },
+      // { platform: "Website", icon: "fa-pinterest-p", url: "#" },
     ],
   },
   {
@@ -14,9 +14,9 @@ export const teamMembers = [
     role: "Product Designer",
     image: "/assets/images/team/Mohammed.jpeg",
     socials: [
-      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Twitter", icon: "fa-twitter", url: "#" },
-      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+      // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Linkedin", icon: "fa-linkedin", url: "#" },
+      // { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
     ],
   },
   {
@@ -24,9 +24,9 @@ export const teamMembers = [
     role: "Software Engineer",
     image: "/assets/images/team/Shohrab.jpeg",
     socials: [
-      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Twitter", icon: "fa-twitter", url: "#" },
-      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+      // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Linkedin", icon: "fa-linkedin", url: "#" },
+      // { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
     ],
   },
   {
@@ -34,9 +34,9 @@ export const teamMembers = [
     role: "Digital Marketing & Content Strategist",
     image: "/assets/images/team/team-3.jpg",
     socials: [
-      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Twitter", icon: "fa-twitter", url: "#" },
-      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+      // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Linkedin", icon: "fa-linkedin", url: "#" },
+      // { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
     ],
   },
 ];
