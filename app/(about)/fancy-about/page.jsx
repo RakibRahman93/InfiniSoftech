@@ -16,7 +16,7 @@ const onePage = false;
 const dark = false;
 export const metadata = {
   title:
-    "About Us",
+    "ABOUT US",
   description:
     "",
 };

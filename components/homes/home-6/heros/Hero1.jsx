@@ -48,7 +48,7 @@ export default function Hero1() {
                   data-wow-duration="1.2s"
                 >
                   <a
-                    href="https://tidycal.com/rakibrahman934/project-discussion"
+                    href="https://infinisoftech.setmore.com/"
                     target="_blank" rel="noopener noreferrer"
                     className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
                   >
