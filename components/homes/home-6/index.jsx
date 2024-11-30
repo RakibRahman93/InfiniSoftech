@@ -10,11 +10,12 @@ import Pricing from "./Pricing";
 import Contact from "./Contact";
 import Link from "next/link";
 import TestimonialsDark from "./TestimonialsDark";
+import Faqs from "../home-1/Faq";
 
 export default function Home6({ onePage = false, dark = false }) {
   return (
     <>
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
+      {/* <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} /> */}
       <section
         className={`page-section  scrollSpysection ${
           dark ? "bg-dark-1 light-content" : ""
@@ -243,6 +244,32 @@ export default function Home6({ onePage = false, dark = false }) {
       >
         <Pricing />
       </section> */}
+      <section className="page-section z-index-1">
+                <div className="container position-relative">
+                  <div className="row position-relative">
+                    <div className="col-md-6 col-lg-5 mb-md-50 mb-sm-30">
+                      <h3 className="section-title mb-30">
+                        Frequently Asked Questions
+                      </h3>
+                      <p className="text-gray mb-0">
+                      At InfiniSoft Technology, we bring your ideas to life with innovative solutions and cutting-edge technology. Specializing in website and mobile app development, UI/UX design, and prototyping, our mission is to help businesses thrive in the digital world.
+                      </p>
+                    </div>
+                    <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
+                      {/* Accordion */}
+                      <Faqs/>
+                      {/* End Accordion */}
+                      <a
+                    href="https://infinisoftech.setmore.com/"
+                    target="_blank" rel="noopener noreferrer"
+                    className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
+                  >
+                    <span>Book A Free Call</span>
+                  </a>{" "}
+                    </div>
+                  </div>
+                </div>
+              </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
         className={`page-section  scrollSpysection  ${

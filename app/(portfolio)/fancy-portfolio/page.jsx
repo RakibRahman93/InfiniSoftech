@@ -147,10 +147,11 @@ export default function FancyPortfolioPage() {
                       </p>
                       <div className="local-scroll">
                         <Link
-                          href={`/elegant-contact`}
+                          href="https://infinisoftech.setmore.com/"
+                          target="_blank" rel="noopener noreferrer"
                           className="btn btn-mod btn-large btn-color btn-round btn-hover-anim"
                         >
-                          <span>Contact us</span>
+                          <span>Book a free call</span>
                         </Link>
                       </div>
                     </div>

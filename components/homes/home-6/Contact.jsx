@@ -84,7 +84,11 @@ export default function Contact() {
               <h4 className="h3 mb-30">Get in Touch</h4>
               {/* Contact Form */}
               <form
-                onSubmit={(e) => e.preventDefault()}
+                onSubmit={(e) => {
+                  e.preventDefault();
+                
+                }
+              }
                 className="form contact-form"
                 id="contact_form"
               >

@@ -4,7 +4,7 @@ export const contactItems = [
     title: "Address",
     text: "Navana Tower, Gulshan - 1, Dhaka, Bangladesh.",
     link: {
-      url: "https://goo.gl/maps/7Vw1PBhxx5BaXStr8",
+      url: "https://maps.app.goo.gl/p73LtsorLojthfGaA",
       text: "See Map",
       rel: "nofollow noopener",
       target: "_blank",

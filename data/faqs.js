@@ -1,27 +1,27 @@
 export const faqs = [
   {
     id: 1,
-    question: "01. Discussion",
+    question: "What services do you offer?",
     answer:
-      "The discussion phase is where we collaborate with you to understand your goals, challenges, and requirements. We listen closely to your vision and ensure that every detail is aligned with your expectations, setting a strong foundation for the project.",
+      "We specialize in website design and development, mobile app creation, UI/UX design, and prototyping. Our comprehensive solutions are tailored to meet your specific business needs.",
   },
   {
     id: 2,
-    question: "02. Design",
+    question: "How long does it take to complete a project?",
     answer:
-      "In the design phase, we bring your vision to life through creative and user-centric designs. Our team focuses on creating visually appealing and intuitive interfaces that provide a seamless user experience while reflecting your brand’s identity.",
+      "The timeline depends on the project’s complexity and scope. For example, mobile app development typically takes around 3 months, including testing and deployment.",
   },
   {
     id: 3,
-    question: "03. Development",
+    question: "Do you offer post-project support?",
     answer:
-      "During the development phase, our experts build and integrate all the technical elements needed to bring the design to life. We use cutting-edge technology to ensure robust functionality, security, and scalability, ensuring your product performs at its best.",
+      "Yes, we provide post-project support to ensure your platform runs smoothly. This can include updates, bug fixes, and additional customization based on your requirements.",
   },
   {
     id: 4,
-    question: "04. Production",
+    question: "How do I get started with your services?",
     answer:
-      "The production phase is where everything comes together. After thorough testing and optimization, we deploy the final product to the desired platform, ensuring smooth operation and successful launch, ready to deliver value to your users.",
+      "Simply contact us through our form or email, and we’ll schedule a discussion to understand your requirements and propose a tailored solution for your business.",
   },
 ];
 

@@ -286,14 +286,16 @@ export default function FancyAboutPage() {
                 <div className="local-scroll">
                   {onePage ? (
                     <a
-                      href="#contact"
+                      href="https://infinisoftech.setmore.com/"
+                      target="_blank" rel="noopener noreferrer"
                       className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                     >
                       <span>Book A Free Call</span>
                     </a>
                   ) : (
                     <Link
-                      href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
+                      href="https://infinisoftech.setmore.com/"
+                      target="_blank" rel="noopener noreferrer"
                       className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                     >
                       <span>Book A Free Call</span>

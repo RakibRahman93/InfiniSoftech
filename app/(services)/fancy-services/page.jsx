@@ -75,14 +75,14 @@ export default function FancyServicesPage() {
               </div>
             </section>{" "}
             <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-            <section
+            {/* <section
               className={`page-section  scrollSpysection  ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
               id="pricing"
-            >
+            > */}
               {/* <Pricing /> */}
-            </section>
+            {/* </section> */}
           </main>
           <footer className="page-section footer bg-dark-1 light-content pb-30">
             <Footer6 />

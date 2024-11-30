@@ -2,6 +2,7 @@ import AnimatedText from "@/components/common/AnimatedText";
 import Faq from "@/components/common/Faq";
 import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
+import Faqs from "@/components/homes/home-1/Faq";
 import Contact from "@/components/homes/home-6/Contact";
 
 import { fancyMultipage } from "@/data/menu";
@@ -83,16 +84,19 @@ export default function FancyContactPage() {
                         Frequently Asked Questions
                       </h3>
                       <p className="text-gray mb-0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nam pulvinar vitae neque et porttitor. Integer non
-                        dapibus diam, ac eleifend lectus lorem ipsum. In maximus
-                        ligula semper metus pellentesque mattis. Maecenas
-                        volutpat, diam enim sagittis quam.
+                      At InfiniSoft Technology, we bring your ideas to life with innovative solutions and cutting-edge technology. Specializing in website and mobile app development, UI/UX design, and prototyping, our mission is to help businesses thrive in the digital world.
                       </p>
                     </div>
                     <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
                       {/* Accordion */}
-                      <Faq />
+                      <Faqs />
+                      <a
+                    href="https://infinisoftech.setmore.com/"
+                    target="_blank" rel="noopener noreferrer"
+                    className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
+                  >
+                    <span>Book A Free Call</span>
+                  </a>{" "}
                       {/* End Accordion */}
                     </div>
                   </div>

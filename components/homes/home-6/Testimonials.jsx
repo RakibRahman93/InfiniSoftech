@@ -121,7 +121,7 @@ export default function Testimonials() {
         {/* Testimonials Grid */}
       </div>
       {/* Logotypes */}
-      <div className="page-section pb-0 text-center">
+      {/* <div className="page-section pb-0 text-center">
         <h3 className="section-title-tiny">Trusted by Leading Companies</h3>
         <Swiper
           spaceBetween={0}
@@ -151,19 +151,19 @@ export default function Testimonials() {
             opacity: 1,
             display: "block",
           }}
-        >
+        > */}
           {/* Team item */}
-          {brands.map((elm, i) => (
+          {/* {brands.map((elm, i) => (
             <SwiperSlide className="owl-item" key={i}>
               <div className="logo-item">
                 <Image src={elm} width={215} height={75} alt="Company Name" />
               </div>
             </SwiperSlide>
-          ))}
+          ))} */}
 
           {/* End Team item */}
-        </Swiper>
-      </div>
+        {/* </Swiper>
+      </div> */}
       {/* End Logotypes */}
     </div>
   );

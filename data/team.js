@@ -5,7 +5,7 @@ export const teamMembers = [
     image: "/assets/images/team/Rakib Rahman.png",
     socials: [
       // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Linkedin", icon: "fa-linkedin", url: "#" },
+      { platform: "Linkedin", icon: "fa-linkedin", url: "https://www.linkedin.com/in/rakibrahman93/" },
       // { platform: "Website", icon: "fa-pinterest-p", url: "#" },
     ],
   },
@@ -15,30 +15,30 @@ export const teamMembers = [
     image: "/assets/images/team/Mohammed.jpeg",
     socials: [
       // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Linkedin", icon: "fa-linkedin", url: "#" },
+      { platform: "Linkedin", icon: "fa-linkedin", url: "https://www.linkedin.com/in/mohammadsultankhaja/" },
       // { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
     ],
   },
-  {
-    name: "Shohrab Hossain",
-    role: "Software Engineer",
-    image: "/assets/images/team/Shohrab.jpeg",
-    socials: [
-      // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Linkedin", icon: "fa-linkedin", url: "#" },
-      // { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
-    ],
-  },
-  {
-    name: "Riya",
-    role: "Digital Marketing & Content Strategist",
-    image: "/assets/images/team/team-3.jpg",
-    socials: [
-      // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Linkedin", icon: "fa-linkedin", url: "#" },
-      // { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
-    ],
-  },
+  // {
+  //   name: "Shohrab Hossain",
+  //   role: "Software Developer",
+  //   image: "/assets/images/team/Shohrab.jpeg",
+  //   socials: [
+  //     // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+  //     { platform: "Linkedin", icon: "fa-linkedin", url: "#" },
+  //     // { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+  //   ],
+  // },
+  // {
+  //   name: "Riya",
+  //   role: "Digital Marketing & Content Strategist",
+  //   image: "/assets/images/team/team-3.jpg",
+  //   socials: [
+  //     // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+  //     { platform: "Linkedin", icon: "fa-linkedin", url: "#" },
+  //     // { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+  //   ],
+  // },
 ];
 export const teamMembers2 = [
   {

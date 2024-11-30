@@ -36,6 +36,14 @@ export default function Footer6() {
             <strong>E. </strong>
             <a href="mailto:info@infinisoftech.com">info@infinisoftech.com</a>
           </div>
+          <hr />
+          <a
+             href="https://infinisoftech.setmore.com/"
+             target="_blank" rel="noopener noreferrer"
+             className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
+           >
+             <span>Book A Free Call</span>
+           </a>{" "}
         </div>
         <div className="col-lg-7 offset-lg-2">
           <div className="row mt-n30">
