@@ -47,7 +47,7 @@ export default function Header6({ links }) {
             <div className="vr mt-2" />
           </li>
           {/* Languages */}
-          <LanguageSelect />
+          {/* <LanguageSelect /> */}
           {/* End Languages */}
           {/* <li>
             {links[0].href.includes("/") ? (
