@@ -193,8 +193,9 @@ Primary use: Multipurpose Template
   --color-dark-mode-gray-2: rgba(255, 255, 255, 0.1275);
   --color-primary-1: #e748b1;
   --color-primary-1-a: #c4168a;
-  --color-primary-light-1: #fadbf0;
-  --color-primary-light-1-a: #faa5de;
+  --color-primary-light-1: #963e7a;
+  --color-primary-light-1-a: #FFF7FF;
+  --color-primary-light-1-b: #ffceff;
   --color-primary-2: #7752e7;
   --color-primary-light-2: #e7defe;
   --color-primary-3: #b947d9;
@@ -326,6 +327,9 @@ object,
 video {
   max-width: 100%;
   height: auto;
+}
+.theme-background {
+  background-color: var(--color-primary-light-1-a);
 }
 .image-fullwidth img {
   width: 100%;
@@ -11822,7 +11826,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
 .testimonials-4-item {
   position: relative;
   padding: 30px;
-  background: #fff;
+  background: #ffffff;
   border-radius: var(--border-radius-default);
   box-shadow: var(--box-shadow-block);
 }

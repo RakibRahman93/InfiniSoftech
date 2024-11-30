@@ -151,8 +151,8 @@ export const testimonials5 = [
   },
   {
     text: "I appreciate their attention to details & timely execution.",
-    author: "Peter Rebel",
-    position: "Business Owner",
+    author: "Hasibul Haque",
+    position: "Business Owner & CEO",
     imgSrc: "/assets/images/demo-fancy/user-3.jpg",
     altText: "Image description is here",
     extraClass: "",
