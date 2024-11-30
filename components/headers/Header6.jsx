@@ -49,7 +49,7 @@ export default function Header6({ links }) {
           {/* Languages */}
           <LanguageSelect />
           {/* End Languages */}
-          <li>
+          {/* <li>
             {links[0].href.includes("/") ? (
               <Link
                 href={links[links.length - 1].href}
@@ -82,7 +82,14 @@ export default function Header6({ links }) {
                 </span>
               </a>
             )}
-          </li>
+          </li> */}
+          <a
+            href="https://infinisoftech.setmore.com/"
+            target="_blank" rel="noopener noreferrer"
+            className="btn btn-mod btn-color btn-secondary btn-round btn-hover-anim me-1 mb-xs-10"
+          >
+            <span>Book A Free Call</span>
+          </a>{" "}
         </ul>
       </div>
       {/* End Main Menu */}
