@@ -339,7 +339,7 @@ export const portfolios6 = [
     title: "FreshGo Mobile App",
     description: "Food Delivery App",
     lightbox: false,
-    externalLink: "fancy-portfolio-single.html",
+    externalLink: "portfolio-single.html",
   },
   {
     id: 38,
@@ -349,7 +349,7 @@ export const portfolios6 = [
     title: "ShopSphere",
     description: "Ecommerce Website",
     lightbox: false,
-    externalLink: "fancy-portfolio-single.html",
+    externalLink: "portfolio-single.html",
   },
   {
     id: 39,
@@ -359,7 +359,7 @@ export const portfolios6 = [
     title: "Autohub Canada",
     description: "Automobile",
     lightbox: false,
-    externalLink: "fancy-portfolio-single.html",
+    externalLink: "portfolio-single.html",
   },
   {
     id: 40,
@@ -369,7 +369,7 @@ export const portfolios6 = [
     title: "Web Application",
     description: "Admin Dashboard",
     lightbox: false,
-    externalLink: "fancy-portfolio-single.html",
+    externalLink: "portfolio-single.html",
   },
   {
     id: 41,

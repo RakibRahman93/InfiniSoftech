@@ -991,7 +991,7 @@ export const allMultipagesHome = [
   },
   {
     id: 7,
-    href: "/fancy-multi-page",
+    href: "/home",
     src: "/assets/images/intro/design-concepts/fancy.jpg",
     alt: "Fancy Design Concept",
     title: "Fancy",

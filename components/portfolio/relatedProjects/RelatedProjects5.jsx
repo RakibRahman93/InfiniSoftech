@@ -52,7 +52,7 @@ export default function RelatedProjects5() {
                   </Item>
                 ) : (
                   <Link
-                    href={`/fancy-portfolio-single/${item.id}`}
+                    href={`/portfolio-single/${item.id}`}
                     className={"work-ext-link"}
                   >
                     <div className="work-img">

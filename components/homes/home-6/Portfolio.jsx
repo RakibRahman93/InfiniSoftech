@@ -102,7 +102,7 @@ export default function Portfolio() {
                     </Item>
                   ) : (
                     <Link
-                      href={`/fancy-portfolio-single/${item.id}`}
+                      href={`/portfolio-single/${item.id}`}
                       className={"work-ext-link"}
                       // query={item}
                     >

@@ -101,12 +101,12 @@ export const gradientOnePage = [
 ];
 
 export const fancyMultipage = [
-  { href: "/fancy-multi-page", text: "Home", class: "active" },
+  { href: "/home", text: "Home", class: "active" },
   { href: "/about", text: "About" },
-  { href: "/fancy-services", text: "Services" },
-  { href: "/fancy-portfolio", text: "Portfolio" },
+  { href: "/services", text: "Services" },
+  { href: "/portfolio", text: "Portfolio" },
   // { href: "/fancy-blog", text: "Blog" },
-  { href: "/fancy-contact", text: "Contact" },
+  { href: "/contact", text: "Contact" },
 ];
 
 export const fancyMultipageDark = [
@@ -1089,7 +1089,7 @@ export const allHomes = [
         links: [
           { href: "/fancy-one-page", text: "One Page" },
           { href: "/fancy-one-page-dark", text: "One Page Dark" },
-          { href: "/fancy-multi-page", text: "Multi Page" },
+          { href: "/home", text: "Multi Page" },
           { href: "/fancy-multi-page-dark", text: "Multi Page Dark" },
         ],
       },
