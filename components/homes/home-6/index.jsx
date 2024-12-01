@@ -65,7 +65,7 @@ export default function Home6({ onePage = false, dark = false }) {
                 ) : (
                   <>
                     <Link
-                      href={`/fancy-about${dark ? "-dark" : ""}`}
+                      href={`/about${dark ? "-dark" : ""}`}
                       className="link-hover-anim"
                       data-link-animate="y"
                     >
