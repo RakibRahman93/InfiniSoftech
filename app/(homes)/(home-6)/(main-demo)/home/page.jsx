@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const metadata = {
   title:
-    "Home 6 Main Demo MultiPage || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "HOME",
   description:
     "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
 };

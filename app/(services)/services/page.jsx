@@ -11,7 +11,7 @@ const onePage = false;
 const dark = false;
 export const metadata = {
   title:
-    "Fancy Services || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "SERVICES",
   description:
     "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
 };
