@@ -19,7 +19,7 @@ export default function Footer6() {
         <div className="col-lg-3 text-gray mb-md-50">
           <div className="mb-30">
             <Image
-              src="/assets/images/InfiniSoft logo black.png"
+              src="/assets/images/InfiniSoftLogoblack.png"
               alt="Your Company Logo"
               width={154}
               height={35}

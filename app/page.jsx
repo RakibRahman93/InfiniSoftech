@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const metadata = {
   title:
-    "InfiniSoft Technology",
+    "INFINISOFT TECHNOLOGY",
   description:
     "Custom website, mobile app design & development. UIUX & prototyping services.",
 };

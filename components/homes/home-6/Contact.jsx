@@ -80,10 +80,23 @@ export default function Contact() {
               </div>
             </div>
             {/* End Decorative Image */}
-            <div className="box-shadow round p-4 p-sm-5">
-              <h4 className="h3 mb-30">Get in Touch</h4>
+            {/* <div className="box-shadow round p-4 p-sm-5">
+              <h4 className="h3 mb-30">Get in Touch</h4> */}
+              {/* Google Map */}
+          <div className="map-boxed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.0719894066533!2d90.41366707619392!3d23.780450678649846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c79c1e7f822f%3A0x6c343f84ca86b6c9!2sNavana%20Tower%2C%2045%20Gulshan%20Ave%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1733060682121!5m2!1sen!2sbd"
+              width={600}
+              height={450}
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+          {/* End Google Map */}
               {/* Contact Form */}
-              <form
+              {/* <form
                 onSubmit={(e) => {
                   e.preventDefault();
                 
@@ -93,9 +106,9 @@ export default function Contact() {
                 id="contact_form"
               >
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-md-6"> */}
                     {/* Name */}
-                    <div className="form-group">
+                    {/* <div className="form-group">
                       <label htmlFor="name">Name</label>
                       <input
                         type="text"
@@ -107,12 +120,12 @@ export default function Contact() {
                         required
                         aria-required="true"
                       />
-                    </div>
+                    </div> */}
                     {/* End Name */}
-                  </div>
-                  <div className="col-md-6">
+                  {/* </div>
+                  <div className="col-md-6"> */}
                     {/* Email */}
-                    <div className="form-group">
+                    {/* <div className="form-group">
                       <label htmlFor="email">Email</label>
                       <input
                         type="email"
@@ -124,12 +137,12 @@ export default function Contact() {
                         required
                         aria-required="true"
                       />
-                    </div>
+                    </div> */}
                     {/* End Email */}
-                  </div>
-                </div>
+                  {/* </div>
+                </div> */}
                 {/* Message */}
-                <div className="form-group">
+                {/* <div className="form-group">
                   <label htmlFor="message">Message</label>
                   <textarea
                     name="message"
@@ -141,9 +154,9 @@ export default function Contact() {
                   />
                 </div>
                 <div className="row">
-                  <div className="col-md-6 col-xl-5">
+                  <div className="col-md-6 col-xl-5"> */}
                     {/* Send Button */}
-                    <div className="pt-3">
+                    {/* <div className="pt-3">
                       <button
                         className="submit_btn btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                         id="submit_btn"
@@ -151,17 +164,17 @@ export default function Contact() {
                       >
                         <span>Send Message</span>
                       </button>
-                    </div>
+                    </div> */}
                     {/* End Send Button */}
-                  </div>
-                  <div className="col-md-6 col-xl-7 d-flex align-items-center">
+                  {/* </div>
+                  <div className="col-md-6 col-xl-7 d-flex align-items-center"> */}
                     {/* Inform Tip */}
-                    <div className="form-tip w-100 pt-3 mt-sm-20">
+                    {/* <div className="form-tip w-100 pt-3 mt-sm-20">
                       <i className="icon-info size-16" />
                       All the fields are required. We will get back to you as soon as possible.
-                    </div>
+                    </div> */}
                     {/* End Inform Tip */}
-                  </div>
+                  {/* </div>
                 </div>
                 <div
                   id="result"
@@ -169,9 +182,9 @@ export default function Contact() {
                   aria-live="polite"
                   aria-atomic="true"
                 />
-              </form>
+              </form> */}
               {/* End Contact Form */}
-            </div>
+            {/* </div> */}
           </div>
         </div>
         {/* End Right Column */}

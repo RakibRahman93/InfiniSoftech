@@ -38,7 +38,7 @@ export default function About() {
       <div className="col-lg-6 col-xl-5 offset-xl-1">
         <h4 className="h5">Our Mission</h4>
         <p className="text-gray">
-        Our mission at InfiniSoft Technology is to empower businesses by delivering innovative, reliable, and tailored digital solutions. We strive to turn visions into reality, creating impactful websites, mobile apps, and user experiences that drive growth and success.
+        Our mission at InfiniSoft Technology is to empower businesses by delivering fast, reliable, and tailored digital solutions. We strive to turn visions into reality, creating impactful websites, mobile apps, and user experiences that drive growth and success.
         </p>
         <h4 className="h5">Our Vision</h4>
         <p className="text-gray">

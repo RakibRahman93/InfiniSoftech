@@ -176,6 +176,7 @@ Primary use: Multipurpose Template
   --menu-bar-height: 85px;
   --menu-bar-height-scrolled: 65px;
   --color-dark-1: #010101;
+  --color-dark-1-a: #323232;
   --color-dark-2: #171717;
   --color-dark-3: #272727;
   --color-dark-3a: #333;
@@ -4550,7 +4551,7 @@ a.logo:hover {
   background-color: var(--color-gray-light-2);
 }
 .bg-dark-1 {
-  background-color: var(--color-dark-1) !important;
+  background-color: var(--color-dark-1-a) !important;
 }
 .bg-dark-2 {
   background-color: var(--color-dark-2) !important;

@@ -329,7 +329,6 @@ export const portfolios6 = [
     title: "Pizza Delivery App",
     description: "UIUX Design",
     lightbox: true,
-    lightboxLink: "/assets/images/demo-fancy/portfolio/project-1-large.jpg",
   },
   {
     id: 37,
@@ -340,6 +339,10 @@ export const portfolios6 = [
     description: "Food Delivery App",
     lightbox: false,
     externalLink: "portfolio-single.html",
+    Date: "May 1th, 2023",
+    Client: "International Clients",
+    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Description: `Experience the ultimate convenience with our food delivery app, designed to bring your favorite meals straight to your doorstep. Whether you're craving comfort food, gourmet delights, or healthy bites, our app connects you with a diverse range of restaurants and eateries in your area.`,
   },
   {
     id: 38,
@@ -350,6 +353,10 @@ export const portfolios6 = [
     description: "Ecommerce Website",
     lightbox: false,
     externalLink: "portfolio-single.html",
+    Date: "June 12th, 2023",
+    Client: "International Clients",
+    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Description: `Welcome to Shopsphere, where convenience meets variety. This online store is designed to offer a seamless shopping experience with a wide range of products from different categories, including fashion, electronics, home goods, and more. Browse through our extensive collection and enjoy an intuitive, user-friendly interface that makes finding what you need quick and easy.`,
   },
   {
     id: 39,
@@ -360,6 +367,10 @@ export const portfolios6 = [
     description: "Automobile",
     lightbox: false,
     externalLink: "portfolio-single.html",
+    Date: "May 12th, 2022",
+    Client: "Canada",
+    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Description: `Welcome to our automobile website, your ultimate destination for everything related to cars and vehicles. Whether you're looking to buy a new or used car, learn about the latest automotive trends, or get expert advice on car maintenance, we have you covered. `,
   },
   {
     id: 40,
@@ -370,6 +381,10 @@ export const portfolios6 = [
     description: "Admin Dashboard",
     lightbox: false,
     externalLink: "portfolio-single.html",
+    Date: "Feb 12th, 2024",
+    Client: "International Client",
+    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Description: `Welcome to our intuitive and powerful dashboard web app, designed to provide you with a comprehensive overview of your data and operations. Whether you're managing a business, tracking personal progress, or monitoring key metrics, our dashboard gives you real-time insights and control at your fingertips. With a user-friendly interface and customizable features, it’s the perfect tool for making data-driven decisions and staying on top of important tasks. `,
   },
   {
     id: 41,
@@ -380,6 +395,10 @@ export const portfolios6 = [
     description: "Web & Mobile Applications Prototypes",
     lightbox: false,
     lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
+    Date: "March 10th, 2024",
+    Client: "International Client",
+    Services: "Branding, UI/UX Design, Prototyping",
+    Description: `Mobile app prototypes are interactive, visual models of a mobile application that showcase its functionality and user interface before development begins. Designed to bring your app idea to life, prototypes serve as a blueprint for the user experience (UX) and user interface (UI), allowing stakeholders and designers to collaborate and refine the concept. They provide a tangible preview of the app’s look and feel, helping to identify any potential issues early in the process, saving both time and resources. `,
   },
   {
     id: 42,
@@ -390,6 +409,10 @@ export const portfolios6 = [
     description: "Team Mahir Professional Website",
     lightbox: false,
     lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
+    Date: "Jan 14th, 2024",
+    Client: "Bangladesh",
+    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Description: `Team Mahir is a trusted supplier of defense products and services, catering to clients across Bangladesh and worldwide. Their primary objective is to offer unparalleled value and top-notch quality to clients while adhering to the strictest standards of professionalism and integrity. Their product inventory comprises an extensive range of specialized items, including body armor, tactical gear, surveillance equipment, and cutting-edge communication systems. Team Mahir serves both military and law enforcement sectors, taking pride in their ability to meet specific client requirements, whether through custom solutions or specialized equipment, ensuring complete customer`
   },
 ];
 

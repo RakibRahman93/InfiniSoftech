@@ -16,7 +16,7 @@ export default function RelatedProjects5() {
         {/* Work Item (External Page) */}
         <Gallery>
           {/* Work Item (Lightbox) */}
-          {portfolios6.slice(1, 4).map((item, index) => (
+          {portfolios6.slice(1, 7).map((item, index) => (
             <li
               key={index}
               className={`work-item mix ${item.categories.join(" ")}`}

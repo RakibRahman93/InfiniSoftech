@@ -62,7 +62,7 @@ export default function Team() {
                           width={600}
                           height={800}
                           src={member.image}
-                          className="wow scaleOutIn"
+                          className=" scaleOutIn"
                           alt="Image Description"
                         />
                         <div className="team-item-detail">

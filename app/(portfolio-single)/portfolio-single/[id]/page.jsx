@@ -16,7 +16,11 @@ export default function FancyPortfolioSinglePage({ params }) {
   const portfolioItem = portfolios6.filter((elm) => elm.id == params.id)[0] || portfolios6[0];
 
     // const object = params
-    console.warn('portfolioItem', portfolioItem)
+    // console.warn('portfolioItem', portfolioItem)
+    // console.warn('Date', Date);
+    
+    const {Date, Client, Services, Description, Features} = portfolioItem;
+    
   return (
     <>
       <div className="theme-fancy">
@@ -87,14 +91,14 @@ export default function FancyPortfolioSinglePage({ params }) {
                           <div className="col-sm-4">
                             <b>Date:</b>
                           </div>
-                          <div className="col-sm-8">May 1th, 2023</div>
+                          <div className="col-sm-8">{Date}</div>
                         </div>
                         <hr className="mb-20" />
                         <div className="row text-gray small">
                           <div className="col-sm-4">
                             <b>Client:</b>
                           </div>
-                          <div className="col-sm-8">Envato Users</div>
+                          <div className="col-sm-8">{Client}</div>
                         </div>
                         <hr className="mb-20" />
                         <div className="row text-gray small">
@@ -102,8 +106,7 @@ export default function FancyPortfolioSinglePage({ params }) {
                             <b>Services:</b>
                           </div>
                           <div className="col-sm-8">
-                            Branding, UI/UX Design, Front-end Development,
-                            Back-end Development
+                            {Services}
                           </div>
                         </div>
                         <hr className="mb-20" />
@@ -112,13 +115,18 @@ export default function FancyPortfolioSinglePage({ params }) {
                             <b>Description:</b>
                           </div>
                           <div>
-                            Lorem ipsum dolor sit amet conseur adipisci inerene.
-                            Maecenas volutpat, diam eni sagittis quam porta
-                            quam. Sed id dolor consectetur fermentum volutpat
-                            accumsan purus iaculis libero.
+                            {Description}
                           </div>
                         </div>
-                        <hr className="mb-20" />
+                        {/* <hr className="mb-20" />
+                        <div className="text-gray small">
+                          <div>
+                            <b>Features:</b>
+                          </div>
+                          <div>
+                            {Features}
+                          </div>
+                        </div> */}
                       </div>
                     </div>
                     {/* End Project Details */}
