@@ -212,14 +212,14 @@ export default function FancyAboutPage() {
       </section>
             </section>
             <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-            <section
+            {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-2 light-content" : "bg-gray-light-1 "
         }`}
         id="team"
-      >
-        <Team />
-      </section>
+      > */}
+        {/* <Team /> */}
+      {/* </section> */}
       <section
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
       >
