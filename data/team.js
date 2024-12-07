@@ -19,16 +19,16 @@ export const teamMembers = [
       // { platform: "Website", icon: "fa-pinterest-p", url: "#" },
     ],
   },
-  {
-    name: "Mohammed",
-    role: "UI/UX Designer",
-    image: "/assets/images/team/Mohammed.jpeg",
-    socials: [
-      // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Linkedin", icon: "fa-linkedin", url: "https://www.linkedin.com/in/mohammadsultankhaja/" },
-      // { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
-    ],
-  },
+  // {
+  //   name: "Mohammed",
+  //   role: "UI/UX Designer",
+  //   image: "/assets/images/team/Mohammed.jpeg",
+  //   socials: [
+  //     // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+  //     { platform: "Linkedin", icon: "fa-linkedin", url: "https://www.linkedin.com/in/mohammadsultankhaja/" },
+  //     // { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+  //   ],
+  // },
   // {
   //   name: "Shohrab Hossain",
   //   role: "Software Developer",
