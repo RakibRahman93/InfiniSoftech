@@ -14,7 +14,7 @@ export default function Header6({ links }) {
       <div className="nav-logo-wrap position-static local-scroll">
         <a href="#top" className="logo">
           <Image
-            src="/assets/images/InfiniSoft Logo black.png"
+            src="/assets/images/InfiniSoftLogoblack.png"
             alt="Your Company Logo"
             width={65}
             height={100}
