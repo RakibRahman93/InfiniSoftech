@@ -1,5 +1,15 @@
 export const teamMembers = [
   {
+    name: "Abu Bakar Siddique",
+    role: "Founder, CEO",
+    image: "/assets/images/team/abu-balar-siddique.jpeg",
+    socials: [
+      // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      // { platform: "Linkedin", icon: "fa-linkedin", url: "https://www.linkedin.com/in/rakibrahman93/" },
+      // { platform: "Website", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
+  {
     name: "Md Rakib Rahman",
     role: "Founder, CTO",
     image: "/assets/images/team/Rakib Rahman.png",
@@ -9,16 +19,16 @@ export const teamMembers = [
       // { platform: "Website", icon: "fa-pinterest-p", url: "#" },
     ],
   },
-  {
-    name: "Mohammed",
-    role: "Product Designer",
-    image: "/assets/images/team/Mohammed.jpeg",
-    socials: [
-      // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Linkedin", icon: "fa-linkedin", url: "https://www.linkedin.com/in/mohammadsultankhaja/" },
-      // { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
-    ],
-  },
+  // {
+  //   name: "Mohammed",
+  //   role: "UI/UX Designer",
+  //   image: "/assets/images/team/Mohammed.jpeg",
+  //   socials: [
+  //     // { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+  //     { platform: "Linkedin", icon: "fa-linkedin", url: "https://www.linkedin.com/in/mohammadsultankhaja/" },
+  //     // { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+  //   ],
+  // },
   // {
   //   name: "Shohrab Hossain",
   //   role: "Software Developer",
