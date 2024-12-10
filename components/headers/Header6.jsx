@@ -16,7 +16,7 @@ export default function Header6({ links }) {
           <Image
             src="/assets/images/InfiniSoftLogoblack.png"
             alt="Your Company Logo"
-            width={65}
+            width={80}
             height={100}
             className="light-mode-logo"
           />
