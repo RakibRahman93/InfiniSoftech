@@ -68,6 +68,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
           rel="stylesheet"
         />
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="dde1d23e-a1b5-4d8e-b1f3-e3b47b9a1dde"></script>
       </head>
       <body className="appear-animate body">{children}</body>
     </html>
