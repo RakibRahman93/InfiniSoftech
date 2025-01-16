@@ -7,7 +7,7 @@ import Testimonials from "./Testimonials";
 import Blog from "./Blog";
 import Newsletter from "./Newsletter";
 import Pricing from "./Pricing";
-import Contact from "./Contact";
+import Contact from "@/components/homes/home-4/Contact";
 import Link from "next/link";
 import TestimonialsDark from "./TestimonialsDark";
 import Faqs from "../home-1/Faq";
@@ -272,7 +272,7 @@ export default function Home6({ onePage = false, dark = false }) {
               </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
-        className={`page-section  scrollSpysection  ${
+        className={`container position-relative page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
         id="contact"
