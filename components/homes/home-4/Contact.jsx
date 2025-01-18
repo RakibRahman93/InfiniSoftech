@@ -1,8 +1,8 @@
 "use client";
 import { contactItems } from "@/data/contact";
 import React from "react";
-import Image from "next/image";
-import emailjs from "emailjs-com";
+// import Image from "next/image";
+// import emailjs from "emailjs-com";
 
 export default function Contact() {
 
