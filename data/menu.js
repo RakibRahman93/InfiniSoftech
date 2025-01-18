@@ -106,7 +106,7 @@ export const fancyMultipage = [
   { href: "/services", text: "Services" },
   { href: "/portfolio", text: "Portfolio" },
   // { href: "/fancy-blog", text: "Blog" },
-  { href: "/contact", text: "Contact" },
+  // { href: "/contact", text: "Contact" },
 ];
 
 export const fancyMultipageDark = [
