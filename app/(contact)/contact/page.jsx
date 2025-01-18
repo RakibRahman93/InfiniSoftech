@@ -4,7 +4,7 @@ import Footer6 from "@/components/footers/Footer6";
 import PopupWithForm from "@/components/headers/components/PopupWithForm";
 import Header6 from "@/components/headers/Header6";
 import Faqs from "@/components/homes/home-1/Faq";
-import Contact from "@/components/homes/home-6/Contact";
+import Contact from "@/components/homes/home-4/Contact";
 
 import { fancyMultipage } from "@/data/menu";
 import Image from "next/image";
@@ -66,7 +66,7 @@ export default function FancyContactPage() {
               </div>
             </section>
             <section
-              className={`page-section  scrollSpysection  ${
+              className={`container page-section  scrollSpysection  ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
               id="contact"
