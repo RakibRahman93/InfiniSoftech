@@ -284,7 +284,7 @@ export default function FancyAboutPage() {
                 <h2 className="section-title mb-50 mb-sm-20">How we work?</h2>
                 <Faqs />
                 <div className="local-scroll">
-                  {onePage ? (
+                  {/* {onePage ? (
                     <a
                       href="https://infinisoftech.setmore.com/"
                       target="_blank" rel="noopener noreferrer"
@@ -300,7 +300,7 @@ export default function FancyAboutPage() {
                     >
                       <span>Book A Free Call</span>
                     </Link>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>

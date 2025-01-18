@@ -1,23 +1,8 @@
 "use client";
 import { contactItems } from "@/data/contact";
 import React from "react";
-// import Image from "next/image";
-// import emailjs from "emailjs-com";
-
+import Image from "next/image";
 export default function Contact() {
-
-  const submitEmail = async (e) => {
-   
-    
-  }
-
-  const submitFunction = async (e) => {
-    
-  };
-  
-  
-  
-  
   return (
     <>
       <div className="row wow fadeInUp">
@@ -66,15 +51,11 @@ export default function Contact() {
         <div className="col-lg-7 d-flex align-items-strech">
           <div className="border-color-primary-1 round w-100 px-4 px-sm-5 py-5">
             <h3 className="section-title-small mt-n10 mb-40 mb-sm-30">
-              Let's Build Something Amazing Together! 
-              <br />
-              <br />
-              Get A Quote.
-              
+              We'd love to hear from you
             </h3>
             {/* Contact Form */}
             <form
-              onSubmit={(e) => submitEmail(e)}
+              onSubmit={(e) => e.preventDefault()}
               className="form contact-form"
               id="contact_form"
             >
@@ -114,25 +95,6 @@ export default function Contact() {
                   {/* End Email */}
                 </div>
               </div>
-              {/* Dropdown */}
-              <div className="form-group">
-                <label htmlFor="dropdown">Select an Option</label>
-                <select
-                  name="dropdown"
-                  id="dropdown"
-                  className="input-lg round form-control"
-                  defaultValue="" // Use defaultValue for an uncontrolled component
-                  required
-                >
-                  <option value="" disabled selected>Select an option</option>
-                  <option value="Website design">Website design</option>
-                  <option value="Mobile App design">Mobile App design</option>
-                  <option value="Website & Mobile App development">Website & Mobile App development</option>
-                  <option value="Prototyping">Prototyping</option>
-                  <option value="Consultation">Consultation</option>
-                </select>
-              </div>
-              {/* End Dropdown */}
               {/* Message */}
               <div className="form-group">
                 <label htmlFor="message">Message</label>
@@ -148,12 +110,12 @@ export default function Contact() {
               <div className="row">
                 <div className="col-md-6 col-xl-7 d-flex align-items-center">
                   {/* Inform Tip */}
-                  {/* <div className="form-tip w-100 pt-3">
+                  <div className="form-tip w-100 pt-3">
                     <i className="icon-info size-16" />
                     All the fields are required. By sending the form you agree
                     to the <a href="#">Terms &amp; Conditions</a> and{" "}
                     <a href="#">Privacy Policy</a>.
-                  </div> */}
+                  </div>
                   {/* End Inform Tip */}
                 </div>
                 <div className="col-md-6 col-xl-5 mt-sm-20">
