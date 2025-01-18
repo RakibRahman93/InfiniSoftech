@@ -2,8 +2,15 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import ModalVideo from "react-modal-video";
+import Popup from "@/components/headers/components/popup";
+import Form from "@/components/headers/components/Form";
 export default function Hero1() {
   const [isOpen, setOpen] = useState(false);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const togglePopup = () => {
+    setIsPopupVisible(!isPopupVisible);
+  };
   return (
     <>
       {/* End Background Shape */}
@@ -48,7 +55,8 @@ export default function Hero1() {
                   data-wow-duration="1.2s"
                 >
                   <a
-                    href="https://infinisoftech.setmore.com/"
+                  onClick={togglePopup}
+                    //href="https://infinisoftech.setmore.com/"
                     target="_blank" rel="noopener noreferrer"
                     className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
                   >
@@ -85,9 +93,9 @@ export default function Hero1() {
               <div className="w-100 wow fadeInLeft" data-wow-delay="0.7s">
                 <div className="position-relative mt-40 mb-20">
                   <Image
-                    src="/assets/images/hero image.svg"
-                    width={1200}
-                    height={678}
+                    src="/assets/images/hero-image.svg"
+                    width={800}
+                    height={500}
                     alt="Image Description"
                     className="w-100"
                   />
@@ -156,6 +164,10 @@ export default function Hero1() {
         videoId="zfodi7vD4oU"
         onClose={() => setOpen(false)}
       />
+       {/* Popup */}
+       <Popup isPopupVisible={isPopupVisible} onClose={togglePopup}>
+        <Form togglePopup={togglePopup} />
+      </Popup>
     </>
   );
 }

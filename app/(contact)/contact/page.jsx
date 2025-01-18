@@ -1,9 +1,10 @@
 import AnimatedText from "@/components/common/AnimatedText";
 import Faq from "@/components/common/Faq";
 import Footer6 from "@/components/footers/Footer6";
+import PopupWithForm from "@/components/headers/components/PopupWithForm";
 import Header6 from "@/components/headers/Header6";
 import Faqs from "@/components/homes/home-1/Faq";
-import Contact from "@/components/homes/home-6/Contact";
+import Contact from "@/components/homes/home-4/Contact";
 
 import { fancyMultipage } from "@/data/menu";
 import Image from "next/image";
@@ -65,7 +66,7 @@ export default function FancyContactPage() {
               </div>
             </section>
             <section
-              className={`page-section  scrollSpysection  ${
+              className={`container page-section  scrollSpysection  ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
               id="contact"
@@ -90,13 +91,14 @@ export default function FancyContactPage() {
                     <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
                       {/* Accordion */}
                       <Faqs />
-                      <a
+                      <PopupWithForm triggerLabel="Book A Free Call" />
+                      {/* <a
                     href="https://infinisoftech.setmore.com/"
                     target="_blank" rel="noopener noreferrer"
                     className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
                   >
                     <span>Book A Free Call</span>
-                  </a>{" "}
+                  </a>{" "} */}
                       {/* End Accordion */}
                     </div>
                   </div>
