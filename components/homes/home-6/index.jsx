@@ -8,7 +8,7 @@ import Testimonials from "./Testimonials";
 import Blog from "./Blog";
 import Newsletter from "./Newsletter";
 import Pricing from "./Pricing";
-import Contact from "@/components/homes/home-4/Contact";
+import Contact from "@/components/homes/home-6/Contact";
 import Link from "next/link";
 import TestimonialsDark from "./TestimonialsDark";
 import Faqs from "../home-1/Faq";
