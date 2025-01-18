@@ -24,6 +24,11 @@
   z-index: 50;
 }
 
+.popup {
+  display: flex;
+  gap: 20px;
+}
+
 .popup-show {
   opacity: 1;
   pointer-events: auto;
@@ -135,10 +140,22 @@ select option {
 }
 
 
-@media (max-width: 768px) {
-  .popup-area{
-    
+@media (max-width: 480px) {
+  
+  .popup{
     flex-direction: column;
-    
+    gap: 0;
+  }
+  .popup-area {
+    flex-direction: column;
+    margin: 20px 0; /* Adds top and bottom margin */
+  }
+
+  .popup-container {
+    margin: 20px; /* Adds spacing around the popup */
+    max-height: calc(100vh - 50px); /* Ensures the popup doesn't exceed the screen height */
+    overflow-y: auto; /* Enables scrolling for content if necessary */
+    max-width: 90%; /* Restricts width on smaller screens */
+    width: auto;
   }
 }
