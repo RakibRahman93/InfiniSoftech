@@ -15,6 +15,7 @@ export const metadata = {
     "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
 };
 export default function FancyPortfolioPage() {
+  
   return (
     <>
       <div className="theme-fancy">
