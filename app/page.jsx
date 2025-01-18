@@ -4,6 +4,7 @@ import Home6 from "@/components/homes/home-6";
 import Hero1 from "@/components/homes/home-6/heros/Hero1";
 import { fancyMultipage } from "@/data/menu";
 import Image from "next/image";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title:
@@ -14,6 +15,7 @@ export const metadata = {
 export default function Home6MainDemoMultiPage() {
   return (
     <>
+      <Toaster position="top-right" reverseOrder={false} />
       <div className="theme-fancy">
         <div className="page" id="top">
           <nav className="main-nav transparent stick-fixed wow-menubar wch-unset">

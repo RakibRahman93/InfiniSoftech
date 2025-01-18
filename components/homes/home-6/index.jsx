@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import About from "./About";
 import Service from "./Service";
 import Features from "./Features";
@@ -11,8 +12,15 @@ import Contact from "@/components/homes/home-4/Contact";
 import Link from "next/link";
 import TestimonialsDark from "./TestimonialsDark";
 import Faqs from "../home-1/Faq";
+import Popup from "@/components/headers/components/popup";
+import Form from "@/components/headers/components/Form";
 
 export default function Home6({ onePage = false, dark = false }) {
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
+  
+    const togglePopup = () => {
+      setIsPopupVisible(!isPopupVisible);
+    };
   return (
     <>
       {/* <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} /> */}
@@ -260,7 +268,8 @@ export default function Home6({ onePage = false, dark = false }) {
                       <Faqs/>
                       {/* End Accordion */}
                       <a
-                    href="https://infinisoftech.setmore.com/"
+                    onClick={togglePopup}
+                    //href="https://infinisoftech.setmore.com/"
                     target="_blank" rel="noopener noreferrer"
                     className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
                   >
@@ -272,12 +281,16 @@ export default function Home6({ onePage = false, dark = false }) {
               </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
-        className={`container position-relative page-section  scrollSpysection  ${
+        className={`container page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
         id="contact"
       >
         <Contact />
+         {/* Popup */}
+      <Popup isPopupVisible={isPopupVisible} onClose={togglePopup}>
+        <Form togglePopup={togglePopup} />
+      </Popup>
       </section>
     </>
   );
