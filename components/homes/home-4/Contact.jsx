@@ -51,95 +51,148 @@ export default function Contact() {
         <div className="col-lg-7 d-flex align-items-strech">
           <div className="border-color-primary-1 round w-100 px-4 px-sm-5 py-5">
             <h3 className="section-title-small mt-n10 mb-40 mb-sm-30">
-              We'd love to hear from you
+             Let's build something amazing together!
             </h3>
             {/* Contact Form */}
             <form
-              onSubmit={(e) => e.preventDefault()}
-              className="form contact-form"
-              id="contact_form"
-            >
-              <div className="row">
-                <div className="col-md-6">
-                  {/* Name */}
-                  <div className="form-group">
-                    <label htmlFor="name">Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      className="input-lg round form-control"
-                      placeholder="Enter your name"
-                      pattern=".{3,100}"
-                      required
-                      aria-required="true"
-                    />
-                  </div>
-                  {/* End Name */}
-                </div>
-                <div className="col-md-6">
-                  {/* Email */}
-                  <div className="form-group">
-                    <label htmlFor="email">Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      className="input-lg round form-control"
-                      placeholder="Enter your email"
-                      pattern=".{5,100}"
-                      required
-                      aria-required="true"
-                    />
-                  </div>
-                  {/* End Email */}
-                </div>
-              </div>
-              {/* Message */}
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  className="input-lg round form-control"
-                  style={{ height: 132 }}
-                  placeholder="Enter your message"
-                  defaultValue={""}
-                />
-              </div>
-              <div className="row">
-                <div className="col-md-6 col-xl-7 d-flex align-items-center">
-                  {/* Inform Tip */}
-                  <div className="form-tip w-100 pt-3">
-                    <i className="icon-info size-16" />
-                    All the fields are required. By sending the form you agree
-                    to the <a href="#">Terms &amp; Conditions</a> and{" "}
-                    <a href="#">Privacy Policy</a>.
-                  </div>
-                  {/* End Inform Tip */}
-                </div>
-                <div className="col-md-6 col-xl-5 mt-sm-20">
-                  {/* Send Button */}
-                  <div className="pt-3 text-md-end">
-                    <button
-                      type="submit"
-                      className="submit_btn btn btn-mod btn-color btn-large btn-round btn-hover-anim"
-                      id="submit_btn"
-                      aria-controls="result"
-                    >
-                      <span>Send Message</span>
-                    </button>
-                  </div>
-                  {/* End Send Button */}
-                </div>
-              </div>
-              <div
-                id="result"
-                role="region"
-                aria-live="polite"
-                aria-atomic="true"
-              />
-            </form>
+  onSubmit={(e) => e.preventDefault()}
+  className="form contact-form"
+  id="contact_form"
+>
+  <div className="row">
+    <div className="col-md-6">
+      {/* Name */}
+      <div className="form-group">
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          className="input-lg round form-control"
+          placeholder="Enter your name"
+          pattern=".{3,100}"
+          required
+          aria-required="true"
+        />
+      </div>
+      {/* End Name */}
+    </div>
+    <div className="col-md-6">
+      {/* Email */}
+      <div className="form-group">
+        <label htmlFor="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          className="input-lg round form-control"
+          placeholder="Enter your email"
+          pattern=".{5,100}"
+          required
+          aria-required="true"
+        />
+      </div>
+      {/* End Email */}
+    </div>
+  </div>
+  <div className="row">
+    <div className="col-md-6">
+      {/* Phone Number */}
+      <div className="form-group">
+        <label htmlFor="phone">Phone Number</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          className="input-lg round form-control"
+          placeholder="Enter your phone number"
+          pattern=".{10,15}"
+          required
+          aria-required="true"
+        />
+      </div>
+      {/* End Phone Number */}
+    </div>
+    <div className="col-md-6">
+      {/* Dropdown */}
+      <div className="form-group">
+        <label htmlFor="dropdown">Select an Option</label>
+        <select
+          name="dropdown"
+          id="dropdown"
+          className="input-lg round form-control"
+          required
+          aria-required="true"
+        >
+          <option value="" disabled selected>
+            Choose an option
+          </option>
+          <option value="option1">Website Design</option>
+          <option value="option2">Mobile App Design</option>
+          <option value="option3">Website Development</option>
+          <option value="option3">Mobile App Development</option>
+          <option value="option3">Prototyping</option>
+          <option value="option3">SEO</option>
+          <option value="option3">Consulting</option>
+        </select>
+      </div>
+      {/* End Dropdown */}
+    </div>
+  </div>
+  {/* Subject */}
+  <div className="form-group">
+    <label htmlFor="subject">Subject</label>
+    <input
+      type="text"
+      name="subject"
+      id="subject"
+      className="input-lg round form-control"
+      placeholder="Enter your subject"
+      required
+      aria-required="true"
+    />
+  </div>
+  {/* Message */}
+  <div className="form-group">
+    <label htmlFor="message">Message</label>
+    <textarea
+      name="message"
+      id="message"
+      className="input-lg round form-control"
+      style={{ height: 132 }}
+      placeholder="Enter your message"
+      defaultValue={""}
+    />
+  </div>
+  <div className="row">
+    <div className="col-md-6 col-xl-7 d-flex align-items-center">
+      {/* Inform Tip */}
+      {/* <div className="form-tip w-100 pt-3">
+        <i className="icon-info size-16" />
+        All the fields are required. By sending the form you agree to the{" "}
+        <a href="#">Terms &amp; Conditions</a> and{" "}
+        <a href="#">Privacy Policy</a>.
+      </div> */}
+      {/* End Inform Tip */}
+    </div>
+    <div className="col-md-6 col-xl-5 mt-sm-20">
+      {/* Send Button */}
+      <div className="pt-3 text-md-end">
+        <button
+          type="submit"
+          className="submit_btn btn btn-mod btn-color btn-large btn-round btn-hover-anim"
+          id="submit_btn"
+          aria-controls="result"
+        >
+          <span>Send Message</span>
+        </button>
+      </div>
+      {/* End Send Button */}
+    </div>
+  </div>
+  <div id="result" role="region" aria-live="polite" aria-atomic="true" />
+</form>
+
             {/* End Contact Form */}
           </div>
         </div>

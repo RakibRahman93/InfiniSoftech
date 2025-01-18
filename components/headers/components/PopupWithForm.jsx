@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Popup from "@/components/headers/components/Popup";
+import Popup from "@/components/headers/components/popup";
 import Form from "@/components/headers/components/Form";
 
 export default function PopupWithForm({ triggerLabel }) {
