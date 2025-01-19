@@ -44,6 +44,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="no-mobile no-touch ">
       <head>
+        {/* Google Fonts */}
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"
@@ -61,14 +62,35 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
-          rel="stylesheet"
-        />
-        <link
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
           rel="stylesheet"
         />
-        <script defer src="https://cloud.umami.is/script.js" data-website-id="dde1d23e-a1b5-4d8e-b1f3-e3b47b9a1dde"></script>
+
+        {/* Umami Analytics */}
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="dde1d23e-a1b5-4d8e-b1f3-e3b47b9a1dde"
+        ></script>
+
+        {/* Hotjar Tracking Code */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(h, o, t, j, a, r) {
+                h.hj = h.hj || function() {
+                  (h.hj.q = h.hj.q || []).push(arguments);
+                };
+                h._hjSettings = { hjid: 5272640, hjsv: 6 };
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script');
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+              })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+            `,
+          }}
+        />
       </head>
       <body className="appear-animate body">{children}</body>
     </html>
