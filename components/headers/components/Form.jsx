@@ -56,9 +56,12 @@ export default function Form({ togglePopup }) {
 
   return (
     <div className="popup-form">
-      <h2 className="font-semibold text-center mb-4 fs-2">
-        Book A Free Call
+      <h2 className="font-semibold text-center fs-2">
+        Contact Us
       </h2>
+      <p className="font-semibold text-center">
+        We will get back to you soon!
+      </p>
       <div className="popup-area">
         <form className="popup-form-left space-y-4" onSubmit={handleSubmit}>
           <div className="popup">
