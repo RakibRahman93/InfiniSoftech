@@ -80,7 +80,7 @@
 .popup-form {
   display: flex;
   flex-direction: column;
- 
+  text-align: center;
 }
 
 .popup-form input[type="text"],
@@ -97,7 +97,7 @@
   font-size: 16px;
 }
 textarea{
-  height: 200px;
+  height: 7em;
 }
 .popup-form input[type="text"]:focus,
 .popup-form input[type="email"]:focus,
@@ -110,6 +110,7 @@ textarea{
 .whatsapp-icon{
   font-size: 150px;
   margin-right: 10px;
+  color: rgb(5, 185, 5);
 }
 .popup-form-right {
   display: flex;

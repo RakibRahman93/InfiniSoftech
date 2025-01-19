@@ -57,9 +57,8 @@ export default function Form({ togglePopup }) {
   return (
     <div className="popup-form">
       <h2 className="font-semibold text-center mb-4 fs-2">
-  Book A Free Call
-</h2>
-
+        Book A Free Call
+      </h2>
       <div className="popup-area">
         <form className="popup-form-left space-y-4" onSubmit={handleSubmit}>
           <div className="popup">
@@ -144,7 +143,7 @@ export default function Form({ togglePopup }) {
           </button>
         </form>
         
-        <div className="popup-form-right">
+        <div className="popup-form-right mt-50">
           <a
             href="https://wa.me/+8801858333238"
             target="_blank"
