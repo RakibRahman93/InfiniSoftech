@@ -60,7 +60,7 @@ export default function Hero1() {
                     target="_blank" rel="noopener noreferrer"
                     className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
                   >
-                    <span>Book A Free Call</span>
+                    <span>Contact Us</span>
                   </a>{" "}
                   <a
                     onClick={() => setOpen(true)}

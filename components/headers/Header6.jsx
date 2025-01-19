@@ -61,7 +61,7 @@ export default function Header6({ links }) {
             onClick={togglePopup}
             className="btn btn-mod btn-color btn-secondary btn-round btn-hover-anim me-1 mb-xs-10"
           >
-            <span>Book A Free Call</span>
+            <span>Contact Us</span>
           </button>
         </ul>
       </div>

@@ -146,7 +146,7 @@ export default function Form({ togglePopup }) {
           </button>
         </form>
         
-        <div className="popup-form-right mt-50">
+        <div className="popup-form-right mt-100">
           <a
             href="https://wa.me/+8801858333238"
             target="_blank"
