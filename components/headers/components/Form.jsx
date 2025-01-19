@@ -56,10 +56,13 @@ export default function Form({ togglePopup }) {
 
   return (
     <div className="popup-form">
-      <h2 className="font-semibold text-center mb-4">Book A Free Call</h2>
+      <h2 className="font-semibold text-center mb-4 fs-2">
+  Book A Free Call
+</h2>
+
       <div className="popup-area">
         <form className="popup-form-left space-y-4" onSubmit={handleSubmit}>
-          <div className="d-flex gap-4">
+          <div className="popup">
             <div className="w-full">
               <input
                 type="text"
@@ -81,7 +84,7 @@ export default function Form({ togglePopup }) {
               />
             </div>
           </div>
-          <div className="d-flex gap-4">
+          <div className="popup">
             <div className="w-full">
               <input
                 type="tel"
