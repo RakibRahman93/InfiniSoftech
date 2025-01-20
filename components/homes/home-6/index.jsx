@@ -32,16 +32,16 @@ export default function Home6({ onePage = false, dark = false }) {
       >
         <div className="container position-relative">
           <div className="row mb-xs-40">
-            <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
+            <div className="col-md-10 offset-md-1 col-lg-10  text-center">
               <h2 className="section-caption-fancy mb-20 mb-xs-10">About Us</h2>
               <h3 className="section-title mb-30 mb-xs-20 wow fadeInUp">
-                Bringing Your Vision to Reality with Technological Solutions.
+              Supercharge Sales with a Fast, Reliable Website Or A Mobile App, Powered by Analytics!
               </h3>
               <p
                 className="section-descr mb-40 mb-sm-20 wow fadeInUp"
                 data-wow-delay="0.06s"
               >
-                We specialize in custom website design & development, mobile application design & development, UI/UX design, and prototyping to bring your vision to life.
+                At Infinisoft Technology, we craft lightning-fast, reliable websites and apps that elevate your business. Our solutions make it easier for customers to find you, enhance their experience, and drive sales growth by up to 4x. With powerful analytics and a focus on innovation, we help you unlock new opportunities and achieve lasting success in the digital age.
               </p>
               <div className="local-scroll wow fadeInUp" data-wow-delay="0.12s">
                 {onePage ? (
