@@ -93,7 +93,7 @@ export default function Hero1() {
             {/* Image */}
             <div className="col-lg-6 col-xl-6 d-flex align-items-center">
               <div className="w-100 wow fadeInLeft" data-wow-delay="0.7s">
-                <div className="position-relative mt-40 mb-20" style={{borderRadius:"50px"}}>
+                <div className="position-relative mt-40 mb-20">
                   <iframe
                     width="800"
                     height="500"
