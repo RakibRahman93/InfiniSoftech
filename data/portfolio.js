@@ -615,48 +615,55 @@ export const portfolios10 = [
 export const portfolios11 = [
   {
     id: 65,
-    title: "How Marketing Wire Support Increased Data Accuracy by 70%",
-    imageUrl: "/assets/images/demo-corporate/portfolio/project-1.jpg",
-    number: "70%",
-    description: "growth with Resonance",
+    title: "GLAM HUB WEBSITE DESIGN CASE STUDY",
+    imageUrl: "/assets/images/demo-fancy/glamhub2.png",
+    number: "100%",
+    description: "grow your business with us",
+    pdfUrl: "/assets/case-studies/glamhub.pdf"
   },
-  {
-    id: 66,
-    title:
-      "How Surface Mobility Increased Sales 3X During the Latest Six Months",
-    imageUrl: "/assets/images/demo-corporate/portfolio/project-2.jpg",
-    number: "3x",
-    description: "sales increased with Resonance",
-  },
-  {
-    id: 67,
-    title: "How Gen Machine Uses Automations to Grow Their Subscriber Base",
-    imageUrl: "/assets/images/demo-corporate/portfolio/project-3.jpg",
-    number: "Zero",
-    description: "negative reviews with Resonance",
-  },
-  {
-    id: 68,
-    title:
-      "How Surface Mobility Increased Sales 3X During the Latest Six Months",
-    imageUrl: "/assets/images/demo-corporate/portfolio/project-4.jpg",
-    number: "2x",
-    description: "sales increased with Resonance",
-  },
-  {
-    id: 69,
-    title: "How Gen Machine Uses Automations to Grow Their Subscriber Base",
-    imageUrl: "/assets/images/demo-corporate/portfolio/project-5.jpg",
-    number: "Zero",
-    description: "negative reviews with Resonance",
-  },
-  {
-    id: 70,
-    title: "How Marketing Wire Support Increased Data Accuracy by 70%",
-    imageUrl: "/assets/images/demo-corporate/portfolio/project-6.jpg",
-    number: "80%",
-    description: "growth with Resonance",
-  },
+  // {
+  //   id: 66,
+  //   title:
+  //     "How Surface Mobility Increased Sales 3X During the Latest Six Months",
+  //   imageUrl: "/assets/images/demo-corporate/portfolio/project-2.jpg",
+  //   number: "3x",
+  //   description: "sales increased with Resonance",
+  // },
+  // {
+  //   id: 67,
+  //   title: "How Gen Machine Uses Automations to Grow Their Subscriber Base",
+  //   imageUrl: "/assets/images/demo-corporate/portfolio/project-3.jpg",
+  //   number: "Zero",
+  //   description: "negative reviews with Resonance",
+  // },
+  // {
+  //   id: 68,
+  //   title:
+  //     "How Surface Mobility Increased Sales 3X During the Latest Six Months",
+  //   imageUrl: "/assets/images/demo-corporate/portfolio/project-4.jpg",
+  //   number: "2x",
+  //   description: "sales increased with Resonance",
+  // },
+  // {
+  //   id: 69,
+  //   title: "How Gen Machine Uses Automations to Grow Their Subscriber Base",
+  //   imageUrl: "/assets/images/demo-corporate/portfolio/project-5.jpg",
+  //   number: "Zero",
+  //   description: "negative reviews with Resonance",
+  // },
+  // {
+  //   id: 70,
+  //   title: "How Marketing Wire Support Increased Data Accuracy by 70%",
+  //   imageUrl: "/assets/images/demo-corporate/portfolio/project-6.jpg",
+  //   number: "80%",
+  //   description: "growth with Resonance",
+  // },
+];
+
+const casestudies = [
+  { id: 1, title: "GlamHub", description: "", pdfUrl: "/assets/case-studies/glamhub.pdf" },
+  // { id: 2, title: "Project 2", description: "Description for Project 2", pdfUrl: "/path-to-pdf/project2.pdf" },
+  // { id: 3, title: "Project 3", description: "Description for Project 3", pdfUrl: "/path-to-pdf/project3.pdf" },
 ];
 
 export const portfolios12 = [

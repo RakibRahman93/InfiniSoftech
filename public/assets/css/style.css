@@ -203,6 +203,7 @@ Primary use: Multipurpose Template
   --color-primary-light-3: #f7defe;
   --color-primary-4: #e748b1;
   --color-primarydark-4: #c4168a;
+  --color-white: #fff0fa;
   --color-primary-light-4: #ffe1f5;
   --color-secondary-1: #fbe3a1;
   --gradient-primary-1: linear-gradient(
@@ -1629,15 +1630,15 @@ a.btn-mod:focus {
 }
 
 .btn-mod.btn-border-c {
-  color: var(--color-dark-4);
+  color: var(--color-primarydark-4);
   border: 1px solid var(--color-dark-1);
   background: transparent;
 }
 .btn-mod.btn-border-c:hover,
 .btn-mod.btn-border-c:focus {
-  color: #fff;
+  color: var(--color-white);
   border-color: transparent;
-  background: var(--color-dark-1);
+  background: var(--color-white);
 }
 
 .btn-mod.btn-border-w {
@@ -10305,6 +10306,7 @@ a.link-to-top.color:before {
 
 .footer-2 {
   font-size: 18px;
+  background: var(--color-dark-1);
 }
 .footer-2-social-links {
   font-size: 16px;

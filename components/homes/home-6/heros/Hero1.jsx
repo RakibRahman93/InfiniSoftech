@@ -4,6 +4,7 @@ import Image from "next/image";
 import ModalVideo from "react-modal-video";
 import Popup from "@/components/headers/components/popup";
 import Form from "@/components/headers/components/Form";
+import Link from "next/link";
 export default function Hero1() {
   const [isOpen, setOpen] = useState(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -17,7 +18,7 @@ export default function Hero1() {
       <div className="container position-relative min-height-100vh d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120">
         {/* Home Section Content */}
         <div className="home-content text-start">
-          <div className="row">
+          <div className="row" style={{justifyContent:"space-between"}}>
             {/* Home Section Text */}
             <div className="col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 d-flex align-items-center mb-md-60 mb-sm-30">
               <div className="w-100 text-center text-lg-start">
@@ -54,51 +55,54 @@ export default function Hero1() {
                   data-wow-delay="0.7s"
                   data-wow-duration="1.2s"
                 >
-                  <a
-                  onClick={togglePopup}
-                    //href="https://infinisoftech.setmore.com/"
-                    target="_blank" rel="noopener noreferrer"
-                    className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
-                  >
-                    <span>Contact Us</span>
-                  </a>{" "}
-                  <a
-                    onClick={() => setOpen(true)}
-                    className="btn btn-mod btn-border-c btn-white-c btn-large btn-round mb-xs-10 lightbox mfp-iframe"
+                  
+                  <Link
+                    href={"/case-studies"}
+                    className="btn btn-mod btn-color btn-border-c btn-white-c btn-large btn-round mb-xs-10 lightbox mfp-iframe"
                     data-btn-animate="y"
                   >
                     <span className="btn-animate-y">
                       <span className="btn-animate-y-1">
-                        <i
+                        {/* <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
-                        ></i>{" "}
-                        How we work
+                        ></i>{" "} */}
+                        Case Studies
                       </span>
                       <span className="btn-animate-y-2" aria-hidden="true">
-                        <i
+                        {/* <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
-                        ></i>{" "}
-                        How we work
+                        ></i>{" "} */}
+                        Case Studies
                       </span>
                     </span>
+                  </Link>{" "}
+                  <a
+                  onClick={togglePopup}
+                    //href="https://infinisoftech.setmore.com/"
+                    target="_blank" rel="noopener noreferrer"
+                    className="btn btn-mod btn-border-c btn-large btn-round  me-1 mb-xs-10"
+                  >
+                    <span>Contact Us</span>
                   </a>
                 </div>
               </div>
             </div>
             {/* End Home Section Text */}
             {/* Image */}
-            <div className="col-lg-6 col-xl-7 d-flex align-items-center">
+            <div className="col-lg-6 col-xl-6 d-flex align-items-center">
               <div className="w-100 wow fadeInLeft" data-wow-delay="0.7s">
-                <div className="position-relative mt-40 mb-20">
-                  <Image
-                    src="/assets/images/hero-image.svg"
-                    width={800}
-                    height={500}
-                    alt="Image Description"
+                <div className="position-relative mt-40 mb-20" style={{borderRadius:"50px"}}>
+                  <iframe
+                    width="800"
+                    height="500"
+                    src="https://www.youtube.com/embed/viFaDMFAlLo"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
                     className="w-100"
-                  />
+                  ></iframe>
                   {/* Decorative Waves */}
                   <div
                     className="decoration-5 d-none d-sm-block"
@@ -106,37 +110,12 @@ export default function Hero1() {
                     data-rellax-speed="-0.7"
                     data-rellax-percentage="0.5"
                   >
-                    {/* <Image
-                      src="/assets/images/shapes.svg"
-                      width={159}
-                      height={74}
-                      alt=""
-                    /> */}
                   </div>
                   {/* End Decorative Waves */}
                 </div>
-                {/* <div className="small text-gray text-center">
-                  Illustration by
-                  <a
-                    href="https://icons8.com/illustrations/author/TQQ1qAnr9rn5"
-                    rel="noopener nofollow"
-                    target="_blank"
-                  >
-                    {" "}
-                    Oleg Shcherba
-                  </a>{" "}
-                  from{" "}
-                  <a
-                    href="https://icons8.com/illustrations"
-                    rel="noopener nofollow"
-                    target="_blank"
-                  >
-                    Ouch
-                  </a>
-                  !
-                </div> */}
               </div>
             </div>
+
             {/* End Image */}
           </div>
         </div>

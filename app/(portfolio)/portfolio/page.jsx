@@ -138,7 +138,7 @@ export default function FancyPortfolioPage() {
               </div>
               {/* End Marquee Section */}
               {/* Call Action Section */}
-              <section className="page-section pt-0">
+              {/* <section className="page-section pt-0">
                 <div className="container position-relative">
                   <div className="row text-center wow fadeInUp">
                     <div className="col-md-10 offset-md-1 col-lg-6 offset-lg-3">
@@ -158,7 +158,7 @@ export default function FancyPortfolioPage() {
                     </div>
                   </div>
                 </div>
-              </section>
+              </section> */}
               {/* End Call Action Section */}
             </>
           </main>
