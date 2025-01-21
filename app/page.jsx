@@ -41,29 +41,29 @@ export default function Home6MainDemoMultiPage() {
                 <div className="marquee marquee-style-1 mb-30">
                   <div className="marquee-track marquee-animation">
                     <div>Branding</div>
-                    <div aria-hidden="true">UI/UX Design</div>
-                    <div aria-hidden="true">Art Direction</div>
+                    <div aria-hidden="true">React Native</div>
+                    <div aria-hidden="true">NextJS</div>
+                    <div aria-hidden="true">React JS</div>
+                    <div aria-hidden="true">React Native</div>
+                    <div aria-hidden="true">NextJS</div>
+                    <div aria-hidden="true">React JS</div>
+                    <div aria-hidden="true">React Native</div>
+                    <div aria-hidden="true">NextJS</div>
+                    <div aria-hidden="true">React JS</div>
+                    <div aria-hidden="true">React Native</div>
+                    <div aria-hidden="true">NextJS</div>
+                    <div aria-hidden="true">React JS</div>
+                    <div aria-hidden="true">React Native</div>
+                    <div aria-hidden="true">NextJS</div>
+                    <div aria-hidden="true">React JS</div>
+                    <div aria-hidden="true">React Native</div>
+                    <div aria-hidden="true">NextJS</div>
                     <div aria-hidden="true">Branding</div>
-                    <div aria-hidden="true">UI/UX Design</div>
-                    <div aria-hidden="true">Art Direction</div>
+                    <div aria-hidden="true">React Native</div>
+                    <div aria-hidden="true">NextJS</div>
                     <div aria-hidden="true">Branding</div>
-                    <div aria-hidden="true">UI/UX Design</div>
-                    <div aria-hidden="true">Art Direction</div>
-                    <div aria-hidden="true">Branding</div>
-                    <div aria-hidden="true">UI/UX Design</div>
-                    <div aria-hidden="true">Art Direction</div>
-                    <div aria-hidden="true">Branding</div>
-                    <div aria-hidden="true">UI/UX Design</div>
-                    <div aria-hidden="true">Art Direction</div>
-                    <div aria-hidden="true">Branding</div>
-                    <div aria-hidden="true">UI/UX Design</div>
-                    <div aria-hidden="true">Art Direction</div>
-                    <div aria-hidden="true">Branding</div>
-                    <div aria-hidden="true">UI/UX Design</div>
-                    <div aria-hidden="true">Art Direction</div>
-                    <div aria-hidden="true">Branding</div>
-                    <div aria-hidden="true">UI/UX Design</div>
-                    <div aria-hidden="true">Art Direction</div>
+                    <div aria-hidden="true">React Native</div>
+                    <div aria-hidden="true">NextJS</div>
                   </div>
                 </div>
                 {/* End Marquee Text Line */}
@@ -72,28 +72,28 @@ export default function Home6MainDemoMultiPage() {
                   <div className="marquee-track marquee-animation">
                     <div>Development</div>
                     <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Development</div>
+                    <div aria-hidden="true">Figma</div>
                     <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Development</div>
+                    <div aria-hidden="true">Figma</div>
                     <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Development</div>
+                    <div aria-hidden="true">Figma</div>
                     <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Development</div>
+                    <div aria-hidden="true">Figma</div>
                     <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Development</div>
+                    <div aria-hidden="true">Figma</div>
                     <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Development</div>
+                    <div aria-hidden="true">Figma</div>
                     <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Development</div>
-                    <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Development</div>
-                    <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Development</div>
-                    <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Development</div>
-                    <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Development</div>
-                    <div aria-hidden="true">SEO Optimization</div>
+                    <div aria-hidden="true">NodeJS</div>
+                    <div aria-hidden="true">WordPress</div>
+                    <div aria-hidden="true">NodeJS</div>
+                    <div aria-hidden="true">WordPress</div>
+                    <div aria-hidden="true">NodeJS</div>
+                    <div aria-hidden="true">WordPress</div>
+                    <div aria-hidden="true">NodeJS</div>
+                    <div aria-hidden="true">WordPress</div>
+                    <div aria-hidden="true">NodeJS</div>
+                    <div aria-hidden="true">WordPress</div>
                   </div>
                 </div>
                 {/* End Marquee Text Line */}
