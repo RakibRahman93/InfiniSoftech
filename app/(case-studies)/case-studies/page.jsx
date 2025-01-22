@@ -1,3 +1,6 @@
+
+"use client";
+
 import AnimatedText from "@/components/common/AnimatedText";
 import Footer4 from "@/components/footers/Footer4";
 import Header4 from "@/components/headers/Header4";
@@ -12,14 +15,36 @@ import { features2 } from "@/data/features";
 import Header6 from "@/components/headers/Header6";
 import Portfolio from "@/components/homes/home-6/Portfolio";
 import Footer6 from "@/components/footers/Footer6";
+import { useState } from "react";
+import Modal from "react-modal";
 
-export const metadata = {
-  title:
-    "Corporate Portfolio || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-};
+// Modal.setAppElement("#__next"); // Set root app element for accessibility
+
+// export const metadata = {
+//   title:
+//     "Case Studies || Websites & Mobile Apps",
+//   description:
+//     "Infinisoft Technology case studies",
+// };
 export default function CorporatePortfolioPage() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentPdf, setCurrentPdf] = useState("");
+
+  // useEffect(() => {
+  //   Modal.setAppElement("#__next"); // Ensure the app element is set after DOM is loaded
+  // }, []);
+
+  const openModal = (pdfUrl) => {
+    setCurrentPdf(pdfUrl);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setCurrentPdf("");
+  };
+
   return (
     <>
       <div className="theme-fancy">
@@ -104,10 +129,11 @@ export default function CorporatePortfolioPage() {
                   <div className="row mt-n50 mt-sm-n40">
                     {/* Portfolio Item */}
                     {portfolios11.map((elm, i) => (
+                      console.warn(elm.pdfUrl),
                       <div key={i} className="col-md-6 col-lg-4 mt-50 mt-sm-40">
                         <a
-                          href={elm.pdfUrl}
-                          target="_blank"
+                          href={`/view-pdf-single?url=${encodeURIComponent(elm.pdfUrl)}`}
+                          // target="_blank"
                           rel="noopener noreferrer"
                           className="portfolio-5-link"
                         >
@@ -166,6 +192,30 @@ export default function CorporatePortfolioPage() {
                         <Portfolio />
                       </div>
                     </section>
+
+                     {/* Modal */}
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        contentLabel="View PDF"
+        className="custom-modal"
+        overlayClassName="custom-modal-overlay"
+      >
+        <button onClick={closeModal} className="close-button">
+          Close
+        </button>
+        {currentPdf && (
+          <iframe
+            src={currentPdf + "#toolbar=0"}
+            width="100%"
+            height="600px"
+            style={{ border: "none" }}
+            title="PDF Viewer"
+          />
+        )}
+      </Modal>
+       {/* Styles for modal */}
+      
              
             </>
           </main>
