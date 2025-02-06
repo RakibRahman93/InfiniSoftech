@@ -19,7 +19,7 @@ export default function FancyPortfolioSinglePage({ params }) {
     // console.warn('portfolioItem', portfolioItem)
     // console.warn('Date', Date);
     
-    const {Date, Client, Services, Description, Features} = portfolioItem;
+    const {Date, Client, Services, Description, Features, website} = portfolioItem;
     
   return (
     <>
@@ -118,6 +118,17 @@ export default function FancyPortfolioSinglePage({ params }) {
                             {Description}
                           </div>
                         </div>
+                        { website ? <>
+                          <hr className="mb-20" />
+                        <div className="text-gray small">
+                          <div>
+                            <b>website:</b>
+                          </div>
+                          <a href={`https://${website}`} target="_blank" rel="noopener noreferrer">
+                            {website}
+                          </a>
+                        </div>
+                        </> : null}
                         {/* <hr className="mb-20" />
                         <div className="text-gray small">
                           <div>
