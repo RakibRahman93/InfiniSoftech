@@ -92,7 +92,9 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className="appear-animate body">{children}</body>
+      <body className="appear-animate body">{children}
+      <script src="//code.tidio.co/vaexsx9gz9fcjuvbw5tetd1axii88rzq.js" async></script>
+      </body>
     </html>
   );
 }
