@@ -3804,6 +3804,10 @@ html:not(.mobile) .wow-p {
   height: var(--menu-bar-height);
   transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
 }
+.menu-bar-height {
+  height: var(--menu-bar-height);
+  transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+}
 .nav-logo-wrap .logo img {
   max-height: 100%;
 }
