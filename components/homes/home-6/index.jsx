@@ -43,7 +43,7 @@ export default function Home6({ onePage = false, dark = false }) {
             </div>
             
             {/* left section */}
-            <div className="col-md-6 col-lg-6">
+            <div className="col-md-6 col-lg-6 pt-5 pb-lg-5">
               <h2 className="section-caption-fancy mb-20 mb-xs-10 wow fadeInUp">Grow With Us</h2>
               <h3 className="section-title mb-30 mb-xs-20 wow fadeInUp">
               
