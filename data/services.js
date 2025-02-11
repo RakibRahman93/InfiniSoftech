@@ -108,7 +108,7 @@ export const services3 = [
   {
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "UIUX Design",
-    text: "Creating intuitive, visually stunning designs that put users first.",
+    text: "Good design isn’t just about looks. It’s about making things work better for you and your customers.",
   },
   {
     src: "/assets/images/demo-fancy/services/service2.svg",
