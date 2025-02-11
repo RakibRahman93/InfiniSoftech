@@ -25,7 +25,7 @@ const ServiceItem = ({ src, title, text }) => (
 const ServiceItem2 = ({ src, title, text }) => (
   <>
   <div className="col-md-6 d-flex align-items-stretch">
-    <div style={{backgroundColor:"#051D55", border:"1px solid rgb(95, 35, 186)", boxShadow: "-5px 0px 30px 10px rgba(63, 51, 223, 0.45)"}} className="services-5-item d-flex align-items-stretch text-center text-xl-start">
+    <div style={{backgroundColor:"#051D55", border:"1px solid rgb(95, 35, 186)", boxShadow: "0px 10px 30px 10px rgba(63, 51, 223, 0.45)"}} className="services-5-item d-flex align-items-stretch text-center text-xl-start">
       <div className="wow fadeInUpShort">
         <div className="">
           <Image style={{border:"1px solid rgb(95, 35, 186)",padding:"1em", borderRadius:"9px"}} src={src} width={90} height={198} alt="Image Description" />

@@ -113,30 +113,30 @@ export const services3 = [
   {
     src: "/assets/images/demo-fancy/services/service2.svg",
     title: "Website Design & Development",
-    text: "Stunning, responsive websites crafted to captivate your audience and drive results.",
+    text: "A well crafted website works for your business 24/7. ",
   },
   {
     src: "/assets/images/demo-fancy/services/service3.svg",
     title: "Mobile App",
-    text: "From concept to launch, we design and develop cutting-edge ",
+    text: "Mobile Apps are a great way to provide quality servicess to your customers. Reach both Android & ios users.",
   },
   
   {
     src: "/assets/images/demo-fancy/services/service4.svg",
     title: "Prototyping",
-    text: "Transform your ideas into interactive prototypes that bring your vision to life.",
+    text: "Not sure yet about the complete product to build? Build a prototype with a quarter of the budget and see if it works.",
   },
 ];
 export const services3a = [
   {
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "SEO",
-    text: "Stunning, responsive websites crafted to captivate your audience and drive results. From sleek designs to seamless functionality, we bring your digital vision to life.",
+    text: "People are always searching for products and services of their needs. Are you appearing in their search results? Get noticed and get new clients.",
   },
   {
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "AgileStaff Tech",
-    text: "From concept to launch, we design and develop cutting-edge mobile apps that blend intuitive user experiences with robust functionality.",
+    text: "Maybe you need a UIUX designer or a developer, or a project manager. Get flexible and scalable staffing both for short-term & long-term works.",
   },
 ];
 
