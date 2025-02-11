@@ -78,7 +78,22 @@ export default function Header6({ links }) {
             onClick={togglePopup}
             className="btn btn-mod btn-color btn-secondary me-1 mb-xs-10"
           >
-          HIRE US
+          <span className="btn-animate-y">
+            <span className="btn-animate-y-1">
+              {/* <i
+                className="icon-play size-13 me-1"
+                aria-hidden="true"
+              ></i>{" "} */}
+              Hire Us
+            </span>
+            <span className="btn-animate-y-2" aria-hidden="true">
+              {/* <i
+                className="icon-play size-13 me-1"
+                aria-hidden="true"
+              ></i>{" "} */}
+              Hire Us
+            </span>
+          </span>
         </button>
         </ul>
       </div>

@@ -36,68 +36,7 @@ export default function Home6MainDemoMultiPage() {
               </div>
               <Hero1 />
             </section>
-            <div className="page-section overflow-hidden">
-                {/* Marquee Text Line */}
-                <div className="marquee marquee-style-1 mb-30">
-                  <div className="marquee-track marquee-animation">
-                    <div>Branding</div>
-                    <div aria-hidden="true">React Native</div>
-                    <div aria-hidden="true">NextJS</div>
-                    <div aria-hidden="true">React JS</div>
-                    <div aria-hidden="true">React Native</div>
-                    <div aria-hidden="true">NextJS</div>
-                    <div aria-hidden="true">React JS</div>
-                    <div aria-hidden="true">React Native</div>
-                    <div aria-hidden="true">NextJS</div>
-                    <div aria-hidden="true">React JS</div>
-                    <div aria-hidden="true">React Native</div>
-                    <div aria-hidden="true">NextJS</div>
-                    <div aria-hidden="true">React JS</div>
-                    <div aria-hidden="true">React Native</div>
-                    <div aria-hidden="true">NextJS</div>
-                    <div aria-hidden="true">React JS</div>
-                    <div aria-hidden="true">React Native</div>
-                    <div aria-hidden="true">NextJS</div>
-                    <div aria-hidden="true">Branding</div>
-                    <div aria-hidden="true">React Native</div>
-                    <div aria-hidden="true">NextJS</div>
-                    <div aria-hidden="true">Branding</div>
-                    <div aria-hidden="true">React Native</div>
-                    <div aria-hidden="true">NextJS</div>
-                  </div>
-                </div>
-                {/* End Marquee Text Line */}
-                {/* Marquee Text Line */}
-                <div className="marquee marquee-style-1">
-                  <div className="marquee-track marquee-animation">
-                    <div>Development</div>
-                    <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Figma</div>
-                    <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Figma</div>
-                    <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Figma</div>
-                    <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Figma</div>
-                    <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Figma</div>
-                    <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">Figma</div>
-                    <div aria-hidden="true">SEO Optimization</div>
-                    <div aria-hidden="true">NodeJS</div>
-                    <div aria-hidden="true">WordPress</div>
-                    <div aria-hidden="true">NodeJS</div>
-                    <div aria-hidden="true">WordPress</div>
-                    <div aria-hidden="true">NodeJS</div>
-                    <div aria-hidden="true">WordPress</div>
-                    <div aria-hidden="true">NodeJS</div>
-                    <div aria-hidden="true">WordPress</div>
-                    <div aria-hidden="true">NodeJS</div>
-                    <div aria-hidden="true">WordPress</div>
-                  </div>
-                </div>
-                {/* End Marquee Text Line */}
-              </div>
+            
             <Home6 />
           </main>
           <footer className="page-section footer bg-dark-1 light-content pb-30">

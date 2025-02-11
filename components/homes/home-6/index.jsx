@@ -23,7 +23,7 @@ export default function Home6({ onePage = false, dark = false }) {
     };
   return (
     <>
-      {/* <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} /> */}
+      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
         className={`page-section  scrollSpysection ${
           dark ? "bg-dark-1 light-content" : ""
@@ -33,9 +33,20 @@ export default function Home6({ onePage = false, dark = false }) {
         <div className="container position-relative">
           <div className="row mb-xs-40">
             <div className="col-md-10 offset-md-1 col-lg-10  text-center">
-              <h2 className="section-caption-fancy mb-20 mb-xs-10">About Us</h2>
+              <h2 className="section-caption-fancy mb-20 mb-xs-10 wow fadeInUp">Grow With Us</h2>
               <h3 className="section-title mb-30 mb-xs-20 wow fadeInUp">
-              Supercharge Sales with a Fast, Reliable Website Or A Mobile App, Powered by Analytics!
+              
+              <span
+                    className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
+                        style={{
+                          background: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                         WebkitBackgroundClip: "text",
+                         WebkitTextFillColor: "transparent",
+                         fontWeight: "bold",
+                       }}
+                     >
+                       Supercharge Sales{" "}
+                     </span> with a Fast, Reliable Website Or A Mobile App, Powered by Analytics!
               </h3>
               <p
                 className="section-descr mb-40 mb-sm-20 wow fadeInUp"
