@@ -41,11 +41,20 @@ export default function Testimonials() {
               Testimonials
             </h2>
             <h3 className="section-title-small mb-30">
-              We Help Brands To Stand Out In The Ever-Changing Digital
-              Landscape.
+               Hear from our <span
+                    className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
+                        style={{
+                          background: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                         WebkitBackgroundClip: "text",
+                         WebkitTextFillColor: "transparent",
+                         fontWeight: "bold",
+                       }}
+                     >
+                       Satisfied Clients!{" "}
+                     </span> 
             </h3>
             <p className="section-descr mb-30">
-              Hear from our satisfied clients! Discover how InfiniSoft has transformed ideas into impactful digital solutions.
+              Discover how INFINISOFT TECHNOLOGY has transformed ideas into impactful digital solutions.
             </p>
             {/* Numbers */}
             <div className="row">
@@ -87,6 +96,7 @@ export default function Testimonials() {
               {/* Testimonials Item */}
               {testimonials5.map((testimonial, index) => (
                 <div
+                  
                   key={index}
                   className={`col-md-6 mb-30 ${!index ? "mt-50 mt-sm-0" : ""} `}
                 >

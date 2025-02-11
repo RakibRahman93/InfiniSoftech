@@ -12778,7 +12778,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
 /* for devices less than and equal to */
 @media (max-width: 768px) {
   .p-xs-50 {
-    padding: 0 2rem 0 2rem;
+    padding: 0 0rem 0 2rem;
   } 
   .mob-hide {
     display: none;

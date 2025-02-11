@@ -1,10 +1,32 @@
-import { services3 } from "@/data/services";
+import { services3, services3a } from "@/data/services";
 import React from "react";
 import Image from "next/image";
 const ServiceItem = ({ src, title, text }) => (
+  <>
+  <div className="col-md-3 d-flex align-items-stretch">
+    <div style={{backgroundColor:"#051D55", border:"1px solid #702fd2", boxShadow: "-5px 0px 30px 10px rgba(63, 51, 223, 0.45)"}} className="services-5-item d-flex align-items-stretch text-center text-xl-start">
+      <div className="wow fadeInUpShort">
+        <div className="">
+          <Image src={src} width={70} height={198} alt="Image Description" />
+        </div>
+        <div className="services-5-body d-flex align-items-center">
+          <div className="w-100">
+            <h4 className="services-5-title text-white pt-4">{title}</h4>
+            <p style={{fontWeight:"300", lineHeight:"25px"}} className="services-5-text text-white mb-0">{text}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </>
+);
+
+const ServiceItem2 = ({ src, title, text }) => (
+  <>
   <div className="col-md-6 d-flex align-items-stretch">
-    <div className="services-5-item d-flex align-items-stretch text-center text-xl-start">
-      <div className="d-xl-flex wow fadeInUpShort">
+    <div  className="services-5-item d-flex align-items-stretch text-center text-xl-start">
+      <div className="wow fadeInUpShort">
         <div className="services-5-image mb-lg-20 me-xl-4">
           <Image src={src} width={198} height={198} alt="Image Description" />
         </div>
@@ -17,6 +39,8 @@ const ServiceItem = ({ src, title, text }) => (
       </div>
     </div>
   </div>
+
+  </>
 );
 export default function Service() {
   return (
@@ -25,6 +49,9 @@ export default function Service() {
         {/* Services Item */}
         {services3.map((service, index) => (
           <ServiceItem key={index} {...service} />
+        ))}
+        {services3a.map((service, index) => (
+          <ServiceItem2 key={index} {...service} />
         ))}
         {/* End Services Item */}
       </div>
