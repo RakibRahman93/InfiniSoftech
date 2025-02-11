@@ -106,36 +106,36 @@ export const serviceItems = [
 export const services3 = [
   
   {
-    src: "/assets/images/demo-fancy/services/service1.png",
+    src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "UIUX Design",
     text: "Creating intuitive, visually stunning designs that put users first.",
   },
   {
-    src: "/assets/images/demo-fancy/services/service1.png",
+    src: "/assets/images/demo-fancy/services/service2.svg",
     title: "Website Design & Development",
     text: "Stunning, responsive websites crafted to captivate your audience and drive results.",
   },
   {
-    src: "/assets/images/demo-fancy/services/service-2.png",
+    src: "/assets/images/demo-fancy/services/service3.svg",
     title: "Mobile App",
     text: "From concept to launch, we design and develop cutting-edge ",
   },
   
   {
-    src: "/assets/images/demo-fancy/services/prototyping.png",
+    src: "/assets/images/demo-fancy/services/service4.svg",
     title: "Prototyping",
     text: "Transform your ideas into interactive prototypes that bring your vision to life.",
   },
 ];
 export const services3a = [
   {
-    src: "/assets/images/demo-fancy/services/service-1.png",
-    title: "Website Design & Development",
+    src: "/assets/images/demo-fancy/services/ppp.svg",
+    title: "SEO",
     text: "Stunning, responsive websites crafted to captivate your audience and drive results. From sleek designs to seamless functionality, we bring your digital vision to life.",
   },
   {
-    src: "/assets/images/demo-fancy/services/service-2.png",
-    title: "Mobile Application Design & Development",
+    src: "/assets/images/demo-fancy/services/ppp.svg",
+    title: "AgileStaff Tech",
     text: "From concept to launch, we design and develop cutting-edge mobile apps that blend intuitive user experiences with robust functionality.",
   },
 ];
