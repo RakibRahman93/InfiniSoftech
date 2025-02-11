@@ -4987,15 +4987,14 @@ a.logo:hover {
 .section-caption-fancy {
   display: inline-block;
   padding: 7px 12px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--color-primarydark-4);
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--color-white);
   text-transform: uppercase;
   letter-spacing: 0.037em;
   background-image: linear-gradient(
-    15deg,
-    var(--color-primary-light-1-a) 100%,
-    transparent 100%
+    30deg, #E75778 0%, #8876FF 100%,
+    transparent 50%
   );
   border-radius: 100px;
 }

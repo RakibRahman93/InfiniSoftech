@@ -127,17 +127,17 @@ export default function Hero1() {
                     {/* <span>Contact Us</span> */}
                     <span className="btn-animate-y">
                       <span className="btn-animate-y-1">
-                        {/* <i
+                        <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
-                        ></i>{" "} */}
+                        ></i>{" "}
                         Watch Video
                       </span>
                       <span className="btn-animate-y-2" aria-hidden="true">
-                        {/* <i
+                        <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
-                        ></i>{" "} */}
+                        ></i>{" "}
                         Watch Video
                       </span>
                     </span>
