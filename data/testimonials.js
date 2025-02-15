@@ -142,6 +142,14 @@ export const testimonials5 = [
     extraClass: "mt-50 mt-sm-0",
   },
   {
+    text: "InfiniSoft Technology built a fast, professional website with outstanding UI/UX design. Their expertise and attention to detail made all the difference. Highly recommended!",
+    author: "Emagino (AI-first ad agency)",
+    position: "Sana Choudary, CSO",
+    imgSrc: "/assets/images/testimonials/sana.jpg",
+    altText: "Image description is here",
+    extraClass: "",
+  },
+  {
     text: "InfiniSoft exceeded our expectations in building our company website! Outstanding work, delivering a website that perfectly reflects our brand.",
     author: "Team Mahir",
     position: "Founder & CEO",
@@ -158,11 +166,12 @@ export const testimonials5 = [
     extraClass: "",
   },
   {
-    text: "A remarkable model, everything has been thought out with talent, the design, the responsiveness, the various adaptations.",
-    author: "Alice Watson",
-    position: "Product Designer",
-    imgSrc: "/assets/images/demo-fancy/user-4.jpg",
+    text: "Nice work. Very quickly completed the landing page. Also really liked the logo.",
+    author: "HBS Nursing Care",
+    position: "CEO",
+    imgSrc: "/assets/images/testimonials/hbs.jpg",
     altText: "Image description is here",
     extraClass: "",
   },
+  
 ];
