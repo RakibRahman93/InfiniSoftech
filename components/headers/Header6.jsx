@@ -69,7 +69,7 @@ export default function Header6({ links }) {
              background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
              border: "none",
              color: "white", // Ensures text remains visible
-             fontSize: "14px",
+             fontSize: "12px",
              fontWeight: "bold",
              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
              cursor: "pointer",
@@ -84,14 +84,14 @@ export default function Header6({ links }) {
                 className="icon-play size-13 me-1"
                 aria-hidden="true"
               ></i>{" "} */}
-              Hire Us
+              Free Consultation
             </span>
             <span className="btn-animate-y-2" aria-hidden="true">
               {/* <i
                 className="icon-play size-13 me-1"
                 aria-hidden="true"
               ></i>{" "} */}
-              Hire Us
+              Free Consultation
             </span>
           </span>
         </button>
