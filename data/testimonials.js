@@ -150,6 +150,14 @@ export const testimonials5 = [
     extraClass: "",
   },
   {
+    text: "Thank you soo much for your help, you are incredibly understanding and very proactive. You displayed really amazing professionalism and the execution of your work is very impressive. Thank you for coming last minute and saving the day",
+    author: "Unity In Design Global Network",
+    position: "Tare Isaac",
+    imgSrc: "/assets/images/testimonials/taretest.png",
+    altText: "Image description is here",
+    extraClass: "",
+  },
+  {
     text: "InfiniSoft exceeded our expectations in building our company website! Outstanding work, delivering a website that perfectly reflects our brand.",
     author: "Team Mahir",
     position: "Founder & CEO",
