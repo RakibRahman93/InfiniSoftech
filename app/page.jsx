@@ -5,6 +5,7 @@ import Hero1 from "@/components/homes/home-6/heros/Hero1";
 import { fancyMultipage } from "@/data/menu";
 import Image from "next/image";
 import { Toaster } from "react-hot-toast";
+import Slider from "@/components/homes/home-6/Slider";
 
 export const metadata = {
   title:
@@ -35,6 +36,7 @@ export default function Home6MainDemoMultiPage() {
                 />
               </div>
               <Hero1 />
+              <Slider/>
             </section>
             
             <Home6 />
