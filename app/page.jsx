@@ -19,7 +19,6 @@ export default function Home6MainDemoMultiPage() {
       <div className="theme-fancy">
         <div className="page" id="top">
           <nav className="main-nav transparent stick-fixed wow-menubar wch-unset">
-          <div data-tf-live="01JMH6RC0MXZC4BB0PZM9RRK5H"></div><script src="//embed.typeform.com/next/embed.js"></script>
             <Header6 links={fancyMultipage} />
           </nav>
           <main id="main">
