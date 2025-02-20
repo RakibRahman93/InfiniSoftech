@@ -1,5 +1,9 @@
 "use client";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/free-mode";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import { Autoplay, FreeMode } from "swiper/modules";
 
 const Slider = () => {
