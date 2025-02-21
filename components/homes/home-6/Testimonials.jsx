@@ -37,7 +37,7 @@ export default function Testimonials() {
         {/* Section Text */}
         <div className="col-lg-5 col-xl-5 d-flex align-items-center mb-md-60 mb-sm-40">
           <div className="w-100">
-            <h2 className="section-caption-fancy mb-20 mb-xs-10">
+            <h2 className="section-caption mb-20 mb-xs-10">
               Testimonials
             </h2>
             <h3 className="section-title-small mb-30">

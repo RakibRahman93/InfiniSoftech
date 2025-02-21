@@ -44,7 +44,7 @@ export default function Home6({ onePage = false, dark = false }) {
             
             {/* left section */}
             <div className="col-md-6 col-lg-6 pt-5 pb-lg-5">
-              <h2 className="section-caption-fancy mb-20 mb-xs-10 wow fadeInUp">Grow With Us</h2>
+              <h2 className="section-caption mb-20 mb-xs-10 wow fadeInUp">Grow With Us</h2>
               <h3 className="section-title mb-30 mb-xs-20 wow fadeInUp">
               
               <span
@@ -132,7 +132,7 @@ export default function Home6({ onePage = false, dark = false }) {
         <div className="container position-relative">
           <div className="row mb-60 mb-sm-40">
             <div className="col-md-8 col-lg-6">
-              <h2 className="section-caption-fancy mb-20 mb-xs-10">
+              <h2 className="section-caption mb-20 mb-xs-10">
                 Our Services
               </h2>
               <h3  style={{color:"white",}} className="section-title mb-0 mb-sm-20">
@@ -229,7 +229,7 @@ export default function Home6({ onePage = false, dark = false }) {
         <div className="container position-relative">
           <div className="row mb-60 mb-sm-40">
             <div className="col-md-8 offset-md-2 text-center">
-              <h2 className="section-caption-fancy mb-20 mb-xs-10">
+              <h2 className="section-caption mb-20 mb-xs-10">
                 Selected Work
               </h2>
               <h3 className="section-title mb-0">
