@@ -145,6 +145,7 @@ export default function Hero1() {
                 </div>
               </div>
             </div>
+            
             {/* <div className="col-lg-6 col-xl-6 d-flex align-items-center">
               <div className="w-100 wow fadeInLeft" data-wow-delay="0.7s">
                 <div className="position-relative mt-40 mb-20">
