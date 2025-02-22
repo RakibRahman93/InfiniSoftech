@@ -11,12 +11,14 @@ const Slider = () => {
     <Swiper
       slidesPerView={1}
       spaceBetween={0}
-      freeMode={true}
+      loop={true}
+      freeMode={{ enabled: true,momentum: true }}
       modules={[FreeMode, Autoplay]}
       autoplay={{
-        delay: 3000,
+        delay: 0,
         disableOnInteraction: false,
       }}
+      speed={5000}
       breakpoints={{
         768: { slidesPerView: 3 }, // Show 3 slides on larger screens
       }}
