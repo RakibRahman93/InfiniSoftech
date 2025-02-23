@@ -65,7 +65,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     className="col-sm-6 col-lg-12 col-xl-6 d-flex mb-3"
                   >
                     <div className="features-list-icon">
-                      <i className="mi-check" />
+                      <img src={feature.icon} alt="Image Description" />
                     </div>
                     <div style={{ fontSize: "14px" }}>{feature.text}</div>
                   </div>
