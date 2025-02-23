@@ -67,7 +67,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     <div className="features-list-icon">
                       <img src={feature.icon} alt="Image Description" />
                     </div>
-                    <div style={{ fontSize: "14px" }}>{feature.text}</div>
+                    <div style={{ fontSize: "14px", fontWeight: "bold",color:"#1C1C57" }}>{feature.text}</div>
                   </div>
                 ))}
                 {/* End Features List Item */}
