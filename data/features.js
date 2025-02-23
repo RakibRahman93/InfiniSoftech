@@ -103,6 +103,25 @@ export const features3 = [
   { text: "Latest Technology" },
 ];
 
+export const features10 = [
+  {
+    id: 1,
+    text: "Get you customers engaged within the first 2 seconds of landing on your site!",
+  },
+  {
+    id: 2,
+    text: "Build a website for your clients where they can easily navigate to purchase your services & products.",
+  },
+  {
+    id: 3,
+    text: "Stop assuming! Get insights from real data and grow your business with analytics.",
+  },
+  {
+    id: 4,
+    text: "Start small and eventually scale your business as you grow.",
+  },
+]
+
 export const features4 = [
   {
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",

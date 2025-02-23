@@ -1,34 +1,27 @@
 "use client";
-import React, { useState } from "react";
-import About from "./About";
-import Service from "./Service";
+import Form from "@/components/headers/components/Form";
+import Popup from "@/components/headers/components/popup";
+import Contact from "@/components/homes/home-6/Contact";
+import { features10 } from "@/data/features";
+import Image from "next/image";
+import { useState } from "react";
+import Faqs from "../home-1/Faq";
 import Features from "./Features";
 import Portfolio from "./Portfolio";
+import Service from "./Service";
 import Testimonials from "./Testimonials";
-import Blog from "./Blog";
-import Newsletter from "./Newsletter";
-import Pricing from "./Pricing";
-import Contact from "@/components/homes/home-6/Contact";
-import Link from "next/link";
 import TestimonialsDark from "./TestimonialsDark";
-import Faqs from "../home-1/Faq";
-import Popup from "@/components/headers/components/popup";
-import Form from "@/components/headers/components/Form";
-import Image from "next/image";
 
 export default function Home6({ onePage = false, dark = false }) {
-    const [isPopupVisible, setIsPopupVisible] = useState(false);
-  
-    const togglePopup = () => {
-      setIsPopupVisible(!isPopupVisible);
-    };
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const togglePopup = () => {
+    setIsPopupVisible(!isPopupVisible);
+  };
   return (
     <>
       {/* <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} /> */}
-      <section
-        className={`scrollSpysection pb-5`}
-        id="about"
-      >
+      <section className={`scrollSpysection pb-5`} id="about">
         <div className="pt-md-5 container position-relative">
           <div className="row mb-xs-40">
             {/* right section */}
@@ -36,76 +29,82 @@ export default function Home6({ onePage = false, dark = false }) {
               <Image
                 // style={{marginTop:"3.7rem"}}
                 src="/assets/images/demo-fancy/growsecimage.png"
-                 width={780}
+                width={780}
                 height={0}
                 alt="Image Description"
-               /> 
+              />
             </div>
-            
+
             {/* left section */}
-            <div className="col-md-6 col-lg-6 pt-5 pb-lg-5">
-              <h2 className="section-caption mb-20 mb-xs-10 wow fadeInUp">Grow With Us</h2>
-              <h3 className="section-title mb-30 mb-xs-20 wow fadeInUp">
-              
-              <span
-                    className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
-                        style={{
-                          background: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-                         WebkitBackgroundClip: "text",
-                         WebkitTextFillColor: "transparent",
-                         fontWeight: "bold",
-                       }}
-                     >
-                       Supercharge Sales{" "}
-                     </span> with a Fast, Reliable Website Or A Mobile App, Powered by Analytics!
+            <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
+              <h2 className="section-caption mb-20 mb-xs-10 wow fadeInUp">
+                Grow With Us
+              </h2>
+              <h3 className="section-title-small  mb-30 mb-xs-20 wow fadeInUp">
+                Supercharge Sales with a Fast, Reliable Website Or A Mobile App,
+                <span
+                  className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white section-title-small "
+                  style={{
+                    background:
+                      "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Powered by Analytics!
+                </span>
               </h3>
-              <p
-                className="section-descr mb-40 mb-sm-20 wow fadeInUp"
-                data-wow-delay="0.06s"
-              >
-                At InfiniSoft Technology, we don’t just build websites and apps—we engineer high-performance digital solutions that accelerate growth, drive engagement, and maximize conversions.
-                 <br />      
-                 <br />      
-              </p>
+              <h4> Your vision. Our technology. Limitless possibilities.</h4>
+              {/* Features List */}
+              <div className="row features-list">
+                {/* Features List Item */}
+                {features10.map((feature, index) => (
+                  <div
+                    key={index}
+                    className="col-sm-6 col-lg-12 col-xl-6 d-flex mb-3"
+                  >
+                    <div className="features-list-icon">
+                      <i className="mi-check" />
+                    </div>
+                    <div style={{ fontSize: "14px" }}>{feature.text}</div>
+                  </div>
+                ))}
+                {/* End Features List Item */}
+              </div>
               <div className="local-scroll wow fadeInUp" data-wow-delay="0.12s">
-               
-                  <>
-                  <Link
-                    href={"/case-studies"}
-                    className="btn btn-mod btn-color btn-border-c btn-white-c btn-large btn-round mb-xs-10 lightbox mfp-iframe"
-                    data-btn-animate="y"
+                <>
+                  <a
                     style={{
                       borderRadius: "50px",
-                      // height: "2.7rem",
+                      padding: "14px 32px",
+                      minHeight: "2.6rem",
                       minWidth: "14rem",
-                      background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
-                      border: "none",
-                      color: "white", // Ensures text remains visible
                       fontSize: "14px",
                       fontWeight: "bold",
-                      boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
-                      cursor: "pointer",
-                      }}
-                     >
+                      // textTransform: "uppercase",
+                      // background: "transparent",
+                      border: "3px solid",
+                      borderColor: "#D95B8B",
+                      color: "#E75778", // Sets default text color
+                      transition: "all 0.3s ease-in-out",
+                      marginTop: "30px",
+                    }}
+                    onClick={() => setOpen(true)}
+                    //href="https://infinisoftech.setmore.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-mod btn-border-c btn-large btn-round  me-1 mb-xs-10"
+                  >
+                    {/* <span>Contact Us</span> */}
                     <span className="btn-animate-y">
-                      <span className="btn-animate-y-1">
-                        {/* <i
-                          className="icon-play size-13 me-1"
-                          aria-hidden="true"
-                        ></i>{" "} */}
-                        View Portflio
-                      </span>
+                      <span className="btn-animate-y-1">View Case Studies</span>
                       <span className="btn-animate-y-2" aria-hidden="true">
-                        {/* <i
-                          className="icon-play size-13 me-1"
-                          aria-hidden="true"
-                        ></i>{" "} */}
-                        View Portflio
+                        View Case Studies
                       </span>
                     </span>
-                  </Link>{" "}
-                  </>
-           
+                  </a>
+                </>
               </div>
             </div>
           </div>
@@ -114,39 +113,43 @@ export default function Home6({ onePage = false, dark = false }) {
           {/* End Images Composition */}
         </div>
       </section>
-      <section  style={{backgroundColor:"#FFF7FF"}}
+      <section
+        style={{ backgroundColor: "#FFF7FF" }}
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""} `}
       >
         {dark ? <TestimonialsDark /> : <Testimonials />}
       </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
-        style={{background: "linear-gradient(220deg, #621ABE 0%, #24214B 50%)"}}
+        style={{
+          background: "linear-gradient(220deg, #621ABE 0%, #24214B 50%)",
+        }}
         className={`page-section scrollSpysection  ${
-          dark
-            ? "bg-dark-1 bg-gradient-gray-dark-1 light-content"
-            : ""
+          dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
         } bg-scroll`}
         id="services"
       >
         <div className="container position-relative">
           <div className="row mb-60 mb-sm-40">
             <div className="col-md-8 col-lg-6">
-              <h2 className="section-caption mb-20 mb-xs-10">
-                Our Services
-              </h2>
-              <h3  style={{color:"white",}} className="section-title mb-0 mb-sm-20">
-              <span
-                    className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
-                        style={{
-                          background: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-                         WebkitBackgroundClip: "text",
-                         WebkitTextFillColor: "transparent",
-                         fontWeight: "bold",
-                       }}
-                     >
-                       Smart Solutions{" "}
-                     </span> for Every Business.
+              <h2 className="section-caption mb-20 mb-xs-10">Our Services</h2>
+              <h3
+                style={{ color: "white" }}
+                className="section-title mb-0 mb-sm-20"
+              >
+                <span
+                  className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
+                  style={{
+                    background:
+                      "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Smart Solutions{" "}
+                </span>{" "}
+                for Every Business.
               </h3>
             </div>
             <div className="col-md-4 col-lg-6 d-flex align-items-end">
@@ -219,7 +222,7 @@ export default function Home6({ onePage = false, dark = false }) {
       >
         <Features />
       </section>
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} /> 
+      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
@@ -229,9 +232,7 @@ export default function Home6({ onePage = false, dark = false }) {
         <div className="container position-relative">
           <div className="row mb-60 mb-sm-40">
             <div className="col-md-8 offset-md-2 text-center">
-              <h2 className="section-caption mb-20 mb-xs-10">
-                Selected Work
-              </h2>
+              <h2 className="section-caption mb-20 mb-xs-10">Selected Work</h2>
               <h3 className="section-title mb-0">
                 We believe in making the best work, and being the best to work
                 with.
@@ -243,7 +244,7 @@ export default function Home6({ onePage = false, dark = false }) {
         </div>
       </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-      
+
       {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
@@ -262,7 +263,7 @@ export default function Home6({ onePage = false, dark = false }) {
             : "bg-gradient-gray-light-1 "
         } bg-scroll`}
       > */}
-        {/* <Newsletter /> */}
+      {/* <Newsletter /> */}
       {/* </section> */}
       {/* <section
         className={`page-section  scrollSpysection  ${
@@ -273,32 +274,37 @@ export default function Home6({ onePage = false, dark = false }) {
         <Pricing />
       </section> */}
       <section className="page-section z-index-1">
-                <div className="container position-relative">
-                  <div className="row position-relative">
-                    <div className="col-md-6 col-lg-5 mb-md-50 mb-sm-30">
-                      <h3 className="section-title mb-30">
-                        Frequently Asked Questions
-                      </h3>
-                      <p className="text-gray mb-0">
-                      At InfiniSoft Technology, we bring your ideas to life with innovative solutions and cutting-edge technology. Specializing in website and mobile app development, UI/UX design, and prototyping, our mission is to help businesses thrive in the digital world.
-                      </p>
-                    </div>
-                    <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
-                      {/* Accordion */}
-                      <Faqs/>
-                      {/* End Accordion */}
-                      <a
-                    onClick={togglePopup}
-                    //href="https://infinisoftech.setmore.com/"
-                    target="_blank" rel="noopener noreferrer"
-                    className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
-                  >
-                    <span>Contact Us</span>
-                  </a>{" "}
-                    </div>
-                  </div>
-                </div>
-              </section>
+        <div className="container position-relative">
+          <div className="row position-relative">
+            <div className="col-md-6 col-lg-5 mb-md-50 mb-sm-30">
+              <h3 className="section-title mb-30">
+                Frequently Asked Questions
+              </h3>
+              <p className="text-gray mb-0">
+                At InfiniSoft Technology, we bring your ideas to life with
+                innovative solutions and cutting-edge technology. Specializing
+                in website and mobile app development, UI/UX design, and
+                prototyping, our mission is to help businesses thrive in the
+                digital world.
+              </p>
+            </div>
+            <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
+              {/* Accordion */}
+              <Faqs />
+              {/* End Accordion */}
+              <a
+                onClick={togglePopup}
+                //href="https://infinisoftech.setmore.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
+              >
+                <span>Contact Us</span>
+              </a>{" "}
+            </div>
+          </div>
+        </div>
+      </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
         className={`container page-section  scrollSpysection  ${
@@ -307,10 +313,10 @@ export default function Home6({ onePage = false, dark = false }) {
         id="contact"
       >
         <Contact />
-         {/* Popup */}
-      <Popup isPopupVisible={isPopupVisible} onClose={togglePopup}>
-        <Form togglePopup={togglePopup} />
-      </Popup>
+        {/* Popup */}
+        <Popup isPopupVisible={isPopupVisible} onClose={togglePopup}>
+          <Form togglePopup={togglePopup} />
+        </Popup>
       </section>
     </>
   );
