@@ -107,7 +107,7 @@ export const features10 = [
   {
     id: 1,
     icon:"assets/images/check-grow.png",
-    text: "Get you customers engaged within the first 2 seconds of landing on your site!",
+    text: "Get your customers engaged within the first 2 seconds of landing on your site!",
   },
   {
     id: 2,

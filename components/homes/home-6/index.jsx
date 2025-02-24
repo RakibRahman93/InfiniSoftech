@@ -11,6 +11,7 @@ import Portfolio from "./Portfolio";
 import Service from "./Service";
 import Testimonials from "./Testimonials";
 import TestimonialsDark from "./TestimonialsDark";
+import Link from "next/link";
 
 export default function Home6({ onePage = false, dark = false }) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -74,36 +75,40 @@ export default function Home6({ onePage = false, dark = false }) {
               </div>
               <div className="local-scroll wow fadeInUp" data-wow-delay="0.12s">
                 <>
-                  <a
+                <Link
+                    href={"/case-studies"}
+                    className="btn btn-mod btn-color btn-border-c btn-white-c btn-large btn-round mb-xs-10 lightbox mfp-iframe mt-4"
+                    data-btn-animate="y"
                     style={{
                       borderRadius: "50px",
-                      padding: "14px 32px",
-                      minHeight: "2.6rem",
+                      // height: "2.7rem",
                       minWidth: "14rem",
+                      background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
+                      border: "none",
+                      color: "white", // Ensures text remains visible
                       fontSize: "14px",
                       fontWeight: "bold",
-                      // textTransform: "uppercase",
-                      // background: "transparent",
-                      border: "3px solid",
-                      borderColor: "#D95B8B",
-                      color: "#E75778", // Sets default text color
-                      transition: "all 0.3s ease-in-out",
-                      marginTop: "30px",
-                    }}
-                    onClick={() => setOpen(true)}
-                    //href="https://infinisoftech.setmore.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-mod btn-border-c btn-large btn-round  me-1 mb-xs-10"
-                  >
-                    {/* <span>Contact Us</span> */}
+                      boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
+                      cursor: "pointer",
+                      }}
+                     >
                     <span className="btn-animate-y">
-                      <span className="btn-animate-y-1">View Case Studies</span>
+                      <span className="btn-animate-y-1">
+                        {/* <i
+                          className="icon-play size-13 me-1"
+                          aria-hidden="true"
+                        ></i>{" "} */}
+                        Case Studies
+                      </span>
                       <span className="btn-animate-y-2" aria-hidden="true">
-                        View Case Studies
+                        {/* <i
+                          className="icon-play size-13 me-1"
+                          aria-hidden="true"
+                        ></i>{" "} */}
+                        Case Studies
                       </span>
                     </span>
-                  </a>
+                  </Link>{" "}
                 </>
               </div>
             </div>
