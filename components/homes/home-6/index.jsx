@@ -67,7 +67,15 @@ export default function Home6({ onePage = false, dark = false }) {
                     <div className="features-list-icon">
                       <img src={feature.icon} alt="Image Description" />
                     </div>
-                    <div style={{ fontSize: "14px", fontWeight: "bold",color:"#1C1C57" }}>{feature.text}</div>
+                    <div
+                      style={{
+                        fontSize: "14px",
+                        fontWeight: "bold",
+                        color: "#1C1C57",
+                      }}
+                    >
+                      {feature.text}
+                    </div>
                   </div>
                 ))}
                 {/* End Features List Item */}
@@ -276,23 +284,30 @@ export default function Home6({ onePage = false, dark = false }) {
       <section className="page-section z-index-1">
         <div className="container position-relative">
           <div className="row position-relative">
-            <div className="col-md-6 col-lg-5 mb-md-50 mb-sm-30">
+            <div class="col-lg-6 col-xl-6">
+              <img
+                src="/assets/images/faq-img.png"
+                alt="faq-img"
+                class="img-fluid"
+              />
+            </div>
+
+            <div className="col-lg-6 col-xl-6">
               <h3 className="section-title mb-30">
-                Frequently Asked Questions
+                Frequently Asked <br />
+                Questions
               </h3>
-              <p className="text-gray mb-0">
+              <p className="text-gray mb-30">
                 At InfiniSoft Technology, we bring your ideas to life with
                 innovative solutions and cutting-edge technology. Specializing
                 in website and mobile app development, UI/UX design, and
                 prototyping, our mission is to help businesses thrive in the
                 digital world.
               </p>
-            </div>
-            <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
               {/* Accordion */}
               <Faqs />
               {/* End Accordion */}
-              <a
+              {/* <a
                 onClick={togglePopup}
                 //href="https://infinisoftech.setmore.com/"
                 target="_blank"
@@ -300,7 +315,7 @@ export default function Home6({ onePage = false, dark = false }) {
                 className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
               >
                 <span>Contact Us</span>
-              </a>{" "}
+              </a>{" "} */}
             </div>
           </div>
         </div>
