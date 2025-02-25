@@ -295,11 +295,11 @@ export default function Home6({ onePage = false, dark = false }) {
       <section className="page-section z-index-1">
         <div className="container position-relative">
           <div className="row position-relative">
-            <div class="col-lg-6 col-xl-6">
+            <div className="col-lg-6 col-xl-6">
               <img
                 src="/assets/images/faq-img.png"
                 alt="faq-img"
-                class="img-fluid"
+                className="img-fluid"
               />
             </div>
 
