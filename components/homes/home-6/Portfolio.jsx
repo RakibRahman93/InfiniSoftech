@@ -1,8 +1,8 @@
 "use client";
 import { portfolios6 } from "@/data/portfolio";
-import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 const filters = [
   { name: "All works", category: "all" },
@@ -27,18 +27,20 @@ export default function Portfolio() {
   return (
     <>
       {/* Works Filter */}
-      <div className="works-filter works-filter-fancy text-center mb-60 mb-sm-40 z-1">
-        {filters.map((elm, i) => (
-          <a
-            onClick={() => setCurrentCategory(elm.category)}
-            key={i}
-            className={`filter ${
-              currentCategory == elm.category ? "active" : ""
-            }`}
-          >
-            {elm.name}
-          </a>
-        ))}
+      <div className="filter-wrapper">
+        <div className="works-filter works-filter-fancy text-center mb-60 mb-sm-40 z-1">
+          {filters.map((elm, i) => (
+            <a
+              onClick={() => setCurrentCategory(elm.category)}
+              key={i}
+              className={`filter ${
+                currentCategory == elm.category ? "active" : ""
+              }`}
+            >
+              {elm.name}
+            </a>
+          ))}
+        </div>
       </div>
       {/* End Works Filter */}
       <div className="position-relative">
@@ -64,29 +66,53 @@ export default function Portfolio() {
         >
           <Gallery>
             {/* Work Item (Lightbox) */}
-            {filtered.map((item, index) => (
-              console.warn('item', item),
-              
-              <li
-                key={index}
-                className={`work-item mix ${item.categories.join(" ")}`}
-              >
-                <div>
-                  {item.lightbox ? (
-                    <Item
-                      original={item.imgSrc}
-                      thumbnail={item.imgSrc}
-                      width={746}
-                      height={524}
-                    >
-                      {({ ref, open }) => (
-                        <a
-                          onClick={open}
-                          className={"work-lightbox-link mfp-image"}
+            {filtered.map(
+              (item, index) => (
+                console.warn("item", item),
+                (
+                  <li
+                    key={index}
+                    className={`work-item mix ${item.categories.join(" ")}`}
+                  >
+                    <div>
+                      {item.lightbox ? (
+                        <Item
+                          original={item.imgSrc}
+                          thumbnail={item.imgSrc}
+                          width={746}
+                          height={524}
+                        >
+                          {({ ref, open }) => (
+                            <a
+                              onClick={open}
+                              className={"work-lightbox-link mfp-image"}
+                            >
+                              <div className="work-img">
+                                <Image
+                                  ref={ref}
+                                  src={item.imgSrc}
+                                  width={746}
+                                  height={524}
+                                  alt="Work Description"
+                                />
+                              </div>
+                              <div className="work-intro text-start">
+                                <h3 className="work-title">{item.title}</h3>
+                                <div className="work-descr">
+                                  {item.description}
+                                </div>
+                              </div>
+                            </a>
+                          )}
+                        </Item>
+                      ) : (
+                        <Link
+                          href={`/portfolio-single/${item.id}`}
+                          className={"work-ext-link"}
+                          // query={item}
                         >
                           <div className="work-img">
                             <Image
-                              ref={ref}
                               src={item.imgSrc}
                               width={746}
                               height={524}
@@ -97,32 +123,13 @@ export default function Portfolio() {
                             <h3 className="work-title">{item.title}</h3>
                             <div className="work-descr">{item.description}</div>
                           </div>
-                        </a>
+                        </Link>
                       )}
-                    </Item>
-                  ) : (
-                    <Link
-                      href={`/portfolio-single/${item.id}`}
-                      className={"work-ext-link"}
-                      // query={item}
-                    >
-                      <div className="work-img">
-                        <Image
-                          src={item.imgSrc}
-                          width={746}
-                          height={524}
-                          alt="Work Description"
-                        />
-                      </div>
-                      <div className="work-intro text-start">
-                        <h3 className="work-title">{item.title}</h3>
-                        <div className="work-descr">{item.description}</div>
-                      </div>
-                    </Link>
-                  )}
-                </div>
-              </li>
-            ))}
+                    </div>
+                  </li>
+                )
+              )
+            )}
           </Gallery>
           {/* End Work Item */}
         </ul>

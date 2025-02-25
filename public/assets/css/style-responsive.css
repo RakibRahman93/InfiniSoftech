@@ -364,6 +364,9 @@
    ============================== */
 
 @media only screen and (max-width: 1024px) {
+  .works-filter.works-filter-fancy a:hover {
+    padding: 10px 31px;
+  }
   .hs-paragraph-1 {
     position: static;
     top: 0;
@@ -439,6 +442,9 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .works-filter.works-filter-fancy a:hover {
+    padding: 10px 50px;
+  }
   .works-grid.work-grid-gut-lg {
     margin: -40px 0 0 -30px;
   }
@@ -543,6 +549,9 @@
    ============================== */
 
 @media only screen and (max-width: 768px) {
+  .works-filter.works-filter-fancy a:hover {
+    padding: 10px 31px;
+  }
   .page-section,
   .split-column-left,
   .split-column-right {
@@ -613,6 +622,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .works-filter.works-filter-fancy a:hover {
+    padding: 10px 31px;
+  }
   .fixed-height-small {
     height: 300px;
     min-height: 300px;
@@ -991,6 +1003,9 @@
    ============================== */
 
 @media only screen and (max-height: 768px) {
+  .works-filter.works-filter-fancy a:hover {
+    padding: 10px 31px;
+  }
   .stack-images {
     padding: 16% 0;
   }
