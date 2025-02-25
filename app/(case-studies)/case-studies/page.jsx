@@ -1,22 +1,18 @@
-
 "use client";
 
 import AnimatedText from "@/components/common/AnimatedText";
-import Footer4 from "@/components/footers/Footer4";
-import Header4 from "@/components/headers/Header4";
+import Footer6 from "@/components/footers/Footer6";
+import Header6 from "@/components/headers/Header6";
+import Portfolio from "@/components/homes/home-6/Portfolio";
+import { features2 } from "@/data/features";
+import { fancyMultipage } from "@/data/menu";
+import { portfolios11 } from "@/data/portfolio";
+import Image from "next/image";
+import { useState } from "react";
+import Modal from "react-modal";
 
 const onePage = false;
 const dark = false;
-import Image from "next/image";
-import { corporateMultipage, fancyMultipage } from "@/data/menu";
-import Link from "next/link";
-import { portfolios11 } from "@/data/portfolio";
-import { features2 } from "@/data/features";
-import Header6 from "@/components/headers/Header6";
-import Portfolio from "@/components/homes/home-6/Portfolio";
-import Footer6 from "@/components/footers/Footer6";
-import { useState } from "react";
-import Modal from "react-modal";
 
 // Modal.setAppElement("#__next"); // Set root app element for accessibility
 
@@ -27,7 +23,6 @@ import Modal from "react-modal";
 //     "Infinisoft Technology case studies",
 // };
 export default function CorporatePortfolioPage() {
-
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentPdf, setCurrentPdf] = useState("");
 
@@ -51,7 +46,6 @@ export default function CorporatePortfolioPage() {
         <div className="page" id="top">
           <nav className="main-nav transparent stick-fixed wow-menubar wch-unset">
             <Header6 links={fancyMultipage} />
-            
           </nav>
 
           <main id="main">
@@ -128,36 +122,47 @@ export default function CorporatePortfolioPage() {
                   {/* Portfolio Grid */}
                   <div className="row mt-n50 mt-sm-n40">
                     {/* Portfolio Item */}
-                    {portfolios11.map((elm, i) => (
-                      console.warn(elm.pdfUrl),
-                      <div key={i} className="col-md-6 col-lg-4 mt-50 mt-sm-40">
-                        <a
-                          href={`/view-pdf-single?url=${encodeURIComponent(elm.pdfUrl)}`}
-                          // target="_blank"
-                          rel="noopener noreferrer"
-                          className="portfolio-5-link"
-                        >
-                          <div className="portfolio-5-image">
-                            <div className="portfolio-5-image-bg wow scalexIn" />
-                            <div className="wow fadeIn" data-wow-delay="1s">
-                              <Image
-                                src={elm.imageUrl}
-                                width={660}
-                                height={472}
-                                alt="Image Description"
-                              />
-                            </div>
+                    {portfolios11.map(
+                      (elm, i) => (
+                        console.warn(elm.pdfUrl),
+                        (
+                          <div
+                            key={i}
+                            className="col-md-6 col-lg-4 mt-50 mt-sm-40"
+                          >
+                            <a
+                              href={`/view-pdf-single?url=${encodeURIComponent(
+                                elm.pdfUrl
+                              )}`}
+                              // target="_blank"
+                              rel="noopener noreferrer"
+                              className="portfolio-5-link"
+                            >
+                              <div className="portfolio-5-image">
+                                <div className="portfolio-5-image-bg wow scalexIn" />
+                                <div className="wow fadeIn" data-wow-delay="1s">
+                                  <Image
+                                    src={elm.imageUrl}
+                                    width={660}
+                                    height={472}
+                                    alt="Image Description"
+                                  />
+                                </div>
+                              </div>
+                              <h3 className="portfolio-5-title">
+                                <span>{elm.title}</span>
+                              </h3>
+                              <div className="portfolio-5-number">
+                                {elm.number}
+                              </div>
+                              <div className="portfolio-5-number-descr">
+                                {elm.description}
+                              </div>
+                            </a>
                           </div>
-                          <h3 className="portfolio-5-title">
-                            <span>{elm.title}</span>
-                          </h3>
-                          <div className="portfolio-5-number">{elm.number}</div>
-                          <div className="portfolio-5-number-descr">
-                            {elm.description}
-                          </div>
-                        </a>
-                      </div>
-                    ))}
+                        )
+                      )
+                    )}
                     {/* End Portfolio Item */}
 
                     {/* End Portfolio Item */}
@@ -171,52 +176,50 @@ export default function CorporatePortfolioPage() {
               {/* End Divider */}
               {/* Call to Action Section */}
               <section
-                      className={`page-section  scrollSpysection  ${
-                        dark ? "bg-dark-1 light-content" : ""
-                      } `}
-                      id="portfolio"
-                    >
-                      <div className="container position-relative">
-                        <div className="row mb-60 mb-sm-40">
-                          <div className="col-md-8 offset-md-2 text-center">
-                            <h2 className="section-caption-fancy mb-20 mb-xs-10">
-                              Selected Work
-                            </h2>
-                            <h3 className="section-title mb-0">
-                              We believe in making the best work, and being the best to work
-                              with.
-                            </h3>
-                          </div>
-                        </div>
-              
-                        <Portfolio />
-                      </div>
-                    </section>
+                className={`page-section  scrollSpysection  ${
+                  dark ? "bg-dark-1 light-content" : ""
+                } `}
+                id="portfolio"
+              >
+                <div className="container position-relative">
+                  <div className="row mb-60 mb-sm-40">
+                    <div className="col-md-8 offset-md-2 text-center">
+                      <h2 className="section-caption-fancy mb-20 mb-xs-10">
+                        Selected Work
+                      </h2>
+                      <h3 className="section-title mb-0">
+                        We believe in making the best work, and being the best
+                        to work with.
+                      </h3>
+                    </div>
+                  </div>
 
-                     {/* Modal */}
-      <Modal
-        isOpen={isModalOpen}
-        onRequestClose={closeModal}
-        contentLabel="View PDF"
-        className="custom-modal"
-        overlayClassName="custom-modal-overlay"
-      >
-        <button onClick={closeModal} className="close-button">
-          Close
-        </button>
-        {currentPdf && (
-          <iframe
-            src={currentPdf + "#toolbar=0"}
-            width="100%"
-            height="600px"
-            style={{ border: "none" }}
-            title="PDF Viewer"
-          />
-        )}
-      </Modal>
-       {/* Styles for modal */}
-      
-             
+                  <Portfolio />
+                </div>
+              </section>
+
+              {/* Modal */}
+              <Modal
+                isOpen={isModalOpen}
+                onRequestClose={closeModal}
+                contentLabel="View PDF"
+                className="custom-modal"
+                overlayClassName="custom-modal-overlay"
+              >
+                <button onClick={closeModal} className="close-button">
+                  Close
+                </button>
+                {currentPdf && (
+                  <iframe
+                    src={currentPdf + "#toolbar=0"}
+                    width="100%"
+                    height="600px"
+                    style={{ border: "none" }}
+                    title="PDF Viewer"
+                  />
+                )}
+              </Modal>
+              {/* Styles for modal */}
             </>
           </main>
           <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />

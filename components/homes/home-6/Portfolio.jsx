@@ -28,7 +28,7 @@ export default function Portfolio() {
     <>
       {/* Works Filter */}
       <div className="filter-wrapper">
-        <div className="works-filter works-filter-fancy text-center mb-60 mb-sm-40 z-1">
+        <div className="works-filter works-filter-fancy text-center mb-60 mb-sm-40 z-1" >
           {filters.map((elm, i) => (
             <a
               onClick={() => setCurrentCategory(elm.category)}

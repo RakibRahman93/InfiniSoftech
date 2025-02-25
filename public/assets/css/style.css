@@ -7248,6 +7248,7 @@ img.services-image {
   -webkit-transition: var(--transition-default);
   transition: var(--transition-default);
   cursor: pointer;
+  font-weight: 700;
 }
 .works-filter a:first-child {
   margin-left: 0;

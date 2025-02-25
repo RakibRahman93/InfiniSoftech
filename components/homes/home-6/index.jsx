@@ -238,9 +238,20 @@ export default function Home6({ onePage = false, dark = false }) {
         id="portfolio"
       >
         <div className="container position-relative">
-          <div className="row mb-60 mb-sm-40">
+          <div className="row mb-30 mb-sm-40">
             <div className="col-md-8 offset-md-2 text-center">
-              <h2 className="section-caption mb-20 mb-xs-10">Selected Work</h2>
+              <h2
+                className="section-caption mb-20 mb-xs-10"
+                style={{
+                  background:
+                    "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  fontWeight: "bold",
+                }}
+              >
+                our portfolio
+              </h2>
               <h3 className="section-title mb-0">
                 We believe in making the best work, and being the best to work
                 with.
