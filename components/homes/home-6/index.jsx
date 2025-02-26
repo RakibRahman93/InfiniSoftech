@@ -11,6 +11,7 @@ import Portfolio from "./Portfolio";
 import Service from "./Service";
 import Testimonials from "./Testimonials";
 import TestimonialsDark from "./TestimonialsDark";
+import TwoService from "./TwoService";
 
 export default function Home6({ onePage = false, dark = false }) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -292,6 +293,88 @@ export default function Home6({ onePage = false, dark = false }) {
       >
         <Pricing />
       </section> */}
+      {/* power of design section start */}
+      <section
+        style={{
+          background: "linear-gradient(220deg, #621ABE 0%, #24214B 50%)",
+        }}
+        className={`page-section scrollSpysection  ${
+          dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
+        } bg-scroll`}
+        id="services"
+      >
+        <div className="container position-relative">
+          <div className="row mb-60 mb-sm-40">
+            <div className="col-md-12 col-lg-6">
+              <h3
+                style={{ color: "white" }}
+                className="section-title mb-0 mb-sm-20"
+              >
+                We Use The Power Of Design To Solve Complex Problems.
+              </h3>
+              <p className="services-5-text text-white mt-30">
+                At InfiniSoft Technology, we combine creativity, technical
+                expertise, and a client-first approach to deliver solutions that
+                truly make an impact. From tailored designs to seamless
+                functionality, we ensure every project reflects your unique
+                vision and drives measurable results.
+              </p>
+              <div className="services-5-body d-flex align-items-center">
+                <div className="d-flex flex-column mb-30">
+                  <div className="w-100">
+                    <h4 className="services-5-title text-white pt-4">
+                      We're Professional
+                    </h4>
+                    <p
+                      style={{ fontWeight: "300", lineHeight: "25px" }}
+                      className="services-5-text mb-0 text-white"
+                    >
+                      Etiam id euismod odio. Ut euismod sem a lacus fringilla.
+                    </p>
+                  </div>
+                  <div className="w-100">
+                    <h4 className="services-5-title text-white pt-4">
+                      Tailored Strategies
+                    </h4>
+                    <p
+                      style={{ fontWeight: "300", lineHeight: "25px" }}
+                      className="services-5-text mb-0 text-white"
+                    >
+                      Cras eleifend leo ac varius tristique suspendisse.
+                    </p>
+                  </div>
+                  <div className="w-100">
+                    <h4 className="services-5-title text-white pt-4">
+                      Expert Developers
+                    </h4>
+                    <p
+                      style={{ fontWeight: "300", lineHeight: "25px" }}
+                      className="services-5-text mb-0 text-white"
+                    >
+                      EEiam id euismod odio. Ut euismod sem a lacus fringilla.
+                    </p>
+                  </div>
+                  <div className="w-100">
+                    <h4 className="services-5-title text-white pt-4">
+                      Latest Technology
+                    </h4>
+                    <p
+                      style={{ fontWeight: "300", lineHeight: "25px" }}
+                      className="services-5-text mb-0 text-white"
+                    >
+                      Cras eleifend leo ac varius tristique suspendisse.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-12 col-lg-6">
+              <TwoService />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* power of design section end */}
       <section className="page-section z-index-1">
         <div className="container position-relative">
           <div className="row position-relative">

@@ -140,6 +140,29 @@ export const services3a = [
   },
 ];
 
+export const twoService4 = [
+  {
+    src: "/assets/images/demo-fancy/services/ppp.svg",
+    title: "We're Professional",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/ppp.svg",
+    title: "Tailored Strategies",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/ppp.svg",
+    title: "Expert Developers",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/ppp.svg",
+    title: "Latest Technology",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  }
+];
+
 export const services4 = [
   {
     title: "Branding",
