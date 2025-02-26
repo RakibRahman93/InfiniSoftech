@@ -131,7 +131,7 @@ export default function Home6({ onePage = false, dark = false }) {
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
         style={{
-          background: "linear-gradient(220deg, #621ABE 0%, #24214B 50%)",
+          background: "linear-gradient(220deg, #621ABE 0%, #051D55 50%)",
         }}
         className={`page-section scrollSpysection  ${
           dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
@@ -296,7 +296,7 @@ export default function Home6({ onePage = false, dark = false }) {
       {/* power of design section start */}
       <section
         style={{
-          background: "linear-gradient(220deg, #621ABE 0%, #24214B 50%)",
+          background: "linear-gradient(220deg, #621ABE 0%, #051D55 50%)",
         }}
         className={`page-section scrollSpysection  ${
           dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
