@@ -69,7 +69,7 @@ const ServiceItem2 = ({ src, title, text }) => (
           </div>
           <div className="services-5-body d-flex align-items-center">
             <div className="w-100">
-              <h4 className="services-5-title text-white pt-4">{title}</h4>
+              <h4 className="services-3-title text-white pt-4">{title}</h4>
               <p
                 style={{ fontWeight: "300", lineHeight: "25px" }}
                 className="services-5-text mb-0 text-white"

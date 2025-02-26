@@ -322,7 +322,7 @@ export default function Home6({ onePage = false, dark = false }) {
               <div className="services-5-body d-flex align-items-center">
                 <div className="d-flex flex-column mb-30">
                   <div className="w-100">
-                    <h4 className="services-5-title text-white pt-4">
+                    <h4 className="services-3-title text-white pt-4">
                       We're Professional
                     </h4>
                     <p
@@ -333,7 +333,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     </p>
                   </div>
                   <div className="w-100">
-                    <h4 className="services-5-title text-white pt-4">
+                    <h4 className="services-3-title text-white pt-4">
                       Tailored Strategies
                     </h4>
                     <p
@@ -344,7 +344,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     </p>
                   </div>
                   <div className="w-100">
-                    <h4 className="services-5-title text-white pt-4">
+                    <h4 className="services-3-title text-white pt-4">
                       Expert Developers
                     </h4>
                     <p
@@ -355,7 +355,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     </p>
                   </div>
                   <div className="w-100">
-                    <h4 className="services-5-title text-white pt-4">
+                    <h4 className="services-3-title text-white pt-4">
                       Latest Technology
                     </h4>
                     <p
