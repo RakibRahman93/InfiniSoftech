@@ -1,3 +1,11 @@
+export const reviews = [
+    { id: 1, name: 'John Doe', img: '/assets/images/reviews/1.jpg' },
+    { id: 2, name: 'Alice Smith', img: '/assets/images/reviews/2.jpg' },
+    { id: 3, name: 'Michael Brown', img: '/assets/images/reviews/3.jpg' },
+    { id: 4, name: 'Sophia Wilson', img: '/assets/images/reviews/4.png' },
+    { id: 4, name: 'Sophia Wilson', img: '/assets/images/reviews/5.jpg' },
+  ];
+
 export const featureItems = [
   {
     id: 1,
