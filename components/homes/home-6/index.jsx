@@ -13,6 +13,7 @@ import Testimonials from "./Testimonials";
 import TestimonialsDark from "./TestimonialsDark";
 import Link from "next/link";
 import TwoService from "./TwoService";
+import Pricing from "./Pricing";
 
 export default function Home6({ onePage = false, dark = false }) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -290,14 +291,15 @@ export default function Home6({ onePage = false, dark = false }) {
       > */}
       {/* <Newsletter /> */}
       {/* </section> */}
-      {/* <section
+      <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
         id="pricing"
       >
         <Pricing />
-      </section> */}
+      </section>
+     
       {/* power of design section start */}
       <section
         style={{

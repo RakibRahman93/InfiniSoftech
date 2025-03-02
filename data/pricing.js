@@ -1,36 +1,51 @@
 export const pricing = [
-  {
-    title: "Standard",
-    price: 199,
-    per: "per month",
-    features: ["1 Gb Storage", "3 Domain Names", "5 FTP Users"],
-    disabledFeatures: ["Free Support", "Free SSL Certificate"],
-    image: "/assets/images/demo-fancy/pricing/plan-1.png",
-    buttonText: "Buy Standard",
-  },
-  {
-    title: "Premium",
-    price: 299,
-    per: "per month",
-    features: ["1 Gb Storage", "3 Domain Names", "5 FTP Users", "Free Support"],
-    disabledFeatures: ["Free SSL Certificate"],
-    image: "/assets/images/demo-fancy/pricing/plan-2.png",
-    buttonText: "Buy Premium",
-  },
-  {
-    title: "Enterprise",
-    price: 399,
-    per: "per month",
-    features: [
-      "1 Gb Storage",
-      "3 Domain Names",
-      "5 FTP Users",
-      "Free Support",
-      "Free SSL Certificate",
-    ],
-    image: "/assets/images/demo-fancy/pricing/plan-3.png",
-    buttonText: "Buy Enterprise",
-  },
+  
+    {
+      "title": "BASIC",
+      "badge": "Best Deal",
+      "description": "Perfect for small businesses looking to hire an individual No Code Developer",
+      "price": 102,
+      "per": "per month",
+      "features": [
+        "50 Page Unlock",
+        "10 GB Storage",
+        "6 Team Members",
+        "Unlimited Book Mark"
+      ],
+      "disabledFeatures": ["Unlimited basic feature"],
+      "buttonText": "Get Started"
+    },
+    {
+      "title": "Basic",
+      "badge": "Best Deal",
+      "description": "Perfect for small businesses looking to hire an individual No Code Developer",
+      "price": 102,
+      "per": "per month",
+      "features": [
+        "50 Page Unlock",
+        "10 GB Storage",
+        "6 Team Members",
+        "Unlimited Book Mark"
+      ],
+      "disabledFeatures": ["Unlimited basic feature"],
+      "buttonText": "Get Started"
+    },
+    {
+      "title": "Basic",
+      "badge": "Best Deal",
+      "description": "Perfect for small businesses looking to hire an individual No Code Developer",
+      "price": 102,
+      "per": "per month",
+      "features": [
+        "50 Page Unlock",
+        "10 GB Storage",
+        "6 Team Members",
+        "Unlimited Book Mark"
+      ],
+      "disabledFeatures": ["Unlimited basic feature"],
+      "buttonText": "Get Started"
+    },
+    
 ];
 export const pricing2 = [
   {

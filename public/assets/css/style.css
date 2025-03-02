@@ -10974,6 +10974,8 @@ a.blog-item-more:hover {
   background: #fff;
   box-shadow: var(--box-shadow-block);
   transition: var(--transition-default);
+  border:1px solid #CFCFCF;
+  border-radius: 8px !important;
 }
 .pricing-item-inner:hover {
   box-shadow: var(--box-shadow-block-strong);
