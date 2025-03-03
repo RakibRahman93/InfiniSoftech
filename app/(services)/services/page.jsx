@@ -447,8 +447,15 @@ export default function FancyServicesPage() {
                 <ServiceSolution />
               </div>
             </section>
-            <div class="container py-5">
-              <div class="card border-0 shadow-lg rounded-4 p-4">
+            <div className="container py-5 d-flex justify-content-center w-80">
+              <div
+                class="card p-4"
+                style={{
+                  width: "80%",
+                  borderRadius: "12px",
+                  border: "12px solid #051D551A", // Border with transparency
+                }}
+              >
                 <div class="row align-items-center">
                   <div className="container">
                     <h2
