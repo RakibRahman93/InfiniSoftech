@@ -104,7 +104,6 @@ export const serviceItems = [
 ];
 
 export const services3 = [
-  
   {
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "UIUX Design",
@@ -120,11 +119,143 @@ export const services3 = [
     title: "Mobile App",
     text: "Mobile Apps are a great way to provide quality servicess to your customers. Reach both Android & ios users.",
   },
-  
+
   {
     src: "/assets/images/demo-fancy/services/service4.svg",
     title: "Prototyping",
     text: "Not sure yet about the complete product to build? Build a prototype with a quarter of the budget and see if it works.",
+  },
+];
+
+export const serviceSolution = [
+  {
+    src: "/assets/images/services/wordpress.svg",
+    title: "WordPress theme and plugin development",
+  },
+  {
+    src: "/assets/images/services/customization.svg",
+    title: "Custom Web Application Development",
+  },
+  {
+    src: "/assets/images/services/ui.svg",
+    title: "UI/UX Design       ",
+  },
+  {
+    src: "/assets/images/services/api.png",
+    title: "WordPress theme and plugin development",
+  },
+  {
+    src: "/assets/images/services/mobile.svg",
+    title: "Mobile Ape Development",
+  },
+  {
+    src: "/assets/images/services/data.svg",
+    title: "Data Analytics and Insightst",
+  },
+  {
+    src: "/assets/images/services/cloud.svg",
+    title: "Cloud Infrastructure Management",
+  },
+  {
+    src: "/assets/images/services/24.svg",
+    title: "24/7 Customer Support",
+  },
+];
+export const techSolutionsData = [
+  {
+    src: "/assets/images/tech/react.svg",
+    title: "REACT",
+  },
+  {
+    src: "/assets/images/tech/wordpress.svg",
+    title: "Wordpress",
+  },
+  {
+    src: "/assets/images/tech/nodejs.svg",
+    title: "Node.js",
+  },
+  {
+    src: "/assets/images/tech/php.svg",
+    title: "Php",
+  },
+  {
+    src: "/assets/images/tech/js.svg",
+    title: "Javascript",
+  },
+  {
+    src: "/assets/images/tech/nextjs.svg",
+    title: "Next.js",
+  },
+  {
+    src: "/assets/images/tech/firebase.svg",
+    title: "Firebase",
+  },
+  {
+    src: "/assets/images/tech/ui.svg",
+    title: "UI-UX",
+  },
+  {
+    src: "/assets/images/tech/figma.svg",
+    title: "24/7 Customer Support",
+  },
+  {
+    src: "/assets/images/tech/data.svg",
+    title: "Data Analytics",
+  },
+  {
+    src: "/assets/images/tech/mangement.svg",
+    title: "Management",
+  },
+  {
+    src: "/assets/images/tech/Infrastructure.svg",
+    title: "Infrastructure",
+  },
+];
+export const processSolution = [
+  {
+    src: "/assets/images/process/01.svg",
+    title: "Requirement gathering",
+    text:"Share your project requirements or desired skill set, and we'll find the perfect professionals for you. The more details you provide, the better we can tailor our expertise to meet your needs."
+  },
+  {
+    src: "/assets/images/process/02.svg",
+    title: "Candidate shortlisting & interviews",
+    text:"We carefully select top candidates from our expert network and arrange interviews. You make the final choice, ensuring the perfect fit for your project and team. "
+  },
+  {
+    src: "/assets/images/process/03.svg",
+    title: "Onboarding",
+    text:"Once your ideal candidates are selected, we onboard them within two business days. We ensure seamless integration with your team and maintain open communication, allowing for smooth collaboration and flexibility as your project evolves."
+  },
+  
+];
+export const servicesMain = [
+  {
+    src: "/assets/images/demo-fancy/services/ppp.svg",
+    title: "Flexible team scaling",
+    text: "With InfiniSoft's Staff Augmentation Services, you can seamlessly scale your team to match your project's evolving needs. Whether you require expertise in WordPress development, product management, data analysis, or full-stack development, our flexible solutions empower you to expand or optimize your workforce without long-term commitments. Enhance efficiency, maintain agility, and ensure the right talent is always in place for project success. 🚀",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/service2.svg",
+    title: "Trusted partnerships",
+    text: "At InfiniSoft, we believe in building strong, lasting relationships. We go beyond the typical client-agency dynamic by fostering trust, transparency, and open collaboration. Our clients partner with us because of our dedication, clear communication, and proven expertise across a wide range of technologies and industries. When you work with us, you’re not just getting a service—you’re gaining a committed technology partner. 🚀 ",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/service3.svg",
+    title: "Industry-leading expertise",
+    text: "Our staff augmentation services provide access to top-tier professionals, including WordPress developers, product managers, data analysts, React and React Native developers, Laravel experts, full-stack engineers, and Figma designers. With cutting-edge skills and industry expertise, our specialists ensure your projects are delivered efficiently, seamlessly, and to the highest standards. 🚀",
+  },
+];
+export const services3aMain = [
+  {
+    src: "/assets/images/demo-fancy/services/ppp.svg",
+    title: "Customized workforce solutions",
+    text: "At InfiniSoft, quality comes first. We carefully vet every professional to ensure they meet our high standards. With our staff augmentation services, you get skilled experts who seamlessly integrate into your team, delivering excellence at every stage of your project. 🚀",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/ppp.svg",
+    title: "Commitment to Quality",
+    text: "We provide customized workforce solutions designed to fit your project’s needs. Whether you need short-term specialists for immediate tasks or long-term support to fill skill gaps, our experts seamlessly integrate with your team, ensuring a smooth and efficient workflow. 🚀",
   },
 ];
 export const services3a = [
@@ -160,7 +291,7 @@ export const twoService4 = [
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "Latest Technology",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-  }
+  },
 ];
 
 export const services4 = [

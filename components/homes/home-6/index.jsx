@@ -8,12 +8,12 @@ import { useState } from "react";
 import Faqs from "../home-1/Faq";
 import Features from "./Features";
 import Portfolio from "./Portfolio";
+import Pricing from "./Pricing";
 import Service from "./Service";
 import Testimonials from "./Testimonials";
 import TestimonialsDark from "./TestimonialsDark";
 import Link from "next/link";
 import TwoService from "./TwoService";
-import Pricing from "./Pricing";
 
 export default function Home6({ onePage = false, dark = false }) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -299,7 +299,7 @@ export default function Home6({ onePage = false, dark = false }) {
       >
         <Pricing />
       </section>
-     
+
       {/* power of design section start */}
       <section
         style={{

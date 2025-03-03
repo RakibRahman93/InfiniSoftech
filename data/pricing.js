@@ -47,6 +47,55 @@ export const pricing = [
     },
     
 ];
+export const ServicePricingData = [
+  
+  {
+    "title": "Product Designer",
+    "badge": "UI/UX",
+    "description": "Perfect for small businesses looking to hire an individual No Code Developer",
+    "price": 102,
+    "per": "per month",
+    "features": [
+      "50 Page Unlock",
+      "10 GB Storage",
+      "6 Team Members",
+      "Unlimited Book Mark"
+    ],
+    "disabledFeatures": ["Unlimited basic feature"],
+    "buttonText": "Get Started"
+  },
+  {
+    "title": "Developer",
+    "badge": "Best Deal",
+    "description": "Perfect for small businesses looking to hire an individual No Code Developer",
+    "price": 102,
+    "per": "per month",
+    "features": [
+      "50 Page Unlock",
+      "10 GB Storage",
+      "6 Team Members",
+      "Unlimited Book Mark"
+    ],
+    "disabledFeatures": ["Unlimited basic feature"],
+    "buttonText": "Get Started"
+  },
+  {
+    "title": "Project Manager",
+    "badge": "Expert",
+    "description": "Perfect for small businesses looking to hire an individual No Code Developer",
+    "price": 102,
+    "per": "per month",
+    "features": [
+      "50 Page Unlock",
+      "10 GB Storage",
+      "6 Team Members",
+      "Unlimited Book Mark"
+    ],
+    "disabledFeatures": ["Unlimited basic feature"],
+    "buttonText": "Get Started"
+  },
+  
+];
 export const pricing2 = [
   {
     title: "Standard",
