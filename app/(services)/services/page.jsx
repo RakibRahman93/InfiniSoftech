@@ -447,6 +447,55 @@ export default function FancyServicesPage() {
                 <ServiceSolution />
               </div>
             </section>
+            <div class="container py-5">
+              <div class="card border-0 shadow-lg rounded-4 p-4">
+                <div class="row align-items-center">
+                  <div className="container">
+                    <h2
+                      class="fw-bold text-dark mb-4"
+                      style={{ color: "#1C1C57" }}
+                    >
+                      Hire high-performance on-demand <br />
+                      <span
+                        class="text-primary"
+                        style={{
+                          background:
+                            "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                          WebkitBackgroundClip: "text",
+                          WebkitTextFillColor: "transparent",
+                          fontWeight: "bolder",
+                          fontSize: "40px !important",
+                        }}
+                      >
+                        Software Developers
+                      </span>
+                    </h2>
+                  </div>
+                  <div class="col-md-3 text-center">
+                    <img
+                      src="assets/images/services/solution-man.png"
+                      alt="Profile Image"
+                      class="rounded-circle img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-9">
+                    <p class="text-muted">
+                      Share your project requirements or desired skill set, and
+                      we'll find the perfect professionals for you. The more
+                      details you provide, the better we can tailor our
+                      expertise to meet your needs.
+                    </p>
+                    <p class="fw-semibold mb-0" style={{ color: "#1C1C57" }}>
+                      Md Rakib Rahman
+                    </p>
+                    <small class="text-muted">
+                      Founder & CTO at INFINISOFT TECHNOLOGY
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <section
               className={`page-section  scrollSpysection  ${
                 dark ? "bg-dark-1 light-content" : ""
