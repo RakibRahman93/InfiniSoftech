@@ -161,7 +161,7 @@ export default function FancyServicesPage() {
                 <div className="row mb-60 mb-sm-40">
                   <div className="d-flex flex-wrap">
                     <div className="col-md-6 col-lg-7 d-flex flex-column gap-4">
-                      <h2 className="section-caption mb-20 mb-xs-10">
+                      <h2 className="section-caption mb-0 mb-xs-0">
                         Our Services
                       </h2>
                       <p
@@ -185,12 +185,13 @@ export default function FancyServicesPage() {
                     </div>
                     <div className="col-md-6 col-lg-5 d-flex row">
                       <p className="services-5-text mb-0 text-white">
-                        Staff augmentation is a flexible outsourcing approach
-                        that helps businesses hire skilled professionals for a
-                        set period. Instead of permanent hires, companies expand
-                        their in-house teams with external IT experts who work
-                        under their processes and guidelines, ensuring a smooth
-                        and efficient workflow.
+                        <span className="fw-bold">Staff augmentation</span> is a
+                        flexible outsourcing approach that helps businesses hire
+                        skilled professionals for a set period. Instead of
+                        permanent hires, companies expand their in-house teams
+                        with external IT experts who work under their processes
+                        and guidelines, ensuring a smooth and efficient
+                        workflow.
                       </p>
                     </div>
                   </div>
@@ -237,7 +238,7 @@ export default function FancyServicesPage() {
             </section>
             {/* process start */}
             <section
-              className={`page-section scrollSpysection  ${
+              className={`scrollSpysection  py-5${
                 dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
               } bg-scroll`}
               id="services"
@@ -256,7 +257,7 @@ export default function FancyServicesPage() {
                       </h2>
                       <p
                         style={{ color: "#000", fontSize: "18px !important" }}
-                        className="section-title mb-0 mb-sm-20 text-center"
+                        className="mb-0 mb-sm-20 text-center"
                       >
                         Getting started with InfiniSoft's staff augmentation is
                         quick and seamless. Here's how:
@@ -305,7 +306,7 @@ export default function FancyServicesPage() {
             </section>
             {/* Technologies start */}
             <section
-              className={`page-section scrollSpysection  ${
+              className={`scrollSpysection py-5${
                 dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
               } bg-scroll`}
               id="services"
@@ -313,7 +314,7 @@ export default function FancyServicesPage() {
               <div className="container position-relative">
                 <div className="row mb-60 mb-sm-40">
                   <div className="container">
-                    <div className="d-flex flex-column">
+                    <div className="d-flex flex-column justify-center align-items-center">
                       <h2
                         className="text-center display-4 display-md-3 display-lg-2"
                         style={{
@@ -323,8 +324,12 @@ export default function FancyServicesPage() {
                         Technologies & Tools
                       </h2>
                       <p
-                        style={{ color: "#000", fontSize: "18px !important" }}
-                        className="section-title mb-0 mb-sm-20 text-center"
+                        style={{
+                          color: "#000",
+                          fontSize: "18px !important",
+                          width: "70%",
+                        }}
+                        className="mb-0 mb-sm-20 text-center"
                       >
                         At InfiniSoft Technology, we offer expertise across a
                         diverse range of technologies, ensuring the perfect fit
@@ -504,7 +509,7 @@ export default function FancyServicesPage() {
             </div>
 
             <section
-              className={`page-section  scrollSpysection  ${
+              className={`scrollSpysection py-4 ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
               id="pricing"
