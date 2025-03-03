@@ -30,7 +30,7 @@ const ProcessHire = ({ src, title, text }) => (
               >
                 {title}
               </h4>
-              <p className="services-5-text mb-0" style={{ fontSize: "14px" }}>
+              <p className="services-5-text mb-0" style={{ fontSize: "14px",color: "#7E7E7E" }}>
                 {text}
               </p>
             </div>

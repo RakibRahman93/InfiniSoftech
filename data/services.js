@@ -215,35 +215,34 @@ export const processSolution = [
   {
     src: "/assets/images/process/01.svg",
     title: "Requirement gathering",
-    text:"Share your project requirements or desired skill set, and we'll find the perfect professionals for you. The more details you provide, the better we can tailor our expertise to meet your needs."
+    text: "Share your project requirements or desired skill set, and we'll find the perfect professionals for you. The more details you provide, the better we can tailor our expertise to meet your needs.",
   },
   {
     src: "/assets/images/process/02.svg",
     title: "Candidate shortlisting & interviews",
-    text:"We carefully select top candidates from our expert network and arrange interviews. You make the final choice, ensuring the perfect fit for your project and team. "
+    text: "We carefully select top candidates from our expert network and arrange interviews. You make the final choice, ensuring the perfect fit for your project and team. ",
   },
   {
     src: "/assets/images/process/03.svg",
     title: "Onboarding",
-    text:"Once your ideal candidates are selected, we onboard them within two business days. We ensure seamless integration with your team and maintain open communication, allowing for smooth collaboration and flexibility as your project evolves."
+    text: "Once your ideal candidates are selected, we onboard them within two business days. We ensure seamless integration with your team and maintain open communication, allowing for smooth collaboration and flexibility as your project evolves.",
   },
-  
 ];
 export const servicesMain = [
   {
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "Flexible team scaling",
-    text: "With InfiniSoft's Staff Augmentation Services, you can seamlessly scale your team to match your project's evolving needs. Whether you require expertise in WordPress development, product management, data analysis, or full-stack development, our flexible solutions empower you to expand or optimize your workforce without long-term commitments. Enhance efficiency, maintain agility, and ensure the right talent is always in place for project success. 🚀",
+    text: "With InfiniSoft's Staff Augmentation Services, you can seamlessly scale your team to match your project's evolving needs. Whether you require expertise in WordPress development, product management, data analysis, or full-stack development, our flexible solutions empower you to expand or optimize your workforce without long-term commitments. 🚀",
   },
   {
     src: "/assets/images/demo-fancy/services/service2.svg",
     title: "Trusted partnerships",
-    text: "At InfiniSoft, we believe in building strong, lasting relationships. We go beyond the typical client-agency dynamic by fostering trust, transparency, and open collaboration. Our clients partner with us because of our dedication, clear communication, and proven expertise across a wide range of technologies and industries. When you work with us, you’re not just getting a service—you’re gaining a committed technology partner. 🚀 ",
+    text: "At InfiniSoft, we believe in building strong, lasting relationships. We go beyond the typical client-agency dynamic by fostering trust, transparency, and open collaboration. Our clients partner with us because of our dedication, clear communication, and proven expertise across a wide range of technologies and industries. 🚀 ",
   },
   {
     src: "/assets/images/demo-fancy/services/service3.svg",
     title: "Industry-leading expertise",
-    text: "Our staff augmentation services provide access to top-tier professionals, including WordPress developers, product managers, data analysts, React and React Native developers, Laravel experts, full-stack engineers, and Figma designers. With cutting-edge skills and industry expertise, our specialists ensure your projects are delivered efficiently, seamlessly, and to the highest standards. 🚀",
+    text: "Our staff augmentation services provide access to top-tier professionals, including WordPress developers, product managers, data analysts, React and React Native developers, Laravel experts, full-stack engineers, and Figma designers. 🚀",
   },
 ];
 export const services3aMain = [
