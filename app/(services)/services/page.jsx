@@ -138,7 +138,7 @@ export default function FancyServicesPage() {
                   <div className="col-md-10 col-lg-6 text-center">
                     <Image
                       // style={{marginTop:"3.7rem"}}
-                      src="/assets/images/demo-fancy/growsecimage.png"
+                      src="/assets/images/services/service-main.svg"
                       width={780}
                       height={0}
                       alt="Image Description"
@@ -185,7 +185,12 @@ export default function FancyServicesPage() {
                     </div>
                     <div className="col-md-6 col-lg-5 d-flex row">
                       <p className="services-5-text mb-0 text-white">
-                      Staff augmentation is a flexible outsourcing approach that helps businesses hire skilled professionals for a set period. Instead of permanent hires, companies expand their in-house teams with external IT experts who work under their processes and guidelines, ensuring a smooth and efficient workflow.
+                        Staff augmentation is a flexible outsourcing approach
+                        that helps businesses hire skilled professionals for a
+                        set period. Instead of permanent hires, companies expand
+                        their in-house teams with external IT experts who work
+                        under their processes and guidelines, ensuring a smooth
+                        and efficient workflow.
                       </p>
                     </div>
                   </div>
