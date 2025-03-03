@@ -185,12 +185,7 @@ export default function FancyServicesPage() {
                     </div>
                     <div className="col-md-6 col-lg-5 d-flex row">
                       <p className="services-5-text mb-0 text-white">
-                        Choosing InfiniSoft means more than just hiring Tech
-                        experts—you’re gaining a trusted partner dedicated to
-                        high-quality, creativity, and seamless project
-                        execution. Our skilled professionals bring expertise
-                        across various digital roles, ensuring your business
-                        achieves long-term success.
+                      Staff augmentation is a flexible outsourcing approach that helps businesses hire skilled professionals for a set period. Instead of permanent hires, companies expand their in-house teams with external IT experts who work under their processes and guidelines, ensuring a smooth and efficient workflow.
                       </p>
                     </div>
                   </div>
