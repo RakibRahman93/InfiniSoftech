@@ -26,7 +26,11 @@ export default function FancyServicesPage() {
           </nav>
           <main id="main">
             {/* your team section */}
-            <section className={`scrollSpysection pb-5 mt-5`} id="about">
+            <section
+              className={`scrollSpysection pb-5 mt-5`}
+              id="about"
+              style={{ height: "100vh" }}
+            >
               <div className="pt-md-5 container position-relative">
                 <div className="row mb-xs-40">
                   {/* left section */}
@@ -46,18 +50,16 @@ export default function FancyServicesPage() {
                         Expert Talent, On Demand
                       </span>
                     </h3>
-                    <p>
+                    <p className="wow fadeInUp">
                       Strategic staffing solutions designed for flexibility and
                       growth. Whether you require specialized expertise for
                       short-term projects or long-term team expansion, we
                       deliver top-tier talent to optimize performance and drive
                       sustainable success.
                     </p>
-                    {/* Features List */}
-                    <div className="row features-list"></div>
-                    {/* add reviews section start */}
+
                     {/* Yellow Stars */}
-                    <div className="">
+                    <div className="wow fadeInUp">
                       {[...Array(5)].map((_, i) => (
                         <span
                           key={i}
@@ -67,7 +69,7 @@ export default function FancyServicesPage() {
                         </span>
                       ))}
                     </div>
-                    <div className="mb-4">
+                    <div className="mb-4 wow fadeInUp">
                       {/* Profile Images with Overlapping */}
                       <div className="d-flex" style={{ position: "relative" }}>
                         {reviews.map((user, index) => (
@@ -141,6 +143,7 @@ export default function FancyServicesPage() {
                       src="/assets/images/services/service-main.svg"
                       width={780}
                       height={0}
+                      className="wow fadeInUp"
                       alt="Image Description"
                     />
                   </div>

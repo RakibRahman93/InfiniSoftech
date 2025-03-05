@@ -12321,7 +12321,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
   transform: translateY(-50%);
   color: var(--color-dark-1);
   font-family: "icons" !important;
-  font-size: 22px;
+  font-size: 21px;
   text-align: center;
   transition: var(--transition-default);
 }
@@ -12331,7 +12331,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
 }
 .toggle > dd {
   margin-bottom: 1.55em;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.625;
   opacity: 1;
 }

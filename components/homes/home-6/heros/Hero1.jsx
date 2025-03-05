@@ -152,7 +152,7 @@ export default function Hero1() {
               </div>
             </div>
             {/* add reviews section start */}
-            <div className="container text-center my-4">
+            <div className="container text-center my-4 wow fadeInUp">
               {/* Profile Images with Overlapping */}
               <div
                 className="d-flex justify-content-center align-items-center"

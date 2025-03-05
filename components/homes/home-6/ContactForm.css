@@ -1,0 +1,18 @@
+.formDesign {
+  border: 0;
+  border-bottom: 1px solid #cacaca;
+  color: #fff;
+}
+
+.formDesign::placeholder {
+  border: 0;
+  color: #fff;
+}
+
+.formDesign:focus {
+  border: 0;
+  outline: none !important;
+  border-bottom: 1px solid #cacaca;
+  color: #fff;
+  box-shadow: none !important;
+}

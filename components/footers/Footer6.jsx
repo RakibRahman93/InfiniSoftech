@@ -1,8 +1,7 @@
 "use client";
-import React from "react";
+import { footerLinks, navigationLinks } from "@/data/footer";
 import Image from "next/image";
 import FooterSocials from "./FooterSocials";
-import { footerLinks, navigationLinks } from "@/data/footer";
 
 export default function Footer6() {
   const scrollToTop = (event) => {
@@ -15,7 +14,7 @@ export default function Footer6() {
 
   return (
     <div className="container">
-      <div className="row pb-120 pb-sm-80 pb-xs-50">
+      <div className="row py-5 pb-sm-80 pb-xs-50">
         <div className="col-lg-3 text-gray mb-md-50">
           <div className="mb-30">
             <Image
@@ -25,9 +24,7 @@ export default function Footer6() {
               height={35}
             />
           </div>
-          <p>
-          Bringing your vision to reality with limitless possibilities. 
-          </p>
+          <p>Bringing your vision to reality with limitless possibilities.</p>
           <div className="clearlinks">
             <strong>T.</strong>
             <a href="tel:+8801858333238">+8801858333238</a>
@@ -35,6 +32,9 @@ export default function Footer6() {
           <div className="clearlinks">
             <strong>E. </strong>
             <a href="mailto:info@infinisoftech.com">info@infinisoftech.com</a>
+          </div>
+          <div className="py-3">
+            <FooterSocials variant="second" />
           </div>
           <hr />
           {/* <a
@@ -63,7 +63,7 @@ export default function Footer6() {
             <div className="col-sm-4 mt-30">
               <h3 className="fw-title">Social Media</h3>
               <ul className="fw-menu clearlist">
-                <FooterSocials />
+                <FooterSocials variant="first" />
               </ul>
             </div>
             {/* End Footer Widget */}
@@ -83,12 +83,14 @@ export default function Footer6() {
         </div>
       </div>
       {/* Footer Text */}
-      <div className="row text-gray">
+      <div className="row text-gray d-flex align-items-center justify-between">
         <div className="col-md-4 col-lg-3">
           <b>©InfiniSoft Technology. {new Date().getFullYear()}.</b>
         </div>
         <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
-          <b>Bringing your vision to reality with limitless possibilities.</b>
+          <b className="text-right">
+            Bringing your vision to reality with limitless possibilities.
+          </b>
           {/* Back to Top Link */}
           <div
             className="local-scroll float-end mt-n20 mt-sm-10"
