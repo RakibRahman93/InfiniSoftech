@@ -1,5 +1,6 @@
 import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
+import FooterTop from "@/components/homes/home-6/FooterTop";
 import ProcessHire from "@/components/homes/home-6/ProcessHire";
 import ServiceMain from "@/components/homes/home-6/ServiceMain";
 import ServicePricing from "@/components/homes/home-6/ServicePricing";
@@ -27,9 +28,8 @@ export default function FancyServicesPage() {
           <main id="main">
             {/* your team section */}
             <section
-              className={`scrollSpysection pb-5 mt-5`}
+              className={`scrollSpysection pb-5 mt-5 service-large-sections`}
               id="about"
-              style={{ height: "100vh" }}
             >
               <div className="pt-md-5 container position-relative">
                 <div className="row mb-xs-40">
@@ -251,7 +251,7 @@ export default function FancyServicesPage() {
                   <div className="container">
                     <div className="d-flex flex-column">
                       <h2
-                        className="text-center display-4 display-md-3 display-lg-2"
+                        className="text-center section-title-small"
                         style={{
                           color: "#1C1C57",
                         }}
@@ -259,7 +259,7 @@ export default function FancyServicesPage() {
                         A simple 3-step process to hire
                       </h2>
                       <p
-                        style={{ color: "#000", fontSize: "18px !important" }}
+                        style={{ color: "#000", fontSize: "16px !important" }}
                         className="mb-0 mb-sm-20 text-center"
                       >
                         Getting started with InfiniSoft's staff augmentation is
@@ -319,7 +319,7 @@ export default function FancyServicesPage() {
                   <div className="container">
                     <div className="d-flex flex-column justify-center align-items-center">
                       <h2
-                        className="text-center display-4 display-md-3 display-lg-2"
+                        className="text-center section-title-small"
                         style={{
                           color: "#1C1C57",
                         }}
@@ -329,7 +329,7 @@ export default function FancyServicesPage() {
                       <p
                         style={{
                           color: "#000",
-                          fontSize: "18px !important",
+                          fontSize: "16px !important",
                           width: "70%",
                         }}
                         className="mb-0 mb-sm-20 text-center"
@@ -395,7 +395,7 @@ export default function FancyServicesPage() {
                   <div className="container">
                     <div className="d-flex flex-column">
                       <h2
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white text-transparent bg-clip-text font-extrabold text-4xl md:text-5xl lg:text-6xl text-center"
+                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white text-transparent bg-clip-text font-extrabold section-title-small text-center"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -455,36 +455,34 @@ export default function FancyServicesPage() {
                 <ServiceSolution />
               </div>
             </section>
-            <div className="container py-5 d-flex justify-content-center w-80">
+            <div className="container py-5 d-flex justify-content-center">
               <div
-                class="card p-4"
+                class="card p-4 res-card"
                 style={{
-                  width: "80%",
                   borderRadius: "12px",
                   border: "12px solid #051D551A", // Border with transparency
                 }}
               >
                 <div class="row align-items-center">
-                  <div className="container">
+                  <div className="container mb-3">
                     <h2
-                      class="fw-bold text-dark mb-4"
+                      class="fw-bold text-dark mb-0 section-title-small"
                       style={{ color: "#1C1C57" }}
                     >
-                      Hire high-performance on-demand <br />
-                      <span
-                        class="text-primary"
-                        style={{
-                          background:
-                            "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-                          WebkitBackgroundClip: "text",
-                          WebkitTextFillColor: "transparent",
-                          fontWeight: "bolder",
-                          fontSize: "40px !important",
-                        }}
-                      >
-                        Software Developers
-                      </span>
+                      Hire high-performance on-demand
                     </h2>
+                    <span
+                      class="section-title-small"
+                      style={{
+                        background:
+                          "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        fontWeight: "bolder",
+                      }}
+                    >
+                      Software Developers
+                    </span>
                   </div>
                   <div class="col-md-3 text-center">
                     <img
@@ -494,16 +492,16 @@ export default function FancyServicesPage() {
                     />
                   </div>
                   <div class="col-md-9">
-                    <p class="text-muted">
+                    <p class="text-muted fw-bold">
                       Share your project requirements or desired skill set, and
                       we'll find the perfect professionals for you. The more
                       details you provide, the better we can tailor our
                       expertise to meet your needs.
                     </p>
-                    <p class="fw-semibold mb-0" style={{ color: "#1C1C57" }}>
+                    <p class="fw-bolder mb-0" style={{ color: "#1C1C57" }}>
                       Md Rakib Rahman
                     </p>
-                    <small class="text-muted">
+                    <small class="text-muted" style={{ fontSize: "14px" }}>
                       Founder & CTO at INFINISOFT TECHNOLOGY
                     </small>
                   </div>
@@ -520,7 +518,13 @@ export default function FancyServicesPage() {
               <ServicePricing />
             </section>
           </main>
-          <footer className="page-section footer bg-dark-1 light-content pb-30">
+          <FooterTop />
+          <footer
+            className="footer bg-dark-1 light-content py-5"
+            style={{
+              background: "linear-gradient(220deg, #621ABE 0%, #051D55 50%)",
+            }}
+          >
             <Footer6 />
           </footer>
         </div>{" "}

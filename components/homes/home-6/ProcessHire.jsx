@@ -1,7 +1,7 @@
 import { processSolution } from "@/data/services";
 const ProcessHire = ({ src, title, text }) => (
   <>
-    <div className="col-md-4">
+    <div className="col-lg-4 col-md-6">
       <div
         style={{
           display: "flex",
@@ -25,12 +25,15 @@ const ProcessHire = ({ src, title, text }) => (
           <div className="services-5-body d-flex align-items-left">
             <div className="w-100">
               <h4
-                className="pt-4 text-left services-4-text"
+                className="pt-4 text-left services-6-title"
                 style={{ color: "#051D55" }}
               >
                 {title}
               </h4>
-              <p className="services-5-text mb-0" style={{ fontSize: "14px",color: "#7E7E7E" }}>
+              <p
+                className="services-5-text mb-0"
+                style={{ fontSize: "14px", color: "#7E7E7E" }}
+              >
                 {text}
               </p>
             </div>

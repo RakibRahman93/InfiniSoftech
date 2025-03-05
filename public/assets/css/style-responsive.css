@@ -1046,6 +1046,13 @@
   html:not(.no-touch) .small-section {
     background-attachment: scroll !important;
   }
+
+  .service-large-sections {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* ==============================
