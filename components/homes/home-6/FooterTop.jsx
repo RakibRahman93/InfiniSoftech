@@ -68,7 +68,6 @@ const FooterTop = () => {
                     <button
                       className="btn btn-primary submit-button"
                       type="submit"
-                      const
                       style={{
                         borderRadius: "50px",
                         height: "2.7rem",
