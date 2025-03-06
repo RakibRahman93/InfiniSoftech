@@ -1,4 +1,5 @@
 "use client";
+import FooterTop from "@/components/homes/home-6/FooterTop";
 import Form from "@/components/headers/components/Form";
 import Popup from "@/components/headers/components/popup";
 import Contact from "@/components/homes/home-6/Contact";
@@ -6,7 +7,7 @@ import { features10 } from "@/data/features";
 import Image from "next/image";
 import { useState } from "react";
 import Faqs from "../home-1/Faq";
-import Features from "./Features";
+
 import Portfolio from "./Portfolio";
 import Pricing from "./Pricing";
 import Service from "./Service";
@@ -150,8 +151,9 @@ export default function Home6({ onePage = false, dark = false }) {
               <h2 className="section-caption mb-20 mb-xs-10">Our Services</h2>
               <h3
                 style={{ color: "white" }}
-                className="section-title mb-0 mb-sm-20"
+                className="section-title-small mb-0 mb-sm-20"
               >
+                Building The Future Of Your Business,
                 <span
                   className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
                   style={{
@@ -162,9 +164,8 @@ export default function Home6({ onePage = false, dark = false }) {
                     fontWeight: "bold",
                   }}
                 >
-                  Smart Solutions{" "}
-                </span>{" "}
-                for Every Business.
+                  Digitally.
+                </span>
               </h3>
             </div>
             <div className="col-md-4 col-lg-6 d-flex align-items-end">
@@ -232,12 +233,14 @@ export default function Home6({ onePage = false, dark = false }) {
           <Service />
         </div>
       </section>
-      <section
+      {/* Features Section */}
+      {/* <section
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""} `}
       >
         <Features />
-      </section>
+      </section> */}
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
+      {/* portfolio section */}
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
@@ -290,15 +293,6 @@ export default function Home6({ onePage = false, dark = false }) {
         } bg-scroll`}
       > */}
       {/* <Newsletter /> */}
-      {/* </section> */}
-      <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        } `}
-        id="pricing"
-      >
-        <Pricing />
-      </section>
 
       {/* power of design section start */}
       <section
@@ -315,7 +309,7 @@ export default function Home6({ onePage = false, dark = false }) {
             <div className="col-md-12 col-lg-6">
               <h3
                 style={{ color: "white" }}
-                className="section-title mb-0 mb-sm-20"
+                className="section-title-small mb-0 mb-sm-20"
               >
                 We Use The Power Of Design To Solve Complex Problems.
               </h3>
@@ -329,7 +323,7 @@ export default function Home6({ onePage = false, dark = false }) {
               <div className="services-5-body d-flex align-items-center">
                 <div className="d-flex flex-column mb-30">
                   <div className="w-100">
-                    <h4 className="services-3-title text-white pt-4">
+                    <h4 className="services-6-title text-white pt-4">
                       We're Professional
                     </h4>
                     <p
@@ -340,7 +334,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     </p>
                   </div>
                   <div className="w-100">
-                    <h4 className="services-3-title text-white pt-4">
+                    <h4 className="services-6-title text-white pt-4">
                       Tailored Strategies
                     </h4>
                     <p
@@ -351,7 +345,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     </p>
                   </div>
                   <div className="w-100">
-                    <h4 className="services-3-title text-white pt-4">
+                    <h4 className="services-6-title text-white pt-4">
                       Expert Developers
                     </h4>
                     <p
@@ -362,7 +356,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     </p>
                   </div>
                   <div className="w-100">
-                    <h4 className="services-3-title text-white pt-4">
+                    <h4 className="services-6-title text-white pt-4">
                       Latest Technology
                     </h4>
                     <p
@@ -381,7 +375,16 @@ export default function Home6({ onePage = false, dark = false }) {
           </div>
         </div>
       </section>
-      {/* power of design section end */}
+      {/* </section> */}
+      <section
+        className={`page-section  scrollSpysection  ${
+          dark ? "bg-dark-1 light-content" : ""
+        } `}
+        id="pricing"
+      >
+        <Pricing />
+      </section>
+      {/* Frequently Asked Questions */}
       <section className="page-section z-index-1">
         <div className="container position-relative">
           <div className="row position-relative">
@@ -394,7 +397,7 @@ export default function Home6({ onePage = false, dark = false }) {
             </div>
 
             <div className="col-lg-6 col-xl-6">
-              <h3 className="section-title mb-30">
+              <h3 className="section-title-small mb-30">
                 Frequently Asked <br />
                 Questions
               </h3>
@@ -434,6 +437,7 @@ export default function Home6({ onePage = false, dark = false }) {
           <Form togglePopup={togglePopup} />
         </Popup>
       </section>
+     <FooterTop/>
     </>
   );
 }

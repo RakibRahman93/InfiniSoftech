@@ -10974,7 +10974,7 @@ a.blog-item-more:hover {
   background: #fff;
   box-shadow: var(--box-shadow-block);
   transition: var(--transition-default);
-  border:1px solid #CFCFCF;
+  border: 1px solid #cfcfcf;
   border-radius: 8px !important;
 }
 .pricing-item-inner:hover {
@@ -12321,7 +12321,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
   transform: translateY(-50%);
   color: var(--color-dark-1);
   font-family: "icons" !important;
-  font-size: 22px;
+  font-size: 21px;
   text-align: center;
   transition: var(--transition-default);
 }
@@ -12331,7 +12331,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
 }
 .toggle > dd {
   margin-bottom: 1.55em;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.625;
   opacity: 1;
 }
@@ -12849,4 +12849,9 @@ html:not(.mobile) .owl-animate-fadeInDown {
   .works-filter.works-filter-fancy a:hover {
     padding: 10px 50px;
   }
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  font-size: 16px;
 }

@@ -2,7 +2,7 @@ import { services3aMain, servicesMain } from "@/data/services";
 import Image from "next/image";
 const ServiceMain = ({ src, title, text }) => (
   <>
-    <div className="col-md-4 d-flex align-items-stretch">
+    <div className="col-md-6 col-lg-4 d-flex align-items-stretch">
       <div
         style={{
           backgroundColor: "#051D55",
@@ -27,9 +27,13 @@ const ServiceMain = ({ src, title, text }) => (
           </div>
           <div className="services-5-body d-flex align-items-center">
             <div className="w-100">
-              <h4 className="services-5-title text-white pt-4">{title}</h4>
+              <h4 className="services-6-title text-white pt-4">{title}</h4>
               <p
-                style={{ fontWeight: "300", lineHeight: "25px" }}
+                style={{
+                  fontWeight: "300",
+                  lineHeight: "25px",
+                  fontSize: "14px",
+                }}
                 className="services-5-text text-white mb-0"
               >
                 {text}
@@ -44,7 +48,7 @@ const ServiceMain = ({ src, title, text }) => (
 
 const ServiceItem2 = ({ src, title, text }) => (
   <>
-    <div className="col-md-6 d-flex align-items-stretch">
+    <div className="col-lg-6 col-md-6 d-flex align-items-stretch">
       <div
         style={{
           backgroundColor: "#051D55",
@@ -69,9 +73,13 @@ const ServiceItem2 = ({ src, title, text }) => (
           </div>
           <div className="services-5-body d-flex align-items-center">
             <div className="w-100">
-              <h4 className="services-5-title text-white pt-4">{title}</h4>
+              <h4 className="services-6-title text-white pt-4">{title}</h4>
               <p
-                style={{ fontWeight: "300", lineHeight: "25px" }}
+                style={{
+                  fontWeight: "300",
+                  lineHeight: "25px",
+                  fontSize: "14px",
+                }}
                 className="services-5-text mb-0 text-white"
               >
                 {text}
