@@ -22,7 +22,7 @@ const Slider = () => {
       breakpoints={{
         768: { slidesPerView: 3 }, // Show 3 slides on larger screens
       }}
-      className="wow fadeInUp w-full"
+      className="wow fadeInUp w-full" data-wow-delay="0.5s"
     >
       <SwiperSlide>
         <img
