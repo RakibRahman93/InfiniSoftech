@@ -7,12 +7,12 @@ const FooterTop = () => {
         style={{
           background: "linear-gradient(220deg, #621ABE 0%, #051D55 70%)",
         }}
-        className="page-section scrollSpysection"
+        className="py-4 scrollSpysection"
         id="footer-top"
       >
-        <div className="container py-2">
-          <div className="row justify-content-center">
-            <div className="col-md-8">
+        <div className="container py-2 position-relative">
+          <div className="row">
+            <div>
               <div className="contact-form-wrapper">
                 <div className="d-flex justify-content-between align-items-center mb-4">
                   <div>

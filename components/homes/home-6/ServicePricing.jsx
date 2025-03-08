@@ -14,7 +14,12 @@ export default function ServicePricing() {
           <h3 className="section-title-small mb-10">Tech Staffing Cost</h3>
           <p
             className="services-5-text mb-0"
-            style={{ fontWeight: "300", lineHeight: "25px", fontSize: "16px" }}
+            style={{
+              fontWeight: "500",
+              lineHeight: "25px",
+              fontSize: "16px",
+              color: "#7E7E7E",
+            }}
           >
             Offshore tech staffing often comes with hidden fees, leaving clients
             frustrated and uncertain. At Infinisoft Technology , we do things
@@ -26,7 +31,7 @@ export default function ServicePricing() {
       </div>
 
       <div className="row">
-        <div className="col-xl-10 offset-xl-1">
+        <div className="col-xl-12">
           {/* Nav Tabs */}
           <div className="mb-20 mb-sm-20 text-center d-flex justify-content-center">
             <ul

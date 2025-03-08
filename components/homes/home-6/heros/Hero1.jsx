@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
+import Slider from "../Slider";
 export default function Hero1() {
   const [isOpen, setOpen] = useState(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -16,13 +17,13 @@ export default function Hero1() {
   return (
     <>
       {/* End Background Shape */}
-      <div className="container position-relative d-flex align-items-center pt-140 pt-sm-120 ">
+      <div className="position-relative d-flex align-items-center pt-140 pt-sm-120 ">
         {/* Home Section Content */}
         <div className="home-content text-start">
           <div className="row" style={{ justifyContent: "space-between" }}>
             {/* Home Section Text */}
             <div className="col-md-10 offset-md-1  offset-lg-1 col-xl-10 d-flex align-items-center mb-md-60 mb-sm-30">
-              <div className="w-100 text-center">
+              <div className="w-100 text-center container">
                 <h1 className="hs-title-10 mb-30">
                   <span
                     className="wow charsAnimIn fadeInUp"
@@ -152,7 +153,7 @@ export default function Hero1() {
               </div>
             </div>
             {/* add reviews section start */}
-            <div className="wow charsAnimIn fadeInUp container text-center my-4" data-wow-delay="1.0s">
+            <div className="container text-center mt-4 wow fadeInUp">
               {/* Profile Images with Overlapping */}
               <div
                 className="d-flex justify-content-center align-items-center"
@@ -193,7 +194,6 @@ export default function Hero1() {
               </div>
             </div>
             {/* add reviews section end */}
-
             {/* <div className="col-lg-6 col-xl-6 d-flex align-items-center">
               <div className="w-100 wow fadeInLeft" data-wow-delay="0.7s">
                 <div className="position-relative mt-40 mb-20">
@@ -223,7 +223,7 @@ export default function Hero1() {
             >
               <div className="position-relative">
                 <div className="row ">
-                  <div className="col-md-12 col-sm-4 mb-xs-50 d-flex flex-wrap justify-content-center padding-top-lg">
+                  <div className="col-md-12 col-sm-4 mb-xs-50 d-flex flex-wrap justify-content-center padding-top-sm">
                     <div className="pad-top-lg">
                       <Image
                         // style={{marginTop:"3.7rem"}}
@@ -252,6 +252,7 @@ export default function Hero1() {
                   </div>
                 </div>
               </div>
+
               <div
                 className="decoration-5 d-none d-sm-block"
                 data-rellax-y=""
@@ -260,68 +261,11 @@ export default function Hero1() {
               ></div>
             </div>
             {/* End Image */}
-            {/* Start of tech stack */}
-            <div
-              className="mob-hide w-100 wow fadeInLeft p-50"
-              data-wow-delay="0.7s"
-            >
-              <div className="position-relative mt-20 ">
-                <div className="row justify-content-center">
-                  <div className="col-md-10 col-sm-4 d-flex flex-wrap justify-content-space-between p-xs-50">
-                    <div className="" style={{ alignContent: "center" }}>
-                      <Image
-                        style={{}}
-                        src="/assets/images/demo-fancy/techstack/nextjs.png"
-                        width={130}
-                        height={180}
-                        alt="Image Description"
-                      />
-                    </div>
-                    <div className="" style={{ alignContent: "center" }}>
-                      <Image
-                        src="/assets/images/demo-fancy/techstack/reactjs.png"
-                        width={80}
-                        height={90}
-                        alt="Image Description"
-                      />
-                    </div>
-                    <div className="">
-                      <Image
-                        style={{}}
-                        src="/assets/images/demo-fancy/techstack/node.png"
-                        width={180}
-                        height={180}
-                        alt="Image Description"
-                      />
-                    </div>
-                    <div className="" style={{ alignContent: "center" }}>
-                      <Image
-                        style={{}}
-                        src="/assets/images/demo-fancy/techstack/wordpress.png"
-                        width={70}
-                        height={100}
-                        alt="Image Description"
-                      />
-                    </div>
-                    <div className="" style={{ alignContent: "center" }}>
-                      <Image
-                        style={{}}
-                        src="/assets/images/demo-fancy/techstack/figma.png"
-                        width={130}
-                        height={150}
-                        alt="Image Description"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="decoration-5 d-none d-sm-block"
-                data-rellax-y=""
-                data-rellax-speed="-0.7"
-                data-rellax-percentage="0.5"
-              ></div>
+            <div className="position-relative">
+              <Slider />
             </div>
+            {/* Start of tech stack */}
+
             {/* End of tech stack */}
           </div>
         </div>
@@ -329,6 +273,69 @@ export default function Hero1() {
         {/* Scroll Down */}
 
         {/* End Scroll Down */}
+      </div>
+      <div className="container">
+        <div
+          className="mob-hide w-100 wow fadeInLeft p-50"
+          data-wow-delay="0.7s"
+        >
+          <div className="position-relative mt-20 ">
+            <div className="row justify-content-center">
+              <div className="col-md-10 col-sm-4 d-flex flex-wrap justify-content-space-between p-xs-50">
+                <div className="" style={{ alignContent: "center" }}>
+                  <Image
+                    style={{}}
+                    src="/assets/images/demo-fancy/techstack/nextjs.png"
+                    width={130}
+                    height={180}
+                    alt="Image Description"
+                  />
+                </div>
+                <div className="" style={{ alignContent: "center" }}>
+                  <Image
+                    src="/assets/images/demo-fancy/techstack/reactjs.png"
+                    width={80}
+                    height={90}
+                    alt="Image Description"
+                  />
+                </div>
+                <div className="">
+                  <Image
+                    style={{}}
+                    src="/assets/images/demo-fancy/techstack/node.png"
+                    width={180}
+                    height={180}
+                    alt="Image Description"
+                  />
+                </div>
+                <div className="" style={{ alignContent: "center" }}>
+                  <Image
+                    style={{}}
+                    src="/assets/images/demo-fancy/techstack/wordpress.png"
+                    width={70}
+                    height={100}
+                    alt="Image Description"
+                  />
+                </div>
+                <div className="" style={{ alignContent: "center" }}>
+                  <Image
+                    style={{}}
+                    src="/assets/images/demo-fancy/techstack/figma.png"
+                    width={130}
+                    height={150}
+                    alt="Image Description"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="decoration-5 d-none d-sm-block"
+            data-rellax-y=""
+            data-rellax-speed="-0.7"
+            data-rellax-percentage="0.5"
+          ></div>
+        </div>
       </div>
       <ModalVideo
         channel="youtube"

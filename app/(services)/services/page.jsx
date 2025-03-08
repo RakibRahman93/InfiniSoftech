@@ -163,8 +163,8 @@ export default function FancyServicesPage() {
               <div className="container position-relative">
                 <div className="row mb-60 mb-sm-40">
                   <div className="d-flex flex-wrap">
-                    <div className="col-md-6 col-lg-7 d-flex flex-column gap-4">
-                      <h2 className="section-caption mb-0 mb-xs-0">
+                    <div className="col-md-6 col-lg-7 d-flex flex-column">
+                      <h2 className="section-caption mb-2 mb-xs-0">
                         Our Services
                       </h2>
                       <p
@@ -174,7 +174,7 @@ export default function FancyServicesPage() {
                         Why Staff
                       </p>
                       <h2
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white text-transparent bg-clip-text font-extrabold text-4xl md:text-5xl lg:text-6xl"
+                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white text-transparent bg-clip-text font-extrabold fs-64 fs-md-2 fs-lg-3 fs-xl-4 py-0"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -251,7 +251,7 @@ export default function FancyServicesPage() {
                   <div className="container">
                     <div className="d-flex flex-column">
                       <h2
-                        className="text-center section-title-small"
+                        className="text-center section-title-small mb-1"
                         style={{
                           color: "#1C1C57",
                         }}
@@ -259,8 +259,11 @@ export default function FancyServicesPage() {
                         A simple 3-step process to hire
                       </h2>
                       <p
-                        style={{ color: "#000", fontSize: "16px !important" }}
-                        className="mb-0 mb-sm-20 text-center"
+                        style={{
+                          color: "#7E7E7E",
+                          fontSize: "16px !important",
+                        }}
+                        className="mb-0 mb-sm-20 text-center fw-bolder"
                       >
                         Getting started with InfiniSoft's staff augmentation is
                         quick and seamless. Here's how:
@@ -319,7 +322,7 @@ export default function FancyServicesPage() {
                   <div className="container">
                     <div className="d-flex flex-column justify-center align-items-center">
                       <h2
-                        className="text-center section-title-small"
+                        className="text-center section-title-small mb-1"
                         style={{
                           color: "#1C1C57",
                         }}
@@ -328,11 +331,11 @@ export default function FancyServicesPage() {
                       </h2>
                       <p
                         style={{
-                          color: "#000",
+                          color: "#7E7E7E",
                           fontSize: "16px !important",
                           width: "70%",
                         }}
-                        className="mb-0 mb-sm-20 text-center"
+                        className="mb-0 mb-sm-20 text-center fw-bolder"
                       >
                         At InfiniSoft Technology, we offer expertise across a
                         diverse range of technologies, ensuring the perfect fit
@@ -395,7 +398,7 @@ export default function FancyServicesPage() {
                   <div className="container">
                     <div className="d-flex flex-column">
                       <h2
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white text-transparent bg-clip-text font-extrabold section-title-small text-center"
+                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white text-transparent bg-clip-text font-extrabold section-title-small text-center mb-1"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -408,7 +411,11 @@ export default function FancyServicesPage() {
                         Solution
                       </h2>
                       <p
-                        style={{ color: "white", fontSize: "18px !important" }}
+                        style={{
+                          color: "white",
+                          fontSize: "18px !important",
+                          fontWeight: "400 !important",
+                        }}
                         className="section-title mb-0 mb-sm-20 text-center"
                       >
                         You Can Expect from Our Teams
@@ -455,7 +462,7 @@ export default function FancyServicesPage() {
                 <ServiceSolution />
               </div>
             </section>
-            <div className="container py-5 d-flex justify-content-center">
+            <div className="container py-5 d-flex justify-content-center dshape">
               <div
                 class="card p-4 res-card"
                 style={{
