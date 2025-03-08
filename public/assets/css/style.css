@@ -3148,12 +3148,15 @@ a.bg-video-button-pause {
 /*
  * Section BG svg shape
  */
-
+.main-nav {
+  border-bottom: 1px solid #e6e6e6;
+}
+,
 .bg-shape-1 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 90.1875%;
+  width: 100%;
 }
 .bg-shape-1 img {
   width: 100%;
@@ -12807,7 +12810,6 @@ html:not(.mobile) .owl-animate-fadeInDown {
 }
 /* for devices less than and equal to */
 @media (max-width: 768px) {
-  
   .works-filter.works-filter-fancy {
     font-size: 12px;
     font-weight: 600;
@@ -12856,4 +12858,3 @@ html:not(.mobile) .owl-animate-fadeInDown {
 .btn-lg {
   font-size: 16px;
 }
-

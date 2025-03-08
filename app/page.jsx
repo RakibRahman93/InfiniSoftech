@@ -3,7 +3,6 @@ import Header6 from "@/components/headers/Header6";
 import Home6 from "@/components/homes/home-6";
 import Hero1 from "@/components/homes/home-6/heros/Hero1";
 import { fancyMultipage } from "@/data/menu";
-import Image from "next/image";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {
@@ -17,7 +16,7 @@ export default function Home6MainDemoMultiPage() {
       <Toaster position="top-right" reverseOrder={false} />
       <div className="theme-fancy">
         <div className="page" id="top">
-          <nav className="main-nav transparent stick-fixed wow-menubar wch-unset">
+          <nav className="main-nav transparent stick-fixed wow-menubar wch-unset border-b">
             <Header6 links={fancyMultipage} />
           </nav>
           <main id="main">
@@ -26,15 +25,14 @@ export default function Home6MainDemoMultiPage() {
               id="home"
             >
               <div className="bg-shape-1 wow fadeIn">
-                <Image
+                {/* <Image
                   width="1443"
                   height="844"
-                  src="/assets/images/demo-fancy/image.svg"
+                  src="/assets/images/demo-fancy/Hero_background.png"
                   alt=""
-                />
+                /> */}
               </div>
               <Hero1 />
-              
             </section>
 
             <Home6 />
