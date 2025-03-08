@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
+import Slider from "../Slider";
 export default function Hero1() {
   const [isOpen, setOpen] = useState(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -16,7 +17,10 @@ export default function Hero1() {
   return (
     <>
       {/* End Background Shape */}
-      <div className="container position-relative d-flex align-items-center pt-140 pt-sm-120 ">
+      <div
+        className="container position-relative d-flex align-items-center pt-140 pt-sm-120 "
+        
+      >
         {/* Home Section Content */}
         <div className="home-content text-start">
           <div className="row" style={{ justifyContent: "space-between" }}>
@@ -152,7 +156,7 @@ export default function Hero1() {
               </div>
             </div>
             {/* add reviews section start */}
-            <div className="container text-center my-4 wow fadeInUp">
+            <div className="container text-center mt-4 wow fadeInUp">
               {/* Profile Images with Overlapping */}
               <div
                 className="d-flex justify-content-center align-items-center"
@@ -193,7 +197,6 @@ export default function Hero1() {
               </div>
             </div>
             {/* add reviews section end */}
-
             {/* <div className="col-lg-6 col-xl-6 d-flex align-items-center">
               <div className="w-100 wow fadeInLeft" data-wow-delay="0.7s">
                 <div className="position-relative mt-40 mb-20">
@@ -223,7 +226,7 @@ export default function Hero1() {
             >
               <div className="position-relative">
                 <div className="row ">
-                  <div className="col-md-12 col-sm-4 mb-xs-50 d-flex flex-wrap justify-content-center padding-top-lg">
+                  <div className="col-md-12 col-sm-4 mb-xs-50 d-flex flex-wrap justify-content-center padding-top-sm">
                     <div className="pad-top-lg">
                       <Image
                         // style={{marginTop:"3.7rem"}}
@@ -252,6 +255,7 @@ export default function Hero1() {
                   </div>
                 </div>
               </div>
+
               <div
                 className="decoration-5 d-none d-sm-block"
                 data-rellax-y=""
@@ -260,6 +264,9 @@ export default function Hero1() {
               ></div>
             </div>
             {/* End Image */}
+            <div className="container-fluid position-relative">
+              <Slider />
+            </div>
             {/* Start of tech stack */}
             <div
               className="mob-hide w-100 wow fadeInLeft p-50"
@@ -330,6 +337,7 @@ export default function Hero1() {
 
         {/* End Scroll Down */}
       </div>
+
       <ModalVideo
         channel="youtube"
         youtube={{ mute: 0, autoplay: 0 }}

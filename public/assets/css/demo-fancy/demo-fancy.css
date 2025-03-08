@@ -1,6 +1,6 @@
 .theme-fancy {
-  --font-global: "Inter", sans-serif;
-  --font-alt: "Inter", sans-serif;
+  --font-global: "Poppins", sans-serif;
+  --font-alt: "Poppins", sans-serif;
   --color-dark-1: #343d55;
   --color-dark-2: #3f4963;
   --color-dark-3: #3f485e;
@@ -908,5 +908,34 @@
     width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+}
+
+/* Custom responsive font size */
+.fs-64 {
+  font-size: 64px;
+}
+
+.dshape {
+  background-image: url("/assets/images/shape-services.png");
+  background-position: calc(96% - -50px) 206px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .fs-64 {
+    font-size: 48px;
+  }
+  .dshape {
+    background-position: calc(91% - -54px) 241px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fs-64 {
+    font-size: 36px;
+  }
+  .dshape {
+    background-image: none;
   }
 }

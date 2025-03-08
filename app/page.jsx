@@ -2,7 +2,6 @@ import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
 import Home6 from "@/components/homes/home-6";
 import Hero1 from "@/components/homes/home-6/heros/Hero1";
-import Slider from "@/components/homes/home-6/Slider";
 import { fancyMultipage } from "@/data/menu";
 import Image from "next/image";
 import { Toaster } from "react-hot-toast";
@@ -35,7 +34,7 @@ export default function Home6MainDemoMultiPage() {
                 />
               </div>
               <Hero1 />
-              <Slider />
+              
             </section>
 
             <Home6 />

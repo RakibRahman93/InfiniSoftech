@@ -1,6 +1,7 @@
 import { services3, services3a } from "@/data/services";
 import Image from "next/image";
-const ServiceItem = ({ src, title, text }) => (
+import Link from "next/link";
+const ServiceItem = ({ src, title, text, link }) => (
   <>
     <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
       <div
@@ -34,10 +35,23 @@ const ServiceItem = ({ src, title, text }) => (
                   lineHeight: "25px",
                   fontSize: "14px",
                 }}
-                className="services-5-text text-white mb-0"
+                className="services-5-text text-white mb-4"
               >
                 {text}
               </p>
+              <Link
+                href={link} // Use dynamic link here
+                className=""
+                style={{
+                  background:
+                    "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  fontWeight: "bold",
+                }}
+              >
+                View Details
+              </Link>
             </div>
           </div>
         </div>
@@ -46,7 +60,7 @@ const ServiceItem = ({ src, title, text }) => (
   </>
 );
 
-const ServiceItem2 = ({ src, title, text }) => (
+const ServiceItem2 = ({ src, title, text, link }) => (
   <>
     <div className="col-md-6 d-flex align-items-stretch">
       <div
@@ -80,10 +94,23 @@ const ServiceItem2 = ({ src, title, text }) => (
                   lineHeight: "25px",
                   fontSize: "14px",
                 }}
-                className="services-5-text mb-0 text-white"
+                className="services-5-text mb-4 text-white"
               >
                 {text}
               </p>
+              <Link
+                href={link} // Use dynamic link here
+                className=""
+                style={{
+                  background:
+                    "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  fontWeight: "bold",
+                }}
+              >
+                View Details
+              </Link>
             </div>
           </div>
         </div>
