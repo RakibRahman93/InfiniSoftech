@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { toast } from "react-hot-toast";
-import "../Popup.css";
 
 export default function Form({ togglePopup }) {
   const [name, setName] = useState("");
@@ -44,7 +43,7 @@ export default function Form({ togglePopup }) {
         setOptions("");
         setSubject("");
         setMessage("");
-      togglePopup();
+        togglePopup();
       } else {
         setStatus(`Error: ${result.message || "Something went wrong"}`);
       }
@@ -55,16 +54,32 @@ export default function Form({ togglePopup }) {
   };
 
   return (
-    <div className="popup-form">
-      <h2 className="font-semibold text-center fs-2">
-        Contact Us
-      </h2>
-      <p className="font-semibold text-center">
-        We will get back to you soon!
-      </p>
-      <div className="popup-area">
-        <form className="popup-form-left space-y-4" onSubmit={handleSubmit}>
-          <div className="popup">
+    <div className="popup-form text-left">
+      <div className="d-flex flex-column text-start">
+        <h2
+          className="font-semibold section-5-title mb-0"
+          style={{ color: "#1C1C57", fontFamily: "Montserrat" }}
+        >
+          Get in{" "}
+          <span
+            style={{
+              background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            Touch
+          </span>
+        </h2>
+        <p className="font-semibold">We will get back to you soon!</p>
+      </div>
+
+      <div className="popup-area row">
+        <div className="col-md-6 col-lg-7">
+          <form
+            className="popup-form-left space-y-4 wow fadeInUp"
+            onSubmit={handleSubmit}
+          >
             <div className="w-full">
               <input
                 type="text"
@@ -85,8 +100,7 @@ export default function Form({ togglePopup }) {
                 required
               />
             </div>
-          </div>
-          <div className="popup">
+
             <div className="w-full">
               <input
                 type="tel"
@@ -117,45 +131,157 @@ export default function Form({ togglePopup }) {
                 <option value="Prototyping">Prototyping</option>
               </select>
             </div>
-          </div>
-          <div className="w-full">
-            <input
-              type="text"
-              placeholder="Subject"
-              className="popup-input w-full"
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
-              required
-            />
-          </div>
-          <div className="w-full">
-            <textarea
-              placeholder="Your Message"
-              className="popup-input w-full"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            />
-          </div>
 
-          <button
-            type="submit"
-            className="btn btn-mod btn-color btn-large btn-round btn-hover-anim me-1 mb-xs-10"
-          >
-            <span>Submit</span>
-          </button>
-        </form>
-        
-        <div className="popup-form-right mt-100">
-          <a
-            href="https://wa.me/+8801858333238"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="whatsapp-link"
-          >
-            <i className="fab fa-whatsapp whatsapp-icon"></i>
-            <span className="whatsapp-text">Send a message!</span>
-          </a>
+            <div className="w-full">
+              <input
+                type="text"
+                placeholder="Subject"
+                className="popup-input w-full"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                required
+              />
+            </div>
+            <div className="w-full">
+              <textarea
+                placeholder="Your Message"
+                className="popup-input w-full"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
+              />
+            </div>
+
+            <button
+              className="btn btn-primary submit-button w-full"
+              type="submit"
+              style={{
+                borderRadius: "50px",
+                height: "2.7rem",
+                width: "100%",
+                background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
+                border: "none",
+                color: "white",
+                fontSize: "14px",
+                fontWeight: "bold",
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
+              }}
+            >
+              Leave us a Message <i className="bi bi-arrow-right"></i>
+            </button>
+            <div className="row py-3">
+              <div className="col-md-8 col-lg-5">
+                <div className="d-flex align-items-center gap-2">
+                  <div className="icon">
+                    <img
+                      src="assets/images/whatsup.svg"
+                      alt="WhatsApp"
+                      className="img-fluid w-100"
+                    />
+                  </div>
+                  <div className="d-flex flex-column justify-content-center text-start">
+                    <p
+                      className="mb-0 fw-bold"
+                      style={{
+                        fontFamily: "Poppins",
+                        color: "#1C1C57",
+                        fontSize: "14px",
+                      }}
+                    >
+                      WhatsApp
+                    </p>
+                    <p
+                      className="mb-0"
+                      style={{
+                        fontFamily: "Poppins",
+                        color: "#E25B72",
+                        fontSize: "13px",
+                        fontWeight: "bolder",
+                      }}
+                    >
+                      <a
+                        href="tel:+8801858333238"
+                        style={{ color: "#E25B72", textDecoration: "none" }}
+                      >
+                        +8801858333238
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 col-lg-7">
+                <div className="d-flex align-items-center gap-2">
+                  <div className="icon">
+                    <img
+                      src="assets/images/email.svg"
+                      alt="WhatsApp"
+                      className="img-fluid w-100"
+                      style={{ width: "100%" }}
+                    />
+                  </div>
+                  <div className="d-flex flex-column justify-content-center text-start">
+                    <p
+                      className="mb-0 fw-bold"
+                      style={{
+                        fontFamily: "Poppins",
+                        color: "#1C1C57",
+                        fontSize: "14px",
+                      }}
+                    >
+                      EMAIL
+                    </p>
+                    <p
+                      className="mb-0"
+                      style={{
+                        fontFamily: "Poppins",
+                        color: "#E25B72",
+                        fontSize: "13px",
+                        fontWeight: "bolder",
+                      }}
+                    >
+                      <a
+                        href="mailto:info@infinisoftech.com"
+                        style={{ color: "#E25B72", textDecoration: "none" }}
+                      >
+                        info@infinisoftech.com
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div className="col-md-6 col-lg-5 p-0">
+          <div className="">
+            {/* Decorative Image */}
+            <div className="decoration-11 d-none d-xl-block">
+              <div className="wow fadeInUp">
+                {/* <Image
+                  src="/assets/images/demo-fancy/contact-section-image.png"
+                  width={225}
+                  height={250}
+                  alt=""
+                /> */}
+              </div>
+            </div>
+            {/* End Decorative Image */}
+            {/* <div className="box-shadow round p-4 p-sm-5">
+              <h4 className="h3 mb-30">Get in Touch</h4> */}
+            {/* Google Map */}
+            <div className="map-boxed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.0719894066533!2d90.41366707619392!3d23.780450678649846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c79c1e7f822f%3A0x6c343f84ca86b6c9!2sNavana%20Tower%2C%2045%20Gulshan%20Ave%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1733060682121!5m2!1sen!2sbd"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="mapData"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
