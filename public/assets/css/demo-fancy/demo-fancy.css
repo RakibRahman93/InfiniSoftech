@@ -915,6 +915,12 @@
 .fs-64 {
   font-size: 64px;
 }
+.fs-24 {
+  font-size: 24px;
+}
+.fs-footer-title {
+  font-size: 64px;
+}
 
 .dshape {
   background-image: url("/assets/images/shape-services.png");
@@ -933,14 +939,21 @@
   background-size: cover; /* or contain, depending on how you want the image to scale */
   background-position: top center; /* aligns the image to the top */
   background-repeat: no-repeat; /* to prevent the image from repeating */
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
   .fs-64 {
     font-size: 48px;
   }
+  .fs-footer-title {
+    font-size: 34px;
+  }
   .dshape {
     background-position: calc(91% - -54px) 241px;
+  }
+  .fs-24 {
+    font-size: 16px;
   }
 }
 
@@ -948,7 +961,13 @@
   .fs-64 {
     font-size: 36px;
   }
+  .fs-24 {
+    font-size: 16px;
+  }
   .dshape {
     background-image: none;
+  }
+  .fs-footer-title {
+    font-size: 25px;
   }
 }

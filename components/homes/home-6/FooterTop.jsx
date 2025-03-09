@@ -14,13 +14,13 @@ const FooterTop = () => {
           <div className="row">
             <div>
               <div className="contact-form-wrapper">
-                <div className="d-flex justify-content-between align-items-center mb-4">
+                <div className="d-flex justify-content-between align-items-center mb-5">
                   <div>
-                    <p className="text-white">Get Started</p>
-                    <h2 className="mb-3 text-white section-5-title mb-2">
+                    <p className="text-white fs-24">Get Started</p>
+                    <h2 className="mb-3 text-white fs-footer-title mb-0">
                       Get in touch with us.
                     </h2>
-                    <h2 className="mb-3 text-white section-5-title">
+                    <h2 className="mb-3 text-white fs-footer-title">
                       We're here to assist you.
                     </h2>
                   </div>
@@ -34,7 +34,7 @@ const FooterTop = () => {
                     <div className="col-md-4 mb-3">
                       <input
                         type="text"
-                        className="form-control bg-transparent formDesign"
+                        className="form-control bg-transparent formDesign fs-24 ps-0"
                         placeholder="Your Name"
                         required
                       />
@@ -42,7 +42,7 @@ const FooterTop = () => {
                     <div className="col-md-4 mb-3">
                       <input
                         type="email"
-                        className="form-control bg-transparent formDesign"
+                        className="form-control bg-transparent formDesign fs-24 ps-0"
                         placeholder="Email Address"
                         required
                       />
@@ -50,7 +50,7 @@ const FooterTop = () => {
                     <div className="col-md-4 mb-3">
                       <input
                         type="tel"
-                        className="form-control bg-transparent formDesign"
+                        className="form-control bg-transparent formDesign fs-24 ps-0"
                         placeholder="Phone Number (optional)"
                       />
                     </div>
@@ -58,27 +58,23 @@ const FooterTop = () => {
 
                   <div className="mb-3">
                     <textarea
-                      className="form-control bg-transparent formDesign"
+                      className="form-control bg-transparent formDesign fs-24 ps-0 mb-5"
                       rows="5"
                       placeholder="Message"
                       required
                     ></textarea>
                   </div>
-                  <div className="">
+                  <div>
                     <button
-                      className="btn btn-primary submit-button"
-                      type="submit"
+                      className="btn btn-lg"
                       style={{
                         borderRadius: "50px",
-                        height: "2.7rem",
-                        minWidth: "12rem",
                         background:
                           "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
-                        border: "none",
                         color: "white",
-                        fontSize: "14px",
                         fontWeight: "bold",
                         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
+                        cursor: "pointer",
                       }}
                     >
                       Leave us a Message <i className="bi bi-arrow-right"></i>
