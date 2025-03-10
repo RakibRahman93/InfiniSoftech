@@ -114,7 +114,7 @@ export const services3 = [
     src: "/assets/images/demo-fancy/services/service2.svg",
     title: "Website Design & Development",
     text: "A well crafted website works for your business 24/7. ",
-    link: "/services/website-design-development", 
+    link: "/services/website-design-development",
   },
   {
     src: "/assets/images/demo-fancy/services/service3.svg",
@@ -215,6 +215,37 @@ export const techSolutionsData = [
     title: "Infrastructure",
   },
 ];
+export const uiuxhireData = [
+  {
+    src: "/assets/images/services/setp-01.svg",
+    title: "Research & Analysis",
+    text: "Gather user insights and market data through surveys, interviews, and competitive analysis to inform design decisions.",
+  },
+  {
+    src: "/assets/images/services/setp-02.svg",
+    title: "User Persona & Journey Mapping",
+    text: "Create personas and map user journeys to identify key interactions and optimize the user experience. ",
+  },
+  {
+    src: "/assets/images/services/setp-03.svg",
+    title: "Wireframing & Prototyping",
+    text: "Develop wireframes and prototypes to visualize structure and test functionality, making iterative improvements.",
+  },
+  
+];
+export const uiuxhireDatasecond = [
+  
+  {
+    src: "/assets/images/services/setp-04.svg",
+    title: "Design Execution & Iteration",
+    text: "Convert wireframes into visually appealing and interactive designs, refining based on feedback and testing.",
+  },
+  {
+    src: "/assets/images/services/setp-05.svg",
+    title: "Implementation & Evaluation",
+    text: "Ensure designs are implemented accurately, evaluate post-launch usability, and refine based on user feedback.",
+  }
+];
 export const processSolution = [
   {
     src: "/assets/images/process/01.svg",
@@ -247,6 +278,35 @@ export const servicesMain = [
     src: "/assets/images/demo-fancy/services/service3.svg",
     title: "Industry-leading expertise",
     text: "Our staff augmentation services provide access to top-tier professionals, including WordPress developers, product managers, data analysts, React and React Native developers, Laravel experts, full-stack engineers, and Figma designers. 🚀",
+  },
+];
+export const uiuxMain = [
+  {
+    src: "/assets/images/services/pototype.svg",
+    title: "UI/UX Design & Strategy",
+    text: "We merge creative design with strategic user experience planning to craft interfaces that are visually striking and easy to navigate.",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/service2.svg",
+    title: "Mobile & Web App UI/UX",
+    text: "Our expertise in mobile and web app UI/UX design ensures that your applications are accessible, engaging, and optimized for user interaction across all device types. ",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/service3.svg",
+    title: "User Testing & Feedback Integration",
+    text: "Our UI/UX design process includes rigorous user testing and feedback integration to ensure that the final product not only meets but exceeds user expectations.",
+  },
+];
+export const uiuxMain2 = [
+  {
+    src: "/assets/images/services/pototype.svg",
+    title: "Prototyping & Wireframing",
+    text: "Through prototyping and wireframing, we provide a visual preview of your project, allowing for iterative feedback and adjustments early in the design process. This approach helps streamline development and ensures that the final product aligns with user expectations and business goals.",
+  },
+  {
+    src: "/assets/images/services/design.svg",
+    title: "Conversion-Focused Design",
+    text: "Our UI/UX designs are focused on driving user actions and increasing conversions. By understanding user behavior and employing best UX practices, we create designs that not only look great but also work effectively to achieve your conversion targets.",
   },
 ];
 export const services3aMain = [

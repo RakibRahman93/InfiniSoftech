@@ -10,8 +10,10 @@ export default function ServicePricing() {
     <div className="container">
       <div className="row mb-50 mb-sm-30">
         <div className="col-md-8 offset-md-2 text-center">
-          <h2 className="section-caption">Pricing</h2>
-          <h3 className="section-title-small mb-10">Tech Staffing Cost</h3>
+          <h2 className="section-caption mb-0">Pricing</h2>
+          <h3 className="section-title-small mb-10">
+            Simple, transparent pricing
+          </h3>
           <p
             className="services-5-text mb-0"
             style={{
@@ -21,11 +23,9 @@ export default function ServicePricing() {
               color: "#7E7E7E",
             }}
           >
-            Offshore tech staffing often comes with hidden fees, leaving clients
-            frustrated and uncertain. At Infinisoft Technology , we do things
-            differently. Our pricing is clear, fair, and transparent—because we
-            believe that trust and honesty should be at the core of every
-            partnership. No surprises, just reliable, top-tier talent. 🚀
+            Post jobs and find qualified No Code Developers faster. All jobs are
+            syndicated to Google Jobs, our job board network, and published to
+            our Reddit, X, & LinkedIn Communities.
           </p>
         </div>
       </div>
