@@ -915,8 +915,9 @@
 .fs-64 {
   font-size: 64px;
 }
-.fs-24 {
-  font-size: 24px;
+
+.fs-48 {
+  font-size: 48px;
 }
 .fs-footer-title {
   font-size: 64px;
@@ -941,8 +942,15 @@
   background-repeat: no-repeat; /* to prevent the image from repeating */
   z-index: -1;
 }
-
+@media (max-width: 1024px) {
+  .fs-48 {
+    font-size: 35px;
+  }
+}
 @media (max-width: 768px) {
+  .fs-48 {
+    font-size: 40px;
+  }
   .fs-64 {
     font-size: 48px;
   }
@@ -958,6 +966,9 @@
 }
 
 @media (max-width: 576px) {
+  .fs-48 {
+    font-size: 28px;
+  }
   .fs-64 {
     font-size: 36px;
   }
