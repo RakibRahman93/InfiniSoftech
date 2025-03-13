@@ -174,7 +174,7 @@ export default function Form({ togglePopup }) {
                 <div className="d-flex align-items-center gap-2">
                   <div className="icon">
                     <img
-                      src="assets/images/whatsup.svg"
+                      src="/assets/images/whatsup.svg"
                       alt="WhatsApp"
                       className="img-fluid w-100"
                     />
@@ -213,7 +213,7 @@ export default function Form({ togglePopup }) {
                 <div className="d-flex align-items-center gap-2">
                   <div className="icon">
                     <img
-                      src="assets/images/email.svg"
+                      src="/assets/images/email.svg"
                       alt="WhatsApp"
                       className="img-fluid w-100"
                       style={{ width: "100%" }}
