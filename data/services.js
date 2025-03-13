@@ -233,6 +233,75 @@ export const uiuxhireData = [
   },
   
 ];
+export const webProcessData = [
+  {
+    src: "/assets/images/services/setp-01.svg",
+    title: "Discovery & Planning",
+    text: "Understanding your audience & goals.",
+  },
+  {
+    src: "/assets/images/services/setp-02.svg",
+    title: "Wireframing & UI/UX Design",
+    text: "Creating layout structures & early-stage visuals.",
+  },
+  {
+    src: "/assets/images/services/setp-03.svg",
+    title: "Development & Coding",
+    text: "Crafting a polished, modern look",
+  },
+  
+];
+export const mobileProcessData = [
+  {
+    src: "/assets/images/services/setp-01.svg",
+    title: "Discovery & Strategy",
+    text: "Understanding your audience & goals.",
+  },
+  {
+    src: "/assets/images/services/setp-02.svg",
+    title: "UI/UX Design & Wireframing",
+    text: "Creating layout structures & early-stage visuals.",
+  },
+  {
+    src: "/assets/images/services/setp-03.svg",
+    title: "App Development & Testing",
+    text: "Crafting a polished, modern look",
+  },
+  
+];
+export const seoProcessData = [
+  {
+    src: "/assets/images/services/setp-01.svg",
+    title: "SEO Audit & Research",
+    text: "Understanding your audience & goals.",
+  },
+  {
+    src: "/assets/images/services/setp-02.svg",
+    title: "On-Page Optimization",
+    text: "Creating layout structures & early-stage visuals.",
+  },
+  {
+    src: "/assets/images/services/setp-03.svg",
+    title: "Technical Fixes",
+    text: "Crafting a polished, modern look",
+  },
+  {
+    src: "/assets/images/services/setp-04.svg",
+    title: "Content Optimization & Blogging",
+    text: "Understanding your audience & goals.",
+  },
+  {
+    src: "/assets/images/services/setp-05.svg",
+    title: "Backlink Building & Off-Page SEO",
+    text: "Creating layout structures & early-stage visuals.",
+  },
+  {
+    src: "/assets/images/services/setp-03.svg",
+    title: "Monitoring & Reportings",
+    text: "Crafting a polished, modern look",
+  },
+  
+];
 export const uiuxhireDatasecond = [
   
   {
@@ -244,6 +313,32 @@ export const uiuxhireDatasecond = [
     src: "/assets/images/services/setp-05.svg",
     title: "Implementation & Evaluation",
     text: "Ensure designs are implemented accurately, evaluate post-launch usability, and refine based on user feedback.",
+  }
+];
+export const webProcessDatasecond = [
+  
+  {
+    src: "/assets/images/services/setp-04.svg",
+    title: "Testing & Optimization",
+    text: "Ensuring a seamless experience",
+  },
+  {
+    src: "/assets/images/services/setp-05.svg",
+    title: "Launch & Support",
+    text: "Delivering assets & guidelines for developers.",
+  }
+];
+export const mobileProcessDatasecond = [
+  
+  {
+    src: "/assets/images/services/setp-04.svg",
+    title: "Launch & Deployment",
+    text: "Ensuring a seamless experience",
+  },
+  {
+    src: "/assets/images/services/setp-05.svg",
+    title: "Ongoing Maintenance & Updates",
+    text: "Crafting a polished, modern look",
   }
 ];
 export const processSolution = [
@@ -307,6 +402,71 @@ export const uiuxMain2 = [
     src: "/assets/images/services/design.svg",
     title: "Conversion-Focused Design",
     text: "Our UI/UX designs are focused on driving user actions and increasing conversions. By understanding user behavior and employing best UX practices, we create designs that not only look great but also work effectively to achieve your conversion targets.",
+  },
+];
+
+export const mobileServicesData = [
+  {
+    src: "/assets/images/services/website/CustomWebsiteDesign.svg",
+    title: "Custom Mobile App Development",
+    text: "Native & cross-platform apps for iOS & Android",
+  },
+  {
+    src: "/assets/images/services/website/CustomWebsiteDesign.svg",
+    title: "UI/UX Design & Prototyping",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/services/website/business.svg",
+    title: "E-Commerce Mobile Apps",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/services/website/CustomWebsiteDesign.svg",
+    title: "On-Demand Apps",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/services/website/CustomWebsiteDesign.svg",
+    title: "AI & Chatbot Integration",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/services/website/business.svg",
+    title: "Business & Enterprise Apps",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+];
+export const seoServicesData = [
+  {
+    src: "/assets/images/services/website/CustomWebsiteDesign.svg",
+    title: "On-Page SEO",
+    text: "Optimizing your website’s content, structure, and performance",
+  },
+  {
+    src: "/assets/images/services/website/CustomWebsiteDesign.svg",
+    title: "Off-Page SEO & Link Building",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/services/website/business.svg",
+    title: "Technical SEO",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/services/website/CustomWebsiteDesign.svg",
+    title: "Keyword Research & Strategy",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/services/website/CustomWebsiteDesign.svg",
+    title: "Local SEO & Google My Business Optimization",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/services/website/business.svg",
+    title: "SEO Content Strategy",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
 ];
 export const services3aMain = [
