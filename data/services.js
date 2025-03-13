@@ -251,6 +251,7 @@ export const webProcessData = [
   },
   
 ];
+
 export const mobileProcessData = [
   {
     src: "/assets/images/services/setp-01.svg",
@@ -466,6 +467,38 @@ export const seoServicesData = [
   {
     src: "/assets/images/services/website/business.svg",
     title: "SEO Content Strategy",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+];
+export const webServicesData = [
+  {
+    src: "/assets/images/services/website/CustomWebsiteDesign.svg",
+    title: "Custom Website Design",
+    text: "Optimizing your website’s content, structure, and performance",
+  },
+  {
+    src: "/assets/images/services/website/CustomWebsiteDesign.svg",
+    title: "E-Commerce Development",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/services/website/business.svg",
+    title: "Business Websites",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/services/website/CustomWebsiteDesign.svg",
+    title: "Web App Development",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/services/website/CustomWebsiteDesign.svg",
+    title: "UI/UX Optimization",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    src: "/assets/images/services/website/business.svg",
+    title: "SEO & Speed Optimization",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
 ];
