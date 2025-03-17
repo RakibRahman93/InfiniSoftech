@@ -104,9 +104,19 @@ export const fancyMultipage = [
   { href: "/", text: "Home", class: "active" },
   { href: "/case-studies", text: "Case Studies" },
   { href: "/about", text: "About" },
-  { href: "/services", text: "Services" },
+  {
+    href: "#",
+    text: "Services",
+    className: "dropdown",
+    dropdown: [
+      { href: "/services/uiux", text: "Ui/UX Design" },
+      { href: "/services/websiteDesign", text: "Website Design" },
+      { href: "/services/SeoService", text: "Seo Services" },
+      { href: "/services/MobileApp", text: "Mobile App Development" },
+    ],
+  },
   { href: "/portfolio", text: "Portfolio" },
- 
+
   // { href: "/contact", text: "Contact" },
 ];
 
