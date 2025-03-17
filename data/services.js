@@ -108,26 +108,26 @@ export const services3 = [
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "UIUX Design",
     text: "Good design isn’t just about looks. It’s about making things work better for you and your customers.",
-    link: "/services/uiux-design",
+    link: "/services/uiux",
   },
   {
     src: "/assets/images/demo-fancy/services/service2.svg",
     title: "Website Design & Development",
     text: "A well crafted website works for your business 24/7. ",
-    link: "/services/website-design-development",
+    link: "/services/websiteDesign",
   },
   {
     src: "/assets/images/demo-fancy/services/service3.svg",
     title: "Mobile App",
     text: "Mobile Apps are a great way to provide quality servicess to your customers. Reach both Android & ios users.",
-    link: "/services/mobile-app",
+    link: "/services/MobileApp",
   },
 
   {
     src: "/assets/images/demo-fancy/services/service4.svg",
     title: "Prototyping",
     text: "Not sure yet about the complete product to build? Build a prototype with a quarter of the budget and see if it works.",
-    link: "/services/prototyping",
+    link: "#",
   },
 ];
 
@@ -519,13 +519,13 @@ export const services3a = [
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "SEO",
     text: "People are always searching for products and services of their needs. Are you appearing in their search results? Get noticed and get new clients.",
-    link: "/services/seo",
+    link: "/services/SeoService",
   },
   {
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "AgileStaff Tech",
     text: "Maybe you need a UIUX designer or a developer, or a project manager. Get flexible and scalable staffing both for short-term & long-term works.",
-    link: "/services/agilestaff-tech",
+    link: "#",
   },
 ];
 
