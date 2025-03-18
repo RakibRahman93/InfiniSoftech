@@ -138,7 +138,7 @@ export default function FancyServicesPage() {
                   <div className="col-md-10 col-lg-6 text-center">
                     <Image
                       // style={{marginTop:"3.7rem"}}
-                      src="/assets/images/services/seo/hero.svg"
+                      src="/assets/images/services/seo/seo-hero.png"
                       width={780}
                       height={0}
                       className="wow fadeInUp"
@@ -338,8 +338,8 @@ export default function FancyServicesPage() {
                       Why Choose Us?
                     </h1>
                     <p className="wow fadeInUp work-descr">
-                      Here’s how easy it is to get started with holapep’s <br /> staff
-                      augmentation services
+                      Here’s how easy it is to get started with holapep’s <br />{" "}
+                      staff augmentation services
                     </p>
                     <div className="mb-4 wow fadeInUp d-flex align-items-center justify-items-center gap-3">
                       <img
