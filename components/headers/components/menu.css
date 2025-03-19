@@ -40,6 +40,13 @@
   margin: 0 !important;
 }
 
+.dropdown-menu li a {
+  font-size: 15px;
+  text-align: left;
+}
+#dropdown-menus {
+  text-align: left;
+}
 .dropdown-menu li:hover {
   background-color: #ddd;
 }
