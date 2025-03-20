@@ -286,6 +286,7 @@ html {
 }
 html {
   scroll-behavior: smooth;
+  overflow: visible;
 }
 body {
   overflow-x: hidden;
@@ -3878,6 +3879,7 @@ a.logo:hover {
 .inner-nav {
   flex-grow: 1;
   position: relative;
+  display: flex
 }
 .inner-nav ul {
   margin: auto;

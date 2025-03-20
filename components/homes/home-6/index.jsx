@@ -150,7 +150,7 @@ export default function Home6({ onePage = false, dark = false }) {
               >
                 Building The Future Of Your Business,
                 <span
-                  className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
+                  className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white ms-2"
                   style={{
                     background:
                       "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",

@@ -859,6 +859,9 @@
 .service-height a {
   margin-top: auto;
 }
+.section-caption {
+  font-size: 20px;
+}
 @media only screen and (max-width: 1366px) {
   .theme-fancy .container {
     max-width: var(--container-width);
@@ -988,5 +991,8 @@
   }
   .fs-footer-title {
     font-size: 25px;
+  }
+  .section-caption {
+    font-size: 14px;
   }
 }
