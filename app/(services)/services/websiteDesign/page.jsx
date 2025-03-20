@@ -135,7 +135,7 @@ export default function FancyServicesPage() {
                   <div className="col-md-10 col-lg-6 text-center">
                     <Image
                       // style={{marginTop:"3.7rem"}}
-                      src="/assets/images/services/website/hero.png"
+                      src="/assets/images/services/website/webDesign.png"
                       width={780}
                       height={0}
                       className="wow fadeInUp"

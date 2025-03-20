@@ -231,7 +231,6 @@ export const uiuxhireData = [
     title: "Wireframing & Prototyping",
     text: "Develop wireframes and prototypes to visualize structure and test functionality, making iterative improvements.",
   },
-  
 ];
 export const webProcessData = [
   {
@@ -249,7 +248,6 @@ export const webProcessData = [
     title: "Development & Coding",
     text: "Crafting a polished, modern look",
   },
-  
 ];
 
 export const mobileProcessData = [
@@ -268,7 +266,6 @@ export const mobileProcessData = [
     title: "App Development & Testing",
     text: "Crafting a polished, modern look",
   },
-  
 ];
 export const seoProcessData = [
   {
@@ -301,10 +298,8 @@ export const seoProcessData = [
     title: "Monitoring & Reportings",
     text: "Crafting a polished, modern look",
   },
-  
 ];
 export const uiuxhireDatasecond = [
-  
   {
     src: "/assets/images/services/setp-04.svg",
     title: "Design Execution & Iteration",
@@ -314,10 +309,9 @@ export const uiuxhireDatasecond = [
     src: "/assets/images/services/setp-05.svg",
     title: "Implementation & Evaluation",
     text: "Ensure designs are implemented accurately, evaluate post-launch usability, and refine based on user feedback.",
-  }
+  },
 ];
 export const webProcessDatasecond = [
-  
   {
     src: "/assets/images/services/setp-04.svg",
     title: "Testing & Optimization",
@@ -327,10 +321,9 @@ export const webProcessDatasecond = [
     src: "/assets/images/services/setp-05.svg",
     title: "Launch & Support",
     text: "Delivering assets & guidelines for developers.",
-  }
+  },
 ];
 export const mobileProcessDatasecond = [
-  
   {
     src: "/assets/images/services/setp-04.svg",
     title: "Launch & Deployment",
@@ -340,7 +333,7 @@ export const mobileProcessDatasecond = [
     src: "/assets/images/services/setp-05.svg",
     title: "Ongoing Maintenance & Updates",
     text: "Crafting a polished, modern look",
-  }
+  },
 ];
 export const processSolution = [
   {
@@ -525,7 +518,7 @@ export const services3a = [
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "AgileStaff Tech",
     text: "Maybe you need a UIUX designer or a developer, or a project manager. Get flexible and scalable staffing both for short-term & long-term works.",
-    link: "#",
+    link: "/services",
   },
 ];
 

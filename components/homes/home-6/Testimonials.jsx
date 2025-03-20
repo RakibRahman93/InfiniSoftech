@@ -105,7 +105,7 @@ export default function Testimonials() {
                       <i className="icon-quotation-mark" />
                     </div>
                     <blockquote className="testimonials-4-text">
-                      <p className="mb-0">{testimonial.text}</p>
+                      <p className="mb-0 size-14">{testimonial.text}</p>
                       <footer className="testimonials-4-author mt-30 clearfix">
                         <div className="testimonials-4-author-img float-start">
                           <Image
