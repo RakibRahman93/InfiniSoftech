@@ -5,7 +5,7 @@ const FooterTop = () => {
     <div>
       <section
         style={{
-          background: "linear-gradient(220deg, #621ABE 0%, #051D55 70%)",
+          background: "linear-gradient(-50deg, #621ABE 20%, #051D55 50%)",
         }}
         className="py-4 scrollSpysection"
         id="footer-top"

@@ -44,6 +44,7 @@ export default function Form({ togglePopup }) {
         setSubject("");
         setMessage("");
         togglePopup();
+        
       } else {
         setStatus(`Error: ${result.message || "Something went wrong"}`);
       }

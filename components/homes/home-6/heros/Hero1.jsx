@@ -187,7 +187,7 @@ export default function Hero1() {
               {/* Yellow Stars */}
               <div className="mt-1">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: "#FFD700", fontSize: "24px" }}>
+                  <span key={i} style={{ color: "#FFFF00", fontSize: "24px" }}>
                     ★
                   </span>
                 ))}

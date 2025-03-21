@@ -27,7 +27,7 @@ const ServiceItem = ({ src, title, text, link }) => (
             />
           </div>
           <div className="services-5-body d-flex align-items-center">
-            <div className="w-100">
+            <div className="w-100 service-height">
               <h4 className="services-6-title text-white pt-4">{title}</h4>
               <p
                 style={{
@@ -35,7 +35,7 @@ const ServiceItem = ({ src, title, text, link }) => (
                   lineHeight: "25px",
                   fontSize: "14px",
                 }}
-                className="services-5-text text-white mb-4"
+                className="services-5-text text-white"
               >
                 {text}
               </p>

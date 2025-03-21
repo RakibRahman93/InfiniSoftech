@@ -1,8 +1,8 @@
 "use client";
-import FooterTop from "@/components/homes/home-6/FooterTop";
 import Form from "@/components/headers/components/Form";
 import Popup from "@/components/headers/components/popup";
 import Contact from "@/components/homes/home-6/Contact";
+import FooterTop from "@/components/homes/home-6/FooterTop";
 import { features10 } from "@/data/features";
 import Image from "next/image";
 import { useState } from "react";
@@ -74,7 +74,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     <div
                       style={{
                         fontSize: "14px",
-                        fontWeight: "bold",
+                        fontWeight: "600",
                         color: "#1C1C57",
                       }}
                     >
@@ -138,7 +138,7 @@ export default function Home6({ onePage = false, dark = false }) {
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
         style={{
-          background: "linear-gradient(220deg, #621ABE 0%, #051D55 50%)",
+          background: "linear-gradient(-80deg, #621ABE 0%, #051D55 50%)",
         }}
         className={`page-section scrollSpysection  ${
           dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
@@ -155,7 +155,7 @@ export default function Home6({ onePage = false, dark = false }) {
               >
                 Building The Future Of Your Business,
                 <span
-                  className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
+                  className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white ms-2"
                   style={{
                     background:
                       "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -313,7 +313,7 @@ export default function Home6({ onePage = false, dark = false }) {
               >
                 We Use The Power Of Design To Solve Complex Problems.
               </h3>
-              <p className="services-5-text text-white mt-30">
+              <p className="size-14 text-white mt-30">
                 At InfiniSoft Technology, we combine creativity, technical
                 expertise, and a client-first approach to deliver solutions that
                 truly make an impact. From tailored designs to seamless
@@ -328,7 +328,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     </h4>
                     <p
                       style={{ fontWeight: "300", lineHeight: "25px" }}
-                      className="services-5-text mb-0 text-white"
+                      className="size-14 mb-0 text-white"
                     >
                       Etiam id euismod odio. Ut euismod sem a lacus fringilla.
                     </p>
@@ -339,7 +339,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     </h4>
                     <p
                       style={{ fontWeight: "300", lineHeight: "25px" }}
-                      className="services-5-text mb-0 text-white"
+                      className="size-14 mb-0 text-white"
                     >
                       Cras eleifend leo ac varius tristique suspendisse.
                     </p>
@@ -350,7 +350,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     </h4>
                     <p
                       style={{ fontWeight: "300", lineHeight: "25px" }}
-                      className="services-5-text mb-0 text-white"
+                      className="size-14 mb-0 text-white"
                     >
                       EEiam id euismod odio. Ut euismod sem a lacus fringilla.
                     </p>
@@ -361,7 +361,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     </h4>
                     <p
                       style={{ fontWeight: "300", lineHeight: "25px" }}
-                      className="services-5-text mb-0 text-white"
+                      className="size-14 mb-0 text-white"
                     >
                       Cras eleifend leo ac varius tristique suspendisse.
                     </p>
@@ -437,7 +437,7 @@ export default function Home6({ onePage = false, dark = false }) {
           <Form togglePopup={togglePopup} />
         </Popup>
       </section>
-     <FooterTop/>
+      <FooterTop />
     </>
   );
 }
