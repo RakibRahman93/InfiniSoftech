@@ -12,15 +12,13 @@ export default function ServicePricing() {
         <div className="col-md-8 offset-md-2 text-center">
           <h2 className="section-caption mb-0">Pricing</h2>
           <h3 className="section-title-small mb-10">
-            Simple, transparent pricing
+          Tech Staffing Cost
           </h3>
           <p
             className="mb-0"
             style={{ fontWeight: "500", lineHeight: "25px",fontSize:"16px" }}
           >
-            Post jobs and find qualified No Code Developers faster. All jobs are
-            syndicated to Google Jobs, our job board network, and published to
-            our Reddit, X, & LinkedIn Communities.
+            Offshore tech staffing often comes with hidden fees, leaving clients frustrated and uncertain. At Infinisoft Technology , we do things differently. Our pricing is clear, fair, and transparent—because we believe that trust and honesty should be at the core of every partnership. No surprises, just reliable, top-tier talent. 🚀
           </p>
         </div>
       </div>
@@ -43,7 +41,7 @@ export default function ServicePricing() {
                   className={`nav-link ${!isYearly ? "active" : ""}`}
                   data-bs-toggle="tab"
                 >
-                  Monthly
+                  Designer
                 </a>
               </li>
               <li
@@ -56,9 +54,22 @@ export default function ServicePricing() {
                   className={`nav-link ${isYearly ? "active" : ""}`}
                   data-bs-toggle="tab"
                 >
-                  Annual
+                  Developer
                 </a>
               </li>
+              {/* <li
+                className="nav-item"
+                onClick={() => setIsYearly(true)}
+                role="presentation"
+              >
+                <a
+                  href="#tab-annual"
+                  className={`nav-link ${isYearly ? "active" : ""}`}
+                  data-bs-toggle="tab"
+                >
+                  Project Manager
+                </a>
+              </li> */}
             </ul>
           </div>
           {/* End Nav Tabs */}

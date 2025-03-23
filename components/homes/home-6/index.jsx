@@ -45,7 +45,7 @@ export default function Home6({ onePage = false, dark = false }) {
                 Grow With Us
               </h2>
               <h3 className="section-title-small  mb-30 mb-xs-20 wow fadeInUp">
-                Supercharge Sales with a Fast, Reliable Website Or A Mobile App,
+                Supercharge Sales with a Fast, Reliable Website Or A Mobile App,&nbsp;
                 <span
                   className="mark-decoration-3-wrap color-secondary-1-white section-title-small "
                   style={{
@@ -307,6 +307,18 @@ export default function Home6({ onePage = false, dark = false }) {
         <div className="container position-relative">
           <div className="row mb-60 mb-sm-40">
             <div className="col-md-12 col-lg-6">
+            <h2
+                className="section-caption mb-20 mb-xs-10"
+                style={{
+                  background:
+                    "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  fontWeight: "bold",
+                }}
+              >
+                WHY CHOOSE US
+              </h2>
               <h3
                 style={{ color: "white" }}
                 className="section-title-small mb-0 mb-sm-20"

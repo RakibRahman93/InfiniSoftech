@@ -114,7 +114,7 @@ export default function FancyServicesPage() {
                   {/* right section */}
                   <div className="col-md-10 col-lg-6 text-center">
                     <Image
-                      // style={{marginTop:"3.7rem"}}
+                      style={{maxWidth:"90%"}}
                       src="/assets/images/services/service-main.svg"
                       width={780}
                       height={0}
@@ -492,7 +492,7 @@ export default function FancyServicesPage() {
             </div>
 
             <section
-              className={`scrollSpysection py-4 ${
+              className={`scrollSpysection py-5 ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
               id="pricing"
