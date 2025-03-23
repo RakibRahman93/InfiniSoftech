@@ -302,6 +302,18 @@ export default function Home6({ onePage = false, dark = false }) {
         <div className="container position-relative">
           <div className="row mb-60 mb-sm-40">
             <div className="col-md-12 col-lg-6">
+            <h2
+                className="section-caption mb-20 mb-xs-10"
+                style={{
+                  background:
+                    "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  fontWeight: "bold",
+                }}
+              >
+                WHY CHOOSE US
+              </h2>
               <h3
                 style={{ color: "white" }}
                 className="section-title-small mb-0 mb-sm-20"
