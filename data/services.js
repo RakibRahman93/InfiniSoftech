@@ -339,17 +339,17 @@ export const processSolution = [
   {
     src: "/assets/images/process/01.svg",
     title: "Requirement gathering",
-    text: "Share your project requirements or desired skill set, and we'll find the perfect professionals for you. The more details you provide, the better we can tailor our expertise to meet your needs.",
+    text: "Tell us your project needs or desired skill set—we’ll quickly match you with the perfect talent.",
   },
   {
     src: "/assets/images/process/02.svg",
     title: "Candidate shortlisting & interviews",
-    text: "We carefully select top candidates from our expert network and arrange interviews. You make the final choice, ensuring the perfect fit for your project and team. ",
+    text: "We carefully shortlist top candidates from our talent pool. You interview and select the best fit. ",
   },
   {
     src: "/assets/images/process/03.svg",
     title: "Onboarding",
-    text: "Once your ideal candidates are selected, we onboard them within two business days. We ensure seamless integration with your team and maintain open communication, allowing for smooth collaboration and flexibility as your project evolves.",
+    text: "Your chosen expert joins your team in under 48 hours, ensuring smooth and flexible collaboration.",
   },
 ];
 export const servicesMain = [
