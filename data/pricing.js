@@ -50,10 +50,10 @@ export const pricing = [
 export const ServicePricingData = [
   
   {
-    "title": "Product Designer",
+    "title": "Beginner",
     "badge": "UI/UX",
     "description": "Perfect for small businesses looking to hire an individual No Code Developer",
-    "price": 102,
+    "price": 15,
     "per": "per month",
     "features": [
       "50 Page Unlock",
@@ -65,10 +65,10 @@ export const ServicePricingData = [
     "buttonText": "Get Started"
   },
   {
-    "title": "Developer",
-    "badge": "Best Deal",
+    "title": "Intermediate",
+    "badge": "Ui/UX",
     "description": "Perfect for small businesses looking to hire an individual No Code Developer",
-    "price": 102,
+    "price": 35,
     "per": "per month",
     "features": [
       "50 Page Unlock",
@@ -80,10 +80,10 @@ export const ServicePricingData = [
     "buttonText": "Get Started"
   },
   {
-    "title": "Project Manager",
-    "badge": "Expert",
+    "title": "Expert",
+    "badge": "Ui/UX",
     "description": "Perfect for small businesses looking to hire an individual No Code Developer",
-    "price": 102,
+    "price": 50,
     "per": "per month",
     "features": [
       "50 Page Unlock",

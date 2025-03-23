@@ -284,7 +284,7 @@ export default function FancyServicesPage() {
             </section>
 
             <section
-              className={`scrollSpysection py-4 ${
+              className={`scrollSpysection py-5 ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
               id="pricing"

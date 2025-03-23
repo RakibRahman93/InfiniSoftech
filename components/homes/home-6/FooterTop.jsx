@@ -7,7 +7,7 @@ const FooterTop = () => {
         style={{
           background: "linear-gradient(-50deg, #621ABE 20%, #051D55 50%)",
         }}
-        className="py-4 scrollSpysection"
+        className="py-5 scrollSpysection"
         id="footer-top"
       >
         <div className="container py-2 position-relative">
