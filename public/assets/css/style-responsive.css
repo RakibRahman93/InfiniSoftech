@@ -827,6 +827,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+  #pricing {
+    padding-bottom: 0 !important;
+  }
   .works-filter.works-filter-fancy {
     max-width: 100%;
   }

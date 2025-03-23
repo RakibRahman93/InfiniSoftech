@@ -13,8 +13,8 @@ export default function Pricing() {
           <h2 className="section-caption">Pricing</h2>
           <h3 className="section-title mb-10">Simple, transparent pricing</h3>
           <p
-            className="services-5-text mb-0"
-            style={{ fontWeight: "300", lineHeight: "25px" }}
+            className="mb-0"
+            style={{ fontWeight: "500", lineHeight: "25px",fontSize:"16px" }}
           >
             Post jobs and find qualified No Code Developers faster. All jobs are
             syndicated to Google Jobs, our job board network, and published to

@@ -15,13 +15,8 @@ export default function ServicePricing() {
             Simple, transparent pricing
           </h3>
           <p
-            className="services-5-text mb-0"
-            style={{
-              fontWeight: "500",
-              lineHeight: "25px",
-              fontSize: "16px",
-              color: "#7E7E7E",
-            }}
+            className="mb-0"
+            style={{ fontWeight: "500", lineHeight: "25px",fontSize:"16px" }}
           >
             Post jobs and find qualified No Code Developers faster. All jobs are
             syndicated to Google Jobs, our job board network, and published to
