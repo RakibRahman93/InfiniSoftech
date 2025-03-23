@@ -524,24 +524,24 @@ export const services3a = [
 
 export const twoService4 = [
   {
-    src: "/assets/images/demo-fancy/services/ppp.svg",
-    title: "We're Professional",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    src: "/assets/images/demo-fancy/services/complete-tech.svg",
+    title: "Complete Tech Support",
+    text: "We provide complete solutions in web & mobile app development, UI/UX design, SEO optimization, and staff augmentation, ensuring success for your project.",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/business-groth.svg",
+    title: "Tailored Strategies For Business Growth",
+    text: "Unlike many agencies that rely on cookie-cutter solutions, we provide scalable, high-performing and user-friendly products.",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/long-term.svg",
+    title: "High Performance & ROI",
+    text: "Every project we undertake is designed with your business goals in mind. We prioritize conversion-driven UI/UX, fast-loading websites, and data-driven decisions to maximize ROI.",
   },
   {
     src: "/assets/images/demo-fancy/services/ppp.svg",
-    title: "Tailored Strategies",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-  },
-  {
-    src: "/assets/images/demo-fancy/services/ppp.svg",
-    title: "Expert Developers",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-  },
-  {
-    src: "/assets/images/demo-fancy/services/ppp.svg",
-    title: "Latest Technology",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    title: "Long Term High Quality Support",
+    text: "We don’t just deliver a project and walk away—we ensure smooth implementation, post-launch support.",
   },
 ];
 

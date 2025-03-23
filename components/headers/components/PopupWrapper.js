@@ -3,7 +3,7 @@ import { useState } from "react";
 import Form from "../components/Form";
 import Popup from "./popup";
 
-export function PopupWrapper({ buttonText = "Free Consultation",minWidth="12rem" }) {
+export function PopupWrapper({ buttonText = "Free Consultation",minWidth="12rem",height="2.7rem" }) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [currentButtonText, setCurrentButtonText] = useState(buttonText);
   
@@ -18,7 +18,7 @@ export function PopupWrapper({ buttonText = "Free Consultation",minWidth="12rem"
         <button
           style={{
             borderRadius: "50px",
-            height: "2.7rem",
+            height: height,
             minWidth: minWidth,
             background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
             border: "none",
