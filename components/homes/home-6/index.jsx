@@ -420,18 +420,20 @@ export default function Home6({ onePage = false, dark = false }) {
         </div>
       </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-      <section
+      {/* <section
         className={`container page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
         id="contact"
       >
         <Contact />
-        {/* Popup */}
-        <Popup isPopupVisible={isPopupVisible} onClose={togglePopup}>
+       
+        
+      </section> */}
+       {/* Popup */}
+      <Popup isPopupVisible={isPopupVisible} onClose={togglePopup}>
           <Form togglePopup={togglePopup} />
         </Popup>
-      </section>
       <FooterTop />
     </>
   );
