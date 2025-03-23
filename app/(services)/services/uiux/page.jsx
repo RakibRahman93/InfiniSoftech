@@ -1,4 +1,5 @@
 import Footer6 from "@/components/footers/Footer6";
+import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 import ServicePricing from "@/components/homes/home-6/ServicePricing";
@@ -101,37 +102,11 @@ export default function FancyServicesPage() {
                       data-wow-delay="0.12s"
                     >
                       <>
-                        <a
-                          style={{
-                            borderRadius: "50px",
-                            // height: "2.7rem",
-                            minWidth: "14rem",
-                            background:
-                              "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
-                            border: "none",
-                            color: "white", // Ensures text remains visible
-                            fontSize: "14px",
-                            fontWeight: "bold",
-                            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
-                            cursor: "pointer",
-                          }}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn btn-mod btn-border-c btn-large btn-round  me-1 mb-xs-10"
-                        >
-                          {/* <span>Contact Us</span> */}
-                          <span className="btn-animate-y">
-                            <span className="btn-animate-y-1">
-                              Get A Free Consultation
-                            </span>
-                            <span
-                              className="btn-animate-y-2"
-                              aria-hidden="true"
-                            >
-                              Get A Free Consultation
-                            </span>
-                          </span>
-                        </a>
+                        <PopupWrapper
+                          minWidth="14rem"
+                          buttonText="Get A Free Consultation"
+                          height="3.5rem"
+                        />
                       </>
                     </div>
                   </div>
