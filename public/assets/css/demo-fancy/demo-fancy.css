@@ -166,7 +166,7 @@
 .theme-fancy .h4,
 .theme-fancy .h5,
 .theme-fancy .h6 {
-  font-weight: 700;
+  font-weight: 600;
 }
 .theme-fancy h3,
 .theme-fancy .h3 {
@@ -860,7 +860,7 @@
   margin-top: auto;
 }
 .section-caption {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .g-button {
@@ -1028,7 +1028,7 @@
   .g-button {
     font-size: 14px;
   }
-  .home-section::after{
+  .home-section::after {
     height: 85%;
   }
 }
