@@ -44,7 +44,7 @@ export default function Home6({ onePage = false, dark = false }) {
                 Grow With Us
               </h2>
               <h3 className="section-title-small  mb-30 mb-xs-20 wow fadeInUp">
-                Supercharge Sales with a Fast, Reliable Website Or A Mobile App,
+                Supercharge Sales with a Fast, Reliable Website Or A Mobile App,&nbsp;
                 <span
                   className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white section-title-small "
                   style={{
