@@ -17,12 +17,12 @@ export default function Hero1() {
   return (
     <>
       {/* End Background Shape */}
-      <div className="position-relative d-flex align-items-center pt-140 pt-sm-120 ">
+      <div className="position-relative d-flex align-items-center pt-140 pt-sm-120">
         {/* Home Section Content */}
         <div className="home-content text-start">
           <div className="row" style={{ justifyContent: "space-between" }}>
             {/* Home Section Text */}
-            <div className="col-md-10 offset-md-1  offset-lg-1 col-xl-10 d-flex align-items-center mb-md-60 mb-sm-30">
+            <div className="col-md-10 offset-md-1 offset-lg-1 col-xl-10 d-flex align-items-center mb-md-60 mb-sm-30">
               <div className="w-100 text-center container">
                 <h1 className="hs-title-10 mb-30">
                   <span
