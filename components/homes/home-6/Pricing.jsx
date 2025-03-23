@@ -102,31 +102,17 @@ export default function Pricing() {
                       {index === 0 ? (
                         <button
                           className="btn btn-transparent w-50 mt-3 border-1 rounded-pill"
-                          style={{ background: "#F6F6F6" }}
+                          style={{ background: "#F6F6F6", padding: "12px 14px", }}
                           disabled
                         >
                           Current Plan
                         </button>
                       ) : (
                         <button
-                          className="btn w-50 mt-3"
-                          style={{
-                            background:
-                              "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
-                            color: "transparent",
-                            fontWeight: "bold",
-                            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
-                            cursor: "pointer",
-                            border: "1px solid transparent",
-                            borderRadius: "50px",
-                            borderImage:
-                              "linear-gradient(90deg, #E75778 0%, #8876FF 100%) 1",
-                            backgroundImage:
-                              "linear-gradient(90deg, #E75778 0%, #8876FF 100%)", // Gradient for text
-                            WebkitBackgroundClip: "text", // Apply the background to the text
-                          }}
+                          className="btn w-50 mt-3 border-1 rounded-pill g-button"
+                          style={{ background: "#F6F6F6" }}
                         >
-                          Upgrade
+                          <span>Upgrade</span>
                         </button>
                       )}
 

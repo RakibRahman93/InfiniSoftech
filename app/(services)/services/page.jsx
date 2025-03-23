@@ -106,6 +106,7 @@ export default function FancyServicesPage() {
                         <PopupWrapper
                           minWidth="14rem"
                           buttonText="Get A Free Consultation"
+                          height="3.5rem"
                         />
                       </>
                     </div>
