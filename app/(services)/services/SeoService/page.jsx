@@ -113,8 +113,8 @@ export default function FancyServicesPage() {
                   <div className="col-md-12 col-lg-6 text-center mt-smd-5">
                     <img
                       // style={{marginTop:"3.7rem"}}
+                      style={{ maxWidth: "90%", width: "auto",height:"90%" }}
                       src="/assets/images/services/seo/seo-hero.png"
-                      style={{ maxWidth: "90%" }}
                       className="wow fadeInUp"
                       alt="Image Description"
                     />

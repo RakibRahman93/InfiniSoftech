@@ -109,13 +109,11 @@ export default function FancyServicesPage() {
                   {/* right section */}
                   <div className="col-md-12 col-lg-6 text-center mt-smd-5">
                     <img
-                      // style={{marginTop:"3.7rem"}}
-                      style={{ maxWidth: "90%" }}
+                      style={{ maxWidth: "90%", width: "auto",height:"90%" }}
                       src="/assets/images/services/website/webDesign.png"
                        layout="intrinsic"
                       className="wow fadeInUp"
                       alt="Image Description"
-                      style={{ width: "auto" }}
                     />
                   </div>
                 </div>
@@ -290,7 +288,7 @@ export default function FancyServicesPage() {
             </section>
             {/* why chose us  */}
             <section
-              className={`scrollSpysection pb-5 mt-5 service-large-sections`}
+              className={`scrollSpysection mt-5 service-large-sections`}
               id="about"
             >
               <div className="pt-md-5 container position-relative">

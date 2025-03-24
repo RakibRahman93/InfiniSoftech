@@ -36,7 +36,7 @@ export default function FancyServicesPage() {
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
                     <h1 className="fs-48 mb-30 mb-xs-20 wow fadeInUp">
                       Crafting Seamless Digital <br />
-                      Experiences with Exceptional
+                      Experiences with Exceptional&nbsp;
                       <span
                         className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-48"
                         style={{
@@ -286,7 +286,7 @@ export default function FancyServicesPage() {
             </section>
             {/* why ui/ux Matters section  */}
             <section
-              className={`scrollSpysection pb-5 mt-5 service-large-sections`}
+              className={`scrollSpysection mt-5 service-large-sections`}
               id="about"
             >
               <div className="pt-md-5 container position-relative">

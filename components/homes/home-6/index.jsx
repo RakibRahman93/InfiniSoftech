@@ -337,7 +337,7 @@ export default function Home6({ onePage = false, dark = false }) {
                       style={{ fontWeight: "300", lineHeight: "25px" }}
                       className="size-14 mb-0 text-white"
                     >
-                      Etiam id euismod odio. Ut euismod sem a lacus fringilla.
+                      Our team of experts are ready for all kinds of challenges
                     </p>
                   </div>
                   <div className="w-100">
@@ -348,7 +348,7 @@ export default function Home6({ onePage = false, dark = false }) {
                       style={{ fontWeight: "300", lineHeight: "25px" }}
                       className="size-14 mb-0 text-white"
                     >
-                      Cras eleifend leo ac varius tristique suspendisse.
+                      We understand your business needs and work accordingly
                     </p>
                   </div>
                   <div className="w-100">
@@ -359,7 +359,7 @@ export default function Home6({ onePage = false, dark = false }) {
                       style={{ fontWeight: "300", lineHeight: "25px" }}
                       className="size-14 mb-0 text-white"
                     >
-                      EEiam id euismod odio. Ut euismod sem a lacus fringilla.
+                      We have a highly skilled talent pool to work on your projects 
                     </p>
                   </div>
                   <div className="w-100">
@@ -370,7 +370,7 @@ export default function Home6({ onePage = false, dark = false }) {
                       style={{ fontWeight: "300", lineHeight: "25px" }}
                       className="size-14 mb-0 text-white"
                     >
-                      Cras eleifend leo ac varius tristique suspendisse.
+                      We have access to a wide range of technology so we can allocate the necessary resources according to your needs
                     </p>
                   </div>
                 </div>
