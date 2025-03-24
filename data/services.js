@@ -127,7 +127,7 @@ export const services3 = [
     src: "/assets/images/demo-fancy/services/service4.svg",
     title: "Prototyping",
     text: "Not sure yet about the complete product to build? Build a prototype with a quarter of the budget and see if it works.",
-    link: "#",
+    link: "/services/MobileApp",
   },
 ];
 
