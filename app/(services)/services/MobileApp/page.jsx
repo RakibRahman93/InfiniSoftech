@@ -292,7 +292,7 @@ export default function FancyServicesPage() {
             </section>
             {/* why chose us  */}
             <section
-              className={`scrollSpysection pb-5 mt-5 service-large-sections`}
+              className={`scrollSpysection mt-5 service-large-sections`}
               id="about"
             >
               <div className="pt-md-5 container position-relative">
