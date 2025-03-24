@@ -27,7 +27,7 @@ export default function FancyServicesPage() {
           <main id="main">
             {/* your team section */}
             <section
-              className={`scrollSpysection pb-5 mt-5 service-large-sections`}
+              className={`scrollSpysection mt-5 service-large-sections`}
               id="about"
             >
               <div className="pt-md-5 container position-relative">
@@ -35,7 +35,7 @@ export default function FancyServicesPage() {
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
                     <h1 className="fs-48 mb-30 mb-xs-20 wow fadeInUp">
-                      Website Design & Development – High-Performance
+                      Website Design & Development – High-Performance&nbsp;
                       <span
                         className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-48"
                         style={{
@@ -107,14 +107,15 @@ export default function FancyServicesPage() {
                     </div>
                   </div>
                   {/* right section */}
-                  <div className="col-md-10 col-lg-6 text-center">
-                    <Image
+                  <div className="col-md-12 col-lg-6 text-center mt-smd-5">
+                    <img
                       // style={{marginTop:"3.7rem"}}
+                      style={{ maxWidth: "90%" }}
                       src="/assets/images/services/website/webDesign.png"
-                      width={780}
-                      height={0}
+                       layout="intrinsic"
                       className="wow fadeInUp"
                       alt="Image Description"
+                      style={{ width: "auto" }}
                     />
                   </div>
                 </div>
@@ -139,7 +140,7 @@ export default function FancyServicesPage() {
                       </h2>
                       <p
                         style={{ color: "white", fontSize: "40px !important" }}
-                        className="section-title mb-0 mb-sm-20"
+                        className="section-title mb-0"
                       >
                         Why Staff
                       </p>

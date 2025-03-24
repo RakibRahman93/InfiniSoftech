@@ -15,8 +15,8 @@ export default function ServicePricing() {
           Tech Staffing Cost
           </h3>
           <p
-            className="mb-0"
-            style={{ fontWeight: "500", lineHeight: "25px",fontSize:"16px" }}
+            className="mb-0 portfolio-1-descr"
+            style={{ fontWeight: "500", lineHeight: "25px"}}
           >
             Offshore tech staffing often comes with hidden fees, leaving clients frustrated and uncertain. At Infinisoft Technology , we do things differently. Our pricing is clear, fair, and transparent—because we believe that trust and honesty should be at the core of every partnership. No surprises, just reliable, top-tier talent. 🚀
           </p>
@@ -41,7 +41,7 @@ export default function ServicePricing() {
                   className={`nav-link ${!isYearly ? "active" : ""}`}
                   data-bs-toggle="tab"
                 >
-                  Designer
+                  Monthly
                 </a>
               </li>
               <li
@@ -54,7 +54,7 @@ export default function ServicePricing() {
                   className={`nav-link ${isYearly ? "active" : ""}`}
                   data-bs-toggle="tab"
                 >
-                  Developer
+                  Yearly
                 </a>
               </li>
               {/* <li

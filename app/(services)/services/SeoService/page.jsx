@@ -27,7 +27,7 @@ export default function FancyServicesPage() {
           <main id="main">
             {/* your team section */}
             <section
-              className={`scrollSpysection pb-5 mt-5 service-large-sections`}
+              className={`scrollSpysection mt-5 service-large-sections`}
               id="about"
             >
               <div className="pt-md-5 container position-relative">
@@ -35,7 +35,7 @@ export default function FancyServicesPage() {
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
                     <h1 className="fs-48 mb-30 mb-xs-20 wow fadeInUp ml-1">
-                      SEO Services – Rank Higher, Get More Traffic, and Grow
+                      SEO Services – Rank Higher, Get More Traffic, and Grow &nbsp;
                       <span
                         className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-48"
                         style={{
@@ -110,12 +110,11 @@ export default function FancyServicesPage() {
                     </div>
                   </div>
                   {/* right section */}
-                  <div className="col-md-10 col-lg-6 text-center">
-                    <Image
+                  <div className="col-md-12 col-lg-6 text-center mt-smd-5">
+                    <img
                       // style={{marginTop:"3.7rem"}}
                       src="/assets/images/services/seo/seo-hero.png"
-                      width={780}
-                      height={0}
+                      style={{ maxWidth: "90%" }}
                       className="wow fadeInUp"
                       alt="Image Description"
                     />
