@@ -3,7 +3,7 @@ import { useState } from "react";
 import Form from "../components/Form";
 import Popup from "./popup";
 
-export function PopupWrapper({ buttonText = "Free Consultation",minWidth="12rem",height="2.7rem" }) {
+export function PopupWrapper({ buttonText = "Free Consultation",minWidth="12rem",height="2.7rem",className="" }) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [currentButtonText, setCurrentButtonText] = useState(buttonText);
   
@@ -13,7 +13,7 @@ export function PopupWrapper({ buttonText = "Free Consultation",minWidth="12rem"
   };
   return (
     <>
-      <ul className="clearlist scroll-nav local-scroll justify-content-end scrollspyLinks">
+      <ul className={`clearlist scroll-nav local-scroll justify-content-end scrollspyLinks ${className}`}>
         {/* Book A Free Call Button */}
         <button
           style={{
