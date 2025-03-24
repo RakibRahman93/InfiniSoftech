@@ -27,7 +27,7 @@ export default function FancyServicesPage() {
           <main id="main">
             {/* your team section */}
             <section
-              className={`scrollSpysection pb-5 mt-5 service-large-sections`}
+              className={`scrollSpysection mt-5 service-large-sections`}
               id="about"
             >
               <div className="pt-md-5 container position-relative">
@@ -111,12 +111,11 @@ export default function FancyServicesPage() {
                     </div>
                   </div>
                   {/* right section */}
-                  <div className="col-md-10 col-lg-6 text-center">
-                    <Image
+                  <div className="col-md-12 col-lg-6 text-center mt-smd-5">
+                    <img
                       // style={{marginTop:"3.7rem"}}
                       src="/assets/images/services/uiux.png"
-                      width={780}
-                      height={0}
+                      style={{ maxWidth: "90%" }}
                       className="wow fadeInUp"
                       alt="Image Description"
                     />

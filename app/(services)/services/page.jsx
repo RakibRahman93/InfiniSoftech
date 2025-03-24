@@ -29,14 +29,14 @@ export default function FancyServicesPage() {
           <main id="main">
             {/* your team section */}
             <section
-              className={`scrollSpysection pb-5 mt-5 service-large-sections`}
+              className={`scrollSpysection mt-5 service-large-sections`}
               id="about"
             >
               <div className="pt-md-5 container position-relative">
                 <div className="row mb-xs-40">
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
-                    <h3 className="section-title-small  mb-30 mb-xs-20 wow fadeInUp">
+                    <h3 className="section-title-small mb-30 mb-xs-20 wow fadeInUp">
                       Boost Your Team with
                       <span
                         className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white section-title-small"
@@ -112,7 +112,7 @@ export default function FancyServicesPage() {
                     </div>
                   </div>
                   {/* right section */}
-                  <div className="col-md-10 col-lg-6 text-center">
+                  <div className="col-md-12 col-lg-6 text-center mt-smd-5">
                     <Image
                       style={{maxWidth:"90%"}}
                       src="/assets/images/services/service-main.svg"
@@ -144,7 +144,7 @@ export default function FancyServicesPage() {
                       </h2>
                       <p
                         style={{ color: "white", fontSize: "40px !important" }}
-                        className="section-title mb-0 mb-sm-20"
+                        className="section-title mb-0"
                       >
                         Why Staff
                       </p>
@@ -308,9 +308,9 @@ export default function FancyServicesPage() {
                         style={{
                           color: "#7E7E7E",
                           fontSize: "16px !important",
-                          width: "70%",
+                         
                         }}
-                        className="mb-0 mb-sm-20 text-center fw-bolder"
+                        className="mb-0 mb-sm-20 text-center fw-bolder w-smd-100 w-lg-70"
                       >
                         At InfiniSoft Technology, we offer expertise across a
                         diverse range of technologies, ensuring the perfect fit

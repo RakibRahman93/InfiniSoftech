@@ -892,6 +892,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.w-lg-70{
+  width: 70%;
+}
 @media only screen and (max-width: 1366px) {
   .theme-fancy .container {
     max-width: var(--container-width);
@@ -958,7 +961,7 @@
 }
 
 .fs-48 {
-  font-size: 48px;
+  font-size: 36px;
 }
 .fs-footer-title {
   font-size: 64px;
@@ -990,7 +993,7 @@
 }
 @media (max-width: 768px) {
   .fs-48 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .fs-64 {
     font-size: 48px;
@@ -1030,5 +1033,14 @@
   }
   .home-section::after {
     height: 85%;
+  }
+  .w-smd-100{
+    width: 100%;
+  }
+  .portfolio-1-descr{
+    font-size: 14px;
+  }
+  .mt-smd-5{
+    margin-top: 3rem;
   }
 }

@@ -499,12 +499,12 @@ export const services3aMain = [
   {
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "Customized workforce solutions",
-    text: "At InfiniSoft, quality comes first. We carefully vet every professional to ensure they meet our high standards. With our staff augmentation services, you get skilled experts who seamlessly integrate into your team, delivering excellence at every stage of your project. 🚀",
+    text: "We provide customized workforce solutions designed to fit your project’s needs. Whether you need short-term specialists for immediate tasks or long-term support to fill skill gaps, our experts seamlessly integrate with your team, ensuring a smooth and efficient workflow. 🚀",
   },
   {
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "Commitment to Quality",
-    text: "We provide customized workforce solutions designed to fit your project’s needs. Whether you need short-term specialists for immediate tasks or long-term support to fill skill gaps, our experts seamlessly integrate with your team, ensuring a smooth and efficient workflow. 🚀",
+    text: "At InfiniSoft, quality comes first. We carefully vet every professional to ensure they meet our high standards. With our staff augmentation services, you get skilled experts who seamlessly integrate into your team, delivering excellence at every stage of your project. 🚀",
   },
 ];
 export const services3a = [
