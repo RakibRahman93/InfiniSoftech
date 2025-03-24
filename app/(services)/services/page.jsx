@@ -114,7 +114,7 @@ export default function FancyServicesPage() {
                   {/* right section */}
                   <div className="col-md-12 col-lg-6 text-center mt-smd-5">
                     <Image
-                      style={{maxWidth:"90%"}}
+                      style={{ maxWidth: "90%" }}
                       src="/assets/images/services/service-main.svg"
                       width={780}
                       height={0}
@@ -308,7 +308,6 @@ export default function FancyServicesPage() {
                         style={{
                           color: "#7E7E7E",
                           fontSize: "16px !important",
-                         
                         }}
                         className="mb-0 mb-sm-20 text-center fw-bolder w-smd-100 w-lg-70"
                       >
@@ -483,9 +482,15 @@ export default function FancyServicesPage() {
                     <p class="fw-bolder mb-0" style={{ color: "#1C1C57" }}>
                       Md Rakib Rahman
                     </p>
-                    <small class="text-muted" style={{ fontSize: "14px" }}>
+                    <small class="text-muted mb-4" style={{ fontSize: "14px" }}>
                       Founder & CTO at INFINISOFT TECHNOLOGY
                     </small>
+                    <PopupWrapper
+                      className="mt-3"
+                      minWidth="14rem"
+                      buttonText="Share Requirements"
+                      height="3rem"
+                    />
                   </div>
                 </div>
               </div>
