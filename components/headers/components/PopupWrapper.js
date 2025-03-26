@@ -3,55 +3,50 @@ import { useState } from "react";
 import Form from "../components/Form";
 import Popup from "./popup";
 
-export function PopupWrapper({ buttonText = "Free Consultation",minWidth="12rem",height="2.7rem",className="" }) {
+export function PopupWrapper({
+  buttonText = "Free Consultation",
+  plan,
+  className = "",
+  minWidth = "",
+  height = "",
+  isFullWidth = false, // New prop to control full-width
+}) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [currentButtonText, setCurrentButtonText] = useState(buttonText);
-  
 
   const togglePopup = () => {
     setIsPopupVisible(!isPopupVisible);
   };
+
   return (
     <>
-      <ul className={`clearlist scroll-nav local-scroll justify-content-end scrollspyLinks ${className}`}>
-        {/* Book A Free Call Button */}
+      <ul
+        className={`clearlist scroll-nav local-scroll justify-content-end scrollspyLinks ${className}`}
+      >
+        {/* Button with conditional full-width */}
         <button
+          onClick={togglePopup}
+          className={`btn btn-gradient btn-lg fw-bold text-white shadow-sm 
+            ${isFullWidth ? "w-100" : "w-md-auto"}`}
           style={{
             borderRadius: "50px",
-            height: height,
-            minWidth: minWidth,
             background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
             border: "none",
-            color: "white", // Ensures text remains visible
-            fontSize: "12px",
-            fontWeight: "bold",
-            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
-            cursor: "pointer",
-            // transition: "all 0.3s ease-in-out",
+            minWidth: isFullWidth ? "100%" : "14rem",
+            padding: "12px 26px",
           }}
-          onClick={togglePopup}
-          className="btn btn-mod btn-color btn-secondary me-1 mb-xs-10"
         >
           <span className="btn-animate-y">
-            <span className="btn-animate-y-1">
-              {/* <i
-                className="icon-play size-13 me-1"
-                aria-hidden="true"
-              ></i>{" "} */}
-              {currentButtonText}
-            </span>
+            <span className="btn-animate-y-1">{currentButtonText}</span>
             <span className="btn-animate-y-2" aria-hidden="true">
-              {/* <i
-                className="icon-play size-13 me-1"
-                aria-hidden="true"
-              ></i>{" "} */}
               {currentButtonText}
             </span>
           </span>
         </button>
       </ul>
+
       {/* Popup Component */}
-      <Popup isPopupVisible={isPopupVisible} onClose={togglePopup}>
+      <Popup isPopupVisible={isPopupVisible} onClose={togglePopup} plan={plan}>
         <Form />
       </Popup>
     </>

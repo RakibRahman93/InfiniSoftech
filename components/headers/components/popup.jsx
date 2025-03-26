@@ -1,9 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import "../Popup.css";
 
-const Popup = ({ children, isPopupVisible, onClose, }) => {
+const Popup = ({ children, isPopupVisible, onClose, plan }) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const Popup = ({ children, isPopupVisible, onClose, }) => {
         </button>
 
         {/* Popup Content */}
-        <div className="popup-content">{children}</div>
+        <div className="popup-content">{React.cloneElement(children, { plan })}</div>
       </div>
     </div>,
     document.body // Render directly into the body

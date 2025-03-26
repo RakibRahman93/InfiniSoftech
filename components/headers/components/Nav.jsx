@@ -5,12 +5,13 @@ import { init_classic_menu_resize } from "@/utlis/menuToggle";
 import { scrollToElement } from "@/utlis/scrollToElement";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import "./menu.css"
+import { useEffect, useRef, useState } from "react";
+import "./menu.css";
 
 export default function OnePageNav({ links, animateY = false }) {
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const pathname = usePathname();
+  const menuRefs = useRef([]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,11 +22,27 @@ export default function OnePageNav({ links, animateY = false }) {
 
     window.addEventListener("resize", init_classic_menu_resize);
 
+    // return () => {
+    //   window.removeEventListener("scroll", addScrollspy);
+    //   window.removeEventListener("resize", init_classic_menu_resize);
+    // };
+    // Event listener to close dropdown when clicking outside
+    const handleClickOutside = (event) => {
+      if (
+        dropdownOpen !== null &&
+        menuRefs.current[dropdownOpen] &&
+        !menuRefs.current[dropdownOpen].contains(event.target)
+      ) {
+        setDropdownOpen(null);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
       window.removeEventListener("scroll", addScrollspy);
       window.removeEventListener("resize", init_classic_menu_resize);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [dropdownOpen]);
 
   const toggleDropdown = (index) => {
     setDropdownOpen(dropdownOpen === index ? null : index);
@@ -36,6 +53,7 @@ export default function OnePageNav({ links, animateY = false }) {
       {links.map((link, index) => (
         <li
           key={index}
+          ref={(el) => (menuRefs.current[index] = el)}
           className={`menu-item ${link.dropdown ? "dropdown" : ""}`}
         >
           <Link
