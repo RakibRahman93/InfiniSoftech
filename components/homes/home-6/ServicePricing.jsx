@@ -112,7 +112,7 @@ export default function ServicePricing() {
                       </div>
 
                       {/* Dynamic Button */}
-                      {index === 0 ? (
+                      {/* {index === 0 ? (
                         <button
                           className="btn btn-transparent w-50 mt-3 border-1 rounded-pill"
                           style={{
@@ -130,7 +130,7 @@ export default function ServicePricing() {
                         >
                           <span>Upgrade</span>
                         </button>
-                      )}
+                      )} */}
 
                       <h5 className="mt-4">Include</h5>
                       <p className="text-muted">
