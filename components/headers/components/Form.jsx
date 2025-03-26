@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 
-export default function Form({ togglePopup }) {
+export default function Form({ togglePopup, plan }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -22,6 +22,8 @@ export default function Form({ togglePopup }) {
       options,
       subject,
       message,
+      planTitle: plan?.title,
+      planPrice: plan?.price,
     };
 
     try {
@@ -43,8 +45,7 @@ export default function Form({ togglePopup }) {
         setOptions("");
         setSubject("");
         setMessage("");
-        togglePopup();
-        
+       
       } else {
         setStatus(`Error: ${result.message || "Something went wrong"}`);
       }
@@ -81,6 +82,27 @@ export default function Form({ togglePopup }) {
             className="popup-form-left space-y-4 wow fadeInUp"
             onSubmit={handleSubmit}
           >
+            {/* Conditionally show plan title and price if plan is provided */}
+            {plan?.title && plan?.price ? (
+              <>
+                <div className="w-full">
+                  <input
+                    type="text"
+                    disabled
+                    className="popup-input w-full"
+                    value={plan?.title}
+                  />
+                </div>
+                <div className="w-full">
+                  <input
+                    type="text"
+                    disabled
+                    className="popup-input w-full"
+                    value={plan?.price}
+                  />
+                </div>
+              </>
+            ) : null}
             <div className="w-full">
               <input
                 type="text"
@@ -152,7 +174,6 @@ export default function Form({ togglePopup }) {
                 required
               />
             </div>
-
             <button
               className="btn btn-primary submit-button w-full"
               type="submit"

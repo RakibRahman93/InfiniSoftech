@@ -892,8 +892,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.w-lg-70{
+.w-lg-70 {
   width: 70%;
+}
+.card-pricing {
+  min-height: 83rem;
+}
+.get-started-btn {
+  margin-top: auto;
 }
 @media only screen and (max-width: 1366px) {
   .theme-fancy .container {
@@ -921,6 +927,9 @@
   }
 }
 @media only screen and (max-width: 1200px) {
+  .card-pricing {
+    min-height: 113rem;
+  }
   .theme-fancy .inner-nav ul li {
     margin: 0 12px;
   }
@@ -992,6 +1001,9 @@
   }
 }
 @media (max-width: 768px) {
+  .card-pricing {
+    min-height: 82rem;
+  }
   .fs-48 {
     font-size: 30px;
   }
@@ -1010,6 +1022,9 @@
 }
 
 @media (max-width: 576px) {
+  .card-pricing {
+    min-height: 0rem;
+}
   .fs-48 {
     font-size: 28px;
   }
@@ -1034,13 +1049,13 @@
   .home-section::after {
     height: 85%;
   }
-  .w-smd-100{
+  .w-smd-100 {
     width: 100%;
   }
-  .portfolio-1-descr{
+  .portfolio-1-descr {
     font-size: 14px;
   }
-  .mt-smd-5{
+  .mt-smd-5 {
     margin-top: 3rem;
   }
 }
