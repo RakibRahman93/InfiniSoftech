@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 
-export default function Form({ togglePopup, plan }) {
+export default function Form({ plan }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -11,6 +11,27 @@ export default function Form({ togglePopup, plan }) {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState(null);
+
+  useEffect(() => {
+    const savedFormData = localStorage.getItem("formData");
+    if (savedFormData) {
+      const { name, email, phone, options, subject, message } =
+        JSON.parse(savedFormData);
+      setName(name);
+      setEmail(email);
+      setPhone(phone);
+      setOptions(options);
+      setSubject(subject);
+      setMessage(message);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem(
+      "formData",
+      JSON.stringify({ name, email, phone, options, subject, message })
+    );
+  }, [name, email, phone, options, subject, message]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -45,7 +66,8 @@ export default function Form({ togglePopup, plan }) {
         setOptions("");
         setSubject("");
         setMessage("");
-       
+        //close the popup after a short delay
+        setTimeout(() => {}, 2000);
       } else {
         setStatus(`Error: ${result.message || "Something went wrong"}`);
       }

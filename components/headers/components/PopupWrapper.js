@@ -26,7 +26,7 @@ export function PopupWrapper({
         {/* Button with conditional full-width */}
         <button
           onClick={togglePopup}
-          className={`btn btn-gradient btn-lg fw-bold text-white shadow-sm 
+          className={`btn-lg fw-semibold text-white shadow-sm 
             ${isFullWidth ? "w-100" : "w-md-auto"}`}
           style={{
             borderRadius: "50px",
@@ -34,6 +34,7 @@ export function PopupWrapper({
             border: "none",
             minWidth: isFullWidth ? "100%" : "14rem",
             padding: "12px 26px",
+            fontWeight: "600",
           }}
         >
           <span className="btn-animate-y">

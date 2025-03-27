@@ -24,10 +24,10 @@ export default function ServicePricing() {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row py-4">
         <div className="col-xl-12">
           {/* Nav Tabs */}
-          <div className="mb-20 mb-sm-20 text-center d-flex justify-content-center">
+          {/* <div className="mb-20 mb-sm-20 text-center d-flex justify-content-center">
             <ul
               className="works-filter works-filter-fancy text-center mb-60 mb-sm-40 z-1 animate"
               role="tablist"
@@ -58,21 +58,9 @@ export default function ServicePricing() {
                   Yearly
                 </a>
               </li>
-              {/* <li
-                className="nav-item"
-                onClick={() => setIsYearly(true)}
-                role="presentation"
-              >
-                <a
-                  href="#tab-annual"
-                  className={`nav-link ${isYearly ? "active" : ""}`}
-                  data-bs-toggle="tab"
-                >
-                  Project Manager
-                </a>
-              </li> */}
+              
             </ul>
-          </div>
+          </div> */}
           {/* End Nav Tabs */}
 
           {/* Pricing Plans */}
@@ -83,11 +71,11 @@ export default function ServicePricing() {
                   const updatePrice = isYearly ? plan.price * 12 : plan.price;
                   return (
                     <div key={index} className="col-md-6 col-lg-4">
-                      <div className="card card-pricing border-1 shadow p-4 rounded-3 mb-20">
-                        <div className="d-flex align-items-center justify-content-between flex-row mb-20">
+                      <div className="card card-pricing p-4 rounded-3 mb-20">
+                        <div className="d-flex align-items-center flex-row mb-20">
                           <span
                             className="fw-bold me-4"
-                            style={{ fontSize: "24px" }}
+                            style={{ fontSize: "28px" }}
                           >
                             {plan.title}
                           </span>
@@ -97,7 +85,7 @@ export default function ServicePricing() {
                               style={{
                                 backgroundColor: plan.bgColor,
                                 color: "white",
-                                fontSize: "12px",
+                                fontSize: "10px",
                               }}
                             >
                               {plan.badge}
@@ -113,31 +101,13 @@ export default function ServicePricing() {
                           >
                             {isYearly ? plan.price * 12 : plan.price}
                           </span>
-                          <span className="fs-6 text-muted ms-2">
+                          {/* <span className="fs-6 text-muted ms-2">
                             {isYearly ? "per year" : "per month"}
-                          </span>
+                          </span> */}
                         </div>
 
-                        {/* Dynamic Button */}
-                        {/* {index === 0 ? (
-                                  <button
-                                    className="btn btn-transparent w-50 mt-3 border-1 rounded-pill"
-                                    style={{ background: "#F6F6F6", padding: "12px 14px", }}
-                                    disabled
-                                  >
-                                    Current Plan
-                                  </button>
-                                ) : (
-                                  <button
-                                    className="btn w-50 mt-3 border-1 rounded-pill g-button"
-                                    style={{ background: "#F6F6F6" }}
-                                  >
-                                    <span>Upgrade</span>
-                                  </button>
-                                )} */}
-
-                        <h5 className="mt-4">Include</h5>
-                        <p className="text-muted">
+                        <h5 className="mt-4" style={{ fontWeight: "500",color:"#464646" }}>Includes</h5>
+                        <p className="work-descr" style={{ color: "#536174" }}>
                           Everything you get in this plan
                         </p>
 
@@ -156,7 +126,7 @@ export default function ServicePricing() {
                               key={i}
                               className="d-flex align-items-center opacity-75"
                             >
-                              <i className="mi-close me-2 text-danger"></i>{" "}
+                              <i className="mi-circle-error me-2 text-danger"></i>{" "}
                               {feature}
                             </li>
                           ))}
