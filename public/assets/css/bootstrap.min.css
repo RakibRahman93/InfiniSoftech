@@ -4291,7 +4291,7 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid #CFCFCF;
+  border: 1px solid #E0E3E8;
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -4637,7 +4637,7 @@ fieldset:disabled .btn {
   display: inline-block;
   padding: 0.35em 0.65em;
   font-size: 0.75em;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
   color: #fff;
   text-align: center;
