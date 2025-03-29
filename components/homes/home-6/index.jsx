@@ -383,14 +383,14 @@ export default function Home6({ onePage = false, dark = false }) {
         </div>
       </section>
       {/* </section> */}
-      <section
+      {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
         id="pricing"
       >
         <Pricing />
-      </section>
+      </section> */}
       {/* Frequently Asked Questions */}
       <section className="page-section z-index-1">
         <div className="container position-relative">

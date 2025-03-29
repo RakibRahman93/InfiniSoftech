@@ -1106,10 +1106,11 @@
 /* Tablet to Large Screens (768px and larger) */
 @media screen and (min-width: 768px) {
   .mapData {
-    height: 132% !important;
+    height: 127% !important;
     width: 43% !important;
     position: absolute;
     top: -157px;
     right: -21px;
   }
 }
+ 

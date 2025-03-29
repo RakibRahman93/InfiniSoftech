@@ -896,7 +896,10 @@
   width: 70%;
 }
 .card-pricing {
-  min-height: 76rem;
+  min-height: 78rem;
+}
+.techCard-pricing {
+  min-height: 86rem;
 }
 .get-started-btn {
   margin-top: auto;
@@ -930,6 +933,9 @@
   }
 }
 @media only screen and (max-width: 1200px) {
+  .techCard-pricing {
+    min-height: 107rem;
+  }
   .card-pricing {
     min-height: 96rem;
   }
@@ -978,13 +984,29 @@
 .fs-footer-title {
   font-size: 64px;
 }
+.fs-30 {
+  font-size: 30px;
+}
 
 .dshape {
   background-image: url("/assets/images/shape-services.png");
   background-position: calc(96% - -50px) 206px;
   background-repeat: no-repeat;
 }
-
+.oshape{
+  position: relative;
+}
+.oshape::before {
+  content: "";
+  position: absolute;
+  top: 25rem;
+  left: 0rem;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/oshape.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .home-section::after {
   content: "";
   position: absolute; /* or relative if required by layout */
@@ -1002,8 +1024,14 @@
   .fs-48 {
     font-size: 35px;
   }
+  .fs-30 {
+    font-size: 18px;
+  }
 }
 @media (max-width: 768px) {
+  .techCard-pricing {
+    min-height: 84rem;
+  }
   .card-pricing {
     min-height: 76rem;
   }
@@ -1025,9 +1053,15 @@
 }
 
 @media (max-width: 576px) {
+  .fs-30 {
+    font-size: 16px;
+  }
+  .techCard-pricing {
+    min-height: 68rem;
+  }
   .card-pricing {
     min-height: 0rem;
-}
+  }
   .fs-48 {
     font-size: 28px;
   }

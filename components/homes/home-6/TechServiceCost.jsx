@@ -1,10 +1,10 @@
 "use client";
 
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
-import { ServicePricingData } from "@/data/pricing"; // Ensure the path is correct
+import { TechServicePricingData } from "@/data/pricing"; // Ensure the path is correct
 import { useState } from "react";
 
-export default function ServicePricing() {
+export default function TechServiceCost() {
   const [isYearly, setIsYearly] = useState(false);
 
   return (
@@ -13,13 +13,13 @@ export default function ServicePricing() {
         <div className="col-md-8 offset-md-2 text-center">
           <h2 className="section-caption mb-0">Pricing</h2>
           <h3 className="section-title-small mb-10">
-            🚀 Invest in Great Design
+            🚀 Tech Staffing Cost
           </h3>
           <p
             className="mb-0 portfolio-1-descr"
             style={{ fontWeight: "500", lineHeight: "25px" }}
           >
-            UI/UX packages that drive clarity, usability, and growth.
+            Offshore tech staffing often comes with hidden fees, leaving clients frustrated and uncertain. At Infinisoft Technology , we do things differently. Our pricing is clear, fair, and transparent—because we believe that trust and honesty should be at the core of every partnership. No surprises, just reliable, top-tier talent. 🚀
           </p>
         </div>
       </div>
@@ -67,11 +67,11 @@ export default function ServicePricing() {
           <div className="tab-content tpl-minimal-tabs-cont position-relative">
             <div className="tab-pane show active">
               <div className="row mt-n30">
-                {ServicePricingData.map((plan, index) => {
+                {TechServicePricingData.map((plan, index) => {
                   const updatePrice = isYearly ? plan.price * 12 : plan.price;
                   return (
                     <div key={index} className="col-md-6 col-lg-4">
-                      <div className="card card-pricing p-4 rounded-3 mb-20">
+                      <div className="card techCard-pricing p-4 rounded-3 mb-20">
                         <div className="d-flex align-items-center flex-row mb-20">
                           <span
                             className="fw-bold me-4 fs-30"
@@ -101,9 +101,9 @@ export default function ServicePricing() {
                           >
                             {isYearly ? plan.price * 12 : plan.price}
                           </span>
-                          {/* <span className="fs-6 text-muted ms-2">
+                          <span className="fs-6 text-muted ms-2">
                             {isYearly ? "per year" : "per month"}
-                          </span> */}
+                          </span>
                         </div>
 
                         <h5 className="mt-4" style={{ fontWeight: "500",color:"#464646" }}>Includes</h5>
