@@ -107,21 +107,27 @@ export default function Form({ plan }) {
             {/* Conditionally show plan title and price if plan is provided */}
             {plan?.title && plan?.price ? (
               <>
-                <div className="w-full">
-                  <input
-                    type="text"
-                    disabled
-                    className="popup-input w-full"
-                    value={plan?.title}
-                  />
+                <div className="w-full mb-3 text-start">
+                  <div
+                    className="popup-input w-full bg-gray-100 p-2 rounded border border-gray-300"
+                    style={{ color: "#828282" }}
+                  >
+                    Package:{" "}
+                    <span style={{ color: "#B467C0", fontWeight: "bolder" }}>
+                      {plan?.title}
+                    </span>
+                  </div>
                 </div>
-                <div className="w-full">
-                  <input
-                    type="text"
-                    disabled
-                    className="popup-input w-full"
-                    value={plan?.price}
-                  />
+                <div className="w-full text-start mb-3">
+                  <div
+                    className="popup-input w-full bg-gray-100 p-2 rounded border border-gray-300"
+                    style={{ color: "#828282" }}
+                  >
+                    Price:{" "}
+                    <span style={{ color: "#B467C0", fontWeight: "bolder" }}>
+                      ${plan?.price}
+                    </span>
+                  </div>
                 </div>
               </>
             ) : null}

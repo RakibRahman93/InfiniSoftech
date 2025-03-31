@@ -280,14 +280,14 @@ export default function FancyServicesPage() {
               </div>
             </section>
 
-            <section
+            {/* <section
               className={`scrollSpysection py-5 ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
               id="pricing"
             >
               <ServicePricing />
-            </section>
+            </section> */}
             {/* why chose us  */}
             <section
               className={`scrollSpysection pb-5 mt-5 service-large-sections`}

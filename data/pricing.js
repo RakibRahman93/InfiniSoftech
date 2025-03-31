@@ -125,6 +125,86 @@ export const ServicePricingData = [
   },
   
 ];
+export const TechServicePricingData = [
+  
+  {
+    "title": "Part-Time UI/UX Designer",
+    "badge": "Flexible Starter",
+    "bgColor": "#159C7C",
+    "description": "Perfect for founders, early-stage SaaS, or design-light teams who want a professional designer on tap without full-time cost.",
+    "price": 1099,
+    "per": "per month",
+    "features": [
+      "72 hours/month (approx. 18 hours/week at $15.26/hour)",
+      "Mobile & Web UI Design in Figma",
+      "Responsive Design Layouts",
+      "Wireframes & High-Fidelity Concepts",
+      "Clickable Prototypes",
+      "3 Rounds of Revisions per design task",
+      "Basic UX Audit & Suggestions",
+      "Developer-Friendly Handoff",
+      "48-Hour Onboarding",
+    ],
+    "disabledFeatures": ["Extensive UX Research & Suggestions", "Weekly strategy calls to align with PM, CEO, or marketing","Unlimited design revisions within monthly scope","Design Animations"],
+    "buttonText": "Get Started"
+  },
+  {
+    "title": "Full-Time UI/UX Designer",
+    "badge": "Creative Partner",
+    "bgColor": "#BA68C8",
+    "description": "Perfect for SaaS companies, product teams, and agencies seeking a fully dedicated design resource.",
+    "price": 1799,
+    "per": "per month",
+    "features": [
+      "160 hours/month of dedicated design time(approx. 40 hours/week at $11.25/hour).",
+      "Mobile & Web UI Design in Figma",
+      "Responsive Design Layouts",
+      "High-Fidelity UI in Figma & Animations",
+      "Clickable Wireframes & Prototypes",
+      "Strategic UX Planning",
+      "Design System Creation",
+      "Unlimited Rounds of Revisions per design task",
+      "Seamless integration with your brand tone & visual identity",
+      "Weekly strategy calls to align with PM, CEO, or marketing",
+      "Agile-friendly and sprint-focused",
+      "Extensive UX Research & Suggestions",
+      "48-Hour Onboarding",
+      "Developer-Friendly Handoff",
+    ],
+    "disabledFeatures": ["Case Study Creation"],
+    "buttonText": "Get Started"
+  },
+  {
+    "title": "Senior Product Designer",
+    "badge": "Strategic Lead",
+    "bgColor": "#006FFD",
+    "description": "Premium design support for high-growth teams & polished user experiences.",
+    "price": 2900,
+    "per": "per month",
+    "features": [
+      "160 hours/month of dedicated design time(approx. 40 hours/week at $18.13/hour).",
+      "Senior UI/UX Designer with product thinking",
+      "UX Audits",
+      "User Journey Mapping",
+      "User Personas & Scenario-Based Design",
+      "Pixel-perfect, high-fidelity UI in Figma & Animations",
+      "Seamless integration with your brand tone & visual identity",
+      "Responsive Design (Web, Tablet, Mobile)",
+      "Interactive prototypes for product managers and engineers",
+      "Weekly strategy calls to align with PM, CEO, or marketing",
+      "Available for investor pitch decks or product vision visuals if needed",
+      "Agile-friendly and sprint-focused",
+      "Premium Support & Flexibility",
+      "Daily collaboration window via Slack or preferred channel",
+      "Unlimited design revisions within monthly scope",
+      "Case Study Creation",
+      "48-Hour Onboarding",
+    ],
+    // "disabledFeatures": ["Unlimited basic feature"],
+    "buttonText": "Get Started"
+  },
+  
+];
 export const pricing2 = [
   {
     title: "Standard",

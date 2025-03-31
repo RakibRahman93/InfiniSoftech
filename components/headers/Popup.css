@@ -27,7 +27,9 @@
 .popup {
   display: flex;
   gap: 20px;
+  font-size: 14px !important;
 }
+
 
 .popup-show {
   opacity: 1;
@@ -140,6 +142,14 @@ select option {
   color: #9E9E9E;
 }
 
+.popup-form input[type="text"], .popup-form input[type="email"], .popup-form input[type="password"], .popup-form select, .popup-form input[type="tel"], .popup-form textarea {
+
+  font-size: 14px;
+}
+
+.popup-input {
+  font-size: 14px !important;
+}
 
 @media (max-width: 480px) {
   

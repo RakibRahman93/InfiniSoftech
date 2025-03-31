@@ -6,6 +6,7 @@ import ProcessHire from "@/components/homes/home-6/ProcessHire";
 import ServiceMain from "@/components/homes/home-6/ServiceMain";
 import ServicePricing from "@/components/homes/home-6/ServicePricing";
 import ServiceSolution from "@/components/homes/home-6/ServiceSolution";
+import TechServiceCost from "@/components/homes/home-6/TechServiceCost";
 import TechSolutions from "@/components/homes/home-6/TechSolutions";
 import { reviews } from "@/data/features";
 
@@ -502,7 +503,7 @@ export default function FancyServicesPage() {
               } `}
               id="pricing"
             >
-              <ServicePricing />
+              <TechServiceCost />
             </section>
           </main>
           <FooterTop />

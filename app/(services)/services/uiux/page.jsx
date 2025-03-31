@@ -286,7 +286,7 @@ export default function FancyServicesPage() {
             </section>
             {/* why ui/ux Matters section  */}
             <section
-              className={`scrollSpysection mt-5 service-large-sections`}
+              className={`scrollSpysection mt-5 service-large-sections oshape`}
               id="about"
             >
               <div className="pt-md-5 container position-relative">
@@ -382,9 +382,9 @@ export default function FancyServicesPage() {
               id="about"
             >
               <div className="pt-md-5 container position-relative">
-                <div className="row mb-xs-40 justify-items-center align-items-center">
+                <div className="row mb-xs-40 justify-items-center align-items-center ">
                   {/* right section */}
-                  <div className="col-md-10 col-lg-6 text-center">
+                  <div className="col-md-10 col-lg-6 text-center ">
                     <Image
                       // style={{marginTop:"3.7rem"}}
                       src="/assets/images/services/chose-us.svg"
