@@ -408,27 +408,27 @@ export const mobileServicesData = [
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
     title: "UI/UX Design & Prototyping",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     src: "/assets/images/services/website/business.svg",
     title: "E-Commerce Mobile Apps",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
     title: "On-Demand Apps",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
     title: "AI & Chatbot Integration",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     src: "/assets/images/services/website/business.svg",
     title: "Business & Enterprise Apps",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
 ];
 export const seoServicesData = [
@@ -440,27 +440,27 @@ export const seoServicesData = [
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
     title: "Off-Page SEO & Link Building",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     src: "/assets/images/services/website/business.svg",
     title: "Technical SEO",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
     title: "Keyword Research & Strategy",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
     title: "Local SEO & Google My Business Optimization",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     src: "/assets/images/services/website/business.svg",
     title: "SEO Content Strategy",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
 ];
 export const webServicesData = [
@@ -472,27 +472,27 @@ export const webServicesData = [
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
     title: "E-Commerce Development",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    text: "Advance ecommerce platform development for growth and success",
   },
   {
     src: "/assets/images/services/website/business.svg",
     title: "Business Websites",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    text: "Professional website to get your business to the next level",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
     title: "Web App Development",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    text: "Complete web app design and development",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
     title: "UI/UX Optimization",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    text: "",
   },
   {
     src: "/assets/images/services/website/business.svg",
     title: "SEO & Speed Optimization",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    text: "",
   },
 ];
 export const services3aMain = [

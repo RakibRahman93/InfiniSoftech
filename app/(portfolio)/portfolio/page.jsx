@@ -1,6 +1,7 @@
 import AnimatedText from "@/components/common/AnimatedText";
 import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
+import FooterTop from "@/components/homes/home-6/FooterTop";
 import Portfolio from "@/components/homes/home-6/Portfolio";
 
 import { fancyMultipage } from "@/data/menu";
@@ -74,9 +75,9 @@ export default function FancyPortfolioPage() {
             </section>
             <>
               {/* Marquee Section */}
-              <div className="page-section overflow-hidden">
+              {/* <div className="page-section overflow-hidden"> */}
                 {/* Marquee Text Line */}
-                <div className="marquee marquee-style-1 mb-30">
+                {/* <div className="marquee marquee-style-1 mb-30">
                   <div className="marquee-track marquee-animation">
                     <div>Branding</div>
                     <div aria-hidden="true">UI/UX Design</div>
@@ -103,10 +104,10 @@ export default function FancyPortfolioPage() {
                     <div aria-hidden="true">UI/UX Design</div>
                     <div aria-hidden="true">Art Direction</div>
                   </div>
-                </div>
+                </div> */}
                 {/* End Marquee Text Line */}
                 {/* Marquee Text Line */}
-                <div className="marquee marquee-style-1">
+                {/* <div className="marquee marquee-style-1">
                   <div className="marquee-track marquee-animation">
                     <div>Development</div>
                     <div aria-hidden="true">SEO Optimization</div>
@@ -133,9 +134,9 @@ export default function FancyPortfolioPage() {
                     <div aria-hidden="true">Development</div>
                     <div aria-hidden="true">SEO Optimization</div>
                   </div>
-                </div>
+                </div> */}
                 {/* End Marquee Text Line */}
-              </div>
+              {/* </div> */}
               {/* End Marquee Section */}
               {/* Call Action Section */}
               {/* <section className="page-section pt-0">
@@ -162,9 +163,18 @@ export default function FancyPortfolioPage() {
               {/* End Call Action Section */}
             </>
           </main>
-          <footer className="page-section footer bg-dark-1 light-content pb-30">
+          <FooterTop />
+          <footer
+            className="footer bg-dark-1 light-content py-5"
+            style={{
+              background: "linear-gradient(220deg, #621ABE 0%, #051D55 50%)",
+            }}
+           >
             <Footer6 />
           </footer>
+          {/* <footer className="page-section footer bg-dark-1 light-content pb-30">
+            <Footer6 />
+          </footer> */}
         </div>{" "}
       </div>
     </>

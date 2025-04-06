@@ -6,9 +6,9 @@ import { fancyMultipage } from "@/data/menu";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {
-  title: "InfiniSoft Technology |  Professional Websites & App Solutions",
+  title: "$399 Website Starter Plan",
   description:
-    "Custom website, mobile app design & development. UIUX & prototyping services.",
+    "Launch fast, scale smart — Custom websites & mobile apps built for results. Trusted by startups, SaaS founders & agencies worldwide.",
 };
 export default function Home6MainDemoMultiPage() {
   return (

@@ -12,6 +12,7 @@ import Link from "next/link";
 import Team from "@/components/homes/home-1/Team";
 import Benefits from "@/components/homes/home-1/Benefits";
 import Faqs from "@/components/homes/home-1/Faq";
+import FooterTop from "@/components/homes/home-6/FooterTop";
 const onePage = false;
 const dark = false;
 export const metadata = {
@@ -373,9 +374,18 @@ export default function FancyAboutPage() {
               {dark ? <TestimonialsDark /> : <Testimonials />}
             </section> */}
           </main>
-          <footer className="page-section footer bg-dark-1 light-content pb-30">
+          <FooterTop />
+          <footer
+            className="footer bg-dark-1 light-content py-5"
+            style={{
+              background: "linear-gradient(220deg, #621ABE 0%, #051D55 50%)",
+            }}
+           >
             <Footer6 />
           </footer>
+          {/* <footer className="page-section footer bg-dark-1 light-content pb-30">
+            <Footer6 />
+          </footer> */}
         </div>{" "}
       </div>
     </>

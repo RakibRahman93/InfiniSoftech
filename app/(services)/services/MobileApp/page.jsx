@@ -160,14 +160,14 @@ export default function FancyServicesPage() {
                         Services
                       </h2>
                     </div>
-                    <div className="col-md-6 col-lg-5 d-flex row">
+                    {/* <div className="col-md-6 col-lg-5 d-flex row">
                       <p className="services-5-text mb-0 text-white">
                         Choosing holapep means opting for a partner who provides
                         more than just WordPress expertise. We deliver a legacy
                         of trust, quality, and innovation across a range of
                         roles essential for modern digital solutions.
                       </p>
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className="col-md-4 col-lg-6 d-flex align-items-end">
@@ -229,7 +229,7 @@ export default function FancyServicesPage() {
                       >
                         Our Mobile App Development Process
                       </h2>
-                      <p
+                      {/* <p
                         style={{
                           color: "#7E7E7E",
                           fontSize: "16px !important",
@@ -238,7 +238,7 @@ export default function FancyServicesPage() {
                       >
                         Here’s how easy it is to get started with holapep’s
                         staff augmentation services
-                      </p>
+                      </p> */}
                     </div>
                   </div>
 

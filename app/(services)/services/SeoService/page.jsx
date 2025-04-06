@@ -158,14 +158,14 @@ export default function FancyServicesPage() {
                         Services
                       </h2>
                     </div>
-                    <div className="col-md-6 col-lg-5 d-flex row">
+                    {/* <div className="col-md-6 col-lg-5 d-flex row">
                       <p className="services-5-text mb-0 text-white">
                         Choosing holapep means opting for a partner who provides
                         more than just WordPress expertise. We deliver a legacy
                         of trust, quality, and innovation across a range of
                         roles essential for modern digital solutions.
                       </p>
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className="col-md-4 col-lg-6 d-flex align-items-end">

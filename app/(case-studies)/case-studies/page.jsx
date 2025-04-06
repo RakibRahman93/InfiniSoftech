@@ -3,6 +3,7 @@
 import AnimatedText from "@/components/common/AnimatedText";
 import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
+import FooterTop from "@/components/homes/home-6/FooterTop";
 import Portfolio from "@/components/homes/home-6/Portfolio";
 import { features2 } from "@/data/features";
 import { fancyMultipage } from "@/data/menu";
@@ -223,9 +224,18 @@ export default function CorporatePortfolioPage() {
             </>
           </main>
           <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
-          <footer className="bg-dark-1 light-content pb-50 pt-100">
+          <FooterTop />
+          <footer
+            className="footer bg-dark-1 light-content py-5"
+            style={{
+              background: "linear-gradient(220deg, #621ABE 0%, #051D55 50%)",
+            }}
+           >
             <Footer6 />
           </footer>
+          {/* <footer className="bg-dark-1 light-content pb-50 pt-100">
+            <Footer6 />
+          </footer> */}
         </div>{" "}
       </div>
     </>
