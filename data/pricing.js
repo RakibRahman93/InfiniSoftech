@@ -104,7 +104,7 @@ export const ServicePricingData = [
     "per": "per month",
     "features": [
       "Upto 40 Custom Designed Screens",
-      "10 GB Storage",
+      // "10 GB Storage",
       "Mobile Responsive Design",
       "Complete UI/UX audit and user journey planning",
       "Wireframes + final high-fidelity mockups",
