@@ -13,7 +13,7 @@ export const metadata = {
   title:
     "PORTFOLIO",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "",
 };
 export default function FancyPortfolioPage() {
   

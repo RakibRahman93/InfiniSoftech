@@ -16,7 +16,7 @@ export const metadata = {
   title:
     "CONTACT US",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "",
 };
 export default function FancyContactPage() {
   return (

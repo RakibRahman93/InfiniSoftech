@@ -6,7 +6,7 @@ import { fancyMultipage } from "@/data/menu";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {
-  title: "$399 Website Starter Plan",
+  title: "Launch fast, scale smart starting from just $399",
   description:
     "Launch fast, scale smart — Custom websites & mobile apps built for results. Trusted by startups, SaaS founders & agencies worldwide.",
 };

@@ -14,7 +14,7 @@ const dark = false;
 export const metadata = {
   title: "SERVICES - Website Design & Development",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "",
 };
 export default function FancyServicesPage() {
   return (

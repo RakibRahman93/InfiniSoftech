@@ -9,7 +9,7 @@ export const metadata = {
   title:
     "HOME",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "",
 };
 export default function Home6MainDemoMultiPage() {
   return (
