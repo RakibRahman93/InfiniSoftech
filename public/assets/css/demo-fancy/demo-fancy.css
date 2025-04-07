@@ -1056,6 +1056,9 @@
 }
 
 @media (max-width: 576px) {
+  .container .hs-title-10{
+    font-size: 26px !important;
+  }
   .fs-30 {
     font-size: 16px;
   }
