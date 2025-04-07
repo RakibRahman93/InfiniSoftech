@@ -1,6 +1,45 @@
+"use client";
 import FooterSocials from "@/components/footers/FooterSocials";
+import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import "./ContactForm.css";
 const FooterTop = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        toast.success("Email sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      }else {
+        toast.error("Failed to send email. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+    } 
+  };
+
   return (
     <div>
       <section
@@ -29,13 +68,17 @@ const FooterTop = () => {
                     <FooterSocials variant="third" />
                   </div>
                 </div>
-                <form>
+                <form onSubmit={handleSubmit}>
+                  
                   <div className="row">
                     <div className="col-md-4 mb-3">
                       <input
                         type="text"
                         className="form-control bg-transparent formDesign fs-24 ps-0"
                         placeholder="Your Name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        name="name"
                         required
                       />
                     </div>
@@ -44,6 +87,9 @@ const FooterTop = () => {
                         type="email"
                         className="form-control bg-transparent formDesign fs-24 ps-0"
                         placeholder="Email Address"
+                        value={formData.email}
+                        onChange={handleChange}
+                        name="email"
                         required
                       />
                     </div>
@@ -52,6 +98,10 @@ const FooterTop = () => {
                         type="tel"
                         className="form-control bg-transparent formDesign fs-24 ps-0"
                         placeholder="Phone Number (optional)"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        name="phone"
+                        required
                       />
                     </div>
                   </div>
@@ -61,11 +111,15 @@ const FooterTop = () => {
                       className="form-control bg-transparent formDesign fs-24 ps-0 mb-5"
                       rows="5"
                       placeholder="Message"
+                      value={formData.message}
+                      onChange={handleChange}
                       required
+                      name="message"
                     ></textarea>
                   </div>
                   <div>
                     <button
+                   
                       className="btn btn-lg"
                       style={{
                         borderRadius: "50px",
@@ -86,6 +140,7 @@ const FooterTop = () => {
           </div>
         </div>
       </section>
+      <Toaster position="top-right"/>
     </div>
   );
 };
