@@ -468,7 +468,7 @@ export default function FancyServicesPage() {
                   </div>
                   <div class="col-md-3 text-center">
                     <img
-                      src="assets/images/services/rakib.jpg"
+                      src="/assets/images/services/rakib.jpg"
                       alt="Profile Image"
                       class="rounded-circle img-fluid"
                     />
