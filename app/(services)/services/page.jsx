@@ -52,7 +52,7 @@ export default function FancyServicesPage() {
                         Expert Talent, On Demand
                       </span>
                     </h3>
-                    <p className="wow fadeInUp">
+                    <p className="wow fadeInUp section-title-ex-small">
                       Strategic staffing solutions designed for flexibility and
                       growth. Whether you require specialized expertise for
                       short-term projects or long-term team expansion, we
@@ -163,7 +163,7 @@ export default function FancyServicesPage() {
                       </h2>
                     </div>
                     <div className="col-md-6 col-lg-5 d-flex row">
-                      <p className="services-5-text mb-0 text-white">
+                      <p className="services-5-text mb-0 text-white section-title-ex-small">
                         <span className="fw-bold">Staff augmentation</span> is a
                         flexible outsourcing approach that helps businesses hire
                         skilled professionals for a set period. Instead of
@@ -447,14 +447,14 @@ export default function FancyServicesPage() {
               >
                 <div class="row align-items-center">
                   <div className="container mb-3">
-                    <h2
-                      class="fw-bold text-dark mb-0 section-title-small"
+                    <span
+                      class="fw-bold text-dark mb-0 "
                       style={{ color: "#1C1C57" }}
                     >
-                      Hire high-performance on-demand
-                    </h2>
+                      Hire High Performing &nbsp;
+                    </span>
                     <span
-                      class="section-title-small"
+                      class=""
                       style={{
                         background:
                           "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
