@@ -111,6 +111,9 @@
   .section-title-small {
     font-size: calc(1.136rem + 1.82vw) !important;
   }
+  .section-title-ex-small {
+    font-size: calc(0.75rem + 0.82vw) !important;
+  }
   .section-title-medium {
     font-size: calc(1.735rem + 3.82vw) !important;
   }

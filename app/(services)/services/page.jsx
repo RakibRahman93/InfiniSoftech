@@ -37,10 +37,10 @@ export default function FancyServicesPage() {
                 <div className="row mb-xs-40">
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
-                    <h3 className="section-title-small mb-30 mb-xs-20 wow fadeInUp">
+                    <h3 className="hs-title-10 mb-30 mb-xs-20 wow fadeInUp">
                       Boost Your Team with
                       <span
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white section-title-small"
+                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white hs-title-10"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -448,13 +448,13 @@ export default function FancyServicesPage() {
                 <div class="row align-items-center">
                   <div className="container mb-3">
                     <h2
-                      class="fw-bold text-dark mb-0 section-title-small"
+                      class="fw-bold text-dark mb-0 section-title-ex-small "
                       style={{ color: "#1C1C57" }}
                     >
                       Hire high-performance on-demand
                     </h2>
                     <span
-                      class="section-title-small"
+                      class="section-title-ex-small"
                       style={{
                         background:
                           "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
