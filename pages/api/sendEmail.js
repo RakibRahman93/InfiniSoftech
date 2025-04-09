@@ -38,7 +38,8 @@ export default async function handler(req, res) {
 
      // Confirmation Email to User
      const userMailOptions = {
-      from: process.env.EMAIL_USER,
+      // from: process.env.EMAIL_USER,
+      from: `"Infinisoftech" <${process.env.EMAIL_USER}>`,
       to: email, // Send to the user's email
       subject: "Thank You for Contacting Infinisoftech!",
       html: `
