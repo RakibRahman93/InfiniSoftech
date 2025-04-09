@@ -36,6 +36,24 @@ export default async function handler(req, res) {
       `,
     };
 
+     // Confirmation Email to User
+     const userMailOptions = {
+      from: process.env.EMAIL_USER,
+      to: email, // Send to the user's email
+      subject: "Thank You for Contacting Infinisoftech!",
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px; background: #ffffff; border-radius: 8px; border: 2px solid #8876FF">
+          <h2 style="background: linear-gradient(90deg, #8876FF 0%, #E75778 100%); color: #ffffff; padding: 15px; text-align: center;">Thank You, ${name}!</h2>
+          <p>Dear ${name},</p>
+          <p>We have received your message and will get back to you as soon as possible.</p>
+          <hr style="border: 1px solid #E75778; margin: 20px 0;">
+          <p style="text-align:center; color:#777;">For any urgent queries, please visit our website.</p>
+          <p style="text-align:center;"><a href="https://www.infinisoftech.com" style="color:#8876FF; text-decoration:none;">Visit our website</a></p>
+        </div>
+      `,
+    };
+
+    await transporter.sendMail(userMailOptions);
     await transporter.sendMail(mailOptions);
 
     return res.status(200).json({ message: "Email sent successfully" });
