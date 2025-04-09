@@ -35,7 +35,7 @@ export default function FancyServicesPage() {
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
                     <h1 className="fs-48 mb-30 mb-xs-20 wow fadeInUp ml-1">
-                      SEO Services – Rank Higher, Get More Traffic, and Grow &nbsp;
+                      Rank Higher, Get More Traffic, and Grow &nbsp;
                       <span
                         className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-48"
                         style={{
@@ -49,7 +49,7 @@ export default function FancyServicesPage() {
                         Your Business
                       </span>
                     </h1>
-                    <p className="wow fadeInUp section-descr">
+                    <p className="wow fadeInUp section-title-ex-small">
                       At InfiniSoft Technology, we help businesses increase
                       their online visibility, rank higher on Google, and
                       attract more customers through strategic SEO techniques.

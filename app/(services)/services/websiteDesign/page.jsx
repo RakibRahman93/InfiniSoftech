@@ -35,7 +35,7 @@ export default function FancyServicesPage() {
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
                     <h1 className="fs-48 mb-30 mb-xs-20 wow fadeInUp">
-                      Website Design & Development – High-Performance&nbsp;
+                      Get High Performaning&nbsp;
                       <span
                         className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-48"
                         style={{
@@ -46,10 +46,10 @@ export default function FancyServicesPage() {
                           fontWeight: "bold",
                         }}
                       >
-                        Digital Solutions
+                        Website Development
                       </span>
                     </h1>
-                    <p className="wow fadeInUp section-descr">
+                    <p className="wow fadeInUp section-title-ex-small">
                       We design user-centric, high-converting interfaces that
                       elevate your brand and enhance customer engagement.
                     </p>

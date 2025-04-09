@@ -18,12 +18,7 @@ export default async function handler(req, res) {
     });
 
     const mailOptions = {
-<<<<<<< HEAD
-      // from: process.env.EMAIL_USER,
-      from: `"Infinisoftech" <${process.env.EMAIL_USER}>`,
-=======
       from: `"Infinisoftech" <${process.env.EMAIL_USER}>`, // Use `process.env.EMAIL_USER`,
->>>>>>> grow-with-us
       to: "rakibrahman934@gmail.com",
       subject: "New Contact Form Submission",
       html: `
@@ -42,10 +37,6 @@ export default async function handler(req, res) {
 
      // Confirmation Email to User
      const userMailOptions = {
-<<<<<<< HEAD
-      // from: process.env.EMAIL_USER,
-=======
->>>>>>> grow-with-us
       from: `"Infinisoftech" <${process.env.EMAIL_USER}>`,
       to: email, // Send to the user's email
       subject: "Thank You for Contacting Infinisoftech!",
