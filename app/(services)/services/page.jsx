@@ -37,10 +37,10 @@ export default function FancyServicesPage() {
                 <div className="row mb-xs-40">
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
-                    <h3 className="hs-title-10 mb-30 mb-xs-20 wow fadeInUp">
+                    <h3 className="section-title-small mb-30 mb-xs-20 wow fadeInUp">
                       Boost Your Team with
                       <span
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white hs-title-10"
+                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white section-title-small"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -52,7 +52,7 @@ export default function FancyServicesPage() {
                         Expert Talent, On Demand
                       </span>
                     </h3>
-                    <p className="wow fadeInUp ps-title-5">
+                    <p className="wow fadeInUp">
                       Strategic staffing solutions designed for flexibility and
                       growth. Whether you require specialized expertise for
                       short-term projects or long-term team expansion, we
@@ -163,8 +163,8 @@ export default function FancyServicesPage() {
                       </h2>
                     </div>
                     <div className="col-md-6 col-lg-5 d-flex row">
-                      <p className="services-5-text mb-0 text-white ps-title-5">
-                        <span className="fw-bold ">Staff augmentation</span> is a
+                      <p className="services-5-text mb-0 text-white">
+                        <span className="fw-bold">Staff augmentation</span> is a
                         flexible outsourcing approach that helps businesses hire
                         skilled professionals for a set period. Instead of
                         permanent hires, companies expand their in-house teams
@@ -239,7 +239,7 @@ export default function FancyServicesPage() {
                           color: "#7E7E7E",
                           fontSize: "16px !important",
                         }}
-                        className="mb-0 mb-sm-20 text-center fw-bolder ps-title-5"
+                        className="mb-0 mb-sm-20 text-center fw-bolder"
                       >
                         Getting started with InfiniSoft's staff augmentation is
                         quick and seamless. Here's how:
@@ -448,13 +448,13 @@ export default function FancyServicesPage() {
                 <div class="row align-items-center">
                   <div className="container mb-3">
                     <h2
-                      class="fw-bold text-dark mb-0 section-title-ex-small "
+                      class="fw-bold text-dark mb-0 section-title-small"
                       style={{ color: "#1C1C57" }}
                     >
-                      Hire High Performance On Demand
+                      Hire high-performance on-demand
                     </h2>
                     <span
-                      class="section-title-ex-small"
+                      class="section-title-small"
                       style={{
                         background:
                           "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
