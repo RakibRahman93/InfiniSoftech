@@ -451,7 +451,7 @@ export default function FancyServicesPage() {
                       class="fw-bold text-dark mb-0 section-title-ex-small "
                       style={{ color: "#1C1C57" }}
                     >
-                      Hire high-performance on-demand
+                      Hire High Performance On Demand
                     </h2>
                     <span
                       class="section-title-ex-small"
