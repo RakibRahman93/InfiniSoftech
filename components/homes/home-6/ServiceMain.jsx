@@ -33,6 +33,7 @@ const ServiceMain = ({ src, title, text }) => (
                   fontWeight: "300",
                   lineHeight: "25px",
                   fontSize: "14px",
+                  textAlign: "left"
                 }}
                 className="services-5-text text-white mb-0 ps-title-5"
               >
@@ -79,6 +80,7 @@ const ServiceItem2 = ({ src, title, text }) => (
                   fontWeight: "300",
                   lineHeight: "25px",
                   fontSize: "14px",
+                  textAlign: "left"
                 }}
                 className="services-5-text mb-0 text-white"
               >
