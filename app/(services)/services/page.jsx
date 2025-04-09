@@ -52,7 +52,7 @@ export default function FancyServicesPage() {
                         Expert Talent, On Demand
                       </span>
                     </h3>
-                    <p className="wow fadeInUp">
+                    <p className="wow fadeInUp ps-title-5">
                       Strategic staffing solutions designed for flexibility and
                       growth. Whether you require specialized expertise for
                       short-term projects or long-term team expansion, we
@@ -163,8 +163,8 @@ export default function FancyServicesPage() {
                       </h2>
                     </div>
                     <div className="col-md-6 col-lg-5 d-flex row">
-                      <p className="services-5-text mb-0 text-white">
-                        <span className="fw-bold">Staff augmentation</span> is a
+                      <p className="services-5-text mb-0 text-white ps-title-5">
+                        <span className="fw-bold ">Staff augmentation</span> is a
                         flexible outsourcing approach that helps businesses hire
                         skilled professionals for a set period. Instead of
                         permanent hires, companies expand their in-house teams
@@ -239,7 +239,7 @@ export default function FancyServicesPage() {
                           color: "#7E7E7E",
                           fontSize: "16px !important",
                         }}
-                        className="mb-0 mb-sm-20 text-center fw-bolder"
+                        className="mb-0 mb-sm-20 text-center fw-bolder ps-title-5"
                       >
                         Getting started with InfiniSoft's staff augmentation is
                         quick and seamless. Here's how:

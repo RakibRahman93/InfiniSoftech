@@ -34,7 +34,7 @@ const ServiceMain = ({ src, title, text }) => (
                   lineHeight: "25px",
                   fontSize: "14px",
                 }}
-                className="services-5-text text-white mb-0"
+                className="services-5-text text-white mb-0 ps-title-5"
               >
                 {text}
               </p>
