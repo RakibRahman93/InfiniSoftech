@@ -18,7 +18,8 @@ export default async function handler(req, res) {
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      // from: process.env.EMAIL_USER,
+      from: `"Infinisoftech" <${process.env.EMAIL_USER}>`,
       to: "rakibrahman934@gmail.com",
       subject: "New Contact Form Submission",
       html: `
