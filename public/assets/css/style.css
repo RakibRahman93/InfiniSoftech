@@ -1289,6 +1289,9 @@ hr.thick {
   line-height: 1.1785 !important;
   letter-spacing: -0.037em !important;
 }
+.left-align {
+  text-align: left;
+}
 .hs-title-11 {
   margin-top: 0 !important;
   font-size: 20px !important;
