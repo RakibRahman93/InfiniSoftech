@@ -152,6 +152,10 @@ select option {
 .popup-input {
   font-size: 14px !important;
 }
+#subject::placeholder,
+#message::placeholder {
+  color: #1c1c57;
+}
 
 @media (max-width: 480px) {
   .popup {

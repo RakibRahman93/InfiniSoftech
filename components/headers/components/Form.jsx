@@ -134,7 +134,7 @@ export default function Form({ plan }) {
             <div className="w-full">
               <input
                 type="text"
-                placeholder="Your Name"
+                placeholder="Name"
                 className="popup-input w-full"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -144,7 +144,7 @@ export default function Form({ plan }) {
             <div className="w-full">
               <input
                 type="email"
-                placeholder="Your Email"
+                placeholder="Email"
                 className="popup-input w-full"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -155,7 +155,7 @@ export default function Form({ plan }) {
             <div className="w-full">
               <input
                 type="tel"
-                placeholder="Your Phone Number"
+                placeholder="Phone Number"
                 className="popup-input w-full"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
@@ -168,9 +168,10 @@ export default function Form({ plan }) {
                 value={options}
                 onChange={(e) => setOptions(e.target.value)}
                 required
+                style={{ color: "#1C1C57" }}
               >
-                <option value="" disabled>
-                  Select an option
+                <option value="" disabled >
+                  Select Service
                 </option>
                 <option value="Website design">Website design</option>
                 <option value="Mobile App design">Mobile App design</option>
@@ -187,19 +188,23 @@ export default function Form({ plan }) {
               <input
                 type="text"
                 placeholder="Subject"
+                id="subject"
                 className="popup-input w-full"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
                 required
+                style={{ color: "#1C1C57" }}
               />
             </div>
             <div className="w-full">
               <textarea
-                placeholder="Your Message"
+                placeholder="Message"
+                id="message"
                 className="popup-input w-full"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
+                style={{ color: "#1C1C57" }}
               />
             </div>
             <button
