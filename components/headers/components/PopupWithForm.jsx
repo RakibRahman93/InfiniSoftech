@@ -10,6 +10,9 @@ export default function PopupWithForm({ triggerLabel }) {
   const togglePopup = () => {
     setIsPopupVisible(!isPopupVisible);
   };
+  const handleFormSuccess = () => {
+    setIsPopupVisible(false); // Close the popup on form success
+  }
 
   return (
     <>
@@ -23,7 +26,7 @@ export default function PopupWithForm({ triggerLabel }) {
 
       {/* Popup Component */}
       <Popup isPopupVisible={isPopupVisible} onClose={togglePopup}>
-        <Form togglePopup={togglePopup} />
+        <Form togglePopup={handleFormSuccess} />
       </Popup>
     </>
   );

@@ -18,6 +18,10 @@ export function PopupWrapper({
     setIsPopupVisible(!isPopupVisible);
   };
 
+  const handlePopupClose = () => {
+    setIsPopupVisible(false); // Close the popup on form success
+  }
+
   return (
     <>
       <ul
@@ -47,8 +51,8 @@ export function PopupWrapper({
       </ul>
 
       {/* Popup Component */}
-      <Popup isPopupVisible={isPopupVisible} onClose={togglePopup} plan={plan}>
-        <Form />
+      <Popup isPopupVisible={isPopupVisible} onClose={handlePopupClose} plan={plan}>
+        <Form onSuccess={handlePopupClose} />
       </Popup>
     </>
   );

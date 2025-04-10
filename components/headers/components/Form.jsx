@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 
-export default function Form({ plan }) {
+export default function Form({ onSuccess,plan }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -66,8 +66,7 @@ export default function Form({ plan }) {
         setOptions("");
         setSubject("");
         setMessage("");
-        //close the popup after a short delay
-        setTimeout(() => {}, 2000);
+        onSuccess(); // Call the onSuccess function passed as a prop
       } else {
         setStatus(`Error: ${result.message || "Something went wrong"}`);
       }
@@ -170,9 +169,10 @@ export default function Form({ plan }) {
                 required
                 style={{ color: "#1C1C57" }}
               >
-                <option value="" disabled >
+                <option value="" disabled>
                   Select Service
                 </option>
+                <option value="Website design">Staff Augmentation</option>
                 <option value="Website design">Website design</option>
                 <option value="Mobile App design">Mobile App design</option>
                 <option value="Website development">Website development</option>
