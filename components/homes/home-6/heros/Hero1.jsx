@@ -94,14 +94,14 @@ export default function Hero1() {
                     }}
                   >
                     <span className="btn-animate-y">
-                      <span className="btn-animate-y-1">
+                      <span className="btn-animate-y-1"  style={{ fontFamily: "Raleway, sans-serif", fontWeight: "bold" }}>
                         {/* <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
                         ></i>{" "} */}
                         Staff Augmentation
                       </span>
-                      <span className="btn-animate-y-2" aria-hidden="true">
+                      <span className="btn-animate-y-2" aria-hidden="true"  style={{ fontFamily: "Raleway, sans-serif", fontWeight: "bold" }}>
                         {/* <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
@@ -133,14 +133,14 @@ export default function Hero1() {
                   >
                     {/* <span>Contact Us</span> */}
                     <span className="btn-animate-y">
-                      <span className="btn-animate-y-1">
+                      <span className="btn-animate-y-1"  style={{ fontFamily: "Raleway, sans-serif", fontWeight: "bold" }}>
                         <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
                         ></i>{" "}
                         Watch Video
                       </span>
-                      <span className="btn-animate-y-2" aria-hidden="true">
+                      <span className="btn-animate-y-2" aria-hidden="true"  style={{ fontFamily: "Raleway, sans-serif", fontWeight: "bold" }}>
                         <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"

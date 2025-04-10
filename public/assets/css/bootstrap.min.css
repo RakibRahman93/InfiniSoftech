@@ -327,9 +327,10 @@ button,
 input,
 optgroup,
 select,
-textarea {
+textarea,raleway {
   margin: 0;
-  font-family: inherit;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
   font-size: inherit;
   line-height: inherit;
 }
