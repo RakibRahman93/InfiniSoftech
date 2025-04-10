@@ -988,9 +988,11 @@
   font-size: 64px;
 }
 .fs-30 {
-  font-size: 30px;
+  font-size: 28px;
 }
-
+.m-h-30 {
+  min-height: 75px;
+}
 .dshape {
   background-image: url("/assets/images/shape-services.png");
   background-position: calc(96% - -50px) 206px;

@@ -13,8 +13,7 @@ const onePage = false;
 const dark = false;
 export const metadata = {
   title: "SERVICES - UI/UX",
-  description:
-    "",
+  description: "",
 };
 export default function FancyServicesPage() {
   return (
@@ -51,11 +50,12 @@ export default function FancyServicesPage() {
                       </span>
                     </h1>
                     <p className="wow fadeInUp section-title-ex-small">
-                      Strategic staffing solutions designed for flexibility and
-                      growth. Whether you require specialized expertise for
-                      short-term projects or long-term team expansion, we
-                      deliver top-tier talent to optimize performance and drive
-                      sustainable success.
+                      Investing in professional UI/UX design services can
+                      transform your digital presence and boost customer
+                      engagement. A well-crafted user interface (UI) and
+                      seamless user experience (UX) ensure that your website or
+                      application is not only visually stunning but also
+                      functional and intuitive.
                     </p>
 
                     {/* Yellow Stars */}

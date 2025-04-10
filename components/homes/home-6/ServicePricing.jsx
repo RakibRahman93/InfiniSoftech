@@ -73,10 +73,7 @@ export default function ServicePricing() {
                     <div key={index} className="col-md-6 col-lg-4">
                       <div className="card card-pricing p-4 rounded-3 mb-20">
                         <div className="d-flex align-items-center flex-row mb-20">
-                          <span
-                            className="fw-bold me-4 fs-30"
-                            
-                          >
+                          <span className="fw-bold me-4 fs-30">
                             {plan.title}
                           </span>
                           {plan.badge && (
@@ -92,7 +89,9 @@ export default function ServicePricing() {
                             </span>
                           )}
                         </div>
-                        <p className="text-muted fs-6">{plan.description}</p>
+                        <p className="text-muted fs-6 m-h-30">
+                          {plan.description}
+                        </p>
                         <div className="d-flex align-items-end">
                           <span className="fs-2 fw-bold mb-30">$</span>
                           <span
@@ -106,7 +105,12 @@ export default function ServicePricing() {
                           </span> */}
                         </div>
 
-                        <h5 className="mt-4" style={{ fontWeight: "500",color:"#464646" }}>Includes</h5>
+                        <h5
+                          className="mt-4"
+                          style={{ fontWeight: "500", color: "#464646" }}
+                        >
+                          Includes
+                        </h5>
                         <p className="work-descr" style={{ color: "#536174" }}>
                           Everything you get in this plan
                         </p>
@@ -127,7 +131,7 @@ export default function ServicePricing() {
                               className="d-flex align-items-baseline opacity-75"
                             >
                               <i className="mi-circle-error me-2 text-danger"></i>{" "}
-                             <span> {feature}</span>
+                              <span> {feature}</span>
                             </li>
                           ))}
                         </ul>

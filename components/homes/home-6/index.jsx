@@ -1,19 +1,17 @@
 "use client";
 import Form from "@/components/headers/components/Form";
 import Popup from "@/components/headers/components/popup";
-import Contact from "@/components/homes/home-6/Contact";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 import { features10 } from "@/data/features";
 import Image from "next/image";
 import { useState } from "react";
 import Faqs from "../home-1/Faq";
 
+import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Portfolio from "./Portfolio";
-import Pricing from "./Pricing";
 import Service from "./Service";
 import Testimonials from "./Testimonials";
 import TestimonialsDark from "./TestimonialsDark";
-import Link from "next/link";
 import TwoService from "./TwoService";
 
 export default function Home6({ onePage = false, dark = false }) {
@@ -45,7 +43,8 @@ export default function Home6({ onePage = false, dark = false }) {
                 Grow With Us
               </h2>
               <h3 className="section-title-small  mb-30 mb-xs-20 wow fadeInUp">
-                Supercharge Sales with a Fast, Reliable Website Or A Mobile App,&nbsp;
+                Supercharge Sales with a Fast, Reliable Website Or A Mobile
+                App,&nbsp;
                 <span
                   className="mark-decoration-3-wrap color-secondary-1-white section-title-small "
                   style={{
@@ -86,40 +85,7 @@ export default function Home6({ onePage = false, dark = false }) {
               </div>
               <div className="local-scroll wow fadeInUp" data-wow-delay="0.12s">
                 <>
-                <Link
-                    href={"/case-studies"}
-                    className="btn btn-mod btn-color btn-border-c btn-white-c btn-large btn-round mb-xs-10 lightbox mfp-iframe mt-4"
-                    data-btn-animate="y"
-                    style={{
-                      borderRadius: "50px",
-                      // height: "2.7rem",
-                      minWidth: "14rem",
-                      background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
-                      border: "none",
-                      color: "white", // Ensures text remains visible
-                      fontSize: "14px",
-                      fontWeight: "bold",
-                      boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
-                      cursor: "pointer",
-                      }}
-                     >
-                    <span className="btn-animate-y">
-                      <span className="btn-animate-y-1">
-                        {/* <i
-                          className="icon-play size-13 me-1"
-                          aria-hidden="true"
-                        ></i>{" "} */}
-                        Case Studies
-                      </span>
-                      <span className="btn-animate-y-2" aria-hidden="true">
-                        {/* <i
-                          className="icon-play size-13 me-1"
-                          aria-hidden="true"
-                        ></i>{" "} */}
-                        Case Studies
-                      </span>
-                    </span>
-                  </Link>{" "}
+                  <PopupWrapper buttonText="Get a Started" />
                 </>
               </div>
             </div>
@@ -307,7 +273,7 @@ export default function Home6({ onePage = false, dark = false }) {
         <div className="container position-relative">
           <div className="row mb-60 mb-sm-40">
             <div className="col-md-12 col-lg-6">
-            <h2
+              <h2
                 className="section-caption mb-20 mb-xs-10"
                 style={{
                   background:
@@ -364,7 +330,8 @@ export default function Home6({ onePage = false, dark = false }) {
                       style={{ fontWeight: "300", lineHeight: "25px" }}
                       className="size-14 mb-0 text-white"
                     >
-                      We have a highly skilled talent pool to work on your projects 
+                      We have a highly skilled talent pool to work on your
+                      projects
                     </p>
                   </div>
                   <div className="w-100">
@@ -375,7 +342,8 @@ export default function Home6({ onePage = false, dark = false }) {
                       style={{ fontWeight: "300", lineHeight: "25px" }}
                       className="size-14 mb-0 text-white"
                     >
-                      We have access to a wide range of technology so we can allocate the necessary resources according to your needs
+                      We have access to a wide range of technology so we can
+                      allocate the necessary resources according to your needs
                     </p>
                   </div>
                 </div>
@@ -447,10 +415,10 @@ export default function Home6({ onePage = false, dark = false }) {
        
         
       </section> */}
-       {/* Popup */}
+      {/* Popup */}
       <Popup isPopupVisible={isPopupVisible} onClose={togglePopup}>
-          <Form togglePopup={togglePopup} />
-        </Popup>
+        <Form togglePopup={togglePopup} />
+      </Popup>
       <FooterTop />
     </>
   );
