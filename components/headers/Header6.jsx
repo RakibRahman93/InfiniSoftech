@@ -11,7 +11,7 @@ export default function Header6({ links }) {
     <div className="main-nav-sub container relative">
       {/* Logo */}
       <div className="nav-logo-wrap position-static local-scroll">
-        <a href="#top" className="logo">
+        <a href="/" className="logo">
           <Image
             src="/assets/images/InfiniSoftLogoblack.png"
             alt="Your Company Logo"

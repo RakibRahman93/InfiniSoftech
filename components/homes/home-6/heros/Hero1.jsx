@@ -76,7 +76,7 @@ export default function Hero1() {
                   data-wow-duration="1.2s"
                 >
                   <Link
-                    href={"/case-studies"}
+                    href={"/services/staffAugmentation"}
                     className="btn btn-mod btn-color btn-border-c btn-white-c btn-large btn-round mb-xs-10 lightbox mfp-iframe"
                     data-btn-animate="y"
                     style={{
@@ -99,14 +99,14 @@ export default function Hero1() {
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
                         ></i>{" "} */}
-                        Case Studies
+                        Staff Augmentation
                       </span>
                       <span className="btn-animate-y-2" aria-hidden="true">
                         {/* <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
                         ></i>{" "} */}
-                        Case Studies
+                        Staff Augmentation
                       </span>
                     </span>
                   </Link>{" "}
