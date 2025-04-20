@@ -1,4 +1,3 @@
-// components/Iphone16ProPreview.js
 
 import styles from './BootstrapPhonePreview.module.css';
 
@@ -9,7 +8,7 @@ export default function Iphone16ProPreview({src}) {
         <div className={styles.dynamicIsland}></div>
         <iframe
           src={src}
-          title="iPhone 16 Pro App Preview"
+          title="App Preview"
           className={styles.appIframe}
         ></iframe>
       </div>
