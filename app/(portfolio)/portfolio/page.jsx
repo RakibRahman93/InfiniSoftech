@@ -3,6 +3,7 @@ import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 import Portfolio from "@/components/homes/home-6/Portfolio";
+import BootstrapPhonePreview from "@/components/PortfolioPhonePreview/PortfolioPhonePreview";
 
 import { fancyMultipage } from "@/data/menu";
 import Image from "next/image";
@@ -59,6 +60,7 @@ export default function FancyPortfolioPage() {
                     >
                       Explore captivating web design solutions.
                     </p>
+                    
                   </div>
                 </div>
               </div>
