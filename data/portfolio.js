@@ -355,9 +355,18 @@ export const portfolios6 = [
     // website: "www.teammahir.com"
   }, 
   {
+    id: 36,
+    categories: ["design", "branding"],
+    imgSrc: "/assets/images/demo-fancy/portfolio/pizzaapp-cover.png",
+    imgExtra: "/assets/images/demo-fancy/portfolio/project-1.svg",
+    title: "Mobile App UIUX Design & Development",
+    description: "Pizza Delivery App",
+    lightbox: true,
+  },
+  {
     id: 42,
     categories: ["design", "branding", "development"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/teammahir-cover.png",
+    imgSrc: "/assets/images/demo-fancy/portfolio/Team mahir.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/Team mahir screens.svg",
     title: "Website | Web App Design & Development",
     description: "Team Mahir Professional Website",
@@ -368,15 +377,6 @@ export const portfolios6 = [
     Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `Team Mahir is a trusted supplier of defense products and services, catering to clients across Bangladesh and worldwide. Their primary objective is to offer unparalleled value and top-notch quality to clients while adhering to the strictest standards of professionalism and integrity. Their product inventory comprises an extensive range of specialized items, including body armor, tactical gear, surveillance equipment, and cutting-edge communication systems. Team Mahir serves both military and law enforcement sectors, taking pride in their ability to meet specific client requirements, whether through custom solutions or specialized equipment, ensuring complete customer`,
     website: "www.teammahir.com"
-  },
-  {
-    id: 36,
-    categories: ["design", "branding"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/pizzaapp-cover.png",
-    imgExtra: "/assets/images/demo-fancy/portfolio/project-1.svg",
-    title: "Mobile App UIUX Design & Development",
-    description: "Pizza Delivery App",
-    lightbox: true,
   },
   {
     id: 37,
