@@ -321,13 +321,27 @@ export const portfolios5 = [
 ];
 
 export const portfolios6 = [
- 
+  {
+    id: 41,
+    categories: ["UIUX Design", "branding", "development"],
+    imgSrc: "/assets/images/demo-fancy/portfolio/proapp-cover.png",
+    imgExtra: "/assets/images/demo-fancy/portfolio/proapp.png",
+    title: "Mobile App UIUX Design & Development",
+    description: "UIUX Design Of Study Management App",
+    lightbox: false,
+    lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
+    Date: "April 14th, 2025",
+    // Client: "International",
+    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Description: `The ultimate study planner that helps you organize your learning journey, track progress, and achieve your academic goals with ease.`,
+    // website: "www.teammahir.com"
+  }, 
   {
     id: 42,
     categories: ["design", "branding", "development"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/Team mahir.svg",
+    imgSrc: "/assets/images/demo-fancy/portfolio/teammahir-cover.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/Team mahir screens.svg",
-    title: "Website Design & Development",
+    title: "Website | Web App Design & Development",
     description: "Team Mahir Professional Website",
     lightbox: false,
     lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
@@ -340,10 +354,10 @@ export const portfolios6 = [
   {
     id: 36,
     categories: ["design", "branding"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/project-1.svg",
-    imgExtra: "/assets/images/demo-fancy/portfolio/food-app-preview.png",
-    title: "Pizza Delivery App",
-    description: "UIUX Design",
+    imgSrc: "/assets/images/demo-fancy/portfolio/pizzaapp-cover.png",
+    imgExtra: "/assets/images/demo-fancy/portfolio/project-1.svg",
+    title: "Mobile App UIUX Design & Development",
+    description: "Pizza Delivery App",
     lightbox: true,
   },
   {

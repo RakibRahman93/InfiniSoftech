@@ -77,7 +77,7 @@ export default function Portfolio() {
                     <div>
                       {item.lightbox ? (
                         <Item
-                          original={item.imgSrc}
+                          original={item.imgExtra}
                           thumbnail={item.imgSrc}
                           width={746}
                           height={524}
