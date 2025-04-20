@@ -322,6 +322,23 @@ export const portfolios5 = [
 
 export const portfolios6 = [
   {
+    id: 40,
+    categories: ["UIUX Design", "branding", "development"],
+    imgSrc: "/assets/images/demo-fancy/portfolio/ecommerce_app_cover.svg",
+    imgExtra: "/assets/images/demo-fancy/portfolio/ecommerce1.png",
+    imgSrc2: "/assets/images/demo-fancy/portfolio/ecommerce2.png",
+    title: "Mobile App UIUX Design & Development",
+    description: "UIUX Design Of E-Commerce App",
+    lightbox: false,
+    lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
+    Date: "April 19th, 2025",
+    // Client: "International",
+    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Description: `Asthetic ecommerce app with multi-vendor. Supports different product categories and admin panels
+    for vendors and admins to add & manage products seamlessly.`,
+    // website: "www.teammahir.com"
+  }, 
+  {
     id: 41,
     categories: ["UIUX Design", "branding", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/proapp-cover.png",
