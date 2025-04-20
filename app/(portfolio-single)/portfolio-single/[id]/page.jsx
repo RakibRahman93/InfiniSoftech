@@ -6,6 +6,7 @@ import BootstrapPhonePreview from "@/components/PortfolioPhonePreview/PortfolioP
 import { fancyMultipage } from "@/data/menu";
 import { portfolios6 } from "@/data/portfolio";
 import Image from "next/image";
+import Link from "next/link";
 export const metadata = {
   title: "Portfolio Single",
   description: "",
@@ -192,9 +193,23 @@ export default function FancyPortfolioSinglePage({ params }) {
               <section className="mt-3">
                 <div className="container position-relative">
                   <div>
-                    <h2 className="h3 mb-20">Project Prototype</h2>
+                    <h2 className="h3 mb-4">Project Prototype</h2>
                   </div>
                 </div>
+
+                {/* Show this only on mobile (xs, sm) */}
+                <div className="d-block d-md-none px-3 text-primary mb-2 small text-dark">
+                  📱 For better experience, open this prototype in a new tab:
+                  <Link
+                    href="https://playful-lokum-376864.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-underline ms-1"
+                  >
+                    Open Link
+                  </Link>
+                </div>
+
                 <div className="px-2">
                   <BootstrapPhonePreview src="https://playful-lokum-376864.netlify.app/" />
                 </div>
