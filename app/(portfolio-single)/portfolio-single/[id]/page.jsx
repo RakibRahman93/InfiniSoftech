@@ -2,10 +2,10 @@ import AnimatedText from "@/components/common/AnimatedText";
 import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
 import RelatedProjects5 from "@/components/portfolio/relatedProjects/RelatedProjects5";
-import Link from "next/link";
+import BootstrapPhonePreview from "@/components/PortfolioPhonePreview/PortfolioPhonePreview";
 import { fancyMultipage } from "@/data/menu";
-import Image from "next/image";
 import { portfolios6 } from "@/data/portfolio";
+import Image from "next/image";
 export const metadata = {
   title:
     "Portfolio Single",
@@ -187,10 +187,19 @@ export default function FancyPortfolioSinglePage({ params }) {
               {/* End Section */}
               {/* Divider */}
               <hr className="mt-0 mb-0" />
+              <section className="mt-3">
+                <div className="container position-relative">
+                  <div className="row">
+              <h2 className="h3 mb-20">Project Prototype</h2>
+              <BootstrapPhonePreview src="https://playful-lokum-376864.netlify.app/" />
+                  </div>
+                </div>
+              </section>
             </>
             <section className="page-section">
               <RelatedProjects5 />
             </section>
+            
             <>
               {/* Divider */}
               <hr className="mt-0 mb-0" />
@@ -218,6 +227,7 @@ export default function FancyPortfolioSinglePage({ params }) {
               </div> */}
               {/* End Work Navigation */}
             </>
+           
           </main>
           <footer className="page-section footer bg-dark-1 light-content pb-30">
             <Footer6 />
