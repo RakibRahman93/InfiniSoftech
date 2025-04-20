@@ -3,7 +3,7 @@ import styles from './BootstrapPhonePreview.module.css';
 
 export default function Iphone16ProPreview({src}) {
   return (
-    <div className="container my-5 d-flex justify-content-center">
+    <div className="my-5 d-flex justify-content-center">
       <div className={styles.iphoneFrame}>
         <div className={styles.dynamicIsland}></div>
         <iframe

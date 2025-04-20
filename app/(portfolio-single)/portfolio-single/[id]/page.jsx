@@ -7,20 +7,20 @@ import { fancyMultipage } from "@/data/menu";
 import { portfolios6 } from "@/data/portfolio";
 import Image from "next/image";
 export const metadata = {
-  title:
-    "Portfolio Single",
-  description:
-    "",
+  title: "Portfolio Single",
+  description: "",
 };
 export default function FancyPortfolioSinglePage({ params }) {
-  const portfolioItem = portfolios6.filter((elm) => elm.id == params.id)[0] || portfolios6[0];
+  const portfolioItem =
+    portfolios6.filter((elm) => elm.id == params.id)[0] || portfolios6[0];
 
-    // const object = params
-    // console.warn('portfolioItem', portfolioItem)
-    // console.warn('Date', Date);
-    
-    const {Date, Client, Services, Description, Features, website} = portfolioItem;
-    
+  // const object = params
+  // console.warn('portfolioItem', portfolioItem)
+  // console.warn('Date', Date);
+
+  const { Date, Client, Services, Description, Features, website } =
+    portfolioItem;
+
   return (
     <>
       <div className="theme-fancy">
@@ -105,30 +105,32 @@ export default function FancyPortfolioSinglePage({ params }) {
                           <div className="col-sm-4">
                             <b>Services:</b>
                           </div>
-                          <div className="col-sm-8">
-                            {Services}
-                          </div>
+                          <div className="col-sm-8">{Services}</div>
                         </div>
                         <hr className="mb-20" />
                         <div className="text-gray small">
                           <div>
                             <b>Description:</b>
                           </div>
-                          <div>
-                            {Description}
-                          </div>
+                          <div>{Description}</div>
                         </div>
-                        { website ? <>
-                          <hr className="mb-20" />
-                        <div className="text-gray small">
-                          <div>
-                            <b>website:</b>
-                          </div>
-                          <a href={`https://${website}`} target="_blank" rel="noopener noreferrer">
-                            {website}
-                          </a>
-                        </div>
-                        </> : null}
+                        {website ? (
+                          <>
+                            <hr className="mb-20" />
+                            <div className="text-gray small">
+                              <div>
+                                <b>website:</b>
+                              </div>
+                              <a
+                                href={`https://${website}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {website}
+                              </a>
+                            </div>
+                          </>
+                        ) : null}
                         {/* <hr className="mb-20" />
                         <div className="text-gray small">
                           <div>
@@ -189,17 +191,19 @@ export default function FancyPortfolioSinglePage({ params }) {
               <hr className="mt-0 mb-0" />
               <section className="mt-3">
                 <div className="container position-relative">
-                  <div className="row">
-              <h2 className="h3 mb-20">Project Prototype</h2>
-              <BootstrapPhonePreview src="https://playful-lokum-376864.netlify.app/" />
+                  <div>
+                    <h2 className="h3 mb-20">Project Prototype</h2>
                   </div>
+                </div>
+                <div className="px-2">
+                  <BootstrapPhonePreview src="https://playful-lokum-376864.netlify.app/" />
                 </div>
               </section>
             </>
             <section className="page-section">
               <RelatedProjects5 />
             </section>
-            
+
             <>
               {/* Divider */}
               <hr className="mt-0 mb-0" />
@@ -227,7 +231,6 @@ export default function FancyPortfolioSinglePage({ params }) {
               </div> */}
               {/* End Work Navigation */}
             </>
-           
           </main>
           <footer className="page-section footer bg-dark-1 light-content pb-30">
             <Footer6 />
