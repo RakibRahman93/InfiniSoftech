@@ -1,7 +1,7 @@
 .iphoneFrame {
   position: relative;
   width: 430px; /* updated for iPhone 16 Pro Max size */
-  height: 850px;
+  height: 750px;
   border: 16px solid #000;
   border-radius: 60px;
   background-color: #000;
