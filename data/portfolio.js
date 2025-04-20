@@ -321,13 +321,54 @@ export const portfolios5 = [
 ];
 
 export const portfolios6 = [
- 
+  {
+    id: 40,
+    categories: ["UIUX Design", "branding", "development"],
+    imgSrc: "/assets/images/demo-fancy/portfolio/ecommerce_app_cover.svg",
+    imgExtra: "/assets/images/demo-fancy/portfolio/ecommerce1.png",
+    imgSrc2: "/assets/images/demo-fancy/portfolio/ecommerce2.png",
+    title: "Mobile App UIUX Design & Development",
+    description: "UIUX Design Of E-Commerce App",
+    lightbox: false,
+    lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
+    Date: "April 19th, 2025",
+    // Client: "International",
+    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Description: `Asthetic ecommerce app with multi-vendor. Supports different product categories and admin panels
+    for vendors and admins to add & manage products seamlessly.`,
+    // website: "www.teammahir.com"
+  }, 
+  {
+    id: 41,
+    categories: ["UIUX Design", "branding", "development"],
+    imgSrc: "/assets/images/demo-fancy/portfolio/proapp-cover.png",
+    imgExtra: "/assets/images/demo-fancy/portfolio/proapp.png",
+    imgSrc2: "/assets/images/demo-fancy/portfolio/ProApp 2.png",
+    title: "Mobile App UIUX Design & Development",
+    description: "UIUX Design Of Study Management App",
+    lightbox: false,
+    lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
+    Date: "April 14th, 2025",
+    // Client: "International",
+    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Description: `The ultimate study planner that helps you organize your learning journey, track progress, and achieve your academic goals with ease.`,
+    // website: "www.teammahir.com"
+  }, 
+  {
+    id: 36,
+    categories: ["design", "branding"],
+    imgSrc: "/assets/images/demo-fancy/portfolio/pizzaapp-cover.png",
+    imgExtra: "/assets/images/demo-fancy/portfolio/project-1.svg",
+    title: "Mobile App UIUX Design & Development",
+    description: "Pizza Delivery App",
+    lightbox: true,
+  },
   {
     id: 42,
     categories: ["design", "branding", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/Team mahir.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/Team mahir screens.svg",
-    title: "Website Design & Development",
+    title: "Website | Web App Design & Development",
     description: "Team Mahir Professional Website",
     lightbox: false,
     lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
@@ -336,15 +377,6 @@ export const portfolios6 = [
     Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `Team Mahir is a trusted supplier of defense products and services, catering to clients across Bangladesh and worldwide. Their primary objective is to offer unparalleled value and top-notch quality to clients while adhering to the strictest standards of professionalism and integrity. Their product inventory comprises an extensive range of specialized items, including body armor, tactical gear, surveillance equipment, and cutting-edge communication systems. Team Mahir serves both military and law enforcement sectors, taking pride in their ability to meet specific client requirements, whether through custom solutions or specialized equipment, ensuring complete customer`,
     website: "www.teammahir.com"
-  },
-  {
-    id: 36,
-    categories: ["design", "branding"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/project-1.svg",
-    imgExtra: "/assets/images/demo-fancy/portfolio/food-app-preview.png",
-    title: "Pizza Delivery App",
-    description: "UIUX Design",
-    lightbox: true,
   },
   {
     id: 37,

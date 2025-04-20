@@ -167,6 +167,18 @@ export default function FancyPortfolioSinglePage({ params }) {
                           />
                         </div>
                         {/* End Photo Item */}
+                        {/* Photo Item */}
+                        <div className="mb-30 wow fadeInUp">
+                          <Image
+                            src={portfolioItem.imgSrc2}
+                            className="round"
+                            loading="lazy"
+                            width={1200}
+                            height={800}
+                            alt="Image Description"
+                          />
+                        </div>
+                        {/* End Photo Item */}
                       </div>
                     </div>
                   </div>
