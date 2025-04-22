@@ -322,6 +322,23 @@ export const portfolios5 = [
 
 export const portfolios6 = [
   {
+    id: 39,
+    categories: ["UIUX Design", "branding", "development"],
+    imgSrc: "/assets/images/demo-fancy/portfolio/FreshGoCover.png",
+    imgExtra: "/assets/images/demo-fancy/portfolio/FreshGo1.svg",
+    imgSrc2: "/assets/images/demo-fancy/portfolio/FreshGo2.svg",
+    title: "Mobile App UIUX Design & Development",
+    description: "UIUX Design Of FreshGo App",
+    lightbox: false,
+    lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
+    Date: "February 19th, 2025",
+    // Client: "International",
+    Services:
+      "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Description: `🥬 FreshGo – Your Daily Essentials, Delivered Fresh. FreshGo is a user-friendly grocery delivery app designed to bring fresh produce, daily essentials, and household goods right to your doorstep. It offers an easy product search experience with intuitive category filtering, real-time order tracking to keep users updated, and a secure checkout system with multiple payment options. Users can also schedule deliveries in advance and quickly reorder their favorites with just a tap. Experience convenience, freshness, and speed — all in one app.`,
+    // website: "www.teammahir.com"
+  },
+  {
     id: 40,
     categories: ["UIUX Design", "branding", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/ecommerce_app_cover.svg",
