@@ -21,7 +21,8 @@ export default function FancyPortfolioSinglePage({ params }) {
 
   const { Date, Client, Services, Description, Features, website } =
     portfolioItem;
-
+    const prototypeLink = portfolioItem?.prototypeLink
+    const showPrototype = !!prototypeLink;
   return (
     <>
       <div className="theme-fancy">
@@ -190,30 +191,33 @@ export default function FancyPortfolioSinglePage({ params }) {
               {/* End Section */}
               {/* Divider */}
               <hr className="mt-0 mb-0" />
-              <section className="mt-3">
-                <div className="container position-relative">
-                  <div>
-                    <h2 className="h3 mb-4">Project Prototype</h2>
+              {/* ===== Prototype Preview Section ===== */}
+              {showPrototype && (
+                <section className="mt-3">
+                  <div className="container position-relative">
+                    <div>
+                      <h2 className="h3 mb-4">Project Prototype</h2>
+                    </div>
                   </div>
-                </div>
 
-                {/* Show this only on mobile (xs, sm) */}
-                <div className="d-block d-md-none px-3 text-primary mb-2 small text-dark">
-                  📱 For better experience, open this prototype in a new tab:
-                  <Link
-                    href="https://playful-lokum-376864.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-decoration-underline ms-1"
-                  >
-                    Open Link
-                  </Link>
-                </div>
+                  {/* Show this only on mobile (xs, sm) */}
+                  <div className="d-block d-md-none px-3 text-primary mb-2 small text-dark">
+                    📱 For better experience, open this prototype in a new tab:
+                    <Link
+                      href={prototypeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-underline ms-1"
+                    >
+                      Open Link
+                    </Link>
+                  </div>
 
-                <div className="px-2">
-                  <BootstrapPhonePreview src="https://playful-lokum-376864.netlify.app/" />
-                </div>
-              </section>
+                  <div className="px-2">
+                    <BootstrapPhonePreview src={prototypeLink} />
+                  </div>
+                </section>
+              )}
             </>
             <section className="page-section">
               <RelatedProjects5 />

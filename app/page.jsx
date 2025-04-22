@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "Launch fast, scale smart — Custom websites & mobile apps built for results. Trusted by startups, SaaS founders & agencies worldwide.",
 };
-export default function Home6MainDemoMultiPage() {
+export default function Home6MainDemoMultiPage({}) {
   return (
     <>
       <Toaster position="top-right" reverseOrder={false} />
