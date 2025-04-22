@@ -333,11 +333,12 @@ export const portfolios6 = [
     lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
     Date: "April 19th, 2025",
     // Client: "International",
-    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Services:
+      "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `Asthetic ecommerce app with multi-vendor. Supports different product categories and admin panels
     for vendors and admins to add & manage products seamlessly.`,
     // website: "www.teammahir.com"
-  }, 
+  },
   {
     id: 41,
     categories: ["UIUX Design", "branding", "development"],
@@ -350,10 +351,11 @@ export const portfolios6 = [
     lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
     Date: "April 14th, 2025",
     // Client: "International",
-    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Services:
+      "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `The ultimate study planner that helps you organize your learning journey, track progress, and achieve your academic goals with ease.`,
-    // website: "www.teammahir.com"
-  }, 
+    prototypeLink: "https://playful-lokum-376864.netlify.app",
+  },
   {
     id: 36,
     categories: ["design", "branding"],
@@ -374,9 +376,10 @@ export const portfolios6 = [
     lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
     Date: "Jan 14th, 2024",
     Client: "Bangladesh",
-    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Services:
+      "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `Team Mahir is a trusted supplier of defense products and services, catering to clients across Bangladesh and worldwide. Their primary objective is to offer unparalleled value and top-notch quality to clients while adhering to the strictest standards of professionalism and integrity. Their product inventory comprises an extensive range of specialized items, including body armor, tactical gear, surveillance equipment, and cutting-edge communication systems. Team Mahir serves both military and law enforcement sectors, taking pride in their ability to meet specific client requirements, whether through custom solutions or specialized equipment, ensuring complete customer`,
-    website: "www.teammahir.com"
+    website: "www.teammahir.com",
   },
   {
     id: 37,
@@ -389,7 +392,8 @@ export const portfolios6 = [
     externalLink: "portfolio-single.html",
     Date: "May 1th, 2023",
     Client: "International Clients",
-    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Services:
+      "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `Experience the ultimate convenience with our food delivery app, designed to bring your favorite meals straight to your doorstep. Whether you're craving comfort food, gourmet delights, or healthy bites, our app connects you with a diverse range of restaurants and eateries in your area.`,
   },
   {
@@ -403,12 +407,13 @@ export const portfolios6 = [
     externalLink: "portfolio-single.html",
     Date: "June 12th, 2023",
     Client: "International Clients",
-    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Services:
+      "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `Welcome to Shopsphere, where convenience meets variety. This online store is designed to offer a seamless shopping experience with a wide range of products from different categories, including fashion, electronics, home goods, and more. Browse through our extensive collection and enjoy an intuitive, user-friendly interface that makes finding what you need quick and easy.`,
   },
   {
     id: 39,
-    categories: ["design", "development","branding"],
+    categories: ["design", "development", "branding"],
     imgSrc: "/assets/images/demo-fancy/portfolio/automobile website.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/automobile website2.svg",
     title: "Autohub Canada",
@@ -417,12 +422,13 @@ export const portfolios6 = [
     externalLink: "portfolio-single.html",
     Date: "May 12th, 2022",
     Client: "Canada",
-    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Services:
+      "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `Welcome to our automobile website, your ultimate destination for everything related to cars and vehicles. Whether you're looking to buy a new or used car, learn about the latest automotive trends, or get expert advice on car maintenance, we have you covered. `,
   },
   {
     id: 40,
-    categories: ["design","branding","development"],
+    categories: ["design", "branding", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/admin dashboard.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/admin dashboard 1.svg",
     title: "Web Application",
@@ -431,7 +437,8 @@ export const portfolios6 = [
     externalLink: "portfolio-single.html",
     Date: "Feb 12th, 2024",
     Client: "International Client",
-    Services: "Branding, UI/UX Design, Front-end Development, Back-end Development",
+    Services:
+      "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `Welcome to our intuitive and powerful dashboard web app, designed to provide you with a comprehensive overview of your data and operations. Whether you're managing a business, tracking personal progress, or monitoring key metrics, our dashboard gives you real-time insights and control at your fingertips. With a user-friendly interface and customizable features, it’s the perfect tool for making data-driven decisions and staying on top of important tasks. `,
   },
   {
@@ -447,7 +454,8 @@ export const portfolios6 = [
     Client: "International Client",
     Services: "Branding, UI/UX Design, Prototyping",
     Description: `Mobile app prototypes are interactive, visual models of a mobile application that showcase its functionality and user interface before development begins. Designed to bring your app idea to life, prototypes serve as a blueprint for the user experience (UX) and user interface (UI), allowing stakeholders and designers to collaborate and refine the concept. They provide a tangible preview of the app’s look and feel, helping to identify any potential issues early in the process, saving both time and resources. `,
-  }, {
+  },
+  {
     id: 33,
     categories: ["branding", "design", "development"],
     imgSrc: "/assets/images/demo-fancy/hbs.svg",
@@ -460,7 +468,7 @@ export const portfolios6 = [
     Client: "bangladeshi Client",
     Services: "Branding, UI/UX Design, Front-end Development",
     Description: `Health Care & Nursing Services.`,
-    website: "www.hbsnursingcare.com"
+    website: "www.hbsnursingcare.com",
   },
   {
     id: 34,
@@ -476,7 +484,7 @@ export const portfolios6 = [
     Services: "Branding, UI/UX Design, Front-end Development",
     Description: `Emagino is an AI startup who are totally revolutionazing the way people do marketing. They have 
     brought the involvement of AI in video production for advertisement.`,
-    website: "www.emagino.ai"
+    website: "www.emagino.ai",
   },
   {
     id: 35,
@@ -491,9 +499,8 @@ export const portfolios6 = [
     Client: "International Clients",
     Services: "Branding, UI/UX Design, Front-end Development",
     Description: `Evans is a creative visionary who specializes in crafting cinematic ad content and social-first visuals that reflect the style and storytelling quality of luxury brands. His speculative ad work includes standout campaigns designed for fashion, beauty, and lifestyle, With a keen eye for detail and innovation, Evans transforms concepts into polished, premium-level creative experiences.`,
-    website: "www.evansugo.com"
+    website: "www.evansugo.com",
   },
- 
 ];
 
 export const portfolios7 = [
@@ -699,7 +706,7 @@ export const portfolios11 = [
     imageUrl: "/assets/images/demo-fancy/glamhub2.png",
     number: "100%",
     description: "grow your business with us",
-    pdfUrl: "/assets/case-studies/glamhub.pdf"
+    pdfUrl: "/assets/case-studies/glamhub.pdf",
   },
   // {
   //   id: 66,
@@ -741,7 +748,12 @@ export const portfolios11 = [
 ];
 
 const casestudies = [
-  { id: 1, title: "GlamHub", description: "", pdfUrl: "/assets/case-studies/glamhub.pdf" },
+  {
+    id: 1,
+    title: "GlamHub",
+    description: "",
+    pdfUrl: "/assets/case-studies/glamhub.pdf",
+  },
   // { id: 2, title: "Project 2", description: "Description for Project 2", pdfUrl: "/path-to-pdf/project2.pdf" },
   // { id: 3, title: "Project 3", description: "Description for Project 3", pdfUrl: "/path-to-pdf/project3.pdf" },
 ];
