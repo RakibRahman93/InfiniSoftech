@@ -2,9 +2,9 @@ import Footer6 from "@/components/footers/Footer6";
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
-import ServicePricing from "@/components/homes/home-6/ServicePricing";
 import WebProcess from "@/components/homes/home-6/WebProcess";
 import WebServices from "@/components/homes/home-6/WebServices";
+import Portfolio from "@/components/homes/home-6/Portfolio";
 import { reviews } from "@/data/features";
 
 import { fancyMultipage } from "@/data/menu";
@@ -13,8 +13,7 @@ const onePage = false;
 const dark = false;
 export const metadata = {
   title: "SERVICES - Website Design & Development",
-  description:
-    "",
+  description: "",
 };
 export default function FancyServicesPage() {
   return (
@@ -109,9 +108,9 @@ export default function FancyServicesPage() {
                   {/* right section */}
                   <div className="col-md-12 col-lg-6 text-center mt-smd-5">
                     <img
-                      style={{ maxWidth: "90%", width: "auto",height:"90%" }}
+                      style={{ maxWidth: "90%", width: "auto", height: "90%" }}
                       src="/assets/images/services/website/webDesign.png"
-                       layout="intrinsic"
+                      layout="intrinsic"
                       className="wow fadeInUp"
                       alt="Image Description"
                     />
@@ -375,6 +374,19 @@ export default function FancyServicesPage() {
                       </p>
                     </div>
                   </div>
+                </div>
+              </div>
+            </section>
+            <section
+              className={`scrollSpysection${
+                dark ? "bg-dark-1 light-content" : ""
+              } `}
+              id="portfolio"
+            >
+              <h2 className="section-title text-center py-5">Portfolio</h2>
+              <div className="container position-relative">
+                <div className="row mb-60 mb-sm-40">
+                  <Portfolio />
                 </div>
               </div>
             </section>

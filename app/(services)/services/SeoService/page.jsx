@@ -4,7 +4,7 @@ import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 import SeoProcess from "@/components/homes/home-6/SeoProcess";
 import SeoServices from "@/components/homes/home-6/SeoServices";
-import ServicePricing from "@/components/homes/home-6/ServicePricing";
+import Portfolio from "@/components/homes/home-6/Portfolio";
 import { reviews } from "@/data/features";
 
 import { fancyMultipage } from "@/data/menu";
@@ -13,8 +13,7 @@ const onePage = false;
 const dark = false;
 export const metadata = {
   title: "SERVICES - Seo Service",
-  description:
-    "",
+  description: "",
 };
 export default function FancyServicesPage() {
   return (
@@ -113,7 +112,7 @@ export default function FancyServicesPage() {
                   <div className="col-md-12 col-lg-6 text-center mt-smd-5">
                     <img
                       // style={{marginTop:"3.7rem"}}
-                      style={{ maxWidth: "90%", width: "auto",height:"90%" }}
+                      style={{ maxWidth: "90%", width: "auto", height: "90%" }}
                       src="/assets/images/services/seo/seo-hero.png"
                       className="wow fadeInUp"
                       alt="Image Description"
@@ -374,6 +373,19 @@ export default function FancyServicesPage() {
               </div>
             </section>
           </main>
+          <section
+              className={`scrollSpysection${
+                dark ? "bg-dark-1 light-content" : ""
+              } `}
+              id="portfolio"
+            >
+              <h2 className="section-title text-center py-5">Portfolio</h2>
+            <div className="container position-relative">
+              <div className="row mb-60 mb-sm-40">
+                <Portfolio />
+              </div>
+            </div>
+          </section>
           <FooterTop />
           <footer
             className="footer bg-dark-1 light-content py-5"

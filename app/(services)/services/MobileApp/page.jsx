@@ -1,10 +1,10 @@
 import Footer6 from "@/components/footers/Footer6";
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Header6 from "@/components/headers/Header6";
+import Portfolio from "@/components/homes/home-6/Portfolio";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 import MobileAppServices from "@/components/homes/home-6/MobileAppServices";
 import MobileProcess from "@/components/homes/home-6/MobileProcess";
-import ServicePricing from "@/components/homes/home-6/ServicePricing";
 import { reviews } from "@/data/features";
 
 import { fancyMultipage } from "@/data/menu";
@@ -13,8 +13,7 @@ const onePage = false;
 const dark = false;
 export const metadata = {
   title: "SERVICES - MobileApp Design & Development",
-  description:
-    "",
+  description: "",
 };
 export default function FancyServicesPage() {
   return (
@@ -35,8 +34,7 @@ export default function FancyServicesPage() {
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
                     <h1 className="fs-48 mb-30 mb-xs-20 wow fadeInUp ml-1">
-                      Build Your Dream App
-                      with&nbsp;
+                      Build Your Dream App with&nbsp;
                       <span
                         className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-48"
                         style={{
@@ -116,7 +114,6 @@ export default function FancyServicesPage() {
                     <img
                       // style={{marginTop:"3.7rem"}}
                       src="/assets/images/services/MobileApp/hero.svg"
-                      
                       className="wow fadeInUp"
                       alt="Image Description"
                     />
@@ -387,6 +384,19 @@ export default function FancyServicesPage() {
                       </p>
                     </div>
                   </div>
+                </div>
+              </div>
+            </section>
+            <section
+              className={`scrollSpysection${
+                dark ? "bg-dark-1 light-content" : ""
+              } `}
+              id="portfolio"
+            >
+              <h2 className="section-title text-center py-5">Portfolio</h2>
+              <div className="container position-relative">
+                <div className="row mb-60 mb-sm-40">
+                  <Portfolio />
                 </div>
               </div>
             </section>

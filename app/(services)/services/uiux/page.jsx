@@ -2,6 +2,7 @@ import Footer6 from "@/components/footers/Footer6";
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
+import Portfolio from "@/components/homes/home-6/Portfolio";
 import ServicePricing from "@/components/homes/home-6/ServicePricing";
 import UiuxHire from "@/components/homes/home-6/UiuxHire";
 import UiuxMain from "@/components/homes/home-6/UiuxMain";
@@ -475,6 +476,19 @@ export default function FancyServicesPage() {
               id="pricing"
             >
               <ServicePricing />
+            </section>
+            <section
+              className={`scrollSpysection${
+                dark ? "bg-dark-1 light-content" : ""
+              } `}
+              id="portfolio"
+            >
+              <h2 className="section-title text-center py-5">Portfolio</h2>
+              <div className="container position-relative">
+                <div className="row mb-60 mb-sm-40">
+                  <Portfolio />
+                </div>
+              </div>
             </section>
           </main>
           <FooterTop />

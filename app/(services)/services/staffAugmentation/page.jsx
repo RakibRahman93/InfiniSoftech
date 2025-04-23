@@ -2,9 +2,9 @@ import Footer6 from "@/components/footers/Footer6";
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
+import Portfolio from "@/components/homes/home-6/Portfolio";
 import ProcessHire from "@/components/homes/home-6/ProcessHire";
 import ServiceMain from "@/components/homes/home-6/ServiceMain";
-import ServicePricing from "@/components/homes/home-6/ServicePricing";
 import ServiceSolution from "@/components/homes/home-6/ServiceSolution";
 import TechServiceCost from "@/components/homes/home-6/TechServiceCost";
 import TechSolutions from "@/components/homes/home-6/TechSolutions";
@@ -16,8 +16,7 @@ const onePage = false;
 const dark = false;
 export const metadata = {
   title: "SERVICES",
-  description:
-    "",
+  description: "",
 };
 export default function FancyServicesPage() {
   return (
@@ -504,6 +503,19 @@ export default function FancyServicesPage() {
               id="pricing"
             >
               <TechServiceCost />
+            </section>
+            <section
+              className={`scrollSpysection${
+                dark ? "bg-dark-1 light-content" : ""
+              } `}
+              id="portfolio"
+            >
+              <h2 className="section-title text-center py-5">Portfolio</h2>
+              <div className="container position-relative">
+                <div className="row mb-60 mb-sm-40">
+                  <Portfolio />
+                </div>
+              </div>
             </section>
           </main>
           <FooterTop />
