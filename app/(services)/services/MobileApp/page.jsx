@@ -1,10 +1,10 @@
 import Footer6 from "@/components/footers/Footer6";
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Header6 from "@/components/headers/Header6";
-import Portfolio from "@/components/homes/home-6/Portfolio";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 import MobileAppServices from "@/components/homes/home-6/MobileAppServices";
 import MobileProcess from "@/components/homes/home-6/MobileProcess";
+import Portfolio from "@/components/homes/home-6/Portfolio";
 import { reviews } from "@/data/features";
 
 import { fancyMultipage } from "@/data/menu";
@@ -388,16 +388,34 @@ export default function FancyServicesPage() {
               </div>
             </section>
             <section
-              className={`scrollSpysection${
+              className={`page-section  scrollSpysection  ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
               id="portfolio"
             >
-              <h2 className="section-title text-center py-5">Portfolio</h2>
               <div className="container position-relative">
-                <div className="row mb-60 mb-sm-40">
-                  <Portfolio />
+                <div className="row mb-30 mb-sm-40">
+                  <div className="col-md-8 offset-md-2 text-center">
+                    <h2
+                      className="section-caption mb-20 mb-xs-10"
+                      style={{
+                        background:
+                          "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      our portfolio
+                    </h2>
+                    <h3 className="section-title mb-0">
+                      We believe in making the best work, and being the best to
+                      work with.
+                    </h3>
+                  </div>
                 </div>
+
+                <Portfolio />
               </div>
             </section>
           </main>
