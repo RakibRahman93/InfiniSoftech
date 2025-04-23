@@ -99,14 +99,14 @@ export default function Hero1() {
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
                         ></i>{" "} */}
-                        Staff Augmentation
+                        Case Studies
                       </span>
                       <span className="btn-animate-y-2" aria-hidden="true"  style={{ fontFamily: "Raleway, sans-serif", fontWeight: "bold" }}>
                         {/* <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
                         ></i>{" "} */}
-                        Staff Augmentation
+                        Case Studies
                       </span>
                     </span>
                   </Link>{" "}
