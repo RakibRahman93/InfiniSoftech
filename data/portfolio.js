@@ -354,7 +354,7 @@ export const portfolios6 = [
       "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `Asthetic ecommerce app with multi-vendor. Supports different product categories and admin panels
     for vendors and admins to add & manage products seamlessly.`,
-    // website: "www.teammahir.com"
+    prototypeLink: "https://react-ecommerce-lime-psi.vercel.app",
   },
   {
     id: 41,

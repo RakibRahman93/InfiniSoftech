@@ -2,9 +2,9 @@ import Footer6 from "@/components/footers/Footer6";
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
+import Portfolio from "@/components/homes/home-6/Portfolio";
 import SeoProcess from "@/components/homes/home-6/SeoProcess";
 import SeoServices from "@/components/homes/home-6/SeoServices";
-import ServicePricing from "@/components/homes/home-6/ServicePricing";
 import { reviews } from "@/data/features";
 
 import { fancyMultipage } from "@/data/menu";
@@ -13,8 +13,7 @@ const onePage = false;
 const dark = false;
 export const metadata = {
   title: "SERVICES - Seo Service",
-  description:
-    "",
+  description: "",
 };
 export default function FancyServicesPage() {
   return (
@@ -113,7 +112,7 @@ export default function FancyServicesPage() {
                   <div className="col-md-12 col-lg-6 text-center mt-smd-5">
                     <img
                       // style={{marginTop:"3.7rem"}}
-                      style={{ maxWidth: "90%", width: "auto",height:"90%" }}
+                      style={{ maxWidth: "90%", width: "auto", height: "90%" }}
                       src="/assets/images/services/seo/seo-hero.png"
                       className="wow fadeInUp"
                       alt="Image Description"
@@ -374,6 +373,37 @@ export default function FancyServicesPage() {
               </div>
             </section>
           </main>
+          <section
+            className={`page-section  scrollSpysection  ${
+              dark ? "bg-dark-1 light-content" : ""
+            } `}
+            id="portfolio"
+          >
+            <div className="container position-relative">
+              <div className="row mb-30 mb-sm-40">
+                <div className="col-md-8 offset-md-2 text-center">
+                  <h2
+                    className="section-caption mb-20 mb-xs-10"
+                    style={{
+                      background:
+                        "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    our portfolio
+                  </h2>
+                  <h3 className="section-title mb-0">
+                    We believe in making the best work, and being the best to
+                    work with.
+                  </h3>
+                </div>
+              </div>
+
+              <Portfolio />
+            </div>
+          </section>
           <FooterTop />
           <footer
             className="footer bg-dark-1 light-content py-5"
