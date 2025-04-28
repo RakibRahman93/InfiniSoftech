@@ -76,7 +76,7 @@ export default function Hero1() {
                   data-wow-duration="1.2s"
                 >
                   <Link
-                    href={"/services/staffAugmentation"}
+                    href={"/case-studies"}
                     className="btn btn-mod btn-color btn-border-c btn-white-c btn-large btn-round mb-xs-10 lightbox mfp-iframe"
                     data-btn-animate="y"
                     style={{
