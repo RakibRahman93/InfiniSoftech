@@ -2,7 +2,7 @@ import AnimatedText from "@/components/common/AnimatedText";
 import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
 import RelatedProjects5 from "@/components/portfolio/relatedProjects/RelatedProjects5";
-import BootstrapPhonePreview from "@/components/PortfolioPhonePreview/PortfolioPhonePreview";
+import PortFolioMockUp from "@/components/PortfolioPhonePreview/PortFolioMockUp";
 import { fancyMultipage } from "@/data/menu";
 import { portfolios6 } from "@/data/portfolio";
 import Image from "next/image";
@@ -19,10 +19,20 @@ export default function FancyPortfolioSinglePage({ params }) {
   // console.warn('portfolioItem', portfolioItem)
   // console.warn('Date', Date);
 
-  const { Date, Client, Services, Description, Features, website } =
-    portfolioItem;
-    const prototypeLink = portfolioItem?.prototypeLink
-    const showPrototype = !!prototypeLink;
+  const {
+    Date,
+    Client,
+    Services,
+    Description,
+    Features,
+    website,
+    imgSrc,
+    imgSrc2,
+    imgExtra,
+    mockupType
+  } = portfolioItem;
+  const prototypeLink = portfolioItem?.prototypeLink;
+  const showPrototype = !!prototypeLink;
   return (
     <>
       <div className="theme-fancy">
@@ -172,16 +182,19 @@ export default function FancyPortfolioSinglePage({ params }) {
                         </div>
                         {/* End Photo Item */}
                         {/* Photo Item */}
-                        <div className="mb-30 wow fadeInUp">
-                          <Image
-                            src={portfolioItem.imgSrc2}
-                            className="round"
-                            loading="lazy"
-                            width={1200}
-                            height={800}
-                            alt="Image Description"
-                          />
-                        </div>
+                        {imgSrc2 && (
+                          <div className="mb-30 wow fadeInUp">
+                            <Image
+                              src={imgSrc2}
+                              className="round"
+                              loading="lazy"
+                              width={1200}
+                              height={800}
+                              alt="Image Description"
+                            />
+                          </div>
+                        )}
+
                         {/* End Photo Item */}
                       </div>
                     </div>
@@ -214,7 +227,7 @@ export default function FancyPortfolioSinglePage({ params }) {
                   </div>
 
                   <div className="px-2">
-                    <BootstrapPhonePreview src={prototypeLink} />
+                    <PortFolioMockUp src={prototypeLink} mockupType={mockupType} />
                   </div>
                 </section>
               )}

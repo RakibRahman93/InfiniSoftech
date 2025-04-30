@@ -1,10 +1,11 @@
 import styles from "./BootstrapPhonePreview.module.css";
 
-export default function Iphone16ProPreview({ src }) {
+export default function PortFolioMockUp({ src, mockupType }) {
+  const frameClass =
+    mockupType === "tablet" ? styles.tabletFrame : styles.iphoneFrame;
   return (
     <div className="my-5 d-flex justify-content-center">
-      <div className={styles.iphoneFrame}>
-        {/* <div className={styles.dynamicIsland}></div> */}
+      <div className={frameClass}>
         <iframe
           src={src}
           title="App Preview"

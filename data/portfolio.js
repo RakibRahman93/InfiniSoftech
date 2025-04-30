@@ -372,6 +372,7 @@ export const portfolios6 = [
       "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `The ultimate study planner that helps you organize your learning journey, track progress, and achieve your academic goals with ease.`,
     prototypeLink: "https://playful-lokum-376864.netlify.app",
+    mockupType: "phone",
   },
   {
     id: 36,
@@ -501,7 +502,9 @@ export const portfolios6 = [
     Services: "Branding, UI/UX Design, Front-end Development",
     Description: `Emagino is an AI startup who are totally revolutionazing the way people do marketing. They have 
     brought the involvement of AI in video production for advertisement.`,
-    website: "www.emagino.ai",
+    website: "https://heartfelt-taiyaki-e644e3.netlify.app",
+    prototypeLink: "https://heartfelt-taiyaki-e644e3.netlify.app",
+    mockupType: "tablet",
   },
   {
     id: 35,

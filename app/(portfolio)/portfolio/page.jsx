@@ -3,21 +3,16 @@ import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 import Portfolio from "@/components/homes/home-6/Portfolio";
-import BootstrapPhonePreview from "@/components/PortfolioPhonePreview/PortfolioPhonePreview";
 
 import { fancyMultipage } from "@/data/menu";
 import Image from "next/image";
-import Link from "next/link";
 const onePage = false;
 const dark = false;
 export const metadata = {
-  title:
-    "PORTFOLIO",
-  description:
-    "",
+  title: "PORTFOLIO",
+  description: "",
 };
 export default function FancyPortfolioPage() {
-  
   return (
     <>
       <div className="theme-fancy">
@@ -60,7 +55,6 @@ export default function FancyPortfolioPage() {
                     >
                       Explore captivating web design solutions.
                     </p>
-                    
                   </div>
                 </div>
               </div>
@@ -78,8 +72,8 @@ export default function FancyPortfolioPage() {
             <>
               {/* Marquee Section */}
               {/* <div className="page-section overflow-hidden"> */}
-                {/* Marquee Text Line */}
-                {/* <div className="marquee marquee-style-1 mb-30">
+              {/* Marquee Text Line */}
+              {/* <div className="marquee marquee-style-1 mb-30">
                   <div className="marquee-track marquee-animation">
                     <div>Branding</div>
                     <div aria-hidden="true">UI/UX Design</div>
@@ -107,9 +101,9 @@ export default function FancyPortfolioPage() {
                     <div aria-hidden="true">Art Direction</div>
                   </div>
                 </div> */}
-                {/* End Marquee Text Line */}
-                {/* Marquee Text Line */}
-                {/* <div className="marquee marquee-style-1">
+              {/* End Marquee Text Line */}
+              {/* Marquee Text Line */}
+              {/* <div className="marquee marquee-style-1">
                   <div className="marquee-track marquee-animation">
                     <div>Development</div>
                     <div aria-hidden="true">SEO Optimization</div>
@@ -137,7 +131,7 @@ export default function FancyPortfolioPage() {
                     <div aria-hidden="true">SEO Optimization</div>
                   </div>
                 </div> */}
-                {/* End Marquee Text Line */}
+              {/* End Marquee Text Line */}
               {/* </div> */}
               {/* End Marquee Section */}
               {/* Call Action Section */}
@@ -171,7 +165,7 @@ export default function FancyPortfolioPage() {
             style={{
               background: "linear-gradient(220deg, #621ABE 0%, #051D55 50%)",
             }}
-           >
+          >
             <Footer6 />
           </footer>
           {/* <footer className="page-section footer bg-dark-1 light-content pb-30">
