@@ -337,6 +337,7 @@ export const portfolios6 = [
       "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `🥬 FreshGo – Your Daily Essentials, Delivered Fresh. FreshGo is a user-friendly grocery delivery app designed to bring fresh produce, daily essentials, and household goods right to your doorstep. It offers an easy product search experience with intuitive category filtering, real-time order tracking to keep users updated, and a secure checkout system with multiple payment options. Users can also schedule deliveries in advance and quickly reorder their favorites with just a tap. Experience convenience, freshness, and speed — all in one app.`,
     prototypeLink: "https://serene-frangollo-05c02e.netlify.app",
+    mockupType: "phone",
   },
   {
     id: 40,
@@ -502,7 +503,7 @@ export const portfolios6 = [
     Services: "Branding, UI/UX Design, Front-end Development",
     Description: `Emagino is an AI startup who are totally revolutionazing the way people do marketing. They have 
     brought the involvement of AI in video production for advertisement.`,
-    website: "https://heartfelt-taiyaki-e644e3.netlify.app",
+    website: "heartfelt-taiyaki-e644e3.netlify.app",
     prototypeLink: "https://heartfelt-taiyaki-e644e3.netlify.app",
     mockupType: "tablet",
   },
