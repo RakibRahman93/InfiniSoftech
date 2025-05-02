@@ -30,9 +30,9 @@ export default function Hero1() {
                     data-splitting="chars"
                   >
                     <span style={{ fontWeight: "bold", color: "#333" }}>
-                      Transforming Ideas Into{" "}
+                    Launch Your Custom Website or App  {" "}
                       <span className="mark-decoration-3-wrap color-secondary-1-white">
-                        Impactful
+                        
                         {/* <b
                         className=" mark-decoration-3 wow scalexIn"
                         data-wow-delay="1.1s"
@@ -49,7 +49,7 @@ export default function Hero1() {
                         fontWeight: "bold",
                       }}
                     >
-                      Digital Solutions{" "}
+                      in 14 Days Starting at just $399{" "}
                       {/* <Image
                         // style={{marginTop:"3.7rem"}}
                         src="/assets/images/demo-fancy/hero/3D Shape/Diamond Slim.svg"
