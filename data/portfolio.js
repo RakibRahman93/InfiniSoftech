@@ -387,7 +387,7 @@ export const portfolios6 = [
   {
     id: 34,
     categories: ["branding", "design", "development"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/emagino/emaginoCover.png",
+    imgSrc: "/assets/images/demo-fancy/portfolio/emagino/emaginoCover1.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/emagino/emagino.png",
     imgSrc2: "/assets/images/demo-fancy/portfolio/emagino/emagino1.png",
     title: "Website UIUX Design & Development",
