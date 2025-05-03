@@ -85,7 +85,7 @@ export default function Home6({ onePage = false, dark = false }) {
               </div>
               <div className="local-scroll wow fadeInUp" data-wow-delay="0.12s">
                 <>
-                  <PopupWrapper buttonText="Get Started" />
+                  <PopupWrapper buttonText="Book A Free Call" />
                 </>
               </div>
             </div>

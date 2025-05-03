@@ -102,7 +102,6 @@ export const gradientOnePage = [
 
 export const fancyMultipage = [
   { href: "/", text: "Home", class: "active" },
-  { href: "/case-studies", text: "Case Studies" },
   { href: "/about", text: "About" },
   {
     href: "#",
@@ -117,6 +116,7 @@ export const fancyMultipage = [
     ],
   },
   { href: "/portfolio", text: "Portfolio" },
+  { href: "/case-studies", text: "Case Studies" },
 
   // { href: "/contact", text: "Contact" },
 ];

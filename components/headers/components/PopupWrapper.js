@@ -4,7 +4,7 @@ import Form from "../components/Form";
 import Popup from "./popup";
 
 export function PopupWrapper({
-  buttonText = "Free Consultation",
+  buttonText = "Book A Free Call",
   plan,
   className = "",
   minWidth = "",

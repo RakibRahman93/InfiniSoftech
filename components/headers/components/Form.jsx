@@ -83,7 +83,7 @@ export default function Form({ onSuccess,plan }) {
           className="font-semibold section-5-title mb-0"
           style={{ color: "#1C1C57", fontFamily: "Montserrat" }}
         >
-          Get in{" "}
+          Book A {" "}
           <span
             style={{
               background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
@@ -91,7 +91,7 @@ export default function Form({ onSuccess,plan }) {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Touch
+            Free Call
           </span>
         </h2>
         <p className="font-semibold">We will get back to you soon!</p>
@@ -222,7 +222,7 @@ export default function Form({ onSuccess,plan }) {
                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
               }}
             >
-              Leave us a Message <i className="bi bi-arrow-right"></i>
+              Send Request <i className="bi bi-arrow-right"></i>
             </button>
             <div className="row py-3">
               <div className="col-md-8 col-lg-5">
