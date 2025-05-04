@@ -117,6 +117,7 @@ export const fancyMultipage = [
   },
   { href: "/portfolio", text: "Portfolio" },
   { href: "/case-studies", text: "Case Studies" },
+  { href: "/geolocations", text: "Geo Locations" },
 
   // { href: "/contact", text: "Contact" },
 ];
