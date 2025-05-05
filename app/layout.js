@@ -1,17 +1,17 @@
 "use client";
-import { useEffect } from "react";
-import "swiper/css";
-import "../public/assets/css/styles.css";
-import "jarallax/dist/jarallax.min.css";
-import "swiper/css/effect-fade";
-import "react-modal-video/css/modal-video.css";
-import "photoswipe/dist/photoswipe.css";
-import { usePathname } from "next/navigation";
 import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
+import "jarallax/dist/jarallax.min.css";
+import { usePathname } from "next/navigation";
+import "photoswipe/dist/photoswipe.css";
+import { useEffect } from "react";
+import "react-modal-video/css/modal-video.css";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "../public/assets/css/styles.css";
 
-import "tippy.js/dist/tippy.css";
-import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
+import { init_wow } from "@/utlis/initWowjs";
+import "tippy.js/dist/tippy.css";
 
 export default function RootLayout({ children }) {
   const path = usePathname();
@@ -32,17 +32,51 @@ export default function RootLayout({ children }) {
       window.removeEventListener("scroll", headerChangeOnScroll);
     };
   }, [path]);
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       // Import the script only on the client side
       import("bootstrap/dist/js/bootstrap.esm").then(() => {
-        // Module is imported, you can access any exported functionality if
+        // Module is imported, you can access any exported functionality if needed
       });
+
+      // Google Analytics Script
+      const script = document.createElement("script");
+      script.src = `https://www.googletagmanager.com/gtag/js?id=G-NYWXCXR8JT`;
+      script.async = true;
+      document.head.appendChild(script);
+
+      script.onload = () => {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-NYWXCXR8JT");
+
+        // Track initial page load
+        gtag("event", "page_view", {
+          page_path: window.location.pathname,
+        });
+      };
+
+      return () => {
+        document.head.removeChild(script);
+      };
     }
   }, []);
 
+  useEffect(() => {
+    // Track page views when the path changes
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "page_view", {
+        page_path: path,
+      });
+    }
+  }, [path]);
+
   return (
-    <html lang="en" className="no-mobile no-touch ">
+    <html lang="en" className="no-mobile no-touch">
       <head>
         {/* Google Fonts */}
         <link
@@ -65,9 +99,18 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
           rel="stylesheet"
         />
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
 
         {/* Umami Analytics */}
         <script
@@ -95,12 +138,17 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className="appear-animate body">{children}
-      <script src="//code.tidio.co/vaexsx9gz9fcjuvbw5tetd1axii88rzq.js" async></script>
-      <script type="text/javascript"
-        src="https://onsite.optimonk.com/script.js?account=248646"
-        async>
-      </script>
+      <body className="appear-animate body">
+        {children}
+        <script
+          src="//code.tidio.co/vaexsx9gz9fcjuvbw5tetd1axii88rzq.js"
+          async
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://onsite.optimonk.com/script.js?account=248646"
+          async
+        ></script>
       </body>
     </html>
   );
