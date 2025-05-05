@@ -350,7 +350,7 @@ export const portfolios6 = [
     lightbox: false,
     lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
     Date: "April 19th, 2025",
-    // Client: "International",
+    Client: "Prototype",
     Services:
       "Branding, UI/UX Design, Front-end Development, Back-end Development",
     Description: `Asthetic ecommerce app with multi-vendor. Supports different product categories and admin panels
