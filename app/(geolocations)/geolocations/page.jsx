@@ -1,4 +1,4 @@
-import GeoPricing from '@/components/others/geoPricing'
+import GeoPricing from '@/components/others/GeoPricing'
 import React from 'react'
 
 const GeoLocationServices = () => {
