@@ -12,6 +12,7 @@ import "../public/assets/css/styles.css";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
 import { init_wow } from "@/utlis/initWowjs";
 import "tippy.js/dist/tippy.css";
+import LocationProvider from "@/context/LocationContext";
 
 export default function RootLayout({ children }) {
   const path = usePathname();
@@ -76,6 +77,7 @@ export default function RootLayout({ children }) {
   }, [path]);
 
   return (
+    <LocationProvider>
     <html lang="en" className="no-mobile no-touch">
       <head>
         {/* Google Fonts */}
@@ -151,5 +153,6 @@ export default function RootLayout({ children }) {
         ></script>
       </body>
     </html>
+    </LocationProvider>
   );
 }

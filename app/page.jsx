@@ -4,6 +4,7 @@ import Home6 from "@/components/homes/home-6";
 import Hero1 from "@/components/homes/home-6/heros/Hero1";
 import { fancyMultipage } from "@/data/menu";
 import { Toaster } from "react-hot-toast";
+import { LocationProvider } from "@/context/LocationContext"; 
 
 export const metadata = {
   title: "Launch fast, scale smart starting from just $499",

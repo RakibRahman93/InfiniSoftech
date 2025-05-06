@@ -1,35 +1,16 @@
-"use client"
-import { useEffect, useState } from 'react';
+"use client";
+import { useLocation } from "@/context/LocationContext"; 
 
 export default function GeoPricing() {
-  const [location, setLocation] = useState(null);
-  const [price, setPrice] = useState(null);
+  const { location, pricing } = useLocation(null);
+  // Handle loading state when data is still null or being fetched
 
-  useEffect(() => {
-    // Fetch location data from the API route
-    const fetchLocation = async () => {
-      const res = await fetch('/api/location');  // Call the location API
-      const data = await res.json();
-
-      if (data.country === 'Bangladesh') {
-        setPrice('100 BDT');
-      } else {
-        setPrice('2 USD');
-      }
-
-      setLocation(data);
-    };
-
-    fetchLocation();
-  }, []);
-
-  if (!location) return <div>Loading...</div>;
 
   return (
     <div>
-      <h1>Pricing Page</h1>
-      <p>Your location: {location.country}</p>
-      <p>Price: {price}</p>
+      <h1>Geo Pricing</h1>
+     
+      <p>Geo Price: {pricing ? pricing.geoPrice : "Loading.."}</p> 
     </div>
   );
 }
