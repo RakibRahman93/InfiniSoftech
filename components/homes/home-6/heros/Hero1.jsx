@@ -7,9 +7,12 @@ import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import Slider from "../Slider";
+import { useLocation } from "@/context/LocationContext";
+
 export default function Hero1() {
   const [isOpen, setOpen] = useState(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const { location, pricing } = useLocation();
 
   const togglePopup = () => {
     setIsPopupVisible(!isPopupVisible);
@@ -49,7 +52,7 @@ export default function Hero1() {
                         fontWeight: "bold",
                       }}
                     >
-                      in 14 Days Starting at just $399{" "}
+                      in 14 Days Starting at just {pricing ? pricing.heroPrice : "N/A"}
                       {/* <Image
                         // style={{marginTop:"3.7rem"}}
                         src="/assets/images/demo-fancy/hero/3D Shape/Diamond Slim.svg"
