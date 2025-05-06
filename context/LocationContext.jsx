@@ -20,12 +20,12 @@ const pricingData = {
       geoPrice: "100 BDT",
     },
     USA: {
-      geoPrice: "2 USD",
+      geoPrice: "$2 USD",
     },
   },
   HeroCategory: {
     Bangladesh: {
-      heroPrice: "BDT 2,500",
+      heroPrice: "2,500 BDT",
     },
     USA: {
       heroPrice: "$399",
