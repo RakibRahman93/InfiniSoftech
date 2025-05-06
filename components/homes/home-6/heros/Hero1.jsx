@@ -52,7 +52,7 @@ export default function Hero1() {
                         fontWeight: "bold",
                       }}
                     >
-                      in 14 Days Starting at just {pricing ? pricing.heroPrice : "N/A"}
+                      in 14 Days Starting at just {pricing ? pricing.heroPrice : "Loading."}
                       {/* <Image
                         // style={{marginTop:"3.7rem"}}
                         src="/assets/images/demo-fancy/hero/3D Shape/Diamond Slim.svg"
