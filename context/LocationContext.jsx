@@ -25,7 +25,7 @@ const pricingData = {
   },
   HeroCategory: {
     Bangladesh: {
-      heroPrice: "2,500 BDT",
+      heroPrice: "25,000 BDT",
     },
     USA: {
       heroPrice: "$399",
