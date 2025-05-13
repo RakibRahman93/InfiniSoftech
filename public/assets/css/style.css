@@ -3882,7 +3882,7 @@ a.logo:hover {
 .inner-nav {
   flex-grow: 1;
   position: relative;
-  display: flex
+  display: flex;
 }
 .inner-nav ul {
   margin: auto;
@@ -8008,7 +8008,7 @@ img.services-image {
   letter-spacing: -0.03em;
 }
 .portfolio-1-descr {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 /* ==============================

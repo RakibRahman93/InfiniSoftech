@@ -12,15 +12,24 @@ export default function ServicePricing() {
       <div className="row mb-50 mb-sm-30">
         <div className="col-md-8 offset-md-2 text-center">
           <h2 className="section-caption mb-0">Pricing</h2>
+
           <h3 className="section-title-small mb-10">
             🚀 WordPress Website Development Packages
           </h3>
-          <p
-            className="mb-0 portfolio-1-descr"
-            style={{ fontWeight: "500", lineHeight: "25px" }}
-          >
-            💰 We Offer 100% Money Back Guarantee On All Our Packages !
-          </p>
+          <div className="d-flex text-center justify-content-center align-items-center">
+            <img
+              className="img-fluid"
+              style={{ height: "40px" }}
+              src="/assets/images/g_base.png"
+              alt="g_base"
+            />
+            <p
+              className="mb-0 portfolio-1-descr"
+              style={{ fontWeight: "400", lineHeight: "25px" }}
+            >
+              We Offer 100% Money Back Guarantee On All Our Packages !
+            </p>
+          </div>
         </div>
       </div>
 
@@ -83,26 +92,36 @@ export default function ServicePricing() {
                             : "white",
                           color: isSecondColumn ? "#fff" : "#000",
                           boxShadow: isSecondColumn
-                            ? "0px 4px 19px 0px rgba(0, 0, 0, 1)"
-                            : "none",
+                            ? "0px 4px 19px 0px #ccc"
+                            : "0px 0px 19px 0px #CCCCCC",
                         }}
                       >
-                        <div className="d-flex align-items-center flex-row mb-20">
-                          <span className="fw-bold me-4 fs-30 Anton">
-                            {plan.title}
-                          </span>
-                          {plan.badge && (
-                            <span
-                              className={`badge text-white p-2 rounded-pill Anton`}
-                              style={{
-                                backgroundColor: plan.bgColor,
-                                color: "white",
-                                fontSize: "10px",
-                              }}
-                            >
-                              {plan.badge}
+                        <div className="mb-20">
+                          <div className="">
+                            <img
+                              className="img-fluid"
+                              style={{ height: "40px" }}
+                              src="/assets/images/g_base.png"
+                              alt="g_base"
+                            />
+                          </div>
+                          <div className="d-flex align-items-center flex-row ">
+                            <span className="fw-bold me-4 fs-30 Anton">
+                              {plan.title}
                             </span>
-                          )}
+                            {plan.badge && (
+                              <span
+                                className={`badge text-white p-2 rounded-pill Anton`}
+                                style={{
+                                  backgroundColor: plan.bgColor,
+                                  color: "white",
+                                  fontSize: "10px",
+                                }}
+                              >
+                                {plan.badge}
+                              </span>
+                            )}
+                          </div>
                         </div>
                         <p
                           className="fs-6 m-h-30"

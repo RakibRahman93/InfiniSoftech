@@ -835,6 +835,10 @@
   opacity: 1;
   transform: none;
 }
+.new-theme h3 {
+  font-size: 47px !important;
+  letter-spacing: 2%;
+}
 .new-theme {
   font-family: Roboto;
 }
@@ -843,14 +847,24 @@
   letter-spacing: 0;
   color: #000;
 }
+.new-theme .section-title-small {
+  font-weight: 400 !important;
+}
+.new-theme .get-started-btn span {
+  font-size: 20px !important;
+  font-family: Anton !important;
+  font-weight: 400 !important;
+  letter-spacing: 1%;
+}
 .new-theme li,
 .work-descr,
 h5 {
-  font-weight: 700 !important;
+  font-weight: 500 !important;
 }
 .Anton {
   font-family: Anton;
   letter-spacing: 1px;
+  font-weight: 400 !important;
 }
 .theme-fancy .mfp-bg {
   background: var(--color-dark-1);
