@@ -88,7 +88,7 @@ export default function ServicePricing() {
                         className="card card-pricing p-4 rounded-4 mb-20"
                         style={{
                           background: isSecondColumn
-                            ? "linear-gradient(90deg, #000000 0%, #5334A1 100%)"
+                            ? "linear-gradient(150deg, #000000 16%, #5334A2  63%)"
                             : "white",
                           color: isSecondColumn ? "#fff" : "#000",
                           boxShadow: isSecondColumn
@@ -114,7 +114,7 @@ export default function ServicePricing() {
                                 className={`badge text-white p-2 rounded-pill Anton`}
                                 style={{
                                   background: Array.isArray(plan.bgColor)
-                                    ? `linear-gradient(to bottom right, ${plan.bgColor[0]}, ${plan.bgColor[1]})`
+                                    ? `linear-gradient(180deg, ${plan.bgColor[0]}, ${plan.bgColor[1]})`
                                     : plan.bgColor,
                                   color: "white",
                                   fontSize: "10px",
