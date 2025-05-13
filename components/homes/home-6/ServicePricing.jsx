@@ -113,7 +113,9 @@ export default function ServicePricing() {
                               <span
                                 className={`badge text-white p-2 rounded-pill Anton`}
                                 style={{
-                                  backgroundColor: plan.bgColor,
+                                  background: Array.isArray(plan.bgColor)
+                                    ? `linear-gradient(to bottom right, ${plan.bgColor[0]}, ${plan.bgColor[1]})`
+                                    : plan.bgColor,
                                   color: "white",
                                   fontSize: "10px",
                                 }}
