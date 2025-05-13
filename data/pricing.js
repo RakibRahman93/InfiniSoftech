@@ -123,7 +123,7 @@ at $5/month`,
     badge: "Sales Booster",
     bgColor: "#DA00FF",
     description: {
-      _html: `Perfect for <strong>established businesses</strong> looking to enhance their online presence and drive sales. Get a custom-designed website that reflects your brand and engages customers effectively.`,
+      _html: `Perfect for <strong>Saas platforms, digital agencies, or enterprise websites.</strong>`,
     },
 
     price: 2500,

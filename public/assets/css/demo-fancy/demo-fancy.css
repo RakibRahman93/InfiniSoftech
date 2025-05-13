@@ -843,6 +843,11 @@
   letter-spacing: 0;
   color: #000;
 }
+.new-theme li,
+.work-descr,
+h5 {
+  font-weight: 700 !important;
+}
 .Anton {
   font-family: Anton;
   letter-spacing: 1px;

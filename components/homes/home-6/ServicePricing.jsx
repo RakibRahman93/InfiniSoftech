@@ -146,7 +146,12 @@ export default function ServicePricing() {
                               key={i}
                               className="d-flex align-items-center mb-10"
                             >
-                              <i className="mi-check me-2 text-success"></i>{" "}
+                              <i
+                                className="mi-check me-2"
+                                style={{
+                                  color: isSecondColumn ? "#14F886" : "#159C7C",
+                                }}
+                              ></i>{" "}
                               {feature}
                             </li>
                           ))}
