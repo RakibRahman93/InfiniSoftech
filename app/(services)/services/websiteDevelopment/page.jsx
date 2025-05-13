@@ -3,6 +3,7 @@ import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 import Portfolio from "@/components/homes/home-6/Portfolio";
+import ServicePricing from "@/components/homes/home-6/ServicePricing";
 import WebProcess from "@/components/homes/home-6/WebProcess";
 import WebServices from "@/components/homes/home-6/WebServices";
 import { reviews } from "@/data/features";
@@ -277,14 +278,14 @@ export default function FancyServicesPage() {
               </div>
             </section>
 
-            {/* <section
+            <section
               className={`scrollSpysection py-5 ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
               id="pricing"
             >
               <ServicePricing />
-            </section> */}
+            </section>
             {/* why chose us  */}
             <section
               className={`scrollSpysection mt-5 service-large-sections`}

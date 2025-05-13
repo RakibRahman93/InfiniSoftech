@@ -835,6 +835,18 @@
   opacity: 1;
   transform: none;
 }
+.new-theme {
+  font-family: Roboto;
+}
+.new-theme h3 {
+  font-family: Anton;
+  letter-spacing: 0;
+  color: #000;
+}
+.Anton {
+  font-family: Anton;
+  letter-spacing: 1px;
+}
 .theme-fancy .mfp-bg {
   background: var(--color-dark-1);
 }
@@ -896,7 +908,7 @@
   width: 70%;
 }
 .card-pricing {
-  min-height: 78rem;
+  min-height: 104em;
 }
 .techCard-pricing {
   min-height: 86rem;
@@ -998,7 +1010,7 @@
   background-position: calc(96% - -50px) 206px;
   background-repeat: no-repeat;
 }
-.oshape{
+.oshape {
   position: relative;
 }
 .oshape::before {
@@ -1019,6 +1031,20 @@
   left: 0;
   width: 100%;
   height: 75%; /* full height */
+  background-image: url("/assets/images/demo-fancy/Hero_background.png");
+  background-size: cover; /* or contain, depending on how you want the image to scale */
+  background-position: top center; /* aligns the image to the top */
+  background-repeat: no-repeat; /* to prevent the image from repeating */
+  z-index: -1;
+}
+
+.pricing-section::after {
+  content: "";
+  position: absolute; /* or relative if required by layout */
+  top: 6%;
+  left: 0;
+  width: 100%;
+  height: 94%; /* full height */
   background-image: url("/assets/images/demo-fancy/Hero_background.png");
   background-size: cover; /* or contain, depending on how you want the image to scale */
   background-position: top center; /* aligns the image to the top */

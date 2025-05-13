@@ -109,12 +109,13 @@ export const fancyMultipage = [
     className: "dropdown",
     dropdown: [
       { href: "/services/staffAugmentation", text: "Staff Augmentation" },
-      { href: "/services/websiteDesign", text: "Website Design" },
+      { href: "/services/websiteDevelopment", text: "Website Development" },
       { href: "/services/MobileApp", text: "Mobile App Development" },
       { href: "/services/uiux", text: "Ui/UX Design" },
       { href: "/services/SeoService", text: "Seo Services" },
     ],
   },
+  { href: "/pricing", text: "Pricing" },
   { href: "/portfolio", text: "Portfolio" },
   { href: "/case-studies", text: "Case Studies" },
 

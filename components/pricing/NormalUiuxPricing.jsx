@@ -1,25 +1,25 @@
 "use client";
 
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
-import { ServicePricingData } from "@/data/pricing"; // Ensure the path is correct
+import { TechServicePricingData } from "@/data/pricing"; // Ensure the path is correct
 import { useState } from "react";
 
-export default function ServicePricing() {
+export default function NorMalUiuxPricing() {
   const [isYearly, setIsYearly] = useState(false);
 
   return (
-    <div className="container new-theme">
+    <div className="container">
       <div className="row mb-50 mb-sm-30">
         <div className="col-md-8 offset-md-2 text-center">
-          <h2 className="section-caption mb-0">Pricing</h2>
+          <h2 className="section-caption mb-0">UI/UX DESIGN PRICING</h2>
           <h3 className="section-title-small mb-10">
-            🚀 WordPress Website Development Packages
+          🚀 Invest in Great Design
           </h3>
           <p
             className="mb-0 portfolio-1-descr"
             style={{ fontWeight: "500", lineHeight: "25px" }}
           >
-            💰 We Offer 100% Money Back Guarantee On All Our Packages !
+            UI/UX packages that drive clarity, usability, and growth.
           </p>
         </div>
       </div>
@@ -67,33 +67,21 @@ export default function ServicePricing() {
           <div className="tab-content tpl-minimal-tabs-cont position-relative">
             <div className="tab-pane show active">
               <div className="row mt-n30">
-                {ServicePricingData.map((plan, index) => {
+                {TechServicePricingData.map((plan, index) => {
                   const updatePrice = isYearly ? plan.price * 12 : plan.price;
-
-                  // Check if it is the second column (index === 1) to apply gradient
-                  const isSecondColumn = index === 1;
-
                   return (
-                    <div key={index} className="col-md-6 col-lg-4 new-theme">
-                      <div
-                        className="card card-pricing p-4 rounded-4 mb-20"
-                        style={{
-                          background: isSecondColumn
-                            ? "linear-gradient(90deg, #000000 0%, #5334A1 100%)"
-                            : "white",
-                          color: isSecondColumn ? "#fff" : "#000",
-                          boxShadow: isSecondColumn
-                            ? "0px 4px 19px 0px rgba(0, 0, 0, 1)"
-                            : "none",
-                        }}
-                      >
+                    <div key={index} className="col-md-6 col-lg-4">
+                      <div className="card techCard-pricing p-4 rounded-3 mb-20">
                         <div className="d-flex align-items-center flex-row mb-20">
-                          <span className="fw-bold me-4 fs-30 Anton">
+                          <span
+                            className="fw-bold me-4 fs-30"
+                            
+                          >
                             {plan.title}
                           </span>
                           {plan.badge && (
                             <span
-                              className={`badge text-white p-2 rounded-pill Anton`}
+                              className={`badge text-white p-2 rounded-pill`}
                               style={{
                                 backgroundColor: plan.bgColor,
                                 color: "white",
@@ -104,39 +92,22 @@ export default function ServicePricing() {
                             </span>
                           )}
                         </div>
-                        <p
-                          className="fs-6 m-h-30"
-                          style={{ color: isSecondColumn ? "#fff" : "#000" }}
-                        >
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: plan.description._html,
-                            }}
-                          ></span>
-                        </p>
+                        <p className="text-muted fs-6">{plan.description}</p>
                         <div className="d-flex align-items-end">
                           <span className="fs-2 fw-bold mb-30">$</span>
                           <span
-                            className="fw-bold Anton"
+                            className="fw-bold"
                             style={{ fontSize: "48px" }}
                           >
-                            {updatePrice}
+                            {isYearly ? plan.price * 12 : plan.price}
+                          </span>
+                          <span className="fs-6 text-muted ms-2">
+                            {isYearly ? "per year" : "per month"}
                           </span>
                         </div>
 
-                        <h5
-                          className="mt-4"
-                          style={{
-                            fontWeight: "500",
-                            color: isSecondColumn ? "#fff" : "#464646",
-                          }}
-                        >
-                          Includes
-                        </h5>
-                        <p
-                          className="work-descr"
-                          style={{ color: isSecondColumn ? "#fff" : "#536174" }}
-                        >
+                        <h5 className="mt-4" style={{ fontWeight: "500",color:"#464646" }}>Includes</h5>
+                        <p className="work-descr" style={{ color: "#536174" }}>
                           Everything you get in this plan
                         </p>
 
@@ -156,7 +127,7 @@ export default function ServicePricing() {
                               className="d-flex align-items-baseline opacity-75"
                             >
                               <i className="mi-circle-error me-2 text-danger"></i>{" "}
-                              <span>{feature}</span>
+                             <span> {feature}</span>
                             </li>
                           ))}
                         </ul>

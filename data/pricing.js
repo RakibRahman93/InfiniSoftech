@@ -1,140 +1,173 @@
 export const pricing = [
-  
-    {
-      "title": "BASIC",
-      "badge": "Best Deal",
-      "description": "Perfect for small businesses looking to hire an individual No Code Developer",
-      "price": 102,
-      "per": "per month",
-      "features": [
-        "50 Page Unlock",
-        "10 GB Storage",
-        "6 Team Members",
-        "Unlimited Book Mark"
-      ],
-      "disabledFeatures": ["Unlimited basic feature"],
-      "buttonText": "Get Started"
-    },
-    {
-      "title": "Standard",
-      "badge": "Best Deal",
-      "description": "Perfect for small businesses looking to hire an individual No Code Developer",
-      "price": 350,
-      "per": "per month",
-      "features": [
-        "50 Page Unlock",
-        "10 GB Storage",
-        "6 Team Members",
-        "Unlimited Book Mark"
-      ],
-      "disabledFeatures": ["Unlimited basic feature"],
-      "buttonText": "Get Started"
-    },
-    {
-      "title": "Premium",
-      "badge": "Best Deal",
-      "description": "Perfect for small businesses looking to hire an individual No Code Developer",
-      "price": 700,
-      "per": "per month",
-      "features": [
-        "50 Page Unlock",
-        "10 GB Storage",
-        "6 Team Members",
-        "Unlimited Book Mark"
-      ],
-      "disabledFeatures": ["Unlimited basic feature"],
-      "buttonText": "Get Started"
-    },
-    
+  {
+    title: "BASIC",
+    badge: "Best Deal",
+    description:
+      "Perfect for small businesses looking to hire an individual No Code Developer",
+    price: 102,
+    per: "per month",
+    features: [
+      "50 Page Unlock",
+      "10 GB Storage",
+      "6 Team Members",
+      "Unlimited Book Mark",
+    ],
+    disabledFeatures: ["Unlimited basic feature"],
+    buttonText: "Get Started",
+  },
+  {
+    title: "Standard",
+    badge: "Best Deal",
+    description:
+      "Perfect for small businesses looking to hire an individual No Code Developer",
+    price: 350,
+    per: "per month",
+    features: [
+      "50 Page Unlock",
+      "10 GB Storage",
+      "6 Team Members",
+      "Unlimited Book Mark",
+    ],
+    disabledFeatures: ["Unlimited basic feature"],
+    buttonText: "Get Started",
+  },
+  {
+    title: "Premium",
+    badge: "Best Deal",
+    description:
+      "Perfect for small businesses looking to hire an individual No Code Developer",
+    price: 700,
+    per: "per month",
+    features: [
+      "50 Page Unlock",
+      "10 GB Storage",
+      "6 Team Members",
+      "Unlimited Book Mark",
+    ],
+    disabledFeatures: ["Unlimited basic feature"],
+    buttonText: "Get Started",
+  },
 ];
 export const ServicePricingData = [
-  
   {
-    "title": "Starter Package",
-    "badge": "Essential Start",
-    "bgColor": "#4CAF50",
-    "description": "Perfect for personal brands, landing pages or MVP websites.",
-    "price": 399,
-    "per": "per month",
-    "features": [
-      "10 Screens Design (Desktop + Mobile)",
-      "Mobile Responsive Design",
-      "Designed in Figma",
-      "Icons & Visual Elements",
-      "Clickable Prototype",
-      "Basic Color & Typography System",
-      "Organized File Handoff For Development",
-      "3 revision cycles",
-      "1 Logo For Your Business",
-      "Delivery Within 7 Days",
+    title: "Starter Package",
+    badge: "Essential Start",
+    bgColor: "#4CAF50",
+    description: {
+      _html:
+        "Perfect for <strong>startups</strong> and <strong>small businesses</strong> looking for an affordable yet professional website. Get online and start attracting customers.",
+    },
+    price: 379,
+    per: "per month",
+    features: [
+      "Mobile-friendly and fully responsive layout",
+      "Up to 5 essential pages (Home, About, Services, Contact, Blog)",
+      "Website Security",
+      "Contact Form – Customers can easily reach out",
+      "Google Maps Integration – Show your business location",
+      "Better loading speed",
+      "Basic SEO & Speed Optimization",
+      "Social Media Links – Connect Facebook, Instagram, LinkedIn",
+      "2 Social Media Posts Design For Your Business (Linkedin, Fb, Instagram)",
+      "Training on how to manage and update basic content",
+      `2-month free support , then 24/7 support 
+at $5/month`,
+      "3 free revision cycles",
+      "Delivery with in 2 weeks",
     ],
-    // "disabledFeatures": ["Unlimited basic feature"],
-    "buttonText": "Get Started"
+    disabledFeatures: [
+      "Provide Royalty Free Images ",
+      "Google Analytics integration to track visitors",
+      "Facebook Pixel setup for future marketing",
+    ],
+    buttonText: "Get Started",
   },
   {
-    "title": "Business Growth",
-    "badge": "Most Popular",
-    "bgColor": "#E25B72",
-    "description": "Perfect for small to medium size businesses looking to build a professional website or mobile app.",
-    "price": 790,
-    "per": "per month",
-    "features": [
-      "Upto 20 Custom Designed Screens",
-      "Mobile Responsive Design",
-      "Designed in Figma",
-      "UX Focused layout structure",
-      "Custom Icons & Visual Elements",
-      "Iterative Prototype",
-      "Complete Branding ",
-      "10 revision cycles",
-      "Organized File Handoff For Development",
-      "5 Logo Concepts For Your Business",
-      "Delivery Within 14 Days",
-      "Interactive Call To Actions",
+    title: "Standard Package",
+    badge: "Growth Accelerator",
+    bgColor: "#FF002B",
+    description: {
+      _html: `Perfect for <strong>medium-sized businesses</strong> looking to build a <strong>strong online presence and better performance. Get advanced analytics to better understand your customers and drive sales.</strong>`,
+    },
+    price: 799,
+    per: "per month",
+    features: [
+      "Free Domain Hosting Setup",
+      "Strong Website Security",
+      "Mobile-friendly and fully responsive design",
+      "Up to 8 pages + Blog setup",
+      "Premium theme + minor custom design edits",
+      "WhatsApp Or Chat Integration",
+      "Lead Generation Forms",
+      "Custom Attractive Banners",
+      "Advanced performance optimization (caching, CDN setup)",
+      "Google Analytics + Facebook Pixel integration",
+      "Fast loading speed for improved user experience",
+      "Attractive Animation Designs",
+      "10 Social Media Posts Design For Your Business (LinkedIn, Fb, Instagram)",
+      "Training on how to manage and update basic content",
+      "Provide Royalty Free Images",
+      "Delivery Within 3 to 4 weeks",
+      "10 free revision cycles",
+      "3-month support free, then 24/7 support at $5/month",
     ],
-    "disabledFeatures": ["Multiple layout concepts for home & product pages", "Attractive Animation Designs","10 Social Media Posts Design For Your Business (Linkedin, Fb, Instagram)"],
-    "buttonText": "Get Started"
+    disabledFeatures: [
+      "Micro-interaction suggestions",
+      "Multiple layout concepts for home & product pages",
+      "A Custom Crafted Video For Your Business ",
+    ],
+    buttonText: "Get Started",
   },
   {
-    "title": "Premium Suite",
-    "badge": "Complete Experience",
-    "bgColor": "#006FFD",
-    "description": "Perfect for Saas platforms, digital agencies, or enterprise websites.",
-    "price": 1299,
-    "per": "per month",
-    "features": [
-      "Upto 40 Custom Designed Screens",
-      // "10 GB Storage",
+    title: "Premium Suite",
+    badge: "Sales Booster",
+    bgColor: "#DA00FF",
+    description: {
+      _html: `Perfect for <strong>established businesses</strong> looking to enhance their online presence and drive sales. Get a custom-designed website that reflects your brand and engages customers effectively.`,
+    },
+
+    price: 2500,
+    per: "per month",
+    features: [
+      "Upto 20 Custom Designed Pages",
+      "Strong Website Security",
       "Mobile Responsive Design",
       "Complete UI/UX audit and user journey planning",
-      "Wireframes + final high-fidelity mockups",
-      "Design system creation (colors, fonts, components, buttons, cards, etc.)",
-      "Interactive prototype for all flows",
-      "Multiple layout concepts for home & product pages",
+      "Premium theme + Custom Design",
+      "WhatsApp Or Chat Integration",
+      "UI/UX Focused layout structure",
+      "Attractive Lead Generation Forms",
+      "Attractive Call To Actions For Better Lead Conversions & Sales",
+      "Multiple Layout Concepts For Home & Product Pages",
       "Micro-interaction suggestions",
       "Attractive Animation Designs",
-      "Unlimited revision cycles",
-      "Delivery Within 3 to 4 weeks",
+      "Google Analytics + Facebook Pixel integration",
+      "Advanced performance optimization (caching, CDN setup)",
+      "Super Fast loading speed for improved user experience",
       "Slack/Trello/Notion collaboration + video walkthrough",
+      "15 Social Media Posts Design For Your Business (Linkedin, Fb, Instagram, Youtube)",
+      "A Custom Crafted Video For Your Business To Instantly Hook Clients & Get More Sales",
+      "Training On How To Manage And Update Content",
       "10 Logo Concepts For Your Business",
-      "10 Social Media Posts Design For Your Business (Linkedin, Fb, Instagram, Youtube)",
-      "Organized File Handoff For Development",
+      "Provide Royalty Free Images",
+      "Delivery Within 4 to 8 weeks",
+      "20 free revision cycles",
+      "6-month support free, then 24/7 support at $20/month",
     ],
     // "disabledFeatures": ["Unlimited basic feature"],
-    "buttonText": "Get Started"
+    buttonText: "Get Started",
   },
-  
 ];
 export const TechServicePricingData = [
-  
   {
-    "title": "Part-Time UI/UX Designer",
-    "badge": "Flexible Starter",
-    "bgColor": "#159C7C",
-    "description": "Perfect for founders, early-stage SaaS, or design-light teams who want a professional designer on tap without full-time cost.",
-    "price": 1099,
-    "per": "per month",
-    "features": [
+    title: "Part-Time UI/UX Designer",
+    badge: "Flexible Starter",
+    bgColor: "#159C7C",
+    description:
+      "Perfect for founders, early-stage SaaS, or design-light teams who want a professional designer on tap without full-time cost.",
+    price: 1099,
+    per: "per month",
+    features: [
       "72 hours/month (approx. 18 hours/week at $15.26/hour)",
       "Mobile & Web UI Design in Figma",
       "Responsive Design Layouts",
@@ -145,17 +178,23 @@ export const TechServicePricingData = [
       "Developer-Friendly Handoff",
       "48-Hour Onboarding",
     ],
-    "disabledFeatures": ["Extensive UX Research & Suggestions", "Weekly strategy calls to align with PM, CEO, or marketing","Unlimited design revisions within monthly scope","Design Animations"],
-    "buttonText": "Get Started"
+    disabledFeatures: [
+      "Extensive UX Research & Suggestions",
+      "Weekly strategy calls to align with PM, CEO, or marketing",
+      "Unlimited design revisions within monthly scope",
+      "Design Animations",
+    ],
+    buttonText: "Get Started",
   },
   {
-    "title": "Full-Time UI/UX Designer",
-    "badge": "Creative Partner",
-    "bgColor": "#BA68C8",
-    "description": "Perfect for SaaS companies, product teams, and agencies seeking a fully dedicated design resource.",
-    "price": 1799,
-    "per": "per month",
-    "features": [
+    title: "Full-Time UI/UX Designer",
+    badge: "Creative Partner",
+    bgColor: "#BA68C8",
+    description:
+      "Perfect for SaaS companies, product teams, and agencies seeking a fully dedicated design resource.",
+    price: 1799,
+    per: "per month",
+    features: [
       "160 hours/month of dedicated design time(approx. 40 hours/week at $11.25/hour).",
       "Mobile & Web UI Design in Figma",
       "Responsive Design Layouts",
@@ -171,17 +210,18 @@ export const TechServicePricingData = [
       "48-Hour Onboarding",
       "Developer-Friendly Handoff",
     ],
-    "disabledFeatures": ["Case Study Creation"],
-    "buttonText": "Get Started"
+    disabledFeatures: ["Case Study Creation"],
+    buttonText: "Get Started",
   },
   {
-    "title": "Senior Product Designer",
-    "badge": "Strategic Lead",
-    "bgColor": "#006FFD",
-    "description": "Premium design support for high-growth teams & polished user experiences.",
-    "price": 2900,
-    "per": "per month",
-    "features": [
+    title: "Senior Product Designer",
+    badge: "Strategic Lead",
+    bgColor: "#006FFD",
+    description:
+      "Premium design support for high-growth teams & polished user experiences.",
+    price: 2900,
+    per: "per month",
+    features: [
       "160 hours/month of dedicated design time(approx. 40 hours/week at $18.13/hour).",
       "Senior UI/UX Designer with product thinking",
       "UX Audits",
@@ -201,9 +241,8 @@ export const TechServicePricingData = [
       "48-Hour Onboarding",
     ],
     // "disabledFeatures": ["Unlimited basic feature"],
-    "buttonText": "Get Started"
+    buttonText: "Get Started",
   },
-  
 ];
 export const pricing2 = [
   {

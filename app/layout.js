@@ -14,6 +14,7 @@ import { init_wow } from "@/utlis/initWowjs";
 import "tippy.js/dist/tippy.css";
 import LocationProvider from "@/context/LocationContext";
 
+
 export default function RootLayout({ children }) {
   const path = usePathname();
 
@@ -81,6 +82,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="no-mobile no-touch">
       <head>
         {/* Google Fonts */}
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"></link>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"

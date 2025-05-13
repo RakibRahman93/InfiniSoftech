@@ -1,0 +1,19 @@
+.bgGradientCustom {
+  background: linear-gradient(135deg, #a253e6 0%, #ff70a6 100%);
+}
+
+.btnGradientCustom {
+  background: linear-gradient(135deg, #a253e6 0%, #ff70a6 100%);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.btnGradientCustom:hover {
+  background: linear-gradient(135deg, #9139e0 0%, #ff5f98 100%);
+  transform: translateY(-2px);
+}
