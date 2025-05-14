@@ -13,9 +13,16 @@ export default function ServicePricing() {
         <div className="col-md-8 offset-md-2 text-center">
           <h2 className="section-caption mb-0">Pricing</h2>
 
-          <h3 className="section-title-small mb-10">
-            🚀 WordPress Website Development Packages
-          </h3>
+          <div className="d-flex">
+            <img
+              src="/assets/images/rocket.png"
+              alt="rocket"
+              className="me-2"
+            />
+            <h3 className="section-title-small mb-10">
+              WordPress Website Development Packages
+            </h3>
+          </div>
           <div className="d-flex text-center justify-content-center align-items-center">
             <img
               className="img-fluid"
@@ -85,15 +92,18 @@ export default function ServicePricing() {
                   return (
                     <div key={index} className="col-md-6 col-lg-4 new-theme">
                       <div
-                        className="card card-pricing p-4 rounded-4 mb-20"
+                        className="card card-pricing p-4 mb-20"
                         style={{
                           background: isSecondColumn
-                            ? "linear-gradient(150deg, #000000 16%, #5334A2  63%)"
+                            ? "linear-gradient(to right, #000000 0%, #5334A1  100%)"
                             : "white",
                           color: isSecondColumn ? "#fff" : "#000",
                           boxShadow: isSecondColumn
-                            ? "0px 4px 19px 0px #ccc"
-                            : "0px 0px 19px 0px #CCCCCC",
+                            ? "0px 4px 19px 0px #000"
+                            : "0px 0px 19px 0px #ccc",
+                          borderRadius: "8px",
+                          zIndex: 1,
+                          border: "none",
                         }}
                       >
                         <div className="mb-20">
@@ -105,16 +115,16 @@ export default function ServicePricing() {
                               alt="g_base"
                             />
                           </div>
-                          <div className="d-flex align-items-center flex-row ">
-                            <span className="fw-bold me-4 fs-30 Anton">
+                          <div className="d-flex align-items-center flex-row">
+                            <span className="fw-bold me-2 fs-30 Anton">
                               {plan.title}
                             </span>
                             {plan.badge && (
                               <span
-                                className={`badge text-white p-2 rounded-pill Anton`}
+                                className={`badge text-white p-3 rounded-pill Anton`}
                                 style={{
                                   background: Array.isArray(plan.bgColor)
-                                    ? `linear-gradient(180deg, ${plan.bgColor[0]}, ${plan.bgColor[1]})`
+                                    ? `linear-gradient(to bottom, ${plan.bgColor[0]} 0%, ${plan.bgColor[1]} 150%)`
                                     : plan.bgColor,
                                   color: "white",
                                   fontSize: "10px",
@@ -179,7 +189,9 @@ export default function ServicePricing() {
                           {plan.disabledFeatures?.map((feature, i) => (
                             <li
                               key={i}
-                              className="d-flex align-items-baseline opacity-75"
+                              className={`d-flex align-items-baseline ${
+                                isSecondColumn && feature ? "" : "opacity-75"
+                              }`}
                             >
                               <i className="mi-circle-error me-2 text-danger"></i>{" "}
                               <span>{feature}</span>

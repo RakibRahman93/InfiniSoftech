@@ -52,7 +52,7 @@ export const ServicePricingData = [
   {
     title: "Starter Package",
     badge: "Essential Start",
-    bgColor: ["#4CAF50","#162017"],
+    bgColor: ["#04D90C","#162017"],
     description: {
       _html:
         "Perfect for <strong>startups</strong> and <strong>small businesses</strong> looking for an affordable yet professional website. Get online and start attracting customers.",
