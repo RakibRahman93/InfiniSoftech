@@ -277,7 +277,69 @@ export default function FancyServicesPage() {
                 <WebProcess />
               </div>
             </section>
+            {/* feedback client */}
+            <section
+              className={`scrollSpysection mt-5 service-large-sections`}
+              id="about"
+            >
+              <div className="pt-md-5 container position-relative new-theme">
+                <h3 className="fw-bold text-center mb-5">
+                  Feedback From Clients <span>✨</span>
+                </h3>
 
+                <div
+                  className="card mx-auto p-4 shadow-lg rounded-4 relative"
+                  style={{
+                    maxWidth: "750px",
+                    borderRadius: "10px",
+                    border: "none",
+                    boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.1)",
+                    position: "relative",
+                  }}
+                >
+                  <div className="card-body">
+                    <div className="mb-3 text-left ">
+                      <div
+                        className="fa-quote text-left"
+                        style={{
+                          fontSize: "120px !important",
+                          fontWeight: "bold",
+                          color: "#E1E2E6 !important",
+                          position: "absolute",
+                          top: "-15px",
+                          left: "-110px",
+                        }}
+                      >
+                        “
+                      </div>
+                    </div>
+                    <p className="card-text">
+                      Thank you soo much for your help, you are{" "}
+                      <strong>
+                        incredibly <br /> understanding and very proactive
+                      </strong>
+                      . You displayed really amazing professionalism and the
+                      execution of your work is very impressive. Thank you for{" "}
+                      <strong>coming last minute and saving the day</strong>.
+                    </p>
+
+                    <div className="d-flex align-items-center mt-4">
+                      <img
+                        src="/assets/images/femail-client.png"
+                        alt="Client"
+                        className="rounded-circle me-3"
+                      />
+                      <div>
+                        <div className="fw-semibold">
+                          Unity In Design Global <br /> Network
+                        </div>
+                        <div className="text-muted small">Tare Isaac</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
             <section
               className={`scrollSpysection py-5 ${
                 dark ? "bg-dark-1 light-content" : ""
@@ -378,6 +440,7 @@ export default function FancyServicesPage() {
                 </div>
               </div>
             </section>
+
             <section
               className={`page-section  scrollSpysection  ${
                 dark ? "bg-dark-1 light-content" : ""
