@@ -889,6 +889,10 @@
   letter-spacing: 0;
   color: #000;
 }
+.new-theme h4 {
+  font-size: 36px;
+  margin-bottom: 0 !important;
+}
 .new-theme .section-title-small {
   font-weight: 400 !important;
 }

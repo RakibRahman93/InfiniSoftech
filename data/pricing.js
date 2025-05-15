@@ -50,7 +50,7 @@ export const pricing = [
 ];
 export const ServicePricingData = [
   {
-    title: "Starter Package",
+    title: "Starter",
     badge: "Essential Start",
     bgColor: ["#04D90C","#162017"],
     description: {
@@ -83,7 +83,7 @@ at $5/month`,
     buttonText: "Get Started",
   },
   {
-    title: "Standard Package",
+    title: "Standard",
     badge: "Growth Accelerator",
     bgColor: ["#FF002B","#7C323F"],
     description: {

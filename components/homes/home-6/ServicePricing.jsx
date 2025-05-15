@@ -115,10 +115,10 @@ export default function ServicePricing() {
                               alt="g_base"
                             />
                           </div>
-                          <div className="d-flex align-items-center flex-row">
-                            <span className="fw-bold me-2 fs-30 Anton">
+                          <div className="d-flex align-items-center flex-row justify-content-between">
+                            <h4 className="fw-bold me-2 fs-30 Anton">
                               {plan.title}
-                            </span>
+                            </h4>
                             {plan.badge && (
                               <span
                                 className={`badge text-white p-3 rounded-pill Anton`}
@@ -127,7 +127,7 @@ export default function ServicePricing() {
                                     ? `linear-gradient(to bottom, ${plan.bgColor[0]} 0%, ${plan.bgColor[1]} 150%)`
                                     : plan.bgColor,
                                   color: "white",
-                                  fontSize: "10px",
+                                  fontSize: "14px",
                                 }}
                               >
                                 {plan.badge}
