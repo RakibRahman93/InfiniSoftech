@@ -885,6 +885,10 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+.feedback-text {
+  font-family: "Inter";
+  font-size: 17px;
+}
 .new-theme strong {
   font-weight: 500 !important;
 }
@@ -1177,9 +1181,9 @@ h5 {
 }
 
 @media (max-width: 576px) {
-  br {
+  /* br {
     display: none;
-  }
+  } */
   .new-theme h3 {
     font-size: 33px;
   }

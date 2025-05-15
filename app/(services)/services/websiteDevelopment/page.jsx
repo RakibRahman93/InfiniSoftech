@@ -310,7 +310,7 @@ export default function FancyServicesPage() {
                     <div className="mb-3 text-left ">
                       <span className="fas-quote text-left relative"></span>
                     </div>
-                    <p className="card-text">
+                    <p className="card-text feedback-text">
                       Thank you soo much for your help, you are{" "}
                       <strong>
                         incredibly <br /> understanding and very proactive
