@@ -1023,6 +1023,9 @@ h5 {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .new-theme h4 {
+    font-size: 32px;
+  }
   .techCard-pricing {
     min-height: 107rem;
   }
@@ -1034,6 +1037,9 @@ h5 {
   }
 }
 @media only screen and (max-width: 767px) {
+  .new-theme h4 {
+    font-size: 36px;
+  }
   .theme-fancy .tpl-minimal-tabs > li {
     margin: 2px !important;
     width: 46%;
@@ -1135,6 +1141,9 @@ h5 {
   }
 }
 @media (max-width: 768px) {
+  .new-theme h3 {
+    font-size: 33px !important;
+  }
   .techCard-pricing {
     min-height: 84rem;
   }
@@ -1159,6 +1168,9 @@ h5 {
 }
 
 @media (max-width: 576px) {
+  .new-theme h3 {
+    font-size: 33px;
+  }
   /* .container .hs-title-10{
     font-size: 26px !important;
   } */
