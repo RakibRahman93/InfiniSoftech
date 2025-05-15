@@ -299,7 +299,7 @@ export default function FancyServicesPage() {
                 <div
                   className="card mx-auto p-4 shadow-lg rounded-4 relative client"
                   style={{
-                    maxWidth: "750px",
+                    maxWidth: "614px",
                     borderRadius: "10px",
                     border: "none",
                     boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.1)",
