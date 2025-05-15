@@ -885,6 +885,19 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+.feedback-text {
+  font-family: "Inter";
+  font-size: 17px;
+}
+.feedback-client-footer .fw-semibold {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+}
+.feedback-client-footer .text-muted {
+  font-family: "Inter";
+  font-size: 15px;
+}
 .new-theme strong {
   font-weight: 500 !important;
 }

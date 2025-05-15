@@ -310,7 +310,7 @@ export default function FancyServicesPage() {
                     <div className="mb-3 text-left ">
                       <span className="fas-quote text-left relative"></span>
                     </div>
-                    <p className="card-text">
+                    <p className="card-text feedback-text">
                       Thank you soo much for your help, you are{" "}
                       <strong>
                         incredibly <br /> understanding and very proactive
@@ -327,7 +327,7 @@ export default function FancyServicesPage() {
                         alt="Client"
                         className="rounded-circle me-3"
                       />
-                      <div>
+                      <div className="feedback-client-footer">
                         <div className="fw-semibold">
                           Unity In Design Global <br /> Network
                         </div>
