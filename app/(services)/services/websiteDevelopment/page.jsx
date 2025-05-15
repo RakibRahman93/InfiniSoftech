@@ -279,16 +279,24 @@ export default function FancyServicesPage() {
             </section>
             {/* feedback client */}
             <section
-              className={`scrollSpysection mt-5 service-large-sections`}
+              className={`scrollSpysection py-5 service-large-sections`}
               id="about"
             >
               <div className="pt-md-5 container position-relative new-theme">
-                <h3 className="fw-bold text-center mb-5">
-                  Feedback From Clients <span>✨</span>
+                <h3
+                  className="text-center mb-5"
+                  style={{ fontWeight: "400 !important" }}
+                >
+                  Feedback From Clients{" "}
+                  <span>
+                    <span>
+                      <img src="/assets/images/start-client.svg" alt="" />
+                    </span>
+                  </span>
                 </h3>
 
                 <div
-                  className="card mx-auto p-4 shadow-lg rounded-4 relative"
+                  className="card mx-auto p-4 shadow-lg rounded-4 relative client"
                   style={{
                     maxWidth: "750px",
                     borderRadius: "10px",
@@ -297,21 +305,9 @@ export default function FancyServicesPage() {
                     position: "relative",
                   }}
                 >
-                  <div className="card-body">
+                  <div className="card-body relative">
                     <div className="mb-3 text-left ">
-                      <div
-                        className="fa-quote text-left"
-                        style={{
-                          fontSize: "120px !important",
-                          fontWeight: "bold",
-                          color: "#E1E2E6 !important",
-                          position: "absolute",
-                          top: "-15px",
-                          left: "-110px",
-                        }}
-                      >
-                        “
-                      </div>
+                      <span className="fas-quote text-left relative"></span>
                     </div>
                     <p className="card-text">
                       Thank you soo much for your help, you are{" "}
