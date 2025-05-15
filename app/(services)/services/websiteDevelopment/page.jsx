@@ -283,10 +283,7 @@ export default function FancyServicesPage() {
               id="about"
             >
               <div className="pt-md-5 container position-relative">
-                <h2
-                  className="section-title-small text-center mb-5 feedback-img relative"
-                  style={{ fontWeight: "400 !important" }}
-                >
+                <h2 className="section-title-small text-center mb-5 feedback-img relative">
                   Feedback From Clients{" "}
                   <span>
                     <span>
