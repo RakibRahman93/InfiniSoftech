@@ -327,7 +327,7 @@ export default function FancyServicesPage() {
                         alt="Client"
                         className="rounded-circle me-3"
                       />
-                      <div>
+                      <div className="feedback-client-footer">
                         <div className="fw-semibold">
                           Unity In Design Global <br /> Network
                         </div>
