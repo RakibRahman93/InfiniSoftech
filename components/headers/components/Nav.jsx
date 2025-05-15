@@ -14,19 +14,11 @@ export default function OnePageNav({ links, animateY = false }) {
   const menuRefs = useRef([]);
 
   useEffect(() => {
-    setTimeout(() => {
-      scrollToElement();
-    }, 1000);
+    setTimeout(() => scrollToElement(), 1000);
     init_classic_menu_resize();
     window.addEventListener("scroll", addScrollspy);
-
     window.addEventListener("resize", init_classic_menu_resize);
 
-    // return () => {
-    //   window.removeEventListener("scroll", addScrollspy);
-    //   window.removeEventListener("resize", init_classic_menu_resize);
-    // };
-    // Event listener to close dropdown when clicking outside
     const handleClickOutside = (event) => {
       if (
         dropdownOpen !== null &&
@@ -36,7 +28,9 @@ export default function OnePageNav({ links, animateY = false }) {
         setDropdownOpen(null);
       }
     };
+
     document.addEventListener("mousedown", handleClickOutside);
+
     return () => {
       window.removeEventListener("scroll", addScrollspy);
       window.removeEventListener("resize", init_classic_menu_resize);
@@ -48,61 +42,69 @@ export default function OnePageNav({ links, animateY = false }) {
     setDropdownOpen(dropdownOpen === index ? null : index);
   };
 
+  const normalizePath = (path) => path.replace(/\/$/, "").split("?")[0];
+
   return (
     <>
-      {links.map((link, index) => (
-        <li
-          key={index}
-          ref={(el) => (menuRefs.current[index] = el)}
-          className={`menu-item ${link.dropdown ? "dropdown" : ""}`}
-        >
-          <Link
-            className={
-              pathname.split("/")[1] === link.href.split("/")[1] ? "active" : ""
-            }
-            href={link.href}
-            onClick={
-              link.dropdown
-                ? (e) => {
-                    e.preventDefault();
-                    toggleDropdown(index);
-                  }
-                : undefined
-            }
-          >
-            {animateY ? (
-              <span className="btn-animate-y">
-                <span className="btn-animate-y-1">{link.text}</span>
-                <span className="btn-animate-y-2" aria-hidden="true">
-                  {link.text}
-                </span>
-              </span>
-            ) : (
-              link.text
-            )}
-          </Link>
+      {links.map((link, index) => {
+        const isLinkActive =
+          normalizePath(pathname) === normalizePath(link.href);
 
-          {/* Render dropdown if it exists */}
-          {link.dropdown && dropdownOpen === index && (
-            <ul className="dropdown-menu" id="dropdown-menus">
-              {link.dropdown.map((dropdownLink, dropdownIndex) => (
-                <li key={dropdownIndex}>
-                  <Link
-                    className={
-                      pathname.split("/")[1] === dropdownLink.href.split("/")[1]
-                        ? "active"
-                        : ""
+        return (
+          <li
+            key={index}
+            ref={(el) => (menuRefs.current[index] = el)}
+            className={`menu-item desktop-menus ${
+              link.dropdown ? "dropdown" : ""
+            }`}
+          >
+            <Link
+              href={link.href}
+              className={isLinkActive ? "active" : ""}
+              onClick={
+                link.dropdown
+                  ? (e) => {
+                      e.preventDefault();
+                      toggleDropdown(index);
                     }
-                    href={dropdownLink.href}
-                  >
-                    {dropdownLink.text}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
-        </li>
-      ))}
+                  : undefined
+              }
+            >
+              {animateY ? (
+                <span className="btn-animate-y">
+                  <span className="btn-animate-y-1">{link.text}</span>
+                  <span className="btn-animate-y-2" aria-hidden="true">
+                    {link.text}
+                  </span>
+                </span>
+              ) : (
+                link.text
+              )}
+            </Link>
+
+            {link.dropdown && dropdownOpen === index && (
+              <ul className="dropdown-menu" id="dropdown-menus">
+                {link.dropdown.map((dropdownLink, dropdownIndex) => {
+                  const isDropdownActive =
+                    normalizePath(pathname) ===
+                    normalizePath(dropdownLink.href);
+
+                  return (
+                    <li key={dropdownIndex}>
+                      <Link
+                        href={dropdownLink.href}
+                        className={isDropdownActive ? "active" : ""}
+                      >
+                        {dropdownLink.text}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </li>
+        );
+      })}
     </>
   );
 }

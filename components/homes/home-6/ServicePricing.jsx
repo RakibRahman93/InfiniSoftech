@@ -17,9 +17,12 @@ export default function ServicePricing() {
             <img
               src="/assets/images/rocket.png"
               alt="rocket"
-              className="me-2"
+              className="me-2 img-fluid"
             />
-            <h3 className="section-title-small mb-10">
+            <h3
+              className="section-title-small mb-10"
+              style={{ letterSpacing: "2%" }}
+            >
               WordPress Website Development Packages
             </h3>
           </div>

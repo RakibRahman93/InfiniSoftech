@@ -52,7 +52,7 @@ export const ServicePricingData = [
   {
     title: "Starter",
     badge: "Essential Start",
-    bgColor: ["#04D90C","#162017"],
+    bgColor: ["#04D90C", "#162017"],
     description: {
       _html:
         "Perfect for <strong>startups</strong> and <strong>small businesses</strong> looking for an affordable yet professional website. Get online and start attracting customers.",
@@ -85,7 +85,7 @@ at $5/month`,
   {
     title: "Standard",
     badge: "Growth Accelerator",
-    bgColor: ["#FF002B","#7C323F"],
+    bgColor: ["#FF002B", "#7C323F"],
     description: {
       _html: `Perfect for <strong>medium-sized businesses</strong> looking to build a <strong>strong online presence and better performance. Get advanced analytics to better understand your customers and drive sales.</strong>`,
     },
@@ -119,9 +119,9 @@ at $5/month`,
     buttonText: "Get Started",
   },
   {
-    title: "Premium Suite",
+    title: "Premium",
     badge: "Sales Booster",
-    bgColor: ["#DA00FF","#DC0335"],
+    bgColor: ["#DA00FF", "#DC0335"],
     description: {
       _html: `Perfect for <strong>Saas platforms, digital agencies, or enterprise websites.</strong>`,
     },

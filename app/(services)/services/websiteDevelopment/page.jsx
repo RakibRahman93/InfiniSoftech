@@ -152,7 +152,7 @@ export default function FancyServicesPage() {
                           fontWeight: "bolder",
                         }}
                       >
-                        Services?
+                        Website Development Service?
                       </h2>
                     </div>
                     {/* <div className="col-md-6 col-lg-5 d-flex row">
@@ -284,13 +284,17 @@ export default function FancyServicesPage() {
             >
               <div className="pt-md-5 container position-relative new-theme">
                 <h3
-                  className="text-center mb-5"
+                  className="text-center mb-5 feedback-img relative"
                   style={{ fontWeight: "400 !important" }}
                 >
                   Feedback From Clients{" "}
                   <span>
                     <span>
-                      <img src="/assets/images/start-client.svg" alt="" />
+                      <img
+                        className="pb-4"
+                        src="/assets/images/start-client.svg"
+                        alt=""
+                      />
                     </span>
                   </span>
                 </h3>
@@ -314,8 +318,9 @@ export default function FancyServicesPage() {
                       <strong>
                         incredibly <br /> understanding and very proactive
                       </strong>
-                      . You displayed really amazing professionalism and the
-                      execution of your work is very impressive. Thank you for{" "}
+                      . You displayed really amazing <br /> professionalism and
+                      the execution of your work is very impressive. <br />{" "}
+                      Thank you for{" "}
                       <strong>coming last minute and saving the day</strong>.
                     </p>
 

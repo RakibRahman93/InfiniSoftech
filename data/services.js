@@ -466,33 +466,33 @@ export const seoServicesData = [
 export const webServicesData = [
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
-    title: "Custom Website Design",
-    text: "Optimizing your website’s content, structure, and performance",
+    title: "Custom Website Development",
+    text: "We design and build tailor-made websites that match your brand, engage your audience, and drive results.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
-    title: "E-Commerce Development",
-    text: "Advance ecommerce platform development for growth and success",
+    title: "E-Commerce Website Development",
+    text: "We create powerful, user-friendly e-commerce websites that help you sell more. Scalable online stores tailored to your business needs.",
   },
   {
     src: "/assets/images/services/website/business.svg",
-    title: "Business Websites",
-    text: "Professional website to get your business to the next level",
+    title: "Business Websites Development",
+    text: "We develop professional, conversion-focused websites that build trust and grow your brand.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
-    title: "Web App Development",
-    text: "Complete web app design and development",
+    title: "Web Application Development",
+    text: "We build scalable, high-performance web applications tailored to your business goals.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
-    title: "UI/UX Optimization",
-    text: "",
+    title: "WordPress Website Development",
+    text: "We design and develop custom WordPress websites that are fast, secure, and easy to manage.",
   },
   {
     src: "/assets/images/services/website/business.svg",
-    title: "SEO & Speed Optimization",
-    text: "",
+    title: "Website Design & Redesign",
+    text: "Whether you're starting fresh or refreshing your existing site, we craft modern, user-focused designs that elevate your brand and improve performance.",
   },
 ];
 export const services3aMain = [
