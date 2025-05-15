@@ -98,7 +98,7 @@ export default function ServicePricing() {
                         className="card card-pricing p-4 mb-20"
                         style={{
                           background: isSecondColumn
-                            ? "linear-gradient(to right, #000000 0%, #5334A1  100%)"
+                            ? "linear-gradient(180deg, #000000 0%, #5334A1  100%)"
                             : "white",
                           color: isSecondColumn ? "#fff" : "#000",
                           boxShadow: isSecondColumn
