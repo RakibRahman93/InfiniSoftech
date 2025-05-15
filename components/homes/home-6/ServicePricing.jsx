@@ -95,7 +95,7 @@ export default function ServicePricing() {
                   return (
                     <div key={index} className="col-md-6 col-lg-4 new-theme">
                       <div
-                        className="card card-pricing p-4 mb-20"
+                        className="card wp-pricing p-4 mb-20"
                         style={{
                           background: isSecondColumn
                             ? "linear-gradient(180deg, #000000 0%, #5334A1  100%)"
@@ -192,7 +192,7 @@ export default function ServicePricing() {
                           {plan.disabledFeatures?.map((feature, i) => (
                             <li
                               key={i}
-                              className={`d-flex align-items-baseline ${
+                              className={`d-flex align-items-baseline mb-10 ${
                                 isSecondColumn && feature ? "" : "opacity-75"
                               }`}
                             >

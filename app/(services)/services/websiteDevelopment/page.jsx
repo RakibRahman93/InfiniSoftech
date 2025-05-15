@@ -282,9 +282,9 @@ export default function FancyServicesPage() {
               className={`scrollSpysection py-5 service-large-sections`}
               id="about"
             >
-              <div className="pt-md-5 container position-relative new-theme">
-                <h3
-                  className="text-center mb-5 feedback-img relative"
+              <div className="pt-md-5 container position-relative">
+                <h2
+                  className="section-title-small text-center mb-5 feedback-img relative"
                   style={{ fontWeight: "400 !important" }}
                 >
                   Feedback From Clients{" "}
@@ -297,7 +297,7 @@ export default function FancyServicesPage() {
                       />
                     </span>
                   </span>
-                </h3>
+                </h2>
 
                 <div
                   className="card mx-auto p-4 shadow-lg rounded-4 relative client"
