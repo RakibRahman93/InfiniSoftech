@@ -89,7 +89,7 @@ at $5/month`,
     description: {
       _html: `Perfect for <strong>medium-sized businesses</strong> looking to build a <strong>strong online presence and better performance. Get advanced analytics to better understand your customers and drive sales.</strong>`,
     },
-    price: 799,
+    price: 1490,
     per: "per month",
     features: [
       "Free Domain Hosting Setup",
