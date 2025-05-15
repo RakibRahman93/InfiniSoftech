@@ -35,7 +35,7 @@ export default function FancyServicesPage() {
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
                     <h1 className="fs-48 mb-30 mb-xs-20 wow fadeInUp">
-                      Get High Performaning&nbsp;
+                      We Turn Ideas into Powerful &nbsp;
                       <span
                         className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-48"
                         style={{
@@ -46,12 +46,12 @@ export default function FancyServicesPage() {
                           fontWeight: "bold",
                         }}
                       >
-                        Website Development
+                        Digital Experiences
                       </span>
                     </h1>
                     <p className="wow fadeInUp section-title-ex-small">
-                      We design user-centric, high-converting interfaces that
-                      elevate your brand and enhance customer engagement.
+                      Custom Website & App Development to Help You Launch Faster
+                      and Grow Smarter.
                     </p>
 
                     {/* Yellow Stars */}
@@ -110,7 +110,7 @@ export default function FancyServicesPage() {
                   <div className="col-md-12 col-lg-6 text-center mt-smd-5">
                     <img
                       style={{ maxWidth: "90%", width: "auto", height: "90%" }}
-                      src="/assets/images/services/website/webDesign.png"
+                      src="/assets/images/web-development.svg"
                       layout="intrinsic"
                       className="wow fadeInUp"
                       alt="Image Description"
