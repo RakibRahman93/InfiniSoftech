@@ -322,9 +322,27 @@ export const portfolios5 = [
 
 export const portfolios6 = [
   {
+    id: 38,
+    categories: ["UIUX Design", "branding", "redesign"],
+    imgSrc: "/assets/images/demo-fancy/portfolio/TGP/tgpCover.png",
+    imgExtra: "/assets/images/demo-fancy/portfolio/TGP/tgp1.png",
+    imgSrc2: "/assets/images/demo-fancy/portfolio/TGP/tgp2.png",
+    imgSrc3: "/assets/images/demo-fancy/portfolio/TGP/tgp3.png",
+    title: "Website Redesign Project",
+    description: "Re-Design Project",
+    lightbox: false,
+    lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
+    Date: "May, 2025",
+    Client: "International",
+    Services:
+      "Branding, UI/UX redesign, Wordpress Development",
+    // Description: ,
+    // mockupType: "phone",
+  },
+  {
     id: 39,
     categories: ["UIUX Design", "branding", "development"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/FreshGoCover.png",
+    imgSrc: "/assets/images/demo-fancy/portfolio/FreshGocov1.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/FreshGo1.svg",
     imgSrc2: "/assets/images/demo-fancy/portfolio/FreshGo2.svg",
     title: "Mobile App UIUX Design & Development",
