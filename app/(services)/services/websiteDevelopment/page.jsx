@@ -30,8 +30,8 @@ export default function FancyServicesPage() {
               className={`scrollSpysection mt-5 service-large-sections`}
               id="about"
             >
-              <div className="pt-md-5 container position-relative">
-                <div className="row mb-xs-40">
+              <div className="py-md-5 container position-relative">
+                <div className="row mb-xs-40 py-md-5">
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
                     <h1 className="fs-48 mb-30 mb-xs-20 wow fadeInUp">
