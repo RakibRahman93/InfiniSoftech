@@ -908,17 +908,16 @@
   font-family: Roboto;
 }
 .new-theme h3 {
-  font-family: Anton;
-  letter-spacing: 0;
+  font-size: 48px !important;
+  font-family: Poppins;
   color: #000;
+  font-weight: 700 !important;
 }
 .new-theme h4 {
   font-size: 42px;
   margin-bottom: 0 !important;
 }
-.new-theme .section-title-small {
-  font-weight: 400 !important;
-}
+
 .new-theme .get-started-btn span {
   font-size: 20px !important;
   font-family: Anton !important;
@@ -1164,7 +1163,7 @@ h5 {
     font-size: 33px !important;
   }
   .wp-pricing {
-    min-height: 100rem;
+    min-height: 102rem;
   }
   .techCard-pricing {
     min-height: 84rem;
