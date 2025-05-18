@@ -12823,6 +12823,16 @@ html:not(.mobile) .owl-animate-fadeInDown {
 .justify-content-space-between {
   justify-content: space-between;
 }
+
+.full-height {
+  height: 100vh;
+}
+
+
+
+
+
+
 /* for devices less than and equal to */
 @media (max-width: 768px) {
   .works-filter.works-filter-fancy {

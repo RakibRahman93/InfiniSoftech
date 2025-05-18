@@ -1095,6 +1095,20 @@ h5 {
 .fs-48 {
   font-size: 36px;
 }
+.fs-hero {
+  font-size: 58px;
+  font-weight: 200;
+}
+.fs-hero-desc {
+  font-size: 24px;
+  font-weight: 700;
+}
+.info-text {
+  font-size: 14px;
+}
+.no-margin {
+  margin: 0;
+}
 .fs-footer-title {
   font-size: 64px;
 }

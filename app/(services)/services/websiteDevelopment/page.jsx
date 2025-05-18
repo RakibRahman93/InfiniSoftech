@@ -27,17 +27,17 @@ export default function FancyServicesPage() {
           <main id="main">
             {/* your team section */}
             <section
-              className={`scrollSpysection mt-5 service-large-sections`}
+              className={`scrollSpysection mt-5 service-large-sections full-height`}
               id="about"
             >
               <div className="py-md-5 container position-relative">
                 <div className="row mb-xs-40 py-md-5">
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
-                    <h1 className="fs-48 mb-30 mb-xs-20 wow fadeInUp">
-                      We Turn Ideas into Powerful &nbsp;
+                    <h1 className="fs-hero mb-30 mb-xs-20 wow fadeInUp">
+                      We Turn Your Ideas into Powerful &nbsp;
                       <span
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-48"
+                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-hero"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -49,9 +49,11 @@ export default function FancyServicesPage() {
                         Digital Experiences
                       </span>
                     </h1>
-                    <p className="wow fadeInUp section-title-ex-small">
-                      Custom Website & App Development to Help You Launch Faster
-                      and Grow Smarter.
+                    <p className="wow fadeInUp fs-hero-desc no-margin">
+                      Launch Faster and Grow Smarter.
+                    </p>
+                    <p className="wow fadeInUp info-text no-margin">
+                      Start your journey with a free 30 minute consultation.
                     </p>
 
                     {/* Yellow Stars */}
@@ -59,7 +61,7 @@ export default function FancyServicesPage() {
                       {[...Array(5)].map((_, i) => (
                         <span
                           key={i}
-                          style={{ color: "#FFD700", fontSize: "24px" }}
+                          style={{ color: "#ffae00", fontSize: "28px" }}
                         >
                           ★
                         </span>
@@ -75,7 +77,7 @@ export default function FancyServicesPage() {
                             style={{
                               width: 60,
                               height: 60,
-                              border: "1px solid #D9D9D9",
+                              border: "1px solid #000000",
                               marginRight: "-15px", // Overlap effect
                               // zIndex: reviews.length - index, // Stacking order
                               borderRadius: "50%",
@@ -109,7 +111,7 @@ export default function FancyServicesPage() {
                   {/* right section */}
                   <div className="col-md-12 col-lg-6 text-center mt-smd-5">
                     <img
-                      style={{ maxWidth: "90%", width: "auto", height: "90%" }}
+                      style={{ maxWidth: "150%", width: "auto", height: "100%" }}
                       src="/assets/images/web-development.svg"
                       layout="intrinsic"
                       className="wow fadeInUp"
