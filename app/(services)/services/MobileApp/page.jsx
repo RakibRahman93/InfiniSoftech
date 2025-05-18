@@ -33,10 +33,10 @@ export default function FancyServicesPage() {
                 <div className="row mb-xs-40">
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
-                    <h1 className="fs-48 mb-30 mb-xs-20 wow fadeInUp ml-1">
+                    <h1 className="fs-64 mb-30 mb-xs-20 wow fadeInUp ml-1">
                       Build Your Dream App with&nbsp;
                       <span
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-48"
+                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-64"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -145,7 +145,7 @@ export default function FancyServicesPage() {
                         Our Mobile App Development
                       </p>
                       <h2
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white text-transparent bg-clip-text font-extrabold fs-64 fs-md-2 fs-lg-3 fs-xl-4 py-0"
+                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white text-transparent bg-clip-text font-extrabold fs-40 fs-md-2 fs-lg-3 fs-xl-4 py-0"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",

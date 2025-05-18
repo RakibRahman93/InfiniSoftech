@@ -43,43 +43,6 @@ export default function ServicePricing() {
 
       <div className="row py-4">
         <div className="col-xl-12">
-          {/* Nav Tabs */}
-          {/* <div className="mb-20 mb-sm-20 text-center d-flex justify-content-center">
-            <ul
-              className="works-filter works-filter-fancy text-center mb-60 mb-sm-40 z-1 animate"
-              role="tablist"
-            >
-              <li
-                className="nav-item"
-                onClick={() => setIsYearly(false)}
-                role="presentation"
-              >
-                <a
-                  href="#tab-monthly"
-                  className={`nav-link ${!isYearly ? "active" : ""}`}
-                  data-bs-toggle="tab"
-                >
-                  Monthly
-                </a>
-              </li>
-              <li
-                className="nav-item"
-                onClick={() => setIsYearly(true)}
-                role="presentation"
-              >
-                <a
-                  href="#tab-annual"
-                  className={`nav-link ${isYearly ? "active" : ""}`}
-                  data-bs-toggle="tab"
-                >
-                  Yearly
-                </a>
-              </li>
-              
-            </ul>
-          </div> */}
-          {/* End Nav Tabs */}
-
           {/* Pricing Plans */}
           <div className="tab-content tpl-minimal-tabs-cont position-relative">
             <div className="tab-pane show active">
@@ -87,7 +50,6 @@ export default function ServicePricing() {
                 {ServicePricingData.map((plan, index) => {
                   const updatePrice = isYearly ? plan.price * 12 : plan.price;
 
-                  // Check if it is the second column (index === 1) to apply gradient
                   const isSecondColumn = index === 1;
 
                   return (
@@ -96,7 +58,7 @@ export default function ServicePricing() {
                         className="card wp-pricing p-4 mb-20"
                         style={{
                           background: isSecondColumn
-                            ? "linear-gradient(180deg, #000000 0%, #5334A1  100%)"
+                            ? "linear-gradient(135deg, #1a1a1a  0%, #5334A1  90%)"
                             : "white",
                           color: isSecondColumn ? "#fff" : "#000",
                           boxShadow: isSecondColumn

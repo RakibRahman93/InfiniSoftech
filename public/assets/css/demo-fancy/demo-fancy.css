@@ -918,12 +918,12 @@
   margin-bottom: 0 !important;
 }
 
-.new-theme .get-started-btn span {
+/* .new-theme .get-started-btn span {
   font-size: 20px !important;
   font-family: Anton !important;
   font-weight: 400 !important;
   letter-spacing: 1% !important;
-}
+} */
 .new-theme li,
 .work-descr,
 h5 {
@@ -1089,6 +1089,9 @@ h5 {
 
 /* Custom responsive font size */
 .fs-64 {
+  font-size: 63px;
+}
+.fs-40 {
   font-size: 40px;
 }
 
@@ -1102,7 +1105,7 @@ h5 {
   font-size: 28px;
 }
 .m-h-30 {
-  min-height: 75px;
+  min-height: 107px;
 }
 .dshape {
   background-image: url("/assets/images/shape-services.png");
@@ -1150,7 +1153,27 @@ h5 {
   background-repeat: no-repeat; /* to prevent the image from repeating */
   z-index: -1;
 }
+@media (min-width: 1024px) {
+  html:not(.no-touch) .page-section,
+  html:not(.no-touch) .home-section,
+  html:not(.no-touch) .small-section {
+    background-attachment: scroll !important;
+  }
+
+  .service-large-sections {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media (max-width: 1024px) {
+  .services-web-title {
+    font-size: 22px;
+  }
+  .fs-64 {
+    font-size: 50px;
+  }
   .fs-48 {
     font-size: 35px;
   }
@@ -1177,6 +1200,9 @@ h5 {
   .fs-64 {
     font-size: 48px;
   }
+  .fs-40 {
+    font-size: 48px;
+  }
   .fs-footer-title {
     font-size: 34px;
   }
@@ -1189,6 +1215,12 @@ h5 {
 }
 
 @media (max-width: 576px) {
+  .services-web-title {
+    font-size: 20px;
+  }
+  .fs-64 {
+    font-size: 32px;
+  }
   br {
     display: none;
   }
@@ -1210,7 +1242,7 @@ h5 {
   .fs-48 {
     font-size: 28px;
   }
-  .fs-64 {
+  .fs-40 {
     font-size: 36px;
   }
   .fs-24 {
