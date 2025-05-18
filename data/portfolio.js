@@ -378,7 +378,7 @@ export const portfolios6 = [
   {
     id: 41,
     categories: ["UIUX Design", "branding", "development"],
-    imgSrc: "/assets/images/demo-fancy/portfolio/proapp-cover.png",
+    imgSrc: "/assets/images/demo-fancy/portfolio/ProAppCover.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/proapp.png",
     imgSrc2: "/assets/images/demo-fancy/portfolio/ProApp 2.png",
     title: "Mobile App UIUX Design & Development",
