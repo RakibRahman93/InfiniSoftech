@@ -9,6 +9,7 @@ export function PopupWrapper({
   className = "",
   minWidth = "",
   height = "",
+  padding = "",
   isFullWidth = false, // New prop to control full-width
 }) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -20,7 +21,7 @@ export function PopupWrapper({
 
   const handlePopupClose = () => {
     setIsPopupVisible(false); // Close the popup on form success
-  }
+  };
 
   return (
     <>
@@ -39,6 +40,8 @@ export function PopupWrapper({
             minWidth: isFullWidth ? "100%" : "14rem",
             padding: "12px 26px",
             fontWeight: "600",
+            height: height,
+            padding: padding,
           }}
         >
           <span className="btn-animate-y">
@@ -51,7 +54,11 @@ export function PopupWrapper({
       </ul>
 
       {/* Popup Component */}
-      <Popup isPopupVisible={isPopupVisible} onClose={handlePopupClose} plan={plan}>
+      <Popup
+        isPopupVisible={isPopupVisible}
+        onClose={handlePopupClose}
+        plan={plan}
+      >
         <Form onSuccess={handlePopupClose} />
       </Popup>
     </>

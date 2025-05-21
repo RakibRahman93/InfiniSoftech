@@ -1,12 +1,8 @@
 "use client";
 
-import { brands } from "@/data/brands";
-import { numberItems2 } from "@/data/facts";
 import { testimonials5 } from "@/data/testimonials";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Testimonials() {
   const isotopContainer = useRef();
@@ -37,24 +33,25 @@ export default function Testimonials() {
         {/* Section Text */}
         <div className="col-lg-5 col-xl-5 d-flex align-items-center mb-md-60 mb-sm-40">
           <div className="w-100">
-            <h2 className="section-caption mb-20 mb-xs-10">
-              Testimonials
-            </h2>
+            <h2 className="section-caption mb-20 mb-xs-10">Testimonials</h2>
             <h3 className="section-title-small mb-30">
-               Hear from our <span
-                    className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
-                        style={{
-                          background: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-                         WebkitBackgroundClip: "text",
-                         WebkitTextFillColor: "transparent",
-                         fontWeight: "bold",
-                       }}
-                     >
-                       Satisfied Clients!{" "}
-                     </span> 
+              Hear from our{" "}
+              <span
+                className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
+                style={{
+                  background:
+                    "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  fontWeight: "bold",
+                }}
+              >
+                Satisfied Clients!{" "}
+              </span>
             </h3>
             <p className="section-descr mb-30">
-              Discover how INFINISOFT TECHNOLOGY has transformed ideas into impactful digital solutions.
+              Discover how INFINISOFT TECHNOLOGY has transformed ideas into
+              impactful digital solutions.
             </p>
             {/* Numbers */}
             <div className="row">
@@ -96,7 +93,6 @@ export default function Testimonials() {
               {/* Testimonials Item */}
               {testimonials5.map((testimonial, index) => (
                 <div
-                  
                   key={index}
                   className={`col-md-6 mb-30 ${!index ? "mt-50 mt-sm-0" : ""} `}
                 >
@@ -105,7 +101,14 @@ export default function Testimonials() {
                       <i className="icon-quotation-mark" />
                     </div>
                     <blockquote className="testimonials-4-text">
-                      <p className="mb-0 size-14">{testimonial.text}</p>
+                      <p className="mb-0 size-17 inter">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: testimonial.text._html,
+                          }}
+                        ></span>
+                        {/* {testimonial.text}</p> */}
+                      </p>
                       <footer className="testimonials-4-author mt-30 clearfix">
                         <div className="testimonials-4-author-img float-start">
                           <Image
@@ -162,8 +165,8 @@ export default function Testimonials() {
             display: "block",
           }}
         > */}
-          {/* Team item */}
-          {/* {brands.map((elm, i) => (
+      {/* Team item */}
+      {/* {brands.map((elm, i) => (
             <SwiperSlide className="owl-item" key={i}>
               <div className="logo-item">
                 <Image src={elm} width={215} height={75} alt="Company Name" />
@@ -171,8 +174,8 @@ export default function Testimonials() {
             </SwiperSlide>
           ))} */}
 
-          {/* End Team item */}
-        {/* </Swiper>
+      {/* End Team item */}
+      {/* </Swiper>
       </div> */}
       {/* End Logotypes */}
     </div>

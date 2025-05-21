@@ -7,7 +7,7 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 const filters = [
   { name: "All works", category: "all" },
   { name: "Branding", category: "branding" },
-  { name: "Design", category: "design" },
+  { name: "Redesign", category: "redesign" },
   { name: "Development", category: "development" },
 ];
 export default function Portfolio() {

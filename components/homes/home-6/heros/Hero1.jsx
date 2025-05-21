@@ -1,13 +1,14 @@
 "use client";
 import Form from "@/components/headers/components/Form";
 import Popup from "@/components/headers/components/popup";
+import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
+import { useLocation } from "@/context/LocationContext";
 import { reviews } from "@/data/features";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import Slider from "../Slider";
-import { useLocation } from "@/context/LocationContext";
 
 export default function Hero1() {
   const [isOpen, setOpen] = useState(false);
@@ -27,15 +28,14 @@ export default function Hero1() {
             {/* Home Section Text */}
             <div className="col-md-10 offset-md-1 offset-lg-1 col-xl-10 d-flex align-items-center mb-md-60 mb-sm-30">
               <div className="w-100 text-center container">
-                <h1 className="hs-title-10 mb-30">
+                <h1 className="fs-64 mb-30">
                   <span
                     className="wow charsAnimIn fadeInUp"
                     data-splitting="chars"
                   >
                     <span style={{ fontWeight: "bold", color: "#333" }}>
-                    Launch Your Custom Website or App  {" "}
+                      Launch Your Custom Website or App{" "}
                       <span className="mark-decoration-3-wrap color-secondary-1-white">
-                        
                         {/* <b
                         className=" mark-decoration-3 wow scalexIn"
                         data-wow-delay="1.1s"
@@ -52,7 +52,8 @@ export default function Hero1() {
                         fontWeight: "bold",
                       }}
                     >
-                      in 14 Days Starting at just {pricing ? pricing.heroPrice : "Loading."}
+                      in 14 Days Starting at just{" "}
+                      {pricing ? pricing.heroPrice : "Loading."}
                       {/* <Image
                         // style={{marginTop:"3.7rem"}}
                         src="/assets/images/demo-fancy/hero/3D Shape/Diamond Slim.svg"
@@ -78,42 +79,15 @@ export default function Hero1() {
                   data-wow-delay="0.7s"
                   data-wow-duration="1.2s"
                 >
+                  <PopupWrapper
+                    className="btn me-2 popupButtons"
+                    minWidth="16rem"
+                    height="3.6rem"
+                    buttonText="Book A Free Call"
+                  />
+
                   <Link
                     href={"/case-studies"}
-                    className="btn btn-mod btn-color btn-border-c btn-white-c btn-large btn-round mb-xs-10 lightbox mfp-iframe"
-                    data-btn-animate="y"
-                    style={{
-                      borderRadius: "50px",
-                      // height: "2.7rem",
-                      minWidth: "14rem",
-                      background:
-                        "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
-                      border: "none",
-                      color: "white", // Ensures text remains visible
-                      fontSize: "14px",
-                      fontWeight: "bold",
-                      boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
-                      cursor: "pointer",
-                    }}
-                  >
-                    <span className="btn-animate-y">
-                      <span className="btn-animate-y-1"  style={{ fontFamily: "Raleway, sans-serif", fontWeight: "bold" }}>
-                        {/* <i
-                          className="icon-play size-13 me-1"
-                          aria-hidden="true"
-                        ></i>{" "} */}
-                        Case Studies
-                      </span>
-                      <span className="btn-animate-y-2" aria-hidden="true"  style={{ fontFamily: "Raleway, sans-serif", fontWeight: "bold" }}>
-                        {/* <i
-                          className="icon-play size-13 me-1"
-                          aria-hidden="true"
-                        ></i>{" "} */}
-                        Case Studies
-                      </span>
-                    </span>
-                  </Link>{" "}
-                  <a
                     style={{
                       borderRadius: "50px",
                       padding: "14px 32px",
@@ -128,30 +102,42 @@ export default function Hero1() {
                       color: "#E75778", // Sets default text color
                       transition: "all 0.3s ease-in-out",
                     }}
-                    onClick={() => setOpen(true)}
                     //href="https://infinisoftech.setmore.com/"
-                    target="_blank"
+
                     rel="noopener noreferrer"
                     className="btn btn-mod btn-border-c btn-large btn-round  me-1 mb-xs-10"
                   >
                     {/* <span>Contact Us</span> */}
                     <span className="btn-animate-y">
-                      <span className="btn-animate-y-1"  style={{ fontFamily: "Raleway, sans-serif", fontWeight: "bold" }}>
+                      <span
+                        className="btn-animate-y-1"
+                        style={{
+                          fontFamily: "Raleway, sans-serif",
+                          fontWeight: "bold",
+                        }}
+                      >
                         <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
                         ></i>{" "}
-                        Watch Video
+                        Case Studies
                       </span>
-                      <span className="btn-animate-y-2" aria-hidden="true"  style={{ fontFamily: "Raleway, sans-serif", fontWeight: "bold" }}>
+                      <span
+                        className="btn-animate-y-2"
+                        aria-hidden="true"
+                        style={{
+                          fontFamily: "Raleway, sans-serif",
+                          fontWeight: "bold",
+                        }}
+                      >
                         <i
                           className="icon-play size-13 me-1"
                           aria-hidden="true"
                         ></i>{" "}
-                        Watch Video
+                        Case Studies
                       </span>
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -190,7 +176,7 @@ export default function Hero1() {
               {/* Yellow Stars */}
               <div className="mt-1">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: "#FFFF00", fontSize: "24px" }}>
+                  <span key={i} style={{ color: "#ffae00", fontSize: "24px" }}>
                     ★
                   </span>
                 ))}
@@ -224,7 +210,7 @@ export default function Hero1() {
               className="mob-hide w-100 wow fadeInLeft"
               data-wow-delay="0.7s"
             >
-              <div className="position-relative">
+              {/* <div className="position-relative">
                 <div className="row ">
                   <div className="col-md-12 col-sm-4 mb-xs-50 d-flex flex-wrap justify-content-center padding-top-sm">
                     <div className="pad-top-lg">
@@ -254,7 +240,7 @@ export default function Hero1() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div
                 className="decoration-5 d-none d-sm-block"

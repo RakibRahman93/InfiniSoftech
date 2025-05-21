@@ -49,12 +49,7 @@ export default function FancyServicesPage() {
                       </span>
                     </h1>
                     <p className="wow fadeInUp section-title-ex-small">
-                      At InfiniSoft Technology, we create powerful, scalable,
-                      and user-friendly mobile apps tailored to your business
-                      goals. Whether it’s a startup idea, an e-commerce
-                      solution, or a high-performance business app, we deliver
-                      apps that engage users, drive growth, and increase
-                      revenue.
+                      Build Powerful, Scalable, and User-Friendly Mobile Apps.
                     </p>
 
                     {/* Yellow Stars */}

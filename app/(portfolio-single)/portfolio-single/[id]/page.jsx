@@ -28,6 +28,7 @@ export default function FancyPortfolioSinglePage({ params }) {
     website,
     imgSrc,
     imgSrc2,
+    imgSrc3,
     imgExtra,
     mockupType
   } = portfolioItem;
@@ -157,10 +158,11 @@ export default function FancyPortfolioSinglePage({ params }) {
                     {/* End Project Details */}
                     <div className="col-lg-8">
                       <div className="mb-n30">
+                       
                         {/* Photo Item */}
                         <div className="mb-30 wow fadeInUp">
                           <Image
-                            src={portfolioItem.imgExtra}
+                            src={portfolioItem.imgSrc}
                             className="round"
                             loading="lazy"
                             width={1200}
@@ -169,10 +171,10 @@ export default function FancyPortfolioSinglePage({ params }) {
                           />
                         </div>
                         {/* End Photo Item */}
-                        {/* Photo Item */}
-                        <div className="mb-30 wow fadeInUp">
+                         {/* Photo Item */}
+                         <div className="mb-30 wow fadeInUp">
                           <Image
-                            src={portfolioItem.imgSrc}
+                            src={portfolioItem.imgExtra}
                             className="round"
                             loading="lazy"
                             width={1200}
@@ -186,6 +188,18 @@ export default function FancyPortfolioSinglePage({ params }) {
                           <div className="mb-30 wow fadeInUp">
                             <Image
                               src={imgSrc2}
+                              className="round"
+                              loading="lazy"
+                              width={1200}
+                              height={800}
+                              alt="Image Description"
+                            />
+                          </div>
+                        )}
+                        {imgSrc3 && (
+                          <div className="mb-30 wow fadeInUp">
+                            <Image
+                              src={imgSrc3}
                               className="round"
                               loading="lazy"
                               width={1200}
