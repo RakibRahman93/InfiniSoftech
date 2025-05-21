@@ -340,7 +340,7 @@ export const portfolios6 = [
     // mockupType: "phone",
   },
   {
-    id: 39,
+    id: 49,
     categories: ["UIUX Design", "branding", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/FreshGocov1.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/FreshGo1.svg",
@@ -358,7 +358,7 @@ export const portfolios6 = [
     mockupType: "phone",
   },
   {
-    id: 40,
+    id: 80,
     categories: ["UIUX Design", "branding", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/ecommerceCover.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/ecommerce1.png",

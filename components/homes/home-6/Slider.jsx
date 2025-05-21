@@ -12,7 +12,7 @@ const Slider = () => {
       slidesPerView={1}
       spaceBetween={0}
       loop={true}
-      freeMode={{ enabled: true,momentum: true }}
+      freeMode={{ enabled: true, momentum: true }}
       modules={[FreeMode, Autoplay]}
       autoplay={{
         delay: 0,
@@ -22,7 +22,8 @@ const Slider = () => {
       breakpoints={{
         768: { slidesPerView: 3 }, // Show 3 slides on larger screens
       }}
-      className="wow fadeInUp w-full" data-wow-delay="0.5s"
+      className="wow fadeInUp w-full"
+      data-wow-delay="0.5s"
     >
       <SwiperSlide>
         <img
@@ -66,6 +67,14 @@ const Slider = () => {
           className="w-full"
         />
       </SwiperSlide>
+    
+      <SwiperSlide>
+        <img
+          src="assets/images/slider/slider5.jpg"
+          alt="Slide 5"
+          className="w-full"
+        />
+      </SwiperSlide>
       <SwiperSlide>
         <img
           src="assets/images/slider/slide4.png"
@@ -73,8 +82,13 @@ const Slider = () => {
           className="w-full"
         />
       </SwiperSlide>
-      
-      
+      <SwiperSlide>
+        <img
+          src="assets/images/slider/slide6.jpg"
+          alt="Slide 5"
+          className="w-full"
+        />
+      </SwiperSlide>
     </Swiper>
   );
 };
