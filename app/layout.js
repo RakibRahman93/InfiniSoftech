@@ -9,11 +9,11 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "../public/assets/css/styles.css";
 
+import LocationProvider from "@/context/LocationContext";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
 import { init_wow } from "@/utlis/initWowjs";
+import Script from "next/script";
 import "tippy.js/dist/tippy.css";
-import LocationProvider from "@/context/LocationContext";
-
 
 export default function RootLayout({ children }) {
   const path = usePathname();
@@ -79,54 +79,84 @@ export default function RootLayout({ children }) {
 
   return (
     <LocationProvider>
-    <html lang="en" className="no-mobile no-touch">
-      <head>
-        {/* Google Fonts */}
-        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&family=Poppins&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet"
-        />
+      <html lang="en" className="no-mobile no-touch">
+        <head>
+          {/* Meta Pixel */}
+          <Script
+            id="facebook-pixel"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '1329540948306269');
+              fbq('track', 'PageView');
+            `,
+            }}
+          />
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: "none" }}
+              src="https://www.facebook.com/tr?id=1329540948306269&ev=PageView&noscript=1"
+            />
+          </noscript>
+          {/* Google Fonts */}
+          <link
+            href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+            rel="stylesheet"
+          ></link>
+          <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&family=Poppins&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+          />
 
-        {/* Umami Analytics */}
-        <script
-          defer
-          src="https://cloud.umami.is/script.js"
-          data-website-id="dde1d23e-a1b5-4d8e-b1f3-e3b47b9a1dde"
-        ></script>
+          {/* Umami Analytics */}
+          <script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id="dde1d23e-a1b5-4d8e-b1f3-e3b47b9a1dde"
+          ></script>
 
-        {/* Hotjar Tracking Code */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+          {/* Hotjar Tracking Code */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
               (function(h, o, t, j, a, r) {
                 h.hj = h.hj || function() {
                   (h.hj.q = h.hj.q || []).push(arguments);
@@ -139,22 +169,22 @@ export default function RootLayout({ children }) {
                 a.appendChild(r);
               })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
             `,
-          }}
-        />
-      </head>
-      <body className="appear-animate body">
-        {children}
-        <script
-          src="//code.tidio.co/vaexsx9gz9fcjuvbw5tetd1axii88rzq.js"
-          async
-        ></script>
-        <script
-          type="text/javascript"
-          src="https://onsite.optimonk.com/script.js?account=248646"
-          async
-        ></script>
-      </body>
-    </html>
+            }}
+          />
+        </head>
+        <body className="appear-animate body">
+          {children}
+          <script
+            src="//code.tidio.co/vaexsx9gz9fcjuvbw5tetd1axii88rzq.js"
+            async
+          ></script>
+          <script
+            type="text/javascript"
+            src="https://onsite.optimonk.com/script.js?account=248646"
+            async
+          ></script>
+        </body>
+      </html>
     </LocationProvider>
   );
 }
