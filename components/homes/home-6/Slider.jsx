@@ -67,10 +67,10 @@ const Slider = () => {
           className="w-full"
         />
       </SwiperSlide>
-    
+
       <SwiperSlide>
         <img
-          src="assets/images/slider/slider5.jpg"
+          src="assets/images/slider/slider5.png"
           alt="Slide 5"
           className="w-full"
         />
@@ -84,7 +84,14 @@ const Slider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="assets/images/slider/slide6.jpg"
+          src="assets/images/slider/slide6.png"
+          alt="Slide 5"
+          className="w-full"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img
+          src="assets/images/slider/slide7.png"
           alt="Slide 5"
           className="w-full"
         />
