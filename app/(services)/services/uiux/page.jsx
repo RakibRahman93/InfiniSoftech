@@ -38,7 +38,7 @@ export default function FancyServicesPage() {
                       Get More Clients <br />
                       with Seamless&nbsp;
                       <span
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-64"
+                        className="fs-64 mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-64"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -50,21 +50,18 @@ export default function FancyServicesPage() {
                         UI/UX Design
                       </span>
                     </h1>
-                    <p className="wow fadeInUp section-title-ex-small">
-                      Investing in professional UI/UX design services can
-                      transform your digital presence and boost customer
-                      engagement. A well-crafted user interface (UI) and
-                      seamless user experience (UX) ensure that your website or
-                      application is not only visually stunning but also
-                      functional and intuitive.
+                    <p className="wow fadeInUp fs-hero-desc no-margin">
+                      Build Powerful, Scalable, and User-Friendly Mobile Apps.
                     </p>
-
+                    <p className="wow fadeInUp info-text no-margin">
+                      Start your journey with a free 30 minute consultation.
+                    </p>
                     {/* Yellow Stars */}
                     <div className="wow fadeInUp">
                       {[...Array(5)].map((_, i) => (
                         <span
                           key={i}
-                          style={{ color: "#FFD700", fontSize: "24px" }}
+                          style={{ color: "#ffae00", fontSize: "24px" }}
                         >
                           ★
                         </span>

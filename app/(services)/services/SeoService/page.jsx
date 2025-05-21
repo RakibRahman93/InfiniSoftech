@@ -34,9 +34,9 @@ export default function FancyServicesPage() {
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
                     <h1 className="fs-64 mb-30 mb-xs-20 wow fadeInUp ml-1">
-                      Rank Higher, Get More Traffic, and Grow &nbsp;
+                      Rank Higher, Get More Traffic, and Grow
                       <span
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-64"
+                        className="fs-64 mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -45,23 +45,21 @@ export default function FancyServicesPage() {
                           fontWeight: "bold",
                         }}
                       >
-                        Your Business
+                        &nbsp; Your Business
                       </span>
                     </h1>
-                    <p className="wow fadeInUp section-title-ex-small">
-                      At InfiniSoft Technology, we help businesses increase
-                      their online visibility, rank higher on Google, and
-                      attract more customers through strategic SEO techniques.
-                      Whether you’re a startup, an e-commerce store, or a
-                      growing business.
+                    <p className="wow fadeInUp fs-hero-desc no-margin">
+                      Build Powerful, Scalable, and User-Friendly Mobile Apps.
                     </p>
-
+                    <p className="wow fadeInUp info-text no-margin">
+                      Start your journey with a free 30 minute consultation.
+                    </p>
                     {/* Yellow Stars */}
                     <div className="wow fadeInUp">
                       {[...Array(5)].map((_, i) => (
                         <span
                           key={i}
-                          style={{ color: "#FFD700", fontSize: "24px" }}
+                          style={{ color: "#ffae00", fontSize: "24px" }}
                         >
                           ★
                         </span>

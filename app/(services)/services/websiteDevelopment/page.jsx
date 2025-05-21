@@ -37,7 +37,7 @@ export default function FancyServicesPage() {
                     <h1 className="fs-64 mb-30 mb-xs-20 wow fadeInUp">
                       We Turn Your Ideas into Powerful &nbsp;
                       <span
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-hero"
+                        className="fs-64 mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-hero"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
