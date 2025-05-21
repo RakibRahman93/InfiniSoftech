@@ -8,6 +8,7 @@ import "react-modal-video/css/modal-video.css";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "../public/assets/css/styles.css";
+import FBPixelTracker from "@/components/others/FBPixelTracker";
 
 import LocationProvider from "@/context/LocationContext";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
@@ -173,6 +174,7 @@ export default function RootLayout({ children }) {
           />
         </head>
         <body className="appear-animate body">
+          <FBPixelTracker />
           {children}
           <script
             src="//code.tidio.co/vaexsx9gz9fcjuvbw5tetd1axii88rzq.js"
