@@ -107,7 +107,7 @@ export const services3 = [
   {
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "UIUX Design",
-    text: "Good design isn’t just about looks. It’s about making things work better for you and your customers.",
+    text: "Get a smarter & smoother experience for your clients.",
     link: "/services/uiux",
   },
   {
@@ -119,14 +119,14 @@ export const services3 = [
   {
     src: "/assets/images/demo-fancy/services/service3.svg",
     title: "Mobile App",
-    text: "Mobile Apps are a great way to provide quality servicess to your customers. Reach both Android & ios users.",
+    text: "Fast mobile apps and high quality service, reach both Android and iOS users.",
     link: "/services/MobileApp",
   },
 
   {
     src: "/assets/images/demo-fancy/services/service4.svg",
     title: "Prototyping",
-    text: "Not sure yet about the complete product to build? Build a prototype with a quarter of the budget and see if it works.",
+    text: "Unsure about the full product? Build a prototype for a fraction of the cost and test it.",
     link: "/services/MobileApp",
   },
 ];
