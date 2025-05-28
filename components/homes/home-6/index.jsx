@@ -225,11 +225,10 @@ export default function Home6({ onePage = false, dark = false }) {
                   fontWeight: "bold",
                 }}
               >
-                our portfolio
+                Projects
               </h2>
               <h3 className="section-title mb-0">
-                We believe in making the best work, and being the best to work
-                with.
+                Our Portfolio.
               </h3>
             </div>
           </div>
