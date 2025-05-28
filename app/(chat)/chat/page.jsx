@@ -1,4 +1,4 @@
-import Chat from "@/components/chat/Chat"; // Adjust import based on your folder structure
+import Chat from "@/components/chat/chat"; // Adjust import based on your folder structure
 
 export default function Home() {
   return (

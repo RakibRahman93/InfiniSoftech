@@ -39,12 +39,11 @@ export default function Home6({ onePage = false, dark = false }) {
 
             {/* left section */}
             <div className=" wow fadeInUp col-md-12 col-lg-6 pt-5 pb-lg-5">
-              <h2 className="section-caption mb-20 mb-xs-10 wow fadeInUp">
+              <h2 className="section-caption mb-10 mb-xs-10 wow fadeInUp">
                 Grow With Us
               </h2>
               <h3 className="section-title-small  mb-30 mb-xs-20 wow fadeInUp">
-                Supercharge Sales with a Fast, Reliable Website Or A Mobile
-                App,&nbsp;
+                Boost sales,
                 <span
                   className="mark-decoration-3-wrap color-secondary-1-white section-title-small "
                   style={{
@@ -58,9 +57,9 @@ export default function Home6({ onePage = false, dark = false }) {
                   Powered by Analytics!
                 </span>
               </h3>
-              <h4> Your vision. Our technology. Limitless possibilities.</h4>
+              {/* <h4> Your vision. Our technology. Limitless possibilities.</h4> */}
               {/* Features List */}
-              <div className="row features-list">
+              <div style={{paddingBottom:'50px'}} className="row features-list">
                 {/* Features List Item */}
                 {features10.map((feature, index) => (
                   <div
@@ -68,12 +67,12 @@ export default function Home6({ onePage = false, dark = false }) {
                     className="col-sm-6 col-lg-12 col-xl-6 d-flex mb-3"
                   >
                     <div className="features-list-icon">
-                      <img src={feature.icon} alt="Image Description" />
+                      <img style={{width:'50px'}} src={feature.icon} alt="Image Description" />
                     </div>
                     <div
                       style={{
-                        fontSize: "14px",
-                        fontWeight: "600",
+                        fontSize: "18px",
+                        fontWeight: "300",
                         color: "#1C1C57",
                       }}
                     >
