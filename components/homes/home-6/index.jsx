@@ -4,15 +4,16 @@ import Popup from "@/components/headers/components/popup";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 import { features10 } from "@/data/features";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import Faqs from "../home-1/Faq";
-
-import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Portfolio from "./Portfolio";
 import Service from "./Service";
+import TechSolutions from "./TechSolutions";
 import Testimonials from "./Testimonials";
 import TestimonialsDark from "./TestimonialsDark";
 import TwoService from "./TwoService";
+import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 
 export default function Home6({ onePage = false, dark = false }) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -59,7 +60,10 @@ export default function Home6({ onePage = false, dark = false }) {
               </h3>
               {/* <h4> Your vision. Our technology. Limitless possibilities.</h4> */}
               {/* Features List */}
-              <div style={{paddingBottom:'50px'}} className="row features-list">
+              <div
+                style={{ paddingBottom: "50px" }}
+                className="row features-list"
+              >
                 {/* Features List Item */}
                 {features10.map((feature, index) => (
                   <div
@@ -67,7 +71,11 @@ export default function Home6({ onePage = false, dark = false }) {
                     className="col-sm-6 col-lg-12 col-xl-6 d-flex mb-3"
                   >
                     <div className="features-list-icon">
-                      <img style={{width:'50px'}} src={feature.icon} alt="Image Description" />
+                      <img
+                        style={{ width: "50px" }}
+                        src={feature.icon}
+                        alt="Image Description"
+                      />
                     </div>
                     <div
                       style={{
@@ -83,9 +91,23 @@ export default function Home6({ onePage = false, dark = false }) {
                 {/* End Features List Item */}
               </div>
               <div className="local-scroll wow fadeInUp" data-wow-delay="0.12s">
-                <>
-                  <PopupWrapper buttonText="Book A Free Call" />
-                </>
+                <Link
+                  href="/portfolio-single/80"
+                  className="btn-lg fw-semibold text-white shadow-sm 
+            w-md-auto"
+                  style={{
+                    borderRadius: "50px",
+                    background:
+                      "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
+                    border: "none",
+                    minWidth: "14rem",
+                    padding: "12px 26px",
+                    fontWeight: "600",
+                    textDecoration: "none",
+                  }}
+                >
+                  View Pototype
+                </Link>
               </div>
             </div>
           </div>
@@ -93,13 +115,87 @@ export default function Home6({ onePage = false, dark = false }) {
           {/* <About /> */}
           {/* End Images Composition */}
         </div>
-      </section>
-      <section
+        <section
         style={{ backgroundColor: "#FFF7FF" }}
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""} `}
       >
         {dark ? <TestimonialsDark /> : <Testimonials />}
       </section>
+        {/* Technologies start */}
+        <section
+          className={`scrollSpysection py-5${
+            dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
+          } bg-scroll`}
+          id="services"
+        >
+          <div className="container position-relative">
+            <div className="row mb-60 mb-sm-40">
+              <div className="container">
+                <div className="d-flex flex-column justify-center align-items-center">
+                  <h2
+                    className="text-center section-title-small mb-1"
+                    style={{
+                      color: "#1C1C57",
+                    }}
+                  >
+                    Technologies & Tools
+                  </h2>
+                  <p
+                    style={{
+                      color: "#7E7E7E",
+                      fontSize: "16px !important",
+                    }}
+                    className="mb-0 mb-sm-20 text-center fw-bolder w-smd-100 w-lg-70"
+                  >
+                    At InfiniSoft Technology, we offer expertise across a
+                    diverse range of technologies, ensuring the perfect fit for
+                    any project requirement.
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-md-4 col-lg-6 d-flex align-items-end">
+                <div className="local-scroll text-md-end w-100">
+                  {onePage ? (
+                    <>
+                      {" "}
+                      <a
+                        href="#portfolio"
+                        className="link-hover-anim"
+                        data-link-animate="y"
+                      >
+                        <span className="link-strong link-strong-unhovered">
+                          View works{" "}
+                          <i
+                            className="mi-arrow-right size-24"
+                            aria-hidden="true"
+                          ></i>
+                        </span>
+                        <span
+                          className="link-strong link-strong-hovered"
+                          aria-hidden="true"
+                        >
+                          View works{" "}
+                          <i
+                            className="mi-arrow-right size-24"
+                            aria-hidden="true"
+                          ></i>
+                        </span>
+                      </a>
+                    </>
+                  ) : (
+                    <> </>
+                  )}
+                </div>
+              </div>
+            </div>
+            {/* Services Grid */}
+            <TechSolutions />
+          </div>
+        </section>
+      </section>
+      {/* Our Services */}
+      
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
         style={{
@@ -199,6 +295,65 @@ export default function Home6({ onePage = false, dark = false }) {
         </div>
       </section>
       {/* Features Section */}
+      <div className="container py-5 d-flex justify-content-center dshape">
+                    <div
+                      class="card p-4 res-card"
+                      style={{
+                        borderRadius: "12px",
+                        border: "12px solid #051D551A", // Border with transparency
+                      }}
+                    >
+                      <div class="row align-items-center">
+                        <div className="container mb-3">
+                          <span
+                            class="fw-bold text-dark mb-0 "
+                            style={{ color: "#1C1C57" }}
+                          >
+                            Hire High Performing &nbsp;
+                          </span>
+                          <span
+                            class=""
+                            style={{
+                              background:
+                                "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                              WebkitBackgroundClip: "text",
+                              WebkitTextFillColor: "transparent",
+                              fontWeight: "bolder",
+                            }}
+                          >
+                            Software Developers
+                          </span>
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <img
+                            src="/assets/images/services/rakib.jpg"
+                            alt="Profile Image"
+                            class="rounded-circle img-fluid"
+                          />
+                        </div>
+                        <div class="col-md-9">
+                          <p class="text-muted fw-bold">
+                            Share your project requirements or desired skill set, and
+                            we'll find the perfect professionals for you. The more
+                            details you provide, the better we can tailor our
+                            expertise to meet your needs.
+                          </p>
+                          <p class="fw-bolder mb-0" style={{ color: "#1C1C57" }}>
+                            Md Rakib Rahman
+                          </p>
+                          <small class="text-muted mb-4" style={{ fontSize: "14px" }}>
+                            Founder & CTO at INFINISOFT TECHNOLOGY
+                          </small>
+                          <PopupWrapper
+                            className="mt-3"
+                            minWidth="14rem"
+                            buttonText="Share Requirements"
+                            height="3rem"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
       {/* <section
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""} `}
       >
@@ -227,9 +382,7 @@ export default function Home6({ onePage = false, dark = false }) {
               >
                 Projects
               </h2>
-              <h3 className="section-title mb-0">
-                Our Portfolio.
-              </h3>
+              <h3 className="section-title mb-0">Our Portfolio.</h3>
             </div>
           </div>
 
