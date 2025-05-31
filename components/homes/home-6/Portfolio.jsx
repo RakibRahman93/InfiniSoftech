@@ -6,9 +6,9 @@ import { useEffect, useState } from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 const filters = [
   { name: "All works", category: "all" },
-  { name: "Branding", category: "branding" },
+  { name: "Apps", category: "app" },
+  { name: "Websites", category: "website" },
   { name: "Redesign", category: "redesign" },
-  { name: "Development", category: "development" },
 ];
 export default function Portfolio() {
   const [currentCategory, setCurrentCategory] = useState("all");

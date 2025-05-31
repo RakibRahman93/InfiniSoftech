@@ -341,7 +341,7 @@ export const portfolios6 = [
   },
   {
     id: 49,
-    categories: ["UIUX Design", "branding", "development"],
+    categories: ["UIUX Design", "app", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/FreshGocov1.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/FreshGo1.svg",
     imgSrc2: "/assets/images/demo-fancy/portfolio/FreshGo2.svg",
@@ -359,7 +359,7 @@ export const portfolios6 = [
   },
   {
     id: 80,
-    categories: ["UIUX Design", "branding", "development"],
+    categories: ["UIUX Design", "app", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/ecommerceCover.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/ecommerce1.png",
     imgSrc2: "/assets/images/demo-fancy/portfolio/ecommerce2.png",
@@ -377,12 +377,12 @@ export const portfolios6 = [
   },
   {
     id: 41,
-    categories: ["UIUX Design", "branding", "development"],
+    categories: ["UIUX Design", "app", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/ProAppCover.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/proapp.png",
     imgSrc2: "/assets/images/demo-fancy/portfolio/ProApp 2.png",
-    title: "Mobile App UIUX Design & Development",
-    description: "UIUX Design Of Study Management App",
+    title: "Mobile App UIUX",
+    description: "Study Management App",
     lightbox: false,
     lightboxLink: "/assets/images/demo-fancy/portfolio/project-6-large.jpg",
     Date: "April 14th, 2025",
@@ -395,20 +395,20 @@ export const portfolios6 = [
   },
   {
     id: 36,
-    categories: ["design", "branding"],
+    categories: ["design", "app"],
     imgSrc: "/assets/images/demo-fancy/portfolio/pizzaapp-cover.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/project-1.svg",
-    title: "Mobile App UIUX Design & Development",
+    title: "Mobile App UIUX",
     description: "Pizza Delivery App",
     lightbox: true,
   },
   {
     id: 34,
-    categories: ["branding", "design", "development"],
+    categories: ["branding", "website", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/emagino/emaginoCover1.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/emagino/emagino.png",
     imgSrc2: "/assets/images/demo-fancy/portfolio/emagino/emagino1.png",
-    title: "Website UIUX Design & Development",
+    title: "Website UIUX",
     description: "Website Design & Development",
     lightbox: false,
     externalLink: "portfolio-single.html",
@@ -423,7 +423,7 @@ export const portfolios6 = [
   },
   {
     id: 42,
-    categories: ["design", "branding", "development"],
+    categories: ["design", "website", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/Team mahir.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/Team mahir screens.svg",
     title: "Website | Web App Design & Development",
@@ -439,7 +439,7 @@ export const portfolios6 = [
   },
   {
     id: 37,
-    categories: ["branding", "design"],
+    categories: ["app", "design"],
     imgSrc: "/assets/images/demo-fancy/portfolio/food-app-screen.png",
     imgExtra: "/assets/images/demo-fancy/portfolio/food-app-preview.png",
     title: "FreshGo Mobile App",
@@ -454,7 +454,7 @@ export const portfolios6 = [
   },
   {
     id: 38,
-    categories: ["branding", "desisgn", "development"],
+    categories: ["branding", "website", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/Shopping website.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/Shopping website layout.svg",
     title: "ShopSphere",
@@ -469,7 +469,7 @@ export const portfolios6 = [
   },
   {
     id: 39,
-    categories: ["design", "development", "branding"],
+    categories: ["design", "development", "website"],
     imgSrc: "/assets/images/demo-fancy/portfolio/automobile website.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/automobile website2.svg",
     title: "Autohub Canada",
@@ -484,7 +484,7 @@ export const portfolios6 = [
   },
   {
     id: 40,
-    categories: ["design", "branding", "development"],
+    categories: ["design", "website", "development"],
     imgSrc: "/assets/images/demo-fancy/portfolio/admin dashboard.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/admin dashboard 1.svg",
     title: "Web Application",
@@ -499,7 +499,7 @@ export const portfolios6 = [
   },
   {
     id: 41,
-    categories: ["design", "branding"],
+    categories: ["design", "app"],
     imgSrc: "/assets/images/demo-fancy/portfolio/Prototype.svg",
     imgExtra: "/assets/images/demo-fancy/portfolio/Prototype screens.svg",
     title: "Prototype",
@@ -513,7 +513,7 @@ export const portfolios6 = [
   },
   {
     id: 33,
-    categories: ["branding", "design", "development"],
+    categories: ["website", "design", "development"],
     imgSrc: "/assets/images/demo-fancy/hbs.svg",
     imgExtra: "/assets/images/demo-fancy/hbs1.svg",
     title: "Homebound Serenity Nursing Care",
@@ -529,7 +529,7 @@ export const portfolios6 = [
   
   {
     id: 35,
-    categories: ["branding", "design", "development"],
+    categories: ["website", "design", "development"],
     imgSrc: "/assets/images/demo-fancy/evans.svg",
     imgExtra: "/assets/images/demo-fancy/evans1.svg",
     title: "AI Portfolio Website",

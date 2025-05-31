@@ -115,22 +115,22 @@ export const features10 = [
   {
     id: 1,
     icon:"assets/images/check-data.svg",
-    text: "Get your customers engaged within the first 2 seconds of landing on your site!",
+    text: "Grab your visitors' attention in the first 2 seconds!",
   },
   {
     id: 2,
     icon:"assets/images/check-data.svg",
-    text: "Build a website for your clients where they can easily navigate to purchase your services & products.",
+    text: "Make Clients Easily navigate to buy your services and products.",
   },
   {
     id: 3,
     icon:"assets/images/check-data.svg",
-    text: "Stop assuming! Get insights from real data and grow your business with analytics.",
+    text: "Ditch assumptions—use real data to grow with analytics.",
   },
   {
     id: 4,
     icon:"assets/images/check-data.svg",
-    text: "Start small and eventually scale your business as you grow.",
+    text: "Start small, scale as you grow.",
   },
 ]
 
