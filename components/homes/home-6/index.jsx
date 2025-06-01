@@ -140,7 +140,7 @@ export default function Home6({ onePage = false, dark = false }) {
                   >
                     Technologies & Tools
                   </h2>
-                  <p
+                  {/* <p
                     style={{
                       color: "#7E7E7E",
                       fontSize: "16px !important",
@@ -150,7 +150,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     At InfiniSoft Technology, we offer expertise across a
                     diverse range of technologies, ensuring the perfect fit for
                     any project requirement.
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
@@ -294,66 +294,7 @@ export default function Home6({ onePage = false, dark = false }) {
           <Service />
         </div>
       </section>
-      {/* Features Section */}
-      <div className="container py-5 d-flex justify-content-center dshape">
-                    <div
-                      class="card p-4 res-card"
-                      style={{
-                        borderRadius: "12px",
-                        border: "12px solid #051D551A", // Border with transparency
-                      }}
-                    >
-                      <div class="row align-items-center">
-                        <div className="container mb-3">
-                          <span
-                            class="fw-bold text-dark mb-0 "
-                            style={{ color: "#1C1C57" }}
-                          >
-                            Hire High Performing &nbsp;
-                          </span>
-                          <span
-                            class=""
-                            style={{
-                              background:
-                                "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-                              WebkitBackgroundClip: "text",
-                              WebkitTextFillColor: "transparent",
-                              fontWeight: "bolder",
-                            }}
-                          >
-                            Software Developers
-                          </span>
-                        </div>
-                        <div class="col-md-3 text-center">
-                          <img
-                            src="/assets/images/services/rakib.jpg"
-                            alt="Profile Image"
-                            class="rounded-circle img-fluid"
-                          />
-                        </div>
-                        <div class="col-md-9">
-                          <p class="text-muted fw-bold">
-                            Share your project requirements or desired skill set, and
-                            we'll find the perfect professionals for you. The more
-                            details you provide, the better we can tailor our
-                            expertise to meet your needs.
-                          </p>
-                          <p class="fw-bolder mb-0" style={{ color: "#1C1C57" }}>
-                            Md Rakib Rahman
-                          </p>
-                          <small class="text-muted mb-4" style={{ fontSize: "14px" }}>
-                            Founder & CTO at INFINISOFT TECHNOLOGY
-                          </small>
-                          <PopupWrapper
-                            className="mt-3"
-                            minWidth="14rem"
-                            buttonText="Share Requirements"
-                            height="3rem"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+      
       {/* <section
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""} `}
       >

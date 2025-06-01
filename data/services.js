@@ -114,7 +114,7 @@ export const services3 = [
     src: "/assets/images/demo-fancy/services/service2.svg",
     title: "Website Design & Development",
     text: "A well crafted website works for your business 24/7. ",
-    link: "/services/websiteDesign",
+    link: "/services/websiteDevelopment",
   },
   {
     src: "/assets/images/demo-fancy/services/service3.svg",
