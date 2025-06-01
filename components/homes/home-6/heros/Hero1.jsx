@@ -116,10 +116,7 @@ export default function Hero1() {
                           fontWeight: "bold",
                         }}
                       >
-                        <i
-                          className="icon-play size-13 me-1"
-                          aria-hidden="true"
-                        ></i>{" "}
+                       
                         Case Studies
                       </span>
                       <span
@@ -130,10 +127,7 @@ export default function Hero1() {
                           fontWeight: "bold",
                         }}
                       >
-                        <i
-                          className="icon-play size-13 me-1"
-                          aria-hidden="true"
-                        ></i>{" "}
+                        
                         Case Studies
                       </span>
                     </span>
