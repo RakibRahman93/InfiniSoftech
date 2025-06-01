@@ -98,7 +98,7 @@ const Slider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <img 
-          src="assets/images/slider/slider frame.png"
+          src="assets/images/slider/tgp.png"
           alt="Slide 5"
           className="w-full" 
         />

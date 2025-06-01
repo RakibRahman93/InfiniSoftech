@@ -34,7 +34,7 @@ export default function Hero1() {
                     data-splitting="chars"
                   >
                     <span style={{ fontWeight: "bold", color: "#333" }}>
-                      Launch Your Custom Website or App{" "}
+                     Launch Faster. Look Better. Pay Less.{" "}
                       <span className="mark-decoration-3-wrap color-secondary-1-white">
                         {/* <b
                         className=" mark-decoration-3 wow scalexIn"
@@ -52,7 +52,7 @@ export default function Hero1() {
                         fontWeight: "bold",
                       }}
                     >
-                      in 14 Days Starting at just{" "}
+                      Starting at just{" "}
                       {pricing ? pricing.heroPrice : "Loading."}
                       {/* <Image
                         // style={{marginTop:"3.7rem"}}
@@ -176,7 +176,7 @@ export default function Hero1() {
               {/* Yellow Stars */}
               <div className="mt-1">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: "#ffae00", fontSize: "24px" }}>
+                  <span key={i} style={{ color: "#efff00", fontSize: "24px" }}>
                     ★
                   </span>
                 ))}
