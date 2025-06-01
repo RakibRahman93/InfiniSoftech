@@ -103,6 +103,13 @@ const Slider = () => {
           className="w-full" 
         />
       </SwiperSlide>
+      <SwiperSlide>
+        <img 
+          src="assets/images/slider/insight.png"
+          alt="Slide 5"
+          className="w-full" 
+        />
+      </SwiperSlide>
     </Swiper>
   );
 };
