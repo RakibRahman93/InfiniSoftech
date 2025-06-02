@@ -1062,6 +1062,13 @@
     justify-content: center;
     align-items: center;
   }
+
+  .dev-sections {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* ==============================
