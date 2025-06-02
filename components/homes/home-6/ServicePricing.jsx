@@ -6,6 +6,11 @@ import { useState } from "react";
 
 export default function ServicePricing() {
   const [isYearly, setIsYearly] = useState(false);
+  const [showAllFeatures, setShowAllFeatures] = useState(false);
+
+  const toggleShowAllFeatures = () => {
+    setShowAllFeatures((prev) => !prev);
+  };
 
   return (
     <div className="container new-theme">
@@ -50,12 +55,16 @@ export default function ServicePricing() {
                 {ServicePricingData.map((plan, index) => {
                   const updatePrice = isYearly ? plan.price * 12 : plan.price;
 
+                  const featuresToShow = showAllFeatures
+                    ? plan.features
+                    : plan.features.slice(0, 2);
+
                   const isSecondColumn = index === 1;
 
                   return (
                     <div key={index} className="col-md-6 col-lg-4 new-theme">
                       <div
-                        className="card wp-pricing p-4 mb-20"
+                        className="card p-4 mb-20"
                         style={{
                           background: isSecondColumn
                             ? "linear-gradient(135deg, #1a1a1a  0%, #5334A1  90%)"
@@ -67,6 +76,7 @@ export default function ServicePricing() {
                           borderRadius: "8px",
                           zIndex: 1,
                           border: "none",
+                          minHeight: showAllFeatures ? "105rem" : "48rem",
                         }}
                       >
                         <div className="mb-20">
@@ -135,7 +145,7 @@ export default function ServicePricing() {
                         </p>
 
                         <ul className="list-unstyled">
-                          {plan.features.map((feature, i) => (
+                          {featuresToShow.map((feature, i) => (
                             <li
                               key={i}
                               className="d-flex align-items-center mb-10"
@@ -172,6 +182,24 @@ export default function ServicePricing() {
                     </div>
                   );
                 })}
+              </div>
+              {/* Centralized Toggle Button */}
+              <div className="text-center mt-4">
+                <button
+                  className="btn-lg fw-semibold text-white shadow-sm 
+            w-md-auto"
+                  style={{
+                    borderRadius: "50px",
+                    background:
+                      "linear-gradient(90deg, rgb(231, 87, 120) 0%, rgb(136, 118, 255) 100%)",
+                    border: "none",
+                    minWidth: "14rem",
+                    fontWeight: 600,
+                  }}
+                  onClick={toggleShowAllFeatures}
+                >
+                  {showAllFeatures ? "Show Less" : "See More"}
+                </button>
               </div>
             </div>
           </div>

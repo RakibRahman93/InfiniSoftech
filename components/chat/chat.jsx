@@ -1,22 +1,30 @@
 "use client";
+
 import { supabase } from "@/lib/supabase";
 import { useEffect, useState } from "react";
 
-export default function Chat({ chatTitle = "Infinichat" }) {
+export default function Chat({ username = "John", chatTitle }) {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
-  const [username, setUsername] = useState("");
 
   useEffect(() => {
     fetchMessages();
 
     const channel = supabase
-      .channel(`realtime-messages-${chatTitle}`) // use unique channel per instance
+      .channel("realtime-messages")
       .on(
         "postgres_changes",
-        { event: "INSERT", schema: "public", table: "messages" },
+        {
+          event: "INSERT",
+          schema: "public",
+          table: "messages",
+        },
         (payload) => {
-          setMessages((prev) => [...prev, payload.new]);
+          const newMsg = payload.new;
+          setMessages((prev) => {
+            if (prev.find((m) => m.id === newMsg.id)) return prev;
+            return [...prev, newMsg];
+          });
         }
       )
       .subscribe();
@@ -32,68 +40,117 @@ export default function Chat({ chatTitle = "Infinichat" }) {
       .select("*")
       .order("inserted_at", { ascending: true });
     setMessages(data || []);
+    console.log("Fetched messages:", data);
   }
 
   async function sendMessage(e) {
     e.preventDefault();
-    if (!newMessage.trim() || !username.trim()) return;
+    if (!newMessage.trim()) return;
 
-    const { error } = await supabase
+    const { error, data } = await supabase
       .from("messages")
-      .insert([{ content: newMessage, username }]);
+      .insert([{ content: newMessage, username }])
+      .select()
+      .single();
+      
 
-    if (!error) setNewMessage("");
+    if (!error && data) {
+      setMessages((prev) => [...prev, data]);
+      setNewMessage("");
+    }
+  }
+
+  function shouldShowUsername(index) {
+    if (index === 0) return true;
+    const current = messages[index];
+    const previous = messages[index - 1];
+    return current.username !== previous.username;
+  }
+
+  function formatTime(timestamp) {
+    const date = new Date(timestamp);
+    return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  }
+
+  function getInitials(name) {
+    return name
+      .split(" ")
+      .map((n) => n[0])
+      .join("")
+      .toUpperCase();
   }
 
   return (
     <div
-      className="card shadow rounded-4 m-3"
-      style={{ width: "100%", maxWidth: "600px", height: "85vh" }}
+      className="container d-flex flex-column justify-content-between bg-dark text-light rounded p-3"
+      style={{ maxWidth: "100%", height: "80vh" }}
     >
+      {/* Messages */}
       <div
-        className="card-header text-white"
-        style={{ backgroundColor: "#00336e" }}
+        className="overflow-auto mb-3 flex-grow-1"
+        style={{ scrollbarWidth: "thin" }}
       >
-        <h5 className="mb-0">💬 {chatTitle}</h5>
-      </div>
-
-      <div className="card-body d-flex flex-column p-4">
-        <input
-          type="text"
-          className="form-control rounded-3 mb-3 border-0 shadow-sm"
-          placeholder="Enter your name"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-
-        <div
-          className="flex-grow-1 border rounded-4 p-3 mb-3 overflow-auto bg-white"
-          style={{ maxHeight: "350px" }}
-        >
-          {messages.map((msg) => (
-            <div key={msg.id} className="mb-2">
-              <strong className="text-primary">{msg.username}:</strong>{" "}
-              <span>{msg.content}</span>
+        {chatTitle}
+        {messages.map((msg, index) => (
+          <div key={msg.id} className="mb-3">
+            {shouldShowUsername(index) && (
+              <div className="d-flex align-items-center mb-1">
+                <span className="me-2 fw-bold text-white">{msg.username}</span>
+                <span className="text-muted small">
+                  {formatTime(msg.inserted_at)}
+                </span>
+                {/* Right-side user avatar */}
+                <div className="ms-auto">
+                  <div
+                    className="rounded-circle bg-secondary text-white d-flex justify-content-center align-items-center"
+                    style={{ width: "30px", height: "30px", fontSize: "14px" }}
+                  >
+                    {getInitials(msg.username)}
+                  </div>
+                </div>
+              </div>
+            )}
+            <div
+              className={`d-inline-block px-3 py-2 rounded-pill mb-1 ${
+                msg.username === username
+                  ? "bg-primary text-white"
+                  : "bg-secondary text-white"
+              }`}
+            >
+              {msg.content}
             </div>
-          ))}
-        </div>
-
-        <form onSubmit={sendMessage} className="d-flex">
-          <input
-            className="form-control rounded-start-3 border-0 shadow-sm"
-            value={newMessage}
-            onChange={(e) => setNewMessage(e.target.value)}
-            placeholder="Type your message..."
-          />
-          <button
-            className="btn text-white rounded-end-3 px-4"
-            type="submit"
-            style={{ backgroundColor: "#0092ff" }}
-          >
-            Send
-          </button>
-        </form>
+          </div>
+        ))}
       </div>
+
+      {/* Input */}
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          sendMessage(e);
+        }}
+        className="d-flex"
+      >
+        <input
+          className="form-control bg-black text-white border-0 rounded-pill focus:none"
+          style={{
+            backgroundColor: "black",
+            color: "white",
+            border: "none",
+            outline: "none",
+            focus: "none",
+          }}
+          value={newMessage}
+          onChange={(e) => setNewMessage(e.target.value)}
+          placeholder="Type a message..."
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
+              e.preventDefault();
+              sendMessage(e);
+            }
+          }}
+        />
+      </form>
     </div>
   );
 }

@@ -26,7 +26,7 @@ export default function FancyServicesPage() {
           <main id="main">
             {/* your team section */}
             <section
-              className={`scrollSpysection mt-5 service-large-sections`}
+              className={`scrollSpysection mt-5 dev-sections`}
               id="about"
             >
               <div className="pt-md-5 container position-relative">

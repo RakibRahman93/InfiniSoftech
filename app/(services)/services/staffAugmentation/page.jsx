@@ -302,7 +302,7 @@ export default function FancyServicesPage() {
                       >
                         Technologies & Tools
                       </h2>
-                      <p
+                      {/* <p
                         style={{
                           color: "#7E7E7E",
                           fontSize: "16px !important",
@@ -312,7 +312,7 @@ export default function FancyServicesPage() {
                         At InfiniSoft Technology, we offer expertise across a
                         diverse range of technologies, ensuring the perfect fit
                         for any project requirement.
-                      </p>
+                      </p> */}
                     </div>
                   </div>
 
