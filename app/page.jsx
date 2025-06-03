@@ -5,6 +5,7 @@ import Hero1 from "@/components/homes/home-6/heros/Hero1";
 import { fancyMultipage } from "@/data/menu";
 import { Toaster } from "react-hot-toast";
 import { LocationProvider } from "@/context/LocationContext"; 
+import DownLoadPopUpForm from "@/components/common/DownLoadPopUpForm";
 
 export const metadata = {
   title: "Launch fast, scale smart starting from just $499",
@@ -14,13 +15,15 @@ export const metadata = {
 export default function Home6MainDemoMultiPage({}) {
   return (
     <>
+   
       <Toaster position="top-right" reverseOrder={false} />
       <div className="theme-fancy">
         <div className="page" id="top">
           <nav className="main-nav transparent stick-fixed wow-menubar wch-unset border-b">
             <Header6 links={fancyMultipage} />
           </nav>
-          <main id="main">
+             <DownLoadPopUpForm />
+          <main id="main" className="relative">
             <section
               className="home-section bg-scroll scrollSpysection"
               id="home"
