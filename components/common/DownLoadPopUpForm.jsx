@@ -113,7 +113,7 @@ const DownLoadPopUpForm = () => {
               </div>
             </a>
             <p className="text-muted text-center small mt-2">
-              Start designing and building with our ready-to-use templates
+              Start designing and building with our ready to <br /> use templates
             </p>
           </div>
         </div>
