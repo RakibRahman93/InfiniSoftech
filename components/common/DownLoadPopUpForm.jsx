@@ -25,15 +25,15 @@ const DownLoadPopUpForm = () => {
   return (
     <div
       className="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-dark bg-opacity-50"
-      style={{ zIndex: 99999,padding:"20px 10px" }}
+      style={{ zIndex: 99999, padding: "20px 10px" }}
     >
       <div
         className="bg-white rounded shadow-lg w-100 mx-3"
-        style={{ maxWidth: "700px" }}
+        style={{ maxWidth: "1050px" }}
       >
         <div className="row g-0">
           {/* Left Side */}
-          <div className="col-md-6 p-4 d-flex flex-column justify-content-center border-2 border-end">
+          <div className="col-md-6 d-flex px-5 py-5 flex-column justify-content-center border-2 border-end">
             <h2
               className="fs-hero-desc mb-3 inter"
               style={{ color: "#1F2937" }}
@@ -53,13 +53,27 @@ const DownLoadPopUpForm = () => {
                 </div>
               </div>
             </div>
-            <p className="fw-semibold mb-2">What you'll get:</p>
-            <ul className="list-unstyled small mb-0 border-2 border-bottom pb-3">
-              <li className="mb-1">
-                ✅ 5 Fully‐Customizable Figma landing page templates
+            <p className="fw-semibold mb-2" style={{ color: "#1F2937" }}>
+              What you'll get:
+            </p>
+            <ul className="list-unstyled small mb-0 border-2 border-bottom pb-3 text-black fs-16">
+              <li className="mi-check me-2 text-success mb-3">
+                <span className="text-black ms-2 inter">
+                  5 Fully‐Customizable Figma landing page templates
+                </span>
               </li>
-              <li className="mb-1">✅ Just customize and ready for use</li>
-              <li className="mb-1">✅ Directly use by changing texts</li>
+              <li className="mi-check me-2 text-success mb-3">
+                <span className="text-black ms-2 inter">
+                  Just customize and ready for use
+                </span>
+              </li>
+
+              <li className="mi-check me-2 text-success mb-3">
+                {" "}
+                <span className="text-black ms-2 inter">
+                  Directly use by changing texts
+                </span>{" "}
+              </li>
             </ul>
           </div>
 
