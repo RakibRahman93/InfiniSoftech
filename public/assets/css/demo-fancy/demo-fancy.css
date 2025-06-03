@@ -1102,6 +1102,9 @@ h5 {
   font-size: 58px;
   font-weight: 200;
 }
+.fs-16 {
+  font-size: 16px !important;
+}
 .fs-hero-desc {
   font-size: 24px;
   font-weight: 700;
