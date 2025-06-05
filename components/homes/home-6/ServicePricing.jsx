@@ -57,7 +57,7 @@ export default function ServicePricing() {
 
                   const featuresToShow = showAllFeatures
                     ? plan.features
-                    : plan.features.slice(0, 2);
+                    : plan.features.slice(0, 5);
 
                   const isSecondColumn = index === 1;
 
@@ -159,7 +159,7 @@ export default function ServicePricing() {
                               {feature}
                             </li>
                           ))}
-                          {plan.disabledFeatures?.map((feature, i) => (
+                          {showAllFeatures && plan.disabledFeatures?.map((feature, i) => (
                             <li
                               key={i}
                               className={`d-flex align-items-baseline mb-10 ${
@@ -171,20 +171,25 @@ export default function ServicePricing() {
                             </li>
                           ))}
                         </ul>
-
-                        <PopupWrapper
+                          {showAllFeatures && (
+                            <PopupWrapper
                           className="get-started-btn"
                           buttonText="Get Started"
                           plan={{ ...plan, price: updatePrice }}
                           isFullWidth={true}
                         />
+                          )}
+                        
                       </div>
                     </div>
                   );
                 })}
               </div>
               {/* Centralized Toggle Button */}
-              <div className="text-center mt-4">
+              <div
+                className="text-center mt-4 position-absolute start-50 translate-middle-x z-5"
+                style={{ zIndex: "999", bottom: "90px" }}
+              >
                 <button
                   className="btn-lg fw-semibold text-white shadow-sm 
             w-md-auto"
