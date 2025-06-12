@@ -193,7 +193,7 @@ export default function ServicePricing() {
               {!showAllFeatures && (
               <div
                 className="text-center mt-4 position-absolute start-50 translate-middle-x z-5"
-                style={{ zIndex: "999", bottom: "90px" }}
+                style={{ zIndex: "999", bottom: "45px" }}
               >
                 <button
                   className="btn-lg fw-semibold text-white shadow-sm 
