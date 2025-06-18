@@ -5,6 +5,12 @@
 .typewrite {
   margin-left: 10px;
 }
+.no-lineheight {
+  line-height: 0;
+}
+.adjust-lineheight {
+  line-height: 1.2;
+}
 .dark-mode .dark-white {
   color: white !important;
 }

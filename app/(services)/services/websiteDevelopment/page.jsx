@@ -34,8 +34,8 @@ export default function FancyServicesPage() {
                 <div className="row mb-xs-40 py-md-2">
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
-                    <h1 className="fs-64 mb-30 mb-xs-20 wow fadeInUp">
-                      We Turn Your Ideas into Powerful &nbsp;
+                    <h1 className="fs-64 mb-30 mt-xs-20 mb-xs-20 wow fadeInUp">
+                      A Website Works &nbsp;
                       <span
                         className="fs-64 mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-hero"
                         style={{
@@ -46,10 +46,10 @@ export default function FancyServicesPage() {
                           fontWeight: "bold",
                         }}
                       >
-                        Digital Experiences
+                        24/7 For Your Business
                       </span>
                     </h1>
-                    <p className="wow fadeInUp fs-hero-desc no-margin">
+                    <p className="wow fadeInUp fs-hero-desc no-margin adjust-lineheight">
                       Launch Faster and Grow Smarter.
                     </p>
                     <p className="wow fadeInUp info-text no-margin">
@@ -137,19 +137,8 @@ export default function FancyServicesPage() {
             >
               <div className="container position-relative">
                 <div className="row mb-60 mb-sm-40">
-                  <div className="d-flex flex-wrap">
-                    <div className="col-md-6 col-lg-7 d-flex flex-column">
-                      <h2 className="section-caption mb-2 mb-xs-0">
-                        Our Services
-                      </h2>
-                      <p
-                        style={{ color: "white", fontSize: "40px !important" }}
-                        className="section-title mb-0"
-                      >
-                        Why Our
-                      </p>
-                      <h2
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white text-transparent bg-clip-text font-extrabold fs-40 fs-md-2 fs-lg-3 fs-xl-4 py-0"
+                  <h2
+                        className="text-center mark-decoration-3-wrap wow fadeInUp color-secondary-1-white text-transparent bg-clip-text font-extrabold fs-40 fs-md-2 fs-lg-3 fs-xl-4 py-0"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -158,18 +147,30 @@ export default function FancyServicesPage() {
                           fontWeight: "bolder",
                         }}
                       >
-                        Website Development Service?
+                        Our Services
+                  </h2>
+                  {/* <div className="d-flex flex-wrap">
+                    <div className="col-md-6 col-lg-7 d-flex flex-column">
+                      <h2 className="section-caption mb-2 mb-xs-0">
+                        Our Services
                       </h2>
+                      <p
+                        style={{ color: "white", fontSize: "40px !important" }}
+                        className="section-title mb-0"
+                      >
+                        Why 
+                      </p>
+                      
                     </div>
-                    {/* <div className="col-md-6 col-lg-5 d-flex row">
+                    <div className="col-md-6 col-lg-5 d-flex row">
                       <p className="services-5-text mb-0 text-white">
                         Choosing holapep means opting for a partner who provides
                         more than just WordPress expertise. We deliver a legacy
                         of trust, quality, and innovation across a range of
                         roles essential for modern digital solutions.
                       </p>
-                    </div> */}
-                  </div>
+                    </div>
+                  </div> */}
 
                   <div className="col-md-4 col-lg-6 d-flex align-items-end">
                     <div className="local-scroll text-md-end w-100">
@@ -285,10 +286,10 @@ export default function FancyServicesPage() {
             </section>
             {/* feedback client */}
             <section
-              className={`scrollSpysection py-5 service-large-sections`}
+              className={`scrollSpysection py-5`}
               id="about"
             >
-              <div className="pt-md-5 container position-relative">
+              <div className="pt-md-5 pb-md-5 container position-relative">
                 <h2 className="section-title-small text-center mb-5 feedback-img relative">
                   Feedback From Clients{" "}
                   <span>
@@ -354,7 +355,7 @@ export default function FancyServicesPage() {
             </section>
             {/* why chose us  */}
             <section
-              className={`scrollSpysection mt-5 service-large-sections`}
+              className={`scrollSpysection `}
               id="about"
             >
               <div className="pt-md-5 container position-relative">

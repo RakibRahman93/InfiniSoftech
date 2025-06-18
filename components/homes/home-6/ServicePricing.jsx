@@ -26,11 +26,11 @@ export default function ServicePricing() {
             <img
               src="/assets/images/rocket.png"
               alt="rocket"
-              className="me-2 img-fluid"
-              style={{ height: "50px" }}
+              className="me-lg-2 img-fluid"
+              style={{ height: "3rem" }}
             />
             <h3 className="section-title-small mb-10">
-              WordPress Website Development Packages
+              Website Development Packages
             </h3>
           </div>
           <div className="d-flex text-center justify-content-center align-items-center">
