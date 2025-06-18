@@ -7,10 +7,14 @@ import { useState } from "react";
 export default function ServicePricing() {
   const [isYearly, setIsYearly] = useState(false);
   const [showAllFeatures, setShowAllFeatures] = useState(false);
+  
 
-  const toggleShowAllFeatures = () => {
-    setShowAllFeatures((prev) => !prev);
-  };
+
+
+
+ const toggleShowAllFeatures  = () => {
+  setShowAllFeatures(!showAllFeatures);
+};
 
   return (
     <div className="container new-theme">
@@ -186,9 +190,10 @@ export default function ServicePricing() {
                 })}
               </div>
               {/* Centralized Toggle Button */}
+              {!showAllFeatures && (
               <div
                 className="text-center mt-4 position-absolute start-50 translate-middle-x z-5"
-                style={{ zIndex: "999", bottom: "90px" }}
+                style={{ zIndex: "999", bottom: "45px" }}
               >
                 <button
                   className="btn-lg fw-semibold text-white shadow-sm 
@@ -203,9 +208,10 @@ export default function ServicePricing() {
                   }}
                   onClick={toggleShowAllFeatures}
                 >
-                  {showAllFeatures ? "Show Less" : "See More"}
+                 See More
                 </button>
               </div>
+            )}
             </div>
           </div>
           {/* End Pricing Plans */}
