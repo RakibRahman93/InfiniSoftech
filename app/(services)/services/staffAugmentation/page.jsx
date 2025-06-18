@@ -35,9 +35,9 @@ export default function FancyServicesPage() {
               <div className="pt-md-5 container position-relative">
                 <div className="row mb-xs-40">
                   {/* left section */}
-                  <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
+                  <div className="col-md-12 col-lg-6 pt-xs-50 pb-lg-5">
                     <h1 className="fs-64 pt-10 mb-30 mb-xs-20 wow fadeInUp">
-                      Boost Your Team with
+                      {/* Boost Your Team with */}
                       <span
                         className="fs-64 mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-64"
                         style={{
@@ -48,11 +48,11 @@ export default function FancyServicesPage() {
                           fontWeight: "bold",
                         }}
                       >
-                        Expert Talent, On Demand
+                        Expert Talent,<br/> On Demand
                       </span>
                     </h1>
                     <p className="wow fadeInUp fs-hero-desc no-margin">
-                      Build Powerful, Scalable, and User-Friendly Mobile Apps.
+                      Build Powerful, Scalable, and User-Friendly Apps & Websites.
                     </p>
                     <p className="wow fadeInUp info-text no-margin">
                       Start your journey with a free 30 minute consultation.

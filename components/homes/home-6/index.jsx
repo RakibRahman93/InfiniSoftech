@@ -44,7 +44,7 @@ export default function Home6({ onePage = false, dark = false }) {
                 Grow With Us
               </h2>
               <h3 className="section-title-small  mb-30 mb-xs-20 wow fadeInUp">
-                Boost sales,
+                BOOST SALES,
                 <span
                   className="mark-decoration-3-wrap color-secondary-1-white section-title-small "
                   style={{
@@ -55,7 +55,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     fontWeight: "bold",
                   }}
                 >
-                  Powered by Analytics!
+                  POWERED BY ANALYTICS!
                 </span>
               </h3>
               {/* <h4> Your vision. Our technology. Limitless possibilities.</h4> */}

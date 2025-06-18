@@ -34,7 +34,7 @@ export default function Hero1() {
                     data-splitting="chars"
                   >
                     <span style={{ fontWeight: "bold", color: "#333" }}>
-                     Launch Faster. Look Better. Pay Less.{" "}
+                     Launch Faster. Better UIUX. Close Deals.{" "}
                       <span className="mark-decoration-3-wrap color-secondary-1-white">
                         {/* <b
                         className=" mark-decoration-3 wow scalexIn"
@@ -71,8 +71,7 @@ export default function Hero1() {
                   data-wow-duration="1.2s"
                   data-wow-offset={0}
                 >
-                  Your trusted partner in creating professional websites, mobile
-                  apps, and prototypes for a tech-driven world.
+                  We help businesses to confidently close 5 to 10 leads a month with our strategic tech solutions.
                 </p>
                 <div
                   className="local-scroll wow fadeInUp wch-unset"
@@ -87,7 +86,7 @@ export default function Hero1() {
                   />
 
                   <Link
-                    href={"/case-studies"}
+                    href={"/portfolio"}
                     style={{
                       borderRadius: "50px",
                       padding: "14px 32px",
@@ -117,7 +116,7 @@ export default function Hero1() {
                         }}
                       >
                        
-                        Case Studies
+                        Portfolio
                       </span>
                       <span
                         className="btn-animate-y-2"
@@ -128,7 +127,7 @@ export default function Hero1() {
                         }}
                       >
                         
-                        Case Studies
+                        Portfolio
                       </span>
                     </span>
                   </Link>
