@@ -48,7 +48,7 @@ export default function FancyServicesPage() {
                         InfiniSoft
                       </span>
                     </h1>
-                    <p className="wow fadeInUp fs-hero-desc no-margin">
+                    <p className="wow fadeInUp fs-hero-desc no-margin adjust-lineheight">
                       Build Powerful, Scalable, and User-Friendly Mobile Apps.
                     </p>
                     <p className="wow fadeInUp info-text no-margin">
@@ -286,7 +286,7 @@ export default function FancyServicesPage() {
             </section> */}
             {/* why chose us  */}
             <section
-              className={`scrollSpysection mt-5 service-large-sections`}
+              className={`scrollSpysection mt-5 `}
               id="about"
             >
               <div className="pt-md-5 container position-relative">
