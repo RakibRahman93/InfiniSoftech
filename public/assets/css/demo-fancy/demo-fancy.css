@@ -1124,6 +1124,9 @@ h5 {
 .m-h-30 {
   min-height: 107px;
 }
+.m-h-10 {
+  min-height: 80px;
+}
 .dshape {
   background-image: url("/assets/images/shape-services.png");
   background-position: calc(96% - -50px) 206px;

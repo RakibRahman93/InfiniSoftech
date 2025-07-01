@@ -113,7 +113,7 @@ export default function ServicePricing() {
                           </div>
                         </div>
                         <p
-                          className="fs-6 m-h-30"
+                          className="fs-6 m-h-10"
                           style={{ color: isSecondColumn ? "#fff" : "#000" }}
                         >
                           <span

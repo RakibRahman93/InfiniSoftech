@@ -51,13 +51,13 @@ export const pricing = [
 export const ServicePricingData = [
   {
     title: "Starter",
-    badge: "Essential Start",
+    badge: "Essential",
     bgColor: ["#04D90C", "#162017"],
     description: {
       _html:
-        "Perfect for <strong>startups</strong> and <strong>small businesses</strong> looking for an affordable yet professional website. Get online and start attracting customers.",
+        "Perfect for <strong>startups</strong> and <strong>small businesses</strong>. Get online and start attracting customers.",
     },
-    price: 379,
+    price: 479,
     per: "per month",
     features: [
       "Mobile-friendly and fully responsive layout",
@@ -87,7 +87,7 @@ at $5/month`,
     badge: "Growth Accelerator",
     bgColor: ["#FF002B", "#7C323F"],
     description: {
-      _html: `Perfect for <strong>medium-sized businesses</strong> looking to build a <strong>strong online presence and better performance. Get advanced analytics to better understand your customers and drive sales.</strong>`,
+      _html: `Perfect for <strong>medium-sized businesses</strong> for <strong>strong online presence and better performance. Get advanced analytics and drive sales.</strong>`,
     },
     price: 1490,
     per: "per month",
@@ -104,7 +104,7 @@ at $5/month`,
       "Google Analytics + Facebook Pixel integration",
       "Fast loading speed for improved user experience",
       "Attractive Animation Designs",
-      "10 Social Media Posts Design For Your Business (LinkedIn, Fb, Instagram)",
+      "10 Social Media Posts Design For Your Business (LinkedIn, Fb, Instagram, YouTube Cover Image)",
       "Training on how to manage and update basic content",
       "Provide Royalty Free Images",
       "Delivery Within 3 to 4 weeks",

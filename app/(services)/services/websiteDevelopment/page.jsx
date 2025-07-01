@@ -125,6 +125,78 @@ export default function FancyServicesPage() {
                 </div>
               </div>
             </section>
+
+            {/* feedback client */}
+            <section
+              className={`scrollSpysection pb-5`}
+              id="about"
+            >
+              <div className=" pb-md-5 container position-relative">
+                <h2 className="section-title-small text-center mb-5 feedback-img relative">
+                  Feedback From Clients{" "}
+                  <span>
+                    <span>
+                      <img
+                        className="pb-4"
+                        src="/assets/images/start-client.svg"
+                        alt=""
+                      />
+                    </span>
+                  </span>
+                </h2>
+
+                <div
+                  className="card mx-auto p-4 shadow-lg rounded-4 relative client"
+                  style={{
+                    maxWidth: "614px",
+                    borderRadius: "10px",
+                    border: "none",
+                    boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.1)",
+                    position: "relative",
+                  }}
+                >
+                  <div className="card-body relative">
+                    <div className="mb-3 text-left ">
+                      <span className="fas-quote text-left relative"></span>
+                    </div>
+                    <p className="card-text feedback-text">
+                      Thank you soo much for your help, you are{" "}
+                      <strong>
+                        incredibly <br /> understanding and very proactive
+                      </strong>
+                      . You displayed really amazing <br /> professionalism and
+                      the execution of your work is very impressive. <br />{" "}
+                      Thank you for{" "}
+                      <strong>coming last minute and saving the day</strong>.
+                    </p>
+
+                    <div className="d-flex align-items-center mt-4">
+                      <img
+                        src="/assets/images/femail-client.png"
+                        alt="Client"
+                        className="rounded-circle me-3"
+                      />
+                      <div className="feedback-client-footer">
+                        <div className="fw-semibold">
+                          Unity In Design Global <br /> Network
+                        </div>
+                        <div className="text-muted small">Tare Isaac</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section
+              className={`scrollSpysection py-5 ${
+                dark ? "bg-dark-1 light-content" : ""
+              } `}
+              id="pricing"
+            >
+              <ServicePricing />
+            </section>
+
             {/* why staff start */}
             <section
               style={{
@@ -149,57 +221,12 @@ export default function FancyServicesPage() {
                       >
                         Our Services
                   </h2>
-                  {/* <div className="d-flex flex-wrap">
-                    <div className="col-md-6 col-lg-7 d-flex flex-column">
-                      <h2 className="section-caption mb-2 mb-xs-0">
-                        Our Services
-                      </h2>
-                      <p
-                        style={{ color: "white", fontSize: "40px !important" }}
-                        className="section-title mb-0"
-                      >
-                        Why 
-                      </p>
-                      
-                    </div>
-                    <div className="col-md-6 col-lg-5 d-flex row">
-                      <p className="services-5-text mb-0 text-white">
-                        Choosing holapep means opting for a partner who provides
-                        more than just WordPress expertise. We deliver a legacy
-                        of trust, quality, and innovation across a range of
-                        roles essential for modern digital solutions.
-                      </p>
-                    </div>
-                  </div> */}
-
                   <div className="col-md-4 col-lg-6 d-flex align-items-end">
                     <div className="local-scroll text-md-end w-100">
                       {onePage ? (
                         <>
                           {" "}
-                          {/* <a
-                            href="#portfolio"
-                            className="link-hover-anim"
-                            data-link-animate="y"
-                          >
-                            <span className="link-strong link-strong-unhovered">
-                              View works{" "}
-                              <i
-                                className="mi-arrow-right size-24"
-                                aria-hidden="true"
-                              ></i>
-                            </span>
-                            <span
-                              className="link-strong link-strong-hovered"
-                              aria-hidden="true"
-                            >
-                              View works{" "}
-                              <i
-                                className="mi-arrow-right size-24"
-                                aria-hidden="true"
-                              ></i>
-                            </span>
-                          </a> */}
+                          
                         </>
                       ) : (
                         <> </>
@@ -284,75 +311,8 @@ export default function FancyServicesPage() {
                 <WebProcess />
               </div>
             </section>
-            {/* feedback client */}
-            <section
-              className={`scrollSpysection py-5`}
-              id="about"
-            >
-              <div className="pt-md-5 pb-md-5 container position-relative">
-                <h2 className="section-title-small text-center mb-5 feedback-img relative">
-                  Feedback From Clients{" "}
-                  <span>
-                    <span>
-                      <img
-                        className="pb-4"
-                        src="/assets/images/start-client.svg"
-                        alt=""
-                      />
-                    </span>
-                  </span>
-                </h2>
-
-                <div
-                  className="card mx-auto p-4 shadow-lg rounded-4 relative client"
-                  style={{
-                    maxWidth: "614px",
-                    borderRadius: "10px",
-                    border: "none",
-                    boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.1)",
-                    position: "relative",
-                  }}
-                >
-                  <div className="card-body relative">
-                    <div className="mb-3 text-left ">
-                      <span className="fas-quote text-left relative"></span>
-                    </div>
-                    <p className="card-text feedback-text">
-                      Thank you soo much for your help, you are{" "}
-                      <strong>
-                        incredibly <br /> understanding and very proactive
-                      </strong>
-                      . You displayed really amazing <br /> professionalism and
-                      the execution of your work is very impressive. <br />{" "}
-                      Thank you for{" "}
-                      <strong>coming last minute and saving the day</strong>.
-                    </p>
-
-                    <div className="d-flex align-items-center mt-4">
-                      <img
-                        src="/assets/images/femail-client.png"
-                        alt="Client"
-                        className="rounded-circle me-3"
-                      />
-                      <div className="feedback-client-footer">
-                        <div className="fw-semibold">
-                          Unity In Design Global <br /> Network
-                        </div>
-                        <div className="text-muted small">Tare Isaac</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section
-              className={`scrollSpysection py-5 ${
-                dark ? "bg-dark-1 light-content" : ""
-              } `}
-              id="pricing"
-            >
-              <ServicePricing />
-            </section>
+            
+            
             {/* why chose us  */}
             <section
               className={`scrollSpysection `}

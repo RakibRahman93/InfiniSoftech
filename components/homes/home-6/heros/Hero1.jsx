@@ -34,7 +34,8 @@ export default function Hero1() {
                     data-splitting="chars"
                   >
                     <span style={{ fontWeight: "bold", color: "#333" }}>
-                     Launch Faster. Better UIUX. Close Deals.{" "}
+                     {/* Get 3x more leads. Launch in 2 weeks. {" "} */}
+                     Build. Launch. Grow.
                       <span className="mark-decoration-3-wrap color-secondary-1-white">
                         {/* <b
                         className=" mark-decoration-3 wow scalexIn"
@@ -49,11 +50,15 @@ export default function Hero1() {
                           "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
+                        // fontSize: '2rem',
                         fontWeight: "bold",
+                        display: 'block'
                       }}
                     >
-                      Starting at just{" "}
-                      {pricing ? pricing.heroPrice : "Loading."}
+                      {/* Starting at just{" "}
+                      {pricing ? pricing.heroPrice : "Loading."} */}
+                      {/* Convert 40% better. */}
+                      2X Faster. 3X Smarter. 40% More Revenue.
                       {/* <Image
                         // style={{marginTop:"3.7rem"}}
                         src="/assets/images/demo-fancy/hero/3D Shape/Diamond Slim.svg"
@@ -65,77 +70,27 @@ export default function Hero1() {
                   </span>
                 </h1>
                 <p
-                  style={{ justifySelf: "center" }}
+                  style={{ justifySelf: "center", }}
                   className="col-lg-8 section-descr mb-40 wow fadeInUp"
                   data-wow-delay="0.6s"
                   data-wow-duration="1.2s"
                   data-wow-offset={0}
                 >
-                  We help businesses to confidently close 5 to 10 leads a month with our strategic tech solutions.
+                  {/* We help businesses to confidently close 5 to 10 leads a month with our strategic tech solutions. */}
+                  {/* We help startup founders launch investor-ready apps in 45 days — from idea to MVP. */}
+
+                  <span >🚀 Launch MVPs in just 7–14 days. </span> 
+                  <span >🎯 Proven UI/UX that boosts conversions by up to 62%.</span> 
+                  <span > 📈 Website audits that drive at least 40% more revenue.</span> 
+                  <span > 🤝 Trusted by 10+ high-growth startups.</span> 
+{/* 
+                  🚀 Launch MVPs in just 7–14 days.<br/> 🎯 Proven UI/UX that boosts conversions by up to 62%. <br/>
+                 📈 Website audits that drive at least 40% more revenue. <br/>
+                  🤝 Trusted by 10+ high-growth startups. */}
                 </p>
-                <div
-                  className="local-scroll wow fadeInUp wch-unset"
-                  data-wow-delay="0.7s"
-                  data-wow-duration="1.2s"
-                >
-                  <PopupWrapper
-                    className="btn me-2 popupButtons"
-                    minWidth="16rem"
-                    height="3.6rem"
-                    buttonText="Book A Free Call"
-                  />
 
-                  <Link
-                    href={"/portfolio"}
-                    style={{
-                      borderRadius: "50px",
-                      padding: "14px 32px",
-                      minHeight: "2.6rem",
-                      minWidth: "14rem",
-                      fontSize: "14px",
-                      fontWeight: "bold",
-                      // textTransform: "uppercase",
-                      // background: "transparent",
-                      border: "3px solid",
-                      borderColor: "#D95B8B",
-                      color: "#E75778", // Sets default text color
-                      transition: "all 0.3s ease-in-out",
-                    }}
-                    //href="https://infinisoftech.setmore.com/"
-
-                    rel="noopener noreferrer"
-                    className="btn btn-mod btn-border-c btn-large btn-round  me-1 mb-xs-10"
-                  >
-                    {/* <span>Contact Us</span> */}
-                    <span className="btn-animate-y">
-                      <span
-                        className="btn-animate-y-1"
-                        style={{
-                          fontFamily: "Raleway, sans-serif",
-                          fontWeight: "bold",
-                        }}
-                      >
-                       
-                        Portfolio
-                      </span>
-                      <span
-                        className="btn-animate-y-2"
-                        aria-hidden="true"
-                        style={{
-                          fontFamily: "Raleway, sans-serif",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        
-                        Portfolio
-                      </span>
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            {/* add reviews section start */}
-            <div className="container text-center mt-4 wow fadeInUp">
+                {/* add reviews section start */}
+            <div className="container text-center mb-4 wow fadeInUp">
               {/* Profile Images with Overlapping */}
               <div
                 className="d-flex justify-content-center align-items-center"
@@ -175,6 +130,69 @@ export default function Hero1() {
                 ))}
               </div>
             </div>
+
+            
+                <div
+                  className="local-scroll mb-4 wow fadeInUp wch-unset"
+                  data-wow-delay="0.7s"
+                  data-wow-duration="1.2s"
+                >
+                  <PopupWrapper
+                    className="btn me-2 popupButtons"
+                    minWidth="16rem"
+                    height="3.6rem"
+                    buttonText="Book A Free Call"
+                  />
+
+                  {/* <Link
+                    href={"/portfolio"}
+                    style={{
+                      borderRadius: "50px",
+                      padding: "14px 32px",
+                      minHeight: "2.6rem",
+                      minWidth: "14rem",
+                      fontSize: "14px",
+                      fontWeight: "bold",
+                      // textTransform: "uppercase",
+                      // background: "transparent",
+                      border: "3px solid",
+                      borderColor: "#D95B8B",
+                      color: "#E75778", // Sets default text color
+                      transition: "all 0.3s ease-in-out",
+                    }}
+                    //href="https://infinisoftech.setmore.com/"
+
+                    rel="noopener noreferrer"
+                    className="btn btn-mod btn-border-c btn-large btn-round  me-1 mb-xs-10"
+                  >
+                    <span className="btn-animate-y">
+                      <span
+                        className="btn-animate-y-1"
+                        style={{
+                          fontFamily: "Raleway, sans-serif",
+                          fontWeight: "bold",
+                        }}
+                      >
+                       
+                        Portfolio
+                      </span>
+                      <span
+                        className="btn-animate-y-2"
+                        aria-hidden="true"
+                        style={{
+                          fontFamily: "Raleway, sans-serif",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        
+                        Portfolio
+                      </span>
+                    </span>
+                  </Link> */}
+                </div>
+              </div>
+            </div>
+            
             {/* add reviews section end */}
             {/* <div className="col-lg-6 col-xl-6 d-flex align-items-center">
               <div className="w-100 wow fadeInLeft" data-wow-delay="0.7s">
@@ -261,7 +279,7 @@ export default function Hero1() {
           className="mob-hide w-100 wow fadeInLeft p-50"
           data-wow-delay="0.7s"
         >
-          <div className="position-relative mt-20 ">
+          {/* <div className="position-relative mt-20 ">
             <div className="row justify-content-center">
               <div className="col-md-10 col-sm-4 d-flex flex-wrap justify-content-space-between p-xs-50">
                 <div className="" style={{ alignContent: "center" }}>
@@ -310,7 +328,7 @@ export default function Hero1() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div
             className="decoration-5 d-none d-sm-block"
             data-rellax-y=""

@@ -466,27 +466,27 @@ export const seoServicesData = [
 export const webServicesData = [
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
-    title: "Custom Website Development",
+    title: "Custom Website",
     text: "We design and build tailor-made websites that match your brand, engage your audience, and drive results.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
-    title: "E-Commerce Website Development",
+    title: "E-Commerce Website",
     text: "We create powerful, user-friendly e-commerce websites that help you sell more. Scalable online stores tailored to your business needs.",
   },
   {
     src: "/assets/images/services/website/business.svg",
-    title: "Business Websites Development",
+    title: "Professional Business Websites",
     text: "We develop professional, conversion-focused websites that build trust and grow your brand.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
-    title: "Web Application Development",
+    title: "Web Applications",
     text: "We build scalable, high-performance web applications tailored to your business goals.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
-    title: "WordPress Website Development",
+    title: "WordPress Website",
     text: "We design and develop custom WordPress websites that are fast, secure, and easy to manage.",
   },
   {

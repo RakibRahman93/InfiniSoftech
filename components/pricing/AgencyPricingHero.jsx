@@ -46,11 +46,10 @@ const AgencyPricingHero = () => {
                   data-wow-offset={0}
                 >
                   Flexible monthly subscription plans crafted for modern
-                  agencies. Whether you're scaling fast or need consistent
-                  design & development support, our packages give you on-demand
-                  access to expert web, app, and UI/UX services — without the
-                  overhead of hiring. Built to grow with your agency, one
-                  project at a time.
+                  agencies. <br/> 
+                  <span style={{fontWeight: 'bold', fontSize: '1rem',color:'black', display: 'block', paddingTop: '1%'}}>
+                    SCALES WITH YOUR AGENCY.
+                  </span> 
                 </p>
                 {/* add reviews section start */}
                 <div className="container text-center mt-4 wow fadeInUp">
