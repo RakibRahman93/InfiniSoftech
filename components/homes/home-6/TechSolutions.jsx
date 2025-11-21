@@ -1,7 +1,7 @@
 import { techSolutionsData } from "@/data/services";
 const TechSolutions = ({ src, title, text }) => (
   <>
-    <div className="col-md-4 col-lg-3">
+    <div className="col-6 col-md-4 col-lg-2">
       <div
         style={{
           display: "flex",

@@ -3,16 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 const ServiceItem = ({ src, title, text, link }) => (
   <>
-    <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
+    <div style={{padding:4}} className="col-6 col-md-6 col-lg-3 d-flex align-items-stretch">
       <div
         style={{
+          padding:14,
           backgroundColor: "#051D55",
           border: "1px solid rgb(95, 35, 186)",
           boxShadow: "-5px 0px 30px 10px rgba(63, 51, 223, 0.45)",
         }}
         className="services-5-item d-flex align-items-stretch text-center text-xl-start"
       >
-        <div className="wow fadeInUpShort">
+        <div className="p-0 wow fadeInUpShort">
           <div className="">
             <Image
               style={{
@@ -32,10 +33,10 @@ const ServiceItem = ({ src, title, text, link }) => (
               <p
                 style={{
                   fontWeight: "300",
-                  lineHeight: "25px",
-                  fontSize: "14px",
+                  // lineHeight: "18px",
+                  // fontSize: "14px",
                 }}
-                className="services-5-text text-white"
+                className="services-5-text services-5-text-responsive text-white"
               >
                 {text}
               </p>
@@ -62,16 +63,17 @@ const ServiceItem = ({ src, title, text, link }) => (
 
 const ServiceItem2 = ({ src, title, text, link }) => (
   <>
-    <div className="col-md-6 d-flex align-items-stretch">
+    <div style={{padding:4}} className="col-6 col-md-6 d-flex align-items-stretch">
       <div
         style={{
+          padding:14,
           backgroundColor: "#051D55",
           border: "1px solid rgb(95, 35, 186)",
           boxShadow: "0px 10px 30px 10px rgba(63, 51, 223, 0.45)",
         }}
         className="services-5-item d-flex align-items-stretch text-center text-xl-start"
       >
-        <div className="wow fadeInUpShort">
+        <div className=" wow fadeInUpShort" >
           <div className="">
             <Image
               style={{
@@ -91,10 +93,10 @@ const ServiceItem2 = ({ src, title, text, link }) => (
               <p
                 style={{
                   fontWeight: "300",
-                  lineHeight: "25px",
-                  fontSize: "14px",
+                  // lineHeight: "18px",
+                  // fontSize: "14px",
                 }}
-                className="services-5-text mb-4 text-white"
+                className="services-5-text services-5-text-responsive mb-4 text-white"
               >
                 {text}
               </p>

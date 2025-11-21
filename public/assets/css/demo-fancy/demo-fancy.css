@@ -1088,6 +1088,12 @@ h5 {
 }
 
 /* Custom responsive font size */
+.fs-84 {
+  font-size: 83px;
+}
+.fs-74 {
+  font-size: 73px;
+}
 .fs-64 {
   font-size: 63px;
 }
@@ -1186,6 +1192,10 @@ h5 {
     justify-content: center;
     align-items: center;
   }
+  .services-5-text-responsive{
+  font-size: 14px;
+  line-height: 25px;
+}
 }
 @media (max-width: 1024px) {
   .services-web-title {
@@ -1193,6 +1203,9 @@ h5 {
   }
   .fs-64 {
     font-size: 46px;
+  }
+  .fs-74 {
+  font-size: 46px;
   }
   .fs-48 {
     font-size: 35px;
@@ -1220,6 +1233,9 @@ h5 {
   .fs-64 {
     font-size: 48px;
   }
+  .fs-74 {
+  font-size: 48px;
+  }
   .fs-40 {
     font-size: 48px;
   }
@@ -1243,6 +1259,9 @@ h5 {
   }
   .fs-64 {
     font-size: 28px;
+  }
+  .fs-74 {
+  font-size: 28px;
   }
   br {
     display: none;
@@ -1295,4 +1314,17 @@ h5 {
   .mt-smd-5 {
     margin-top: 3rem;
   }
+  .services-6-title {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.services-5-text-responsive{
+  font-size: 11px;
+  line-height: 18px;
+}
+.p-0{
+  padding: none;
+}
 }

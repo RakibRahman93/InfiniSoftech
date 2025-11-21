@@ -28,14 +28,14 @@ export default function Hero1() {
             {/* Home Section Text */}
             <div className="col-md-10 offset-md-1 offset-lg-1 col-xl-10 d-flex align-items-center mb-md-60 mb-sm-30">
               <div className="w-100 text-center container">
-                <h1 className="fs-64 mb-30">
+                <h1 className="fs-74 mb-30">
                   <span
                     className="wow charsAnimIn fadeInUp"
                     data-splitting="chars"
                   >
                     <span style={{ fontWeight: "bold", color: "#333" }}>
                      {/* Get 3x more leads. Launch in 2 weeks. {" "} */}
-                     Build. Launch. Grow.
+                     Launch Your Custom
                       <span className="mark-decoration-3-wrap color-secondary-1-white">
                         {/* <b
                         className=" mark-decoration-3 wow scalexIn"
@@ -58,7 +58,7 @@ export default function Hero1() {
                       {/* Starting at just{" "}
                       {pricing ? pricing.heroPrice : "Loading."} */}
                       {/* Convert 40% better. */}
-                      2X Faster. 3X Smarter. 40% More Revenue.
+                      Websites. Dashboards. Mobile Apps.
                       {/* <Image
                         // style={{marginTop:"3.7rem"}}
                         src="/assets/images/demo-fancy/hero/3D Shape/Diamond Slim.svg"
@@ -79,10 +79,10 @@ export default function Hero1() {
                   {/* We help businesses to confidently close 5 to 10 leads a month with our strategic tech solutions. */}
                   {/* We help startup founders launch investor-ready apps in 45 days — from idea to MVP. */}
 
-                  <span >🚀 Launch MVPs in just 7–14 days. </span> 
+                  {/* <span >🚀 Launch MVPs in just 7–14 days. </span> 
                   <span >🎯 Proven UI/UX that boosts conversions by up to 62%.</span> 
-                  <span > 📈 Website audits that drive at least 40% more revenue.</span> 
-                  <span > 🤝 Trusted by 10+ high-growth startups.</span> 
+                  <span > 📈 Website audits that drive at least 40% more revenue.</span>  */}
+                  <span > 🤝 Trusted by 10+ High Growth Startups.</span> 
 {/* 
                   🚀 Launch MVPs in just 7–14 days.<br/> 🎯 Proven UI/UX that boosts conversions by up to 62%. <br/>
                  📈 Website audits that drive at least 40% more revenue. <br/>

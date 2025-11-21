@@ -43,21 +43,22 @@ export default function Home6({ onePage = false, dark = false }) {
               <h2 className="section-caption mb-10 mb-xs-10 wow fadeInUp">
                 Grow With Us
               </h2>
-              <h3 className="section-title-small  mb-30 mb-xs-20 wow fadeInUp">
-                BOOST SALES,
+              <h4 className="section-title-small  mb-30 mb-xs-20 wow fadeInUp">
+                Tired Of Spending On Paid Ads And Still No Customers?
                 <span
-                  className="mark-decoration-3-wrap color-secondary-1-white section-title-small "
+                  className="mark-decoration-3-wrap color-secondary-1-white  "
                   style={{
                     background:
                       "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
-                    fontWeight: "bold",
+                    fontWeight: "normal",
+                    fontSize: "2rem"
                   }}
                 >
-                  POWERED BY ANALYTICS!
+                  Maybe Your Website Needs A UIUX Audit!
                 </span>
-              </h3>
+              </h4>
               {/* <h4> Your vision. Our technology. Limitless possibilities.</h4> */}
               {/* Features List */}
               <div
@@ -72,7 +73,7 @@ export default function Home6({ onePage = false, dark = false }) {
                   >
                     <div className="features-list-icon">
                       <img
-                        style={{ width: "50px" }}
+                        style={{ width: "20px" }}
                         src={feature.icon}
                         alt="Image Description"
                       />
@@ -80,7 +81,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     <div
                       style={{
                         fontSize: "18px",
-                        fontWeight: "300",
+                        fontWeight: "600",
                         color: "#1C1C57",
                       }}
                     >
@@ -90,7 +91,7 @@ export default function Home6({ onePage = false, dark = false }) {
                 ))}
                 {/* End Features List Item */}
               </div>
-              <div className="local-scroll wow fadeInUp" data-wow-delay="0.12s">
+              {/* <div className="local-scroll wow fadeInUp" data-wow-delay="0.12s">
                 <Link
                   href="/portfolio-single/80"
                   className="btn-lg fw-semibold text-white shadow-sm 
@@ -108,7 +109,7 @@ export default function Home6({ onePage = false, dark = false }) {
                 >
                   View Pototype
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* Images Composition */}
