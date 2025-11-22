@@ -7,7 +7,7 @@ const TechSolutions = ({ src, title, text }) => (
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          minHeight: "280px",
+          minHeight: "80px",
           background:
             "linear-gradient(white, white) padding-box, linear-gradient(90deg, #E75778 0%, #8876FF 100%) border-box",
           border: "1px solid transparent", // Transparent border to allow gradient visibility
@@ -18,6 +18,7 @@ const TechSolutions = ({ src, title, text }) => (
         <div className="wow fadeInUpShort d-flex lg:flex-row flex-column justify-center align-items-center">
           <div className="text-center">
             <img
+              style={{maxWidth:"40%"}}
               src={src}
               alt="Image Description"
               className="img-fluid text-center"
@@ -27,7 +28,7 @@ const TechSolutions = ({ src, title, text }) => (
             <div className="w-100">
               <h4
                 className="pt-4 text-center"
-                style={{ fontSize: "19px", color: "#051D55" }}
+                style={{ fontSize: "15px", color: "#051D55" }}
               >
                 {title}
               </h4>

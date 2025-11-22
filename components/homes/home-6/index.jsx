@@ -80,7 +80,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     </div>
                     <div
                       style={{
-                        fontSize: "18px",
+                        fontSize: "14px",
                         fontWeight: "600",
                         color: "#1C1C57",
                       }}

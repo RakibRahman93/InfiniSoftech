@@ -107,7 +107,7 @@ export const services3 = [
   {
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "UIUX Design",
-    text: "Get a smarter & smoother experience for your clients.",
+    text: "Get a smarter & smoother experience for your clients, with faster performance, cleaner UI, and an overall seamless digital journey.",
     link: "/services/uiux",
   },
   {
@@ -200,7 +200,7 @@ export const techSolutionsData = [
   },
   {
     src: "/assets/images/tech/figma.svg",
-    title: "24/7 Customer Support",
+    title: "24/7 Support",
   },
   {
     src: "/assets/images/tech/data.svg",
