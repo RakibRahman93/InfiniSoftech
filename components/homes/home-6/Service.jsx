@@ -9,11 +9,10 @@ const ServiceItem = ({ src, title, text, link }) => (
           padding:14,
           backgroundColor: "#051D55",
           border: "1px solid rgb(95, 35, 186)",
-          boxShadow: "-5px 0px 30px 10px rgba(63, 51, 223, 0.45)",
         }}
-        className="services-5-item d-flex align-items-stretch text-center text-xl-start"
+        className="services-5-item service-feature-card d-flex align-items-stretch text-center text-xl-start"
       >
-        <div className="p-0 wow fadeInUpShort">
+        <div className="p-0 wow fadeInUpShort d-flex flex-column w-100">
           <div className="">
             <Image
               style={{
@@ -27,8 +26,8 @@ const ServiceItem = ({ src, title, text, link }) => (
               alt="Image Description"
             />
           </div>
-          <div className="services-5-body d-flex align-items-center">
-            <div className="w-100 service-height">
+          <div className="services-5-body d-flex align-items-center flex-grow-1">
+            <div className="w-100 service-height d-flex flex-column h-100">
               <h4 className="services-6-title text-white pt-4">{title}</h4>
               <p
                 style={{
@@ -42,7 +41,7 @@ const ServiceItem = ({ src, title, text, link }) => (
               </p>
               <Link
                 href={link} // Use dynamic link here
-                className=""
+                className="service-feature-link"
                 style={{
                   background:
                     "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -63,17 +62,16 @@ const ServiceItem = ({ src, title, text, link }) => (
 
 const ServiceItem2 = ({ src, title, text, link }) => (
   <>
-    <div style={{padding:4}} className="col-6 col-md-6 d-flex align-items-stretch">
+    <div style={{padding:4}} className="col-6 col-md-6 col-lg-3 d-flex align-items-stretch">
       <div
         style={{
           padding:14,
           backgroundColor: "#051D55",
           border: "1px solid rgb(95, 35, 186)",
-          boxShadow: "0px 10px 30px 10px rgba(63, 51, 223, 0.45)",
         }}
-        className="services-5-item d-flex align-items-stretch text-center text-xl-start"
+        className="services-5-item service-feature-card d-flex align-items-stretch text-center text-xl-start"
       >
-        <div className=" wow fadeInUpShort" >
+        <div className=" wow fadeInUpShort d-flex flex-column w-100" >
           <div className="">
             <Image
               style={{
@@ -87,8 +85,8 @@ const ServiceItem2 = ({ src, title, text, link }) => (
               alt="Image Description"
             />
           </div>
-          <div className="services-5-body d-flex align-items-center">
-            <div className="w-100">
+          <div className="services-5-body d-flex align-items-center flex-grow-1">
+            <div className="w-100 d-flex flex-column h-100">
               <h4 className="services-6-title text-white pt-4">{title}</h4>
               <p
                 style={{
@@ -102,7 +100,7 @@ const ServiceItem2 = ({ src, title, text, link }) => (
               </p>
               <Link
                 href={link} // Use dynamic link here
-                className=""
+                className="service-feature-link"
                 style={{
                   background:
                     "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",

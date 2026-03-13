@@ -1,24 +1,23 @@
 import { techSolutionsData } from "@/data/services";
 const TechSolutions = ({ src, title, text }) => (
   <>
-    <div className="col-6 col-md-4 col-lg-2">
+    <div className="col-6 col-md-4 col-lg-2 d-flex">
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          minHeight: "80px",
           background:
             "linear-gradient(white, white) padding-box, linear-gradient(90deg, #E75778 0%, #8876FF 100%) border-box",
           border: "1px solid transparent", // Transparent border to allow gradient visibility
           borderRadius: "8px", // Optional for rounded corners
         }}
-        className="services-5-item d-flex text-center text-xl-start"
+        className="services-5-item tech-solution-card d-flex text-center text-xl-start w-100"
       >
-        <div className="wow fadeInUpShort d-flex lg:flex-row flex-column justify-center align-items-center">
+        <div className="wow fadeInUpShort d-flex lg:flex-row flex-column justify-center align-items-center w-100">
           <div className="text-center">
             <img
-              style={{maxWidth:"40%"}}
+              style={{ maxWidth: "40%" }}
               src={src}
               alt="Image Description"
               className="img-fluid text-center"

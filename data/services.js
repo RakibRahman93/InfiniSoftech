@@ -509,16 +509,28 @@ export const services3aMain = [
 ];
 export const services3a = [
   {
-    src: "/assets/images/demo-fancy/services/ppp.svg",
+    src: "/assets/images/demo-fancy/services/seo-service.svg",
     title: "SEO",
     text: "People are always searching for products and services of their needs. Are you appearing in their search results? Get noticed and get new clients.",
     link: "/services/SeoService",
   },
   {
-    src: "/assets/images/demo-fancy/services/ppp.svg",
+    src: "/assets/images/demo-fancy/services/agile-staff-tech.svg",
     title: "AgileStaff Tech",
     text: "Maybe you need a UIUX designer or a developer, or a project manager. Get flexible and scalable staffing both for short-term & long-term works.",
     link: "/services",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/ai-receptionist.svg",
+    title: "AI Receptionist",
+    text: "Never miss a lead. AI receptionists handle inquiries, qualify prospects, and keep your business responsive around the clock.",
+    link: "/services/aiReceptionist",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/social-media-marketing.svg",
+    title: "Social Media Marketing",
+    text: "Grow your reach with strategic content, campaign planning, and conversion-focused social media management across key platforms.",
+    link: "/services/socialMediaMarketing",
   },
 ];
 

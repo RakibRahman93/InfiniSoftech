@@ -511,37 +511,6 @@ export const portfolios6 = [
     Services: "Branding, UI/UX Design, Prototyping",
     Description: `Mobile app prototypes are interactive, visual models of a mobile application that showcase its functionality and user interface before development begins. Designed to bring your app idea to life, prototypes serve as a blueprint for the user experience (UX) and user interface (UI), allowing stakeholders and designers to collaborate and refine the concept. They provide a tangible preview of the app’s look and feel, helping to identify any potential issues early in the process, saving both time and resources. `,
   },
-  {
-    id: 33,
-    categories: ["website", "design", "development"],
-    imgSrc: "/assets/images/demo-fancy/hbs.svg",
-    imgExtra: "/assets/images/demo-fancy/hbs1.svg",
-    title: "Homebound Serenity Nursing Care",
-    description: "Landing Page Design & Development",
-    lightbox: false,
-    externalLink: "portfolio-single.html",
-    Date: "January 20th, 2025",
-    Client: "bangladeshi Client",
-    Services: "Branding, UI/UX Design, Front-end Development",
-    Description: `Health Care & Nursing Services.`,
-    website: "www.hbsnursingcare.com",
-  },
-  
-  {
-    id: 35,
-    categories: ["website", "design", "development"],
-    imgSrc: "/assets/images/demo-fancy/evans.svg",
-    imgExtra: "/assets/images/demo-fancy/evans1.svg",
-    title: "AI Portfolio Website",
-    description: "Website Design & Development",
-    lightbox: false,
-    externalLink: "portfolio-single.html",
-    Date: "January 10th, 2025",
-    Client: "International Clients",
-    Services: "Branding, UI/UX Design, Front-end Development",
-    Description: `Evans is a creative visionary who specializes in crafting cinematic ad content and social-first visuals that reflect the style and storytelling quality of luxury brands. His speculative ad work includes standout campaigns designed for fashion, beauty, and lifestyle, With a keen eye for detail and innovation, Evans transforms concepts into polished, premium-level creative experiences.`,
-    website: "www.evansugo.com",
-  },
 ];
 
 export const portfolios7 = [

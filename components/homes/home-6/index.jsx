@@ -117,8 +117,8 @@ export default function Home6({ onePage = false, dark = false }) {
           {/* End Images Composition */}
         </div>
         <section
-        style={{ backgroundColor: "#FFF7FF" }}
-        className={`page-section  ${dark ? "bg-dark-1 light-content" : ""} `}
+        style={{ background: "linear-gradient(180deg, #fffdfd 0%, #f6f3ff 100%)" }}
+        className={`page-section testimonials-showcase-section ${dark ? "bg-dark-1 light-content" : ""} `}
       >
         {dark ? <TestimonialsDark /> : <Testimonials />}
       </section>
