@@ -8,6 +8,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Faqs from "../home-1/Faq";
 import Portfolio from "./Portfolio";
+import PricingShowcase from "./PricingShowcase";
 import Service from "./Service";
 import TechSolutions from "./TechSolutions";
 import Testimonials from "./Testimonials";
@@ -331,6 +332,8 @@ export default function Home6({ onePage = false, dark = false }) {
           <Portfolio />
         </div>
       </section>
+      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
+      <PricingShowcase />
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
 
       {/* <section

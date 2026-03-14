@@ -88,6 +88,137 @@ a {
   position: relative;
 }
 
+.design-showcase {
+  position: relative;
+  overflow: hidden;
+  margin-top: 18px;
+  padding: 38px 0 34px;
+}
+
+.design-showcase-glow {
+  position: absolute;
+  top: 50%;
+  border-radius: 999px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.design-showcase-glow-left {
+  left: 10%;
+  width: 500px;
+  height: 500px;
+  background: rgba(136, 118, 255, 0.08);
+  filter: blur(150px);
+}
+
+.design-showcase-glow-right {
+  right: 12%;
+  width: 400px;
+  height: 400px;
+  background: rgba(231, 87, 120, 0.07);
+  filter: blur(120px);
+}
+
+.design-showcase-perspective {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  perspective: 1200px;
+  perspective-origin: center center;
+}
+
+.design-showcase-plane {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transform: rotateX(12deg) rotateZ(-2deg) scale(1.05);
+  transform-style: preserve-3d;
+}
+
+.design-showcase-row-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.design-showcase-row {
+  display: flex;
+  gap: 24px;
+  width: fit-content;
+  will-change: transform;
+}
+
+.design-showcase-row.is-forward {
+  animation: design-showcase-forward linear infinite;
+}
+
+.design-showcase-row.is-reverse {
+  animation: design-showcase-reverse linear infinite;
+}
+
+.design-showcase-card {
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 1px solid rgba(28, 28, 87, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 18px 36px rgba(84, 98, 161, 0.1);
+}
+
+.design-showcase-card.is-landscape {
+  width: 420px;
+  height: 260px;
+}
+
+.design-showcase-card.is-portrait {
+  width: 182px;
+  height: 260px;
+}
+
+.design-showcase-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.design-showcase-fade {
+  position: absolute;
+  inset-y: 0;
+  width: 32px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.design-showcase-fade-left {
+  left: 0;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.design-showcase-fade-right {
+  right: 0;
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+@keyframes design-showcase-forward {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes design-showcase-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .testimonials-showcase-section::before {
   content: "";
   position: absolute;
@@ -244,6 +375,53 @@ a {
 }
 
 @media (max-width: 767px) {
+  .design-showcase {
+    margin-top: 8px;
+    padding: 20px 0 18px;
+  }
+
+  .design-showcase-glow-left {
+    width: 260px;
+    height: 260px;
+    left: 0;
+    filter: blur(80px);
+  }
+
+  .design-showcase-glow-right {
+    width: 240px;
+    height: 240px;
+    right: 0;
+    filter: blur(72px);
+  }
+
+  .design-showcase-perspective,
+  .design-showcase-plane,
+  .design-showcase-row {
+    gap: 16px;
+  }
+
+  .design-showcase-plane {
+    transform: rotateX(10deg) rotateZ(-2deg) scale(1.02);
+  }
+
+  .design-showcase-card {
+    border-radius: 12px;
+  }
+
+  .design-showcase-card.is-landscape {
+    width: 280px;
+    height: 180px;
+  }
+
+  .design-showcase-card.is-portrait {
+    width: 138px;
+    height: 180px;
+  }
+
+  .design-showcase-fade {
+    width: 16px;
+  }
+
   .testimonials-showcase-section.page-section {
     padding-top: 44px;
     padding-bottom: 44px;
