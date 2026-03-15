@@ -439,6 +439,7 @@ export default function PricingShowcase() {
       id="pricing"
       style={{
         background: "linear-gradient(-80deg, #621ABE 0%, #051D55 50%)",
+        paddingTop: "84px",
       }}
     >
       <div className="container position-relative">
@@ -462,6 +463,7 @@ export default function PricingShowcase() {
               Flexible plans built for
               <br />
               <span
+                className="pricing-showcase-heading-accent"
                 style={{
                   background: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
                   WebkitBackgroundClip: "text",
@@ -478,7 +480,7 @@ export default function PricingShowcase() {
         <div className="row mb-40 mb-sm-30">
           <div className="col-12 d-flex justify-content-center">
             <div
-              className="d-inline-flex align-items-center"
+              className="d-inline-flex align-items-center pricing-showcase-tabs"
               style={{
                 padding: "6px",
                 borderRadius: "999px",
@@ -495,6 +497,7 @@ export default function PricingShowcase() {
                   key={tab.id}
                   type="button"
                   onClick={() => setActiveTab(tab.id)}
+                  className="pricing-showcase-tab-button"
                   style={{
                     border: "none",
                     borderRadius: "999px",
@@ -525,7 +528,7 @@ export default function PricingShowcase() {
           {plans.map((plan) => (
             <div key={plan.title} className="col-lg-4 d-flex">
               <div
-                className="w-100 h-100 d-flex flex-column"
+                className="w-100 h-100 d-flex flex-column pricing-showcase-card"
                 style={{
                   position: "relative",
                   padding: "24px 22px",
@@ -544,6 +547,7 @@ export default function PricingShowcase() {
                 }}
               >
                 <div
+                  className="pricing-showcase-badge"
                   style={{
                     position: "absolute",
                     top: "-1px",
@@ -564,6 +568,7 @@ export default function PricingShowcase() {
                   {plan.badge}
                 </div>
                 <div
+                  className="pricing-showcase-plan-title"
                   style={{
                     color: "rgba(255,255,255,0.9)",
                     fontSize: "15px",
@@ -574,8 +579,9 @@ export default function PricingShowcase() {
                 >
                   {plan.title}
                 </div>
-                <div style={{ height: "38px", marginBottom: "20px" }} />
+                <div className="pricing-showcase-spacer" style={{ height: "38px", marginBottom: "20px" }} />
                 <div
+                  className="pricing-showcase-price"
                   style={{
                     fontSize: "52px",
                     lineHeight: 1.05,
@@ -587,6 +593,7 @@ export default function PricingShowcase() {
                   {plan.price}
                 </div>
                 <div
+                  className="pricing-showcase-delivery"
                   style={{
                     color: "#fff",
                     fontSize: "16px",
@@ -597,6 +604,7 @@ export default function PricingShowcase() {
                   Delivery: {plan.delivery}
                 </div>
                 <p
+                  className="pricing-showcase-description"
                   style={{
                     color: "rgba(255,255,255,0.72)",
                     fontSize: "16px",
@@ -607,11 +615,11 @@ export default function PricingShowcase() {
                   {plan.description}
                 </p>
 
-                <ul className="list-unstyled mb-30">
+                <ul className="list-unstyled mb-30 pricing-showcase-features">
                   {plan.features.map((feature) => (
                     <li
                       key={feature}
-                      className="d-flex align-items-start"
+                      className="d-flex align-items-start pricing-showcase-feature-item"
                       style={{
                         gap: "12px",
                         marginBottom: "11px",
@@ -635,6 +643,7 @@ export default function PricingShowcase() {
 
                 <div className="mb-20">
                   <div
+                    className="pricing-showcase-meta-title"
                     style={{
                       color: "#fff",
                       fontSize: "14px",
@@ -654,6 +663,7 @@ export default function PricingShowcase() {
 
                 <div className="mb-30">
                   <div
+                    className="pricing-showcase-meta-title"
                     style={{
                       color: "#fff",
                       fontSize: "14px",
@@ -685,6 +695,140 @@ export default function PricingShowcase() {
           ))}
         </div>
       </div>
+      <style jsx>{`
+        @media (min-width: 992px) {
+          #pricing {
+            padding-top: 68px !important;
+          }
+
+          .pricing-showcase-card {
+            padding: 18px 16px !important;
+            border-radius: 18px !important;
+          }
+
+          .pricing-showcase-badge {
+            right: 14px !important;
+            padding: 8px 12px 9px !important;
+            font-size: 10px !important;
+          }
+
+          .pricing-showcase-plan-title {
+            font-size: 13px !important;
+            margin-bottom: 7px !important;
+          }
+
+          .pricing-showcase-spacer {
+            height: 22px !important;
+            margin-bottom: 12px !important;
+          }
+
+          .pricing-showcase-price {
+            font-size: 40px !important;
+            margin-bottom: 8px !important;
+          }
+
+          .pricing-showcase-delivery {
+            font-size: 14px !important;
+            margin-bottom: 7px !important;
+          }
+
+          .pricing-showcase-description {
+            font-size: 13px !important;
+            line-height: 1.42 !important;
+            margin-bottom: 14px !important;
+          }
+
+          .pricing-showcase-features {
+            margin-bottom: 18px !important;
+          }
+
+          .pricing-showcase-feature-item {
+            gap: 9px !important;
+            margin-bottom: 8px !important;
+            font-size: 13px !important;
+          }
+
+          .pricing-showcase-meta-title {
+            font-size: 12px !important;
+            margin-bottom: 9px !important;
+          }
+        }
+
+        @media (max-width: 767.98px) {
+          #pricing {
+            padding-bottom: 32px !important;
+          }
+
+          .pricing-showcase-heading-accent {
+            margin-left: 6px;
+          }
+
+          .pricing-showcase-tabs {
+            width: 100%;
+            justify-content: center;
+          }
+
+          .pricing-showcase-tab-button {
+            min-width: 112px !important;
+            padding: 10px 14px !important;
+            font-size: 12px !important;
+          }
+
+          .pricing-showcase-card {
+            padding: 18px 16px !important;
+            border-radius: 18px !important;
+            transform: none !important;
+          }
+
+          .pricing-showcase-badge {
+            right: 14px !important;
+            padding: 8px 12px 9px !important;
+            font-size: 10px !important;
+            letter-spacing: 0.05em !important;
+          }
+
+          .pricing-showcase-plan-title {
+            font-size: 13px !important;
+            margin-bottom: 8px !important;
+          }
+
+          .pricing-showcase-spacer {
+            height: 28px !important;
+            margin-bottom: 14px !important;
+          }
+
+          .pricing-showcase-price {
+            font-size: 38px !important;
+            margin-bottom: 8px !important;
+          }
+
+          .pricing-showcase-delivery {
+            font-size: 14px !important;
+            margin-bottom: 8px !important;
+          }
+
+          .pricing-showcase-description {
+            font-size: 13px !important;
+            line-height: 1.45 !important;
+            margin-bottom: 16px !important;
+          }
+
+          .pricing-showcase-features {
+            margin-bottom: 20px !important;
+          }
+
+          .pricing-showcase-feature-item {
+            gap: 10px !important;
+            margin-bottom: 9px !important;
+            font-size: 14px !important;
+          }
+
+          .pricing-showcase-meta-title {
+            font-size: 12px !important;
+            margin-bottom: 10px !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }
