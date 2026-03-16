@@ -144,18 +144,58 @@ export default function Portfolio({
         </div>
       ) : null}
       <style jsx global>{`
+        #work-grid.work-grid-fancy .work-item > div {
+          height: 100%;
+        }
+
+        #work-grid.work-grid-fancy .work-item a {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          background: #ffffff !important;
+          border: none;
+          box-shadow: var(--box-shadow-block);
+        }
+
+        #work-grid.work-grid-fancy .work-img {
+          flex-shrink: 0;
+        }
+
+        #work-grid.work-grid-fancy .work-img img {
+          aspect-ratio: 16 / 11;
+          object-fit: cover;
+        }
+
+        #work-grid.work-grid-fancy .work-intro {
+          min-height: 92px;
+          padding: 22px 22px 20px !important;
+          background: #ffffff;
+          backdrop-filter: none;
+          -webkit-backdrop-filter: none;
+        }
+
+        #work-grid.work-grid-fancy .work-title {
+          color: #1c1c57;
+          font-weight: 600;
+        }
+
+        #work-grid.work-grid-fancy .work-descr {
+          color: #536174;
+        }
+
         @media (max-width: 767.98px) {
           #work-grid.work-grid-fancy .work-item {
             margin-bottom: 18px !important;
           }
 
           #work-grid.work-grid-fancy .work-img img {
-            aspect-ratio: 16 / 10;
+            aspect-ratio: 16 / 11;
             object-fit: cover;
           }
 
           #work-grid.work-grid-fancy .work-intro {
-            padding-top: 12px !important;
+            min-height: 74px;
+            padding: 16px 16px 15px !important;
           }
 
           #work-grid.work-grid-fancy .work-title {
