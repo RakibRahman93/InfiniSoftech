@@ -62,7 +62,7 @@ const bottomRow = [
   },
   {
     text:
-      "InfiniSoft exceeded our expectations in building our company website! Outstanding work, delivering a website that perfectly reflects our brand.",
+      "InfiniSoft exceeded our expectations in building our company website. Outstanding work, delivering a website that perfectly reflects our brand.",
     author: "Team Mahir",
     position: "Founder & CEO",
     avatarSrc: "/assets/images/testimonials/avatar-mahir.svg",
@@ -91,7 +91,7 @@ function TestimonialCard({ item, featured = false }) {
       className={`testimonials-film-card${featured ? " is-featured" : ""}`}
     >
       <div className="testimonials-film-card-top">
-        <span className="testimonials-film-quote">"</span>
+        <span className="testimonials-film-quote">❞</span>
         <span className="testimonials-film-stars">★★★★★</span>
       </div>
       <p className="testimonials-film-copy">{item.text}</p>

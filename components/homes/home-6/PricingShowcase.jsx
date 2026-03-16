@@ -458,7 +458,7 @@ export default function PricingShowcase() {
             </div>
             <h3
               className="section-title-small mb-0"
-              style={{ color: "#fff", lineHeight: 1.2 }}
+              style={{ color: "#fff", lineHeight: 1.2, fontWeight: 600 }}
             >
               Flexible plans built for
               <br />

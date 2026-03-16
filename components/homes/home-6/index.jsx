@@ -44,7 +44,10 @@ export default function Home6({ onePage = false, dark = false }) {
               <h2 className="section-caption mb-10 mb-xs-10 wow fadeInUp">
                 Grow With Us
               </h2>
-              <h4 className="section-title-small mb-20 mb-xs-16 wow fadeInUp">
+              <h4
+                className="section-title-small mb-20 mb-xs-16 wow fadeInUp"
+                style={{ fontWeight: 600 }}
+              >
                 Spending On Ads But Still Not Getting Customers?
                 <span
                   className="mark-decoration-3-wrap color-secondary-1-white  "
@@ -130,8 +133,7 @@ export default function Home6({ onePage = false, dark = false }) {
         </div>
         <section
         style={{
-          background:
-            "linear-gradient(180deg, #fffdfd 0%, #f6f1ff 24%, #e6dcff 42%, #c6b7f3 58%, #8a78d8 74%, #3f5ba1 88%, #0a2a78 100%)",
+          background: "#1C1B2A",
         }}
         className={`page-section testimonials-showcase-section ${dark ? "bg-dark-1 light-content" : ""} `}
       >
@@ -155,7 +157,7 @@ export default function Home6({ onePage = false, dark = false }) {
             <div className="col-md-8 col-lg-6">
               <h2 className="section-caption mb-20 mb-xs-10">Our Services</h2>
               <h3
-                style={{ color: "white" }}
+                style={{ color: "white", fontWeight: 600 }}
                 className="section-title-small mb-0 mb-sm-20"
               >
                 Building The Future Of Your Business,
@@ -258,6 +260,7 @@ export default function Home6({ onePage = false, dark = false }) {
                   className="text-center section-title-small mb-1"
                   style={{
                     color: "#1C1C57",
+                    fontWeight: 600,
                   }}
                 >
                   Technologies & Tools
@@ -327,7 +330,7 @@ export default function Home6({ onePage = false, dark = false }) {
                 WHY CHOOSE US
               </h2>
               <h3
-                style={{ color: "white" }}
+                style={{ color: "white", fontWeight: 600 }}
                 className="section-title-small mb-0 mb-sm-20"
               >
                 Why Businesses Choose InfiniSoft
@@ -555,7 +558,7 @@ export default function Home6({ onePage = false, dark = false }) {
             </div>
 
             <div className="col-lg-6 col-xl-6">
-              <h3 className="section-title-small mb-30">
+              <h3 className="section-title-small mb-30" style={{ fontWeight: 600 }}>
                 Frequently Asked <br />
                 Questions
               </h3>
@@ -645,6 +648,7 @@ export default function Home6({ onePage = false, dark = false }) {
             margin-top: 16px !important;
           }
         }
+
       `}</style>
       <FooterTop />
     </>
