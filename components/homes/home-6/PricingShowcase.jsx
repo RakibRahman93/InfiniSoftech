@@ -258,6 +258,99 @@ const designPlans = [
   },
 ];
 
+const marketingPlans = [
+  {
+    title: "Starter",
+    badge: "Best For Visibility",
+    badgeBackground:
+      "linear-gradient(30deg, rgba(76, 151, 255, 0.9) 0%, rgba(82, 100, 255, 0.9) 100%)",
+    price: "$650",
+    delivery: "Monthly Retainer",
+    description:
+      "Ideal for brands that need a consistent social presence with planned content, cleaner execution, and reliable monthly momentum.",
+    features: [
+      "Monthly Content Calendar",
+      "8 Social Media Post Designs",
+      "Caption Writing",
+      "Profile Optimization",
+      "Basic Competitor Review",
+      "Hashtag Strategy",
+      "1 Campaign Support",
+      "Monthly Performance Report",
+    ],
+    pages: [
+      "Facebook",
+      "Instagram",
+      "LinkedIn",
+      "Brand Guidelines",
+      "Monthly Content Themes",
+    ],
+    stack: ["Content Strategy", "Creative Design", "Monthly Reporting"],
+  },
+  {
+    title: "Growth",
+    badge: "Most Popular",
+    badgeBackground: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+    price: "$1,450",
+    delivery: "Monthly Retainer",
+    description:
+      "Built for businesses ready to turn social media into a lead-generating growth channel with stronger campaigns and more structured execution.",
+    features: [
+      "Full Monthly Content Strategy",
+      "12 Social Media Post Designs",
+      "Short-Form Video / Reel Concepts",
+      "Ad Creative Direction",
+      "Audience Targeting Support",
+      "Community Management Guidance",
+      "2 Campaign Launches",
+      "Lead Funnel Recommendations",
+      "Bi-Weekly Strategy Calls",
+      "Monthly Reporting Dashboard",
+    ],
+    pages: [
+      "Facebook",
+      "Instagram",
+      "LinkedIn",
+      "Campaign Landing Page Brief",
+      "Lead Magnet Content",
+      "Retargeting Flow",
+    ],
+    stack: ["Strategy", "Creative Production", "Campaign Management", "Analytics"],
+    featured: true,
+  },
+  {
+    title: "Premium",
+    badge: "Best For Scale",
+    badgeBackground:
+      "linear-gradient(30deg, rgba(168, 85, 247, 0.92) 0%, rgba(99, 102, 241, 0.92) 100%)",
+    price: "$2,900",
+    delivery: "Monthly Retainer",
+    description:
+      "Designed for teams that want a more complete social marketing engine with campaign execution, optimization, and deeper performance visibility.",
+    features: [
+      "Advanced Monthly Growth Strategy",
+      "16 Social Media Post Designs",
+      "Reels / Short Video Production Planning",
+      "Paid Ad Creative Support",
+      "Audience Segmentation",
+      "Retargeting Funnel Planning",
+      "Offer Testing Support",
+      "Weekly Strategy Calls",
+      "Priority Campaign Optimization",
+      "Executive Reporting Summary",
+    ],
+    pages: [
+      "Facebook",
+      "Instagram",
+      "LinkedIn",
+      "YouTube Shorts",
+      "Campaign Funnel Map",
+      "Offer Testing Variants",
+    ],
+    stack: ["Growth Strategy", "Paid + Organic Campaigns", "Optimization", "Executive Reporting"],
+  },
+];
+
 const premiumFeatureExplanations = {
   "12-20 Pages":
     "A larger scope for advanced websites or platforms with multiple customer-facing and internal screens.",
@@ -431,7 +524,12 @@ function FeatureIcon() {
 
 export default function PricingShowcase() {
   const [activeTab, setActiveTab] = useState("development");
-  const plans = activeTab === "development" ? developmentPlans : designPlans;
+  const plans =
+    activeTab === "development"
+      ? developmentPlans
+      : activeTab === "marketing"
+        ? marketingPlans
+        : designPlans;
 
   return (
     <section
@@ -492,6 +590,7 @@ export default function PricingShowcase() {
               {[
                 { id: "design", label: "Design" },
                 { id: "development", label: "Development" },
+                { id: "marketing", label: "Marketing" },
               ].map((tab) => (
                 <button
                   key={tab.id}

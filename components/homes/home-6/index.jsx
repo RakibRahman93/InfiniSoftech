@@ -8,7 +8,6 @@ import Link from "next/link";
 import { useState } from "react";
 import Faqs from "../home-1/Faq";
 import Portfolio from "./Portfolio";
-import PricingShowcase from "./PricingShowcase";
 import Service from "./Service";
 import TechSolutions from "./TechSolutions";
 import Testimonials from "./Testimonials";
@@ -145,7 +144,7 @@ export default function Home6({ onePage = false, dark = false }) {
       <section
         style={{
           background:
-            "linear-gradient(180deg, #0a2a78 0%, #102f78 16%, #1d357f 34%, #3a2f90 62%, #5a27a8 100%)",
+            "linear-gradient(180deg, #0a2a78 0%, #102f78 16%, #1d357f 34%, #2c3d8d 62%, #3b4aa2 100%)",
         }}
         className={`page-section scrollSpysection services-home-section ${
           dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
@@ -247,10 +246,11 @@ export default function Home6({ onePage = false, dark = false }) {
         <Features />
       </section> */}
       <section
-        className={`scrollSpysection py-5${
+        className={`scrollSpysection py-6${
           dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
         } bg-scroll`}
         id="technologies"
+        style={{ paddingTop: "110px", paddingBottom: "110px" }}
       >
         <div className="container position-relative">
           <div className="row mb-60 mb-sm-40">
@@ -513,10 +513,6 @@ export default function Home6({ onePage = false, dark = false }) {
           <Portfolio mobileLimit={4} desktopLimit={6} showViewAll={true} />
         </div>
       </section>
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-      <PricingShowcase />
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-
       {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""

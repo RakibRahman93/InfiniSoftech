@@ -63,6 +63,52 @@ const processSteps = [
   },
 ];
 
+const funnelStages = [
+  {
+    stage: "01",
+    label: "Awareness",
+    title: "Reach the right audience first",
+    text: "We use platform-specific creative, targeting, and messaging to put your brand in front of people who are most likely to care.",
+    stat: "Cold Reach",
+    value: "100%",
+    width: "100%",
+    accent: "pink",
+    points: ["Paid and organic reach", "Audience research", "Creative hooks"],
+  },
+  {
+    stage: "02",
+    label: "Interest",
+    title: "Turn attention into engagement",
+    text: "Once people notice you, we give them reasons to stay through content sequences, story-led posts, and clear value communication.",
+    stat: "Engaged Audience",
+    value: "68%",
+    width: "72%",
+    accent: "violet",
+    points: ["Reels and carousel strategy", "Offer clarity", "Trust-building content"],
+  },
+  {
+    stage: "03",
+    label: "Consideration",
+    title: "Build trust before the ask",
+    text: "We guide interested viewers toward proof, credibility, and relevant offers so they move closer to becoming a qualified lead.",
+    stat: "Qualified Leads",
+    value: "34%",
+    width: "50%",
+    accent: "cyan",
+    points: ["Testimonials and proof", "Retargeting journeys", "Lead magnets and CTAs"],
+  },
+  {
+    stage: "04",
+    label: "Conversion",
+    title: "Convert interest into action",
+    text: "Your funnel closes with optimized landing paths, direct-response messaging, and follow-up systems that turn demand into inquiries and sales.",
+    stat: "Conversions",
+    value: "12%",
+    width: "32%",
+    accent: "amber",
+    points: ["Conversion-focused offers", "Landing page alignment", "Reporting and optimization"],
+  },
+];
 export const metadata = {
   title: "SERVICES - Social Media Marketing",
   description: "",
@@ -80,90 +126,76 @@ export default function SocialMediaMarketingPage() {
             <section className="scrollSpysection service-large-sections social-hero-section" id="about">
               <div className="container position-relative" style={{ paddingTop: "48px", paddingBottom: "28px" }}>
                 <div className="row mb-xs-40 align-items-center">
-                  <div className="col-md-12 col-lg-6 pt-3 pb-lg-4" style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-                    <h1 className="fs-64 mb-30 mb-xs-20 wow fadeInUp ml-1 social-hero-title">
-                      Grow Faster with&nbsp;
-                      <span
-                        className="fs-64 mark-decoration-3-wrap wow fadeInUp color-secondary-1-white social-hero-accent"
-                        style={{
-                          background:
-                            "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-                          WebkitBackgroundClip: "text",
-                          WebkitTextFillColor: "transparent",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Social Media Marketing
-                      </span>
-                    </h1>
-                    <p className="wow fadeInUp fs-hero-desc no-margin adjust-lineheight social-hero-lead">
-                      Build a stronger brand presence, attract the right audience, and turn attention into leads.
-                    </p>
-                    <p className="wow fadeInUp info-text no-margin social-hero-support">
-                      Start with a free 30 minute consultation and map out your next growth campaign.
-                    </p>
-                    <div className="wow fadeInUp" style={{ display: "flex", alignItems: "center", gap: "4px", marginBottom: "8px" }}>
-                      {[...Array(5)].map((_, i) => (
-                        <span key={i} style={{ color: "#ffae00", fontSize: "24px", lineHeight: 1 }}>{"\u2605"}</span>
-                      ))}
-                    </div>
-                    <div className="mb-4 wow fadeInUp">
-                      <div style={{ position: "relative", display: "flex", alignItems: "center", flexWrap: "nowrap" }}>
-                        {reviews.map((user) => (
-                          <div
-                            key={user.id}
-                            className="rounded-circle overflow-hidden position-relative"
-                            style={{
-                              width: 60,
-                              height: 60,
-                              border: "1px solid #D9D9D9",
-                              marginRight: "-15px",
-                              borderRadius: "50%",
-                              backgroundColor: "#fff",
-                            }}
-                          >
-                            <Image
-                              src={user.img}
-                              alt={user.name}
-                              width={60}
-                              height={60}
-                              className="img-fluid rounded-circle"
-                            />
-                          </div>
-                        ))}
+                  <div className="col-md-12 col-lg-6 pt-3 pb-lg-4">
+                    <div className="social-hero-copy-shell">
+                      <div className="social-hero-eyebrow wow fadeInUp">
+                        Growth System For Social Brands
                       </div>
-                    </div>
-                    <div className="local-scroll wow fadeInUp" data-wow-delay="0.12s">
-                      <PopupWrapper
-                        minWidth="14rem"
-                        buttonText="Get A Free Consultation"
-                        height="3.5rem"
-                      />
+                      <h1 className="fs-64 mb-30 mb-xs-20 wow fadeInUp ml-1 social-hero-title">
+                        Grow Faster with&nbsp;
+                        <span
+                          className="fs-64 mark-decoration-3-wrap wow fadeInUp color-secondary-1-white social-hero-accent"
+                          style={{
+                            background:
+                              "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          Social Media Marketing
+                        </span>
+                      </h1>
+                      <p className="wow fadeInUp fs-hero-desc no-margin adjust-lineheight social-hero-lead">
+                        Build a stronger brand presence, attract the right audience, and turn attention into leads.
+                      </p>
+                      <p className="wow fadeInUp info-text no-margin social-hero-support">
+                        Start with a free 30 minute consultation and map out your next growth campaign.
+                      </p>
+
+
+                      <div className="wow fadeInUp social-hero-rating-row">
+                        <div className="social-hero-stars">
+                          {[...Array(5)].map((_, i) => (
+                            <span key={i}>{"\u2605"}</span>
+                          ))}
+                        </div>
+                        <span className="social-hero-rating-copy">Trusted by growth-focused brands</span>
+                      </div>
+
+                      <div className="mb-4 wow fadeInUp">
+                        <div className="social-hero-review-stack">
+                          {reviews.map((user) => (
+                            <div
+                              key={user.id}
+                              className="rounded-circle overflow-hidden position-relative social-hero-review-avatar"
+                            >
+                              <Image
+                                src={user.img}
+                                alt={user.name}
+                                width={60}
+                                height={60}
+                                className="img-fluid rounded-circle"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="local-scroll wow fadeInUp social-hero-cta-wrap" data-wow-delay="0.12s">
+                        <PopupWrapper
+                          minWidth="14rem"
+                          buttonText="Get A Free Consultation"
+                          height="3.5rem"
+                        />
+                      </div>
+
                     </div>
                   </div>
 
                   <div className="col-md-12 col-lg-6 text-lg-end text-center mt-smd-5">
-                    <div
-                      className="wow fadeInUp"
-                      style={{
-                        display: "block",
-                        width: "100%",
-                        padding: "12px",
-                        borderRadius: "30px",
-                        background:
-                          "linear-gradient(135deg, rgba(231, 87, 120, 0.18) 0%, rgba(136, 118, 255, 0.2) 100%)",
-                        border: "1px solid rgba(136, 118, 255, 0.24)",
-                        boxShadow:
-                          "0 28px 60px rgba(55, 43, 142, 0.14), inset 0 1px 0 rgba(255,255,255,0.55)",
-                      }}
-                    >
-                      <div
-                        style={{
-                          borderRadius: "24px",
-                          overflow: "hidden",
-                          background: "#fff",
-                        }}
-                      >
+                    <div className="wow fadeInUp social-hero-media-shell">
+                      <div className="social-hero-media-frame">
                         <Image
                           src="/assets/images/demo-fancy/portfolio/social-media-market.png"
                           width={1200}
@@ -171,6 +203,14 @@ export default function SocialMediaMarketingPage() {
                           alt="Social Media Marketing"
                           style={{ maxWidth: "100%", height: "auto", display: "block" }}
                         />
+                      </div>
+                      <div className="social-hero-floating-card social-hero-floating-card-top">
+                        <strong>Audience Growth</strong>
+                        <span>Targeted campaigns with clearer intent</span>
+                      </div>
+                      <div className="social-hero-floating-card social-hero-floating-card-bottom">
+                        <strong>Performance Reporting</strong>
+                        <span>Know what content is actually driving leads</span>
                       </div>
                     </div>
                   </div>
@@ -182,7 +222,7 @@ export default function SocialMediaMarketingPage() {
               style={{
                 background: "linear-gradient(220deg, #621ABE 0%, #051D55 50%)",
               }}
-              className={`page-section scrollSpysection ${
+              className={`page-section scrollSpysection social-services-section ${
                 dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
               } bg-scroll`}
               id="services"
@@ -246,13 +286,89 @@ export default function SocialMediaMarketingPage() {
             </section>
 
             <section
-              className={`scrollSpysection py-5 ${
+              className="page-section scrollSpysection marketing-funnel-section"
+              id="funnel"
+            >
+              <div className="container position-relative">
+                <div className="row align-items-center g-4 g-lg-5">
+                  <div className="col-lg-5">
+                    <div className="marketing-funnel-copy">
+                      <div className="marketing-funnel-eyebrow">How The Funnel Works</div>
+                      <h2 className="marketing-funnel-title">
+                        Social media works best when every stage has a job.
+                      </h2>
+                      <p className="marketing-funnel-text">
+                        We do not treat content as random posting. We build a funnel that
+                        creates visibility, grows interest, earns trust, and moves people
+                        toward action with a clearer path.
+                      </p>
+
+                      <div className="marketing-funnel-kpis">
+                        <div className="marketing-funnel-kpi">
+                          <strong>4 stages</strong>
+                          <span>from first impression to conversion</span>
+                        </div>
+                        <div className="marketing-funnel-kpi">
+                          <strong>1 system</strong>
+                          <span>content, targeting, proof, and reporting working together</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-lg-7">
+                    <div className="funnel-visual-shell">
+                      {funnelStages.map((item) => (
+                        <div
+                          key={item.stage}
+                          className={`funnel-stage-row funnel-stage-row-${item.accent}`}
+                        >
+                          <div className="funnel-stage-top">
+                            <div className="funnel-stage-meta">
+                              <span className="funnel-stage-step">{item.stage}</span>
+                              <span className="funnel-stage-label">{item.label}</span>
+                            </div>
+                            <div className="funnel-stage-value">{item.value}</div>
+                          </div>
+                          <div className="funnel-stage-bar">
+                            <div
+                              className="funnel-stage-fill"
+                              style={{ width: item.width }}
+                            />
+                          </div>
+                          <div className="funnel-stage-stat">{item.stat}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="row mt-5">
+                  {funnelStages.map((item) => (
+                    <div key={item.label} className="col-md-6 col-xl-3 mb-4">
+                      <div className={`marketing-funnel-card marketing-funnel-card-${item.accent}`}>
+                        <div className="marketing-funnel-card-stage">{item.label}</div>
+                        <h3 className="marketing-funnel-card-title">{item.title}</h3>
+                        <p className="marketing-funnel-card-text">{item.text}</p>
+                        <ul className="marketing-funnel-points">
+                          {item.points.map((point) => (
+                            <li key={point}>{point}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+            <section
+              className={`scrollSpysection py-5 process-showcase-section ${
                 dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
               } bg-scroll`}
               id="process"
             >
               <div className="container position-relative">
-                <div className="d-flex flex-column align-items-center text-center mb-5">
+                <div className="d-flex flex-column align-items-center text-center mb-5 process-showcase-heading">
                   <h2 className="section-title-small mb-1" style={{ color: "#1C1C57" }}>
                     Our Process
                   </h2>
@@ -263,30 +379,11 @@ export default function SocialMediaMarketingPage() {
 
                 <div className="row">
                   {processSteps.map((item) => (
-                    <div key={item.step} className="col-md-6 col-lg-3 mb-4">
-                      <div
-                        className="services-5-item h-100"
-                        style={{
-                          background: "#fff",
-                          border: "1px solid rgba(23, 31, 68, 0.08)",
-                          boxShadow: "0 12px 32px rgba(45, 39, 93, 0.06)",
-                        }}
-                      >
-                        <div
-                          style={{
-                            fontSize: "14px",
-                            fontWeight: "700",
-                            letterSpacing: "0.12em",
-                            color: "#8876FF",
-                            marginBottom: "14px",
-                          }}
-                        >
-                          {item.step}
-                        </div>
-                        <h4 className="services-6-title" style={{ color: "#151b38" }}>
-                          {item.title}
-                        </h4>
-                        <p className="services-5-text mb-0">{item.text}</p>
+                    <div key={item.step} className="col-md-6 col-lg-3 mb-4 process-showcase-col">
+                      <div className="services-5-item h-100 process-showcase-card">
+                        <div className="process-showcase-step">{item.step}</div>
+                        <h4 className="services-6-title process-showcase-title">{item.title}</h4>
+                        <p className="services-5-text mb-0 process-showcase-text">{item.text}</p>
                       </div>
                     </div>
                   ))}
@@ -330,6 +427,16 @@ export default function SocialMediaMarketingPage() {
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

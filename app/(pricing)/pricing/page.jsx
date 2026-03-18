@@ -1,6 +1,7 @@
 import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
+import PricingShowcase from "@/components/homes/home-6/PricingShowcase";
 import NorMalUiuxPricing from "@/components/pricing/NormalUiuxPricing";
 import PricingHero from "@/components/pricing/PricingHero";
 import { fancyMultipage } from "@/data/menu";
@@ -23,9 +24,8 @@ const PricingPage = () => {
           >
             <PricingHero />
           </section>
+          <PricingShowcase />
           <section className="page-section">
-            <NorMalUiuxPricing />
-            <NorMalUiuxPricing />
             <NorMalUiuxPricing />
           </section>
         </main>

@@ -11,7 +11,7 @@ export default function NorMalUiuxPricing() {
     <div className="container">
       <div className="row mb-50 mb-sm-30">
         <div className="col-md-8 offset-md-2 text-center">
-          <h2 className="section-caption mb-0">UI/UX DESIGN PRICING</h2>
+          <h2 className="section-caption mb-0">STAFF AUGMENTATION PRICING</h2>
           <h3 className="section-title-small mb-10">
           🚀 Invest in Great Design
           </h3>
