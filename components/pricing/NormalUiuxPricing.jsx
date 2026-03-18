@@ -1,25 +1,28 @@
 "use client";
 
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
-import { TechServicePricingData } from "@/data/pricing"; // Ensure the path is correct
+import { TechServicePricingData } from "@/data/pricing";
 import { useState } from "react";
 
-export default function NorMalUiuxPricing() {
+export default function NorMalUiuxPricing({
+  caption = "STAFF AUGMENTATION PRICING",
+  title = "Invest in Great Design",
+  description = "UI/UX packages that drive clarity, usability, and growth.",
+  plans = TechServicePricingData,
+}) {
   const [isYearly, setIsYearly] = useState(false);
 
   return (
     <div className="container">
       <div className="row mb-50 mb-sm-30">
         <div className="col-md-8 offset-md-2 text-center">
-          <h2 className="section-caption mb-0">STAFF AUGMENTATION PRICING</h2>
-          <h3 className="section-title-small mb-10">
-          🚀 Invest in Great Design
-          </h3>
+          <h2 className="section-caption mb-0">{caption}</h2>
+          <h3 className="section-title-small mb-10">{title}</h3>
           <p
             className="mb-0 portfolio-1-descr"
             style={{ fontWeight: "500", lineHeight: "25px" }}
           >
-            UI/UX packages that drive clarity, usability, and growth.
+            {description}
           </p>
         </div>
       </div>
@@ -67,11 +70,11 @@ export default function NorMalUiuxPricing() {
           <div className="tab-content tpl-minimal-tabs-cont position-relative">
             <div className="tab-pane show active">
               <div className="row mt-n30">
-                {TechServicePricingData.map((plan, index) => {
+                {plans.map((plan, index) => {
                   const updatePrice = isYearly ? plan.price * 12 : plan.price;
                   return (
-                    <div key={index} className="col-md-6 col-lg-4">
-                      <div className="card techCard-pricing p-4 rounded-3 mb-20">
+                    <div key={index} className="col-md-6 col-lg-4 d-flex">
+                      <div className="card techCard-pricing d-flex flex-column h-100 p-4 rounded-3 mb-20 w-100">
                         <div className="d-flex align-items-center flex-row mb-20">
                           <span
                             className="fw-bold me-4 fs-30"
@@ -151,3 +154,5 @@ export default function NorMalUiuxPricing() {
     </div>
   );
 }
+
+

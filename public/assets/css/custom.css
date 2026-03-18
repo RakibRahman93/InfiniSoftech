@@ -1926,4 +1926,20 @@ a {
     margin-top: 10px;
     border-radius: 16px;
   }
+
+  .theme-fancy .service-large-sections#about .container {
+    padding-top: 46px !important;
+  }
+
+  .theme-fancy .service-large-sections#about .col-md-12.col-lg-6.pt-5.pb-lg-5 {
+    padding-top: 1.5rem !important;
+  }
+
+  .website-feedback-section {
+    margin-top: 26px;
+  }
+}
+
+.agency-pricing-stack .techCard-pricing {
+  min-height: auto;
 }

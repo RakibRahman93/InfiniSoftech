@@ -128,7 +128,7 @@ export default function FancyServicesPage() {
 
             {/* feedback client */}
             <section
-              className={`scrollSpysection pb-5`}
+              className={`scrollSpysection pb-5 website-feedback-section`}
               id="about"
             >
               <div className=" pb-md-5 container position-relative">
@@ -171,30 +171,50 @@ export default function FancyServicesPage() {
                     </p>
 
                     <div className="d-flex align-items-center mt-4">
-                      <img
-                        src="/assets/images/femail-client.png"
-                        alt="Client"
-                        className="rounded-circle me-3"
-                      />
+                      <div
+                        className="me-3 flex-shrink-0"
+                        style={{
+                          width: "66px",
+                          height: "66px",
+                          padding: "3px",
+                          borderRadius: "999px",
+                          background: "rgba(255, 255, 255, 0.92)",
+                          border: "1px solid rgba(30, 43, 88, 0.08)",
+                          boxShadow: "0 10px 24px rgba(44, 39, 91, 0.08)",
+                        }}
+                      >
+                        <img
+                          src="/assets/images/tera.jpg"
+                          alt="Client"
+                          className="rounded-circle"
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            display: "block",
+                            filter: "saturate(0.94)",
+                          }}
+                        />
+                      </div>
                       <div className="feedback-client-footer">
-                        <div className="fw-semibold">
+                        <div className="fw-semibold" style={{ fontSize: "16px", lineHeight: "1.45" }}>
                           Unity In Design Global <br /> Network
                         </div>
-                        <div className="text-muted small">Tare Isaac</div>
+                        <div
+                          className="text-muted small"
+                          style={{
+                            marginTop: "4px",
+                            fontSize: "14px",
+                            letterSpacing: "0.01em",
+                          }}
+                        >
+                          Tare Isaac
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
-
-            <section
-              className={`scrollSpysection py-5 ${
-                dark ? "bg-dark-1 light-content" : ""
-              } `}
-              id="pricing"
-            >
-              <ServicePricing />
             </section>
 
             {/* why staff start */}

@@ -4,6 +4,7 @@ import FooterTop from "@/components/homes/home-6/FooterTop";
 import AgencyPricingHero from "@/components/pricing/AgencyPricingHero";
 import NorMalUiuxPricing from "@/components/pricing/NormalUiuxPricing";
 import PricingHero from "@/components/pricing/PricingHero";
+import { DeveloperServicePricingData } from "@/data/pricing";
 import { fancyMultipage } from "@/data/menu";
 export const metadata = {
   title:
@@ -24,10 +25,13 @@ const AgencyPricingPage = () => {
           >
             <AgencyPricingHero />
           </section>
-          <section className="page-section">
+          <section className="page-section agency-pricing-stack">
             <NorMalUiuxPricing />
-            <NorMalUiuxPricing />
-            <NorMalUiuxPricing />
+            <NorMalUiuxPricing
+              title="Great Developers"
+              description="Developer staffing packages for teams that need dependable execution, speed, and technical support."
+              plans={DeveloperServicePricingData}
+            />
           </section>
         </main>
         <FooterTop />
@@ -45,3 +49,6 @@ const AgencyPricingPage = () => {
 };
 
 export default AgencyPricingPage;
+
+
+

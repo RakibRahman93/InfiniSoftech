@@ -112,6 +112,8 @@ export const fancyMultipage = [
       { href: "/services/uiux", text: "Ui/UX Design" },
       { href: "/services/staffAugmentation", text: "Staff Augmentation" },
       { href: "/services/SeoService", text: "Seo Services" },
+      { href: "/services/aiReceptionist", text: "AI Receptionist" },
+      { href: "/services/socialMediaMarketing", text: "Social Media Marketing" },
     ],
   },
   { href: "/pricing", text: "Pricing" },

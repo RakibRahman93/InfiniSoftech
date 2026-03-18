@@ -4,6 +4,7 @@ export const reviews = [
     { id: 3, name: 'Michael Brown', img: '/assets/images/reviews/3.jpg' },
     { id: 4, name: 'Sophia Wilson', img: '/assets/images/reviews/4.png' },
     { id: 5, name: 'Sophia Wilson', img: '/assets/images/reviews/5.jpg' },
+    { id: 6, name: 'Tera', img: '/assets/images/tera.jpg' },
   ];
 
 export const featureItems = [

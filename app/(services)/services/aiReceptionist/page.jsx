@@ -66,82 +66,95 @@ export default function AIReceptionistPage() {
             <Header6 links={fancyMultipage} />
           </nav>
           <main id="main">
-            <section className="scrollSpysection mt-5 service-large-sections" id="about">
+            <section className="scrollSpysection mt-5 service-large-sections social-hero-section" id="about">
               <div className="pt-md-5 container position-relative">
                 <div className="row mb-xs-40 align-items-center">
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
-                    <h1 className="fs-64 mb-30 mb-xs-20 wow fadeInUp ml-1">
-                      Capture Every Lead with an&nbsp;
-                      <span
-                        className="fs-64 mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
-                        style={{
-                          background:
-                            "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-                          WebkitBackgroundClip: "text",
-                          WebkitTextFillColor: "transparent",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        AI Receptionist
-                      </span>
-                    </h1>
-                    <p className="wow fadeInUp fs-hero-desc no-margin adjust-lineheight">
-                      Let AI answer calls, qualify prospects, and book meetings so your team focuses on closing.
-                    </p>
-                    <p className="wow fadeInUp info-text no-margin">
-                      Start with a free 30 minute consultation and design your ideal call workflow.
-                    </p>
-                    <div className="wow fadeInUp">
-                      {[...Array(5)].map((_, i) => (
-                        <span key={i} style={{ color: "#ffae00", fontSize: "24px" }}>
-                          ★
-                        </span>
-                      ))}
-                    </div>
-                    <div className="mb-4 wow fadeInUp">
-                      <div className="d-flex" style={{ position: "relative" }}>
-                        {reviews.map((user) => (
-                          <div
-                            key={user.id}
-                            className="rounded-circle overflow-hidden position-relative"
-                            style={{
-                              width: 60,
-                              height: 60,
-                              border: "1px solid #D9D9D9",
-                              marginRight: "-15px",
-                              borderRadius: "50%",
-                              backgroundColor: "#fff",
-                            }}
-                          >
-                            <Image
-                              src={user.img}
-                              alt={user.name}
-                              width={60}
-                              height={60}
-                              className="img-fluid rounded-circle"
-                            />
-                          </div>
-                        ))}
+                    <div className="social-hero-copy-shell">
+                      <div className="social-hero-eyebrow wow fadeInUp">
+                        AI-Powered Call Workflow
                       </div>
-                    </div>
-                    <div className="local-scroll wow fadeInUp" data-wow-delay="0.12s">
-                      <PopupWrapper
-                        minWidth="14rem"
-                        buttonText="Get A Free Consultation"
-                        height="3.5rem"
-                      />
+                      <h1 className="fs-64 mb-30 mb-xs-20 wow fadeInUp ml-1 social-hero-title">
+                        Capture Every Lead with an&nbsp;
+                        <span
+                          className="fs-64 mark-decoration-3-wrap wow fadeInUp color-secondary-1-white social-hero-accent"
+                          style={{
+                            background:
+                              "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          AI Receptionist
+                        </span>
+                      </h1>
+                      <p className="wow fadeInUp fs-hero-desc no-margin adjust-lineheight social-hero-lead">
+                        Let AI answer calls, qualify prospects, and book meetings so your team focuses on closing.
+                      </p>
+                      <p className="wow fadeInUp info-text no-margin social-hero-support">
+                        Start with a free 30 minute consultation and design your ideal call workflow.
+                      </p>
+
+                      <div className="wow fadeInUp social-hero-rating-row">
+                        <div className="social-hero-stars">
+                          {[...Array(5)].map((_, i) => (
+                            <span key={i}>{"\u2605"}</span>
+                          ))}
+                        </div>
+                        <span className="social-hero-rating-copy">Built for faster response and fewer missed leads</span>
+                      </div>
+
+                      <div className="mb-4 wow fadeInUp">
+                        <div className="social-hero-review-stack">
+                          {reviews.map((user) => (
+                            <div
+                              key={user.id}
+                              className="rounded-circle overflow-hidden position-relative social-hero-review-avatar"
+                            >
+                              <Image
+                                src={user.img}
+                                alt={user.name}
+                                width={60}
+                                height={60}
+                                className="img-fluid rounded-circle"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="local-scroll wow fadeInUp social-hero-cta-wrap" data-wow-delay="0.12s">
+                        <PopupWrapper
+                          minWidth="14rem"
+                          buttonText="Get A Free Consultation"
+                          height="3.5rem"
+                        />
+                      </div>
+
                     </div>
                   </div>
 
                   <div className="col-md-12 col-lg-6 text-center mt-smd-5">
-                    <Image
-                      src="/assets/images/services/aiReceptionist/hero.svg"
-                      width={760}
-                      height={620}
-                      alt="AI Receptionist"
-                      className="wow fadeInUp"
-                      style={{ maxWidth: "92%", height: "auto" }}
-                    />
+                    <div className="wow fadeInUp social-hero-media-shell">
+                      <div className="social-hero-media-frame">
+                        <Image
+                          src="/assets/images/services/aiReceptionist/hero.svg"
+                          width={760}
+                          height={620}
+                          alt="AI Receptionist"
+                          style={{ maxWidth: "100%", height: "auto", display: "block" }}
+                        />
+                      </div>
+                      <div className="social-hero-floating-card social-hero-floating-card-top">
+                        <strong>Call Qualification</strong>
+                        <span>Ask better questions before your team joins in</span>
+                      </div>
+                      <div className="social-hero-floating-card social-hero-floating-card-bottom">
+                        <strong>Appointment Booking</strong>
+                        <span>Convert qualified calls into scheduled consultations</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -287,3 +300,5 @@ export default function AIReceptionistPage() {
     </>
   );
 }
+
+

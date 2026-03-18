@@ -244,6 +244,85 @@ export const TechServicePricingData = [
     buttonText: "Get Started",
   },
 ];
+export const DeveloperServicePricingData = [
+  {
+    title: "Part-Time Frontend Developer",
+    badge: "Flexible Starter",
+    bgColor: "#159C7C",
+    description:
+      "Great for startups and agencies that need a reliable frontend developer without committing to a full-time hire.",
+    price: 1299,
+    per: "per month",
+    features: [
+      "72 hours/month of development support",
+      "React / Next.js frontend implementation",
+      "Responsive page development",
+      "Bug fixing and UI polish",
+      "API integration on existing frontend flows",
+      "Developer-friendly Git workflow",
+      "Basic performance improvements",
+      "Staging deployment support",
+      "48-hour onboarding",
+    ],
+    disabledFeatures: [
+      "Full backend architecture ownership",
+      "Daily real-time collaboration window",
+      "Advanced system design planning",
+      "Dedicated DevOps support",
+    ],
+    buttonText: "Get Started",
+  },
+  {
+    title: "Full-Time Frontend Developer",
+    badge: "Core Team Fit",
+    bgColor: "#BA68C8",
+    description:
+      "Best for product teams that need a dedicated developer embedded into active delivery and sprint execution.",
+    price: 2199,
+    per: "per month",
+    features: [
+      "160 hours/month of dedicated development time",
+      "React / Next.js application development",
+      "Component architecture and code cleanup",
+      "API integration and state management",
+      "Authentication and protected route setup",
+      "Performance optimization and debugging",
+      "CMS or admin integration support",
+      "Sprint-based collaboration with your team",
+      "Weekly progress sync",
+      "48-hour onboarding",
+    ],
+    disabledFeatures: [
+      "Senior-level architecture consulting",
+      "Advanced DevOps and infra ownership",
+      "Cross-functional product strategy leadership",
+    ],
+    buttonText: "Get Started",
+  },
+  {
+    title: "Senior Full-Stack Developer",
+    badge: "Strategic Lead",
+    bgColor: "#006FFD",
+    description:
+      "Premium developer support for teams that need stronger technical ownership, faster execution, and broader product capability.",
+    price: 3499,
+    per: "per month",
+    features: [
+      "160 hours/month of senior development support",
+      "Frontend and backend implementation",
+      "System design guidance for scalable features",
+      "Database and API architecture support",
+      "Authentication, payments, and dashboard flows",
+      "Code reviews and technical decision support",
+      "Refactoring legacy features safely",
+      "Priority delivery on active sprint items",
+      "Direct collaboration with founders or product leads",
+      "48-hour onboarding",
+    ],
+    disabledFeatures: ["24/7 emergency maintenance coverage"],
+    buttonText: "Get Started",
+  },
+];
 export const pricing2 = [
   {
     title: "Standard",
