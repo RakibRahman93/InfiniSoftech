@@ -25,11 +25,9 @@ export function PopupWrapper({
 
   return (
     <>
-      <ul
-        className={`clearlist scroll-nav local-scroll justify-content-end scrollspyLinks ${className}`}
-      >
-        {/* Button with conditional full-width */}
+      <div className={className}>
         <button
+          type="button"
           onClick={togglePopup}
           className={`btn-lg fw-semibold text-white shadow-sm 
             ${isFullWidth ? "w-100" : "w-md-auto"}`}
@@ -39,19 +37,15 @@ export function PopupWrapper({
             border: "none",
             minWidth: isFullWidth ? "100%" : "14rem",
             padding: "12px 26px",
+            fontFamily: "Poppins, sans-serif",
             fontWeight: "600",
             height: height,
             padding: padding,
           }}
         >
-          <span className="btn-animate-y">
-            <span className="btn-animate-y-1">{currentButtonText}</span>
-            <span className="btn-animate-y-2" aria-hidden="true">
-              {currentButtonText}
-            </span>
-          </span>
+          {currentButtonText}
         </button>
-      </ul>
+      </div>
 
       {/* Popup Component */}
       <Popup

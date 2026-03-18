@@ -13,18 +13,30 @@ const capabilityCards = [
   {
     title: "Content Strategy",
     text: "Plan content pillars, campaign themes, and posting schedules around your business goals.",
+    metric: "Monthly Plan",
+    accent: "pink",
+    image: "/assets/images/demo-fancy/portfolio/content-strategy.png",
   },
   {
     title: "Creative Production",
     text: "Design posts, reels, ad creatives, and branded assets that feel consistent and conversion-ready.",
+    metric: "12 Assets",
+    accent: "violet",
+    image: "/assets/images/demo-fancy/portfolio/creative-production.png",
   },
   {
     title: "Audience Growth",
     text: "Reach the right people through platform-specific targeting, optimization, and trend-aware execution.",
+    metric: "+148%",
+    accent: "cyan",
+    image: "/assets/images/demo-fancy/portfolio/aud-grow.png",
   },
   {
     title: "Performance Tracking",
     text: "Measure engagement, leads, and campaign performance with clear reporting and next-step insights.",
+    metric: "Live Data",
+    accent: "amber",
+    image: "/assets/images/demo-fancy/portfolio/perf-track.png",
   },
 ];
 
@@ -65,14 +77,14 @@ export default function SocialMediaMarketingPage() {
             <Header6 links={fancyMultipage} />
           </nav>
           <main id="main">
-            <section className="scrollSpysection mt-5 service-large-sections" id="about">
-              <div className="pt-md-5 container position-relative">
+            <section className="scrollSpysection service-large-sections social-hero-section" id="about">
+              <div className="container position-relative" style={{ paddingTop: "48px", paddingBottom: "28px" }}>
                 <div className="row mb-xs-40 align-items-center">
-                  <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
-                    <h1 className="fs-64 mb-30 mb-xs-20 wow fadeInUp ml-1">
+                  <div className="col-md-12 col-lg-6 pt-3 pb-lg-4" style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+                    <h1 className="fs-64 mb-30 mb-xs-20 wow fadeInUp ml-1 social-hero-title">
                       Grow Faster with&nbsp;
                       <span
-                        className="fs-64 mark-decoration-3-wrap wow fadeInUp color-secondary-1-white"
+                        className="fs-64 mark-decoration-3-wrap wow fadeInUp color-secondary-1-white social-hero-accent"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -84,21 +96,19 @@ export default function SocialMediaMarketingPage() {
                         Social Media Marketing
                       </span>
                     </h1>
-                    <p className="wow fadeInUp fs-hero-desc no-margin adjust-lineheight">
+                    <p className="wow fadeInUp fs-hero-desc no-margin adjust-lineheight social-hero-lead">
                       Build a stronger brand presence, attract the right audience, and turn attention into leads.
                     </p>
-                    <p className="wow fadeInUp info-text no-margin">
+                    <p className="wow fadeInUp info-text no-margin social-hero-support">
                       Start with a free 30 minute consultation and map out your next growth campaign.
                     </p>
-                    <div className="wow fadeInUp">
+                    <div className="wow fadeInUp" style={{ display: "flex", alignItems: "center", gap: "4px", marginBottom: "8px" }}>
                       {[...Array(5)].map((_, i) => (
-                        <span key={i} style={{ color: "#ffae00", fontSize: "24px" }}>
-                          ★
-                        </span>
+                        <span key={i} style={{ color: "#ffae00", fontSize: "24px", lineHeight: 1 }}>{"\u2605"}</span>
                       ))}
                     </div>
                     <div className="mb-4 wow fadeInUp">
-                      <div className="d-flex" style={{ position: "relative" }}>
+                      <div style={{ position: "relative", display: "flex", alignItems: "center", flexWrap: "nowrap" }}>
                         {reviews.map((user) => (
                           <div
                             key={user.id}
@@ -132,15 +142,37 @@ export default function SocialMediaMarketingPage() {
                     </div>
                   </div>
 
-                  <div className="col-md-12 col-lg-6 text-center mt-smd-5">
-                    <Image
-                      src="/assets/images/demo-fancy/services/social-media-marketing.svg"
-                      width={420}
-                      height={420}
-                      alt="Social Media Marketing"
+                  <div className="col-md-12 col-lg-6 text-lg-end text-center mt-smd-5">
+                    <div
                       className="wow fadeInUp"
-                      style={{ maxWidth: "88%", height: "auto" }}
-                    />
+                      style={{
+                        display: "block",
+                        width: "100%",
+                        padding: "12px",
+                        borderRadius: "30px",
+                        background:
+                          "linear-gradient(135deg, rgba(231, 87, 120, 0.18) 0%, rgba(136, 118, 255, 0.2) 100%)",
+                        border: "1px solid rgba(136, 118, 255, 0.24)",
+                        boxShadow:
+                          "0 28px 60px rgba(55, 43, 142, 0.14), inset 0 1px 0 rgba(255,255,255,0.55)",
+                      }}
+                    >
+                      <div
+                        style={{
+                          borderRadius: "24px",
+                          overflow: "hidden",
+                          background: "#fff",
+                        }}
+                      >
+                        <Image
+                          src="/assets/images/demo-fancy/portfolio/social-media-market.png"
+                          width={1200}
+                          height={1200}
+                          alt="Social Media Marketing"
+                          style={{ maxWidth: "100%", height: "auto", display: "block" }}
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -156,8 +188,8 @@ export default function SocialMediaMarketingPage() {
               id="services"
             >
               <div className="container position-relative">
-                <div className="row mb-60 mb-sm-40">
-                  <div className="col-lg-8">
+                <div className="row mb-40 mb-sm-30">
+                  <div className="col-lg-8 social-services-heading">
                     <h2 className="section-caption mb-2 mb-xs-0">Social Media Marketing</h2>
                     <p style={{ color: "white" }} className="section-title mb-0 mb-sm-20">
                       Creative campaigns that move
@@ -179,16 +211,28 @@ export default function SocialMediaMarketingPage() {
 
                 <div className="row">
                   {capabilityCards.map((item) => (
-                    <div key={item.title} className="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
+                    <div key={item.title} className="col-md-6 col-lg-3 d-flex align-items-stretch mb-3">
                       <div
                         className="services-5-item service-feature-card d-flex align-items-stretch text-center text-xl-start w-100"
                         style={{
-                          padding: 18,
+                          padding: 16,
                           backgroundColor: "#051D55",
                           border: "1px solid rgb(95, 35, 186)",
                         }}
                       >
                         <div className="w-100">
+                          <div className={`social-service-visual social-service-visual-${item.accent}`}>
+                            <Image
+                              src={item.image}
+                              alt={item.title}
+                              width={540}
+                              height={220}
+                              className="social-service-image"
+                            />
+                            <div className="social-service-visual-overlay">
+                              <span className="social-service-chip">{item.metric}</span>
+                            </div>
+                          </div>
                           <h4 className="services-6-title text-white">{item.title}</h4>
                           <p className="services-5-text services-5-text-responsive text-white mb-0">
                             {item.text}
@@ -286,3 +330,22 @@ export default function SocialMediaMarketingPage() {
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
