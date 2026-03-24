@@ -1,4 +1,4 @@
-import Footer6 from "@/components/footers/Footer6";
+﻿import Footer6 from "@/components/footers/Footer6";
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
@@ -26,6 +26,10 @@ export default function FancyServicesPage() {
           <main id="main">
             {/* your team section */}
             <section
+              style={{
+                background:
+                  "radial-gradient(circle at 14% 18%, rgba(231, 87, 120, 0.08) 0%, rgba(231, 87, 120, 0) 26%), radial-gradient(circle at 88% 24%, rgba(136, 118, 255, 0.12) 0%, rgba(136, 118, 255, 0) 28%), linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%)",
+              }}
               className={`scrollSpysection mt-5 service-large-sections`}
               id="about"
             >
@@ -49,7 +53,7 @@ export default function FancyServicesPage() {
                       </span>
                     </h1>
                     <p className="wow fadeInUp fs-hero-desc no-margin">
-                      Build Powerful, Scalable, and User-Friendly Mobile Apps.
+                      Build Powerful, Scalable, and User-FriendlyÂ MobileÂ Apps.
                     </p>
                     <p className="wow fadeInUp info-text no-margin">
                       Start your journey with a free 30 minute consultation.
@@ -61,7 +65,7 @@ export default function FancyServicesPage() {
                           key={i}
                           style={{ color: "#ffae00", fontSize: "24px" }}
                         >
-                          ★
+                          {"\u2605"}
                         </span>
                       ))}
                     </div>
@@ -138,7 +142,7 @@ export default function FancyServicesPage() {
                       </h2>
                       <p
                         style={{ color: "white", fontSize: "40px !important" }}
-                        className="section-title mb-0 mb-sm-20"
+              className="section-title mb-0 mb-sm-20"
                       >
                         Our SEO
                       </p>
@@ -207,6 +211,7 @@ export default function FancyServicesPage() {
             </section>
             {/* process start */}
             <section
+
               className={`scrollSpysection  py-5${
                 dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
               } bg-scroll`}
@@ -229,9 +234,9 @@ export default function FancyServicesPage() {
                           color: "#7E7E7E",
                           fontSize: "16px !important",
                         }}
-                        className="mb-0 mb-sm-20 text-center fw-bolder"
+              className="mb-0 mb-sm-20 text-center fw-bolder"
                       >
-                        Here’s how easy it is to get started with holapep’s
+                        Hereâ€™s how easy it is to get started with holapepâ€™s
                         staff augmentation services
                       </p>
                     </div>
@@ -287,6 +292,7 @@ export default function FancyServicesPage() {
             </section> */}
             {/* why chose us  */}
             <section
+
               className={`scrollSpysection pb-5 mt-5 service-large-sections`}
               id="about"
             >
@@ -309,7 +315,7 @@ export default function FancyServicesPage() {
                       Why Choose Us?
                     </h1>
                     <p className="wow fadeInUp work-descr">
-                      Here’s how easy it is to get started with holapep’s <br />{" "}
+                      Hereâ€™s how easy it is to get started with holapepâ€™s <br />{" "}
                       staff augmentation services
                     </p>
                     <div className="mb-4 wow fadeInUp d-flex align-items-center justify-items-center gap-3">
@@ -416,3 +422,7 @@ export default function FancyServicesPage() {
     </>
   );
 }
+
+
+
+

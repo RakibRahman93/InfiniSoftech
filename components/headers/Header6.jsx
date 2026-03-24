@@ -60,7 +60,7 @@ export default function Header6({ links }) {
                 onClick={togglePopup}
                 className="header-mobile-cta"
               >
-                Book A Free Call
+                Book A Free Strategy Call
               </button>
             </li>
           </ul>
@@ -68,7 +68,7 @@ export default function Header6({ links }) {
 
         {/* Right button */}
         <div
-          className="inner-nav desktop-nav header-cta-wrap"
+          className="inner-nav desktop-nav header-cta-wrap header-cta-glitter"
           style={{ display: "flex", alignItems: "center" }}
         >
           <PopupWrapper />

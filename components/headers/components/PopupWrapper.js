@@ -4,7 +4,7 @@ import Form from "../components/Form";
 import Popup from "./popup";
 
 export function PopupWrapper({
-  buttonText = "Book A Free Call",
+  buttonText = "Book A Free Strategy Call",
   plan,
   className = "",
   minWidth = "",
@@ -25,22 +25,21 @@ export function PopupWrapper({
 
   return (
     <>
-      <div className={className}>
+      <div className={`cta-glitter-wrap ${className}`.trim()}>
         <button
           type="button"
           onClick={togglePopup}
-          className={`btn-lg fw-semibold text-white shadow-sm 
-            ${isFullWidth ? "w-100" : "w-md-auto"}`}
+          className={`btn-lg fw-semibold text-white shadow-sm cta-glitter-button
+             ${isFullWidth ? "w-100" : "w-md-auto"}`}
           style={{
             borderRadius: "50px",
             background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
             border: "none",
-            minWidth: isFullWidth ? "100%" : "14rem",
-            padding: "12px 26px",
+            minWidth: isFullWidth ? "100%" : minWidth || "14rem",
+            padding: padding || "12px 26px",
             fontFamily: "Poppins, sans-serif",
             fontWeight: "600",
             height: height,
-            padding: padding,
           }}
         >
           {currentButtonText}
@@ -53,7 +52,7 @@ export function PopupWrapper({
         onClose={handlePopupClose}
         plan={plan}
       >
-        <Form onSuccess={handlePopupClose} />
+        <Form onSuccess={handlePopupClose} plan={plan} />
       </Popup>
     </>
   );

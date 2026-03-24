@@ -66,7 +66,8 @@ export default function Portfolio({
             {displayedProjects.map((item, index) => (
               <li
                 key={index}
-                className={`work-item mix ${item.categories.join(" ")}`}
+                className={`work-item mix wow fadeInRightShort ${item.categories.join(" ")}`}
+                data-wow-delay={`${0.08 + index * 0.08}s`}
               >
                 <div>
                   {item.lightbox ? (
@@ -111,8 +112,20 @@ export default function Portfolio({
                         />
                       </div>
                       <div className="work-intro text-start">
+                        <div className="work-meta-row">
+                          <span className="work-meta-chip">
+                            {item.Client || item.categories?.[0] || "Project"}
+                          </span>
+                          <span className="work-meta-date">{item.Date || "Recent"}</span>
+                        </div>
                         <h3 className="work-title">{item.title}</h3>
                         <div className="work-descr">{item.description}</div>
+                        <p className="work-summary">
+                          {item.Description || item.description}
+                        </p>
+                        <div className="work-cta-row">
+                          <span className="work-cta-pill">View Project</span>
+                        </div>
                       </div>
                     </Link>
                   )}
@@ -132,7 +145,8 @@ export default function Portfolio({
               borderRadius: "50px",
               padding: "13px 28px",
               minWidth: "15rem",
-              fontWeight: "700",
+              fontFamily: "Raleway, sans-serif",
+              fontWeight: "600",
               background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
               border: "none",
               color: "#fff",
@@ -148,13 +162,20 @@ export default function Portfolio({
           height: 100%;
         }
 
+        #work-grid.work-grid-fancy .work-item {
+          display: flex;
+        }
+
         #work-grid.work-grid-fancy .work-item a {
           height: 100%;
+          width: 100%;
           display: flex;
           flex-direction: column;
           background: #ffffff !important;
           border: none;
           box-shadow: var(--box-shadow-block);
+          border-radius: 18px;
+          overflow: hidden;
         }
 
         #work-grid.work-grid-fancy .work-img {
@@ -167,20 +188,94 @@ export default function Portfolio({
         }
 
         #work-grid.work-grid-fancy .work-intro {
-          min-height: 92px;
-          padding: 22px 22px 20px !important;
+          min-height: 250px;
+          padding: 20px 22px 22px !important;
           background: #ffffff;
           backdrop-filter: none;
           -webkit-backdrop-filter: none;
+          display: flex;
+          flex-direction: column;
+        }
+
+        #work-grid.work-grid-fancy .work-meta-row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          margin-bottom: 14px;
+          color: #5f6f91;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+
+        #work-grid.work-grid-fancy .work-meta-chip {
+          display: inline-flex;
+          align-items: center;
+          padding: 8px 12px;
+          border-radius: 999px;
+          background: #eef3ff;
+          color: #31436f;
+          letter-spacing: 0.08em;
+          line-height: 1;
+        }
+
+        #work-grid.work-grid-fancy .work-meta-date {
+          flex-shrink: 0;
         }
 
         #work-grid.work-grid-fancy .work-title {
           color: #1c1c57;
           font-weight: 600;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          margin-bottom: 8px !important;
+          line-height: 1.12;
         }
 
         #work-grid.work-grid-fancy .work-descr {
           color: #536174;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          font-size: 15px;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        #work-grid.work-grid-fancy .work-summary {
+          color: #6c7696;
+          font-size: 14px;
+          line-height: 1.55;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          margin-bottom: 20px;
+        }
+
+        #work-grid.work-grid-fancy .work-cta-row {
+          margin-top: auto;
+        }
+
+        #work-grid.work-grid-fancy .work-cta-pill {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          min-height: 3rem;
+          padding: 0 20px;
+          border-radius: 12px;
+          background: linear-gradient(90deg, #e75778 0%, #8876ff 100%);
+          color: #ffffff;
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: 0.01em;
+          box-shadow: 0 14px 30px rgba(100, 74, 223, 0.18);
         }
 
         @media (max-width: 767.98px) {
@@ -194,8 +289,13 @@ export default function Portfolio({
           }
 
           #work-grid.work-grid-fancy .work-intro {
-            min-height: 74px;
-            padding: 16px 16px 15px !important;
+            min-height: 220px;
+            padding: 16px 16px 18px !important;
+          }
+
+          #work-grid.work-grid-fancy .work-meta-row {
+            margin-bottom: 12px;
+            font-size: 11px;
           }
 
           #work-grid.work-grid-fancy .work-title {
@@ -207,6 +307,19 @@ export default function Portfolio({
           #work-grid.work-grid-fancy .work-descr {
             font-size: 13px !important;
             line-height: 1.45 !important;
+          }
+
+          #work-grid.work-grid-fancy .work-summary {
+            font-size: 13px;
+            line-height: 1.5;
+            -webkit-line-clamp: 3;
+            margin-bottom: 16px;
+          }
+
+          #work-grid.work-grid-fancy .work-cta-pill {
+            width: 100%;
+            min-height: 2.85rem;
+            font-size: 14px;
           }
         }
       `}</style>

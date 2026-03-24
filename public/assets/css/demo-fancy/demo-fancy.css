@@ -281,6 +281,109 @@
 .theme-fancy .main-nav.dark .inner-nav ul li a:not(.no-hover):before {
   background: var(--color-primary-1-a);
 }
+.theme-fancy .cta-glitter-wrap > .cta-glitter-button,
+.theme-fancy a.btn:not(.no-hover),
+.theme-fancy button.btn,
+.theme-fancy .btn-gradient-custom,
+.theme-fancy .cta-glitter-link,
+.theme-fancy .header-cta-glitter > div > button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.32s ease,
+    filter 0.32s ease;
+}
+.theme-fancy .cta-glitter-wrap > .cta-glitter-button::before,
+.theme-fancy a.btn:not(.no-hover)::before,
+.theme-fancy button.btn::before,
+.theme-fancy .btn-gradient-custom::before,
+.theme-fancy .cta-glitter-link::before,
+.theme-fancy .header-cta-glitter > div > button::before {
+  content: "";
+  position: absolute;
+  inset: -35% auto -35% -18%;
+  width: 34%;
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.18) 35%,
+    rgba(255, 255, 255, 0.82) 50%,
+    rgba(255, 255, 255, 0.18) 65%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-180%) rotate(16deg);
+  opacity: 0;
+  transition:
+    transform 0.72s ease,
+    opacity 0.32s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+.theme-fancy .cta-glitter-wrap > .cta-glitter-button::after,
+.theme-fancy a.btn:not(.no-hover)::after,
+.theme-fancy button.btn::after,
+.theme-fancy .btn-gradient-custom::after,
+.theme-fancy .cta-glitter-link::after,
+.theme-fancy .header-cta-glitter > div > button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 22% 36%, rgba(255, 255, 255, 0.95) 0 1.5px, transparent 2.2px),
+    radial-gradient(circle at 52% 24%, rgba(255, 255, 255, 0.88) 0 1.8px, transparent 2.5px),
+    radial-gradient(circle at 78% 62%, rgba(255, 255, 255, 0.92) 0 1.6px, transparent 2.3px),
+    radial-gradient(circle at 68% 34%, rgba(255, 255, 255, 0.72) 0 1.2px, transparent 2px);
+  opacity: 0;
+  transform: scale(0.96);
+  transition:
+    opacity 0.24s ease,
+    transform 0.32s ease;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  z-index: 2;
+}
+.theme-fancy .cta-glitter-wrap > .cta-glitter-button:hover,
+.theme-fancy a.btn:not(.no-hover):hover,
+.theme-fancy button.btn:hover,
+.theme-fancy .btn-gradient-custom:hover,
+.theme-fancy .cta-glitter-link:hover,
+.theme-fancy .header-cta-glitter > div > button:hover {
+  transform: translateY(-1px);
+  filter: saturate(1.08);
+  box-shadow:
+    0 16px 34px rgba(104, 90, 211, 0.34),
+    0 0 22px rgba(231, 87, 120, 0.16),
+    0 0 30px rgba(136, 118, 255, 0.18);
+}
+.theme-fancy .cta-glitter-wrap > .cta-glitter-button:hover::before,
+.theme-fancy a.btn:not(.no-hover):hover::before,
+.theme-fancy button.btn:hover::before,
+.theme-fancy .btn-gradient-custom:hover::before,
+.theme-fancy .cta-glitter-link:hover::before,
+.theme-fancy .header-cta-glitter > div > button:hover::before {
+  opacity: 1;
+  transform: translateX(420%) rotate(16deg);
+}
+.theme-fancy .cta-glitter-wrap > .cta-glitter-button:hover::after,
+.theme-fancy a.btn:not(.no-hover):hover::after,
+.theme-fancy button.btn:hover::after,
+.theme-fancy .btn-gradient-custom:hover::after,
+.theme-fancy .cta-glitter-link:hover::after,
+.theme-fancy .header-cta-glitter > div > button:hover::after {
+  opacity: 0.9;
+  transform: scale(1);
+}
+.theme-fancy .cta-glitter-wrap > .cta-glitter-button:focus-visible,
+.theme-fancy a.btn:not(.no-hover):focus-visible,
+.theme-fancy button.btn:focus-visible,
+.theme-fancy .btn-gradient-custom:focus-visible,
+.theme-fancy .cta-glitter-link:focus-visible,
+.theme-fancy .header-cta-glitter > div > button:focus-visible {
+  outline: 2px solid rgba(136, 118, 255, 0.34);
+  outline-offset: 3px;
+}
 .theme-fancy .mn-sub {
   background: rgba(74, 82, 107, 0.9927);
 }
@@ -1324,7 +1427,13 @@ h5 {
   font-size: 11px;
   line-height: 18px;
 }
-.p-0{
+  .p-0{
   padding: none;
-}
+  }
+  .website-dev-hero-container {
+    padding-top: 244px !important;
+  }
+  .website-dev-hero-copy {
+    padding-top: 28px !important;
+  }
 }

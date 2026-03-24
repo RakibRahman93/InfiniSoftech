@@ -1,7 +1,7 @@
 "use client";
 
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const developmentPlans = [
   {
@@ -351,6 +351,115 @@ const marketingPlans = [
   },
 ];
 
+const ecommercePlans = [
+  {
+    title: "Starter Store",
+    badge: "Best For Launch",
+    badgeBackground:
+      "linear-gradient(30deg, rgba(76, 151, 255, 0.9) 0%, rgba(82, 100, 255, 0.9) 100%)",
+    price: "$1,299",
+    delivery: "2-3 Weeks",
+    description:
+      "A focused ecommerce setup for brands that need a polished storefront, reliable checkout, and a fast path to launch.",
+    features: [
+      "Up to 15 Product Listings",
+      "Responsive Storefront Design",
+      "Product & Collection Setup",
+      "Cart & Checkout Configuration",
+      "Payment Gateway Integration",
+      "Basic Shipping & Tax Setup",
+      "Core Speed Optimization",
+      "Launch Support",
+    ],
+    pages: [
+      "Homepage",
+      "Collection Page",
+      "Product Page",
+      "Cart",
+      "Checkout",
+      "About",
+      "Contact",
+      "Policy Pages",
+    ],
+    stack: ["Shopify / Next.js", "Payment Setup", "Responsive QA"],
+  },
+  {
+    title: "Growth Store",
+    badge: "Most Popular",
+    badgeBackground: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+    price: "$2,490",
+    delivery: "3-5 Weeks",
+    description:
+      "Built for growing ecommerce brands that need stronger merchandising, richer product pages, and a better conversion path.",
+    features: [
+      "Up to 50 Product Listings",
+      "Custom Storefront Sections",
+      "Conversion-Focused Product Pages",
+      "Upsell & Cross-Sell Placement",
+      "Email Capture Integration",
+      "Shipping, Tax & Discount Setup",
+      "Analytics & Event Tracking",
+      "Performance Optimization",
+      "Post-Launch Support Window",
+    ],
+    pages: [
+      "Homepage",
+      "Collection Pages",
+      "Product Templates",
+      "Cart",
+      "Checkout",
+      "About",
+      "Contact",
+      "FAQ",
+      "Policy Pages",
+      "Campaign Landing Page",
+    ],
+    stack: ["Shopify / Next.js", "Analytics", "Conversion Optimization"],
+    featured: true,
+  },
+  {
+    title: "Scale Store",
+    badge: "Best For Scale",
+    badgeBackground:
+      "linear-gradient(30deg, rgba(168, 85, 247, 0.92) 0%, rgba(99, 102, 241, 0.92) 100%)",
+    price: "$3,990",
+    delivery: "5-7 Weeks",
+    description:
+      "For established ecommerce brands that want a premium storefront, deeper customization, and a store built for higher order volume.",
+    features: [
+      "Large Catalog Architecture",
+      "Advanced Custom Storefront Sections",
+      "High-Converting Product Templates",
+      "Conversion-Focused Cart Experience",
+      "Automation / CRM-Ready Setup",
+      "Advanced Analytics Implementation",
+      "Technical SEO Review",
+      "Cross-Device Launch QA",
+      "Priority Post-Launch Support",
+    ],
+    pages: [
+      "Homepage",
+      "Multi-Collection Structure",
+      "Advanced Product Templates",
+      "Cart & Checkout",
+      "Campaign Landing Pages",
+      "About",
+      "Contact",
+      "Help Center / FAQ",
+      "Policy Pages",
+      "Retention / Offer Pages",
+    ],
+    stack: ["Custom Ecommerce Build", "Advanced Tracking", "Scalable Storefront UX"],
+  },
+];
+
+const pricingTabs = [
+  { id: "design", label: "Design", plans: designPlans },
+  { id: "development", label: "Development", plans: developmentPlans },
+  { id: "ecommerce", label: "Ecommerce", plans: ecommercePlans },
+  { id: "marketing", label: "Marketing", plans: marketingPlans },
+];
+
 const premiumFeatureExplanations = {
   "12-20 Pages":
     "A larger scope for advanced websites or platforms with multiple customer-facing and internal screens.",
@@ -524,12 +633,32 @@ function FeatureIcon() {
 
 export default function PricingShowcase() {
   const [activeTab, setActiveTab] = useState("development");
-  const plans =
-    activeTab === "development"
-      ? developmentPlans
-      : activeTab === "marketing"
-        ? marketingPlans
-        : designPlans;
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const requestedTab = params.get("tab");
+    const validTabs = new Set(pricingTabs.map((tab) => tab.id));
+    if (requestedTab && validTabs.has(requestedTab)) {
+      setActiveTab(requestedTab);
+    }
+  }, []);
+
+  const activeConfig =
+    pricingTabs.find((tab) => tab.id === activeTab) ||
+    pricingTabs.find((tab) => tab.id === "development");
+  const plans = activeConfig.plans;
+
+  const handleTabChange = (tabId) => {
+    setActiveTab(tabId);
+
+    if (typeof window === "undefined") return;
+
+    const url = new URL(window.location.href);
+    url.searchParams.set("tab", tabId);
+    url.hash = "pricing";
+    window.history.replaceState({}, "", url.toString());
+  };
 
   return (
     <section
@@ -542,7 +671,10 @@ export default function PricingShowcase() {
     >
       <div className="container position-relative">
         <div className="row mb-50 mb-sm-40">
-          <div className="col-lg-8 offset-lg-2 text-center">
+          <div
+            className="col-lg-8 offset-lg-2 text-center wow fadeInUp"
+            data-wow-delay="0.08s"
+          >
             <div
               className="d-inline-flex align-items-center justify-content-center mb-20"
               style={{
@@ -576,7 +708,10 @@ export default function PricingShowcase() {
         </div>
 
         <div className="row mb-40 mb-sm-30">
-          <div className="col-12 d-flex justify-content-center">
+          <div
+            className="col-12 d-flex justify-content-center wow fadeInUp"
+            data-wow-delay="0.14s"
+          >
             <div
               className="d-inline-flex align-items-center pricing-showcase-tabs"
               style={{
@@ -585,18 +720,17 @@ export default function PricingShowcase() {
                 background: "rgba(5, 29, 85, 0.45)",
                 border: "1px solid rgba(136, 118, 255, 0.35)",
                 gap: "6px",
+                flexWrap: "wrap",
+                justifyContent: "center",
               }}
             >
-              {[
-                { id: "design", label: "Design" },
-                { id: "development", label: "Development" },
-                { id: "marketing", label: "Marketing" },
-              ].map((tab) => (
+              {pricingTabs.map((tab) => (
                 <button
                   key={tab.id}
                   type="button"
-                  onClick={() => setActiveTab(tab.id)}
+                  onClick={() => handleTabChange(tab.id)}
                   className="pricing-showcase-tab-button"
+                  aria-pressed={activeTab === tab.id}
                   style={{
                     border: "none",
                     borderRadius: "999px",
@@ -624,8 +758,11 @@ export default function PricingShowcase() {
         </div>
 
         <div className="row g-4">
-          {plans.map((plan) => (
-            <div key={plan.title} className="col-lg-4 d-flex">
+          {plans.map((plan, index) => (
+            <div
+              key={`${activeTab}-${plan.title}`}
+              className="col-lg-4 d-flex"
+            >
               <div
                 className="w-100 h-100 d-flex flex-column pricing-showcase-card"
                 style={{

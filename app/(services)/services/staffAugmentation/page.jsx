@@ -1,4 +1,4 @@
-import Footer6 from "@/components/footers/Footer6";
+﻿import Footer6 from "@/components/footers/Footer6";
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
@@ -29,6 +29,10 @@ export default function FancyServicesPage() {
           <main id="main">
             {/* your team section */}
             <section
+              style={{
+                background:
+                  "radial-gradient(circle at 14% 18%, rgba(231, 87, 120, 0.08) 0%, rgba(231, 87, 120, 0) 26%), radial-gradient(circle at 88% 24%, rgba(136, 118, 255, 0.12) 0%, rgba(136, 118, 255, 0) 28%), linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%)",
+              }}
               className={`scrollSpysection mt-5 service-large-sections`}
               id="about"
             >
@@ -52,7 +56,7 @@ export default function FancyServicesPage() {
                       </span>
                     </h1>
                     <p className="wow fadeInUp fs-hero-desc no-margin">
-                      Build Powerful, Scalable, and User-Friendly Apps & Websites.
+                      Build Powerful, Scalable, and User-FriendlyÂ Apps & Websites.
                     </p>
                     <p className="wow fadeInUp info-text no-margin">
                       Start your journey with a free 30 minute consultation.
@@ -64,7 +68,7 @@ export default function FancyServicesPage() {
                           key={i}
                           style={{ color: "#ffae00", fontSize: "24px" }}
                         >
-                          ★
+                          {"\u2605"}
                         </span>
                       ))}
                     </div>
@@ -142,7 +146,7 @@ export default function FancyServicesPage() {
                       </h2>
                       <p
                         style={{ color: "white", fontSize: "40px !important" }}
-                        className="section-title mb-0"
+              className="section-title mb-0"
                       >
                         Why Staff
                       </p>
@@ -214,6 +218,7 @@ export default function FancyServicesPage() {
             </section>
             {/* process start */}
             <section
+
               className={`scrollSpysection  py-5${
                 dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
               } bg-scroll`}
@@ -236,7 +241,7 @@ export default function FancyServicesPage() {
                           color: "#7E7E7E",
                           fontSize: "16px !important",
                         }}
-                        className="mb-0 mb-sm-20 text-center fw-bolder"
+              className="mb-0 mb-sm-20 text-center fw-bolder"
                       >
                         Getting started with InfiniSoft's staff augmentation is
                         quick and seamless. Here's how:
@@ -285,6 +290,7 @@ export default function FancyServicesPage() {
             </section>
             {/* Technologies start */}
             <section
+
               className={`scrollSpysection py-5${
                 dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
               } bg-scroll`}
@@ -307,7 +313,7 @@ export default function FancyServicesPage() {
                           color: "#7E7E7E",
                           fontSize: "16px !important",
                         }}
-                        className="mb-0 mb-sm-20 text-center fw-bolder w-smd-100 w-lg-70"
+              className="mb-0 mb-sm-20 text-center fw-bolder w-smd-100 w-lg-70"
                       >
                         At InfiniSoft Technology, we offer expertise across a
                         diverse range of technologies, ensuring the perfect fit
@@ -388,7 +394,7 @@ export default function FancyServicesPage() {
                           fontSize: "18px !important",
                           fontWeight: "400 !important",
                         }}
-                        className="section-title mb-0 mb-sm-20 text-center"
+              className="section-title mb-0 mb-sm-20 text-center"
                       >
                         You Can Expect from Our Teams
                       </p>
@@ -495,6 +501,7 @@ export default function FancyServicesPage() {
             </div>
 
             <section
+
               className={`scrollSpysection ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
@@ -503,6 +510,7 @@ export default function FancyServicesPage() {
               <TechServiceCost />
             </section>
             <section
+
               className={`page-section  scrollSpysection  ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
@@ -548,3 +556,7 @@ export default function FancyServicesPage() {
     </>
   );
 }
+
+
+
+

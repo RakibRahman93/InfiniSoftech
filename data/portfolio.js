@@ -411,6 +411,7 @@ export const portfolios6 = [
     Client: "International",
     Services:
       "Branding, UI/UX redesign, Wordpress Development",
+    website: "thoseguysprint.com",
     // Description: ,
     // mockupType: "phone",
   },

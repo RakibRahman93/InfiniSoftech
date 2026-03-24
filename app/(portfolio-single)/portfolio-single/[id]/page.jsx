@@ -142,6 +142,30 @@ export default function FancyPortfolioSinglePage({ params }) {
                                 {website}
                               </a>
                             </div>
+                            <div className="mt-20">
+                              <a
+                                href={`https://${website}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-mod btn-large btn-round"
+                                style={{
+                                  display: "inline-flex",
+                                  alignItems: "center",
+                                  justifyContent: "center",
+                                  minWidth: "14rem",
+                                  padding: "13px 28px",
+                                  borderRadius: "999px",
+                                  background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
+                                  border: "none",
+                                  color: "#fff",
+                                  fontWeight: 600,
+                                  textDecoration: "none",
+                                  boxShadow: "0 16px 34px rgba(100, 74, 223, 0.18)",
+                                }}
+                              >
+                                View Live Site
+                              </a>
+                            </div>
                           </>
                         ) : null}
                         {/* <hr className="mb-20" />
