@@ -28,6 +28,7 @@ export default function FancyPortfolioSinglePage({ params }) {
     website,
     imgSrc,
     imgSrc2,
+    imgSrc3,
     imgExtra,
     mockupType
   } = portfolioItem;
@@ -141,6 +142,30 @@ export default function FancyPortfolioSinglePage({ params }) {
                                 {website}
                               </a>
                             </div>
+                            <div className="mt-20">
+                              <a
+                                href={`https://${website}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-mod btn-large btn-round"
+                                style={{
+                                  display: "inline-flex",
+                                  alignItems: "center",
+                                  justifyContent: "center",
+                                  minWidth: "14rem",
+                                  padding: "13px 28px",
+                                  borderRadius: "999px",
+                                  background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
+                                  border: "none",
+                                  color: "#fff",
+                                  fontWeight: 600,
+                                  textDecoration: "none",
+                                  boxShadow: "0 16px 34px rgba(100, 74, 223, 0.18)",
+                                }}
+                              >
+                                View Live Site
+                              </a>
+                            </div>
                           </>
                         ) : null}
                         {/* <hr className="mb-20" />
@@ -157,10 +182,11 @@ export default function FancyPortfolioSinglePage({ params }) {
                     {/* End Project Details */}
                     <div className="col-lg-8">
                       <div className="mb-n30">
+                       
                         {/* Photo Item */}
                         <div className="mb-30 wow fadeInUp">
                           <Image
-                            src={portfolioItem.imgExtra}
+                            src={portfolioItem.imgSrc}
                             className="round"
                             loading="lazy"
                             width={1200}
@@ -169,10 +195,10 @@ export default function FancyPortfolioSinglePage({ params }) {
                           />
                         </div>
                         {/* End Photo Item */}
-                        {/* Photo Item */}
-                        <div className="mb-30 wow fadeInUp">
+                         {/* Photo Item */}
+                         <div className="mb-30 wow fadeInUp">
                           <Image
-                            src={portfolioItem.imgSrc}
+                            src={portfolioItem.imgExtra}
                             className="round"
                             loading="lazy"
                             width={1200}
@@ -186,6 +212,18 @@ export default function FancyPortfolioSinglePage({ params }) {
                           <div className="mb-30 wow fadeInUp">
                             <Image
                               src={imgSrc2}
+                              className="round"
+                              loading="lazy"
+                              width={1200}
+                              height={800}
+                              alt="Image Description"
+                            />
+                          </div>
+                        )}
+                        {imgSrc3 && (
+                          <div className="mb-30 wow fadeInUp">
+                            <Image
+                              src={imgSrc3}
                               className="round"
                               loading="lazy"
                               width={1200}

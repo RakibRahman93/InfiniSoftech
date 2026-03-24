@@ -19,7 +19,8 @@ export default function TechServiceCost() {
             className="mb-0 portfolio-1-descr"
             style={{ fontWeight: "500", lineHeight: "25px" }}
           >
-            Offshore tech staffing often comes with hidden fees, leaving clients frustrated and uncertain. At Infinisoft Technology , we do things differently. Our pricing is clear, fair, and transparent—because we believe that trust and honesty should be at the core of every partnership. No surprises, just reliable, top-tier talent. 🚀
+            {/* Offshore tech staffing often comes with hidden fees, leaving clients frustrated and uncertain. At Infinisoft Technology , we do things differently. Our pricing is clear, fair, and transparent—because we believe that trust and honesty should be at the core of every partnership.  */}
+            No surprises, just reliable, top-tier talent.
           </p>
         </div>
       </div>

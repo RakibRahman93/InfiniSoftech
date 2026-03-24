@@ -3,7 +3,8 @@ export const reviews = [
     { id: 2, name: 'Alice Smith', img: '/assets/images/reviews/2.jpg' },
     { id: 3, name: 'Michael Brown', img: '/assets/images/reviews/3.jpg' },
     { id: 4, name: 'Sophia Wilson', img: '/assets/images/reviews/4.png' },
-    { id: 4, name: 'Sophia Wilson', img: '/assets/images/reviews/5.jpg' },
+    { id: 5, name: 'Sophia Wilson', img: '/assets/images/reviews/5.jpg' },
+    { id: 6, name: 'Tera', img: '/assets/images/tera.jpg' },
   ];
 
 export const featureItems = [
@@ -115,22 +116,22 @@ export const features10 = [
   {
     id: 1,
     icon:"assets/images/check-data.svg",
-    text: "Get your customers engaged within the first 2 seconds of landing on your site!",
+    text: "Grab attention in the first 2 seconds.",
   },
   {
     id: 2,
     icon:"assets/images/check-data.svg",
-    text: "Build a website for your clients where they can easily navigate to purchase your services & products.",
+    text: "Guide visitors toward action.",
   },
   {
     id: 3,
     icon:"assets/images/check-data.svg",
-    text: "Stop assuming! Get insights from real data and grow your business with analytics.",
+    text: "Ditch assumptions—use real data to grow with analytics.",
   },
   {
     id: 4,
     icon:"assets/images/check-data.svg",
-    text: "Start small and eventually scale your business as you grow.",
+    text: "Improve now, scale later.",
   },
 ]
 

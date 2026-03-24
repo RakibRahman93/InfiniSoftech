@@ -14,13 +14,14 @@ export const metadata = {
 export default function Home6MainDemoMultiPage({}) {
   return (
     <>
+   
       <Toaster position="top-right" reverseOrder={false} />
       <div className="theme-fancy">
         <div className="page" id="top">
           <nav className="main-nav transparent stick-fixed wow-menubar wch-unset border-b">
             <Header6 links={fancyMultipage} />
           </nav>
-          <main id="main">
+          <main id="main" className="relative">
             <section
               className="home-section bg-scroll scrollSpysection"
               id="home"

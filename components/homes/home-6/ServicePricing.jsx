@@ -6,147 +6,212 @@ import { useState } from "react";
 
 export default function ServicePricing() {
   const [isYearly, setIsYearly] = useState(false);
+  const [showAllFeatures, setShowAllFeatures] = useState(false);
+  
+
+
+
+
+ const toggleShowAllFeatures  = () => {
+  setShowAllFeatures(!showAllFeatures);
+};
 
   return (
-    <div className="container">
+    <div className="container new-theme">
       <div className="row mb-50 mb-sm-30">
         <div className="col-md-8 offset-md-2 text-center">
           <h2 className="section-caption mb-0">Pricing</h2>
-          <h3 className="section-title-small mb-10">
-            🚀 Invest in Great Design
-          </h3>
-          <p
-            className="mb-0 portfolio-1-descr"
-            style={{ fontWeight: "500", lineHeight: "25px" }}
-          >
-            UI/UX packages that drive clarity, usability, and growth.
-          </p>
+
+          <div className="d-flex">
+            <img
+              src="/assets/images/rocket.png"
+              alt="rocket"
+              className="me-lg-2 img-fluid"
+              style={{ height: "3rem" }}
+            />
+            <h3 className="section-title-small mb-10">
+              Website Development Packages
+            </h3>
+          </div>
+          <div className="d-flex text-center justify-content-center align-items-center">
+            <img
+              className="img-fluid"
+              style={{ height: "40px" }}
+              src="/assets/images/g_base.png"
+              alt="g_base"
+            />
+            <p
+              className="mb-0 portfolio-1-descr"
+              style={{ fontWeight: "400", lineHeight: "25px" }}
+            >
+              We Offer 100% Money Back Guarantee On All Our Packages !
+            </p>
+          </div>
         </div>
       </div>
 
       <div className="row py-4">
         <div className="col-xl-12">
-          {/* Nav Tabs */}
-          {/* <div className="mb-20 mb-sm-20 text-center d-flex justify-content-center">
-            <ul
-              className="works-filter works-filter-fancy text-center mb-60 mb-sm-40 z-1 animate"
-              role="tablist"
-            >
-              <li
-                className="nav-item"
-                onClick={() => setIsYearly(false)}
-                role="presentation"
-              >
-                <a
-                  href="#tab-monthly"
-                  className={`nav-link ${!isYearly ? "active" : ""}`}
-                  data-bs-toggle="tab"
-                >
-                  Monthly
-                </a>
-              </li>
-              <li
-                className="nav-item"
-                onClick={() => setIsYearly(true)}
-                role="presentation"
-              >
-                <a
-                  href="#tab-annual"
-                  className={`nav-link ${isYearly ? "active" : ""}`}
-                  data-bs-toggle="tab"
-                >
-                  Yearly
-                </a>
-              </li>
-              
-            </ul>
-          </div> */}
-          {/* End Nav Tabs */}
-
           {/* Pricing Plans */}
           <div className="tab-content tpl-minimal-tabs-cont position-relative">
             <div className="tab-pane show active">
               <div className="row mt-n30">
                 {ServicePricingData.map((plan, index) => {
                   const updatePrice = isYearly ? plan.price * 12 : plan.price;
+
+                  const featuresToShow = showAllFeatures
+                    ? plan.features
+                    : plan.features.slice(0, 5);
+
+                  const isSecondColumn = index === 1;
+
                   return (
-                    <div key={index} className="col-md-6 col-lg-4">
-                      <div className="card card-pricing p-4 rounded-3 mb-20">
-                        <div className="d-flex align-items-center flex-row mb-20">
-                          <span className="fw-bold me-4 fs-30">
-                            {plan.title}
-                          </span>
-                          {plan.badge && (
-                            <span
-                              className={`badge text-white p-2 rounded-pill`}
-                              style={{
-                                backgroundColor: plan.bgColor,
-                                color: "white",
-                                fontSize: "10px",
-                              }}
-                            >
-                              {plan.badge}
-                            </span>
-                          )}
+                    <div key={index} className="col-md-6 col-lg-4 new-theme">
+                      <div
+                        className="card p-4 mb-20"
+                        style={{
+                          background: isSecondColumn
+                            ? "linear-gradient(135deg, #1a1a1a  0%, #5334A1  90%)"
+                            : "white",
+                          color: isSecondColumn ? "#fff" : "#000",
+                          boxShadow: isSecondColumn
+                            ? "0px 4px 19px 0px #000"
+                            : "0px 0px 19px 0px #ccc",
+                          borderRadius: "8px",
+                          zIndex: 1,
+                          border: "none",
+                          minHeight: showAllFeatures ? "105rem" : "48rem",
+                        }}
+                      >
+                        <div className="mb-20">
+                          <div className="">
+                            <img
+                              className="img-fluid"
+                              style={{ height: "40px" }}
+                              src="/assets/images/g_base.png"
+                              alt="g_base"
+                            />
+                          </div>
+                          <div className="d-flex align-items-center flex-row justify-content-between">
+                            <h4 className="fw-bold me-2 fs-30 Anton">
+                              {plan.title}
+                            </h4>
+                            {plan.badge && (
+                              <span
+                                className={`badge text-white p-3 rounded-pill Anton`}
+                                style={{
+                                  background: Array.isArray(plan.bgColor)
+                                    ? `linear-gradient(to bottom, ${plan.bgColor[0]} 0%, ${plan.bgColor[1]} 150%)`
+                                    : plan.bgColor,
+                                  color: "white",
+                                  fontSize: "14px",
+                                }}
+                              >
+                                {plan.badge}
+                              </span>
+                            )}
+                          </div>
                         </div>
-                        <p className="text-muted fs-6 m-h-30">
-                          {plan.description}
+                        <p
+                          className="fs-6 m-h-10"
+                          style={{ color: isSecondColumn ? "#fff" : "#000" }}
+                        >
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: plan.description._html,
+                            }}
+                          ></span>
                         </p>
                         <div className="d-flex align-items-end">
                           <span className="fs-2 fw-bold mb-30">$</span>
                           <span
-                            className="fw-bold"
+                            className="fw-bold Anton"
                             style={{ fontSize: "48px" }}
                           >
-                            {isYearly ? plan.price * 12 : plan.price}
+                            {updatePrice}
                           </span>
-                          {/* <span className="fs-6 text-muted ms-2">
-                            {isYearly ? "per year" : "per month"}
-                          </span> */}
                         </div>
 
                         <h5
                           className="mt-4"
-                          style={{ fontWeight: "500", color: "#464646" }}
+                          style={{
+                            fontWeight: "500",
+                            color: isSecondColumn ? "#fff" : "#464646",
+                          }}
                         >
                           Includes
                         </h5>
-                        <p className="work-descr" style={{ color: "#536174" }}>
+                        <p
+                          className="work-descr"
+                          style={{ color: isSecondColumn ? "#fff" : "#536174" }}
+                        >
                           Everything you get in this plan
                         </p>
 
                         <ul className="list-unstyled">
-                          {plan.features.map((feature, i) => (
+                          {featuresToShow.map((feature, i) => (
                             <li
                               key={i}
                               className="d-flex align-items-center mb-10"
                             >
-                              <i className="mi-check me-2 text-success"></i>{" "}
+                              <i
+                                className="mi-check me-2"
+                                style={{
+                                  color: isSecondColumn ? "#14F886" : "#159C7C",
+                                }}
+                              ></i>{" "}
                               {feature}
                             </li>
                           ))}
-                          {plan.disabledFeatures?.map((feature, i) => (
+                          {showAllFeatures && plan.disabledFeatures?.map((feature, i) => (
                             <li
                               key={i}
-                              className="d-flex align-items-baseline opacity-75"
+                              className={`d-flex align-items-baseline mb-10 ${
+                                isSecondColumn && feature ? "" : "opacity-75"
+                              }`}
                             >
                               <i className="mi-circle-error me-2 text-danger"></i>{" "}
-                              <span> {feature}</span>
+                              <span>{feature}</span>
                             </li>
                           ))}
                         </ul>
-
-                        <PopupWrapper
+                          {showAllFeatures && (
+                            <PopupWrapper
                           className="get-started-btn"
                           buttonText="Get Started"
                           plan={{ ...plan, price: updatePrice }}
                           isFullWidth={true}
                         />
+                          )}
+                        
                       </div>
                     </div>
                   );
                 })}
               </div>
+              {/* Centralized Toggle Button */}
+              {!showAllFeatures && (
+              <div
+                className="text-center mt-4 position-absolute start-50 translate-middle-x z-5"
+                style={{ zIndex: "999", bottom: "45px" }}
+              >
+                <button
+                  className="btn-lg fw-semibold text-white shadow-sm 
+            w-md-auto"
+                  style={{
+                    borderRadius: "50px",
+                    background:
+                      "linear-gradient(90deg, rgb(231, 87, 120) 0%, rgb(136, 118, 255) 100%)",
+                    border: "none",
+                    minWidth: "14rem",
+                    fontWeight: 600,
+                  }}
+                  onClick={toggleShowAllFeatures}
+                >
+                 See More
+                </button>
+              </div>
+            )}
             </div>
           </div>
           {/* End Pricing Plans */}

@@ -27,7 +27,7 @@ const ServiceMain = ({ src, title, text }) => (
           </div>
           <div className="services-5-body d-flex align-items-center">
             <div className="w-100">
-              <h4 className="services-6-title text-white pt-4">{title}</h4>
+              <h4 className="services-web-title text-white pt-4">{title}</h4>
               <p
                 style={{
                   fontWeight: "300",
@@ -99,7 +99,7 @@ export default function WebServices() {
         {webServicesData.map((service, index) => (
           <ServiceMain key={index} {...service} />
         ))}
-        
+
         {/* End Services Item */}
       </div>
     </>

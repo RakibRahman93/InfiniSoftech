@@ -4,15 +4,16 @@ import Popup from "@/components/headers/components/popup";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 import { features10 } from "@/data/features";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import Faqs from "../home-1/Faq";
-
-import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Portfolio from "./Portfolio";
 import Service from "./Service";
+import TechSolutions from "./TechSolutions";
 import Testimonials from "./Testimonials";
 import TestimonialsDark from "./TestimonialsDark";
 import TwoService from "./TwoService";
+import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 
 export default function Home6({ onePage = false, dark = false }) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -23,7 +24,7 @@ export default function Home6({ onePage = false, dark = false }) {
   return (
     <>
       {/* <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} /> */}
-      <section className={`scrollSpysection pb-5`} id="about">
+      <section className={`scrollSpysection pb-0`} id="about">
         <div className="pt-md-5 container position-relative">
           <div className="row mb-xs-40">
             {/* right section */}
@@ -39,28 +40,44 @@ export default function Home6({ onePage = false, dark = false }) {
 
             {/* left section */}
             <div className=" wow fadeInUp col-md-12 col-lg-6 pt-5 pb-lg-5">
-              <h2 className="section-caption mb-20 mb-xs-10 wow fadeInUp">
+              <h2 className="section-caption mb-10 mb-xs-10 wow fadeInUp">
                 Grow With Us
               </h2>
-              <h3 className="section-title-small  mb-30 mb-xs-20 wow fadeInUp">
-                Supercharge Sales with a Fast, Reliable Website Or A Mobile
-                App,&nbsp;
+              <h4
+                className="section-title-small mb-20 mb-xs-16 wow fadeInUp"
+                style={{ fontWeight: 600 }}
+              >
+                Spending On Ads But Still Not Getting Customers?
                 <span
-                  className="mark-decoration-3-wrap color-secondary-1-white section-title-small "
+                  className="mark-decoration-3-wrap color-secondary-1-white  "
                   style={{
                     background:
                       "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
-                    fontWeight: "bold",
+                    fontWeight: "normal",
+                    fontSize: "1.8rem",
+                    display: "block",
+                    marginTop: "8px",
                   }}
                 >
-                  Powered by Analytics!
+                  Your Website May Be The Problem.
                 </span>
-              </h3>
-              <h4> Your vision. Our technology. Limitless possibilities.</h4>
+              </h4>
+              <p
+                className="section-descr mb-30 wow fadeInUp"
+                style={{ maxWidth: "560px", color: "#4C4F75", lineHeight: "28px" }}
+              >
+                Our UI/UX audit shows what is blocking conversions and how to
+                fix it, so your website can support sales instead of wasting
+                ad spend.
+              </p>
+              {/* <h4> Your vision. Our technology. Limitless possibilities.</h4> */}
               {/* Features List */}
-              <div className="row features-list">
+              <div
+                style={{ paddingBottom: "28px" }}
+                className="row features-list"
+              >
                 {/* Features List Item */}
                 {features10.map((feature, index) => (
                   <div
@@ -68,7 +85,11 @@ export default function Home6({ onePage = false, dark = false }) {
                     className="col-sm-6 col-lg-12 col-xl-6 d-flex mb-3"
                   >
                     <div className="features-list-icon">
-                      <img src={feature.icon} alt="Image Description" />
+                      <img
+                        style={{ width: "20px" }}
+                        src={feature.icon}
+                        alt="Image Description"
+                      />
                     </div>
                     <div
                       style={{
@@ -84,9 +105,24 @@ export default function Home6({ onePage = false, dark = false }) {
                 {/* End Features List Item */}
               </div>
               <div className="local-scroll wow fadeInUp" data-wow-delay="0.12s">
-                <>
-                  <PopupWrapper buttonText="Book A Free Call" />
-                </>
+                <button
+                  type="button"
+                  onClick={togglePopup}
+                  className="btn-lg fw-semibold text-white shadow-sm w-md-auto"
+                  style={{
+                    borderRadius: "50px",
+                    background:
+                      "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
+                    border: "none",
+                    minWidth: "15rem",
+                    padding: "13px 28px",
+                    fontWeight: "700",
+                    textDecoration: "none",
+                    boxShadow: "0 16px 34px rgba(100, 74, 223, 0.22)",
+                  }}
+                >
+                  Book A Free Audit Call
+                </button>
               </div>
             </div>
           </div>
@@ -94,19 +130,23 @@ export default function Home6({ onePage = false, dark = false }) {
           {/* <About /> */}
           {/* End Images Composition */}
         </div>
-      </section>
-      <section
-        style={{ backgroundColor: "#FFF7FF" }}
-        className={`page-section  ${dark ? "bg-dark-1 light-content" : ""} `}
+        <section
+        style={{
+          background: "#1C1B2A",
+        }}
+        className={`page-section testimonials-showcase-section ${dark ? "bg-dark-1 light-content" : ""} `}
       >
         {dark ? <TestimonialsDark /> : <Testimonials />}
       </section>
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
+      </section>
+      {/* Our Services */}
+      
       <section
         style={{
-          background: "linear-gradient(-80deg, #621ABE 0%, #051D55 50%)",
+          background:
+            "linear-gradient(180deg, #0a2a78 0%, #102f78 16%, #1d357f 34%, #2c3d8d 62%, #3b4aa2 100%)",
         }}
-        className={`page-section scrollSpysection  ${
+        className={`page-section scrollSpysection services-home-section ${
           dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
         } bg-scroll`}
         id="services"
@@ -116,7 +156,7 @@ export default function Home6({ onePage = false, dark = false }) {
             <div className="col-md-8 col-lg-6">
               <h2 className="section-caption mb-20 mb-xs-10">Our Services</h2>
               <h3
-                style={{ color: "white" }}
+                style={{ color: "white", fontWeight: 600 }}
                 className="section-title-small mb-0 mb-sm-20"
               >
                 Building The Future Of Your Business,
@@ -199,12 +239,250 @@ export default function Home6({ onePage = false, dark = false }) {
           <Service />
         </div>
       </section>
-      {/* Features Section */}
+      
       {/* <section
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""} `}
       >
         <Features />
       </section> */}
+      <section
+        className={`scrollSpysection py-6${
+          dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
+        } bg-scroll`}
+        id="technologies"
+        style={{ paddingTop: "110px", paddingBottom: "110px" }}
+      >
+        <div className="container position-relative">
+          <div className="row mb-60 mb-sm-40">
+            <div className="container">
+              <div className="d-flex flex-column justify-center align-items-center">
+                <h2
+                  className="text-center section-title-small mb-1"
+                  style={{
+                    color: "#1C1C57",
+                    fontWeight: 600,
+                  }}
+                >
+                  Technologies & Tools
+                </h2>
+              </div>
+            </div>
+
+            <div className="col-md-4 col-lg-6 d-flex align-items-end">
+              <div className="local-scroll text-md-end w-100">
+                {onePage ? (
+                  <>
+                    {" "}
+                    <a
+                      href="#portfolio"
+                      className="link-hover-anim"
+                      data-link-animate="y"
+                    >
+                      <span className="link-strong link-strong-unhovered">
+                        View works{" "}
+                        <i
+                          className="mi-arrow-right size-24"
+                          aria-hidden="true"
+                        ></i>
+                      </span>
+                      <span
+                        className="link-strong link-strong-hovered"
+                        aria-hidden="true"
+                      >
+                        View works{" "}
+                        <i
+                          className="mi-arrow-right size-24"
+                          aria-hidden="true"
+                        ></i>
+                      </span>
+                    </a>
+                  </>
+                ) : (
+                  <> </>
+                )}
+              </div>
+            </div>
+          </div>
+          <TechSolutions />
+        </div>
+      </section>
+      <section
+        style={{
+          background: "linear-gradient(220deg, #0A2A78 0%, #051D55 50%)",
+        }}
+        className={`page-section scrollSpysection  ${
+          dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
+        } bg-scroll`}
+        id="why-choose-us"
+      >
+        <div className="container position-relative">
+          <div className="row mb-60 mb-sm-40">
+            <div className="col-md-12 col-lg-6">
+              <h2
+                className="section-caption mb-20 mb-xs-10"
+                style={{
+                  background: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  fontWeight: "bold",
+                }}
+              >
+                WHY CHOOSE US
+              </h2>
+              <h3
+                style={{ color: "white", fontWeight: 600 }}
+                className="section-title-small mb-0 mb-sm-20"
+              >
+                Why Businesses Choose InfiniSoft
+              </h3>
+              <p
+                className="size-14 text-white mt-30 mb-0"
+                style={{ maxWidth: "540px", lineHeight: "26px" }}
+              >
+                We build websites and digital products that look better, load
+                faster, and help businesses turn more visitors into real
+                customers.
+              </p>
+              <div
+                className="d-flex flex-wrap gap-2 mt-30"
+                style={{ maxWidth: "540px" }}
+              >
+                {[
+                  "Fast Delivery",
+                  "Better UX",
+                  "Scalable Builds",
+                  "After Launch Support",
+                ].map((item) => (
+                  <span
+                    key={item}
+                    style={{
+                      border: "1px solid rgba(136, 118, 255, 0.42)",
+                      background: "rgba(8, 28, 82, 0.5)",
+                      color: "#FFFFFF",
+                      borderRadius: "999px",
+                      padding: "8px 14px",
+                      fontSize: "13px",
+                      fontWeight: "600",
+                      lineHeight: 1.2,
+                    }}
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+              <div className="services-5-body d-flex align-items-center mt-30">
+                <div className="d-flex flex-column gap-4 mb-30">
+                  <div className="w-100 d-flex align-items-start gap-3">
+                    <span
+                      className="why-choose-bullet"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        minWidth: "12px",
+                        borderRadius: "999px",
+                        marginTop: "14px",
+                        background:
+                          "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                        boxShadow: "0 0 18px rgba(136, 118, 255, 0.55)",
+                      }}
+                    />
+                    <div>
+                      <h4
+                        className="services-6-title why-choose-card-title text-white mb-2"
+                        style={{ fontSize: "15px" }}
+                      >
+                        Fast Delivery
+                      </h4>
+                      <p
+                        style={{
+                          fontSize: "11px",
+                          fontWeight: "300",
+                          lineHeight: "18px",
+                        }}
+                        className="size-14 why-choose-card-description mb-0 text-white"
+                      >
+                        Clear timelines and focused execution so you can launch
+                        without delays.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="w-100 d-flex align-items-start gap-3">
+                    <span
+                      className="why-choose-bullet"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        minWidth: "12px",
+                        borderRadius: "999px",
+                        marginTop: "14px",
+                        background:
+                          "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                        boxShadow: "0 0 18px rgba(136, 118, 255, 0.55)",
+                      }}
+                    />
+                    <div>
+                      <h4
+                        className="services-6-title why-choose-card-title text-white mb-2"
+                        style={{ fontSize: "15px" }}
+                      >
+                        Conversion-Focused Design
+                      </h4>
+                      <p
+                        style={{
+                          fontSize: "11px",
+                          fontWeight: "300",
+                          lineHeight: "18px",
+                        }}
+                        className="size-14 why-choose-card-description mb-0 text-white"
+                      >
+                        Cleaner user journeys that build trust and drive more
+                        inquiries, bookings, and sales.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="w-100 d-flex align-items-start gap-3">
+                    <span
+                      className="why-choose-bullet"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        minWidth: "12px",
+                        borderRadius: "999px",
+                        marginTop: "14px",
+                        background:
+                          "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                        boxShadow: "0 0 18px rgba(136, 118, 255, 0.55)",
+                      }}
+                    />
+                    <div>
+                      <h4
+                        className="services-6-title why-choose-card-title text-white mb-2"
+                        style={{ fontSize: "15px" }}
+                      >
+                        Post-Launch Support
+                      </h4>
+                      <p
+                        style={{
+                          fontSize: "11px",
+                          fontWeight: "300",
+                          lineHeight: "18px",
+                        }}
+                        className="size-14 why-choose-card-description mb-0 text-white"
+                      >
+                        We stay involved after launch to fix issues, refine
+                        details, and keep everything running smoothly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-12 col-lg-6">
+              <TwoService />
+            </div>
+          </div>
+        </div>
+      </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       {/* portfolio section */}
       <section
@@ -226,20 +504,15 @@ export default function Home6({ onePage = false, dark = false }) {
                   fontWeight: "bold",
                 }}
               >
-                our portfolio
+                Projects
               </h2>
-              <h3 className="section-title mb-0">
-                We believe in making the best work, and being the best to work
-                with.
-              </h3>
+              <h3 className="section-title mb-0">Our Portfolio.</h3>
             </div>
           </div>
 
-          <Portfolio />
+          <Portfolio mobileLimit={4} desktopLimit={6} showViewAll={true} />
         </div>
       </section>
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-
       {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
@@ -260,102 +533,6 @@ export default function Home6({ onePage = false, dark = false }) {
       > */}
       {/* <Newsletter /> */}
 
-      {/* power of design section start */}
-      <section
-        style={{
-          background: "linear-gradient(220deg, #621ABE 0%, #051D55 50%)",
-        }}
-        className={`page-section scrollSpysection  ${
-          dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
-        } bg-scroll`}
-        id="services"
-      >
-        <div className="container position-relative">
-          <div className="row mb-60 mb-sm-40">
-            <div className="col-md-12 col-lg-6">
-              <h2
-                className="section-caption mb-20 mb-xs-10"
-                style={{
-                  background:
-                    "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  fontWeight: "bold",
-                }}
-              >
-                WHY CHOOSE US
-              </h2>
-              <h3
-                style={{ color: "white" }}
-                className="section-title-small mb-0 mb-sm-20"
-              >
-                We Use The Power Of Design To Solve Complex Problems.
-              </h3>
-              <p className="size-14 text-white mt-30">
-                At InfiniSoft Technology, we combine creativity, technical
-                expertise, and a client-first approach to deliver solutions that
-                truly make an impact. From tailored designs to seamless
-                functionality, we ensure every project reflects your unique
-                vision and drives measurable results.
-              </p>
-              <div className="services-5-body d-flex align-items-center">
-                <div className="d-flex flex-column mb-30">
-                  <div className="w-100">
-                    <h4 className="services-6-title text-white pt-4">
-                      We're Professional
-                    </h4>
-                    <p
-                      style={{ fontWeight: "300", lineHeight: "25px" }}
-                      className="size-14 mb-0 text-white"
-                    >
-                      Our team of experts are ready for all kinds of challenges
-                    </p>
-                  </div>
-                  <div className="w-100">
-                    <h4 className="services-6-title text-white pt-4">
-                      Tailored Strategies
-                    </h4>
-                    <p
-                      style={{ fontWeight: "300", lineHeight: "25px" }}
-                      className="size-14 mb-0 text-white"
-                    >
-                      We understand your business needs and work accordingly
-                    </p>
-                  </div>
-                  <div className="w-100">
-                    <h4 className="services-6-title text-white pt-4">
-                      Expert Developers
-                    </h4>
-                    <p
-                      style={{ fontWeight: "300", lineHeight: "25px" }}
-                      className="size-14 mb-0 text-white"
-                    >
-                      We have a highly skilled talent pool to work on your
-                      projects
-                    </p>
-                  </div>
-                  <div className="w-100">
-                    <h4 className="services-6-title text-white pt-4">
-                      Latest Technology
-                    </h4>
-                    <p
-                      style={{ fontWeight: "300", lineHeight: "25px" }}
-                      className="size-14 mb-0 text-white"
-                    >
-                      We have access to a wide range of technology so we can
-                      allocate the necessary resources according to your needs
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-12 col-lg-6">
-              <TwoService />
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* </section> */}
       {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
@@ -377,7 +554,7 @@ export default function Home6({ onePage = false, dark = false }) {
             </div>
 
             <div className="col-lg-6 col-xl-6">
-              <h3 className="section-title-small mb-30">
+              <h3 className="section-title-small mb-30" style={{ fontWeight: 600 }}>
                 Frequently Asked <br />
                 Questions
               </h3>
@@ -402,6 +579,35 @@ export default function Home6({ onePage = false, dark = false }) {
               </a>{" "} */}
             </div>
           </div>
+          <div className="home6-bridge-banner home6-bridge-banner-faq">
+            <div className="home6-bridge-copy">
+              <span className="home6-bridge-eyebrow">FROM SERVICE TO RESULTS</span>
+              <h3 className="home6-bridge-title">
+                Built to help you launch faster and grow with more confidence.
+              </h3>
+              <p className="home6-bridge-text">
+                From strategy and design to development and post-launch support,
+                we keep the process focused, clear, and business-ready.
+              </p>
+            </div>
+            <div className="home6-bridge-points">
+              <div className="home6-bridge-point">
+                <strong>10-14 Day Starts</strong>
+                <span>Fast delivery for lean launch projects.</span>
+              </div>
+              <div className="home6-bridge-point">
+                <strong>Design + Development</strong>
+                <span>One team handling both experience and execution.</span>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={togglePopup}
+              className="home6-bridge-button"
+            >
+              Book A Free Call
+            </button>
+          </div>
         </div>
       </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
@@ -419,6 +625,27 @@ export default function Home6({ onePage = false, dark = false }) {
       <Popup isPopupVisible={isPopupVisible} onClose={togglePopup}>
         <Form togglePopup={togglePopup} />
       </Popup>
+      <style jsx>{`
+        .why-choose-bullet {
+          align-self: flex-start;
+        }
+
+        @media (min-width: 992px) {
+          .why-choose-card-title {
+            font-size: 23px !important;
+          }
+
+          .why-choose-card-description {
+            font-size: 14px !important;
+            line-height: 22px !important;
+          }
+
+          .why-choose-bullet {
+            margin-top: 16px !important;
+          }
+        }
+
+      `}</style>
       <FooterTop />
     </>
   );

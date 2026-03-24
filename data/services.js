@@ -107,26 +107,26 @@ export const services3 = [
   {
     src: "/assets/images/demo-fancy/services/ppp.svg",
     title: "UIUX Design",
-    text: "Good design isn’t just about looks. It’s about making things work better for you and your customers.",
+    text: "Get a smarter & smoother experience for your clients, with faster performance, cleaner UI, and an overall seamless digital journey.",
     link: "/services/uiux",
   },
   {
     src: "/assets/images/demo-fancy/services/service2.svg",
     title: "Website Design & Development",
     text: "A well crafted website works for your business 24/7. ",
-    link: "/services/websiteDesign",
+    link: "/services/websiteDevelopment",
   },
   {
     src: "/assets/images/demo-fancy/services/service3.svg",
     title: "Mobile App",
-    text: "Mobile Apps are a great way to provide quality servicess to your customers. Reach both Android & ios users.",
+    text: "Fast mobile apps and high quality service, reach both Android and iOS users.",
     link: "/services/MobileApp",
   },
 
   {
     src: "/assets/images/demo-fancy/services/service4.svg",
     title: "Prototyping",
-    text: "Not sure yet about the complete product to build? Build a prototype with a quarter of the budget and see if it works.",
+    text: "Unsure about the full product? Build a prototype for a fraction of the cost and test it.",
     link: "/services/MobileApp",
   },
 ];
@@ -200,7 +200,7 @@ export const techSolutionsData = [
   },
   {
     src: "/assets/images/tech/figma.svg",
-    title: "24/7 Customer Support",
+    title: "24/7 Support",
   },
   {
     src: "/assets/images/tech/data.svg",
@@ -466,33 +466,33 @@ export const seoServicesData = [
 export const webServicesData = [
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
-    title: "Custom Website Design",
-    text: "Optimizing your website’s content, structure, and performance",
+    title: "Custom Website",
+    text: "We design and build tailor-made websites that match your brand, engage your audience, and drive results.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
-    title: "E-Commerce Development",
-    text: "Advance ecommerce platform development for growth and success",
+    title: "E-Commerce Website",
+    text: "We create powerful, user-friendly e-commerce websites that help you sell more. Scalable online stores tailored to your business needs.",
   },
   {
     src: "/assets/images/services/website/business.svg",
-    title: "Business Websites",
-    text: "Professional website to get your business to the next level",
+    title: "Professional Business Websites",
+    text: "We develop professional, conversion-focused websites that build trust and grow your brand.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
-    title: "Web App Development",
-    text: "Complete web app design and development",
+    title: "Web Applications",
+    text: "We build scalable, high-performance web applications tailored to your business goals.",
   },
   {
     src: "/assets/images/services/website/CustomWebsiteDesign.svg",
-    title: "UI/UX Optimization",
-    text: "",
+    title: "WordPress Website",
+    text: "We design and develop custom WordPress websites that are fast, secure, and easy to manage.",
   },
   {
     src: "/assets/images/services/website/business.svg",
-    title: "SEO & Speed Optimization",
-    text: "",
+    title: "Website Design & Redesign",
+    text: "Whether you're starting fresh or refreshing your existing site, we craft modern, user-focused designs that elevate your brand and improve performance.",
   },
 ];
 export const services3aMain = [
@@ -509,16 +509,28 @@ export const services3aMain = [
 ];
 export const services3a = [
   {
-    src: "/assets/images/demo-fancy/services/ppp.svg",
+    src: "/assets/images/demo-fancy/services/seo-service.svg",
     title: "SEO",
     text: "People are always searching for products and services of their needs. Are you appearing in their search results? Get noticed and get new clients.",
     link: "/services/SeoService",
   },
   {
-    src: "/assets/images/demo-fancy/services/ppp.svg",
+    src: "/assets/images/demo-fancy/services/agile-staff-tech.svg",
     title: "AgileStaff Tech",
     text: "Maybe you need a UIUX designer or a developer, or a project manager. Get flexible and scalable staffing both for short-term & long-term works.",
     link: "/services",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/ai-receptionist.svg",
+    title: "AI Receptionist",
+    text: "Never miss a lead. AI receptionists handle inquiries, qualify prospects, and keep your business responsive around the clock.",
+    link: "/services/aiReceptionist",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/social-media-marketing.svg",
+    title: "Social Media Marketing",
+    text: "Grow your reach with strategic content, campaign planning, and conversion-focused social media management across key platforms.",
+    link: "/services/socialMediaMarketing",
   },
 ];
 

@@ -1,9 +1,8 @@
-import Footer6 from "@/components/footers/Footer6";
+﻿import Footer6 from "@/components/footers/Footer6";
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 import Portfolio from "@/components/homes/home-6/Portfolio";
-import ServicePricing from "@/components/homes/home-6/ServicePricing";
 import UiuxHire from "@/components/homes/home-6/UiuxHire";
 import UiuxMain from "@/components/homes/home-6/UiuxMain";
 import { reviews } from "@/data/features";
@@ -27,6 +26,10 @@ export default function FancyServicesPage() {
           <main id="main">
             {/* your team section */}
             <section
+              style={{
+                background:
+                  "radial-gradient(circle at 14% 18%, rgba(231, 87, 120, 0.08) 0%, rgba(231, 87, 120, 0) 26%), radial-gradient(circle at 88% 24%, rgba(136, 118, 255, 0.12) 0%, rgba(136, 118, 255, 0) 28%), linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%)",
+              }}
               className={`scrollSpysection mt-5 service-large-sections`}
               id="about"
             >
@@ -34,11 +37,11 @@ export default function FancyServicesPage() {
                 <div className="row mb-xs-40">
                   {/* left section */}
                   <div className="col-md-12 col-lg-6 pt-5 pb-lg-5">
-                    <h1 className="fs-48 mb-30 mb-xs-20 wow fadeInUp">
+                    <h1 className="fs-64 mb-30 mb-xs-20 wow fadeInUp">
                       Get More Clients <br />
                       with Seamless&nbsp;
                       <span
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-48"
+                        className="fs-64 mark-decoration-3-wrap wow fadeInUp color-secondary-1-white fs-64"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -50,23 +53,20 @@ export default function FancyServicesPage() {
                         UI/UX Design
                       </span>
                     </h1>
-                    <p className="wow fadeInUp section-title-ex-small">
-                      Investing in professional UI/UX design services can
-                      transform your digital presence and boost customer
-                      engagement. A well-crafted user interface (UI) and
-                      seamless user experience (UX) ensure that your website or
-                      application is not only visually stunning but also
-                      functional and intuitive.
+                    <p className="wow fadeInUp fs-hero-desc no-margin">
+                      Build Powerful, Scalable, and User-FriendlyÂ MobileÂ Apps.
                     </p>
-
+                    <p className="wow fadeInUp info-text no-margin">
+                      Start your journey with a free 30 minute consultation.
+                    </p>
                     {/* Yellow Stars */}
                     <div className="wow fadeInUp">
                       {[...Array(5)].map((_, i) => (
                         <span
                           key={i}
-                          style={{ color: "#FFD700", fontSize: "24px" }}
+                          style={{ color: "#ffae00", fontSize: "24px" }}
                         >
-                          ★
+                          {"\u2605"}
                         </span>
                       ))}
                     </div>
@@ -117,7 +117,7 @@ export default function FancyServicesPage() {
                       // style={{marginTop:"3.7rem"}}
                       src="/assets/images/services/uiux.png"
                       style={{ maxWidth: "90%" }}
-                      className="wow fadeInUp"
+              className="wow fadeInUp"
                       alt="Image Description"
                     />
                   </div>
@@ -143,12 +143,12 @@ export default function FancyServicesPage() {
                       </h2>
                       <p
                         style={{ color: "white", fontSize: "40px !important" }}
-                        className="section-title mb-0 mb-sm-20"
+              className="section-title mb-0 mb-sm-20"
                       >
                         Why Our
                       </p>
                       <h2
-                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white text-transparent bg-clip-text font-extrabold fs-64 fs-md-2 fs-lg-3 fs-xl-4 py-0"
+                        className="mark-decoration-3-wrap wow fadeInUp color-secondary-1-white text-transparent bg-clip-text font-extrabold fs-40 fs-md-2 fs-lg-3 fs-xl-4 py-0"
                         style={{
                           background:
                             "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
@@ -216,6 +216,7 @@ export default function FancyServicesPage() {
             </section>
             {/* process start */}
             <section
+
               className={`scrollSpysection  py-5${
                 dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
               } bg-scroll`}
@@ -238,7 +239,7 @@ export default function FancyServicesPage() {
                           color: "#7E7E7E",
                           fontSize: "16px !important",
                         }}
-                        className="mb-0 mb-sm-20 text-center fw-bolder"
+              className="mb-0 mb-sm-20 text-center fw-bolder"
                       >
                         We are experts who understand the importance of creating
                         user-centric digital experiences
@@ -287,8 +288,9 @@ export default function FancyServicesPage() {
             </section>
             {/* why ui/ux Matters section  */}
             <section
+
               className={`scrollSpysection mt-5 service-large-sections oshape`}
-              id="about"
+              id="why-uiux-matters"
             >
               <div className="pt-md-5 container position-relative">
                 <div className="row mb-xs-40 justify-items-center align-items-center">
@@ -379,8 +381,9 @@ export default function FancyServicesPage() {
             </section>
             {/* why chose us  */}
             <section
+
               className={`scrollSpysection pb-5 mt-5 service-large-sections`}
-              id="about"
+              id="why-choose-uiux"
             >
               <div className="pt-md-5 container position-relative">
                 <div className="row mb-xs-40 justify-items-center align-items-center ">
@@ -470,44 +473,37 @@ export default function FancyServicesPage() {
               </div>
             </section>
             <section
-              className={`scrollSpysection py-5 ${
+
+              className={`page-section  scrollSpysection  ${
                 dark ? "bg-dark-1 light-content" : ""
               } `}
-              id="pricing"
+              id="portfolio"
             >
-              <ServicePricing />
-            </section>
-           <section
-                  className={`page-section  scrollSpysection  ${
-                    dark ? "bg-dark-1 light-content" : ""
-                  } `}
-                  id="portfolio"
-                >
-                  <div className="container position-relative">
-                    <div className="row mb-30 mb-sm-40">
-                      <div className="col-md-8 offset-md-2 text-center">
-                        <h2
-                          className="section-caption mb-20 mb-xs-10"
-                          style={{
-                            background:
-                              "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-                            WebkitBackgroundClip: "text",
-                            WebkitTextFillColor: "transparent",
-                            fontWeight: "bold",
-                          }}
-                        >
-                          our portfolio
-                        </h2>
-                        <h3 className="section-title mb-0">
-                          We believe in making the best work, and being the best to work
-                          with.
-                        </h3>
-                      </div>
-                    </div>
-          
-                    <Portfolio />
+              <div className="container position-relative">
+                <div className="row mb-30 mb-sm-40">
+                  <div className="col-md-8 offset-md-2 text-center">
+                    <h2
+                      className="section-caption mb-20 mb-xs-10"
+                      style={{
+                        background:
+                          "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      our portfolio
+                    </h2>
+                    <h3 className="section-title mb-0">
+                      We believe in making the best work, and being the best to
+                      work with.
+                    </h3>
                   </div>
-                </section>
+                </div>
+
+                <Portfolio />
+              </div>
+            </section>
           </main>
           <FooterTop />
           <footer
@@ -523,3 +519,7 @@ export default function FancyServicesPage() {
     </>
   );
 }
+
+
+
+

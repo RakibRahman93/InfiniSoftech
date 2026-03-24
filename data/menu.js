@@ -101,20 +101,22 @@ export const gradientOnePage = [
 ];
 
 export const fancyMultipage = [
-  { href: "/", text: "Home", class: "active" },
   { href: "/about", text: "About" },
   {
     href: "#",
     text: "Services",
     className: "dropdown",
     dropdown: [
-      { href: "/services/staffAugmentation", text: "Staff Augmentation" },
-      { href: "/services/websiteDesign", text: "Website Design" },
+      { href: "/services/websiteDevelopment", text: "Website Development" },
       { href: "/services/MobileApp", text: "Mobile App Development" },
       { href: "/services/uiux", text: "Ui/UX Design" },
+      { href: "/services/staffAugmentation", text: "Staff Augmentation" },
       { href: "/services/SeoService", text: "Seo Services" },
+      { href: "/services/aiReceptionist", text: "AI Receptionist" },
+      { href: "/services/socialMediaMarketing", text: "Social Media Marketing" },
     ],
   },
+  { href: "/pricing", text: "Pricing" },
   { href: "/portfolio", text: "Portfolio" },
   { href: "/case-studies", text: "Case Studies" },
 
