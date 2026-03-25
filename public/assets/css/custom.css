@@ -1,4 +1,4 @@
-﻿.Typewriter,
+.Typewriter,
 .typewrite {
   display: inline-block;
 }
@@ -2057,6 +2057,10 @@ a {
     border-radius: 16px;
   }
 
+  .social-marketing-hero-container {
+    padding-top: 92px !important;
+    padding-bottom: 32px !important;
+  }
   .theme-fancy .service-large-sections#about .container {
     padding-top: 46px !important;
   }
@@ -3697,3 +3701,11 @@ body.appear-animate .pricing-slide-design {
 }
 
 
+
+
+@media (max-width: 767.98px) {
+  .theme-fancy .service-large-sections.social-hero-section#about .social-marketing-hero-container {
+    padding-top: 132px !important;
+    padding-bottom: 32px !important;
+  }
+}
