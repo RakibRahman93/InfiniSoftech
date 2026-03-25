@@ -123,8 +123,14 @@ export default function SocialMediaMarketingPage() {
             <Header6 links={fancyMultipage} />
           </nav>
           <main id="main">
-            <section className="scrollSpysection service-large-sections social-hero-section" id="about">
-              <div className="container position-relative" style={{ paddingTop: "48px", paddingBottom: "28px" }}>
+            <section
+              style={{
+                background:
+                  "radial-gradient(circle at 14% 18%, rgba(231, 87, 120, 0.08) 0%, rgba(231, 87, 120, 0) 26%), radial-gradient(circle at 88% 24%, rgba(136, 118, 255, 0.12) 0%, rgba(136, 118, 255, 0) 28%), linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%)",
+              }}
+              className="scrollSpysection service-large-sections social-hero-section"
+              id="about">
+              <div className="container position-relative social-marketing-hero-container" style={{ paddingTop: "48px", paddingBottom: "28px" }}>
                 <div className="row mb-xs-40 align-items-center">
                   <div className="col-md-12 col-lg-6 pt-3 pb-lg-4">
                     <div className="social-hero-copy-shell">
@@ -427,6 +433,8 @@ export default function SocialMediaMarketingPage() {
     </>
   );
 }
+
+
 
 
 
