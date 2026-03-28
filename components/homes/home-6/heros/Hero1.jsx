@@ -1,27 +1,20 @@
 "use client";
 
-import Form from "@/components/headers/components/Form";
-import Popup from "@/components/headers/components/popup";
-import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import { reviews } from "@/data/features";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import Slider from "../Slider";
 
 export default function Hero1() {
   const [isOpen, setOpen] = useState(false);
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
   const heroBadges = [
     "Growth-Focused",
     "Sales-Driven",
     "Built to Scale",
     "High-Converting",
   ];
-
-  const togglePopup = () => {
-    setIsPopupVisible(!isPopupVisible);
-  };
 
   return (
     <>
@@ -162,12 +155,29 @@ export default function Hero1() {
                   data-wow-delay="0.7s"
                   data-wow-duration="1.2s"
                 >
-                  <PopupWrapper
-                    className="btn me-2 popupButtons"
-                    minWidth="16rem"
-                    height="3.6rem"
-                    buttonText="Book A Free Call"
-                  />
+                  <div className="cta-glitter-wrap me-2 popupButtons">
+                    <Link
+                      href="/case-studies"
+                      className="btn-lg fw-semibold text-white shadow-sm cta-glitter-button w-md-auto"
+                      style={{
+                        borderRadius: "50px",
+                        background:
+                          "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
+                        border: "none",
+                        textDecoration: "none",
+                        minWidth: "18.5rem",
+                        padding: "12px 26px",
+                        fontFamily: "Poppins, sans-serif",
+                        fontWeight: "600",
+                        height: "3.6rem",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      View Case Studies
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -212,10 +222,6 @@ export default function Hero1() {
         videoId="viFaDMFAlLo"
         onClose={() => setOpen(false)}
       />
-
-      <Popup isPopupVisible={isPopupVisible} onClose={togglePopup}>
-        <Form togglePopup={togglePopup} />
-      </Popup>
       <style jsx>{`
         .hero-review-avatar {
           display: inline-flex;
