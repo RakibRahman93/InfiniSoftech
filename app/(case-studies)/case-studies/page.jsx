@@ -9,7 +9,7 @@ import { features2 } from "@/data/features";
 import { fancyMultipage } from "@/data/menu";
 import { portfolios11 } from "@/data/portfolio";
 import Image from "next/image";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Modal from "react-modal";
 
 const onePage = false;
@@ -25,20 +25,49 @@ const dark = false;
 // };
 export default function CorporatePortfolioPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentPdf, setCurrentPdf] = useState("");
+  const [modalAsset, setModalAsset] = useState(null);
+
+  const caseStudyItems = useMemo(
+    () => [
+      {
+        id: "tgp-case-study-video",
+        imageUrl: "/assets/images/demo-fancy/portfolio/TGP/tgpCover.png",
+        title: "Those Guys Print Case Study",
+        number: "Video",
+        description: "Video walkthrough",
+        summary:
+          "A focused walkthrough of the TGP redesign, showing how clearer structure, branding, and messaging shaped a stronger website experience.",
+        metaChip: "Video Case Study",
+        metaDate: "2025",
+        videoUrl: "/assets/case-studies/tgp-casestudy.mp4",
+        ctaLabel: "Watch Case Study",
+      },
+      ...portfolios11.map((item) => ({
+        ...item,
+        metaChip: item.metaChip || "PDF Case Study",
+        metaDate: item.metaDate || "2025",
+        summary:
+          item.summary ||
+          item.Description ||
+          "A focused breakdown of the project goals, design process, and outcomes from strategy through execution.",
+        ctaLabel: item.ctaLabel || "View Case Study",
+      })),
+    ],
+    []
+  );
 
   // useEffect(() => {
   //   Modal.setAppElement("#__next"); // Ensure the app element is set after DOM is loaded
   // }, []);
 
-  const openModal = (pdfUrl) => {
-    setCurrentPdf(pdfUrl);
+  const openModal = (asset) => {
+    setModalAsset(asset);
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
-    setCurrentPdf("");
+    setModalAsset(null);
   };
 
   return (
@@ -123,47 +152,80 @@ export default function CorporatePortfolioPage() {
                   {/* Portfolio Grid */}
                   <div className="row mt-n50 mt-sm-n40">
                     {/* Portfolio Item */}
-                    {portfolios11.map(
-                      (elm, i) => (
-                        console.warn(elm.pdfUrl),
-                        (
-                          <div
-                            key={i}
-                            className="col-md-6 col-lg-4 mt-50 mt-sm-40"
-                          >
+                    {caseStudyItems.map((elm, i) => {
+                      const cardContent = (
+                        <>
+                          <div className="case-study-card__image-wrap">
+                            <div className="wow fadeIn" data-wow-delay="1s">
+                              <Image
+                                src={elm.imageUrl}
+                                width={660}
+                                height={472}
+                                alt={elm.title}
+                                className="case-study-card__image"
+                              />
+                            </div>
+                            {elm.videoUrl ? (
+                              <div className="case-study-video-badge">
+                                <span className="case-study-video-badge__icon" />
+                                <span>{elm.ctaLabel || "Watch Video"}</span>
+                              </div>
+                            ) : null}
+                          </div>
+                          <div className="case-study-card__body">
+                            <div className="case-study-card__meta-row">
+                              <span className="case-study-card__meta-chip">
+                                {elm.metaChip}
+                              </span>
+                              <span className="case-study-card__meta-date">
+                                {elm.metaDate}
+                              </span>
+                            </div>
+                            <h3 className="case-study-card__title">
+                              <span>{elm.title}</span>
+                            </h3>
+                            <div className="case-study-card__descr">
+                              {elm.description}
+                            </div>
+                            <p className="case-study-card__summary">
+                              {elm.summary}
+                            </p>
+                            <div className="case-study-card__cta-row">
+                              <span className="case-study-card__cta-pill">
+                                {elm.ctaLabel}
+                              </span>
+                            </div>
+                          </div>
+                        </>
+                      );
+
+                      return (
+                        <div
+                          key={elm.id || i}
+                          className="col-md-6 col-lg-4 mt-50 mt-sm-40"
+                        >
+                          {elm.videoUrl ? (
+                            <button
+                              type="button"
+                              onClick={() => openModal(elm)}
+                              className="portfolio-5-link portfolio-5-link-button"
+                            >
+                              {cardContent}
+                            </button>
+                          ) : (
                             <a
                               href={`/view-pdf-single?url=${encodeURIComponent(
                                 elm.pdfUrl
                               )}`}
-                              // target="_blank"
                               rel="noopener noreferrer"
                               className="portfolio-5-link"
                             >
-                              <div className="portfolio-5-image">
-                                <div className="portfolio-5-image-bg wow scalexIn" />
-                                <div className="wow fadeIn" data-wow-delay="1s">
-                                  <Image
-                                    src={elm.imageUrl}
-                                    width={660}
-                                    height={472}
-                                    alt="Image Description"
-                                  />
-                                </div>
-                              </div>
-                              <h3 className="portfolio-5-title">
-                                <span>{elm.title}</span>
-                              </h3>
-                              <div className="portfolio-5-number">
-                                {elm.number}
-                              </div>
-                              <div className="portfolio-5-number-descr">
-                                {elm.description}
-                              </div>
+                              {cardContent}
                             </a>
-                          </div>
-                        )
-                      )
-                    )}
+                          )}
+                        </div>
+                      );
+                    })}
                     {/* End Portfolio Item */}
 
                     {/* End Portfolio Item */}
@@ -203,21 +265,23 @@ export default function CorporatePortfolioPage() {
               <Modal
                 isOpen={isModalOpen}
                 onRequestClose={closeModal}
-                contentLabel="View PDF"
+                contentLabel={modalAsset?.title || "View Case Study"}
                 className="custom-modal"
                 overlayClassName="custom-modal-overlay"
               >
                 <button onClick={closeModal} className="close-button">
                   Close
                 </button>
-                {currentPdf && (
-                  <iframe
-                    src={currentPdf + "#toolbar=0"}
-                    width="100%"
-                    height="600px"
-                    style={{ border: "none" }}
-                    title="PDF Viewer"
-                  />
+                {modalAsset?.videoUrl && (
+                  <div className="case-study-video-modal">
+                    <video
+                      src={modalAsset.videoUrl}
+                      controls
+                      autoPlay
+                      playsInline
+                      className="case-study-video-modal__player"
+                    />
+                  </div>
                 )}
               </Modal>
               {/* Styles for modal */}
@@ -237,6 +301,228 @@ export default function CorporatePortfolioPage() {
             <Footer6 />
           </footer> */}
         </div>{" "}
+        <style jsx>{`
+          .portfolio-5-link-button {
+            width: 100%;
+            padding: 0;
+            border: none;
+            background: transparent;
+            text-align: left;
+            cursor: pointer;
+          }
+
+          .portfolio-5-link-button,
+          .portfolio-5-link {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background: #ffffff !important;
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow-block);
+            text-decoration: none !important;
+            font-family: Poppins, sans-serif;
+          }
+
+          .case-study-card__image-wrap {
+            position: relative;
+            flex-shrink: 0;
+          }
+
+          .case-study-card__image {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 11;
+            object-fit: cover;
+          }
+
+          .case-study-card__body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            min-height: 250px;
+            padding: 20px 22px 22px;
+            background: #ffffff;
+            font-family: Poppins, sans-serif;
+          }
+
+          .case-study-card__meta-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 14px;
+            color: #5f6f91;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+          }
+
+          .case-study-card__meta-chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: #eef3ff;
+            color: #31436f;
+            letter-spacing: 0.08em;
+            line-height: 1;
+          }
+
+          .case-study-card__meta-date {
+            flex-shrink: 0;
+          }
+
+          .case-study-card__title {
+            margin-bottom: 8px !important;
+            color: #1c1c57;
+            font-weight: 600;
+            line-height: 1.12;
+          }
+
+          .case-study-card__descr {
+            margin-bottom: 10px;
+            color: #536174;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.4;
+          }
+
+          .case-study-card__summary {
+            margin-bottom: 20px;
+            color: #6c7696;
+            font-size: 14px;
+            line-height: 1.55;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+
+          .case-study-card__cta-row {
+            margin-top: auto;
+          }
+
+          .case-study-card__cta-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 3rem;
+            padding: 0 20px;
+            border-radius: 12px;
+            background: linear-gradient(90deg, #e75778 0%, #8876ff 100%);
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            box-shadow: 0 14px 30px rgba(100, 74, 223, 0.18);
+          }
+
+          .portfolio-5-link-button:hover .case-study-video-badge,
+          .portfolio-5-link:hover .case-study-video-badge {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 30px rgba(95, 86, 210, 0.24);
+          }
+
+          .case-study-video-badge {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: rgba(17, 24, 39, 0.88);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            backdrop-filter: blur(12px);
+            transition:
+              transform 0.2s ease,
+              box-shadow 0.2s ease;
+          }
+
+          .case-study-video-badge__icon {
+            position: relative;
+            width: 22px;
+            height: 22px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #e75778 0%, #8876ff 100%);
+            box-shadow: 0 10px 18px rgba(104, 90, 211, 0.24);
+          }
+
+          .case-study-video-badge__icon::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-35%, -50%);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 7px solid #fff;
+          }
+
+          .case-study-video-modal {
+            margin-top: 24px;
+          }
+
+          .case-study-video-modal__player {
+            display: block;
+            width: 100%;
+            max-height: 72vh;
+            border-radius: 18px;
+            background: #000;
+            box-shadow: 0 18px 40px rgba(17, 24, 39, 0.24);
+          }
+
+          @media (max-width: 767.98px) {
+            .case-study-card__body {
+              min-height: 220px;
+              padding: 16px 16px 18px;
+            }
+
+            .case-study-card__meta-row {
+              margin-bottom: 12px;
+              font-size: 11px;
+            }
+
+            .case-study-card__title {
+              font-size: 22px !important;
+              line-height: 1.08 !important;
+              margin-bottom: 6px !important;
+            }
+
+            .case-study-card__descr {
+              font-size: 13px !important;
+              line-height: 1.45 !important;
+            }
+
+            .case-study-card__summary {
+              margin-bottom: 16px;
+              font-size: 13px;
+              line-height: 1.5;
+            }
+
+            .case-study-card__cta-pill {
+              min-height: 2.85rem;
+              font-size: 14px;
+            }
+
+            .case-study-video-badge {
+              left: 14px;
+              right: 14px;
+              bottom: 14px;
+              justify-content: center;
+              font-size: 11px;
+            }
+          }
+        `}</style>
       </div>
     </>
   );
