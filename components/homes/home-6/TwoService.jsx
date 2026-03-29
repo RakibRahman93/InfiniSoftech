@@ -112,7 +112,7 @@ const ServiceItem2 = ({ src, title, text, animationClass, delay }) => {
 export default function twoService() {
   return (
     <>
-      <div className="row services-5-grid">
+      <div className="row services-5-grid why-choose-grid">
         {/* Services Item */}
 
         {twoService4.map((service, index) => (
@@ -154,6 +154,38 @@ export default function twoService() {
             line-height: 25px !important;
           }
         }
+
+        @media (max-width: 767.98px) {
+          .why-choose-grid {
+            display: none;
+          }
+
+          .why-choose-grid {
+            --bs-gutter-x: 0.5rem;
+            --bs-gutter-y: 0.35rem;
+            row-gap: 0.35rem;
+          }
+
+          .why-choose-card {
+            padding: 14px 12px !important;
+          }
+
+          .why-choose-card .why-choose-card-icon {
+            width: 56px !important;
+            height: 56px !important;
+            padding: 0.6em !important;
+          }
+
+          .why-choose-card .why-choose-card-title {
+            padding-top: 12px !important;
+            margin-bottom: 10px !important;
+          }
+
+          .why-choose-card .why-choose-card-text {
+            margin-bottom: 0 !important;
+          }
+        }
+
       `}</style>
       {/* End Services Grid */}
       {/* <div className="small text-gray text-center mt-60 mt-sm-40">
