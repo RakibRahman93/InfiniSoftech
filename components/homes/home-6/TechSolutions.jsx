@@ -1,3 +1,5 @@
+"use client";
+
 import { techSolutionsData } from "@/data/services";
 const TechSolutions = ({ src, title, text, animationClass, delay }) => (
   <>
