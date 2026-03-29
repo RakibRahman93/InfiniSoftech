@@ -47,10 +47,12 @@ export default function ProcessShowcase() {
           {steps.map((step, index) => (
             <div
               key={step.number}
-              className="col-6 col-md-6 col-xl-3 d-flex wow fadeInUp"
-              data-wow-delay={`${0.12 + index * 0.08}s`}
+              className="col-6 col-md-6 col-xl-3 d-flex"
             >
-              <article className="home-process-card w-100">
+              <article
+                className="home-process-card w-100 wow fadeInUp"
+                data-wow-delay={`${0.12 + index * 0.08}s`}
+              >
                 <div className="home-process-card-line" />
                 <div className="home-process-number">{step.number}</div>
                 <h4 className="home-process-card-title">{step.title}</h4>
