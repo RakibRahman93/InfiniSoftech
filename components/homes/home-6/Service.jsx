@@ -1,18 +1,23 @@
 import { services3, services3a } from "@/data/services";
 import Image from "next/image";
 import Link from "next/link";
-const ServiceItem = ({ src, title, text, link }) => (
+const ServiceItem = ({ src, title, text, link, animationClass, delay }) => (
   <>
     <div style={{padding:4}} className="col-6 col-md-6 col-lg-3 d-flex align-items-stretch">
       <div
         style={{
-          padding:14,
-          backgroundColor: "#051D55",
-          border: "1px solid rgb(95, 35, 186)",
+          padding: "24px 22px",
+          background:
+            "linear-gradient(180deg, rgba(10, 31, 92, 0.96) 0%, rgba(8, 24, 74, 0.98) 100%)",
+          border: "1px solid rgba(136, 118, 255, 0.28)",
+          boxShadow: "0 18px 38px rgba(10, 18, 44, 0.22)",
         }}
-        className="services-5-item service-feature-card d-flex align-items-stretch text-center text-xl-start"
+        className="services-5-item service-feature-card d-flex align-items-stretch text-start"
       >
-        <div className="p-0 wow fadeInUpShort d-flex flex-column w-100">
+        <div
+          className={`p-0 wow ${animationClass} d-flex flex-column w-100`}
+          data-wow-delay={delay}
+        >
           <div className="">
             <Image
               style={{
@@ -28,14 +33,21 @@ const ServiceItem = ({ src, title, text, link }) => (
           </div>
           <div className="services-5-body d-flex align-items-center flex-grow-1">
             <div className="w-100 service-height d-flex flex-column h-100">
-              <h4 className="services-6-title text-white pt-4">{title}</h4>
+              <h4
+                className="services-6-title pt-4"
+                style={{ color: "#ffffff" }}
+              >
+                {title}
+              </h4>
               <p
                 style={{
                   fontWeight: "300",
+                  textAlign: "left",
+                  color: "rgba(240, 243, 255, 0.84)",
                   // lineHeight: "18px",
                   // fontSize: "14px",
                 }}
-                className="services-5-text services-5-text-responsive text-white"
+                className="services-5-text services-5-text-responsive"
               >
                 {text}
               </p>
@@ -60,18 +72,23 @@ const ServiceItem = ({ src, title, text, link }) => (
   </>
 );
 
-const ServiceItem2 = ({ src, title, text, link }) => (
+const ServiceItem2 = ({ src, title, text, link, animationClass, delay }) => (
   <>
     <div style={{padding:4}} className="col-6 col-md-6 col-lg-3 d-flex align-items-stretch">
       <div
         style={{
-          padding:14,
-          backgroundColor: "#051D55",
-          border: "1px solid rgb(95, 35, 186)",
+          padding: "24px 22px",
+          background:
+            "linear-gradient(180deg, rgba(10, 31, 92, 0.96) 0%, rgba(8, 24, 74, 0.98) 100%)",
+          border: "1px solid rgba(136, 118, 255, 0.28)",
+          boxShadow: "0 18px 38px rgba(10, 18, 44, 0.22)",
         }}
-        className="services-5-item service-feature-card d-flex align-items-stretch text-center text-xl-start"
+        className="services-5-item service-feature-card d-flex align-items-stretch text-start"
       >
-        <div className=" wow fadeInUpShort d-flex flex-column w-100" >
+        <div
+          className={`wow ${animationClass} d-flex flex-column w-100`}
+          data-wow-delay={delay}
+        >
           <div className="">
             <Image
               style={{
@@ -87,14 +104,21 @@ const ServiceItem2 = ({ src, title, text, link }) => (
           </div>
           <div className="services-5-body d-flex align-items-center flex-grow-1">
             <div className="w-100 d-flex flex-column h-100">
-              <h4 className="services-6-title text-white pt-4">{title}</h4>
+              <h4
+                className="services-6-title pt-4"
+                style={{ color: "#ffffff" }}
+              >
+                {title}
+              </h4>
               <p
                 style={{
                   fontWeight: "300",
+                  textAlign: "left",
+                  color: "rgba(240, 243, 255, 0.84)",
                   // lineHeight: "18px",
                   // fontSize: "14px",
                 }}
-                className="services-5-text services-5-text-responsive mb-4 text-white"
+                className="services-5-text services-5-text-responsive mb-4"
               >
                 {text}
               </p>
@@ -124,10 +148,20 @@ export default function Service() {
       <div className="row services-5-grid">
         {/* Services Item */}
         {services3.map((service, index) => (
-          <ServiceItem key={index} {...service} />
+          <ServiceItem
+            key={index}
+            {...service}
+            animationClass={index % 2 === 0 ? "fadeInLeftShort" : "fadeInRightShort"}
+            delay={`${0.08 + index * 0.08}s`}
+          />
         ))}
         {services3a.map((service, index) => (
-          <ServiceItem2 key={index} {...service} />
+          <ServiceItem2
+            key={index}
+            {...service}
+            animationClass={(index + services3.length) % 2 === 0 ? "fadeInLeftShort" : "fadeInRightShort"}
+            delay={`${0.08 + (index + services3.length) * 0.08}s`}
+          />
         ))}
         {/* End Services Item */}
       </div>
