@@ -10,7 +10,6 @@ import { fancyMultipage } from "@/data/menu";
 import Image from "next/image";
 import Link from "next/link";
 import Team from "@/components/homes/home-1/Team";
-import Benefits from "@/components/homes/home-1/Benefits";
 import Faqs from "@/components/homes/home-1/Faq";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 const onePage = false;
@@ -129,7 +128,7 @@ export default function FancyAboutPage() {
               <section
         className={` scrollSpysection ${
           dark ? "bg-dark-1 light-content" : ""
-        }`}
+        } about-story-section`}
         id="about"
       >
         <div className="container position-relative">
@@ -212,17 +211,16 @@ export default function FancyAboutPage() {
         </div>
       </section>
             </section>
-            <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-            <section
+      <section
         className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-2 light-content" : "bg-gray-light-1 "
-        }`}
+          dark ? "bg-dark-2 light-content" : ""
+        } about-team-section`}
         id="team"
       >
         <Team />
       </section>
       <section
-        className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
+        className={`page-section about-work-section ${dark ? "bg-dark-1 light-content" : ""}`}
       >
         <div className="container position-relative">
           <div className="row">
@@ -359,13 +357,7 @@ export default function FancyAboutPage() {
         </div>
       </section> */}
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-      <section
-        className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
-      >
-        <Benefits />{" "}
-      </section>
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-      
+
             {/* <section
               className={`page-section  ${
                 dark ? "bg-dark-1 light-content" : ""
