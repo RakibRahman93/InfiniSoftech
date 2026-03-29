@@ -1,7 +1,10 @@
 "use client";
 import Form from "@/components/headers/components/Form";
 import Popup from "@/components/headers/components/popup";
+import BeforeAfterTrust from "@/components/homes/home-6/BeforeAfterTrust";
 import FooterTop from "@/components/homes/home-6/FooterTop";
+import InfinisoftPositioningSection from "@/components/homes/home-6/InfinisoftPositioningSection";
+import ProcessShowcase from "@/components/homes/home-6/ProcessShowcase";
 import { features10 } from "@/data/features";
 import Image from "next/image";
 import Link from "next/link";
@@ -121,7 +124,7 @@ export default function Home6({ onePage = false, dark = false }) {
                     boxShadow: "0 16px 34px rgba(100, 74, 223, 0.22)",
                   }}
                 >
-                  Book A Free Audit Call
+                  Book A Free Strategy Call
                 </button>
               </div>
             </div>
@@ -130,7 +133,7 @@ export default function Home6({ onePage = false, dark = false }) {
           {/* <About /> */}
           {/* End Images Composition */}
         </div>
-        <section
+      <section
         style={{
           background: "#1C1B2A",
         }}
@@ -139,6 +142,8 @@ export default function Home6({ onePage = false, dark = false }) {
         {dark ? <TestimonialsDark /> : <Testimonials />}
       </section>
       </section>
+      <InfinisoftPositioningSection />
+      <ProcessShowcase />
       {/* Our Services */}
       
       <section
@@ -153,7 +158,10 @@ export default function Home6({ onePage = false, dark = false }) {
       >
         <div className="container position-relative">
           <div className="row mb-60 mb-sm-40">
-            <div className="col-md-8 col-lg-6">
+            <div
+              className="col-md-8 col-lg-6 wow fadeInUp"
+              data-wow-delay="0.08s"
+            >
               <h2 className="section-caption mb-20 mb-xs-10">Our Services</h2>
               <h3
                 style={{ color: "white", fontWeight: 600 }}
@@ -255,7 +263,10 @@ export default function Home6({ onePage = false, dark = false }) {
         <div className="container position-relative">
           <div className="row mb-60 mb-sm-40">
             <div className="container">
-              <div className="d-flex flex-column justify-center align-items-center">
+              <div
+                className="d-flex flex-column justify-center align-items-center wow fadeInUp"
+                data-wow-delay="0.08s"
+              >
                 <h2
                   className="text-center section-title-small mb-1"
                   style={{
@@ -317,7 +328,10 @@ export default function Home6({ onePage = false, dark = false }) {
       >
         <div className="container position-relative">
           <div className="row mb-60 mb-sm-40">
-            <div className="col-md-12 col-lg-6">
+            <div
+              className="col-md-12 col-lg-6 wow fadeInUp"
+              data-wow-delay="0.08s"
+            >
               <h2
                 className="section-caption mb-20 mb-xs-10"
                 style={{
@@ -486,6 +500,10 @@ export default function Home6({ onePage = false, dark = false }) {
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       {/* portfolio section */}
       <section
+        style={{
+          background:
+            "radial-gradient(circle at 14% 18%, rgba(231, 87, 120, 0.08) 0%, rgba(231, 87, 120, 0) 26%), radial-gradient(circle at 88% 24%, rgba(136, 118, 255, 0.12) 0%, rgba(136, 118, 255, 0) 28%), linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%)",
+        }}
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
@@ -493,7 +511,10 @@ export default function Home6({ onePage = false, dark = false }) {
       >
         <div className="container position-relative">
           <div className="row mb-30 mb-sm-40">
-            <div className="col-md-8 offset-md-2 text-center">
+            <div
+              className="col-md-8 offset-md-2 text-center wow fadeInUp"
+              data-wow-delay="0.08s"
+            >
               <h2
                 className="section-caption mb-20 mb-xs-10"
                 style={{
@@ -553,7 +574,10 @@ export default function Home6({ onePage = false, dark = false }) {
               />
             </div>
 
-            <div className="col-lg-6 col-xl-6">
+            <div
+              className="col-lg-6 col-xl-6 wow fadeInUp"
+              data-wow-delay="0.08s"
+            >
               <h3 className="section-title-small mb-30" style={{ fontWeight: 600 }}>
                 Frequently Asked <br />
                 Questions
@@ -580,33 +604,59 @@ export default function Home6({ onePage = false, dark = false }) {
             </div>
           </div>
           <div className="home6-bridge-banner home6-bridge-banner-faq">
-            <div className="home6-bridge-copy">
-              <span className="home6-bridge-eyebrow">FROM SERVICE TO RESULTS</span>
-              <h3 className="home6-bridge-title">
-                Built to help you launch faster and grow with more confidence.
-              </h3>
-              <p className="home6-bridge-text">
-                From strategy and design to development and post-launch support,
-                we keep the process focused, clear, and business-ready.
-              </p>
-            </div>
-            <div className="home6-bridge-points">
-              <div className="home6-bridge-point">
-                <strong>10-14 Day Starts</strong>
-                <span>Fast delivery for lean launch projects.</span>
+            <div className="home6-bridge-main">
+              <div className="home6-bridge-copy">
+                <span className="home6-bridge-eyebrow">
+                  See How We Can Improve Your Website
+                </span>
+                <h3 className="home6-bridge-title">
+                  Get a clearer view of what is hurting trust and conversions.
+                </h3>
+                <p className="home6-bridge-text">
+                  We review the parts of your website that affect first
+                  impressions, clarity, and user action so you can see where
+                  stronger design and structure could unlock better results.
+                </p>
               </div>
-              <div className="home6-bridge-point">
-                <strong>Design + Development</strong>
-                <span>One team handling both experience and execution.</span>
+
+              <div className="home6-bridge-note">
+                A quick strategic review to spot the gaps that make a website
+                feel weaker than the business behind it.
               </div>
+
+              <button
+                type="button"
+                onClick={togglePopup}
+                className="home6-bridge-button d-none d-md-inline-flex"
+              >
+                Book A Free Strategy Call
+              </button>
             </div>
-            <button
-              type="button"
-              onClick={togglePopup}
-              className="home6-bridge-button"
-            >
-              Book A Free Call
-            </button>
+
+            <div className="home6-bridge-side">
+              <div className="home6-bridge-points">
+                {[
+                  "Clarity and messaging gaps",
+                  "Conversion blockers on key pages",
+                  "Trust, layout and CTA weaknesses",
+                  "Quick-win improvements worth fixing first",
+                  "Sections that feel visually outdated",
+                  "Mobile UX issues affecting user flow",
+                ].map((point) => (
+                  <div className="home6-bridge-point" key={point}>
+                    <span>{point}</span>
+                  </div>
+                ))}
+              </div>
+
+              <button
+                type="button"
+                onClick={togglePopup}
+                className="home6-bridge-button d-md-none"
+              >
+                Book A Free Strategy Call
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -623,7 +673,7 @@ export default function Home6({ onePage = false, dark = false }) {
       </section> */}
       {/* Popup */}
       <Popup isPopupVisible={isPopupVisible} onClose={togglePopup}>
-        <Form togglePopup={togglePopup} />
+        <Form onSuccess={togglePopup} />
       </Popup>
       <style jsx>{`
         .why-choose-bullet {
