@@ -15,7 +15,7 @@ const serviceOverrides = {
   },
 };
 
-const ServiceItem = ({ src, title, text }) => (
+const ServiceItem = ({ src, title, text, animationClass, delay }) => (
   <>
     <div className="col-md-3 d-flex align-items-stretch">
       <div
@@ -26,7 +26,7 @@ const ServiceItem = ({ src, title, text }) => (
         }}
         className="services-5-item d-flex align-items-stretch text-center text-xl-start"
       >
-        <div className="wow fadeInUpShort">
+        <div className={`wow ${animationClass}`} data-wow-delay={delay}>
           <div className="">
             <Image
               style={{
@@ -57,7 +57,7 @@ const ServiceItem = ({ src, title, text }) => (
   </>
 );
 
-const ServiceItem2 = ({ src, title, text }) => {
+const ServiceItem2 = ({ src, title, text, animationClass, delay }) => {
   const content = serviceOverrides[title] || { text };
 
   return (
@@ -68,10 +68,10 @@ const ServiceItem2 = ({ src, title, text }) => {
           border: "1px solid rgb(95, 35, 186)",
           boxShadow: "0px 10px 30px 10px rgba(63, 51, 223, 0.45)",
         }}
-        className="services-5-item why-choose-card d-flex align-items-stretch text-center text-xl-start"
+        className="services-5-item why-choose-card d-flex align-items-stretch text-start"
       >
-        <div className="wow fadeInUpShort">
-          <div className="">
+        <div className={`wow ${animationClass}`} data-wow-delay={delay}>
+          <div className="why-choose-card-icon-wrap">
             <Image
               className="why-choose-card-icon"
               style={{
@@ -89,11 +89,15 @@ const ServiceItem2 = ({ src, title, text }) => {
             <div className="w-100">
               <h4
                 className="services-6-title why-choose-card-title text-white pt-4"
+                style={{ textAlign: "left" }}
               >
                 {title}
               </h4>
               <p
-                style={{ fontWeight: "300" }}
+                style={{
+                  fontWeight: "300",
+                  textAlign: "left",
+                }}
                 className="services-5-text why-choose-card-text mb-0 text-white"
               >
                 {content.text}
@@ -112,29 +116,42 @@ export default function twoService() {
         {/* Services Item */}
 
         {twoService4.map((service, index) => (
-          <ServiceItem2 key={index} {...service} />
+          <ServiceItem2
+            key={index}
+            {...service}
+            animationClass="fadeInUp"
+            delay={`${0.08 + index * 0.09}s`}
+          />
         ))}
         {/* End Services Item */}
       </div>
       <style jsx global>{`
+        .why-choose-card .why-choose-card-icon-wrap {
+          text-align: left;
+        }
+
         .why-choose-card .why-choose-card-title {
-          font-size: 15px;
-          line-height: 1.2;
+          font-size: 15px !important;
+          line-height: 1.2 !important;
+          font-weight: 700 !important;
+          text-align: left;
         }
 
         .why-choose-card .why-choose-card-text {
-          font-size: 11px;
-          line-height: 1.45;
+          font-size: 11px !important;
+          line-height: 1.45 !important;
+          font-weight: 300 !important;
+          text-align: left !important;
         }
 
         @media (min-width: 768px) {
           .why-choose-card .why-choose-card-title {
-            font-size: 23px;
+            font-size: 23px !important;
           }
 
           .why-choose-card .why-choose-card-text {
-            font-size: 14px;
-            line-height: 25px;
+            font-size: 14px !important;
+            line-height: 25px !important;
           }
         }
       `}</style>
@@ -161,3 +178,5 @@ export default function twoService() {
     </>
   );
 }
+
+
