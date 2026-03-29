@@ -20,9 +20,9 @@ const addScrollspy = (
       document
         .querySelector(linksContainer + ` .${activeClass}`)
         ?.setAttribute("class", defalutClass);
-      const navLink = document.querySelector(
-        linksContainer + " a[href*=" + i + "]"
-      );
+      const navLink = Array.from(
+        document.querySelectorAll(`${linksContainer} a[href]`)
+      ).find((link) => link.getAttribute("href")?.includes(`#${i}`));
 
       navLink?.setAttribute("class", `${defalutClass} ${activeClass}`);
     }
