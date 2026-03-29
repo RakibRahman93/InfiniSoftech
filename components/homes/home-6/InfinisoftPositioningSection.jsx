@@ -530,9 +530,9 @@ export default function InfinisoftPositioningSection() {
           height: 54px;
           flex: 0 0 54px;
           border-radius: 20px;
-          background: linear-gradient(135deg, #e75778 0%, #8876ff 100%);
-          padding: 3px;
-          box-shadow: 0 14px 28px rgba(120, 94, 224, 0.24);
+          background: rgba(255, 255, 255, 0.08);
+          padding: 0;
+          box-shadow: 0 12px 24px rgba(7, 10, 22, 0.22);
           overflow: hidden;
         }
 
@@ -541,7 +541,7 @@ export default function InfinisoftPositioningSection() {
           height: 100%;
           display: block;
           object-fit: cover;
-          border-radius: 17px;
+          border-radius: 20px;
           background: #0f1726;
         }
 
