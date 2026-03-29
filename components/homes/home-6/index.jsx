@@ -402,18 +402,12 @@ export default function Home6({ onePage = false, dark = false }) {
                     />
                     <div>
                       <h4
-                        className="services-6-title why-choose-card-title text-white mb-2"
-                        style={{ fontSize: "15px" }}
+                        className="services-6-title why-choose-card-title why-choose-summary-title text-white mb-2"
                       >
                         Fast Delivery
                       </h4>
                       <p
-                        style={{
-                          fontSize: "11px",
-                          fontWeight: "300",
-                          lineHeight: "18px",
-                        }}
-                        className="size-14 why-choose-card-description mb-0 text-white"
+                        className="size-14 why-choose-card-description why-choose-summary-description mb-0 text-white"
                       >
                         Clear timelines and focused execution so you can launch
                         without delays.
@@ -436,18 +430,12 @@ export default function Home6({ onePage = false, dark = false }) {
                     />
                     <div>
                       <h4
-                        className="services-6-title why-choose-card-title text-white mb-2"
-                        style={{ fontSize: "15px" }}
+                        className="services-6-title why-choose-card-title why-choose-summary-title text-white mb-2"
                       >
                         Conversion-Focused Design
                       </h4>
                       <p
-                        style={{
-                          fontSize: "11px",
-                          fontWeight: "300",
-                          lineHeight: "18px",
-                        }}
-                        className="size-14 why-choose-card-description mb-0 text-white"
+                        className="size-14 why-choose-card-description why-choose-summary-description mb-0 text-white"
                       >
                         Cleaner user journeys that build trust and drive more
                         inquiries, bookings, and sales.
@@ -470,18 +458,12 @@ export default function Home6({ onePage = false, dark = false }) {
                     />
                     <div>
                       <h4
-                        className="services-6-title why-choose-card-title text-white mb-2"
-                        style={{ fontSize: "15px" }}
+                        className="services-6-title why-choose-card-title why-choose-summary-title text-white mb-2"
                       >
                         Post-Launch Support
                       </h4>
                       <p
-                        style={{
-                          fontSize: "11px",
-                          fontWeight: "300",
-                          lineHeight: "18px",
-                        }}
-                        className="size-14 why-choose-card-description mb-0 text-white"
+                        className="size-14 why-choose-card-description why-choose-summary-description mb-0 text-white"
                       >
                         We stay involved after launch to fix issues, refine
                         details, and keep everything running smoothly.
@@ -678,6 +660,16 @@ export default function Home6({ onePage = false, dark = false }) {
       <style jsx>{`
         .why-choose-bullet {
           align-self: flex-start;
+        }
+
+        .why-choose-summary-title {
+          font-size: 15px !important;
+        }
+
+        .why-choose-summary-description {
+          font-size: 11px !important;
+          font-weight: 300 !important;
+          line-height: 18px !important;
         }
 
         @media (min-width: 992px) {
