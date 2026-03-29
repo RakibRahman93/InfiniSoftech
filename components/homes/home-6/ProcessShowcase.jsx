@@ -43,7 +43,7 @@ export default function ProcessShowcase() {
           </div>
         </div>
 
-        <div className="row g-3 justify-content-center">
+        <div className="row g-2 justify-content-center">
           {steps.map((step, index) => (
             <div
               key={step.number}
