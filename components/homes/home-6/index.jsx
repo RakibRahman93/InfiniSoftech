@@ -258,7 +258,7 @@ export default function Home6({ onePage = false, dark = false }) {
           dark ? "bg-dark-1 bg-gradient-gray-dark-1 light-content" : ""
         } bg-scroll`}
         id="technologies"
-        style={{ paddingTop: "110px", paddingBottom: "110px" }}
+        style={{ paddingTop: "72px", paddingBottom: "72px" }}
       >
         <div className="container position-relative">
           <div className="row mb-60 mb-sm-40">

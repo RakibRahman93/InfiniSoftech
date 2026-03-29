@@ -18,8 +18,9 @@ const ServiceItem = ({ src, title, text, link, animationClass, delay }) => (
           className={`p-0 wow ${animationClass} d-flex flex-column w-100`}
           data-wow-delay={delay}
         >
-          <div className="">
+          <div className="service-feature-icon-wrap">
             <Image
+              className="service-feature-icon"
               style={{
                 border: "1px solid rgb(95, 35, 186)",
                 padding: "1em",
@@ -89,8 +90,9 @@ const ServiceItem2 = ({ src, title, text, link, animationClass, delay }) => (
           className={`wow ${animationClass} d-flex flex-column w-100`}
           data-wow-delay={delay}
         >
-          <div className="">
+          <div className="service-feature-icon-wrap">
             <Image
+              className="service-feature-icon"
               style={{
                 border: "1px solid rgb(95, 35, 186)",
                 padding: "1em",
@@ -151,7 +153,7 @@ export default function Service() {
           <ServiceItem
             key={index}
             {...service}
-            animationClass={index % 2 === 0 ? "fadeInLeftShort" : "fadeInRightShort"}
+            animationClass="fadeInUp"
             delay={`${0.08 + index * 0.08}s`}
           />
         ))}
@@ -159,12 +161,30 @@ export default function Service() {
           <ServiceItem2
             key={index}
             {...service}
-            animationClass={(index + services3.length) % 2 === 0 ? "fadeInLeftShort" : "fadeInRightShort"}
+            animationClass="fadeInUp"
             delay={`${0.08 + (index + services3.length) * 0.08}s`}
           />
         ))}
         {/* End Services Item */}
       </div>
+      <style jsx global>{`
+        @media (max-width: 767.98px) {
+          .service-feature-card {
+            padding: 16px 14px !important;
+          }
+
+          .service-feature-icon {
+            width: 68px !important;
+            height: auto !important;
+            padding: 0.75em !important;
+          }
+
+          .service-feature-link,
+          .service-feature-link:hover {
+            padding-top: 12px;
+          }
+        }
+      `}</style>
       {/* End Services Grid */}
       {/* <div className="small text-gray text-center mt-60 mt-sm-40">
         Illustrations by{" "}
