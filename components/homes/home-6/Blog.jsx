@@ -1,4 +1,4 @@
-import { blogs6 } from "@/data/blogs";
+import { siteBlogCards } from "@/data/siteBlogCards";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +15,7 @@ export default function Blog() {
         <div className="col-lg-2 d-flex align-items-end">
           <div className="local-scroll text-center text-lg-end w-100">
             <Link
-              href={`/fancy-blog`}
+              href="/blog"
               className="link-hover-anim"
               data-link-animate="y"
             >
@@ -27,7 +27,7 @@ export default function Blog() {
       {/* Blog Posts Grid */}
       <div className="row position-relative mt-n30">
         {/* Decorative Waves */}
-        {blogs6.map((post, index) => (
+        {siteBlogCards.map((post, index) => (
           <div
             key={index}
             className={`post-prev col-md-6 col-lg-4 mt-30 wow fadeInLeft`}
@@ -36,7 +36,7 @@ export default function Blog() {
           >
             <div className="post-prev-container">
               <div className="post-prev-img">
-                <Link href={`/fancy-blog-single/${post.id}`}>
+                <Link href={`/blog/${post.id}`}>
                   <Image
                     width={620}
                     height={436}
@@ -46,7 +46,7 @@ export default function Blog() {
                 </Link>
               </div>
               <h4 className="post-prev-title">
-                <Link href={`/fancy-blog-single/${post.id}`}>{post.title}</Link>
+                <Link href={`/blog/${post.id}`}>{post.title}</Link>
               </h4>
               <div className="post-prev-text">{post.text}</div>
               <div className="post-prev-info clearfix">
