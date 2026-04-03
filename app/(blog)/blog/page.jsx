@@ -159,7 +159,9 @@ export default function FancyBlogPage() {
                     through your next website, app, or growth initiative.
                   </p>
                   <Link
-                    href="/contact"
+                    href="https://wa.me/8801858333238?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call."
+                    target="_blank"
+                    rel="noreferrer"
                     className="btn btn-mod btn-large btn-color btn-round btn-hover-anim"
                   >
                     <span>Book a free strategy call</span>
