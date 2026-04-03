@@ -2918,6 +2918,11 @@ a {
   .agency-pricing-plan-growth {
     transform: none;
   }
+
+  .agency-pricing-home-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2941,8 +2946,8 @@ a {
   }
 
   .agency-pricing-title {
-    font-size: clamp(2.35rem, 9vw, 3.35rem);
-    line-height: 1.08;
+    font-size: clamp(2rem, 7.4vw, 2.7rem);
+    line-height: 1.12;
     letter-spacing: -0.035em;
   }
 
@@ -2997,6 +3002,21 @@ a {
   .agency-pricing-trustline span::after {
     display: none;
   }
+
+  .agency-pricing-home-banner-wrap {
+    padding: 0 0 28px;
+  }
+
+  .agency-pricing-home-banner {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .agency-pricing-home-banner-link {
+    min-width: min(100%, 220px);
+    min-height: 48px;
+    border-radius: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -3005,8 +3025,8 @@ a {
   }
 
   .agency-pricing-title {
-    font-size: clamp(2rem, 11vw, 2.8rem);
-    line-height: 1.1;
+    font-size: clamp(1.75rem, 6.9vw, 2.25rem);
+    line-height: 1.14;
   }
 
   .agency-pricing-subtitle {
@@ -4650,5 +4670,6 @@ body.appear-animate .pricing-slide-design {
     padding-bottom: 32px !important;
   }
 }
+
 
 

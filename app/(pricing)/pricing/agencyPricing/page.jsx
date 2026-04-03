@@ -115,7 +115,7 @@ const AgencyPricingPage = () => {
               <div className="agency-pricing-hero-grid">
                 <div>
                   <h1 className="agency-pricing-title">
-                    Unlimited Websites &
+                    Unlimited Websites &{" "}
                     <br />
                     <span className="agency-pricing-title-nowrap">
                       Updates For <span className="agency-pricing-title-inline">One Simple</span>
