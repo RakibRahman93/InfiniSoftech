@@ -158,12 +158,14 @@ export default function Home6({ onePage = false, dark = false }) {
               </p>
             </div>
             <div className="agency-pricing-home-banner-actions">
-              <Link
-                href="/pricing/agencyPricing"
-                className="agency-pricing-home-banner-link"
-              >
-                View Agency Pricing
-              </Link>
+              <div className="cta-glitter-wrap">
+                <Link
+                  href="/pricing/agencyPricing"
+                  className="btn-lg fw-semibold text-white shadow-sm cta-glitter-button w-md-auto agency-pricing-home-banner-link"
+                >
+                  View Agency Pricing
+                </Link>
+              </div>
             </div>
           </div>
         </div>
