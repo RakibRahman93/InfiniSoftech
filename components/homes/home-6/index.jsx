@@ -144,6 +144,32 @@ export default function Home6({ onePage = false, dark = false }) {
       </section>
       <InfinisoftPositioningSection />
       <ProcessShowcase />
+      <section className="agency-pricing-home-banner-wrap">
+        <div className="container position-relative">
+          <div className="agency-pricing-home-banner">
+            <div className="agency-pricing-home-banner-copy">
+              <span className="agency-pricing-home-banner-kicker">
+                Website Subscription
+              </span>
+              <h3>Unlimited websites and updates for one monthly fee.</h3>
+              <p>
+                Built for teams that want faster website execution without the
+                usual per-project cost and delays.
+              </p>
+            </div>
+            <div className="agency-pricing-home-banner-actions">
+              <div className="cta-glitter-wrap">
+                <Link
+                  href="/pricing/agencyPricing"
+                  className="btn-lg fw-semibold text-white shadow-sm cta-glitter-button w-md-auto agency-pricing-home-banner-link"
+                >
+                  View Agency Pricing
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Our Services */}
       
       <section
@@ -692,3 +718,4 @@ export default function Home6({ onePage = false, dark = false }) {
     </>
   );
 }
+
