@@ -17,26 +17,34 @@ const FooterTop = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/api/sendEmail", {
+      const response = await fetch("/api/submitForm", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          subject: "Footer Contact Form",
+          options: "General Inquiry",
+          planTitle: "",
+          planPrice: "",
+        }),
       });
+      const result = await response.json();
       if (response.ok) {
-        toast.success("Email sent successfully!");
+        toast.success(result.message || "Form submitted successfully!");
         setFormData({
           name: "",
           email: "",
           phone: "",
           message: "",
         });
-      }else {
-        toast.error("Failed to send email. Please try again.");
+      } else {
+        toast.error(result.message || "Failed to submit form. Please try again.");
       }
     } catch (error) {
       console.error("Error sending email:", error);
+      toast.error("An error occurred. Please try again.");
     } 
   };
 
@@ -101,7 +109,6 @@ const FooterTop = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         name="phone"
-                        required
                       />
                     </div>
                   </div>
