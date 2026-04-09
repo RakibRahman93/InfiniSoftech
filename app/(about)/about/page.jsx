@@ -4,6 +4,7 @@ import Header6 from "@/components/headers/Header6";
 import About from "@/components/homes/home-6/About";
 import Aboutt from "@/components/homes/home-1/About";
 import Features from "@/components/homes/home-6/Features";
+import InfinisoftPositioningSection from "@/components/homes/home-6/InfinisoftPositioningSection";
 import Testimonials from "@/components/homes/home-6/Testimonials";
 import TestimonialsDark from "@/components/homes/home-6/TestimonialsDark";
 import { fancyMultipage } from "@/data/menu";
@@ -219,6 +220,7 @@ export default function FancyAboutPage() {
       >
         <Team />
       </section>
+      <InfinisoftPositioningSection />
       <section
         className={`page-section about-work-section ${dark ? "bg-dark-1 light-content" : ""}`}
       >

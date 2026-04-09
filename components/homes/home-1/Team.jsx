@@ -8,7 +8,6 @@ export default function Team() {
   return (
     <div className="container position-relative">
       <div className="row">
-        {/* Quote */}
         <div className="col-md-6 mb-sm-60 mb-xs-40 d-flex align-items-center">
           <blockquote className="testimonial mb-0 wow fadeInUp">
             <div className="blockquote-icon" aria-hidden="true">
@@ -24,8 +23,7 @@ export default function Team() {
             </footer>
           </blockquote>
         </div>
-        {/* End Quote */}
-        {/* Team Carousel */}
+
         <div className="col-md-6 relative">
           <div>
             <Swiper
@@ -33,7 +31,7 @@ export default function Team() {
               slidesPerView={2}
               breakpoints={{
                 500: {
-                  slidesPerView: 2, // When window width is <= 480px
+                  slidesPerView: 2,
                 },
                 0: {
                   slidesPerView: 1,
@@ -52,7 +50,6 @@ export default function Team() {
                 display: "block",
               }}
             >
-              {/* Team item */}
               {teamMembers.map((member, index) => (
                 <SwiperSlide className="owl-item" key={index}>
                   <div className="team-carousel-item">
@@ -115,11 +112,9 @@ export default function Team() {
                   </div>
                 </div>
               </div>
-              {/* End Team item */}
             </Swiper>
           </div>
         </div>
-        {/* End Team Carousel */}
       </div>
     </div>
   );
