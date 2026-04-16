@@ -2,13 +2,17 @@
 
 import { PopupWrapper } from "@/components/headers/components/PopupWrapper";
 import { useEffect, useState } from "react";
+import { useLocation } from "@/context/LocationContext";
 
 const developmentPlans = [
   {
     title: "Starter",
     badge: "Best For Launch",
     badgeBackground: "linear-gradient(30deg, rgba(76, 151, 255, 0.9) 0%, rgba(82, 100, 255, 0.9) 100%)",
-    price: "$599",
+    prices: {
+      bd: "18,700 Tk",
+      intl: "$599",
+    },
     delivery: "10-14 Days",
     description:
       "Perfect for businesses that need a clean, professional website launched fast with all the essentials in place.",
@@ -41,7 +45,10 @@ const developmentPlans = [
     title: "Growth",
     badge: "Most Popular",
     badgeBackground: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-    price: "$2,500",
+    prices: {
+      bd: "48,700 Tk",
+      intl: "$2,500",
+    },
     delivery: "3-4 Weeks",
     description:
       "Built for growing businesses that need a polished, high-converting website with stronger branding, smart integrations, and room to scale.",
@@ -97,7 +104,10 @@ const developmentPlans = [
     title: "Premium",
     badge: "Best For Scale",
     badgeBackground: "linear-gradient(30deg, rgba(168, 85, 247, 0.92) 0%, rgba(99, 102, 241, 0.92) 100%)",
-    price: "$8,500",
+    prices: {
+      bd: "150,000 Tk",
+      intl: "$8,500",
+    },
     delivery: "6-10 Weeks",
     description:
       "Built for SaaS products, platforms, and custom web apps that need scalable architecture, premium UX, and revenue-ready functionality.",
@@ -158,7 +168,10 @@ const designPlans = [
     badge: "Best For MVP",
     badgeBackground:
       "linear-gradient(30deg, rgba(76, 151, 255, 0.9) 0%, rgba(82, 100, 255, 0.9) 100%)",
-    price: "$399",
+    prices: {
+      bd: "7,500 Tk",
+      intl: "$399",
+    },
     delivery: "1-2 Weeks",
     description:
       "Great for startups that need clean UI screens, wireframes, and a fast visual direction for launch.",
@@ -186,7 +199,10 @@ const designPlans = [
     title: "Growth",
     badge: "Most Popular",
     badgeBackground: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-    price: "$1,150",
+    prices: {
+      bd: "25,000 Tk",
+      intl: "$1,150",
+    },
     delivery: "2-4 Weeks",
     description:
       "Best for growing products that need stronger UX thinking, polished interfaces, and conversion-focused user flows.",
@@ -221,7 +237,10 @@ const designPlans = [
     badge: "Best For Scale",
     badgeBackground:
       "linear-gradient(30deg, rgba(168, 85, 247, 0.92) 0%, rgba(99, 102, 241, 0.92) 100%)",
-    price: "$3,500+",
+    prices: {
+      bd: "55,000 Tk",
+      intl: "$3,500+",
+    },
     delivery: "4-6 Weeks",
     description:
       "Built for SaaS products and advanced platforms that need premium UX strategy, scalable design systems, and polished product experiences.",
@@ -264,7 +283,10 @@ const marketingPlans = [
     badge: "Best For Visibility",
     badgeBackground:
       "linear-gradient(30deg, rgba(76, 151, 255, 0.9) 0%, rgba(82, 100, 255, 0.9) 100%)",
-    price: "$650",
+    prices: {
+      bd: "$650",
+      intl: "$650",
+    },
     delivery: "Monthly Retainer",
     description:
       "Ideal for brands that need a consistent social presence with planned content, cleaner execution, and reliable monthly momentum.",
@@ -291,7 +313,10 @@ const marketingPlans = [
     title: "Growth",
     badge: "Most Popular",
     badgeBackground: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-    price: "$1,450",
+    prices: {
+      bd: "$1,450",
+      intl: "$1,450",
+    },
     delivery: "Monthly Retainer",
     description:
       "Built for businesses ready to turn social media into a lead-generating growth channel with stronger campaigns and more structured execution.",
@@ -323,7 +348,10 @@ const marketingPlans = [
     badge: "Best For Scale",
     badgeBackground:
       "linear-gradient(30deg, rgba(168, 85, 247, 0.92) 0%, rgba(99, 102, 241, 0.92) 100%)",
-    price: "$2,900",
+    prices: {
+      bd: "$2,900",
+      intl: "$2,900",
+    },
     delivery: "Monthly Retainer",
     description:
       "Designed for teams that want a more complete social marketing engine with campaign execution, optimization, and deeper performance visibility.",
@@ -357,7 +385,10 @@ const ecommercePlans = [
     badge: "Best For Launch",
     badgeBackground:
       "linear-gradient(30deg, rgba(76, 151, 255, 0.9) 0%, rgba(82, 100, 255, 0.9) 100%)",
-    price: "$1,299",
+    prices: {
+      bd: "25,000 Tk",
+      intl: "$1,299",
+    },
     delivery: "2-3 Weeks",
     description:
       "A focused ecommerce setup for brands that need a polished storefront, reliable checkout, and a fast path to launch.",
@@ -387,7 +418,10 @@ const ecommercePlans = [
     title: "Growth Store",
     badge: "Most Popular",
     badgeBackground: "linear-gradient(30deg, #E75778 0%, #8876FF 100%)",
-    price: "$2,490",
+    prices: {
+      bd: "55,000 Tk",
+      intl: "$2,490",
+    },
     delivery: "3-5 Weeks",
     description:
       "Built for growing ecommerce brands that need stronger merchandising, richer product pages, and a better conversion path.",
@@ -422,7 +456,10 @@ const ecommercePlans = [
     badge: "Best For Scale",
     badgeBackground:
       "linear-gradient(30deg, rgba(168, 85, 247, 0.92) 0%, rgba(99, 102, 241, 0.92) 100%)",
-    price: "$3,990",
+    prices: {
+      bd: "89,000 Tk",
+      intl: "$3,990",
+    },
     delivery: "5-7 Weeks",
     description:
       "For established ecommerce brands that want a premium storefront, deeper customization, and a store built for higher order volume.",
@@ -457,7 +494,6 @@ const pricingTabs = [
   { id: "design", label: "Design", plans: designPlans },
   { id: "development", label: "Development", plans: developmentPlans },
   { id: "ecommerce", label: "Ecommerce", plans: ecommercePlans },
-  { id: "marketing", label: "Marketing", plans: marketingPlans },
 ];
 
 const premiumFeatureExplanations = {
@@ -633,6 +669,8 @@ function FeatureIcon() {
 
 export default function PricingShowcase() {
   const [activeTab, setActiveTab] = useState("development");
+  const { location } = useLocation();
+  const isBangladesh = location?.country === "Bangladesh";
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -758,7 +796,10 @@ export default function PricingShowcase() {
         </div>
 
         <div className="row g-4">
-          {plans.map((plan, index) => (
+          {plans.map((plan, index) => {
+            const displayPrice = isBangladesh ? plan.prices.bd : plan.prices.intl;
+
+            return (
             <div
               key={`${activeTab}-${plan.title}`}
               className="col-lg-4 d-flex"
@@ -826,7 +867,7 @@ export default function PricingShowcase() {
                     marginBottom: "12px",
                   }}
                 >
-                  {plan.price}
+                  {displayPrice}
                 </div>
                 <div
                   className="pricing-showcase-delivery"
@@ -922,13 +963,14 @@ export default function PricingShowcase() {
                     minWidth="100%"
                     buttonText="Get A Free Consultation"
                     height="3rem"
-                    plan={{ title: plan.title, price: plan.price }}
+                    plan={{ title: plan.title, price: displayPrice }}
                     isFullWidth={true}
                   />
                 </div>
               </div>
             </div>
-          ))}
+          );
+          })}
         </div>
       </div>
       <style jsx>{`

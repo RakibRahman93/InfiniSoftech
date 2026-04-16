@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 
-export default function Form({ onSuccess,plan }) {
+export default function Form({ onSuccess, plan }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -15,21 +15,27 @@ export default function Form({ onSuccess,plan }) {
   useEffect(() => {
     const savedFormData = localStorage.getItem("formData");
     if (savedFormData) {
-      const { name, email, phone, options, subject, message } =
-        JSON.parse(savedFormData);
-      setName(name);
-      setEmail(email);
-      setPhone(phone);
-      setOptions(options);
-      setSubject(subject);
-      setMessage(message);
+      const parsed = JSON.parse(savedFormData);
+      setName(parsed.name || "");
+      setEmail(parsed.email || "");
+      setPhone(parsed.phone || "");
+      setOptions(parsed.options || "");
+      setSubject(parsed.subject || "");
+      setMessage(parsed.message || "");
     }
   }, []);
 
   useEffect(() => {
     localStorage.setItem(
       "formData",
-      JSON.stringify({ name, email, phone, options, subject, message })
+      JSON.stringify({
+        name,
+        email,
+        phone,
+        options,
+        subject,
+        message,
+      })
     );
   }, [name, email, phone, options, subject, message]);
 
@@ -66,7 +72,7 @@ export default function Form({ onSuccess,plan }) {
         setOptions("");
         setSubject("");
         setMessage("");
-        onSuccess(); // Call the onSuccess function passed as a prop
+        onSuccess?.();
       } else {
         setStatus(`Error: ${result.message || "Something went wrong"}`);
       }
@@ -83,7 +89,7 @@ export default function Form({ onSuccess,plan }) {
           className="font-semibold section-5-title mb-0"
           style={{ color: "#1C1C57", fontFamily: "Montserrat" }}
         >
-          Book A {" "}
+          Book A{" "}
           <span
             style={{
               background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
@@ -91,7 +97,7 @@ export default function Form({ onSuccess,plan }) {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Free Call
+            Free Strategy Call
           </span>
         </h2>
         <p className="font-semibold">We will get back to you soon!</p>
@@ -103,7 +109,6 @@ export default function Form({ onSuccess,plan }) {
             className="popup-form-left space-y-4 wow fadeInUp"
             onSubmit={handleSubmit}
           >
-            {/* Conditionally show plan title and price if plan is provided */}
             {plan?.title && plan?.price ? (
               <>
                 <div className="w-full mb-3 text-start">
@@ -124,12 +129,13 @@ export default function Form({ onSuccess,plan }) {
                   >
                     Price:{" "}
                     <span style={{ color: "#B467C0", fontWeight: "bolder" }}>
-                      ${plan?.price}
+                      {plan?.price}
                     </span>
                   </div>
                 </div>
               </>
             ) : null}
+
             <div className="w-full">
               <input
                 type="text"
@@ -140,6 +146,7 @@ export default function Form({ onSuccess,plan }) {
                 required
               />
             </div>
+
             <div className="w-full">
               <input
                 type="email"
@@ -161,6 +168,7 @@ export default function Form({ onSuccess,plan }) {
                 required
               />
             </div>
+
             <div className="w-full">
               <select
                 className="popup-input w-full"
@@ -172,12 +180,17 @@ export default function Form({ onSuccess,plan }) {
                 <option value="" disabled>
                   Select Service
                 </option>
-                <option value="Website design">Staff Augmentation</option>
+                <option value="Staff Augmentation">Staff Augmentation</option>
                 <option value="Website design">Website design</option>
                 <option value="Mobile App design">Mobile App design</option>
                 <option value="Website development">Website development</option>
                 <option value="Mobile App development">
                   Mobile App development
+                </option>
+                <option value="SEO Services">SEO Services</option>
+                <option value="AI Receptionist">AI Receptionist</option>
+                <option value="Social Media Marketing">
+                  Social Media Marketing
                 </option>
                 <option value="UIUX Consulting">UIUX Consulting</option>
                 <option value="Prototyping">Prototyping</option>
@@ -196,9 +209,10 @@ export default function Form({ onSuccess,plan }) {
                 style={{ color: "#1C1C57" }}
               />
             </div>
+
             <div className="w-full">
               <textarea
-                placeholder="Message"
+                placeholder="Tell us what you want to build, what the goal is, and anything important we should know."
                 id="message"
                 className="popup-input w-full"
                 value={message}
@@ -207,12 +221,13 @@ export default function Form({ onSuccess,plan }) {
                 style={{ color: "#1C1C57" }}
               />
             </div>
+
             <button
               className="btn btn-primary submit-button w-full"
               type="submit"
               style={{
                 borderRadius: "50px",
-                height: "2.7rem",
+                minHeight: "2.9rem",
                 width: "100%",
                 background: "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
                 border: "none",
@@ -222,8 +237,13 @@ export default function Form({ onSuccess,plan }) {
                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
               }}
             >
-              Send Request <i className="bi bi-arrow-right"></i>
+              Tell us what you want to build <i className="bi bi-arrow-right"></i>
             </button>
+
+            {status ? (
+              <div className="small text-danger pt-2">{status}</div>
+            ) : null}
+
             <div className="row py-3">
               <div className="col-md-8 col-lg-5">
                 <div className="d-flex align-items-center gap-2">
@@ -269,7 +289,7 @@ export default function Form({ onSuccess,plan }) {
                   <div className="icon">
                     <img
                       src="/assets/images/email.svg"
-                      alt="WhatsApp"
+                      alt="Email"
                       className="img-fluid w-100"
                       style={{ width: "100%" }}
                     />
@@ -307,23 +327,12 @@ export default function Form({ onSuccess,plan }) {
             </div>
           </form>
         </div>
+
         <div className="col-md-6 col-lg-5 p-0">
-          <div className="">
-            {/* Decorative Image */}
+          <div>
             <div className="decoration-11 d-none d-xl-block">
-              <div className="wow fadeInUp">
-                {/* <Image
-                  src="/assets/images/demo-fancy/contact-section-image.png"
-                  width={225}
-                  height={250}
-                  alt=""
-                /> */}
-              </div>
+              <div className="wow fadeInUp"></div>
             </div>
-            {/* End Decorative Image */}
-            {/* <div className="box-shadow round p-4 p-sm-5">
-              <h4 className="h3 mb-30">Get in Touch</h4> */}
-            {/* Google Map */}
             <div className="map-boxed">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.0719894066533!2d90.41366707619392!3d23.780450678649846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c79c1e7f822f%3A0x6c343f84ca86b6c9!2sNavana%20Tower%2C%2045%20Gulshan%20Ave%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1733060682121!5m2!1sen!2sbd"
