@@ -322,6 +322,21 @@ export const portfolios5 = [
 
 export const portfolios6 = [
   {
+    id: 86,
+    categories: ["branding", "website", "development"],
+    imgSrc: "/assets/portfolio/BJA.png",
+    imgExtra: "/assets/portfolio/BJA.png",
+    title: "Website Design and Development",
+    description: "BJA Website",
+    lightbox: false,
+    Date: "2026",
+    Client: "Landing Page",
+    Services: "Branding, UI/UX Design, Front-end Development",
+    Description:
+      "A refreshed landing page experience for BJA designed to present the offer more clearly, improve visual trust, and create a stronger conversion path.",
+    website: "bajus-landing-refresh-main.vercel.app",
+  },
+  {
     id: 81,
     categories: ["branding", "website", "development"],
     imgSrc: "/assets/portfolio/offizonee123.png",
