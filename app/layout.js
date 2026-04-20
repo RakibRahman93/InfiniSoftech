@@ -150,6 +150,13 @@ export default function RootLayout({ children }) {
             data-website-id="dde1d23e-a1b5-4d8e-b1f3-e3b47b9a1dde"
           ></script>
 
+          {/* AdPulse tracking */}
+          <script
+            async
+            src="https://id-preview--1e4b0505-ccce-4b89-bd81-cec581048e2f.lovable.app/track.js"
+            data-site="d03f0530-b1e8-4428-a0ef-94cc4ca03311"
+          ></script>
+
           {/* Hotjar Tracking Code */}
           <script
             dangerouslySetInnerHTML={{
