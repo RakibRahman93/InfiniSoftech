@@ -153,7 +153,7 @@ export default function RootLayout({ children }) {
           {/* AdPulse tracking */}
           <script
             async
-            src="https://1e4b0505-ccce-4b89-bd81-cec581048e2f.lovableproject.com/track.js"
+            src="https://insight-hub-infinisoft.lovable.app/api/track.js"
             data-site="d03f0530-b1e8-4428-a0ef-94cc4ca03311"
           ></script>
 
