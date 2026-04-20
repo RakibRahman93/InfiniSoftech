@@ -154,6 +154,7 @@ export default function RootLayout({ children }) {
           <script
             async
             src="https://insight-hub-infinisoft.lovable.app/api/track.js"
+            data-endpoint="/api/adpulse-track"
             data-site="d03f0530-b1e8-4428-a0ef-94cc4ca03311"
           ></script>
 
