@@ -8,6 +8,7 @@ import { Settings, LogOut, ChevronDown, ShieldCheck } from "lucide-react";
 export default function ProfileDropdown() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const [email, setEmail] = useState("admin@infinisoftech.com");
   const ref = useRef(null);
 
   useEffect(() => {
@@ -16,6 +17,19 @@ export default function ProfileDropdown() {
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/api/admin/security")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (!cancelled && data?.email) setEmail(data.email);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const handleLogout = async () => {
@@ -40,7 +54,7 @@ export default function ProfileDropdown() {
         </span>
         <div className="hidden sm:block">
           <p className="text-sm font-medium text-ink leading-tight">Administrator</p>
-          <p className="text-[11px] text-muted-foreground">admin@infinisoftech.com</p>
+          <p className="text-[11px] text-muted-foreground">{email}</p>
         </div>
         <ChevronDown className="hidden h-3.5 w-3.5 text-muted-foreground sm:block" />
       </button>
@@ -52,7 +66,7 @@ export default function ProfileDropdown() {
         >
           <div className="border-b border-ink/5 px-4 py-3">
             <p className="text-sm font-medium text-ink">Administrator</p>
-            <p className="text-[11px] text-muted-foreground">admin@infinisoftech.com</p>
+            <p className="text-[11px] text-muted-foreground">{email}</p>
             <span className="mt-1.5 inline-flex items-center gap-1 rounded-full bg-green/10 px-2 py-0.5 text-[10px] font-semibold text-green">
               <ShieldCheck className="h-3 w-3" /> Full access
             </span>
