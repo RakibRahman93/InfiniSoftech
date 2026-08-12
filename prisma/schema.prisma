@@ -1,0 +1,132 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model AdminUser {
+  id           String    @id @default(uuid())
+  email        String    @unique
+  passwordHash String
+  salt         String
+  otpEnabled   Boolean   @default(true)
+  otpHash      String?
+  otpExpiresAt DateTime?
+  lastLoginAt  DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  sessions     AdminSession[]
+  otps         AdminOtp[]
+
+  @@map("admin_users")
+}
+
+model AdminSession {
+  id        String   @id @default(uuid())
+  token     String   @unique
+  email     String
+  ip        String?
+  userAgent String?
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  admin     AdminUser? @relation(fields: [email], references: [email])
+
+  @@index([email])
+  @@map("admin_sessions")
+}
+
+model AdminOtp {
+  id        String   @id @default(uuid())
+  email     String
+  codeHash  String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  admin     AdminUser? @relation(fields: [email], references: [email])
+
+  @@index([email])
+  @@map("admin_otps")
+}
+
+model IpBlock {
+  id           String    @id @default(uuid())
+  ip           String    @unique
+  attempts     Int       @default(0)
+  blockedAt    DateTime?
+  blockedUntil DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@map("ip_blocks")
+}
+
+model SecurityCode {
+  id         String    @id @default(uuid())
+  label      String    @default("Verification code")
+  codeHash   String
+  active     Boolean   @default(true)
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  lastUsedAt DateTime?
+
+  @@map("security_codes")
+}
+
+model Setting {
+  key       String   @id
+  value     String?
+  updatedAt DateTime @updatedAt
+
+  @@map("settings")
+}
+
+model Blog {
+  id        String   @id @default(uuid())
+  title     String
+  slug      String   @unique
+  excerpt   String?
+  content   String?
+  author    String   @default("InfiniSoft Team")
+  cover     String?
+  status    String   @default("published")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("blogs")
+}
+
+model Faq {
+  id        String   @id @default(uuid())
+  question  String
+  answer    String
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@map("faqs")
+}
+
+model Lead {
+  id         String   @id @default(uuid())
+  name       String?
+  email      String?
+  phone      String?
+  company    String?
+  message    String?
+  source     String   @default("Contact form")
+  status     String   @default("New")
+  createdAt  DateTime @default(now())
+  insertedAt DateTime @default(now())
+
+  @@map("leads")
+}
+
+model Message {
+  id         String   @id @default(uuid())
+  content    String
+  username   String?
+  insertedAt DateTime @default(now())
+
+  @@map("messages")
+}
