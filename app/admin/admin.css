@@ -7,6 +7,15 @@ html[class] body {
   font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
 
+html[class] body a,
+html[class] body a:link,
+html[class] body a:visited,
+html[class] body a:hover,
+html[class] body a:active,
+html[class] body a:focus {
+  text-decoration: none !important;
+}
+
 .admin-scroll-area {
   scrollbar-width: thin;
   scrollbar-color: rgba(26, 26, 26, 0.15) transparent;

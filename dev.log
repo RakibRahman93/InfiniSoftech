@@ -7,32 +7,20 @@
   - Environments: .env
 
  ✓ Starting...
- ✓ Ready in 1978ms
- ✓ Compiled /middleware in 179ms (72 modules)
+ ✓ Ready in 1758ms
+ ✓ Compiled /api/submitForm in 304ms (64 modules)
+ POST /api/submitForm 200 in 2307ms
+ ✓ Compiled /middleware in 320ms (72 modules)
  ○ Compiling /api/admin/login-gate ...
- ✓ Compiled /api/admin/login-gate in 558ms (110 modules)
- POST /api/admin/login-gate 401 in 1878ms
- POST /api/admin/login-gate 401 in 228ms
- POST /api/admin/login-gate 401 in 226ms
- POST /api/admin/login-gate 200 in 273ms
- ✓ Compiled /api/admin/login in 91ms (112 modules)
- POST /api/admin/login 200 in 359ms
- POST /api/admin/login 401 in 56ms
- POST /api/admin/login-gate 401 in 232ms
- POST /api/admin/login-gate 401 in 198ms
- POST /api/admin/login-gate 401 in 207ms
- POST /api/admin/login-gate 401 in 208ms
- POST /api/admin/login-gate 200 in 207ms
- ✓ Compiled /api/admin/logout in 78ms (114 modules)
- POST /api/admin/logout 200 in 108ms
- ○ Compiling /admin/login ...
- ✓ Compiled /admin/login in 3.6s (796 modules)
- POST /api/admin/login-gate 401 in 232ms
- POST /api/admin/login-gate 401 in 180ms
- POST /api/admin/login-gate 401 in 181ms
- POST /api/admin/login-gate 401 in 182ms
- POST /api/admin/login-gate 429 in 222ms
- POST /api/admin/login-gate 429 in 53ms
- ○ Compiling /_not-found ...
- ✓ Compiled /_not-found in 530ms (797 modules)
- GET /sw.js 404 in 721ms
+ ✓ Compiled /api/admin/login-gate in 550ms (149 modules)
+ POST /api/admin/login-gate 200 in 1166ms
+ ✓ Compiled /api/admin/login in 99ms (151 modules)
+ POST /api/admin/login 200 in 426ms
+ ✓ Compiled /api/admin/leads/[id]/reply in 191ms (163 modules)
+ POST /api/admin/leads/0f3ab8cd-1d90-4dc2-ad9a-4c18104bcb03/reply 200 in 2557ms
+ POST /api/admin/login-gate 200 in 244ms
+ POST /api/admin/login 200 in 198ms
+ ✓ Compiled /api/admin/leads/[id]/status in 87ms (165 modules)
+ PATCH /api/admin/leads/0f3ab8cd-1d90-4dc2-ad9a-4c18104bcb03/status 200 in 723ms
+ ✓ Compiled /api/admin/leads in 131ms (167 modules)
+ GET /api/admin/leads 200 in 398ms
