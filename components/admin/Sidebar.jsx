@@ -26,6 +26,7 @@ import {
   X,
 } from "lucide-react";
 import { navGroups } from "@/lib/admin/navigation";
+import { subscribeToRealtime } from "@/lib/realtime/client";
 
 const ICON_MAP = {
   LayoutDashboard,
@@ -49,7 +50,18 @@ export default function Sidebar() {
   const router = useRouter();
   const [collapsed, setCollapsed] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [newLeadsCount, setNewLeadsCount] = useState(0);
+  const [unreadCount, setUnreadCount] = useState(0);
+
+  const loadUnread = async () => {
+    try {
+      const res = await fetch("/api/admin/leads/count");
+      if (!res.ok) return;
+      const data = await res.json();
+      setUnreadCount(data?.count ?? 0);
+    } catch {
+      // ignore
+    }
+  };
 
   useEffect(() => {
     let cancelled = false;
@@ -58,7 +70,7 @@ export default function Sidebar() {
         const res = await fetch("/api/admin/leads/count");
         if (!res.ok) return;
         const data = await res.json();
-        if (!cancelled) setNewLeadsCount(data?.count ?? 0);
+        if (!cancelled) setUnreadCount(data?.count ?? 0);
       } catch {
         // ignore
       }
@@ -70,6 +82,30 @@ export default function Sidebar() {
       clearInterval(timer);
     };
   }, []);
+
+  // Real-time: a new incoming customer message bumps the badge instantly.
+  useEffect(() => {
+    return subscribeToRealtime((payload) => {
+      if (payload?.direction === "incoming") loadUnread();
+    });
+  }, []);
+
+  // Keep the badge in sync across navigation: opening the Leads page marks
+  // messages as read server-side, so the badge clears instead of staying stale.
+  useEffect(() => {
+    const onLeadPage = pathname === "/admin/dashboard/leads";
+    const sync = async () => {
+      if (onLeadPage) {
+        try {
+          await fetch("/api/admin/leads/read", { method: "POST" });
+        } catch {
+          // ignore
+        }
+      }
+      await loadUnread();
+    };
+    void sync();
+  }, [pathname]);
 
   const handleLogout = async () => {
     try {
@@ -174,7 +210,7 @@ export default function Sidebar() {
                         ? "/admin/dashboard/coming-soon"
                         : item.href;
                       const isActive = pathname === href;
-                      const badgeCount = href === "/admin/dashboard/leads" ? newLeadsCount : 0;
+                      const badgeCount = href === "/admin/dashboard/leads" ? unreadCount : 0;
                       return (
                         <li key={item.href}>
                           <Link

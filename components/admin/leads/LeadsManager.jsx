@@ -10,6 +10,7 @@ import {
   FileText,
   Filter,
   Loader2,
+  MessageSquare,
   RefreshCw,
   Reply,
   Search,
@@ -21,6 +22,8 @@ import LeadDetailModal from "./LeadDetailModal";
 import ConfirmDialog from "./ConfirmDialog";
 import SmartPagination from "./SmartPagination";
 import usePagination from "./usePagination";
+import { subscribeToAdminLeads } from "@/lib/supabase/chat-client";
+import { subscribeToRealtime } from "@/lib/realtime/client";
 
 const STATUS_ORDER = ["New", "Contacted", "Qualified", "Won"];
 
@@ -296,6 +299,21 @@ export default function LeadsManager({ initialLeads, live }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [liveDB]);
 
+  // Mark messages as read once the admin opens the Leads page so the sidebar badge clears.
+  useEffect(() => {
+    void fetch("/api/admin/leads/read", { method: "POST" }).catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    const unsubscribe = subscribeToAdminLeads(() => refresh(true));
+    const unsubRealtime = subscribeToRealtime(() => refresh(true));
+    return () => {
+      unsubscribe();
+      unsubRealtime();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [liveDB]);
+
   const openDetail = (lead) => {
     setSelectedId(lead.id);
     setDetailOpen(true);
@@ -395,13 +413,6 @@ export default function LeadsManager({ initialLeads, live }) {
           : l,
       ),
     );
-    if (type === "sent" && data.emailError) {
-      toast((t) => (
-        <span>
-          Reply saved and stored. <strong>Email failed:</strong> {String(data.emailError).slice(0, 120)}
-        </span>
-      ));
-    }
   };
 
   const handleDeleteReply = async (leadId, replyId) => {
@@ -573,7 +584,7 @@ export default function LeadsManager({ initialLeads, live }) {
       </header>
 
       {/* Stat cards */}
-      <section className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-2 xl:grid-cols-4">
+      <section className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-2 xl:grid-cols-5">
         {statCards.map(({ label, value, change, caption, icon: Icon, iconClass, points }) => (
           <div
             key={label}
@@ -600,6 +611,30 @@ export default function LeadsManager({ initialLeads, live }) {
             </div>
           </div>
         ))}
+
+        {/* Messages stat card */}
+        <div className="relative min-h-[136px] overflow-hidden rounded-[20px] border border-[#E7E5E1] bg-white p-4 shadow-[0_1px_2px_rgba(20,20,20,0.03)] sm:min-h-[144px] sm:p-5">
+          <div className="flex items-center gap-3 sm:gap-4">
+            <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-600 sm:h-11 sm:w-11">
+              <MessageSquare className="h-4.5 w-4.5 sm:h-5 sm:w-5" strokeWidth={1.8} />
+            </span>
+            <div>
+              <p className="text-xs font-medium text-ink sm:text-sm">Messages</p>
+              <p className="mt-1 text-[24px] font-semibold leading-none text-ink sm:text-[28px]">
+                {leads.reduce((sum, l) => sum + (l.replies ?? []).length, 0)}
+              </p>
+            </div>
+          </div>
+          <div className="mt-4 flex items-end justify-between gap-3 sm:mt-5 sm:gap-4">
+            <div>
+              <p className="whitespace-nowrap text-[9px] leading-none text-blue-600 sm:text-[10px]">total</p>
+              <p className="mt-0.5 text-[9px] leading-none text-muted-foreground sm:text-[10px]">across all leads</p>
+              <p className="mt-1.5 text-[10px] leading-tight text-muted-foreground/70">
+                conversation messages on file
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Filters */}
@@ -753,6 +788,7 @@ export default function LeadsManager({ initialLeads, live }) {
               <th className="px-3 py-3.5 font-semibold">Company</th>
               <th className="px-3 py-3.5 font-semibold">Service</th>
               <th className="px-3 py-3.5 font-semibold">Subject</th>
+              <th className="px-3 py-3.5 text-center font-semibold">Msgs</th>
               <th className="px-3 py-3.5 font-semibold">Date</th>
               <th className="px-3 py-3.5 font-semibold">Status</th>
               <th className="px-3 py-3.5 text-center font-semibold">Actions</th>
@@ -802,6 +838,19 @@ export default function LeadsManager({ initialLeads, live }) {
                   )}
                 </td>
                 <td className="max-w-[180px] truncate whitespace-nowrap px-3 py-3.5 text-ink">{lead.subject || "—"}</td>
+                <td className="whitespace-nowrap px-3 py-3.5">
+                  <span
+                    className={`inline-flex min-w-[30px] items-center justify-center gap-1 rounded-full px-2 py-1 text-[10px] font-bold ${
+                      (lead.replies ?? []).length > 0
+                        ? "bg-green/10 text-green"
+                        : "bg-sand/50 text-muted-foreground"
+                    }`}
+                    title="Messages in conversation"
+                  >
+                    <MessageSquare className="h-3 w-3" />
+                    {(lead.replies ?? []).length}
+                  </span>
+                </td>
                 <td className="whitespace-nowrap px-3 py-3.5 text-ink">{formatFull(lead.created_at ?? lead.insertedAt)}</td>
                 <td className="whitespace-nowrap px-3 py-3.5">
                   <span
@@ -846,7 +895,7 @@ export default function LeadsManager({ initialLeads, live }) {
             ))}
             {pagination.paginatedData.length === 0 && (
               <tr>
-                <td colSpan={9} className="px-4 py-14 text-center text-sm text-muted-foreground">
+                <td colSpan={10} className="px-4 py-14 text-center text-sm text-muted-foreground">
                   No leads match these filters.
                 </td>
               </tr>
