@@ -37,7 +37,7 @@ function Field({ label, required, children }) {
   );
 }
 
-export default function LeadFormModal({ open, onClose, existing, companies = [], onSubmit }) {
+export default function LeadFormModal({ open, onClose, existing, clients = [], onSubmit }) {
   const [form, setForm] = useState(() => emptyFrom(existing));
   const [saving, setSaving] = useState(false);
 
@@ -128,16 +128,16 @@ export default function LeadFormModal({ open, onClose, existing, companies = [],
               placeholder="+880 1XXXXXXXXX"
             />
           </Field>
-          <Field label="Company">
+          <Field label="Client">
             <select
               value={form.companyId}
               onChange={(e) => setForm((f) => ({ ...f, companyId: e.target.value }))}
               className={fieldCls()}
             >
-              <option value="">No company</option>
-              {companies.map((co) => (
+              <option value="">No client</option>
+              {clients.map((co) => (
                 <option key={co.id} value={co.id}>
-                  {co.companyName}
+                  {co.clientName}
                 </option>
               ))}
             </select>

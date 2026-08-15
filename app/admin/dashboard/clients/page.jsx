@@ -1,8 +1,8 @@
 export const dynamic = "force-dynamic";
-import CompaniesManager from "@/components/admin/companies/CompaniesManager";
+import ClientsManager from "@/components/admin/clients/ClientsManager";
 
-export const metadata = { title: "Companies — Admin" };
+export const metadata = { title: "Clients — Admin" };
 
-export default async function AdminCompaniesPage() {
-  return <CompaniesManager />;
+export default async function AdminClientsPage() {
+  return <ClientsManager />;
 }

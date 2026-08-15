@@ -35,7 +35,7 @@ const STAGE_STYLES = {
 };
 
 const EMPTY = {
-  dealName: "",
+  projectName: "",
   clientName: "",
   contactId: "",
   companyId: "",
@@ -74,11 +74,11 @@ function Field({ label, required, children }) {
 const inputCls =
   "h-10 w-full rounded-xl border border-ink/10 bg-background px-3 text-sm text-ink outline-none transition focus:border-green focus:ring-2 focus:ring-green/10";
 
-export default function DealsManager() {
+export default function ProjectsManager() {
   const [view, setView] = useState("board");
-  const [deals, setDeals] = useState([]);
+  const [projects, setProjects] = useState([]);
   const [summary, setSummary] = useState({ total: 0, weighted: 0, won: 0, lost: 0, stages: [] });
-  const [companies, setCompanies] = useState([]);
+  const [clients, setClients] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [formOpen, setFormOpen] = useState(false);
@@ -91,15 +91,15 @@ export default function DealsManager() {
 
   const refresh = useCallback(async () => {
     try {
-      const [dRes, coRes] = await Promise.all([
-        fetch(`/api/admin/deals?search=${encodeURIComponent(search)}`),
-        fetch("/api/admin/companies"),
+      const [pRes, coRes] = await Promise.all([
+        fetch(`/api/admin/projects?search=${encodeURIComponent(search)}`),
+        fetch("/api/admin/clients"),
       ]);
-      const dData = await dRes.json();
+      const pData = await pRes.json();
       const coData = await coRes.json();
-      if (Array.isArray(dData?.deals)) setDeals(dData.deals);
-      if (dData?.summary) setSummary(dData.summary);
-      if (Array.isArray(coData?.companies)) setCompanies(coData.companies);
+      if (Array.isArray(pData?.projects)) setProjects(pData.projects);
+      if (pData?.summary) setSummary(pData.summary);
+      if (Array.isArray(coData?.clients)) setClients(coData.clients);
     } catch {
       // ignore
     } finally {
@@ -118,32 +118,32 @@ export default function DealsManager() {
     setFormOpen(true);
   };
 
-  const openEdit = (d) => {
-    setEditing(d);
+  const openEdit = (p) => {
+    setEditing(p);
     setForm({
-      dealName: d.dealName ?? "",
-      clientName: d.clientName ?? "",
-      contactId: d.contactId ?? "",
-      companyId: d.companyId ?? "",
-      value: d.value != null ? String(d.value) : "",
-      probability: d.probability ?? 10,
-      expectedCloseDate: d.expectedCloseDate ? String(d.expectedCloseDate).slice(0, 10) : "",
-      stage: d.stage ?? "New",
-      service: d.service ?? "",
-      notes: d.notes ?? "",
+      projectName: p.projectName ?? "",
+      clientName: p.clientName ?? "",
+      contactId: p.contactId ?? "",
+      companyId: p.companyId ?? "",
+      value: p.value != null ? String(p.value) : "",
+      probability: p.probability ?? 10,
+      expectedCloseDate: p.expectedCloseDate ? String(p.expectedCloseDate).slice(0, 10) : "",
+      stage: p.stage ?? "New",
+      service: p.service ?? "",
+      notes: p.notes ?? "",
     });
     setFormOpen(true);
   };
 
   const submit = async (e) => {
     e.preventDefault();
-    if (!form.dealName.trim()) {
-      toast.error("Deal name is required.");
+    if (!form.projectName.trim()) {
+      toast.error("Project name is required.");
       return;
     }
     setSaving(true);
     try {
-      const url = editing ? `/api/admin/deals/${encodeURIComponent(editing.id)}` : "/api/admin/deals";
+      const url = editing ? `/api/admin/projects/${encodeURIComponent(editing.id)}` : "/api/admin/projects";
       const res = await fetch(url, {
         method: editing ? "PATCH" : "POST",
         headers: { "Content-Type": "application/json" },
@@ -151,24 +151,24 @@ export default function DealsManager() {
       });
       const data = await res.json();
       if (!res.ok || data.error) {
-        toast.error(data?.error || "Could not save deal.");
+        toast.error(data?.error || "Could not save project.");
         return;
       }
-      toast.success(editing ? "Deal updated." : "Deal created.");
+      toast.success(editing ? "Project updated." : "Project created.");
       setFormOpen(false);
       await refresh();
     } catch {
-      toast.error("Could not save deal.");
+      toast.error("Could not save project.");
     } finally {
       setSaving(false);
     }
   };
 
-  const moveStage = async (deal, stage) => {
-    if (deal.stage === stage) return;
-    setMovingId(deal.id);
+  const moveStage = async (project, stage) => {
+    if (project.stage === stage) return;
+    setMovingId(project.id);
     try {
-      const res = await fetch(`/api/admin/deals/${encodeURIComponent(deal.id)}`, {
+      const res = await fetch(`/api/admin/projects/${encodeURIComponent(project.id)}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ stage }),
@@ -178,7 +178,7 @@ export default function DealsManager() {
         toast.error(data?.error || "Could not update stage.");
         return;
       }
-      setDeals((prev) => prev.map((d) => (d.id === deal.id ? { ...d, stage } : d)));
+      setProjects((prev) => prev.map((p) => (p.id === project.id ? { ...p, stage } : p)));
       await refresh();
     } catch {
       toast.error("Could not update stage.");
@@ -187,29 +187,48 @@ export default function DealsManager() {
     }
   };
 
+  const [draggedId, setDraggedId] = useState(null);
+  const [dragOverStage, setDragOverStage] = useState(null);
+
+  const handleDragStart = (p) => setDraggedId(p.id);
+
+  const handleDragEnd = () => {
+    setDraggedId(null);
+    setDragOverStage(null);
+  };
+
+  const handleDrop = async (stage) => {
+    const target = draggedId ? projects.find((p) => p.id === draggedId) : null;
+    if (target && target.stage !== stage) {
+      await moveStage(target, stage);
+    }
+    setDraggedId(null);
+    setDragOverStage(null);
+  };
+
   const confirmDelete = async () => {
     setDeleting(true);
     try {
-      const res = await fetch(`/api/admin/deals/${encodeURIComponent(deleteTarget.id)}`, { method: "DELETE" });
+      const res = await fetch(`/api/admin/projects/${encodeURIComponent(deleteTarget.id)}`, { method: "DELETE" });
       const data = await res.json();
       if (res.ok && !data.error) {
-        toast.success("Deal deleted.");
+        toast.success("Project deleted.");
         setDeleteTarget(null);
         await refresh();
       } else {
-        toast.error(data?.error || "Could not delete deal.");
+        toast.error(data?.error || "Could not delete project.");
       }
     } catch {
-      toast.error("Could not delete deal.");
+      toast.error("Could not delete project.");
     } finally {
       setDeleting(false);
     }
   };
 
   const board = useMemo(() => {
-    const columns = STAGES.map((s) => ({ stage: s, deals: deals.filter((d) => d.stage === s) }));
+    const columns = STAGES.map((s) => ({ stage: s, projects: projects.filter((p) => p.stage === s) }));
     return columns;
-  }, [deals]);
+  }, [projects]);
 
   const statCards = useMemo(
     () => [
@@ -232,10 +251,10 @@ export default function DealsManager() {
           </span>
           <div>
             <h2 className="font-display text-xl font-semibold tracking-[-0.02em] text-ink md:text-2xl">
-              Deals
+              Projects
             </h2>
             <p className="mt-0.5 text-xs text-muted-foreground md:text-sm">
-              Sales pipeline — track every opportunity from New to Won.
+              Sales pipeline — track every project from New to Won.
             </p>
           </div>
         </div>
@@ -262,7 +281,7 @@ export default function DealsManager() {
             onClick={openCreate}
             className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-green px-5 text-xs font-bold uppercase tracking-[0.1em] text-white shadow-sm transition hover:bg-green/90"
           >
-            <Plus className="h-4 w-4" /> Add deal
+            <Plus className="h-4 w-4" /> Add project
           </button>
         </div>
       </header>
@@ -295,7 +314,7 @@ export default function DealsManager() {
             type="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search deals by name, client, company..."
+            placeholder="Search projects by name, client, company..."
             className="h-11 w-full rounded-xl border border-[#E7E5E1] bg-white pl-11 pr-4 text-sm text-ink outline-none transition placeholder:text-muted-foreground/70 focus:border-green focus:ring-2 focus:ring-green/10"
           />
         </label>
@@ -305,58 +324,83 @@ export default function DealsManager() {
         /* ── Kanban board ── */
         <div className="overflow-x-auto pb-2">
           <div className="flex min-w-max gap-4">
-            {board.map(({ stage, deals: stageDeals }) => {
+            {board.map(({ stage, projects: stageProjects }) => {
               const stageValue = (summary.stages ?? []).find((s) => s.stage === stage)?.value ?? 0;
+              const isDragOver = dragOverStage === stage && draggedId !== null;
               return (
-                <div key={stage} className="flex w-[280px] flex-col rounded-2xl border border-ink/5 bg-[#FAF9F6]">
+                <div
+                  key={stage}
+                  onDragOver={(e) => {
+                    e.preventDefault();
+                    if (dragOverStage !== stage) setDragOverStage(stage);
+                  }}
+                  onDragLeave={(e) => {
+                    if (!e.currentTarget.contains(e.relatedTarget)) setDragOverStage(null);
+                  }}
+                  onDrop={(e) => {
+                    e.preventDefault();
+                    handleDrop(stage);
+                  }}
+                  className={`flex w-[280px] flex-col rounded-2xl border bg-[#FAF9F6] transition-colors ${
+                    isDragOver ? "border-green/60 ring-2 ring-green/20" : "border-ink/5"
+                  }`}
+                >
                   <div className="flex items-center justify-between border-b border-ink/5 px-4 py-3">
                     <div className="flex items-center gap-2">
                       <span className="h-2 w-2 rounded-full bg-ink/30" />
                       <p className="text-xs font-bold uppercase tracking-[0.08em] text-ink">{stage}</p>
                       <span className="rounded-full bg-white px-2 py-0.5 text-[10px] font-semibold text-muted-foreground shadow-sm">
-                        {stageDeals.length}
+                        {stageProjects.length}
                       </span>
                     </div>
                     {stageValue > 0 && <span className="text-[11px] font-semibold text-muted-foreground">{fmtMoney(stageValue)}</span>}
                   </div>
                   <div className="flex flex-1 flex-col gap-2.5 p-3">
-                    {stageDeals.length === 0 && (
+                    {stageProjects.length === 0 && (
                       <button
                         onClick={openCreate}
                         className="rounded-xl border border-dashed border-ink/15 px-4 py-8 text-xs font-medium text-muted-foreground/70 transition hover:border-green/40 hover:text-green"
                       >
-                        + Add deal
+                        + Add project
                       </button>
                     )}
-                    {stageDeals.map((d) => (
-                      <div key={d.id} className="group rounded-xl border border-ink/5 bg-white p-3.5 shadow-sm transition hover:shadow-md">
+                    {stageProjects.map((p) => (
+                      <div
+                        key={p.id}
+                        draggable
+                        onDragStart={() => handleDragStart(p)}
+                        onDragEnd={handleDragEnd}
+                        className={`group cursor-grab rounded-xl border bg-white p-3.5 shadow-sm transition hover:shadow-md active:cursor-grabbing ${
+                          draggedId === p.id ? "border-green/40 opacity-60" : "border-ink/5"
+                        }`}
+                      >
                         <div className="flex items-start justify-between gap-2">
-                          <p className="text-sm font-semibold text-ink">{d.dealName}</p>
-                          {movingId === d.id && <Loader2 className="h-3.5 w-3.5 animate-spin text-green" />}
+                          <p className="text-sm font-semibold text-ink">{p.projectName}</p>
+                          {movingId === p.id && <Loader2 className="h-3.5 w-3.5 animate-spin text-green" />}
                         </div>
-                        {d.clientName && (
+                        {p.clientName && (
                           <p className="mt-1 inline-flex items-center gap-1 text-[11px] text-muted-foreground">
-                            <UserIcon className="h-3 w-3" /> {d.clientName}
+                            <UserIcon className="h-3 w-3" /> {p.clientName}
                           </p>
                         )}
-                        {d.companyName && (
+                        {p.companyName && (
                           <p className="mt-0.5 inline-flex items-center gap-1 text-[11px] text-muted-foreground">
-                            <Building2 className="h-3 w-3" /> {d.companyName}
+                            <Building2 className="h-3 w-3" /> {p.companyName}
                           </p>
                         )}
                         <div className="mt-2.5 flex items-center justify-between">
-                          <span className="text-sm font-bold text-ink">{fmtMoney(d.value)}</span>
-                          <span className="text-[10px] font-semibold text-muted-foreground">{d.probability}%</span>
+                          <span className="text-sm font-bold text-ink">{fmtMoney(p.value)}</span>
+                          <span className="text-[10px] font-semibold text-muted-foreground">{p.probability}%</span>
                         </div>
-                        {d.expectedCloseDate && (
+                        {p.expectedCloseDate && (
                           <p className="mt-1 inline-flex items-center gap-1 text-[10px] text-muted-foreground/70">
-                            <CalendarDays className="h-3 w-3" /> Closes {fmtDate(d.expectedCloseDate)}
+                            <CalendarDays className="h-3 w-3" /> Closes {fmtDate(p.expectedCloseDate)}
                           </p>
                         )}
                         <div className="mt-3 flex items-center gap-1.5 border-t border-ink/5 pt-2.5">
                           <select
-                            value={d.stage}
-                            onChange={(e) => moveStage(d, e.target.value)}
+                            value={p.stage}
+                            onChange={(e) => moveStage(p, e.target.value)}
                             className="h-7 flex-1 cursor-pointer rounded-lg border border-ink/10 bg-background px-1.5 text-[10px] font-semibold text-ink outline-none focus:border-green"
                           >
                             {STAGES.map((s) => (
@@ -366,14 +410,14 @@ export default function DealsManager() {
                             ))}
                           </select>
                           <button
-                            onClick={() => openEdit(d)}
+                            onClick={() => openEdit(p)}
                             className="grid h-7 w-7 place-items-center rounded-lg border border-[#E7E5E1] text-muted-foreground transition-colors hover:bg-[#F5F5F1] hover:text-green"
                             title="Edit"
                           >
                             <Pencil className="h-3 w-3" />
                           </button>
                           <button
-                            onClick={() => setDeleteTarget(d)}
+                            onClick={() => setDeleteTarget(p)}
                             className="grid h-7 w-7 place-items-center rounded-lg border border-[#E7E5E1] text-muted-foreground transition-colors hover:bg-rose-50 hover:text-rose-600"
                             title="Delete"
                           >
@@ -382,12 +426,12 @@ export default function DealsManager() {
                         </div>
                       </div>
                     ))}
-                    {stageDeals.length > 0 && (
+                    {stageProjects.length > 0 && (
                       <button
                         onClick={openCreate}
                         className="rounded-xl border border-dashed border-ink/10 px-4 py-2.5 text-xs font-medium text-muted-foreground/60 transition hover:border-green/40 hover:text-green"
                       >
-                        + Add deal
+                        + Add project
                       </button>
                     )}
                   </div>
@@ -402,7 +446,7 @@ export default function DealsManager() {
           <table className="w-full min-w-[880px] text-left text-[13px]">
             <thead>
               <tr className="border-b border-ink/5 bg-[#F8F9FB] text-[10px] font-semibold uppercase tracking-[0.05em] text-muted-foreground">
-                <th className="px-4 py-3.5 font-semibold">Deal</th>
+                <th className="px-4 py-3.5 font-semibold">Project</th>
                 <th className="px-3 py-3.5 font-semibold">Client</th>
                 <th className="px-3 py-3.5 font-semibold">Company</th>
                 <th className="px-3 py-3.5 font-semibold">Value</th>
@@ -413,27 +457,27 @@ export default function DealsManager() {
               </tr>
             </thead>
             <tbody>
-              {deals.map((d) => (
-                <tr key={d.id} className="border-b border-ink/5 transition-colors last:border-b-0 hover:bg-[#F8F9FB]">
+              {projects.map((p) => (
+                <tr key={p.id} className="border-b border-ink/5 transition-colors last:border-b-0 hover:bg-[#F8F9FB]">
                   <td className="whitespace-nowrap px-4 py-3.5">
-                    <p className="font-semibold text-ink">{d.dealName}</p>
-                    {d.service && <p className="mt-0.5 text-[11px] text-muted-foreground">{d.service}</p>}
+                    <p className="font-semibold text-ink">{p.projectName}</p>
+                    {p.service && <p className="mt-0.5 text-[11px] text-muted-foreground">{p.service}</p>}
                   </td>
-                  <td className="whitespace-nowrap px-3 py-3.5 text-ink">{d.clientName || "—"}</td>
-                  <td className="whitespace-nowrap px-3 py-3.5 text-ink">{d.companyName || "—"}</td>
-                  <td className="whitespace-nowrap px-3 py-3.5 font-semibold text-ink">{fmtMoney(d.value)}</td>
-                  <td className="whitespace-nowrap px-3 py-3.5 text-ink">{d.probability}%</td>
-                  <td className="whitespace-nowrap px-3 py-3.5 text-muted-foreground">{fmtDate(d.expectedCloseDate)}</td>
+                  <td className="whitespace-nowrap px-3 py-3.5 text-ink">{p.clientName || "—"}</td>
+                  <td className="whitespace-nowrap px-3 py-3.5 text-ink">{p.companyName || "—"}</td>
+                  <td className="whitespace-nowrap px-3 py-3.5 font-semibold text-ink">{fmtMoney(p.value)}</td>
+                  <td className="whitespace-nowrap px-3 py-3.5 text-ink">{p.probability}%</td>
+                  <td className="whitespace-nowrap px-3 py-3.5 text-muted-foreground">{fmtDate(p.expectedCloseDate)}</td>
                   <td className="whitespace-nowrap px-3 py-3.5">
-                    <span className={`inline-block rounded-lg border px-2.5 py-1 text-[10px] font-semibold ${STAGE_STYLES[d.stage] ?? "bg-sand/50 text-muted-foreground"}`}>
-                      {d.stage}
+                    <span className={`inline-block rounded-lg border px-2.5 py-1 text-[10px] font-semibold ${STAGE_STYLES[p.stage] ?? "bg-sand/50 text-muted-foreground"}`}>
+                      {p.stage}
                     </span>
                   </td>
                   <td className="whitespace-nowrap px-3 py-3.5">
                     <div className="flex items-center justify-center gap-1.5">
                       <select
-                        value={d.stage}
-                        onChange={(e) => moveStage(d, e.target.value)}
+                        value={p.stage}
+                        onChange={(e) => moveStage(p, e.target.value)}
                         className="h-8 rounded-lg border border-ink/10 bg-background px-1.5 text-[10px] font-semibold text-ink outline-none focus:border-green"
                       >
                         {STAGES.map((s) => (
@@ -443,14 +487,14 @@ export default function DealsManager() {
                         ))}
                       </select>
                       <button
-                        onClick={() => openEdit(d)}
+                        onClick={() => openEdit(p)}
                         className="grid h-8 w-8 place-items-center rounded-lg border border-[#E7E5E1] text-muted-foreground transition-colors hover:bg-[#F5F5F1] hover:text-green"
                         title="Edit"
                       >
                         <Pencil className="h-3.5 w-3.5" />
                       </button>
                       <button
-                        onClick={() => setDeleteTarget(d)}
+                        onClick={() => setDeleteTarget(p)}
                         className="grid h-8 w-8 place-items-center rounded-lg border border-[#E7E5E1] text-muted-foreground transition-colors hover:bg-rose-50 hover:text-rose-600"
                         title="Delete"
                       >
@@ -460,10 +504,10 @@ export default function DealsManager() {
                   </td>
                 </tr>
               ))}
-              {deals.length === 0 && !loading && (
+              {projects.length === 0 && !loading && (
                 <tr>
                   <td colSpan={8} className="px-4 py-14 text-center text-sm text-muted-foreground">
-                    {search ? "No deals match your search." : "No deals yet. Create your first deal."}
+                    {search ? "No projects match your search." : "No projects yet. Create your first project."}
                   </td>
                 </tr>
               )}
@@ -476,17 +520,17 @@ export default function DealsManager() {
       <Modal
         open={formOpen}
         onClose={() => setFormOpen(false)}
-        title={editing ? "Edit deal" : "Add deal"}
+        title={editing ? "Edit project" : "Add project"}
         icon={TrendingUp}
         size="lg"
       >
         <form onSubmit={submit} className="space-y-4 pb-2">
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="sm:col-span-2">
-              <Field label="Deal name" required>
+              <Field label="Project name" required>
                 <input
-                  value={form.dealName}
-                  onChange={(e) => setForm((f) => ({ ...f, dealName: e.target.value }))}
+                  value={form.projectName}
+                  onChange={(e) => setForm((f) => ({ ...f, projectName: e.target.value }))}
                   className={inputCls}
                   placeholder="e.g. Website rebuild for Peakline"
                 />
@@ -500,16 +544,16 @@ export default function DealsManager() {
                 placeholder="Client / contact name"
               />
             </Field>
-            <Field label="Company">
+            <Field label="Client">
               <select
                 value={form.companyId}
                 onChange={(e) => setForm((f) => ({ ...f, companyId: e.target.value }))}
                 className={inputCls}
               >
-                <option value="">No company</option>
-                {companies.map((co) => (
+                <option value="">No client</option>
+                {clients.map((co) => (
                   <option key={co.id} value={co.id}>
-                    {co.companyName}
+                    {co.clientName}
                   </option>
                 ))}
               </select>
@@ -570,7 +614,7 @@ export default function DealsManager() {
                   value={form.notes}
                   onChange={(e) => setForm((f) => ({ ...f, notes: e.target.value }))}
                   className="min-h-20 w-full resize-y rounded-xl border border-ink/10 bg-background px-3 py-2 text-sm text-ink outline-none transition focus:border-green focus:ring-2 focus:ring-green/10"
-                  placeholder="Internal notes about this deal"
+                  placeholder="Internal notes about this project"
                 />
               </Field>
             </div>
@@ -590,7 +634,7 @@ export default function DealsManager() {
               className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-green px-5 text-xs font-bold uppercase tracking-[0.1em] text-white transition hover:bg-green/90 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Plus className="h-4 w-4" />}
-              {saving ? "Saving..." : "Save deal"}
+              {saving ? "Saving..." : "Save project"}
             </button>
           </div>
         </form>
@@ -601,8 +645,8 @@ export default function DealsManager() {
         onClose={() => setDeleteTarget(null)}
         onConfirm={confirmDelete}
         loading={deleting}
-        title="Delete Deal"
-        message={`Are you sure you want to delete "${deleteTarget?.dealName}"?`}
+        title="Delete Project"
+        message={`Are you sure you want to delete "${deleteTarget?.projectName}"?`}
       />
     </div>
   );

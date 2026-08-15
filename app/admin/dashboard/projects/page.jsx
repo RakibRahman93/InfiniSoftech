@@ -1,8 +1,8 @@
 export const dynamic = "force-dynamic";
-import DealsManager from "@/components/admin/deals/DealsManager";
+import ProjectsManager from "@/components/admin/projects/ProjectsManager";
 
-export const metadata = { title: "Deals — Admin" };
+export const metadata = { title: "Projects — Admin" };
 
-export default async function AdminDealsPage() {
-  return <DealsManager />;
+export default async function AdminProjectsPage() {
+  return <ProjectsManager />;
 }

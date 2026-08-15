@@ -21,7 +21,7 @@ import Modal from "../leads/Modal";
 import ConfirmDialog from "../leads/ConfirmDialog";
 
 const EMPTY = {
-  companyName: "",
+  clientName: "",
   website: "",
   email: "",
   phone: "",
@@ -48,8 +48,8 @@ function Field({ label, required, children }) {
 const inputCls =
   "h-10 w-full rounded-xl border border-ink/10 bg-background px-3 text-sm text-ink outline-none transition focus:border-green focus:ring-2 focus:ring-green/10";
 
-export default function CompaniesManager() {
-  const [companies, setCompanies] = useState([]);
+export default function ClientsManager() {
+  const [clients, setClients] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [formOpen, setFormOpen] = useState(false);
@@ -61,10 +61,10 @@ export default function CompaniesManager() {
 
   const refresh = useCallback(async () => {
     try {
-      const res = await fetch(`/api/admin/companies?search=${encodeURIComponent(search)}`);
+      const res = await fetch(`/api/admin/clients?search=${encodeURIComponent(search)}`);
       if (!res.ok) return;
       const data = await res.json();
-      if (Array.isArray(data?.companies)) setCompanies(data.companies);
+      if (Array.isArray(data?.clients)) setClients(data.clients);
     } catch {
       // ignore
     } finally {
@@ -80,17 +80,17 @@ export default function CompaniesManager() {
   const stats = useMemo(() => {
     const byIndustry = {};
     const byCountry = {};
-    for (const c of companies) {
+    for (const c of clients) {
       byIndustry[c.industry || "Other"] = (byIndustry[c.industry || "Other"] || 0) + 1;
       byCountry[c.country || "Unknown"] = (byCountry[c.country || "Unknown"] || 0) + 1;
     }
     return {
-      total: companies.length,
+      total: clients.length,
       topIndustry: Object.entries(byIndustry).sort((a, b) => b[1] - a[1])[0]?.[0] ?? "—",
       topCountry: Object.entries(byCountry).sort((a, b) => b[1] - a[1])[0]?.[0] ?? "—",
-      contacts: companies.reduce((s, c) => s + (c.contactCount ?? 0), 0),
+      contacts: clients.reduce((s, c) => s + (c.contactCount ?? 0), 0),
     };
-  }, [companies]);
+  }, [clients]);
 
   const openCreate = () => {
     setEditing(null);
@@ -101,7 +101,7 @@ export default function CompaniesManager() {
   const openEdit = (c) => {
     setEditing(c);
     setForm({
-      companyName: c.companyName ?? "",
+      clientName: c.clientName ?? "",
       website: c.website ?? "",
       email: c.email ?? "",
       phone: c.phone ?? "",
@@ -117,15 +117,15 @@ export default function CompaniesManager() {
 
   const submit = async (e) => {
     e.preventDefault();
-    if (!form.companyName.trim()) {
-      toast.error("Company name is required.");
+    if (!form.clientName.trim()) {
+      toast.error("Client name is required.");
       return;
     }
     setSaving(true);
     try {
       const url = editing
-        ? `/api/admin/companies/${encodeURIComponent(editing.id)}`
-        : "/api/admin/companies";
+        ? `/api/admin/clients/${encodeURIComponent(editing.id)}`
+        : "/api/admin/clients";
       const res = await fetch(url, {
         method: editing ? "PATCH" : "POST",
         headers: { "Content-Type": "application/json" },
@@ -133,14 +133,14 @@ export default function CompaniesManager() {
       });
       const data = await res.json();
       if (!res.ok || data.error) {
-        toast.error(data?.error || "Could not save company.");
+        toast.error(data?.error || "Could not save client.");
         return;
       }
-      toast.success(editing ? "Company updated." : "Company created.");
+      toast.success(editing ? "Client updated." : "Client created.");
       setFormOpen(false);
       await refresh();
     } catch {
-      toast.error("Could not save company.");
+      toast.error("Could not save client.");
     } finally {
       setSaving(false);
     }
@@ -149,19 +149,19 @@ export default function CompaniesManager() {
   const confirmDelete = async () => {
     setDeleting(true);
     try {
-      const res = await fetch(`/api/admin/companies/${encodeURIComponent(deleteTarget.id)}`, {
+      const res = await fetch(`/api/admin/clients/${encodeURIComponent(deleteTarget.id)}`, {
         method: "DELETE",
       });
       const data = await res.json();
       if (res.ok && !data.error) {
-        toast.success("Company deleted.");
+        toast.success("Client deleted.");
         setDeleteTarget(null);
         await refresh();
       } else {
-        toast.error(data?.error || "Could not delete company.");
+        toast.error(data?.error || "Could not delete client.");
       }
     } catch {
-      toast.error("Could not delete company.");
+      toast.error("Could not delete client.");
     } finally {
       setDeleting(false);
     }
@@ -178,10 +178,10 @@ export default function CompaniesManager() {
           </span>
           <div>
             <h2 className="font-display text-xl font-semibold tracking-[-0.02em] text-ink md:text-2xl">
-              Companies
+              Clients
             </h2>
             <p className="mt-0.5 text-xs text-muted-foreground md:text-sm">
-              Companies, accounts and organizations in your CRM.
+              Clients, accounts and organizations in your CRM.
             </p>
           </div>
         </div>
@@ -189,14 +189,14 @@ export default function CompaniesManager() {
           onClick={openCreate}
           className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-green px-5 text-xs font-bold uppercase tracking-[0.1em] text-white shadow-sm transition hover:bg-green/90"
         >
-          <Plus className="h-4 w-4" /> Add company
+          <Plus className="h-4 w-4" /> Add client
         </button>
       </header>
 
       {/* Stat cards */}
       <section className="grid grid-cols-2 gap-3 sm:gap-4 xl:grid-cols-4">
         {[
-          { label: "Total Companies", value: stats.total, icon: Building2, tone: "bg-green/10 text-green" },
+          { label: "Total Clients", value: stats.total, icon: Building2, tone: "bg-green/10 text-green" },
           { label: "Contacts", value: stats.contacts, icon: Users, tone: "bg-blue-50 text-blue-600" },
           { label: "Top Industry", value: stats.topIndustry, icon: Layers3, tone: "bg-gold/10 text-gold" },
           { label: "Top Country", value: stats.topCountry, icon: Star, tone: "bg-violet-50 text-violet-600" },
@@ -228,7 +228,7 @@ export default function CompaniesManager() {
             type="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search companies by name, industry, city..."
+            placeholder="Search clients by name, industry, city..."
             className="h-11 w-full rounded-xl border border-[#E7E5E1] bg-white pl-11 pr-4 text-sm text-ink outline-none transition placeholder:text-muted-foreground/70 focus:border-green focus:ring-2 focus:ring-green/10"
           />
         </label>
@@ -239,18 +239,18 @@ export default function CompaniesManager() {
         <table className="w-full min-w-[900px] text-left text-[13px]">
           <thead>
             <tr className="border-b border-ink/5 bg-[#F8F9FB] text-[10px] font-semibold uppercase tracking-[0.05em] text-muted-foreground">
-              <th className="px-4 py-3.5 font-semibold">Company</th>
+              <th className="px-4 py-3.5 font-semibold">Client</th>
               <th className="px-3 py-3.5 font-semibold">Contact</th>
               <th className="px-3 py-3.5 font-semibold">Industry</th>
               <th className="px-3 py-3.5 font-semibold">Location</th>
               <th className="px-3 py-3.5 text-center font-semibold">Leads</th>
               <th className="px-3 py-3.5 text-center font-semibold">Contacts</th>
-              <th className="px-3 py-3.5 text-center font-semibold">Deals</th>
+              <th className="px-3 py-3.5 text-center font-semibold">Projects</th>
               <th className="px-3 py-3.5 text-center font-semibold">Actions</th>
             </tr>
           </thead>
           <tbody>
-            {companies.map((c) => (
+            {clients.map((c) => (
               <tr key={c.id} className="border-b border-ink/5 transition-colors last:border-b-0 hover:bg-[#F8F9FB]">
                 <td className="whitespace-nowrap px-4 py-3.5">
                   <div className="flex items-center gap-3">
@@ -258,7 +258,7 @@ export default function CompaniesManager() {
                       <Building2 className="h-4 w-4" />
                     </span>
                     <div>
-                      <p className="font-semibold text-ink">{c.companyName}</p>
+                      <p className="font-semibold text-ink">{c.clientName}</p>
                       {c.website && (
                         <a
                           href={c.website.startsWith("http") ? c.website : `https://${c.website}`}
@@ -297,7 +297,7 @@ export default function CompaniesManager() {
                 </td>
                 <td className="whitespace-nowrap px-3 py-3.5 text-center font-medium text-ink">{c.leadCount ?? 0}</td>
                 <td className="whitespace-nowrap px-3 py-3.5 text-center font-medium text-ink">{c.contactCount ?? 0}</td>
-                <td className="whitespace-nowrap px-3 py-3.5 text-center font-medium text-ink">{c.dealCount ?? 0}</td>
+                <td className="whitespace-nowrap px-3 py-3.5 text-center font-medium text-ink">{c.projectCount ?? 0}</td>
                 <td className="whitespace-nowrap px-3 py-3.5">
                   <div className="flex items-center justify-center gap-2">
                     <button
@@ -318,10 +318,10 @@ export default function CompaniesManager() {
                 </td>
               </tr>
             ))}
-            {companies.length === 0 && !loading && (
+            {clients.length === 0 && !loading && (
               <tr>
                 <td colSpan={8} className="px-4 py-14 text-center text-sm text-muted-foreground">
-                  {search ? "No companies match your search." : "No companies yet. Create your first company."}
+                  {search ? "No clients match your search." : "No clients yet. Create your first client."}
                 </td>
               </tr>
             )}
@@ -333,17 +333,17 @@ export default function CompaniesManager() {
       <Modal
         open={formOpen}
         onClose={() => setFormOpen(false)}
-        title={editing ? "Edit company" : "Add company"}
+        title={editing ? "Edit client" : "Add client"}
         icon={Building2}
         size="lg"
       >
         <form onSubmit={submit} className="space-y-4 pb-2">
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="sm:col-span-2">
-              <Field label="Company name" required>
+              <Field label="Client name" required>
                 <input
-                  value={form.companyName}
-                  onChange={(e) => setForm((f) => ({ ...f, companyName: e.target.value }))}
+                  value={form.clientName}
+                  onChange={(e) => setForm((f) => ({ ...f, clientName: e.target.value }))}
                   className={inputCls}
                   placeholder="e.g. Peakline Media"
                 />
@@ -422,7 +422,7 @@ export default function CompaniesManager() {
                   value={form.notes}
                   onChange={(e) => setForm((f) => ({ ...f, notes: e.target.value }))}
                   className="min-h-20 w-full resize-y rounded-xl border border-ink/10 bg-background px-3 py-2 text-sm text-ink outline-none transition focus:border-green focus:ring-2 focus:ring-green/10"
-                  placeholder="Internal notes about this company"
+                  placeholder="Internal notes about this client"
                 />
               </Field>
             </div>
@@ -442,7 +442,7 @@ export default function CompaniesManager() {
               className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-green px-5 text-xs font-bold uppercase tracking-[0.1em] text-white transition hover:bg-green/90 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Plus className="h-4 w-4" />}
-              {saving ? "Saving..." : "Save company"}
+              {saving ? "Saving..." : "Save client"}
             </button>
           </div>
         </form>
@@ -453,8 +453,8 @@ export default function CompaniesManager() {
         onClose={() => setDeleteTarget(null)}
         onConfirm={confirmDelete}
         loading={deleting}
-        title="Delete Company"
-        message={`Are you sure you want to delete "${deleteTarget?.companyName}"? Contacts, leads, and deals linked to it will be unlinked.`}
+        title="Delete Client"
+        message={`Are you sure you want to delete "${deleteTarget?.clientName}"? Contacts, leads, and projects linked to it will be unlinked.`}
       />
     </div>
   );

@@ -188,7 +188,7 @@ function buildStatCards(leads) {
       label: "Negotiation",
       value: totals.Negotiation,
       change: formatTrendPercent(change("Negotiation")),
-      caption: "closing the deal",
+      caption: "closing the project",
       icon: Clock3,
       iconClass: "bg-[#FDF0FA] text-[#C026D3]",
       lineColor: "#C026D3",
@@ -311,8 +311,7 @@ export default function LeadsManager({ initialLeads, live }) {
   const [dateTo, setDateTo] = useState("");
   const [formOpen, setFormOpen] = useState(false);
   const [editingLead, setEditingLead] = useState(null);
-  const [companies, setCompanies] = useState([]);
-
+  const [clients, setClients] = useState([]);
   const refresh = async (silent = true) => {
     if (!liveDB) return;
     if (!silent) setLoading(true);
@@ -376,10 +375,10 @@ export default function LeadsManager({ initialLeads, live }) {
     setEditingLead(null);
     setFormOpen(true);
     try {
-      const res = await fetch("/api/admin/companies");
+      const res = await fetch("/api/admin/clients");
       if (res.ok) {
         const data = await res.json();
-        if (Array.isArray(data?.companies)) setCompanies(data.companies);
+        if (Array.isArray(data?.clients)) setClients(data.clients);
       }
     } catch {
       // ignore
@@ -390,10 +389,10 @@ export default function LeadsManager({ initialLeads, live }) {
     setEditingLead(lead);
     setFormOpen(true);
     try {
-      const res = await fetch("/api/admin/companies");
+      const res = await fetch("/api/admin/clients");
       if (res.ok) {
         const data = await res.json();
-        if (Array.isArray(data?.companies)) setCompanies(data.companies);
+        if (Array.isArray(data?.clients)) setClients(data.clients);
       }
     } catch {
       // ignore
@@ -1034,7 +1033,7 @@ export default function LeadsManager({ initialLeads, live }) {
         open={formOpen}
         onClose={() => setFormOpen(false)}
         existing={editingLead}
-        companies={companies}
+        clients={clients}
         onSubmit={handleLeadSaved}
       />
 

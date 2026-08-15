@@ -59,7 +59,7 @@ function initials(name) {
 
 export default function ContactsManager() {
   const [contacts, setContacts] = useState([]);
-  const [companies, setCompanies] = useState([]);
+  const [clients, setClients] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [formOpen, setFormOpen] = useState(false);
@@ -73,12 +73,12 @@ export default function ContactsManager() {
     try {
       const [cRes, coRes] = await Promise.all([
         fetch(`/api/admin/contacts?search=${encodeURIComponent(search)}`),
-        fetch("/api/admin/companies"),
+        fetch("/api/admin/clients"),
       ]);
       const cData = await cRes.json();
       const coData = await coRes.json();
       if (Array.isArray(cData?.contacts)) setContacts(cData.contacts);
-      if (Array.isArray(coData?.companies)) setCompanies(coData.companies);
+      if (Array.isArray(coData?.clients)) setClients(coData.clients);
     } catch {
       // ignore
     } finally {
@@ -93,7 +93,7 @@ export default function ContactsManager() {
 
   const stats = useMemo(() => {
     const active = contacts.filter((c) => c.status === "Active").length;
-    return { total: contacts.length, active, companies: new Set(contacts.map((c) => c.companyId)).size };
+    return { total: contacts.length, active, clients: new Set(contacts.map((c) => c.companyId)).size };
   }, [contacts]);
 
   const openCreate = () => {
@@ -196,7 +196,7 @@ export default function ContactsManager() {
         {[
           { label: "Total Contacts", value: stats.total, icon: Users, tone: "bg-green/10 text-green" },
           { label: "Active", value: stats.active, icon: UserCheck, tone: "bg-blue-50 text-blue-600" },
-          { label: "Companies", value: stats.companies, icon: Building2, tone: "bg-gold/10 text-gold" },
+          { label: "Clients", value: stats.clients, icon: Building2, tone: "bg-gold/10 text-gold" },
           { label: "Reachable", value: contacts.filter((c) => c.email || c.phone).length, icon: BadgeCheck, tone: "bg-violet-50 text-violet-600" },
         ].map(({ label, value, icon: Icon, tone }) => (
           <div
@@ -380,16 +380,16 @@ export default function ContactsManager() {
                 placeholder="+880 1XXXXXXXXX"
               />
             </Field>
-            <Field label="Company">
+            <Field label="Client">
               <select
                 value={form.companyId}
                 onChange={(e) => setForm((f) => ({ ...f, companyId: e.target.value }))}
                 className={inputCls}
               >
-                <option value="">No company</option>
-                {companies.map((co) => (
+                <option value="">No client</option>
+                {clients.map((co) => (
                   <option key={co.id} value={co.id}>
-                    {co.companyName}
+                    {co.clientName}
                   </option>
                 ))}
               </select>
