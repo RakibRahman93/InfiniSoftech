@@ -8,16 +8,16 @@ datasource db {
 }
 
 model AdminUser {
-  id           String    @id @default(uuid())
-  email        String    @unique
+  id           String         @id @default(uuid())
+  email        String         @unique
   passwordHash String
   salt         String
-  otpEnabled   Boolean   @default(true)
+  otpEnabled   Boolean        @default(true)
   otpHash      String?
   otpExpiresAt DateTime?
   lastLoginAt  DateTime?
-  createdAt    DateTime  @default(now())
-  updatedAt    DateTime  @updatedAt
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
   sessions     AdminSession[]
   otps         AdminOtp[]
 
@@ -25,13 +25,13 @@ model AdminUser {
 }
 
 model AdminSession {
-  id        String   @id @default(uuid())
-  token     String   @unique
+  id        String     @id @default(uuid())
+  token     String     @unique
   email     String
   ip        String?
   userAgent String?
   expiresAt DateTime
-  createdAt DateTime @default(now())
+  createdAt DateTime   @default(now())
   admin     AdminUser? @relation(fields: [email], references: [email])
 
   @@index([email])
@@ -39,11 +39,11 @@ model AdminSession {
 }
 
 model AdminOtp {
-  id        String   @id @default(uuid())
+  id        String     @id @default(uuid())
   email     String
   codeHash  String
   expiresAt DateTime
-  createdAt DateTime @default(now())
+  createdAt DateTime   @default(now())
   admin     AdminUser? @relation(fields: [email], references: [email])
 
   @@index([email])
@@ -51,25 +51,25 @@ model AdminOtp {
 }
 
 model Customer {
-  id           String   @id @default(uuid())
+  id           String            @id @default(uuid())
   name         String
-  email        String   @unique
+  email        String            @unique
   passwordHash String
   salt         String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
   sessions     CustomerSession[]
 
   @@map("customers")
 }
 
 model CustomerSession {
-  id         String    @id @default(uuid())
-  token      String    @unique
+  id         String   @id @default(uuid())
+  token      String   @unique
   customerId String
   expiresAt  DateTime
-  createdAt  DateTime  @default(now())
-  customer   Customer  @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+  customer   Customer @relation(fields: [customerId], references: [id], onDelete: Cascade)
 
   @@index([customerId])
   @@map("customer_sessions")
@@ -133,19 +133,26 @@ model Faq {
 }
 
 model Lead {
-  id         String   @id @default(uuid())
-  name       String?
-  email      String?
-  phone      String?
-  company    String?
-  subject    String?
-  service    String?
-  message    String?
-  source     String   @default("Contact form")
-  status     String   @default("New")
-  createdAt  DateTime @default(now())
-  insertedAt DateTime @default(now())
-  replies    LeadReply[]
+  id             String      @id @default(uuid())
+  leadNumber     String?
+  name           String?
+  email          String?
+  phone          String?
+  companyId      String?
+  company        Company?    @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  subject        String?
+  service        String?
+  message        String?
+  source         String      @default("Contact form")
+  status         String      @default("New")
+  estimatedValue Float?
+  ownerId        String?
+  ownerName      String?
+  lastActivityAt DateTime?
+  nextFollowUpAt DateTime?
+  createdAt      DateTime    @default(now())
+  insertedAt     DateTime    @default(now())
+  replies        LeadReply[]
 
   @@map("leads")
 }
@@ -169,4 +176,88 @@ model Message {
   insertedAt DateTime @default(now())
 
   @@map("messages")
+}
+
+model Company {
+  id          String    @id @default(uuid())
+  companyName String
+  website     String?
+  email       String?
+  phone       String?
+  industry    String?
+  companySize String?
+  address     String?
+  city        String?
+  country     String?
+  notes       String?
+  ownerId     String?
+  ownerName   String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  contacts    Contact[]
+  leads       Lead[]
+  deals       Deal[]
+
+  @@index([companyName])
+  @@map("companies")
+}
+
+model Contact {
+  id          String   @id @default(uuid())
+  name        String
+  email       String?
+  phone       String?
+  designation String?
+  companyId   String?
+  company     Company? @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  source      String   @default("Other")
+  ownerId     String?
+  ownerName   String?
+  notes       String?
+  status      String   @default("Active")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([email])
+  @@index([companyId])
+  @@map("contacts")
+}
+
+model Deal {
+  id                String    @id @default(uuid())
+  dealName          String
+  clientName        String?
+  contactId         String?
+  companyId         String?
+  company           Company?  @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  value             Float     @default(0)
+  probability       Int       @default(10)
+  expectedCloseDate DateTime?
+  stage             String    @default("New")
+  ownerId           String?
+  ownerName         String?
+  service           String?
+  notes             String?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  @@index([stage])
+  @@index([companyId])
+  @@map("deals")
+}
+
+model AuditLog {
+  id         String   @id @default(uuid())
+  actorId    String?
+  actorName  String?
+  action     String
+  entityType String
+  entityId   String?
+  metadata   Json?
+  ipAddress  String?
+  userAgent  String?
+  createdAt  DateTime @default(now())
+
+  @@index([entityType, entityId])
+  @@map("audit_logs")
 }

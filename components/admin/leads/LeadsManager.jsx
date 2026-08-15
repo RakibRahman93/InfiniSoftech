@@ -17,21 +17,27 @@ import {
   Trash2,
   User,
   Users,
+  Pencil,
+  XCircle,
 } from "lucide-react";
 import LeadDetailModal from "./LeadDetailModal";
 import ConfirmDialog from "./ConfirmDialog";
 import SmartPagination from "./SmartPagination";
 import usePagination from "./usePagination";
+import LeadFormModal from "./LeadFormModal";
 import { subscribeToAdminLeads } from "@/lib/supabase/chat-client";
 import { subscribeToRealtime } from "@/lib/realtime/client";
 
-const STATUS_ORDER = ["New", "Contacted", "Qualified", "Won"];
+const STATUS_ORDER = ["New", "Contacted", "Qualified", "Proposal", "Negotiation", "Won", "Lost"];
 
 const statusStyles = {
   New: "bg-blue-50 text-blue-600 border-blue-200",
   Contacted: "bg-orange-50 text-orange-600 border-orange-200",
   Qualified: "bg-violet-50 text-violet-600 border-violet-200",
+  Proposal: "bg-amber-50 text-amber-700 border-amber-200",
+  Negotiation: "bg-fuchsia-50 text-fuchsia-600 border-fuchsia-200",
   Won: "bg-green/10 text-green border-green/15",
+  Lost: "bg-rose-50 text-rose-600 border-rose-200",
 };
 
 const STATUS_FILTERS = ["ALL", ...STATUS_ORDER];
@@ -99,10 +105,16 @@ function buildStatCards(leads) {
   const currentStart = now - 30 * day;
   const previousStart = now - 60 * day;
 
-  const totals = { New: 0, Contacted: 0, Qualified: 0, Won: 0 };
-  const current = { New: 0, Contacted: 0, Qualified: 0, Won: 0 };
-  const previous = { New: 0, Contacted: 0, Qualified: 0, Won: 0 };
-  const buckets = { New: Array(6).fill(0), Contacted: Array(6).fill(0), Qualified: Array(6).fill(0), Won: Array(6).fill(0) };
+  const totals = {};
+  const current = {};
+  const previous = {};
+  const buckets = {};
+  for (const s of STATUS_ORDER) {
+    totals[s] = 0;
+    current[s] = 0;
+    previous[s] = 0;
+    buckets[s] = Array(6).fill(0);
+  }
 
   for (const lead of leads) {
     const ts = parseDate(lead.created_at ?? lead.insertedAt)?.getTime();
@@ -161,6 +173,28 @@ function buildStatCards(leads) {
       points: normalizeSparkline(buckets.Qualified),
     },
     {
+      key: "Proposal",
+      label: "Proposal",
+      value: totals.Proposal,
+      change: formatTrendPercent(change("Proposal")),
+      caption: "proposal shared",
+      icon: FileText,
+      iconClass: "bg-[#FFF4DE] text-[#B8860B]",
+      lineColor: "#B8860B",
+      points: normalizeSparkline(buckets.Proposal),
+    },
+    {
+      key: "Negotiation",
+      label: "Negotiation",
+      value: totals.Negotiation,
+      change: formatTrendPercent(change("Negotiation")),
+      caption: "closing the deal",
+      icon: Clock3,
+      iconClass: "bg-[#FDF0FA] text-[#C026D3]",
+      lineColor: "#C026D3",
+      points: normalizeSparkline(buckets.Negotiation),
+    },
+    {
       key: "Won",
       label: "Won",
       value: totals.Won,
@@ -170,6 +204,17 @@ function buildStatCards(leads) {
       iconClass: "bg-[#F2F7F1] text-[#3D7650]",
       lineColor: "#3D7650",
       points: normalizeSparkline(buckets.Won),
+    },
+    {
+      key: "Lost",
+      label: "Lost",
+      value: totals.Lost,
+      change: formatTrendPercent(change("Lost")),
+      caption: "closed but not won",
+      icon: XCircle,
+      iconClass: "bg-[#FDECEF] text-[#E11D48]",
+      lineColor: "#E11D48",
+      points: normalizeSparkline(buckets.Lost),
     },
   ];
 }
@@ -264,6 +309,9 @@ export default function LeadsManager({ initialLeads, live }) {
   const [subjectFilter, setSubjectFilter] = useState("ALL");
   const [dateFrom, setDateFrom] = useState("");
   const [dateTo, setDateTo] = useState("");
+  const [formOpen, setFormOpen] = useState(false);
+  const [editingLead, setEditingLead] = useState(null);
+  const [companies, setCompanies] = useState([]);
 
   const refresh = async (silent = true) => {
     if (!liveDB) return;
@@ -322,6 +370,47 @@ export default function LeadsManager({ initialLeads, live }) {
   const closeDetail = () => {
     setDetailOpen(false);
     setSelectedId(null);
+  };
+
+  const openCreateForm = async () => {
+    setEditingLead(null);
+    setFormOpen(true);
+    try {
+      const res = await fetch("/api/admin/companies");
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data?.companies)) setCompanies(data.companies);
+      }
+    } catch {
+      // ignore
+    }
+  };
+
+  const openEditForm = async (lead) => {
+    setEditingLead(lead);
+    setFormOpen(true);
+    try {
+      const res = await fetch("/api/admin/companies");
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data?.companies)) setCompanies(data.companies);
+      }
+    } catch {
+      // ignore
+    }
+  };
+
+  const handleLeadSaved = (savedLead) => {
+    setLeads((prev) => {
+      const idx = prev.findIndex((l) => l.id === savedLead.id);
+      if (idx >= 0) {
+        const next = [...prev];
+        next[idx] = { ...prev[idx], ...savedLead };
+        return next;
+      }
+      return [savedLead, ...prev];
+    });
+    void refresh(true);
   };
 
   const selectedLead = selectedId ? leads.find((l) => l.id === selectedId) ?? null : null;
@@ -563,6 +652,14 @@ export default function LeadsManager({ initialLeads, live }) {
         <div className="flex flex-wrap items-center gap-2">
           <button
             data-no-sparkle
+            onClick={() => openCreateForm()}
+            className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-green px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-green/90"
+          >
+            <User className="h-4 w-4" />
+            Add lead
+          </button>
+          <button
+            data-no-sparkle
             onClick={() => refresh(false)}
             disabled={!liveDB || loading}
             className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-ink/10 bg-white px-4 text-sm font-semibold text-ink shadow-sm transition-colors hover:bg-sand/60 disabled:cursor-not-allowed disabled:opacity-50"
@@ -584,7 +681,7 @@ export default function LeadsManager({ initialLeads, live }) {
       </header>
 
       {/* Stat cards */}
-      <section className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-2 xl:grid-cols-5">
+      <section className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-4">
         {statCards.map(({ label, value, change, caption, icon: Icon, iconClass, points }) => (
           <div
             key={label}
@@ -871,6 +968,14 @@ export default function LeadsManager({ initialLeads, live }) {
                     >
                       <User className="h-3.5 w-3.5" />
                     </button>
+                    <button
+                      data-no-sparkle
+                      onClick={() => openEditForm(lead)}
+                      className="grid h-8 w-8 place-items-center rounded-lg border border-[#E7E5E1] text-muted-foreground transition-colors hover:bg-[#F5F5F1] hover:text-green"
+                      title="Edit"
+                    >
+                      <Pencil className="h-3.5 w-3.5" />
+                    </button>
                     {lead.status !== "Won" && (
                       <button
                         data-no-sparkle
@@ -923,6 +1028,14 @@ export default function LeadsManager({ initialLeads, live }) {
         onMarkWon={(id) => handleMarkStatus(id, "Won", "Marked as won.")}
         onMarkQualified={(id) => handleMarkStatus(id, "Qualified", "Lead reopened.")}
         onDelete={(id) => setDeleteConfirm(id)}
+      />
+
+      <LeadFormModal
+        open={formOpen}
+        onClose={() => setFormOpen(false)}
+        existing={editingLead}
+        companies={companies}
+        onSubmit={handleLeadSaved}
       />
 
       <ConfirmDialog

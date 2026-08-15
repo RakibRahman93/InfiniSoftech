@@ -12,6 +12,8 @@ import {
   CalendarDays,
   CheckCircle2,
   Clock3,
+  Pencil,
+  Trash2,
 } from "lucide-react";
 import { toast, Toaster } from "react-hot-toast";
 import { useCustomerLeads, unreadForLead, formatDate } from "@/components/customer/useCustomerLeads";
@@ -31,6 +33,9 @@ export default function CustomerEnquiriesPage() {
   const [expandedIds, setExpandedIds] = useState(() => new Set());
   const [requestModalOpen, setRequestModalOpen] = useState(false);
   const [requestSubmitting, setRequestSubmitting] = useState(false);
+  const [editingEnquiry, setEditingEnquiry] = useState(null);
+  const [deleteTarget, setDeleteTarget] = useState(null);
+  const [deleting, setDeleting] = useState(false);
   const [requestForm, setRequestForm] = useState({
     name: "",
     email: "",
@@ -94,25 +99,84 @@ export default function CustomerEnquiriesPage() {
     }
     setRequestSubmitting(true);
     try {
-      const res = await fetch("/api/customer/enquiries", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.ok) {
-        toast.error(data?.error || "Could not create enquiry.");
-        return;
+      if (editingEnquiry) {
+        const res = await fetch(`/api/customer/leads/${encodeURIComponent(editingEnquiry.id)}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const data = await res.json();
+        if (!res.ok || !data.ok) {
+          toast.error(data?.error || "Could not update enquiry.");
+          return;
+        }
+        toast.success("Enquiry updated.");
+      } else {
+        const res = await fetch("/api/customer/enquiries", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const data = await res.json();
+        if (!res.ok || !data.ok) {
+          toast.error(data?.error || "Could not create enquiry.");
+          return;
+        }
+        toast.success("Enquiry created.");
       }
-      toast.success("Enquiry created.");
       setRequestModalOpen(false);
+      setEditingEnquiry(null);
       setRequestForm({ name: "", email: "", phone: "", company: "", service: "", subject: "", message: "" });
       initializedExpanded.current = false;
       await refresh();
     } catch {
-      toast.error("Could not create enquiry.");
+      toast.error(editingEnquiry ? "Could not update enquiry." : "Could not create enquiry.");
     } finally {
       setRequestSubmitting(false);
+    }
+  }
+
+  function openNewRequest() {
+    setEditingEnquiry(null);
+    setRequestForm({ name: "", email: "", phone: "", company: "", service: "", subject: "", message: "" });
+    setRequestModalOpen(true);
+  }
+
+  function openEdit(item) {
+    const first = (item.replies ?? []).find((r) => r.direction === "incoming") ?? null;
+    const displayEmail = first?.email || item.email || "";
+    setEditingEnquiry(item);
+    setRequestForm({
+      name: item.name || "",
+      email: displayEmail,
+      phone: item.phone || "",
+      company: item.company || "",
+      service: item.service || "",
+      subject: item.subject || "",
+      message: item.message || "",
+    });
+    setRequestModalOpen(true);
+  }
+
+  async function confirmDelete() {
+    if (!deleteTarget) return;
+    setDeleting(true);
+    try {
+      const res = await fetch(`/api/customer/leads/${encodeURIComponent(deleteTarget.id)}`, {
+        method: "DELETE",
+      });
+      const data = await res.json();
+      if (!res.ok || !data.ok) {
+        toast.error(data?.error || "Could not delete enquiry.");
+        return;
+      }
+      toast.success("Enquiry deleted.");
+      setDeleteTarget(null);
+      await refresh();
+    } catch {
+      toast.error("Could not delete enquiry.");
+    } finally {
+      setDeleting(false);
     }
   }
 
@@ -139,7 +203,7 @@ export default function CustomerEnquiriesPage() {
         </div>
         <button
           type="button"
-          onClick={() => setRequestModalOpen(true)}
+          onClick={() => openNewRequest()}
           className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-green px-5 text-xs font-bold uppercase tracking-[0.1em] text-white transition hover:opacity-90"
         >
           <Plus className="h-4 w-4" /> New enquiry
@@ -158,7 +222,7 @@ export default function CustomerEnquiriesPage() {
           </p>
           <button
             type="button"
-            onClick={() => setRequestModalOpen(true)}
+            onClick={() => openNewRequest()}
             className="mt-5 inline-flex h-10 items-center rounded-xl bg-green px-6 text-xs font-bold uppercase tracking-[0.1em] text-white transition hover:opacity-90"
           >
             Get started
@@ -204,6 +268,24 @@ export default function CustomerEnquiriesPage() {
                     >
                       {item.status}
                     </span>
+                    <button
+                      type="button"
+                      onClick={() => openEdit(item)}
+                      className="grid h-8 w-8 place-items-center rounded-full border border-ink/10 text-muted-foreground transition hover:bg-sand/50 hover:text-ink"
+                      aria-label="Edit enquiry"
+                      title="Edit enquiry"
+                    >
+                      <Pencil className="h-3.5 w-3.5" />
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setDeleteTarget(item)}
+                      className="grid h-8 w-8 place-items-center rounded-full border border-ink/10 text-muted-foreground transition hover:bg-rose-50 hover:text-rose-600"
+                      aria-label="Delete enquiry"
+                      title="Delete enquiry"
+                    >
+                      <Trash2 className="h-3.5 w-3.5" />
+                    </button>
                     <button
                       type="button"
                       aria-expanded={expanded}
@@ -343,11 +425,15 @@ export default function CustomerEnquiriesPage() {
             <div className="flex items-start justify-between gap-4 border-b border-ink/10 px-5 py-4 sm:px-6">
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-green">
-                  New request
+                  {editingEnquiry ? "Edit request" : "New request"}
                 </p>
-                <h2 className="mt-1 font-display text-xl font-semibold text-ink">New enquiry</h2>
+                <h2 className="mt-1 font-display text-xl font-semibold text-ink">
+                  {editingEnquiry ? "Edit enquiry" : "New enquiry"}
+                </h2>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  Tell us about your project and we&apos;ll get back to you live.
+                  {editingEnquiry
+                    ? "Update the details and our team will see them live."
+                    : "Tell us about your project and we'll get back to you live."}
                 </p>
               </div>
               <button
@@ -458,13 +544,56 @@ export default function CustomerEnquiriesPage() {
                 >
                   {requestSubmitting ? (
                     <Loader2 className="h-4 w-4 animate-spin" />
+                  ) : editingEnquiry ? (
+                    <Pencil className="h-4 w-4" />
                   ) : (
                     <Plus className="h-4 w-4" />
                   )}
-                  {requestSubmitting ? "Creating..." : "Create enquiry"}
+                  {requestSubmitting
+                    ? editingEnquiry
+                      ? "Saving..."
+                      : "Creating..."
+                    : editingEnquiry
+                      ? "Save changes"
+                      : "Create enquiry"}
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+      )}
+    {deleteTarget && (
+        <div className="fixed inset-0 z-[90] flex items-center justify-center bg-black/45 px-4 py-6 backdrop-blur-sm">
+          <div className="w-full max-w-sm overflow-hidden rounded-3xl border border-ink/10 bg-background shadow-[0_30px_90px_-40px_rgba(0,0,0,0.45)]">
+            <div className="px-6 pb-2 pt-6 text-center">
+              <span className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-rose-50 text-rose-600">
+                <Trash2 className="h-5 w-5" />
+              </span>
+              <h2 className="mt-4 font-display text-lg font-semibold text-ink">Delete enquiry</h2>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                Are you sure you want to delete "{deleteTarget.subject || deleteTarget.service || "this enquiry"}"?
+                This action cannot be undone.
+              </p>
+            </div>
+            <div className="flex justify-end gap-2 px-6 py-5">
+              <button
+                type="button"
+                onClick={() => setDeleteTarget(null)}
+                disabled={deleting}
+                className="inline-flex h-10 items-center justify-center rounded-xl border border-ink/10 px-5 text-xs font-bold uppercase tracking-[0.1em] text-ink transition hover:bg-sand/60 disabled:opacity-50"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                onClick={confirmDelete}
+                disabled={deleting}
+                className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-rose-600 px-5 text-xs font-bold uppercase tracking-[0.1em] text-white transition hover:bg-rose-700 disabled:opacity-50"
+              >
+                {deleting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Trash2 className="h-4 w-4" />}
+                {deleting ? "Deleting..." : "Delete"}
+              </button>
+            </div>
           </div>
         </div>
       )}

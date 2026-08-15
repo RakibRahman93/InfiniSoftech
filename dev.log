@@ -7,20 +7,306 @@
   - Environments: .env
 
  ✓ Starting...
- ✓ Ready in 1758ms
- ✓ Compiled /api/submitForm in 304ms (64 modules)
- POST /api/submitForm 200 in 2307ms
- ✓ Compiled /middleware in 320ms (72 modules)
- ○ Compiling /api/admin/login-gate ...
- ✓ Compiled /api/admin/login-gate in 550ms (149 modules)
- POST /api/admin/login-gate 200 in 1166ms
- ✓ Compiled /api/admin/login in 99ms (151 modules)
- POST /api/admin/login 200 in 426ms
- ✓ Compiled /api/admin/leads/[id]/reply in 191ms (163 modules)
- POST /api/admin/leads/0f3ab8cd-1d90-4dc2-ad9a-4c18104bcb03/reply 200 in 2557ms
- POST /api/admin/login-gate 200 in 244ms
- POST /api/admin/login 200 in 198ms
- ✓ Compiled /api/admin/leads/[id]/status in 87ms (165 modules)
- PATCH /api/admin/leads/0f3ab8cd-1d90-4dc2-ad9a-4c18104bcb03/status 200 in 723ms
- ✓ Compiled /api/admin/leads in 131ms (167 modules)
- GET /api/admin/leads 200 in 398ms
+ ✓ Ready in 5s
+ ✓ Compiled /middleware in 198ms (72 modules)
+ ○ Compiling /admin/dashboard/contacts ...
+ ✓ Compiled /admin/dashboard/contacts in 4.4s (855 modules)
+ GET /admin/dashboard/contacts 200 in 5968ms
+ ○ Compiling /api/admin/leads/count ...
+ ✓ Compiled /api/admin/leads/count in 599ms (484 modules)
+ ✓ Compiled (522 modules)
+ GET /api/location 304 in 1615ms
+ GET /api/location 304 in 292ms
+ GET /api/admin/security 200 in 2076ms
+ ✓ Compiled /api/admin/companies in 391ms (526 modules)
+ ✓ Compiled (529 modules)
+ GET /api/admin/companies 200 in 1720ms
+ GET /api/admin/contacts?search= 200 in 1901ms
+ GET /api/admin/leads/count 200 in 4256ms
+ GET /api/admin/security 200 in 2602ms
+ GET /api/admin/leads/count 200 in 1334ms
+ GET /api/admin/leads/count 200 in 864ms
+ GET /api/admin/leads/count 200 in 989ms
+ ✓ Compiled /api/admin/leads/[id] in 213ms (531 modules)
+ GET /api/admin/leads/count 200 in 1791ms
+ ○ Compiling /admin/dashboard/companies ...
+ ✓ Compiled /admin/dashboard/companies in 1583ms (1154 modules)
+ GET /api/admin/companies?search= 200 in 359ms
+ GET /api/admin/leads/count 200 in 1220ms
+ GET /api/admin/leads/count 200 in 1185ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.7s (1689 modules)
+ GET / 200 in 5168ms
+ ○ Compiling /api/location ...
+ ✓ Compiled /api/location in 3.1s (805 modules)
+ GET /api/location 304 in 4144ms
+ GET /api/location 304 in 307ms
+ GET /api/admin/leads/count 200 in 3066ms
+ GET /api/admin/leads/count 200 in 1254ms
+ ○ Compiling /customer/dashboard ...
+ ✓ Compiled /customer/dashboard in 2.1s (1730 modules)
+ GET /customer/dashboard 200 in 2766ms
+ ✓ Compiled /api/customer/leads in 331ms (820 modules)
+ GET /api/location 304 in 594ms
+ GET /api/location 304 in 47ms
+ GET /api/customer/leads 200 in 1816ms
+ GET /api/customer/leads 200 in 789ms
+ GET /api/admin/leads/count 200 in 780ms
+ GET /api/customer/leads 200 in 2654ms
+ GET /api/customer/leads 200 in 877ms
+ GET /api/admin/leads/count 200 in 962ms
+ GET /api/customer/leads 200 in 560ms
+ GET /api/customer/leads 200 in 922ms
+ GET /api/admin/leads/count 200 in 1755ms
+ GET /api/customer/leads 200 in 912ms
+ GET /api/customer/leads 200 in 2230ms
+ GET /api/admin/leads/count 200 in 446ms
+ GET /api/customer/leads 200 in 1094ms
+ GET /api/customer/leads 200 in 555ms
+ GET /api/admin/leads/count 200 in 432ms
+ GET /api/customer/leads 200 in 2299ms
+ GET /api/customer/leads 200 in 1024ms
+ GET /api/admin/leads/count 200 in 773ms
+ GET /api/customer/leads 200 in 6064ms
+ GET /api/customer/leads 200 in 954ms
+ ○ Compiling /admin/dashboard/leads ...
+ ✓ Compiled /admin/dashboard/leads in 2.7s (1902 modules)
+ ✓ Compiled /api/realtime/events in 424ms (918 modules)
+ ✓ Compiled (921 modules)
+ POST /api/admin/leads/read 200 in 2502ms
+ POST /api/admin/leads/read 200 in 3056ms
+ ○ Compiling /api/admin/companies ...
+ POST /api/admin/leads/read 200 in 4965ms
+ ✓ Compiled /api/admin/companies in 853ms (925 modules)
+ GET /api/admin/companies 200 in 2031ms
+ GET /api/admin/leads/count 200 in 7512ms
+ GET /api/admin/leads/count 200 in 1425ms
+ GET /api/customer/leads 200 in 1577ms
+ ○ Compiling /api/admin/leads ...
+ ✓ Compiled /api/admin/leads in 1020ms (927 modules)
+ GET /api/admin/leads 200 in 2118ms
+ GET /api/customer/leads 200 in 933ms
+ GET /api/admin/leads/count 200 in 839ms
+ GET /api/admin/leads 200 in 420ms
+ GET /api/customer/leads 200 in 1348ms
+ GET /api/admin/leads 200 in 803ms
+ GET /api/customer/leads 200 in 987ms
+ GET /api/admin/leads/count 200 in 811ms
+ GET /api/admin/leads 200 in 648ms
+ GET /api/customer/leads 200 in 1669ms
+ GET /api/admin/leads 200 in 926ms
+ GET /api/customer/leads 200 in 517ms
+ GET /api/admin/leads/count 200 in 472ms
+ GET /api/admin/leads 200 in 365ms
+ GET /api/customer/leads 200 in 803ms
+ GET /api/admin/leads 200 in 829ms
+ GET /api/admin/leads/count 200 in 555ms
+ GET /api/admin/leads 200 in 809ms
+ GET /api/admin/leads/count 200 in 1308ms
+ GET /api/customer/leads 200 in 1568ms
+ GET /api/admin/leads/count 200 in 787ms
+ GET /api/admin/leads 200 in 804ms
+ GET /api/customer/leads 200 in 1057ms
+ GET /api/admin/leads/count 200 in 1079ms
+ GET /api/admin/leads 200 in 902ms
+ GET /api/admin/leads 200 in 774ms
+ ○ Compiling /admin/dashboard ...
+ ✓ Compiled /admin/dashboard in 7.6s (2937 modules)
+ GET /api/realtime/events 200 in 264744ms
+ GET /api/admin/leads/count 200 in 348ms
+ GET /api/admin/leads/count 200 in 341ms
+ GET /api/customer/leads 200 in 1417ms
+ ✓ Compiled /api/admin/leads/read in 384ms (1430 modules)
+ ✓ Compiled (1432 modules)
+ POST /api/admin/leads/read 200 in 1764ms
+ POST /api/admin/leads/read 200 in 2306ms
+ POST /api/admin/leads/read 200 in 2517ms
+ GET /api/admin/leads/count 200 in 708ms
+ GET /api/admin/leads/count 200 in 616ms
+ GET /api/admin/leads 200 in 1876ms
+ GET /api/admin/leads 200 in 348ms
+ GET / 200 in 397ms
+ ○ Compiling /api/location ...
+ GET /api/admin/leads/count 200 in 2413ms
+ ✓ Compiled /api/location in 1820ms (1449 modules)
+ GET /api/location 304 in 2004ms
+ GET /api/location 304 in 108ms
+ GET /api/admin/leads 200 in 725ms
+ GET /api/customer/leads 200 in 1923ms
+ GET /api/admin/leads 200 in 812ms
+ ○ Compiling /customer/dashboard/enquiries ...
+ ✓ Compiled /customer/dashboard/enquiries in 2.5s (2986 modules)
+ GET /api/customer/leads 200 in 4421ms
+ GET /api/admin/leads/count 200 in 3018ms
+ GET /api/customer/leads 200 in 1314ms
+ GET /api/customer/leads 200 in 588ms
+ GET /api/admin/leads 200 in 1621ms
+ GET /api/customer/leads 200 in 556ms
+ ✓ Compiled /api/admin/companies in 450ms (1447 modules)
+ GET /api/admin/companies 200 in 1793ms
+ GET /api/admin/leads 200 in 2156ms
+ GET /api/admin/leads/count 200 in 1540ms
+ GET /api/customer/leads 200 in 1222ms
+ ○ Compiling /api/admin/leads/[id]/reply ...
+ ✓ Compiled /api/admin/leads/[id]/reply in 1431ms (1512 modules)
+ GET /api/admin/leads 200 in 3678ms
+ POST /api/admin/leads/62385d6d-025e-4cd5-a024-da3c6c95122d/reply 200 in 5917ms
+ GET /api/customer/leads 200 in 1146ms
+ GET /api/admin/leads 200 in 924ms
+ ✓ Compiled /api/customer/leads/[id]/reply in 403ms (1514 modules)
+ GET /api/admin/leads/count 200 in 2251ms
+ GET /api/customer/leads 200 in 790ms
+ POST /api/customer/leads/62385d6d-025e-4cd5-a024-da3c6c95122d/reply 200 in 12030ms
+ GET /api/customer/leads 200 in 901ms
+ GET /api/admin/leads 200 in 357ms
+ ✓ Compiled /admin/dashboard/contacts in 499ms (1523 modules)
+ GET /api/realtime/events 200 in 139821ms
+ ○ Compiling /api/admin/contacts ...
+ ✓ Compiled /api/admin/contacts in 816ms (1526 modules)
+ GET /api/admin/leads/count 200 in 1386ms
+ ✓ Compiled in 0ms (1526 modules)
+ GET /api/admin/companies 200 in 2343ms
+ ✓ Compiled in 0ms (1526 modules)
+ ✓ Compiled in 1ms (1526 modules)
+ GET /api/customer/leads 200 in 3729ms
+ GET /api/admin/contacts?search= 200 in 5082ms
+ ✓ Compiled /api/admin/leads/read in 385ms (1528 modules)
+ ✓ Compiled (1530 modules)
+ POST /api/admin/leads/read 200 in 1959ms
+ POST /api/admin/leads/read 200 in 2068ms
+ POST /api/admin/leads/read 200 in 2407ms
+ GET /api/admin/leads/count 200 in 912ms
+ GET /api/admin/leads/count 200 in 1006ms
+ GET /api/customer/leads 200 in 873ms
+ GET /api/realtime/events 200 in 13435ms
+ GET /api/admin/leads/count 200 in 462ms
+ GET /api/admin/companies 200 in 692ms
+ GET /api/admin/contacts?search= 200 in 1017ms
+ GET /api/customer/leads 200 in 774ms
+ ✓ Compiled /admin/dashboard/companies in 462ms (1536 modules)
+ GET /api/admin/companies?search= 200 in 455ms
+ GET /api/admin/leads/count 200 in 819ms
+ GET /api/admin/leads/count 200 in 449ms
+ GET /api/customer/leads 200 in 786ms
+ ○ Compiling /admin/dashboard/deals ...
+ ✓ Compiled /admin/dashboard/deals in 1289ms (2697 modules)
+ ✓ Compiled /api/admin/deals in 445ms (1188 modules)
+ GET /api/admin/leads/count 200 in 1822ms
+ GET /api/admin/companies 200 in 1607ms
+ GET /api/admin/deals?search= 200 in 1817ms
+ GET /api/admin/leads/count 200 in 1307ms
+ GET /api/customer/leads 200 in 907ms
+ ✓ Compiled /api/admin/deals/[id] in 220ms (1071 modules)
+ GET /api/admin/leads/count 200 in 888ms
+ POST /api/admin/deals/ab5756a5-c36d-4a9d-bb22-64cbaa80e9f5 200 in 2819ms
+ GET /api/admin/companies 200 in 242ms
+ GET /api/admin/deals?search= 200 in 672ms
+ POST /api/admin/deals/ab5756a5-c36d-4a9d-bb22-64cbaa80e9f5 200 in 1225ms
+ GET /api/admin/companies 200 in 364ms
+ GET /api/admin/deals?search= 200 in 1126ms
+ GET /api/admin/leads/count 200 in 915ms
+ GET /api/customer/leads 200 in 897ms
+ GET /api/admin/leads/count 200 in 453ms
+ POST /api/admin/deals/ab5756a5-c36d-4a9d-bb22-64cbaa80e9f5 200 in 1788ms
+ GET /api/admin/companies 200 in 379ms
+ GET /api/admin/deals?search= 200 in 603ms
+ GET /api/admin/leads/count 200 in 346ms
+ GET /api/admin/leads/count 200 in 370ms
+ GET /api/admin/companies?search= 200 in 247ms
+ GET /api/customer/leads 200 in 561ms
+ GET /api/admin/leads/count 200 in 1105ms
+ GET /api/admin/companies 200 in 1844ms
+ GET /api/admin/deals?search= 200 in 2357ms
+ GET /api/admin/leads/count 200 in 3787ms
+ GET /api/admin/leads/count 200 in 552ms
+ GET /api/customer/leads 200 in 1334ms
+ GET /api/admin/leads/count 200 in 466ms
+ GET /api/customer/leads 200 in 1191ms
+ GET /api/customer/leads 200 in 543ms
+ GET /api/admin/leads/count 200 in 443ms
+ GET /api/admin/companies?search= 200 in 337ms
+ GET /api/admin/leads/count 200 in 902ms
+ GET /api/customer/leads 200 in 1236ms
+ GET /api/admin/leads/count 200 in 669ms
+ GET /api/admin/companies 200 in 684ms
+ GET /api/admin/deals?search= 200 in 2056ms
+ GET /api/customer/leads 200 in 1499ms
+ GET /api/admin/companies?search= 200 in 337ms
+ GET /api/admin/leads/count 200 in 675ms
+ GET /api/admin/leads/count 200 in 558ms
+ GET /api/customer/leads 200 in 447ms
+ GET /api/admin/leads/count 200 in 724ms
+ GET /api/customer/leads 200 in 539ms
+ GET /api/admin/leads/count 200 in 434ms
+ GET /api/admin/leads/count 200 in 1549ms
+ GET /api/admin/leads/count 200 in 359ms
+ GET /api/admin/companies 200 in 357ms
+ GET /api/admin/deals?search= 200 in 471ms
+ GET /api/customer/leads 200 in 472ms
+ GET /api/admin/leads/count 200 in 799ms
+ GET /api/admin/leads/count 200 in 883ms
+ GET /api/customer/leads 200 in 1238ms
+ GET /api/admin/leads/count 200 in 453ms
+ GET /api/admin/leads/count 200 in 3765ms
+ GET /api/admin/companies?search= 200 in 344ms
+ GET /api/admin/leads/count 200 in 1418ms
+ GET /api/customer/leads 200 in 2147ms
+ GET /api/admin/leads/count 200 in 462ms
+ GET /api/admin/leads/count 200 in 870ms
+ GET /api/customer/leads 200 in 881ms
+ ○ Compiling /admin/dashboard/leads ...
+ ✓ Compiled /admin/dashboard/leads in 695ms (1171 modules)
+ ○ Compiling /api/admin/leads/read ...
+ ✓ Compiled /api/admin/leads/read in 826ms (1174 modules)
+ GET /api/admin/leads/count 200 in 4228ms
+ ✓ Compiled (1176 modules)
+ POST /api/admin/leads/read 200 in 2206ms
+ POST /api/admin/leads/read 200 in 2975ms
+ GET /api/admin/leads/count 200 in 765ms
+ POST /api/admin/leads/read 200 in 4195ms
+ GET /api/customer/leads 200 in 3772ms
+ ✓ Compiled /api/admin/leads in 486ms (658 modules)
+ GET /api/admin/leads 200 in 1449ms
+ GET /api/customer/leads 200 in 1257ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 674ms (686 modules)
+ GET /favicon.ico 200 in 826ms
+ GET /api/admin/leads/count 200 in 555ms
+ ○ Compiling /admin/dashboard/coming-soon ...
+ ✓ Compiled /admin/dashboard/coming-soon in 2.3s (2238 modules)
+ ○ Compiling / ...
+ GET /api/admin/leads 200 in 1541ms
+ ✓ Compiled / in 2.2s (971 modules)
+ GET /api/realtime/events 200 in 34941ms
+ GET /api/customer/leads 200 in 4014ms
+ GET /api/admin/leads/count 200 in 595ms
+ POST /api/admin/leads/read 200 in 254ms
+ POST /api/admin/leads/read 200 in 373ms
+ POST /api/admin/leads/read 200 in 803ms
+ GET /api/admin/leads/count 200 in 1188ms
+ GET /api/customer/leads 200 in 1567ms
+ GET /api/admin/leads 200 in 659ms
+ GET /api/admin/leads/count 200 in 1087ms
+ GET /api/customer/leads 200 in 850ms
+ GET /api/admin/leads 200 in 320ms
+ GET /api/admin/leads 200 in 766ms
+ GET /api/admin/leads/count 200 in 758ms
+ GET /api/admin/leads 200 in 334ms
+ GET /api/customer/leads 200 in 871ms
+ GET /api/admin/leads 200 in 645ms
+ GET /api/admin/leads/count 200 in 440ms
+ GET /api/admin/leads 200 in 330ms
+ GET /api/admin/leads 200 in 458ms
+ GET /api/admin/leads/count 200 in 968ms
+ GET /api/admin/leads 200 in 332ms
+ GET /api/customer/leads 200 in 1324ms
+ GET /api/admin/leads 200 in 332ms
+ GET /api/admin/leads/count 200 in 760ms
+ GET /api/admin/leads 200 in 1834ms
+ GET /api/admin/leads 200 in 765ms
+ GET /api/admin/leads/count 200 in 1026ms
+ GET /api/admin/leads 200 in 342ms
+ GET /api/customer/leads 200 in 604ms
+ GET /api/admin/leads 200 in 1006ms
+ GET /api/admin/leads/count 200 in 799ms
+ GET /api/admin/leads 200 in 355ms

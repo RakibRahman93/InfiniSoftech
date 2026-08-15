@@ -27,12 +27,26 @@ export async function POST(request) {
   }
 
   try {
+    let companyId = null;
+    const companyName = String(company ?? "").trim();
+    if (companyName) {
+      const existingCompany = await prisma.company.findFirst({
+        where: { companyName: { equals: companyName, mode: "insensitive" } },
+      });
+      if (existingCompany) {
+        companyId = existingCompany.id;
+      } else {
+        const created = await prisma.company.create({ data: { companyName } });
+        companyId = created.id;
+      }
+    }
+
     const lead = await prisma.lead.create({
       data: {
         name,
         email,
         phone,
-        company: company || null,
+        companyId,
         service: service || null,
         subject: subject || null,
         message,
