@@ -34,7 +34,7 @@ export default function DealsManager() {
   const [toast, setToast] = useState("");
   const [deleteConfirm, setDeleteConfirm] = useState(null);
 
-  const emptyForm = { dealName: "", clientName: "", value: "", probability: "50", stage: "New", service: "", notes: "", expectedCloseDate: "" };
+  const emptyForm = { dealName: "", clientName: "", clientEmail: "", value: "", probability: "50", stage: "New", service: "", notes: "", expectedCloseDate: "" };
   const [form, setForm] = useState(emptyForm);
 
   const load = useCallback(async () => {
@@ -64,6 +64,7 @@ export default function DealsManager() {
     setEditing(d);
     setForm({
       dealName: d.dealName, clientName: d.clientName ?? "",
+      clientEmail: d.clientEmail ?? "",
       value: d.value ?? "", probability: d.probability ?? "50",
       stage: d.stage ?? "New", service: d.service ?? "", notes: d.notes ?? "",
       expectedCloseDate: d.expectedCloseDate ? d.expectedCloseDate.split("T")[0] : "",
@@ -246,6 +247,11 @@ export default function DealsManager() {
                 <label className="mb-1 block text-xs font-medium text-muted-foreground">Client Name</label>
                 <input value={form.clientName} onChange={(e) => setForm({ ...form, clientName: e.target.value })}
                   className="w-full rounded-xl border border-ink/10 bg-white px-3 py-2 text-sm outline-none focus:border-green/40" placeholder="Acme Corp" />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs font-medium text-muted-foreground">Client Email</label>
+                <input type="email" value={form.clientEmail} onChange={(e) => setForm({ ...form, clientEmail: e.target.value })}
+                  className="w-full rounded-xl border border-ink/10 bg-white px-3 py-2 text-sm outline-none focus:border-green/40" placeholder="client@company.com (for client portal)" />
               </div>
               <div className="grid grid-cols-2 gap-2">
                 <div>

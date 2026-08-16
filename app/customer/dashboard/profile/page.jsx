@@ -70,7 +70,7 @@ export default function CustomerProfilePage() {
       {/* Account card */}
       <div className="max-w-2xl rounded-2xl border border-ink/5 bg-background p-6 shadow-sm sm:p-8">
         <div className="flex items-center gap-4">
-          <span className="grid h-14 w-14 place-items-center rounded-2xl bg-green text-lg font-bold text-white">
+          <span className="grid h-14 w-14 place-items-center rounded-2xl bg-brand-gradient text-lg font-bold text-white">
             {customer?.name?.charAt(0)?.toUpperCase() ?? "C"}
           </span>
           <div>
@@ -128,7 +128,7 @@ export default function CustomerProfilePage() {
                 value={form.currentPassword}
                 onChange={(e) => setForm((f) => ({ ...f, currentPassword: e.target.value }))}
                 placeholder="Current password"
-                className="h-11 w-full rounded-xl border border-ink/10 bg-background py-2.5 pl-10 pr-4 text-sm text-ink outline-none transition placeholder:text-muted-foreground/50 focus:border-green/40 focus:ring-2 focus:ring-green/10"
+                className="h-11 w-full rounded-xl border border-ink/10 bg-background py-2.5 pl-10 pr-4 text-sm text-ink outline-none transition placeholder:text-muted-foreground/50 focus:border-[#8876FF]/50 focus:ring-2 focus:ring-[#8876FF]/10"
               />
             </div>
           </div>
@@ -149,7 +149,7 @@ export default function CustomerProfilePage() {
                   value={form.newPassword}
                   onChange={(e) => setForm((f) => ({ ...f, newPassword: e.target.value }))}
                   placeholder="Min. 6 characters"
-                  className="h-11 w-full rounded-xl border border-ink/10 bg-background py-2.5 pl-10 pr-10 text-sm text-ink outline-none transition placeholder:text-muted-foreground/50 focus:border-green/40 focus:ring-2 focus:ring-green/10"
+                  className="h-11 w-full rounded-xl border border-ink/10 bg-background py-2.5 pl-10 pr-10 text-sm text-ink outline-none transition placeholder:text-muted-foreground/50 focus:border-[#8876FF]/50 focus:ring-2 focus:ring-[#8876FF]/10"
                 />
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function CustomerProfilePage() {
                   value={form.confirm}
                   onChange={(e) => setForm((f) => ({ ...f, confirm: e.target.value }))}
                   placeholder="Repeat new password"
-                  className="h-11 w-full rounded-xl border border-ink/10 bg-background py-2.5 pl-10 pr-10 text-sm text-ink outline-none transition placeholder:text-muted-foreground/50 focus:border-green/40 focus:ring-2 focus:ring-green/10"
+                  className="h-11 w-full rounded-xl border border-ink/10 bg-background py-2.5 pl-10 pr-10 text-sm text-ink outline-none transition placeholder:text-muted-foreground/50 focus:border-[#8876FF]/50 focus:ring-2 focus:ring-[#8876FF]/10"
                 />
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function CustomerProfilePage() {
             <button
               type="submit"
               disabled={loading}
-              className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-green px-6 text-xs font-bold uppercase tracking-[0.1em] text-white transition hover:bg-green/90 disabled:cursor-not-allowed disabled:opacity-60"
+              className="btn-brand inline-flex h-10 items-center justify-center gap-2 rounded-xl px-6 text-xs font-bold uppercase tracking-[0.1em] text-white"
             >
               {loading && <Loader2 className="h-4 w-4 animate-spin" />}
               Update password

@@ -32,6 +32,7 @@ import {
   Flag,
   UsersRound,
   Bell,
+  FolderOpen,
 } from "lucide-react";
 import { navGroups } from "@/lib/admin/navigation";
 import { subscribeToRealtime } from "@/lib/realtime/client";
@@ -59,6 +60,7 @@ const ICON_MAP = {
   Flag,
   UsersRound,
   Bell,
+  FolderOpen,
 };
 
 export default function Sidebar() {
@@ -162,7 +164,7 @@ export default function Sidebar() {
             aria-label="InfiniSoftech dashboard"
           >
             {collapsed ? (
-              <div className="grid text-white h-9 w-9 place-items-center rounded-xl bg-green">
+              <div className="grid text-white h-9 w-9 place-items-center rounded-xl bg-brand-gradient">
                 <InfinityIcon className="w-5 h-5" />
               </div>
             ) : (
@@ -234,7 +236,7 @@ export default function Sidebar() {
                             onClick={() => setMobileOpen(false)}
                             className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-base font-medium transition-all duration-200 relative ${
                               isActive
-                                ? "bg-green/10 text-green"
+                                ? "nav-item-brand"
                                 : "text-muted-foreground hover:bg-sand/60 hover:text-ink hover:translate-x-0.5"
                             } ${collapsed ? "justify-center" : ""}`}
                           >

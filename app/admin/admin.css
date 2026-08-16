@@ -2,6 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --brand-1: #e75778;
+  --brand-2: #8876ff;
+  --brand-gradient: linear-gradient(90deg, var(--brand-1) 0%, var(--brand-2) 100%);
+  --brand-gradient-hover: linear-gradient(90deg, #d9486c 0%, #7a66ff 100%);
+  --brand-soft: rgba(136, 118, 255, 0.1);
+}
+
+.bg-brand-gradient {
+  background-image: var(--brand-gradient);
+}
+
+.bg-brand-gradient-hover {
+  background-image: var(--brand-gradient-hover);
+}
+
+.text-brand-gradient {
+  background-image: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-brand {
+  background-image: var(--brand-gradient);
+  color: #fff;
+  transition:
+    opacity 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn-brand:hover {
+  background-image: var(--brand-gradient-hover);
+  box-shadow: 0 12px 28px -12px rgba(136, 118, 255, 0.65);
+  transform: translateY(-1px);
+}
+
+.btn-brand:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.icon-brand {
+  color: var(--brand-2);
+}
+
+.nav-item-brand {
+  color: #fff;
+  background-image: var(--brand-gradient);
+  box-shadow: 0 8px 20px -12px rgba(136, 118, 255, 0.7);
+}
+
+.link-brand {
+  color: var(--brand-2);
+  transition: color 0.2s ease;
+}
+
+.link-brand:hover {
+  color: var(--brand-1);
+}
+
+/* Legacy solid-green elements (buttons, progress bars, avatars, dots)
+   now render with the brand gradient to match the customer UI. */
+.bg-green {
+  background-image: var(--brand-gradient) !important;
+}
+
+.hover\:bg-green\/90:hover {
+  background-image: var(--brand-gradient-hover) !important;
+}
+
 html[class] body {
   background-color: #f8f9fb;
   font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;

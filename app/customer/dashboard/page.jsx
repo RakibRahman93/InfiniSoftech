@@ -10,6 +10,11 @@ import {
   Clock3,
 } from "lucide-react";
 import { useCustomerLeads, unreadForLead, formatShort } from "@/components/customer/useCustomerLeads";
+import {
+  useCustomerProjects,
+  PROJECT_STATUS_LABELS,
+  PROJECT_STATUS_STYLES,
+} from "@/components/customer/useCustomerProjects";
 
 const statusStyles = {
   New: "bg-blue-50 text-blue-600 border-blue-200",
@@ -20,9 +25,10 @@ const statusStyles = {
 
 export default function CustomerOverviewPage() {
   const { leads, loading } = useCustomerLeads();
+  const { projects, loading: projectsLoading } = useCustomerProjects();
   const [customer] = useState(() => null);
 
-  if (loading) {
+  if (loading || projectsLoading) {
     return (
       <div className="flex items-center justify-center py-20">
         <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
@@ -35,10 +41,13 @@ export default function CustomerOverviewPage() {
   const newCount = leads.reduce((sum, l) => sum + unreadForLead(l), 0);
   const inProgress = leads.filter((l) => l.status === "New" || l.status === "Contacted").length;
   const recent = leads.slice(0, 4);
+  const activeProjects = projects
+    .filter((p) => p.status !== "COMPLETED" && p.status !== "CANCELLED")
+    .slice(0, 3);
 
   const stats = [
-    { label: "Total enquiries", value: total, icon: MessageSquare, iconClass: "bg-green/10 text-green" },
-    { label: "Messages", value: replies, icon: UserRound, iconClass: "bg-blue-50 text-blue-600" },
+    { label: "Total enquiries", value: total, icon: MessageSquare, iconClass: "bg-[#E75778]/10 text-[#E75778]" },
+    { label: "Messages", value: replies, icon: UserRound, iconClass: "bg-[#8876FF]/10 text-[#8876FF]" },
     { label: "In progress", value: inProgress, icon: Clock3, iconClass: "bg-amber-50 text-amber-600" },
     { label: "New replies", value: newCount, icon: MessageSquare, iconClass: "bg-violet-50 text-violet-600" },
   ];
@@ -54,7 +63,7 @@ export default function CustomerOverviewPage() {
         </div>
         <Link
           href="/customer/dashboard/enquiries"
-          className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-green px-5 text-xs font-bold uppercase tracking-[0.1em] text-white transition hover:opacity-90"
+          className="btn-brand inline-flex h-10 items-center justify-center gap-2 rounded-xl px-5 text-xs font-bold uppercase tracking-[0.1em] text-white"
         >
           Open enquiries <ArrowRight className="h-4 w-4" />
         </Link>
@@ -87,7 +96,7 @@ export default function CustomerOverviewPage() {
           {total > 0 && (
             <Link
               href="/customer/dashboard/enquiries"
-              className="inline-flex items-center gap-1 text-xs font-medium text-green transition-colors hover:text-green/80"
+              className="link-brand inline-flex items-center gap-1 text-xs font-medium"
             >
               View all <ArrowRight className="h-3 w-3" />
             </Link>
@@ -105,7 +114,7 @@ export default function CustomerOverviewPage() {
             </p>
             <Link
               href="/customer/dashboard/enquiries"
-              className="mt-5 inline-flex h-10 items-center rounded-xl bg-green px-6 text-xs font-bold uppercase tracking-[0.1em] text-white transition hover:opacity-90"
+              className="btn-brand mt-5 inline-flex h-10 items-center rounded-xl px-6 text-xs font-bold uppercase tracking-[0.1em] text-white"
             >
               New enquiry
             </Link>
@@ -116,9 +125,9 @@ export default function CustomerOverviewPage() {
               <Link
                 key={lead.id}
                 href="/customer/dashboard/enquiries"
-                className="flex items-center gap-3 rounded-2xl border border-ink/5 bg-background p-4 shadow-sm transition hover:border-green/20 hover:shadow-md"
+                className="flex items-center gap-3 rounded-2xl border border-ink/5 bg-background p-4 shadow-sm transition hover:border-[#8876FF]/30 hover:shadow-md"
               >
-                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-green/10 text-green">
+                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-brand-gradient text-white">
                   <UserRound className="h-5 w-5" />
                 </span>
                 <div className="min-w-0 flex-1">
@@ -132,7 +141,7 @@ export default function CustomerOverviewPage() {
                 </div>
                 <div className="flex shrink-0 items-center gap-2">
                   {unreadForLead(lead) > 0 && (
-                    <span className="grid h-5 min-w-5 place-items-center rounded-full bg-green px-1.5 text-[10px] font-bold text-white">
+                    <span className="grid h-5 min-w-5 place-items-center rounded-full bg-brand-gradient px-1.5 text-[10px] font-bold text-white">
                       {unreadForLead(lead)}
                     </span>
                   )}
@@ -146,6 +155,81 @@ export default function CustomerOverviewPage() {
                 </div>
               </Link>
             ))}
+          </div>
+        )}
+      </section>
+
+      {/* My Projects */}
+      <section>
+        <div className="mb-3 flex items-center justify-between">
+          <h2 className="text-sm font-semibold text-ink">My Projects</h2>
+          {projects.length > 0 && (
+            <Link
+              href="/customer/dashboard/projects"
+              className="link-brand inline-flex items-center gap-1 text-xs font-medium"
+            >
+              View all <ArrowRight className="h-3 w-3" />
+            </Link>
+          )}
+        </div>
+
+        {activeProjects.length === 0 ? (
+          <div className="rounded-2xl border border-ink/5 bg-background p-8 text-center shadow-sm">
+            <div className="mx-auto mb-3 grid h-12 w-12 place-items-center rounded-full bg-sand">
+              <MessageSquare className="h-5 w-5 text-muted-foreground" />
+            </div>
+            <h3 className="text-sm font-semibold text-ink">No active projects</h3>
+            <p className="mx-auto mt-1 max-w-sm text-xs text-muted-foreground">
+              Once we start working with you, your project status and progress will appear here.
+            </p>
+            <Link
+              href="/customer/dashboard/projects"
+              className="btn-brand mt-4 inline-flex h-9 items-center rounded-xl px-5 text-xs font-bold uppercase tracking-[0.1em] text-white"
+            >
+              My Projects
+            </Link>
+          </div>
+        ) : (
+          <div className="space-y-2.5">
+            {activeProjects.map((project) => {
+              const statusLabel = PROJECT_STATUS_LABELS[project.status] || project.status;
+              const statusClass = PROJECT_STATUS_STYLES[project.status] || "bg-sand/50 text-muted-foreground";
+              return (
+                <Link
+                  key={project.id}
+                  href="/customer/dashboard/projects"
+                  className="flex items-center gap-3 rounded-2xl border border-ink/5 bg-background p-4 shadow-sm transition hover:border-[#8876FF]/30 hover:shadow-md"
+                >
+                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-brand-gradient text-white">
+                    <MessageSquare className="h-5 w-5" />
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center gap-2">
+                      <p className="truncate text-sm font-semibold text-ink">{project.name}</p>
+                      {project.projectCode && (
+                        <span className="shrink-0 text-[10px] text-muted-foreground/60">{project.projectCode}</span>
+                      )}
+                    </div>
+                    <div className="mt-1.5 flex items-center gap-2">
+                      <div className="h-1.5 w-full max-w-[160px] overflow-hidden rounded-full bg-sand/60">
+                        <div
+                          className="h-full rounded-full bg-brand-gradient"
+                          style={{ width: `${Math.max(0, Math.min(100, project.progress))}%` }}
+                        />
+                      </div>
+                      <span className="shrink-0 text-[10px] font-semibold text-muted-foreground">
+                        {project.progress}%
+                      </span>
+                    </div>
+                  </div>
+                  <span
+                    className={`inline-flex w-fit shrink-0 rounded-full border px-2.5 py-1 text-[10px] font-semibold ${statusClass}`}
+                  >
+                    {statusLabel}
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         )}
       </section>

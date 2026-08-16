@@ -107,7 +107,7 @@ export default function DeveloperShell({ user, children }) {
         <div className="flex h-16 items-center justify-between border-b border-ink/10 px-4">
           <Link href="/developer/dashboard" className="flex items-center gap-2.5" aria-label="InfiniSoftech Developer Portal">
             {collapsed ? (
-              <div className="grid h-9 w-9 place-items-center rounded-xl bg-green text-white">
+              <div className="grid h-9 w-9 place-items-center rounded-xl bg-brand-gradient text-white">
                 <Code2 className="h-5 w-5" />
               </div>
             ) : (
@@ -170,7 +170,7 @@ export default function DeveloperShell({ user, children }) {
                         onClick={() => setMobileOpen(false)}
                         className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-all duration-200 ${
                           isActive(to)
-                            ? "bg-green/10 text-green"
+                            ? "nav-item-brand"
                             : "text-muted-foreground hover:bg-sand/60 hover:text-ink"
                         } ${collapsed ? "justify-center" : ""}`}
                       >
@@ -214,7 +214,7 @@ export default function DeveloperShell({ user, children }) {
                 aria-haspopup="menu"
                 aria-expanded={profileOpen}
               >
-                <span className="grid h-8 w-8 place-items-center rounded-lg bg-green text-xs font-bold text-white">
+                <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-gradient text-xs font-bold text-white">
                   {user.name?.charAt(0)?.toUpperCase() ?? "D"}
                 </span>
                 <div className="hidden sm:block text-left">

@@ -204,7 +204,7 @@ export default function CustomerEnquiriesPage() {
         <button
           type="button"
           onClick={() => openNewRequest()}
-          className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-green px-5 text-xs font-bold uppercase tracking-[0.1em] text-white transition hover:opacity-90"
+          className="btn-brand inline-flex h-10 items-center justify-center gap-2 rounded-xl px-5 text-xs font-bold uppercase tracking-[0.1em] text-white"
         >
           <Plus className="h-4 w-4" /> New enquiry
         </button>
@@ -223,7 +223,7 @@ export default function CustomerEnquiriesPage() {
           <button
             type="button"
             onClick={() => openNewRequest()}
-            className="mt-5 inline-flex h-10 items-center rounded-xl bg-green px-6 text-xs font-bold uppercase tracking-[0.1em] text-white transition hover:opacity-90"
+            className="btn-brand mt-5 inline-flex h-10 items-center rounded-xl px-6 text-xs font-bold uppercase tracking-[0.1em] text-white"
           >
             Get started
           </button>
@@ -241,7 +241,7 @@ export default function CustomerEnquiriesPage() {
               >
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <div className="flex items-start gap-3">
-                    <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-green/10 text-green">
+                    <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-brand-gradient text-white">
                       <UserRound className="h-5 w-5" />
                     </span>
                     <div>
@@ -259,7 +259,7 @@ export default function CustomerEnquiriesPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     {unread > 0 && (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-green px-2.5 py-1 text-[10px] font-bold text-white">
+                      <span className="inline-flex items-center gap-1 rounded-full bg-brand-gradient px-2.5 py-1 text-[10px] font-bold text-white">
                         {unread} new{unread === 1 ? "" : "s"}
                       </span>
                     )}
@@ -340,8 +340,8 @@ export default function CustomerEnquiriesPage() {
                               <span
                                 className={`mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full ring-1 ${
                                   isCustomer
-                                    ? "bg-green/10 text-green ring-green/20"
-                                    : "bg-blue-50 text-blue-600 ring-blue-200"
+                                    ? "bg-brand-gradient text-white ring-[#8876FF]/30"
+                                    : "bg-[#8876FF]/10 text-[#8876FF] ring-[#8876FF]/20"
                                 }`}
                               >
                                 <UserRound className="h-3.5 w-3.5" />
@@ -379,13 +379,13 @@ export default function CustomerEnquiriesPage() {
                         }
                         placeholder="Type a message to our team..."
                         rows={2}
-                        className="min-h-10 flex-1 resize-y rounded-xl border border-ink/10 bg-background px-3 py-2 text-sm text-ink outline-none focus:border-green focus:ring-2 focus:ring-green/10"
+                        className="min-h-10 flex-1 resize-y rounded-xl border border-ink/10 bg-background px-3 py-2 text-sm text-ink outline-none focus:border-[#8876FF]/50 focus:ring-2 focus:ring-[#8876FF]/10"
                       />
                       <button
                         type="button"
                         onClick={() => sendMessage(item.id)}
                         disabled={!drafts[item.id]?.trim() || sendingId === item.id}
-                        className="inline-flex h-10 shrink-0 items-center gap-1.5 self-end rounded-xl bg-green px-4 text-xs font-semibold text-white transition hover:bg-green/90 disabled:cursor-not-allowed disabled:opacity-50"
+                        className="btn-brand inline-flex h-10 shrink-0 items-center gap-1.5 self-end rounded-xl px-4 text-xs font-semibold text-white"
                       >
                         {sendingId === item.id ? (
                           <Loader2 className="h-3.5 w-3.5 animate-spin" />
@@ -540,7 +540,7 @@ export default function CustomerEnquiriesPage() {
                 <button
                   type="submit"
                   disabled={requestSubmitting}
-                  className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-green px-5 text-xs font-bold uppercase tracking-[0.1em] text-white transition hover:bg-green/90 disabled:cursor-not-allowed disabled:opacity-60"
+                  className="btn-brand inline-flex h-10 items-center justify-center gap-2 rounded-xl px-5 text-xs font-bold uppercase tracking-[0.1em] text-white"
                 >
                   {requestSubmitting ? (
                     <Loader2 className="h-4 w-4 animate-spin" />

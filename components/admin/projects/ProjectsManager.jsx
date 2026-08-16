@@ -37,6 +37,7 @@ const STAGE_STYLES = {
 const EMPTY = {
   projectName: "",
   clientName: "",
+  clientEmail: "",
   contactId: "",
   companyId: "",
   value: "",
@@ -123,6 +124,7 @@ export default function ProjectsManager() {
     setForm({
       projectName: p.projectName ?? "",
       clientName: p.clientName ?? "",
+      clientEmail: p.clientEmail ?? "",
       contactId: p.contactId ?? "",
       companyId: p.companyId ?? "",
       value: p.value != null ? String(p.value) : "",
@@ -542,6 +544,15 @@ export default function ProjectsManager() {
                 onChange={(e) => setForm((f) => ({ ...f, clientName: e.target.value }))}
                 className={inputCls}
                 placeholder="Client / contact name"
+              />
+            </Field>
+            <Field label="Client email">
+              <input
+                type="email"
+                value={form.clientEmail}
+                onChange={(e) => setForm((f) => ({ ...f, clientEmail: e.target.value }))}
+                className={inputCls}
+                placeholder="client@company.com (for client portal)"
               />
             </Field>
             <Field label="Client">

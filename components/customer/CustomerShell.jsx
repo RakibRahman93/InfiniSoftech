@@ -14,6 +14,7 @@ import {
   ChevronLeft,
   Menu,
   X,
+  FolderOpen,
 } from "lucide-react";
 
 const NAV_GROUPS = [
@@ -26,6 +27,7 @@ const NAV_GROUPS = [
   {
     label: "My Account",
     items: [
+      { icon: FolderOpen, label: "My Projects", to: "/customer/dashboard/projects" },
       { icon: MessageSquare, label: "My Enquiries", to: "/customer/dashboard/enquiries" },
       { icon: User, label: "Profile", to: "/customer/dashboard/profile" },
     ],
@@ -76,7 +78,7 @@ export default function CustomerShell({ customer, children }) {
         <div className="flex h-16 items-center justify-between border-b border-ink/10 px-4">
           <Link href="/" className="flex items-center gap-2.5" aria-label="InfiniSoftech">
             {collapsed ? (
-              <div className="grid h-9 w-9 place-items-center rounded-xl bg-green text-white">
+              <div className="grid h-9 w-9 place-items-center rounded-xl bg-brand-gradient text-white">
                 <MessageSquare className="h-5 w-5" />
               </div>
             ) : (
@@ -139,7 +141,7 @@ export default function CustomerShell({ customer, children }) {
                         onClick={() => setMobileOpen(false)}
                         className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-all duration-200 ${
                           isActive(to)
-                            ? "bg-green/10 text-green"
+                            ? "nav-item-brand"
                             : "text-muted-foreground hover:bg-sand/60 hover:text-ink"
                         } ${collapsed ? "justify-center" : ""}`}
                       >
@@ -193,7 +195,7 @@ export default function CustomerShell({ customer, children }) {
                 aria-haspopup="menu"
                 aria-expanded={profileOpen}
               >
-                <span className="grid h-8 w-8 place-items-center rounded-lg bg-green text-xs font-bold text-white">
+                <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-gradient text-xs font-bold text-white">
                   {customer.name?.charAt(0)?.toUpperCase() ?? "C"}
                 </span>
                 <div className="hidden sm:block">
