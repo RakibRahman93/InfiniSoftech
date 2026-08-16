@@ -42,30 +42,6 @@ export default function RootLayout({ children }) {
       import("bootstrap/dist/js/bootstrap.esm").then(() => {
         // Module is imported, you can access any exported functionality if needed
       });
-
-      // Google Analytics Script
-      const script = document.createElement("script");
-      script.src = `https://www.googletagmanager.com/gtag/js?id=G-NYWXCXR8JT`;
-      script.async = true;
-      document.head.appendChild(script);
-
-      script.onload = () => {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          window.dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", "G-NYWXCXR8JT");
-
-        // Track initial page load
-        gtag("event", "page_view", {
-          page_path: window.location.pathname,
-        });
-      };
-
-      return () => {
-        document.head.removeChild(script);
-      };
     }
   }, []);
 
@@ -82,6 +58,25 @@ export default function RootLayout({ children }) {
     <LocationProvider>
       <html lang="en" className="no-mobile no-touch">
         <head>
+          {/* Google tag (gtag.js) */}
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=AW-16832009586"
+            strategy="afterInteractive"
+          />
+          <Script
+            id="google-tag-init"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-16832009586');
+                gtag('config', 'G-NYWXCXR8JT');
+              `,
+            }}
+          />
+
           {/* Meta Pixel */}
           <Script
             id="facebook-pixel"

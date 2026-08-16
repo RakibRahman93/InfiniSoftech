@@ -1,10 +1,92 @@
 "use client";
 
+import Image from "next/image";
 import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import Image from "next/image";
-import { Loader2, LockKeyhole, Mail, ShieldCheck, Lock } from "lucide-react";
 import "./login.css";
+
+function IconLoader({ className = "" }) {
+  return (
+    <svg
+      className={`animate-spin ${className}`}
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2" opacity="0.2" />
+      <path
+        d="M21 12a9 9 0 0 0-9-9"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+function IconShield({ className = "" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M12 3 19 6v5c0 4.8-3 8.8-7 10-4-1.2-7-5.2-7-10V6l7-3Z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinejoin="round"
+      />
+      <path
+        d="m9.5 12 1.8 1.8 3.7-4.1"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function IconLock({ className = "" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M7 11V8a5 5 0 0 1 10 0v3"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+      <rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" strokeWidth="1.8" />
+    </svg>
+  );
+}
+
+function IconMail({ className = "" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <rect x="4" y="6" width="16" height="12" rx="2" stroke="currentColor" strokeWidth="1.8" />
+      <path
+        d="m5 7 7 6 7-6"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function IconKey({ className = "" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="9" cy="10" r="4" stroke="currentColor" strokeWidth="1.8" />
+      <path
+        d="M12.8 11.2 20 18.4V21h-2.6v-1.8h-1.6v-1.6H14l-1.2-1.2"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 function AdminLoginForm() {
   const router = useRouter();
@@ -26,6 +108,7 @@ function AdminLoginForm() {
     setBlocked(false);
     setAttemptsLeft(null);
     setLoading(true);
+
     try {
       const res = await fetch("/api/admin/login-gate", {
         method: "POST",
@@ -33,6 +116,7 @@ function AdminLoginForm() {
         body: JSON.stringify({ code }),
       });
       const data = await res.json();
+
       if (!res.ok || !data.ok) {
         setError(data?.error || "Incorrect security code.");
         if (data?.blocked) setBlocked(true);
@@ -41,10 +125,11 @@ function AdminLoginForm() {
         setLoading(false);
         return;
       }
+
       setStep("password");
-      setLoading(false);
       setCode("");
-    } catch (err) {
+      setLoading(false);
+    } catch {
       setError("Unable to reach the server. Please try again.");
       setLoading(false);
     }
@@ -54,6 +139,7 @@ function AdminLoginForm() {
     e.preventDefault();
     setError("");
     setLoading(true);
+
     try {
       const res = await fetch("/api/admin/login", {
         method: "POST",
@@ -61,15 +147,17 @@ function AdminLoginForm() {
         body: JSON.stringify({ email, password }),
       });
       const data = await res.json();
+
       if (!res.ok || !data.ok) {
         setError(data?.error || "Login failed. Please try again.");
         if (data?.blocked || res.status === 429) setBlocked(true);
         setLoading(false);
         return;
       }
+
       router.replace(from);
       router.refresh();
-    } catch (err) {
+    } catch {
       setError("Unable to reach the server. Please try again.");
       setLoading(false);
     }
@@ -113,7 +201,7 @@ function AdminLoginForm() {
           {step === "gate" ? (
             <form onSubmit={handleGateSubmit} className="space-y-4">
               <div className="flex items-center justify-center gap-2 rounded-xl bg-green/5 px-4 py-3 text-xs font-medium text-green">
-                <ShieldCheck className="h-4 w-4 shrink-0" />
+                <IconShield className="h-4 w-4 shrink-0" />
                 This area is protected by a security code.
               </div>
 
@@ -122,7 +210,7 @@ function AdminLoginForm() {
                   Security code
                 </label>
                 <div className="relative">
-                  <Lock className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                  <IconLock className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                   <input
                     id="gateCode"
                     type="text"
@@ -139,7 +227,7 @@ function AdminLoginForm() {
 
               {blocked && (
                 <p className="rounded-xl bg-rose-50 px-3 py-2 text-xs font-semibold text-rose-600">
-                  Access blocked. Too many failed attempts — try again later.
+                  Access blocked. Too many failed attempts - try again later.
                 </p>
               )}
 
@@ -149,7 +237,7 @@ function AdminLoginForm() {
                 </p>
               )}
 
-              {!blocked && error && !blocked && attemptsLeft === null && (
+              {!blocked && error && attemptsLeft === null && (
                 <p className="rounded-xl bg-rose-50 px-3 py-2 text-xs font-medium text-rose-600">
                   {error}
                 </p>
@@ -160,14 +248,14 @@ function AdminLoginForm() {
                 disabled={loading || blocked}
                 className="flex w-full items-center justify-center gap-2 rounded-xl bg-green py-2.5 text-sm font-semibold text-white transition-colors hover:bg-green/90 disabled:cursor-not-allowed disabled:opacity-60"
               >
-                {loading && <Loader2 className="h-4 w-4 animate-spin" />}
-                {loading ? "Checking…" : "Continue"}
+                {loading && <IconLoader className="h-4 w-4" />}
+                {loading ? "Checking..." : "Continue"}
               </button>
             </form>
           ) : (
             <form onSubmit={handlePasswordSubmit} className="space-y-4">
               <div className="flex items-center justify-center gap-2 rounded-xl bg-green/5 px-4 py-3 text-xs font-medium text-green">
-                <ShieldCheck className="h-4 w-4 shrink-0" />
+                <IconShield className="h-4 w-4 shrink-0" />
                 Security code accepted.
               </div>
 
@@ -176,7 +264,7 @@ function AdminLoginForm() {
                   Email
                 </label>
                 <div className="relative">
-                  <Mail className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                  <IconMail className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                   <input
                     id="email"
                     type="email"
@@ -195,7 +283,7 @@ function AdminLoginForm() {
                   Password
                 </label>
                 <div className="relative">
-                  <LockKeyhole className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                  <IconKey className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                   <input
                     id="password"
                     type="password"
@@ -220,8 +308,8 @@ function AdminLoginForm() {
                 disabled={loading}
                 className="flex w-full items-center justify-center gap-2 rounded-xl bg-green py-2.5 text-sm font-semibold text-white transition-colors hover:bg-green/90 disabled:cursor-not-allowed disabled:opacity-60"
               >
-                {loading && <Loader2 className="h-4 w-4 animate-spin" />}
-                {loading ? "Signing in…" : "Sign in"}
+                {loading && <IconLoader className="h-4 w-4" />}
+                {loading ? "Signing in..." : "Sign in"}
               </button>
             </form>
           )}
@@ -240,7 +328,7 @@ export default function AdminLoginPage() {
     <Suspense
       fallback={
         <div className="flex min-h-screen items-center justify-center bg-[#F8F9FB]">
-          <Loader2 className="h-6 w-6 animate-spin text-green" />
+          <IconLoader className="h-6 w-6 text-green" />
         </div>
       }
     >
