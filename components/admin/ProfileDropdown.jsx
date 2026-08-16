@@ -49,7 +49,7 @@ export default function ProfileDropdown() {
         aria-haspopup="menu"
         aria-expanded={open}
       >
-        <span className="grid h-8 w-8 place-items-center rounded-lg bg-green text-xs font-bold text-white">
+        <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-gradient text-xs font-bold text-white">
           A
         </span>
         <div className="hidden sm:block">

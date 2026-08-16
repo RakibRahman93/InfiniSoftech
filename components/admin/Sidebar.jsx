@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   LayoutDashboard,
   Users,
@@ -24,8 +24,18 @@ import {
   ChevronLeft,
   Menu,
   X,
+  Building2,
+  UserCheck,
+  TrendingUp,
+  Briefcase,
+  ClipboardList,
+  Flag,
+  UsersRound,
+  Bell,
+  FolderOpen,
 } from "lucide-react";
 import { navGroups } from "@/lib/admin/navigation";
+import { subscribeToRealtime } from "@/lib/realtime/client";
 
 const ICON_MAP = {
   LayoutDashboard,
@@ -42,6 +52,15 @@ const ICON_MAP = {
   Mail,
   Shield,
   Settings,
+  Building2,
+  UserCheck,
+  TrendingUp,
+  Briefcase,
+  ClipboardList,
+  Flag,
+  UsersRound,
+  Bell,
+  FolderOpen,
 };
 
 export default function Sidebar() {
@@ -49,6 +68,62 @@ export default function Sidebar() {
   const router = useRouter();
   const [collapsed, setCollapsed] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [unreadCount, setUnreadCount] = useState(0);
+
+  const loadUnread = async () => {
+    try {
+      const res = await fetch("/api/admin/leads/count");
+      if (!res.ok) return;
+      const data = await res.json();
+      setUnreadCount(data?.count ?? 0);
+    } catch {
+      // ignore
+    }
+  };
+
+  useEffect(() => {
+    let cancelled = false;
+    const load = async () => {
+      try {
+        const res = await fetch("/api/admin/leads/count");
+        if (!res.ok) return;
+        const data = await res.json();
+        if (!cancelled) setUnreadCount(data?.count ?? 0);
+      } catch {
+        // ignore
+      }
+    };
+    load();
+    const timer = setInterval(load, 30000);
+    return () => {
+      cancelled = true;
+      clearInterval(timer);
+    };
+  }, []);
+
+  // Real-time: a new incoming customer message bumps the badge instantly.
+  useEffect(() => {
+    return subscribeToRealtime((payload) => {
+      if (payload?.direction === "incoming") loadUnread();
+    });
+  }, []);
+
+  // Keep the badge in sync across navigation: opening the Leads page marks
+  // messages as read server-side, so the badge clears instead of staying stale.
+  useEffect(() => {
+    const onLeadPage = pathname === "/admin/dashboard/leads";
+    const sync = async () => {
+      if (onLeadPage) {
+        try {
+          await fetch("/api/admin/leads/read", { method: "POST" });
+        } catch {
+          // ignore
+        }
+      }
+      await loadUnread();
+    };
+    void sync();
+  }, [pathname]);
 
   const handleLogout = async () => {
     try {
@@ -89,7 +164,7 @@ export default function Sidebar() {
             aria-label="InfiniSoftech dashboard"
           >
             {collapsed ? (
-              <div className="grid text-white h-9 w-9 place-items-center rounded-xl bg-green">
+              <div className="grid text-white h-9 w-9 place-items-center rounded-xl bg-brand-gradient">
                 <InfinityIcon className="w-5 h-5" />
               </div>
             ) : (
@@ -153,14 +228,15 @@ export default function Sidebar() {
                         ? "/admin/dashboard/coming-soon"
                         : item.href;
                       const isActive = pathname === href;
+                      const badgeCount = href === "/admin/dashboard/leads" ? unreadCount : 0;
                       return (
                         <li key={item.href}>
                           <Link
                             href={href}
                             onClick={() => setMobileOpen(false)}
-                            className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-base font-medium transition-all duration-200 ${
+                            className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-base font-medium transition-all duration-200 relative ${
                               isActive
-                                ? "bg-green/10 text-green"
+                                ? "nav-item-brand"
                                 : "text-muted-foreground hover:bg-sand/60 hover:text-ink hover:translate-x-0.5"
                             } ${collapsed ? "justify-center" : ""}`}
                           >
@@ -168,11 +244,21 @@ export default function Sidebar() {
                             {!collapsed && (
                               <span className="flex items-center justify-between flex-1 min-w-0 gap-2">
                                 <span className="truncate">{item.label}</span>
+                                {badgeCount > 0 && (
+                                  <span className="grid h-5 min-w-5 place-items-center rounded-full bg-green px-1 text-[10px] font-bold text-white">
+                                    {badgeCount > 99 ? "99+" : badgeCount}
+                                  </span>
+                                )}
                                 {item.placeholder && (
                                   <span className="rounded-full bg-sand/70 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-muted-foreground">
                                     Soon
                                   </span>
                                 )}
+                              </span>
+                            )}
+                            {collapsed && badgeCount > 0 && (
+                              <span className="absolute -right-1 -top-1 grid h-4 min-w-4 place-items-center rounded-full bg-green px-0.5 text-[9px] font-bold text-white">
+                                {badgeCount > 9 ? "9+" : badgeCount}
                               </span>
                             )}
                           </Link>

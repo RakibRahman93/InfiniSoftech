@@ -62,13 +62,6 @@ function DollarMark({ className }) {
 
 const quickActions = [
   {
-    icon: Package,
-    label: "Add Blog Post",
-    color: "text-green",
-    bg: "bg-green/10",
-    to: "/admin/dashboard/blog",
-  },
-  {
     icon: UserPlus,
     label: "Add Lead",
     color: "text-blue-500",
@@ -76,32 +69,39 @@ const quickActions = [
     to: "/admin/dashboard/leads",
   },
   {
-    icon: HelpCircle,
-    label: "Add FAQ",
-    color: "text-violet-600",
-    bg: "bg-violet-50",
-    to: "/admin/dashboard/faqs",
-  },
-  {
-    icon: ShoppingCart,
-    label: "Manage Projects",
-    color: "text-orange-500",
-    bg: "bg-orange-50",
-    to: "/admin/dashboard/coming-soon",
-  },
-  {
-    icon: BarChart3,
-    label: "Generate Report",
+    icon: Package,
+    label: "Add Project",
     color: "text-green",
     bg: "bg-green/10",
-    to: "/admin/dashboard/coming-soon",
+    to: "/admin/dashboard/projects",
   },
   {
     icon: ClipboardList,
-    label: "View Leads",
+    label: "View Tasks",
+    color: "text-violet-600",
+    bg: "bg-violet-50",
+    to: "/admin/dashboard/tasks",
+  },
+  {
+    icon: Users,
+    label: "Manage Team",
+    color: "text-orange-500",
+    bg: "bg-orange-50",
+    to: "/admin/dashboard/team",
+  },
+  {
+    icon: BarChart3,
+    label: "Companies",
+    color: "text-green",
+    bg: "bg-green/10",
+    to: "/admin/dashboard/companies",
+  },
+  {
+    icon: ShoppingCart,
+    label: "View Clients",
     color: "text-blue-600",
     bg: "bg-blue-50",
-    to: "/admin/dashboard/leads",
+    to: "/admin/dashboard/clients",
   },
 ];
 
