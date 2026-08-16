@@ -24,6 +24,14 @@ import {
   ChevronLeft,
   Menu,
   X,
+  Building2,
+  UserCheck,
+  TrendingUp,
+  Briefcase,
+  ClipboardList,
+  Flag,
+  UsersRound,
+  Bell,
 } from "lucide-react";
 import { navGroups } from "@/lib/admin/navigation";
 import { subscribeToRealtime } from "@/lib/realtime/client";
@@ -43,6 +51,14 @@ const ICON_MAP = {
   Mail,
   Shield,
   Settings,
+  Building2,
+  UserCheck,
+  TrendingUp,
+  Briefcase,
+  ClipboardList,
+  Flag,
+  UsersRound,
+  Bell,
 };
 
 export default function Sidebar() {
