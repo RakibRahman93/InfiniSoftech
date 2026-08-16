@@ -30,7 +30,7 @@ export async function POST(request, { params }) {
     originalname: file.name,
     mimetype: file.type,
     size: file.size,
-    actor: { id: actor.meta.actorId, name: "Admin", request },
+    actor: { id: actor.meta.actorId, name: "Admin", role: "ADMIN", request },
   });
   if (result.error) {
     return NextResponse.json({ ok: false, error: result.error }, { status: 400 });

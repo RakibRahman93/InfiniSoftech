@@ -16,7 +16,11 @@ import {
   Menu,
   X,
   Code2,
+  Bell,
+  Eye,
 } from "lucide-react";
+import NotificationBell from "@/components/common/NotificationBell";
+import Avatar from "@/components/common/Avatar";
 
 const NAV_GROUPS = [
   {
@@ -36,6 +40,7 @@ const NAV_GROUPS = [
   {
     label: "Account",
     items: [
+      { icon: Bell, label: "Notifications", to: "/developer/dashboard/notifications" },
       { icon: User, label: "My Profile", to: "/developer/dashboard/profile" },
     ],
   },
@@ -207,6 +212,20 @@ export default function DeveloperShell({ user, children }) {
             </p>
           </div>
           <div className="flex items-center gap-3">
+            <Link
+              href="/"
+              aria-label="View Website"
+              title="View Website"
+              className="flex h-9 w-9 items-center justify-center rounded-xl border border-ink/10 text-muted-foreground transition-colors hover:bg-sand/60 hover:text-ink sm:w-auto sm:gap-1.5 sm:px-3.5 sm:py-2 sm:text-xs sm:font-medium"
+            >
+              <Eye className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">View Website</span>
+            </Link>
+            <NotificationBell
+              role="developer"
+              userId={user.id}
+              notificationsLink="/developer/dashboard/notifications"
+            />
             <div className="relative">
               <button
                 onClick={() => setProfileOpen((p) => !p)}
@@ -214,9 +233,7 @@ export default function DeveloperShell({ user, children }) {
                 aria-haspopup="menu"
                 aria-expanded={profileOpen}
               >
-                <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-gradient text-xs font-bold text-white">
-                  {user.name?.charAt(0)?.toUpperCase() ?? "D"}
-                </span>
+                <Avatar name={user.name} src={user.avatarUrl} size="h-8 w-8" rounded="rounded-full" />
                 <div className="hidden sm:block text-left">
                   <p className="text-sm font-medium leading-tight text-ink">{user.name}</p>
                   <p className="text-[11px] text-muted-foreground">{user.email}</p>
@@ -226,9 +243,12 @@ export default function DeveloperShell({ user, children }) {
 
               {profileOpen && (
                 <div className="absolute right-0 top-full z-50 mt-2 w-56 overflow-hidden rounded-2xl border border-ink/10 bg-background shadow-lg">
-                  <div className="border-b border-ink/5 px-4 py-3">
-                    <p className="text-sm font-medium text-ink">{user.name}</p>
-                    <p className="text-[11px] text-muted-foreground">{user.email}</p>
+                  <div className="flex items-center gap-2.5 border-b border-ink/5 px-4 py-3">
+                    <Avatar name={user.name} src={user.avatarUrl} size="h-9 w-9" rounded="rounded-full" />
+                    <div className="min-w-0">
+                      <p className="text-sm font-medium text-ink">{user.name}</p>
+                      <p className="truncate text-[11px] text-muted-foreground">{user.email}</p>
+                    </div>
                   </div>
                   <div className="p-1.5">
                     <Link

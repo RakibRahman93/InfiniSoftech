@@ -12,6 +12,7 @@ model AdminUser {
   email        String         @unique
   passwordHash String
   salt         String
+  avatarUrl    String?
   otpEnabled   Boolean        @default(true)
   otpHash      String?
   otpExpiresAt DateTime?
@@ -56,6 +57,7 @@ model Customer {
   email        String            @unique
   passwordHash String
   salt         String
+  avatarUrl    String?
   createdAt    DateTime          @default(now())
   updatedAt    DateTime          @updatedAt
   sessions     CustomerSession[]
@@ -271,6 +273,7 @@ model User {
   email        String            @unique
   passwordHash String
   salt         String
+  avatarUrl    String?
   role         String            @default("DEVELOPER") // SUPER_ADMIN | ADMIN | DEVELOPER
   isActive     Boolean           @default(true)
   createdAt    DateTime          @default(now())
@@ -421,16 +424,21 @@ model TaskComment {
 
 model Notification {
   id         String   @id @default(uuid())
+  role       String   @default("ADMIN") // ADMIN | CUSTOMER | DEVELOPER
   userId     String?
   type       String   @default("INFO")
   title      String
   message    String
   entityType String?
   entityId   String?
+  link       String?
+  actorName  String?
+  actorRole  String?
   isRead     Boolean  @default(false)
   createdAt  DateTime @default(now())
 
-  @@index([userId])
+  @@index([role, userId])
+  @@index([role, isRead])
   @@index([isRead])
   @@map("notifications")
 }

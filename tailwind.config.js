@@ -3,8 +3,11 @@ module.exports = {
   content: [
     "./app/admin/**/*.{js,jsx,ts,tsx}",
     "./app/customer/**/*.{js,jsx,ts,tsx}",
+    "./app/developer/**/*.{js,jsx,ts,tsx}",
     "./components/admin/**/*.{js,jsx,ts,tsx}",
     "./components/customer/**/*.{js,jsx,ts,tsx}",
+    "./components/developer/**/*.{js,jsx,ts,tsx}",
+    "./components/common/**/*.{js,jsx,ts,tsx}",
     "./lib/admin/**/*.{js,jsx,ts,tsx}",
     "./lib/customer/**/*.{js,jsx,ts,tsx}",
   ],

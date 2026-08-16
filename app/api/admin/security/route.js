@@ -37,6 +37,7 @@ export async function GET() {
 
   return NextResponse.json({
     email: user.email ?? email,
+    avatarUrl: user.avatarUrl ?? null,
     otpEnabled: user.otpEnabled !== false,
     live: true,
     lastLogin: user.lastLoginAt ?? null,

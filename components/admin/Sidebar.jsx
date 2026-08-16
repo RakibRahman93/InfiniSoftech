@@ -33,6 +33,7 @@ import {
   UsersRound,
   Bell,
   FolderOpen,
+  User,
 } from "lucide-react";
 import { navGroups } from "@/lib/admin/navigation";
 import { subscribeToRealtime } from "@/lib/realtime/client";
@@ -61,6 +62,7 @@ const ICON_MAP = {
   UsersRound,
   Bell,
   FolderOpen,
+  User,
 };
 
 export default function Sidebar() {

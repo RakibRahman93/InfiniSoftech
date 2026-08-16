@@ -18,7 +18,7 @@ export default async function DeveloperDashboardLayout({ children }) {
   }
 
   return (
-    <DeveloperShell user={{ id: user.id, name: user.name, email: user.email }}>
+    <DeveloperShell user={{ id: user.id, name: user.name, email: user.email, avatarUrl: user.avatarUrl ?? null }}>
       {children}
     </DeveloperShell>
   );
