@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { User, Mail, Lock, Eye, EyeOff, Loader2, AlertCircle, CheckCircle2 } from "lucide-react";
+import AvatarUpload from "@/components/common/AvatarUpload";
 
 export default function CustomerProfilePage() {
   const router = useRouter();
@@ -70,9 +71,12 @@ export default function CustomerProfilePage() {
       {/* Account card */}
       <div className="max-w-2xl rounded-2xl border border-ink/5 bg-background p-6 shadow-sm sm:p-8">
         <div className="flex items-center gap-4">
-          <span className="grid h-14 w-14 place-items-center rounded-2xl bg-brand-gradient text-lg font-bold text-white">
-            {customer?.name?.charAt(0)?.toUpperCase() ?? "C"}
-          </span>
+          <AvatarUpload
+            role="customer"
+            name={customer?.name}
+            avatarUrl={customer?.avatarUrl}
+            onChanged={(url) => setCustomer((c) => (c ? { ...c, avatarUrl: url } : c))}
+          />
           <div>
             <h2 className="font-display text-base font-semibold text-ink">
               {customer?.name ?? "Loading..."}

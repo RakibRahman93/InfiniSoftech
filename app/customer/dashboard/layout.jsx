@@ -19,7 +19,7 @@ export default async function CustomerDashboardLayout({ children }) {
 
   return (
     <CustomerShell
-      customer={{ id: customer.id, name: customer.name, email: customer.email }}
+      customer={{ id: customer.id, name: customer.name, email: customer.email, avatarUrl: customer.avatarUrl ?? null }}
     >
       {children}
     </CustomerShell>

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Eye } from "lucide-react";
 import Sidebar from "./Sidebar";
 import ProfileDropdown from "./ProfileDropdown";
+import NotificationBell from "@/components/common/NotificationBell";
 
 export default function AdminShell({ children }) {
   const pathname = usePathname();
@@ -47,6 +48,10 @@ export default function AdminShell({ children }) {
               <Eye className="h-3.5 w-3.5" />
               <span className="hidden sm:inline">View Site</span>
             </Link>
+            <NotificationBell
+              role="admin"
+              notificationsLink="/admin/dashboard/notifications"
+            />
             <ProfileDropdown />
           </div>
         </header>

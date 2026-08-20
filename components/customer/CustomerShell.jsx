@@ -15,7 +15,10 @@ import {
   Menu,
   X,
   FolderOpen,
+  Bell,
 } from "lucide-react";
+import NotificationBell from "@/components/common/NotificationBell";
+import Avatar from "@/components/common/Avatar";
 
 const NAV_GROUPS = [
   {
@@ -29,6 +32,7 @@ const NAV_GROUPS = [
     items: [
       { icon: FolderOpen, label: "My Projects", to: "/customer/dashboard/projects" },
       { icon: MessageSquare, label: "My Enquiries", to: "/customer/dashboard/enquiries" },
+      { icon: Bell, label: "Notifications", to: "/customer/dashboard/notifications" },
       { icon: User, label: "Profile", to: "/customer/dashboard/profile" },
     ],
   },
@@ -188,6 +192,12 @@ export default function CustomerShell({ customer, children }) {
               <span className="hidden sm:inline">View Website</span>
             </Link>
 
+            <NotificationBell
+              role="customer"
+              userId={customer.id}
+              notificationsLink="/customer/dashboard/notifications"
+            />
+
             <div className="relative">
               <button
                 onClick={() => setProfileOpen((p) => !p)}
@@ -195,9 +205,7 @@ export default function CustomerShell({ customer, children }) {
                 aria-haspopup="menu"
                 aria-expanded={profileOpen}
               >
-                <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-gradient text-xs font-bold text-white">
-                  {customer.name?.charAt(0)?.toUpperCase() ?? "C"}
-                </span>
+                <Avatar name={customer.name} src={customer.avatarUrl} size="h-8 w-8" rounded="rounded-full" />
                 <div className="hidden sm:block">
                   <p className="text-sm font-medium leading-tight text-ink">{customer.name}</p>
                   <p className="text-[11px] text-muted-foreground">{customer.email}</p>
@@ -207,9 +215,12 @@ export default function CustomerShell({ customer, children }) {
 
               {profileOpen && (
                 <div className="absolute right-0 top-full z-50 mt-2 w-56 overflow-hidden rounded-2xl border border-ink/10 bg-background shadow-lg">
-                  <div className="border-b border-ink/5 px-4 py-3">
-                    <p className="text-sm font-medium text-ink">{customer.name}</p>
-                    <p className="text-[11px] text-muted-foreground">{customer.email}</p>
+                  <div className="flex items-center gap-2.5 border-b border-ink/5 px-4 py-3">
+                    <Avatar name={customer.name} src={customer.avatarUrl} size="h-9 w-9" rounded="rounded-full" />
+                    <div className="min-w-0">
+                      <p className="text-sm font-medium text-ink">{customer.name}</p>
+                      <p className="truncate text-[11px] text-muted-foreground">{customer.email}</p>
+                    </div>
                   </div>
                   <div className="p-1.5">
                     <Link

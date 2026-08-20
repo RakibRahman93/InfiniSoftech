@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { User, Mail, Shield, Check } from "lucide-react";
+import AvatarUpload from "@/components/common/AvatarUpload";
 
 export default function DeveloperProfileClient({ user }) {
+  const [avatarUrl, setAvatarUrl] = useState(user?.avatarUrl || null);
   return (
     <div className="space-y-6 pb-10 max-w-2xl">
       <div>
@@ -13,9 +14,7 @@ export default function DeveloperProfileClient({ user }) {
 
       <div className="rounded-2xl border border-ink/5 bg-white p-6 shadow-sm space-y-4">
         <div className="flex items-center gap-4 border-b border-ink/5 pb-4">
-          <div className="grid h-14 w-14 place-items-center rounded-2xl bg-green text-xl font-bold text-white">
-            {user.name?.charAt(0)?.toUpperCase() ?? "D"}
-          </div>
+          <AvatarUpload role="developer" name={user.name} avatarUrl={avatarUrl} onChanged={setAvatarUrl} />
           <div>
             <h2 className="font-semibold text-lg text-ink">{user.name}</h2>
             <span className="inline-flex rounded-full bg-green/10 px-2.5 py-0.5 text-xs font-semibold text-green">
