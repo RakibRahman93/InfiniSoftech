@@ -2,8 +2,13 @@
 
 import { useState } from "react";
 
-export default function NavToggle() {
+export default function NavToggle({ onPaymentClick }) {
   const [open, setOpen] = useState(false);
+
+  const handlePayment = (e) => {
+    setOpen(false);
+    if (onPaymentClick) onPaymentClick(e);
+  };
 
   return (
     <>
@@ -27,7 +32,7 @@ export default function NavToggle() {
             <a href="#inside">Inside the Guide</a>
             <a href="#audience">Who It&apos;s For</a>
             <a href="#faq">FAQ</a>
-            <a href="#offer" className="mvp-mobile-cta">Get Instant Access</a>
+            <a href="#offer" className="mvp-mobile-cta" onClick={handlePayment}>Get Instant Access</a>
           </div>
         </div>
       )}

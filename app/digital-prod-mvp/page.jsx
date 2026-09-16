@@ -1,8 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { fancyMultipage } from "@/data/menu";
 import ScrollReveal, { StaggerContainer, StaggerItem, HeroHeading, FadeUp, SlideReveal, ScaleReveal, GlowPulse } from "@/components/mvp/ScrollReveal";
 import NavToggle from "@/components/mvp/NavToggle";
 import FlipBook from "@/components/mvp/FlipBook";
+import PaymentModal from "@/components/mvp/PaymentModal";
 import {
   ArrowRight,
   BarChart3,
@@ -31,11 +35,6 @@ import {
   Users,
   Zap,
 } from "lucide-react";
-
-export const metadata = {
-  title: "The MVP Playbook | Build Fast, Learn Faster",
-  description: "A practical field guide for founders who want to validate ideas, choose essential features, launch quickly, and learn from real customers.",
-};
 
 const roadmap = [
   [Target, "Define the Problem", "Turn your idea into a clear, testable problem statement."],
@@ -76,8 +75,12 @@ function Eyebrow({ children }) {
 }
 
 export default function DigitalProductMvpPage() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const openPayment = (e) => { e.preventDefault(); setModalOpen(true); };
+
   return (
     <div className="mvp-page theme-fancy">
+      <PaymentModal open={modalOpen} onClose={() => setModalOpen(false)} />
       {/* ===== Announcement Bar ===== */}
       <div className="mvp-announcement">
         <span>🚀 For founders who want to validate before they overspend.</span>
@@ -88,7 +91,7 @@ export default function DigitalProductMvpPage() {
       <nav className="mvp-nav mvp-nav-animate">
         <div className="mvp-shell">
           <a href="/" className="mvp-logo">
-            <Image src="/assets/images/InfiniSoftLogoblack.png" alt="InfiniSoft Technology" width={140} height={32} />
+            <Image src="/assets/images/mvp/logo-mvp.png" alt="InfiniSoft Technology" width={140} height={32} />
           </a>
           <nav className="mvp-nav-links">
             <a href="#learn">What You&apos;ll Learn</a>
@@ -96,8 +99,8 @@ export default function DigitalProductMvpPage() {
             <a href="#audience">Who It&apos;s For</a>
             <a href="#faq">FAQ</a>
           </nav>
-          <a href="#offer" className="mvp-nav-cta">Get Instant Access</a>
-          <NavToggle />
+          <a href="#offer" className="mvp-nav-cta" onClick={openPayment}>Get Instant Access</a>
+          <NavToggle onPaymentClick={openPayment} />
         </div>
       </nav>
 
@@ -105,7 +108,7 @@ export default function DigitalProductMvpPage() {
         {/* ===== Hero Section ===== */}
         <section className="mvp-hero">
           <div className="mvp-hero-swoosh" />
-          <span className="mvp-practical-note">Practical<br />templates<br />inside!</span>
+          {/* <span className="mvp-practical-note">Practical<br />templates<br />inside!</span> */}
           <div className="mvp-shell mvp-hero-grid">
             <div className="mvp-hero-copy">
               <FadeUp delay={0.2}>
@@ -123,7 +126,7 @@ export default function DigitalProductMvpPage() {
               <StaggerContainer className="mvp-actions" delay={0.8}>
                 <StaggerItem>
                   <GlowPulse>
-                    <a href="#offer" className="mvp-btn mvp-btn-primary">Get the MVP Playbook <ArrowRight /></a>
+                    <a href="#offer" className="mvp-btn mvp-btn-primary" onClick={openPayment}>Get the MVP Playbook <ArrowRight /></a>
                   </GlowPulse>
                 </StaggerItem>
                 <StaggerItem>
@@ -138,16 +141,7 @@ export default function DigitalProductMvpPage() {
               </FadeUp>
             </div>
             <ScaleReveal delay={0.3}>
-              <div className="mvp-hero-art">
-                <Image
-                  src="/assets/images/mvp-playbook-hero.png"
-                  alt="The MVP Playbook - book cover with pages"
-                  width={520}
-                  height={580}
-                  className="mvp-hero-image"
-                  priority
-                />
-              </div>
+              <div className="mvp-hero-art" />
             </ScaleReveal>
           </div>
         </section>
@@ -347,7 +341,7 @@ export default function DigitalProductMvpPage() {
               </div>
             </ScaleReveal>
             <FadeUp delay={0.3}>
-              <Image src="/assets/images/InfiniSoftLogoblack.png" alt="InfiniSoft Technology" width={190} height={44} />
+              <Image src="/assets/images/mvp/logo-mvp.png" alt="InfiniSoft Technology" width={190} height={44} />
             </FadeUp>
           </div>
         </section>
@@ -377,7 +371,7 @@ export default function DigitalProductMvpPage() {
               <div className="mvp-price-card">
                 <div><small>Launch price</small><strong>৳29</strong></div>
                 <GlowPulse>
-                  <a href="#" className="mvp-btn-orange">Get Instant Access <ArrowRight /></a>
+                  <a href="#" className="mvp-btn-orange" onClick={openPayment}>Get Instant Access <ArrowRight /></a>
                 </GlowPulse>
                 <p><LockKeyhole /> Secure payment &bull; Immediate delivery</p>
                 <aside><ShieldCheck /><span><b>Optional guarantee</b>7-day satisfaction guarantee (Optional)</span></aside>
@@ -460,7 +454,7 @@ export default function DigitalProductMvpPage() {
               </FadeUp>
               <FadeUp delay={0.2}>
                 <GlowPulse>
-                  <a href="#offer" className="mvp-btn mvp-btn-orange">Get the MVP Playbook <ArrowRight /></a>
+                  <a href="#offer" className="mvp-btn mvp-btn-orange" onClick={openPayment}>Get the MVP Playbook <ArrowRight /></a>
                 </GlowPulse>
               </FadeUp>
               <FadeUp delay={0.3}>
@@ -483,7 +477,7 @@ export default function DigitalProductMvpPage() {
         <div className="mvp-shell">
           <div className="mvp-footer-grid">
             <div className="mvp-footer-brand">
-              <Image src="/assets/images/InfiniSoftLogoblack.png" alt="InfiniSoft Technology" width={170} height={39} />
+              <Image src="/assets/images/mvp/logo-mvp.png" alt="InfiniSoft Technology" width={170} height={39} />
               <span>Build Smarter. Scale Faster.</span>
             </div>
             <nav className="mvp-footer-links">
@@ -517,7 +511,7 @@ export default function DigitalProductMvpPage() {
                 <small>Build Fast. Learn Faster.</small>
               </div>
             </div>
-            <a href="#offer" className="mvp-sticky-cta">Get Instant Access <ArrowRight /></a>
+            <a href="#offer" className="mvp-sticky-cta" onClick={openPayment}>Get Instant Access <ArrowRight /></a>
           </div>
         </div>
       </div>
