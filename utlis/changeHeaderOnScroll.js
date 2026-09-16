@@ -1,5 +1,6 @@
 export const headerChangeOnScroll = () => {
   var mainNav = document.querySelector(".main-nav");
+  if (!mainNav) return;
   var navLogoWrapLogo = document.querySelector(".nav-logo-wrap .logo");
   var lightAfterScroll = document.querySelector(".light-after-scroll");
   if (window.scrollY > 0) {

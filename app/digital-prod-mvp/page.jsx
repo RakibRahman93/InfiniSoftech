@@ -460,24 +460,13 @@ export default function DigitalProductMvpPage() {
               </div>
             </SlideReveal>
             <ScaleReveal delay={0.2}>
-              <div className="mvp-template-stack">
-                {[
-                  "MVP Roadmap",
-                  "Problem Canvas",
-                  "Customer Canvas",
-                  "Feature Matrix",
-                ].map((title, index) => (
-                  <div
-                    className={`mvp-template-card card-${index + 1}`}
-                    key={title}
-                  >
-                    <b>{title}</b>
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                  </div>
-                ))}
+              <div className="mvp-inside-image">
+                <img
+                  src="/assets/images/mvp/inside-paper.png"
+                  alt="Inside the MVP Playbook"
+                  width={1200}
+                  height={800}
+                />
               </div>
             </ScaleReveal>
           </div>
