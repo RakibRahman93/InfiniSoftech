@@ -5050,3 +5050,58 @@ Import trace for requested module:
 ./app/layout.js
  GET /digital-prod-mvp 200 in 260ms
  ✓ Compiled in 1995ms (2077 modules)
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from D:\RakibVai\InfiniSoftech\.next\cache\webpack\client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 139ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: EPERM: operation not permitted, rename 'D:\RakibVai\InfiniSoftech\.next\cache\webpack\client-development\0.pack.gz_' -> 'D:\RakibVai\InfiniSoftech\.next\cache\webpack\client-development\0.pack.gz'
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from D:\RakibVai\InfiniSoftech\.next\cache\webpack\client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 45ms
+ GET /digital-prod-mvp 200 in 37ms
+ GET /digital-prod-mvp 200 in 35ms
+ GET /digital-prod-mvp 200 in 44ms
+ GET /digital-prod-mvp 200 in 33ms
+ GET /digital-prod-mvp 200 in 48ms
+ GET /digital-prod-mvp 200 in 75ms
+ GET /digital-prod-mvp 200 in 73ms
+ GET /digital-prod-mvp 200 in 129ms
+ ○ Compiling /_not-found ...
+ GET /digital-prod-mvp 200 in 169ms
