@@ -1,5 +1,6 @@
 "use client";
 
+// Shared client-side navigation used across the App Router pages.
 import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
 import Link from "next/link";
 import Nav from "./components/Nav";

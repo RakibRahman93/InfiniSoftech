@@ -5,6 +5,7 @@ import BeforeAfterTrust from "@/components/homes/home-6/BeforeAfterTrust";
 import FooterTop from "@/components/homes/home-6/FooterTop";
 import InfinisoftPositioningSection from "@/components/homes/home-6/InfinisoftPositioningSection";
 import ProcessShowcase from "@/components/homes/home-6/ProcessShowcase";
+import RecentClientWork from "@/components/homes/home-6/RecentClientWork";
 import { features10 } from "@/data/features";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,6 +27,7 @@ export default function Home6({ onePage = false, dark = false }) {
   };
   return (
     <>
+      <RecentClientWork />
       {/* <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} /> */}
       <section className={`scrollSpysection pb-0`} id="about">
         <div className="pt-md-5 container position-relative">
