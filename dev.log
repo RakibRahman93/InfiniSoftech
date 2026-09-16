@@ -1155,3 +1155,42 @@ Import trace for requested module:
 ./public/assets/css/styles.css
 ./app/layout.js
  GET /favicon.ico 200 in 587ms
+ ✓ Compiled /favicon.ico in 4.3s (1750 modules)
+ ✓ Compiled in 891ms (1750 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /digital-prod-mvp 200 in 563ms
+ ✓ Compiled /favicon.ico in 230ms (825 modules)
+ GET /favicon.ico 200 in 601ms
+ ✓ Compiled /api/location in 147ms (842 modules)
+ GET /api/location 304 in 198ms
+ GET /api/location 304 in 7ms
+ ✓ Compiled in 490ms (842 modules)
+ ✓ Compiled in 257ms (842 modules)
+ GET /digital-prod-mvp 200 in 126ms
+ GET /api/location 304 in 28ms
+ GET /api/location 304 in 8ms
+ GET /favicon.ico 200 in 37ms
+ GET /digital-prod-mvp 200 in 44ms
+ GET /favicon.ico 200 in 16ms
+ GET /api/location 304 in 7ms
+ GET /api/location 304 in 6ms
+ ✓ Compiled in 341ms (842 modules)
+ ✓ Compiled in 362ms (842 modules)
+ ✓ Compiled in 489ms (842 modules)
+ ✓ Compiled in 258ms (842 modules)
+ ✓ Compiled in 310ms (842 modules)
+ ✓ Compiled in 613ms (794 modules)
+ ✓ Compiled in 271ms (794 modules)
+ GET /digital-prod-mvp 200 in 148ms
+ ✓ Compiled /api/location in 161ms (810 modules)
+ GET /api/location 304 in 235ms
+ GET /api/location 304 in 7ms
+ ✓ Compiled /favicon.ico in 197ms (842 modules)
+ GET /favicon.ico 200 in 277ms
+ ✓ Compiled in 201ms (842 modules)
+ GET /digital-prod-mvp 200 in 84ms
+ GET /digital-prod-mvp 200 in 35ms
+ GET /digital-prod-mvp 200 in 72ms
+ GET /api/location 304 in 11ms
+ GET /api/location 304 in 6ms
+ GET /favicon.ico 200 in 22ms

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { fancyMultipage } from "@/data/menu";
+import ScrollReveal from "@/components/mvp/ScrollReveal";
 import {
   ArrowRight,
   BarChart3,
@@ -134,6 +135,7 @@ export default function DigitalProductMvpPage() {
         </section>
 
         {/* ===== Problem Section ===== */}
+        <ScrollReveal>
         <section className="mvp-problem">
           <div className="mvp-shell">
             <div className="mvp-problem-grid">
@@ -151,8 +153,10 @@ export default function DigitalProductMvpPage() {
             <div className="mvp-warning">⚠ <strong>The cost isn&apos;t only money.</strong> It&apos;s months of learning lost.</div>
           </div>
         </section>
+        </ScrollReveal>
 
         {/* ===== Transformation Section ===== */}
+        <ScrollReveal>
         <section className="mvp-transformation">
           <div className="mvp-shell">
             <Eyebrow>The Transformation</Eyebrow>
@@ -170,8 +174,10 @@ export default function DigitalProductMvpPage() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
         {/* ===== Roadmap Section ===== */}
+        <ScrollReveal>
         <section className="mvp-section" id="learn">
           <div className="mvp-shell">
             <Eyebrow>What You Will Learn</Eyebrow>
@@ -188,8 +194,10 @@ export default function DigitalProductMvpPage() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
         {/* ===== Preview Flipbook Section ===== */}
+        <ScrollReveal>
         <section className="mvp-preview" id="preview">
           <div className="mvp-shell mvp-preview-grid">
             <div>
@@ -216,8 +224,10 @@ export default function DigitalProductMvpPage() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
         {/* ===== Inside Section ===== */}
+        <ScrollReveal>
         <section className="mvp-inside" id="inside">
           <div className="mvp-shell mvp-inside-grid">
             <div>
@@ -248,8 +258,10 @@ export default function DigitalProductMvpPage() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
         {/* ===== Audience Section ===== */}
+        <ScrollReveal>
         <section className="mvp-audience" id="audience">
           <div className="mvp-shell">
             <Eyebrow>Who It Is For</Eyebrow>
@@ -267,8 +279,10 @@ export default function DigitalProductMvpPage() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
         {/* ===== Author Section ===== */}
+        <ScrollReveal>
         <section className="mvp-author">
           <div className="mvp-shell mvp-author-grid">
             <div>
@@ -283,8 +297,10 @@ export default function DigitalProductMvpPage() {
             <Image src="/assets/images/InfiniSoftLogoblack.png" alt="InfiniSoft Technology" width={190} height={44} />
           </div>
         </section>
+        </ScrollReveal>
 
         {/* ===== Offer Section ===== */}
+        <ScrollReveal>
         <section className="mvp-offer" id="offer">
           <div className="mvp-shell mvp-offer-grid">
             <div>
@@ -306,8 +322,10 @@ export default function DigitalProductMvpPage() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
         {/* ===== Access Steps Section ===== */}
+        <ScrollReveal>
         <section className="mvp-access">
           <div className="mvp-shell">
             <div className="mvp-access-left">
@@ -335,8 +353,10 @@ export default function DigitalProductMvpPage() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
         {/* ===== FAQ Section ===== */}
+        <ScrollReveal>
         <section className="mvp-faq" id="faq">
           <div className="mvp-shell mvp-faq-grid">
             <div className="mvp-faq-left">
@@ -354,8 +374,10 @@ export default function DigitalProductMvpPage() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
         {/* ===== Closing CTA Section ===== */}
+        <ScrollReveal>
         <section className="mvp-closing">
           <div className="mvp-shell mvp-closing-grid">
             <div className="mvp-closing-left">
@@ -373,6 +395,7 @@ export default function DigitalProductMvpPage() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
       </main>
 
       {/* ===== Footer ===== */}
