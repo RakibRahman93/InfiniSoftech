@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import Image from "next/image";
 import { fancyMultipage } from "@/data/menu";
 import ScrollReveal, { StaggerContainer, StaggerItem, HeroHeading, FadeUp, SlideReveal, ScaleReveal, GlowPulse } from "@/components/mvp/ScrollReveal";
@@ -56,16 +56,11 @@ const faqs = [
 
 function BookMockup({ compact = false }) {
   return (
-    <div className={`mvp-book ${compact ? "mvp-book-compact" : ""}`} aria-label="The MVP Playbook book cover">
-      <div className="mvp-book-spine" />
-      <div className="mvp-book-cover">
-        <small>The Founder&apos;s Field Guide</small>
-        <h3>THE MVP <span>PLAYBOOK</span></h3>
-        <p>Build Fast. Learn Faster.</p>
-        <div className="mvp-book-flight"><Rocket /></div>
-        <div className="mvp-book-panels"><i /><i /><i /><i /></div>
-        <b>For Founders &bull; Product Owners &bull; Entrepreneurs</b>
-      </div>
+    <div>
+      <img
+        src="/assets/images/mvp/mvp-ebook.png"
+        alt="MVP Playbook"
+      />
     </div>
   );
 }
@@ -105,46 +100,123 @@ export default function DigitalProductMvpPage() {
       </nav>
 
       <main>
-        {/* ===== Hero Section ===== */}
-        <section className="mvp-hero">
-          <div className="mvp-hero-swoosh" />
-          {/* <span className="mvp-practical-note">Practical<br />templates<br />inside!</span> */}
-          <div className="mvp-shell mvp-hero-grid">
-            <div className="mvp-hero-copy">
-              <FadeUp delay={0.2}>
-                <Eyebrow>The Founder&apos;s Field Guide</Eyebrow>
-              </FadeUp>
-              <HeroHeading line1="Build Fast. Learn Faster." line2="Launch With Confidence." />
-              <FadeUp delay={0.5}>
-                <p>A practical, visual playbook that helps founders turn an idea into a focused MVP, without wasting months building the wrong product.</p>
-              </FadeUp>
-              <StaggerContainer className="mvp-hero-values" delay={0.6}>
-                <StaggerItem><div><Target /><span>Define the<br />right problem</span></div></StaggerItem>
-                <StaggerItem><div><ClipboardList /><span>Choose only<br />essential features</span></div></StaggerItem>
-                <StaggerItem><div><BarChart3 /><span>Launch, measure<br />and improve</span></div></StaggerItem>
-              </StaggerContainer>
-              <StaggerContainer className="mvp-actions" delay={0.8}>
-                <StaggerItem>
-                  <GlowPulse>
-                    <a href="#offer" className="mvp-btn mvp-btn-primary" onClick={openPayment}>Get the MVP Playbook <ArrowRight /></a>
-                  </GlowPulse>
-                </StaggerItem>
-                <StaggerItem>
-                  <a href="#preview" className="mvp-btn mvp-btn-outline"><Play /> Preview The Book</a>
-                </StaggerItem>
-              </StaggerContainer>
-              <FadeUp delay={1.0}>
-                <small className="mvp-access-note">Instant PDF access &bull; Practical worksheets &bull; Read online</small>
-              </FadeUp>
-              <FadeUp delay={1.1}>
-                <p className="mvp-author-line">Created by <strong>Rakib Rahman</strong> &mdash; Founder &amp; CTO, InfiniSoft Technology</p>
-              </FadeUp>
-            </div>
-            <ScaleReveal delay={0.3}>
-              <div className="mvp-hero-art" />
-            </ScaleReveal>
+       {/* ===== Hero Section ===== */}
+<section className="mvp-hero">
+  <div className="mvp-hero-background" aria-hidden="true" />
+
+  <div className="mvp-shell mvp-hero-grid">
+    <div className="mvp-hero-copy">
+
+      <FadeUp delay={0.2}>
+        <Eyebrow>The Founder&apos;s Field Guide</Eyebrow>
+      </FadeUp>
+
+      <HeroHeading
+        line1="Build Fast. Learn Faster."
+        line2="Launch With Confidence."
+      />
+
+      <FadeUp delay={0.5}>
+        <p>
+          A practical, visual playbook that helps founders turn an idea
+          into a focused MVP—without wasting months building the wrong product.
+        </p>
+      </FadeUp>
+
+      <StaggerContainer
+        className="mvp-hero-values"
+        delay={0.6}
+      >
+        <StaggerItem>
+          <div>
+            <Target />
+            <span>
+              Define the
+              <br />
+              right problem
+            </span>
           </div>
-        </section>
+        </StaggerItem>
+
+        <StaggerItem>
+          <div>
+            <ClipboardList />
+            <span>
+              Choose only
+              <br />
+              essential features
+            </span>
+          </div>
+        </StaggerItem>
+
+        <StaggerItem>
+          <div>
+            <BarChart3 />
+            <span>
+              Launch, measure
+              <br />
+              and improve
+            </span>
+          </div>
+        </StaggerItem>
+      </StaggerContainer>
+
+      <StaggerContainer
+        className="mvp-actions"
+        delay={0.8}
+      >
+        <StaggerItem>
+          <GlowPulse>
+            <a
+              href="#offer"
+              className="mvp-btn mvp-btn-primary"
+              onClick={openPayment}
+            >
+              Get the MVP Playbook
+              <ArrowRight />
+            </a>
+          </GlowPulse>
+        </StaggerItem>
+
+        <StaggerItem>
+          <a
+            href="#preview"
+            className="mvp-btn mvp-btn-outline"
+          >
+            <Play />
+            Preview The Book
+          </a>
+        </StaggerItem>
+      </StaggerContainer>
+
+      <FadeUp delay={1.0}>
+        <small className="mvp-access-note">
+          Instant PDF access &bull; Practical worksheets &bull; Read online
+        </small>
+      </FadeUp>
+
+      <FadeUp delay={1.1}>
+        <p className="mvp-author-line">
+          Created by <strong>Rakib Rahman</strong>
+          &mdash; Founder &amp; CTO, InfiniSoft Technology
+        </p>
+      </FadeUp>
+
+    </div>
+    {/* Mobile/tablet artwork strip: shown only <= 768px (see custom.css).
+        On desktop the same artwork remains the hero background. */}
+    <div className="mvp-hero-artwork" aria-hidden="true">
+      <Image
+        src="/assets/images/mvp-playbook-hero.png"
+        alt=""
+        width={1672}
+        height={941}
+        sizes="100vw"
+      />
+    </div>
+
+  </div>
+</section>
 
         {/* ===== Problem Section ===== */}
         <section className="mvp-problem">
@@ -193,17 +265,19 @@ export default function DigitalProductMvpPage() {
                 [Box, "Lean Features"],
                 [BarChart3, "Real Feedback"]
               ].map(([Icon, label], index) => (
-                <div key={label} className="mvp-transform-step-wrap">
-                  <StaggerItem>
-                    <div className="mvp-transform-step">
-                      <div className="mvp-transform-icon">
-                        <Icon />
+                <Fragment key={label}>
+                  <div className="mvp-transform-step-wrap">
+                    <StaggerItem>
+                      <div className="mvp-transform-step">
+                        <div className="mvp-transform-icon">
+                          <Icon />
+                        </div>
+                        <span className="mvp-transform-label">{label}</span>
                       </div>
-                      <span className="mvp-transform-label">{label}</span>
-                    </div>
-                  </StaggerItem>
+                    </StaggerItem>
+                  </div>
                   {index < 5 && <div className="mvp-transform-arrow"><ArrowRight /></div>}
-                </div>
+                </Fragment>
               ))}
               <div className="mvp-transform-rocket">
                 <Rocket />
@@ -442,7 +516,12 @@ export default function DigitalProductMvpPage() {
           <div className="mvp-shell mvp-closing-grid">
             <ScaleReveal>
               <div className="mvp-closing-left">
-                <BookMockup compact />
+                <div>
+      <img
+        src="/assets/images/mvp/mvp-ebook.png"
+        alt="MVP Playbook"
+      />
+    </div>  
               </div>
             </ScaleReveal>
             <div className="mvp-closing-center">
@@ -503,7 +582,10 @@ export default function DigitalProductMvpPage() {
             <div className="mvp-sticky-left">
               <div className="mvp-sticky-thumb">
                 <div className="mvp-sticky-book-mini">
-                  <span>THE MVP<br />PLAYBOOK</span>
+                  <img
+                    src="/assets/images/mvp/mvp-ebook.png"
+                    alt="MVP Playbook"
+                  />
                 </div>
               </div>
               <div className="mvp-sticky-text">

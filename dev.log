@@ -2618,3 +2618,2435 @@ Import trace for requested module:
 ./public/assets/css/styles.css
 ./app/layout.js
  GET /_next/static/css/app/bootstrap.min.css.map 404 in 37ms
+ GET /digital-prod-mvp 200 in 111ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /api/location 304 in 618ms
+ ○ Compiling /api/location ...
+ GET /api/location 304 in 21ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /favicon.ico 200 in 548ms
+ ✓ Compiled /favicon.ico in 1013ms (1842 modules)
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 197ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 473ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 27ms
+ ○ Compiling /_not-found ...
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 32ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 53ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 41ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 20ms
+ GET /digital-prod-mvp 200 in 87ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 36ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 24ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 22ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 31ms
+ GET /digital-prod-mvp 200 in 39ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 18ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 34ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 40ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /favicon.ico 200 in 553ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /api/location 304 in 649ms
+ GET /api/location 304 in 7ms
+ ⨯ ./public/assets/css/custom.css:7452:1
+Syntax error: D:\RakibVai\InfiniSoftech\public\assets\css\custom.css Unknown word
+
+ [90m 7450 | [39m[33m.mvp-hero[39m h1 span [33m{[39m
+ [90m 7451 | [39m  display[33m:[39m block[33m;[39m
+[1m[31m>[39m[22m[90m 7452 | [39m[33m.mvp-hero[39m h1 span
+ [90m      | [39m[1m[31m^[39m[22m
+ [90m 7453 | [39m[33m}[39m
+ [90m 7454 | [39m[33m.mvp-hero-copy[39m > p [33m{[39m
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[2]!D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[3]!D:\RakibVai\InfiniSoftech\public\assets\css\custom.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 108ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 29ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 31ms
+ GET /digital-prod-mvp 200 in 86ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 20ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 36ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 14ms
+ GET /favicon.ico 200 in 27ms
+ GET /api/location 304 in 8ms
+ GET /api/location 304 in 6ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 39ms
+ GET /digital-prod-mvp 200 in 71ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 16ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 43ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 28ms
+ GET /favicon.ico 200 in 18ms
+ GET /api/location 304 in 6ms
+ GET /api/location 304 in 8ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 19ms
+ ✓ Compiled /api/location in 1260ms (1794 modules)
+ GET /digital-prod-mvp 200 in 190ms
+ ✓ Compiled /_not-found in 122ms (795 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 259ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 80ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 71ms
+ ✓ Compiled /favicon.ico in 216ms (826 modules)
+ GET /favicon.ico 200 in 334ms
+ ○ Compiling /api/location ...
+ ✓ Compiled /api/location in 630ms (843 modules)
+ GET /api/location 304 in 759ms
+ GET /api/location 304 in 24ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 188ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 29ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 37ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 221ms
+ GET /digital-prod-mvp 200 in 125ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 259ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 69ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 62ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 30ms
+ GET /favicon.ico 200 in 42ms
+ GET /api/location 304 in 13ms
+ GET /api/location 304 in 7ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 13ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 18ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 31ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 21ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 14ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 20ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 27ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 6ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 18ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 11ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 21ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 46ms
+ GET /favicon.ico 200 in 19ms
+ GET /api/location 304 in 14ms
+ GET /api/location 304 in 6ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 40ms
+ GET /favicon.ico 200 in 34ms
+ GET /api/location 304 in 10ms
+ GET /api/location 304 in 5ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 17ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 18ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 17ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 21ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 16ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 17ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 13ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 17ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 19ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 26ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 27ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 34ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 33ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 30ms
+ GET /digital-prod-mvp 200 in 41ms
+ GET /favicon.ico 200 in 23ms
+ GET /api/location 304 in 9ms
+ GET /api/location 304 in 5ms
+ GET /digital-prod-mvp 200 in 61ms
+ GET /api/location 304 in 13ms
+ GET /api/location 304 in 5ms
+ ✓ Compiled in 1291ms (1810 modules)
+ GET /digital-prod-mvp 200 in 239ms
+ GET /api/location 304 in 9ms
+ GET /api/location 304 in 7ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 49ms
+ GET /digital-prod-mvp 200 in 150ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ○ Compiling /api/location ...
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /api/location 304 in 1138ms
+ GET /favicon.ico 200 in 1463ms
+ GET /api/location 304 in 94ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 454ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 28ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 23ms
+ GET /digital-prod-mvp 200 in 285ms
+ GET /api/location 304 in 9ms
+ GET /api/location 304 in 4ms
+ ✓ Compiled /_not-found in 1192ms (1794 modules)
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 147ms
+ GET /digital-prod-mvp 200 in 96ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ○ Compiling /favicon.ico ...
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /api/location 304 in 1639ms
+ GET /favicon.ico 200 in 2781ms
+ GET /api/location 304 in 86ms
+ GET /digital-prod-mvp 200 in 383ms
+ GET /api/location 304 in 8ms
+ GET /api/location 304 in 6ms
+ GET /digital-prod-mvp 200 in 65ms
+ GET /favicon.ico 200 in 43ms
+ GET /api/location 304 in 8ms
+ GET /api/location 304 in 6ms
+ GET /digital-prod-mvp 200 in 128ms
+ GET /api/location 304 in 7ms
+ GET /api/location 304 in 6ms
+ GET /digital-prod-mvp 200 in 108ms
+ GET /api/location 304 in 10ms
+ GET /api/location 304 in 18ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 61ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 121ms
+ GET /api/location 304 in 13ms
+ GET /api/location 304 in 8ms
+ GET /digital-prod-mvp 200 in 288ms
+ GET /api/location 304 in 19ms
+ GET /api/location 304 in 10ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ✓ Compiled /api/location in 8.1s (1794 modules)
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 219ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ○ Compiling /api/location ...
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /api/location 304 in 1519ms
+ GET /favicon.ico 200 in 1838ms
+ GET /api/location 304 in 110ms
+ ✓ Compiled /api/location in 1800ms (1842 modules)
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 172ms
+ GET /digital-prod-mvp 200 in 69ms
+ GET /digital-prod-mvp 200 in 458ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 100ms
+ GET /digital-prod-mvp 200 in 71ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ○ Compiling /_not-found ...
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⨯ TypeError: Cannot read properties of undefined (reading 'clientModules')
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:39:25068
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:191:62
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:122:103
+    at NoopContextManager.with (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NextTracerImpl.trace (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:122:28)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:191:31
+    at r8 (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:41:1678)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:567:9)
+ ⨯ TypeError: Cannot read properties of undefined (reading 'clientModules')
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:39:25068
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:191:62
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:122:103
+    at NoopContextManager.with (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NextTracerImpl.trace (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:122:28)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:191:31
+    at r8 (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:41:1678)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:567:9)
+ ⨯ TypeError: Cannot read properties of undefined (reading 'clientModules')
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:39:25068
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:191:62
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:122:103
+    at NoopContextManager.with (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NextTracerImpl.trace (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:122:28)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\trace\tracer.js:191:31
+    at r8 (D:\RakibVai\InfiniSoftech\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:41:1678)
+    at async doRender (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\base-server.js:1406:30)
+    at async cacheEntry.responseCache.get.routeKind (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\base-server.js:1567:28)
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ✓ Compiled /_error in 837ms (1798 modules)
+ GET /_next/static/css/app/layout.css?v=1789565299481 500 in 16780ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 500 in 16149ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 500 in 16803ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'D:\RakibVai\InfiniSoftech\.next\cache\webpack\client-development-fallback\0.pack.gz_' -> 'D:\RakibVai\InfiniSoftech\.next\cache\webpack\client-development-fallback\0.pack.gz'
+ ✓ Compiled in 1436ms (1798 modules)
+ ✓ Compiled in 464ms (1795 modules)
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ○ Compiling /_not-found ...
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\_not-found\page.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:198:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:162:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\_not-found\\page.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ✓ Compiled /_error in 1813ms (1798 modules)
+ GET /_next/static/css/app/bootstrap.min.css.map 500 in 3365ms
+ GET /digital-prod-mvp 200 in 197ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\digital-prod-mvp\page.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:198:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:162:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\digital-prod-mvp\\page.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/css/app/bootstrap.min.css.map 500 in 24ms
+ GET /digital-prod-mvp 200 in 115ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\digital-prod-mvp\page.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:198:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:162:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\digital-prod-mvp\\page.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /.well-known/appspecific/com.chrome.devtools.json 500 in 44ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\digital-prod-mvp\page.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:198:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:162:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\digital-prod-mvp\\page.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/main-app.js?v=1789565449336 500 in 15ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\digital-prod-mvp\page.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:198:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:162:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\digital-prod-mvp\\page.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/main-app.js?v=1789565449336 500 in 12ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\digital-prod-mvp\page.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:198:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:162:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\digital-prod-mvp\\page.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/app-pages-internals.js 500 in 28ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\digital-prod-mvp\page.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:198:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:162:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\digital-prod-mvp\\page.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/app/not-found.js 500 in 26ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\digital-prod-mvp\page.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:198:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:162:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\digital-prod-mvp\\page.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\digital-prod-mvp\page.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:198:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:162:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\digital-prod-mvp\\page.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/app-pages-internals.js 500 in 62ms
+ GET /_next/static/chunks/app/not-found.js 500 in 48ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\digital-prod-mvp\page.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:198:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:162:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\digital-prod-mvp\\page.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/css/app/bootstrap.min.css.map 500 in 50ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\digital-prod-mvp\page.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:198:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:162:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\digital-prod-mvp\\page.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 500 in 35ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ○ Compiling /favicon.ico ...
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /favicon.ico 200 in 1221ms
+ GET /digital-prod-mvp 200 in 212ms
+ GET /digital-prod-mvp 200 in 60ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\favicon.ico\route.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:203:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:167:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\favicon.ico\\route.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/main-app.js?v=1789565457542 500 in 9ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\favicon.ico\route.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:203:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:167:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\favicon.ico\\route.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/app-pages-internals.js 500 in 19ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\favicon.ico\route.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:203:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:167:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\favicon.ico\\route.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/app/not-found.js 500 in 31ms
+ GET /favicon.ico 200 in 22ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\favicon.ico\route.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:203:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:167:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\favicon.ico\\route.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\favicon.ico\route.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:203:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:167:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\favicon.ico\\route.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\favicon.ico\route.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:203:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:167:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\favicon.ico\\route.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/main-app.js?v=1789565457542 500 in 20ms
+ GET /_next/static/chunks/app-pages-internals.js 500 in 17ms
+ GET /_next/static/chunks/app/not-found.js 500 in 15ms
+ GET /digital-prod-mvp 200 in 46ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\favicon.ico\route.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:203:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:167:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\favicon.ico\\route.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/main-app.js?v=1789565479373 500 in 9ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\favicon.ico\route.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:203:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:167:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\favicon.ico\\route.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/main-app.js?v=1789565479373 500 in 7ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\favicon.ico\route.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:203:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:167:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\favicon.ico\\route.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/app-pages-internals.js 500 in 18ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\favicon.ico\route.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:203:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:167:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\favicon.ico\\route.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/app/not-found.js 500 in 16ms
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\favicon.ico\route.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:203:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:167:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\favicon.ico\\route.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './9379.js'
+Require stack:
+- D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js
+- D:\RakibVai\InfiniSoftech\.next\server\app\favicon.ico\route.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\load-components.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\utils.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\router-server.js
+- D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (D:\RakibVai\InfiniSoftech\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:203:28)
+    at D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\RakibVai\InfiniSoftech\.next\server\webpack-runtime.js:167:22) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\webpack-runtime.js',
+    'D:\\RakibVai\\InfiniSoftech\\.next\\server\\app\\favicon.ico\\route.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\RakibVai\\InfiniSoftech\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/app-pages-internals.js 500 in 22ms
+ GET /_next/static/chunks/app/not-found.js 500 in 17ms
+ GET /favicon.ico 200 in 15ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ✓ Compiled / in 8.2s (2452 modules)
+ GET / 200 in 8639ms
+ GET / 200 in 74ms
+ ○ Compiling /api/location ...
+ ✓ Compiled /api/location in 1703ms (1099 modules)
+ GET /api/location 304 in 1746ms
+ GET /api/location 304 in 5ms
+ ✓ Compiled in 3.8s (2077 modules)
+ GET /digital-prod-mvp 200 in 172ms
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from D:\RakibVai\InfiniSoftech\.next\cache\webpack\client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Compiled in 1459ms (2077 modules)
+ ✓ Compiled in 872ms (2077 modules)
+ ⨯ ./app/digital-prod-mvp/page.jsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:58:1]
+ [2m58[0m |   return (
+ [2m59[0m |     <div>
+ [2m60[0m |       <i
+ [2m61[0m |     </div>
+    : [31;1m    ^[0m
+ [2m62[0m |   );
+ [2m63[0m | }
+    `----
+
+  [31mx[0m Unterminated regexp literal
+    ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:58:1]
+ [2m58[0m |   return (
+ [2m59[0m |     <div>
+ [2m60[0m |       <i
+ [2m61[0m |     </div>
+    : [31;1m     ^^^^^[0m
+ [2m62[0m |   );
+ [2m63[0m | }
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+ ⨯ ./app/digital-prod-mvp/page.jsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:58:1]
+ [2m58[0m |   return (
+ [2m59[0m |     <div>
+ [2m60[0m |       <img
+ [2m61[0m |     </div>
+    : [31;1m    ^[0m
+ [2m62[0m |   );
+ [2m63[0m | }
+    `----
+
+  [31mx[0m Unterminated regexp literal
+    ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:58:1]
+ [2m58[0m |   return (
+ [2m59[0m |     <div>
+ [2m60[0m |       <img
+ [2m61[0m |     </div>
+    : [31;1m     ^^^^^[0m
+ [2m62[0m |   );
+ [2m63[0m | }
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+ ⨯ ./app/digital-prod-mvp/page.jsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:60:1]
+ [2m60[0m |       <img
+ [2m61[0m |         src="/assets/images/mvp-playbook-mockup.png"
+ [2m62[0m |         alt="MVP Playbook"
+ [2m63[0m |     </div>
+    : [31;1m    ^[0m
+ [2m64[0m |   );
+ [2m65[0m | }
+    `----
+
+  [31mx[0m Unterminated regexp literal
+    ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:60:1]
+ [2m60[0m |       <img
+ [2m61[0m |         src="/assets/images/mvp-playbook-mockup.png"
+ [2m62[0m |         alt="MVP Playbook"
+ [2m63[0m |     </div>
+    : [31;1m     ^^^^^[0m
+ [2m64[0m |   );
+ [2m65[0m | }
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+ ✓ Compiled in 5s (2077 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from D:\RakibVai\InfiniSoftech\.next\cache\webpack\client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Compiled in 747ms (2077 modules)
+ ✓ Compiled in 657ms (2077 modules)
+ ✓ Compiled in 639ms (2077 modules)
+ ⨯ ./app/digital-prod-mvp/page.jsx
+Error: 
+  [31mx[0m Expected corresponding JSX closing tag for <div>
+     ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:440:1]
+ [2m440[0m |             </SlideReveal>
+ [2m441[0m |             <ScaleReveal delay={0.2}>
+ [2m442[0m |               <div className="mvp-price-card">
+ [2m443[0m |             </ScaleReveal>
+     : [31;1m            ^^^^^^^^^^^^^^[0m
+ [2m444[0m |             <ScaleReveal delay={0.3}>
+ [2m445[0m |               <div className="mvp-price-card">
+ [2m446[0m |                 <div><small>Launch price</small><strong>৳29</strong></div>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+ ⨯ ./app/digital-prod-mvp/page.jsx
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:440:1]
+ [2m440[0m |             </SlideReveal>
+ [2m441[0m |             <ScaleReveal delay={0.2}>
+ [2m442[0m |               <div className="mvp-price-card"></
+ [2m443[0m |             </ScaleReveal>
+     : [31;1m            ^[0m
+ [2m444[0m |             <ScaleReveal delay={0.3}>
+ [2m445[0m |               <div className="mvp-price-card">
+ [2m446[0m |                 <div><small>Launch price</small><strong>৳29</strong></div>
+     `----
+
+  [31mx[0m Unterminated regexp literal
+     ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:440:1]
+ [2m440[0m |             </SlideReveal>
+ [2m441[0m |             <ScaleReveal delay={0.2}>
+ [2m442[0m |               <div className="mvp-price-card"></
+ [2m443[0m |             </ScaleReveal>
+     : [31;1m             ^^^^^^^^^^^^^[0m
+ [2m444[0m |             <ScaleReveal delay={0.3}>
+ [2m445[0m |               <div className="mvp-price-card">
+ [2m446[0m |                 <div><small>Launch price</small><strong>৳29</strong></div>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+ ✓ Compiled in 724ms (2077 modules)
+ ✓ Compiled in 559ms (2077 modules)
+ ✓ Compiled in 543ms (2077 modules)
+ ✓ Compiled in 491ms (2077 modules)
+ ✓ Compiled in 905ms (2077 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from D:\RakibVai\InfiniSoftech\.next\cache\webpack\server-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Compiled in 2.6s (2077 modules)
+ ⨯ ./app/digital-prod-mvp/page.jsx
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:583:1]
+ [2m583[0m |               <div className="mvp-sticky-thumb">
+ [2m584[0m |                 <div className="mvp-sticky-book-mini">
+ [2m585[0m |                   <
+ [2m586[0m |                 </div>
+     : [31;1m                ^[0m
+ [2m587[0m |               </div>
+ [2m588[0m |               <div className="mvp-sticky-text">
+ [2m589[0m |                 <b>The MVP Playbook</b>
+     `----
+
+  [31mx[0m Unterminated regexp literal
+     ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:583:1]
+ [2m583[0m |               <div className="mvp-sticky-thumb">
+ [2m584[0m |                 <div className="mvp-sticky-book-mini">
+ [2m585[0m |                   <
+ [2m586[0m |                 </div>
+     : [31;1m                 ^^^^^[0m
+ [2m587[0m |               </div>
+ [2m588[0m |               <div className="mvp-sticky-text">
+ [2m589[0m |                 <b>The MVP Playbook</b>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+ ✓ Compiled in 1440ms (2077 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from D:\RakibVai\InfiniSoftech\.next\cache\webpack\client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Compiled in 1601ms (2077 modules)
+ ✓ Compiled in 612ms (2077 modules)
+ ✓ Compiled in 682ms (2077 modules)
+ ✓ Compiled in 656ms (2077 modules)
+ ✓ Compiled in 931ms (2077 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from D:\RakibVai\InfiniSoftech\.next\cache\webpack\client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[2]!D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[3]!D:\RakibVai\InfiniSoftech\public\assets\css\bootstrap.min.css': No serializer registered for Warning
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> Array { 1 items } -> webpack/lib/ModuleWarning -> Warning
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 260ms
+ ✓ Compiled in 1995ms (2077 modules)

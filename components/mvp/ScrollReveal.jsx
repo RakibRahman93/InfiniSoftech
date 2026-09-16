@@ -64,33 +64,23 @@ export function HeroHeading({ line1, line2, className = "" }) {
 
   return (
     <h1 ref={ref} className={className}>
-      <span className="mvp-hero-line-wrap">
-        <span
-          className="mvp-hero-line"
-          style={{
-            display: "block",
-            transform: mounted && inView ? "translateY(0)" : "translateY(105%)",
-            opacity: mounted && inView ? 1 : 0,
-            transition: "transform 0.7s cubic-bezier(0.22,1,0.36,1), opacity 0.5s ease",
-            transitionDelay: "0.2s",
-          }}
-        >
-          {line1}
-        </span>
+      <span className="mvp-hero-line mvp-hero-line-1" style={{
+        display: "block",
+        transform: mounted && inView ? "translateY(0)" : "translateY(105%)",
+        opacity: mounted && inView ? 1 : 0,
+        transition: "transform 0.7s cubic-bezier(0.22,1,0.36,1), opacity 0.5s ease",
+        transitionDelay: "0.2s",
+      }}>
+        {line1}
       </span>
-      <span className="mvp-hero-line-wrap mvp-hero-line-blue">
-        <span
-          className="mvp-hero-line"
-          style={{
-            display: "block",
-            transform: mounted && inView ? "translateY(0)" : "translateY(105%)",
-            opacity: mounted && inView ? 1 : 0,
-            transition: "transform 0.7s cubic-bezier(0.22,1,0.36,1), opacity 0.5s ease",
-            transitionDelay: "0.4s",
-          }}
-        >
-          {line2}
-        </span>
+      <span className="mvp-hero-line mvp-hero-line-2" style={{
+        display: "block",
+        transform: mounted && inView ? "translateY(0)" : "translateY(105%)",
+        opacity: mounted && inView ? 1 : 0,
+        transition: "transform 0.7s cubic-bezier(0.22,1,0.36,1), opacity 0.5s ease",
+        transitionDelay: "0.4s",
+      }}>
+        {line2}
       </span>
     </h1>
   );
