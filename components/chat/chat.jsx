@@ -8,6 +8,7 @@ export default function Chat({ username = "John", chatTitle }) {
   const [newMessage, setNewMessage] = useState("");
 
   useEffect(() => {
+    if (!supabase) return;
     fetchMessages();
 
     const channel = supabase
@@ -35,6 +36,7 @@ export default function Chat({ username = "John", chatTitle }) {
   }, []);
 
   async function fetchMessages() {
+    if (!supabase) return;
     const { data } = await supabase
       .from("messages")
       .select("*")
@@ -45,14 +47,14 @@ export default function Chat({ username = "John", chatTitle }) {
 
   async function sendMessage(e) {
     e.preventDefault();
-    if (!newMessage.trim()) return;
+    if (!newMessage.trim() || !supabase) return;
 
     const { error, data } = await supabase
       .from("messages")
       .insert([{ content: newMessage, username }])
       .select()
       .single();
-      
+     
 
     if (!error && data) {
       setMessages((prev) => [...prev, data]);

@@ -10,34 +10,64 @@ const FooterTop = () => {
     phone: "",
     message: "",
   });
+  const [status, setStatus] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const submissionData = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      options: "General Inquiry",
+      subject: "Footer Contact Form",
+      message: formData.message,
+      planTitle: undefined,
+      planPrice: undefined,
+    };
+
+    setIsSubmitting(true);
+    setStatus(null);
+
     try {
-      const response = await fetch("/api/sendEmail", {
+      const response = await fetch("/api/submitForm", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(submissionData),
       });
+
+      const result = await response.json();
+
       if (response.ok) {
-        toast.success("Email sent successfully!");
+        toast.success("Form submitted successfully!");
         setFormData({
           name: "",
           email: "",
           phone: "",
           message: "",
         });
-      }else {
-        toast.error("Failed to send email. Please try again.");
+      } else {
+        const errorMessage = `Error: ${
+          result.message || "Something went wrong"
+        }`;
+        setStatus(errorMessage);
+        toast.error(errorMessage);
       }
     } catch (error) {
-      console.error("Error sending email:", error);
-    } 
+      console.error("Error during form submission:", error);
+      const errorMessage = "An error occurred. Please try again.";
+      setStatus(errorMessage);
+      toast.error(errorMessage);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -119,7 +149,8 @@ const FooterTop = () => {
                   </div>
                   <div>
                     <button
-                   
+                      type="submit"
+                      disabled={isSubmitting}
                       className="btn btn-lg"
                       style={{
                         borderRadius: "50px",
@@ -131,8 +162,12 @@ const FooterTop = () => {
                         cursor: "pointer",
                       }}
                     >
-                      Leave us a Message <i className="bi bi-arrow-right"></i>
+                      {isSubmitting ? "Submitting..." : "Leave us a Message"}{" "}
+                      <i className="bi bi-arrow-right"></i>
                     </button>
+                    {status ? (
+                      <div className="small text-white pt-2">{status}</div>
+                    ) : null}
                   </div>
                 </form>
               </div>
@@ -140,7 +175,7 @@ const FooterTop = () => {
           </div>
         </div>
       </section>
-      <Toaster position="top-right"/>
+      <Toaster position="top-right" />
     </div>
   );
 };
