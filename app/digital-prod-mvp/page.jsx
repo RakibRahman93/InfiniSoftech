@@ -249,7 +249,7 @@ export default function DigitalProductMvpPage() {
                 alt=""
                 width={1672}
                 height={941}
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>

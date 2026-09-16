@@ -7394,7 +7394,7 @@ body.appear-animate .pricing-slide-design {
 
 /* ============================================================
    HERO SECTION — START
-   Full-width background artwork: /assets/images/mvp-playbook-hero.png
+   Full-width background artwork: /assets/images/mvp-playbook-hero.jpg
    ============================================================ */
 /* =========================================================
    MVP HERO — REFERENCE MATCH
@@ -7404,43 +7404,35 @@ body.appear-animate .pricing-slide-design {
   position: relative;
   width: 100%;
   overflow: hidden;
-
-  /*
-    Reference image is approximately 2.52:1.
-    Keep the original artwork ratio instead of using cover.
-  */
-  aspect-ratio: 703 / 279;
-
-  min-height: 0;
-
-  background: #f7fbfe url("/assets/images/mvp-playbook-hero.png")
-    center center / 100% 100% no-repeat;
-
+  background-color: #f7fbfe;
   isolation: isolate;
+  padding: 60px 0 50px;
 }
-
-
-/* ---------------------------------------------------------
-   Remove old decorative layers
-   --------------------------------------------------------- */
-
-.mvp-hero::before,
-.mvp-hero::after {
-  display: none !important;
-  content: none !important;
+.mvp-hero::before {
+  display: none;
 }
 
 .mvp-hero-background {
   display: none !important;
 }
 
-/* Mobile-only artwork strip (revealed at <= 768px) */
+/* Hero artwork — right side image */
 .mvp-hero-artwork {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .mvp-hero-artwork img {
   display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  object-fit: contain;
 }
 
 .mvp-hero-swoosh,
@@ -7788,10 +7780,7 @@ body.appear-animate .pricing-slide-design {
 @media (min-width: 768px) and (max-width: 1199px) {
 
   .mvp-hero {
-    aspect-ratio: 703 / 330;
-
-    background-size: cover;
-    background-position: center center;
+    min-height: 420px;
   }
 
   .mvp-hero .mvp-shell {
@@ -7827,16 +7816,8 @@ body.appear-animate .pricing-slide-design {
 @media (max-width: 767px) {
 
   .mvp-hero {
-    /*
-      On mobile the original 703x279 artwork is too wide.
-      Use a taller section and preserve the artwork visually.
-    */
-    aspect-ratio: auto;
-
-    min-height: 620px;
-
-    background-size: auto 100%;
-    background-position: 63% center;
+    min-height: auto;
+    padding: 30px 0 20px;
   }
 
 
@@ -7959,9 +7940,8 @@ body.appear-animate .pricing-slide-design {
 @media (max-width: 400px) {
 
   .mvp-hero {
-    min-height: 600px;
-
-    background-position: 60% center;
+    min-height: auto;
+    padding: 20px 0 15px;
   }
 
   .mvp-hero .mvp-hero-grid {

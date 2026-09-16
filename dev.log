@@ -5111,3 +5111,7 @@ Import trace for requested module:
  GET /digital-prod-mvp 200 in 1283ms
  GET /digital-prod-mvp 200 in 1756ms
  GET /digital-prod-mvp 200 in 1485ms
+ GET /digital-prod-mvp 200 in 750ms
+ GET /digital-prod-mvp 200 in 1162ms
+ HEAD /digital-prod-mvp 200 in 1018ms
+ GET /digital-prod-mvp 200 in 1956ms
