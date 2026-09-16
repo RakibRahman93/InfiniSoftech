@@ -1194,3 +1194,980 @@ Import trace for requested module:
  GET /api/location 304 in 11ms
  GET /api/location 304 in 6ms
  GET /favicon.ico 200 in 22ms
+ ✓ Compiled in 2.4s (1750 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /digital-prod-mvp 200 in 1718ms
+ ✓ Compiled /favicon.ico in 348ms (825 modules)
+ GET /favicon.ico 200 in 770ms
+ ○ Compiling /api/location ...
+ ✓ Compiled /api/location in 547ms (842 modules)
+ GET /api/location 304 in 745ms
+ GET /api/location 304 in 8ms
+ ✓ Compiled in 513ms (842 modules)
+ ⨯ ./app/digital-prod-mvp/page.jsx
+Error: 
+  [31mx[0m Expected corresponding JSX closing tag for <motion.nav>
+     ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:104:1]
+ [2m104[0m |             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+ [2m105[0m |           </button>
+ [2m106[0m |         </div>
+ [2m107[0m |       </nav>
+     : [31;1m      ^^^^^^[0m
+ [2m108[0m | 
+ [2m109[0m |       <main>
+ [2m110[0m |         {/* ===== Hero Section ===== */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+ ✓ Compiled in 1018ms (1798 modules)
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1586366657"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 320ms
+ GET /favicon.ico 200 in 43ms
+ ✓ Compiled in 630ms (1781 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 239ms
+ GET /favicon.ico 200 in 32ms
+ ✓ Compiled in 491ms (1781 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 182ms
+ GET /favicon.ico 200 in 41ms
+ ✓ Compiled in 301ms (825 modules)
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 135ms
+ GET /favicon.ico 200 in 67ms
+ ✓ Compiled in 282ms (825 modules)
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 123ms
+ GET /favicon.ico 200 in 42ms
+ ✓ Compiled in 220ms (825 modules)
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 117ms
+ GET /favicon.ico 200 in 33ms
+ ✓ Compiled in 378ms (825 modules)
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 150ms
+ GET /favicon.ico 200 in 30ms
+ ✓ Compiled in 296ms (825 modules)
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 112ms
+ GET /favicon.ico 200 in 44ms
+ ✓ Compiled in 200ms (825 modules)
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 85ms
+ GET /favicon.ico 200 in 27ms
+ ✓ Compiled in 184ms (825 modules)
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 136ms
+ GET /favicon.ico 200 in 41ms
+ GET /favicon.ico 200 in 14ms
+ ✓ Compiled in 320ms (825 modules)
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 160ms
+ GET /favicon.ico 200 in 49ms
+ ✓ Compiled in 206ms (825 modules)
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 113ms
+ GET /favicon.ico 200 in 25ms
+ ✓ Compiled in 191ms (825 modules)
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 111ms
+ GET /favicon.ico 200 in 21ms
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ ⨯ app\digital-prod-mvp\page.jsx (86:8) @ motion
+ ⨯ ReferenceError: motion is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:252:89)
+    at stringify (<anonymous>)
+digest: "1595373210"
+[0m [90m 84 |[39m[0m
+[0m [90m 85 |[39m       {[90m/* ===== MVP Navigation ===== */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       [33m<[39m[33mmotion[39m[33m.[39mnav[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m         className[33m=[39m[32m"mvp-nav"[39m[0m
+[0m [90m 88 |[39m         initial[33m=[39m{{ y[33m:[39m [33m-[39m[35m60[39m[33m,[39m opacity[33m:[39m [35m0[39m }}[0m
+[0m [90m 89 |[39m         animate[33m=[39m{{ y[33m:[39m [35m0[39m[33m,[39m opacity[33m:[39m [35m1[39m }}[0m
+ GET /digital-prod-mvp 500 in 45ms
+ ⨯ ./app/digital-prod-mvp/page.jsx
+Error: 
+  [31mx[0m Expected corresponding JSX closing tag for <nav>
+     ,-[[36;1;4mD:\RakibVai\InfiniSoftech\app\digital-prod-mvp\page.jsx[0m:99:1]
+ [2m 99[0m |             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+ [2m100[0m |           </button>
+ [2m101[0m |         </div>
+ [2m102[0m |       </motion.nav>
+     : [31;1m      ^^^^^^^^^^^^^[0m
+ [2m103[0m | 
+ [2m104[0m |       <main>
+ [2m105[0m |         {/* ===== Hero Section ===== */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 605ms (1750 modules)
+ GET /digital-prod-mvp 200 in 880ms
+ ✓ Compiled /api/location in 424ms (810 modules)
+ GET /api/location 304 in 539ms
+ ✓ Compiled /favicon.ico in 164ms (842 modules)
+ GET /api/location 304 in 426ms
+ GET /favicon.ico 200 in 608ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 131ms
+ GET /digital-prod-mvp 200 in 60ms
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[2]!D:\RakibVai\InfiniSoftech\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[3]!D:\RakibVai\InfiniSoftech\public\assets\css\bootstrap.min.css': No serializer registered for Warning
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> Array { 1 items } -> webpack/lib/ModuleWarning -> Warning
+ GET /digital-prod-mvp 200 in 100ms
+ GET /api/location 304 in 8ms
+ GET /api/location 304 in 5ms
+ GET /favicon.ico 200 in 21ms
+ GET /digital-prod-mvp 200 in 145ms
+ GET /favicon.ico 200 in 17ms
+ GET /api/location 304 in 8ms
+ GET /api/location 304 in 5ms
+ GET /digital-prod-mvp 200 in 60ms
+ GET /digital-prod-mvp 200 in 52ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./app/digital-prod-mvp/page.jsx
+Attempted import error: 'SplitHeading' is not exported from '@/components/mvp/ScrollReveal' (imported as 'SplitHeading').
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+
+./app/digital-prod-mvp/page.jsx
+Attempted import error: 'SplitHeading' is not exported from '@/components/mvp/ScrollReveal' (imported as 'SplitHeading').
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+ ⨯ Error: Unsupported Server Component type: undefined
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "1577446160"
+ ⨯ Error: Unsupported Server Component type: undefined
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "2970135772"
+ ⨯ Error: Unsupported Server Component type: undefined
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+digest: "1577446160"
+ GET /digital-prod-mvp 500 in 1702ms
+ ⚠ ./app/digital-prod-mvp/page.jsx
+Attempted import error: 'SplitHeading' is not exported from '@/components/mvp/ScrollReveal' (imported as 'SplitHeading').
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+
+./app/digital-prod-mvp/page.jsx
+Attempted import error: 'SplitHeading' is not exported from '@/components/mvp/ScrollReveal' (imported as 'SplitHeading').
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+ ⚠ ./app/digital-prod-mvp/page.jsx
+Attempted import error: 'SplitHeading' is not exported from '@/components/mvp/ScrollReveal' (imported as 'SplitHeading').
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+
+./app/digital-prod-mvp/page.jsx
+Attempted import error: 'SplitHeading' is not exported from '@/components/mvp/ScrollReveal' (imported as 'SplitHeading').
+
+Import trace for requested module:
+./app/digital-prod-mvp/page.jsx
+ GET /favicon.ico 200 in 551ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 752ms (1781 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ app\digital-prod-mvp\page.jsx (115:18) @ SplitHeading
+ ⨯ ReferenceError: SplitHeading is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:419:129)
+    at stringify (<anonymous>)
+digest: "3753992616"
+[0m [90m 113 |[39m               [33m<[39m[33m/[39m[33mFadeUp[39m[33m>[39m[0m
+[0m [90m 114 |[39m               [33m<[39m[33mh1[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 115 |[39m                 [33m<[39m[33mSplitHeading[39m text[33m=[39m[32m"Build Fast. Learn Faster."[39m [33m/[39m[33m>[39m[0m
+[0m [90m     |[39m                  [31m[1m^[22m[39m[0m
+[0m [90m 116 |[39m                 [33m<[39m[33mspan[39m[33m>[39m[33m<[39m[33mSplitHeading[39m text[33m=[39m[32m"Launch With Confidence."[39m [33m/[39m[33m>[39m[33m<[39m[33m/[39m[33mspan[39m[33m>[39m[0m
+[0m [90m 117 |[39m               [33m<[39m[33m/[39m[33mh1[39m[33m>[39m[0m
+[0m [90m 118 |[39m               [33m<[39m[33mFadeUp[39m delay[33m=[39m{[35m0.5[39m}[33m>[39m[0m
+ ⨯ app\digital-prod-mvp\page.jsx (115:18) @ SplitHeading
+ ⨯ ReferenceError: SplitHeading is not defined
+    at DigitalProductMvpPage (./app/digital-prod-mvp/page.jsx:419:129)
+    at stringify (<anonymous>)
+digest: "3753992616"
+[0m [90m 113 |[39m               [33m<[39m[33m/[39m[33mFadeUp[39m[33m>[39m[0m
+[0m [90m 114 |[39m               [33m<[39m[33mh1[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 115 |[39m                 [33m<[39m[33mSplitHeading[39m text[33m=[39m[32m"Build Fast. Learn Faster."[39m [33m/[39m[33m>[39m[0m
+[0m [90m     |[39m                  [31m[1m^[22m[39m[0m
+[0m [90m 116 |[39m                 [33m<[39m[33mspan[39m[33m>[39m[33m<[39m[33mSplitHeading[39m text[33m=[39m[32m"Launch With Confidence."[39m [33m/[39m[33m>[39m[33m<[39m[33m/[39m[33mspan[39m[33m>[39m[0m
+[0m [90m 117 |[39m               [33m<[39m[33m/[39m[33mh1[39m[33m>[39m[0m
+[0m [90m 118 |[39m               [33m<[39m[33mFadeUp[39m delay[33m=[39m{[35m0.5[39m}[33m>[39m[0m
+ GET /digital-prod-mvp 500 in 221ms
+ GET /favicon.ico 200 in 33ms
+ ✓ Compiled in 565ms (1781 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /digital-prod-mvp 200 in 299ms
+ GET /favicon.ico 200 in 24ms
+ ○ Compiling /api/location ...
+ ✓ Compiled /api/location in 619ms (842 modules)
+ GET /api/location 304 in 701ms
+ GET /api/location 304 in 6ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 147ms
+ GET /digital-prod-mvp 200 in 54ms
+ GET /digital-prod-mvp 200 in 55ms
+ GET /api/location 304 in 61ms
+ GET /favicon.ico 200 in 107ms
+ GET /api/location 304 in 22ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ○ Compiling /_not-found ...
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 524ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 28ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 32ms
+ GET /_next/static/chunks/app/digital-prod-mvp/LayoutGroupContext.mjs.map 404 in 20ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 45ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 32ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 163ms
+ GET /digital-prod-mvp 200 in 180ms
+ GET /favicon.ico 200 in 42ms
+ GET /api/location 304 in 12ms
+ GET /api/location 304 in 8ms
+ GET /digital-prod-mvp 200 in 64ms
+ ✓ Compiled /_not-found in 1269ms (1753 modules)
+ ✓ Compiled in 610ms (1753 modules)
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 150ms
+ GET /digital-prod-mvp 200 in 59ms
+ GET /digital-prod-mvp 200 in 52ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 207ms
+ GET /digital-prod-mvp 200 in 59ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 57ms
+ ✓ Compiled in 1530ms (1772 modules)
+ ✓ Compiled in 769ms (1772 modules)
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 152ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ○ Compiling /api/location ...
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /api/location 304 in 966ms
+ GET /favicon.ico 200 in 1157ms
+ GET /api/location 304 in 55ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ HEAD /digital-prod-mvp 200 in 134ms
+ GET /digital-prod-mvp 200 in 52ms
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ ⚠ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+Warning
+
+(2148:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/bootstrap.min.css
+./public/assets/css/styles.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./public/assets/css/styles.css
+./public/assets/css/styles.css
+./app/layout.js
+ GET /digital-prod-mvp 200 in 49ms

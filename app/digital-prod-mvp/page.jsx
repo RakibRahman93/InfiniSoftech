@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { fancyMultipage } from "@/data/menu";
-import ScrollReveal from "@/components/mvp/ScrollReveal";
+import ScrollReveal, { StaggerContainer, StaggerItem, HeroHeading, FadeUp, SlideReveal, ScaleReveal, GlowPulse } from "@/components/mvp/ScrollReveal";
+import NavToggle from "@/components/mvp/NavToggle";
+import FlipBook from "@/components/mvp/FlipBook";
 import {
   ArrowRight,
   BarChart3,
@@ -83,7 +85,7 @@ export default function DigitalProductMvpPage() {
       </div>
 
       {/* ===== MVP Navigation ===== */}
-      <nav className="mvp-nav">
+      <nav className="mvp-nav mvp-nav-animate">
         <div className="mvp-shell">
           <a href="/" className="mvp-logo">
             <Image src="/assets/images/InfiniSoftLogoblack.png" alt="InfiniSoft Technology" width={140} height={32} />
@@ -95,9 +97,7 @@ export default function DigitalProductMvpPage() {
             <a href="#faq">FAQ</a>
           </nav>
           <a href="#offer" className="mvp-nav-cta">Get Instant Access</a>
-          <button className="mvp-menu" aria-label="Open menu">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-          </button>
+          <NavToggle />
         </div>
       </nav>
 
@@ -108,291 +108,371 @@ export default function DigitalProductMvpPage() {
           <span className="mvp-practical-note">Practical<br />templates<br />inside!</span>
           <div className="mvp-shell mvp-hero-grid">
             <div className="mvp-hero-copy">
-              <Eyebrow>The Founder&apos;s Field Guide</Eyebrow>
-              <h1>
-                Build Fast. Learn Faster.
-                <span>Launch With Confidence.</span>
-              </h1>
-              <p>A practical, visual playbook that helps founders turn an idea into a focused MVP, without wasting months building the wrong product.</p>
-              <div className="mvp-hero-values">
-                <div><Target /><span>Define the<br />right problem</span></div>
-                <div><ClipboardList /><span>Choose only<br />essential features</span></div>
-                <div><BarChart3 /><span>Launch, measure<br />and improve</span></div>
-              </div>
-              <div className="mvp-actions">
-                <a href="#offer" className="mvp-btn mvp-btn-primary">Get the MVP Playbook <ArrowRight /></a>
-                <a href="#preview" className="mvp-btn mvp-btn-outline"><Play /> Preview The Book</a>
-              </div>
-              <small className="mvp-access-note">Instant PDF access &bull; Practical worksheets &bull; Read online</small>
-              <p className="mvp-author-line">Created by <strong>Rakib Rahman</strong> &mdash; Founder &amp; CTO, InfiniSoft Technology</p>
+              <FadeUp delay={0.2}>
+                <Eyebrow>The Founder&apos;s Field Guide</Eyebrow>
+              </FadeUp>
+              <HeroHeading line1="Build Fast. Learn Faster." line2="Launch With Confidence." />
+              <FadeUp delay={0.5}>
+                <p>A practical, visual playbook that helps founders turn an idea into a focused MVP, without wasting months building the wrong product.</p>
+              </FadeUp>
+              <StaggerContainer className="mvp-hero-values" delay={0.6}>
+                <StaggerItem><div><Target /><span>Define the<br />right problem</span></div></StaggerItem>
+                <StaggerItem><div><ClipboardList /><span>Choose only<br />essential features</span></div></StaggerItem>
+                <StaggerItem><div><BarChart3 /><span>Launch, measure<br />and improve</span></div></StaggerItem>
+              </StaggerContainer>
+              <StaggerContainer className="mvp-actions" delay={0.8}>
+                <StaggerItem>
+                  <GlowPulse>
+                    <a href="#offer" className="mvp-btn mvp-btn-primary">Get the MVP Playbook <ArrowRight /></a>
+                  </GlowPulse>
+                </StaggerItem>
+                <StaggerItem>
+                  <a href="#preview" className="mvp-btn mvp-btn-outline"><Play /> Preview The Book</a>
+                </StaggerItem>
+              </StaggerContainer>
+              <FadeUp delay={1.0}>
+                <small className="mvp-access-note">Instant PDF access &bull; Practical worksheets &bull; Read online</small>
+              </FadeUp>
+              <FadeUp delay={1.1}>
+                <p className="mvp-author-line">Created by <strong>Rakib Rahman</strong> &mdash; Founder &amp; CTO, InfiniSoft Technology</p>
+              </FadeUp>
             </div>
-            <div className="mvp-hero-art">
-              <div className="mvp-sheet sheet-one"><b>Feature Prioritization</b><i /><i /><i /><i /></div>
-              <div className="mvp-sheet sheet-two"><b>02</b><strong>Identify Your<br />Core Customers</strong><i /><i /><i /></div>
-              <BookMockup />
-            </div>
+            <ScaleReveal delay={0.3}>
+              <div className="mvp-hero-art">
+                <Image
+                  src="/assets/images/mvp-playbook-hero.png"
+                  alt="The MVP Playbook - book cover with pages"
+                  width={520}
+                  height={580}
+                  className="mvp-hero-image"
+                  priority
+                />
+              </div>
+            </ScaleReveal>
           </div>
         </section>
 
         {/* ===== Problem Section ===== */}
-        <ScrollReveal>
         <section className="mvp-problem">
           <div className="mvp-shell">
             <div className="mvp-problem-grid">
-              <div>
-                <Eyebrow>The Problem</Eyebrow>
-                <h2>Most MVPs Don&apos;t Fail Because of Bad Code.</h2>
-                <p>They fail because teams build too much, too early, for the wrong customer.</p>
-              </div>
-              <div className="mvp-problem-cards">
-                <article><span style={{color:'#FF6B45'}}><Zap /></span><h3>Unclear Problem</h3><p>You start with features instead of customer pain.</p></article>
-                <article><span style={{color:'#FF8A22'}}><PackageCheck /></span><h3>Bloated Scope</h3><p>Nice-to-have ideas delay real validation.</p></article>
-                <article><span style={{color:'#8B5CF6'}}><CircleHelp /></span><h3>Guesswork</h3><p>Decisions are made without user evidence.</p></article>
-              </div>
+              <SlideReveal from="left">
+                <div>
+                  <Eyebrow>The Problem</Eyebrow>
+                  <h2>Most MVPs Don&apos;t Fail Because of Bad Code.</h2>
+                  <p>They fail because teams build too much, too early, for the wrong customer.</p>
+                </div>
+              </SlideReveal>
+              <StaggerContainer className="mvp-problem-cards">
+                <StaggerItem><article><span style={{color:'#FF6B45'}}><Zap /></span><h3>Unclear Problem</h3><p>You start with features instead of customer pain.</p></article></StaggerItem>
+                <StaggerItem><article><span style={{color:'#FF8A22'}}><PackageCheck /></span><h3>Bloated Scope</h3><p>Nice-to-have ideas delay real validation.</p></article></StaggerItem>
+                <StaggerItem><article><span style={{color:'#8B5CF6'}}><CircleHelp /></span><h3>Guesswork</h3><p>Decisions are made without user evidence.</p></article></StaggerItem>
+              </StaggerContainer>
             </div>
-            <div className="mvp-warning">⚠ <strong>The cost isn&apos;t only money.</strong> It&apos;s months of learning lost.</div>
+            <FadeUp delay={0.3}>
+              <div className="mvp-warning">⚠ <strong>The cost isn&apos;t only money.</strong> It&apos;s months of learning lost.</div>
+            </FadeUp>
           </div>
         </section>
-        </ScrollReveal>
 
         {/* ===== Transformation Section ===== */}
         <ScrollReveal>
         <section className="mvp-transformation">
-          <div className="mvp-shell">
-            <Eyebrow>The Transformation</Eyebrow>
-            <h2>From Scattered Idea to Testable Product</h2>
-            <p>The MVP Playbook gives you a repeatable path from assumption to evidence.</p>
-            <div className="mvp-transform-flow">
-              {[[Lightbulb,"Vague Idea"],[ClipboardList,"Clear Problem"],[Users,"Core Customer"],[Gift,"Value Proposition"],[Box,"Lean Features"],[BarChart3,"Real Feedback"]].map(([Icon,label],index)=>(
-                <div key={label}>
-                  <span><Icon /></span>
-                  <b>{label}</b>
-                  {index<5?<ArrowRight />:null}
+          <div className="mvp-transform-stars" />
+          <div className="mvp-transform-glow" />
+          <div className="mvp-shell mvp-transform-inner">
+            <FadeUp>
+              <Eyebrow>The Transformation</Eyebrow>
+            </FadeUp>
+            <FadeUp delay={0.1}>
+              <h2>From Scattered Idea to Testable Product</h2>
+            </FadeUp>
+            <FadeUp delay={0.2}>
+              <p>The MVP Playbook gives you a repeatable path from assumption to evidence.</p>
+            </FadeUp>
+            <div className="mvp-transform-timeline">
+              {[
+                [Lightbulb, "Vague Idea"],
+                [ClipboardList, "Clear Problem"],
+                [Users, "Core Customer"],
+                [Gift, "Value Proposition"],
+                [Box, "Lean Features"],
+                [BarChart3, "Real Feedback"]
+              ].map(([Icon, label], index) => (
+                <div key={label} className="mvp-transform-step-wrap">
+                  <StaggerItem>
+                    <div className="mvp-transform-step">
+                      <div className="mvp-transform-icon">
+                        <Icon />
+                      </div>
+                      <span className="mvp-transform-label">{label}</span>
+                    </div>
+                  </StaggerItem>
+                  {index < 5 && <div className="mvp-transform-arrow"><ArrowRight /></div>}
                 </div>
               ))}
-              <span className="mvp-handwritten">Ideas to impact</span>
+              <div className="mvp-transform-rocket">
+                <Rocket />
+                <span className="mvp-transform-handwritten">Ideas to<br />impact</span>
+              </div>
             </div>
           </div>
         </section>
         </ScrollReveal>
 
         {/* ===== Roadmap Section ===== */}
-        <ScrollReveal>
         <section className="mvp-section" id="learn">
           <div className="mvp-shell">
-            <Eyebrow>What You Will Learn</Eyebrow>
-            <h2 className="mvp-section-title">A Complete MVP Roadmap, Without the Fluff</h2>
-            <div className="mvp-roadmap">
+            <FadeUp>
+              <Eyebrow>What You Will Learn</Eyebrow>
+            </FadeUp>
+            <FadeUp delay={0.1}>
+              <h2 className="mvp-section-title">A Complete MVP Roadmap, Without the Fluff</h2>
+            </FadeUp>
+            <StaggerContainer className="mvp-roadmap">
               {roadmap.map(([Icon,title,text],index)=>(
-                <article key={title}>
-                  <strong>0{index+1}</strong>
-                  <Icon />
-                  <h3>{title}</h3>
-                  <p>{text}</p>
-                </article>
+                <StaggerItem key={title}>
+                  <article>
+                    <strong>0{index+1}</strong>
+                    <Icon />
+                    <h3>{title}</h3>
+                    <p>{text}</p>
+                  </article>
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerContainer>
           </div>
         </section>
-        </ScrollReveal>
 
         {/* ===== Preview Flipbook Section ===== */}
-        <ScrollReveal>
         <section className="mvp-preview" id="preview">
           <div className="mvp-shell mvp-preview-grid">
-            <div>
-              <Eyebrow>See It Yourself</Eyebrow>
-              <h2>Flip Through Before You Buy</h2>
-              <p>Preview selected pages and experience the guide like a real book.</p>
-              <a href="#inside" className="mvp-btn mvp-btn-primary"><BookOpen /> Open Interactive Preview</a>
-              <small>Preview includes selected pages only.</small>
-            </div>
-            <div className="mvp-open-book">
-              <button aria-label="Previous page">&lsaquo;</button>
-              <div className="mvp-page-left">
-                <b>02</b>
-                <h3>Identify Your<br />Core Customers</h3>
-                <p>The right product starts with the right customer.</p>
+            <SlideReveal from="left">
+              <div className="mvp-preview-copy">
+                <Eyebrow>See It Yourself</Eyebrow>
+                <h2>Flip Through<br />Before You Buy</h2>
+                <p>Preview selected pages and experience the guide like a real book.</p>
+                <GlowPulse>
+                  <a href="#inside" className="mvp-btn mvp-btn-primary"><BookOpen /> Open Interactive Preview</a>
+                </GlowPulse>
+                <small>Preview includes selected pages only.</small>
               </div>
-              <div className="mvp-page-right">
-                <strong>Customer Persona Canvas</strong>
-                <div className="persona-avatar"><UserRound /></div>
-                <i /><i /><i />
-                <em>&ldquo;Real products solve real problems.&rdquo;</em>
-              </div>
-              <button aria-label="Next page">&rsaquo;</button>
-            </div>
+            </SlideReveal>
+            <ScaleReveal delay={0.2}>
+              <FlipBook />
+            </ScaleReveal>
           </div>
         </section>
-        </ScrollReveal>
 
         {/* ===== Inside Section ===== */}
-        <ScrollReveal>
         <section className="mvp-inside" id="inside">
           <div className="mvp-shell mvp-inside-grid">
-            <div>
-              <Eyebrow>What Is Inside</Eyebrow>
-              <h2>Practical Templates.<br />Real Guidance.</h2>
-              <p>A focused, beautifully designed guide with worksheets and frameworks you can apply right away.</p>
-              <ul>
-                {[
-                  "11 professionally designed pages",
-                  "Problem Statement Canvas",
-                  "Target Customer Canvas",
-                  "Feature Prioritization Matrix",
-                  "12-Day Build Plan",
-                  "Metrics & Feedback Framework",
-                  "Launch Checklist",
-                  "Downloadable high-resolution PDF"
-                ].map((item)=>(
-                  <li key={item}><span className="mvp-check-icon bg-blue"><Check /></span>{item}</li>
+            <SlideReveal from="left">
+              <div>
+                <Eyebrow>What Is Inside</Eyebrow>
+                <h2>Practical Templates.<br />Real Guidance.</h2>
+                <p>A focused, beautifully designed guide with worksheets and frameworks you can apply right away.</p>
+                <StaggerContainer>
+                  {[
+                    "11 professionally designed pages",
+                    "Problem Statement Canvas",
+                    "Target Customer Canvas",
+                    "Feature Prioritization Matrix",
+                    "12-Day Build Plan",
+                    "Metrics & Feedback Framework",
+                    "Launch Checklist",
+                    "Downloadable high-resolution PDF"
+                  ].map((item)=>(
+                    <StaggerItem key={item}>
+                      <li><span className="mvp-check-icon bg-blue"><Check /></span>{item}</li>
+                    </StaggerItem>
+                  ))}
+                </StaggerContainer>
+              </div>
+            </SlideReveal>
+            <ScaleReveal delay={0.2}>
+              <div className="mvp-template-stack">
+                {["MVP Roadmap","Problem Canvas","Customer Canvas","Feature Matrix"].map((title,index)=>(
+                  <div className={`mvp-template-card card-${index+1}`} key={title}>
+                    <b>{title}</b><span /><span /><span /><span />
+                  </div>
                 ))}
-              </ul>
-            </div>
-            <div className="mvp-template-stack">
-              {["MVP Roadmap","Problem Canvas","Customer Canvas","Feature Matrix"].map((title,index)=>(
-                <div className={`mvp-template-card card-${index+1}`} key={title}>
-                  <b>{title}</b><span /><span /><span /><span />
-                </div>
-              ))}
-            </div>
+              </div>
+            </ScaleReveal>
           </div>
         </section>
-        </ScrollReveal>
 
         {/* ===== Audience Section ===== */}
-        <ScrollReveal>
         <section className="mvp-audience" id="audience">
           <div className="mvp-shell">
-            <Eyebrow>Who It Is For</Eyebrow>
-            <h2>Built for People Turning Ideas Into Products</h2>
-            <div className="mvp-audience-grid">
+            <FadeUp>
+              <Eyebrow>Who It Is For</Eyebrow>
+            </FadeUp>
+            <FadeUp delay={0.1}>
+              <h2>Built for People Turning Ideas Into Products</h2>
+            </FadeUp>
+            <StaggerContainer className="mvp-audience-grid">
               {[[UserRound,"Founders & Co-Founders","Validate ideas before investing serious time and money."],[ShoppingCart,"Product Owners","Use a structured approach to build what matters."],[Rocket,"Entrepreneurs","Turn ideas into real solutions with less risk."],[ClipboardList,"Early-Stage Builders","Get clarity, focus and momentum."]].map(([Icon,title,text])=>(
-                <article key={title}>
-                  <Icon />
-                  <div><h3>{title}</h3><p>{text}</p></div>
-                </article>
+                <StaggerItem key={title}>
+                  <article>
+                    <Icon />
+                    <div><h3>{title}</h3><p>{text}</p></div>
+                  </article>
+                </StaggerItem>
               ))}
-            </div>
-            <div className="mvp-fit">
-              <Users /> If you need clarity before committing serious time and money, this playbook is for you.
-            </div>
+            </StaggerContainer>
+            <FadeUp delay={0.4}>
+              <div className="mvp-fit">
+                <Users /> If you need clarity before committing serious time and money, this playbook is for you.
+              </div>
+            </FadeUp>
           </div>
         </section>
-        </ScrollReveal>
 
         {/* ===== Author Section ===== */}
         <ScrollReveal>
         <section className="mvp-author">
           <div className="mvp-shell mvp-author-grid">
-            <div>
-              <Eyebrow>Created by Rakib Rahman</Eyebrow>
-              <h2>Founder &amp; CTO, InfiniSoft Technology</h2>
-              <p>Built from practical product, design and development experience across websites, web applications, dashboards and MVP systems.</p>
-            </div>
-            <div className="mvp-signature">
-              Rakib Rahman
-              <small>RAKIB RAHMAN</small>
-            </div>
-            <Image src="/assets/images/InfiniSoftLogoblack.png" alt="InfiniSoft Technology" width={190} height={44} />
+            <SlideReveal from="left">
+              <div>
+                <Eyebrow>Created by Rakib Rahman</Eyebrow>
+                <h2>Founder &amp; CTO, InfiniSoft Technology</h2>
+                <p>Built from practical product, design and development experience across websites, web applications, dashboards and MVP systems.</p>
+              </div>
+            </SlideReveal>
+            <ScaleReveal delay={0.2}>
+              <div className="mvp-signature">
+                Rakib Rahman
+                <small>RAKIB RAHMAN</small>
+              </div>
+            </ScaleReveal>
+            <FadeUp delay={0.3}>
+              <Image src="/assets/images/InfiniSoftLogoblack.png" alt="InfiniSoft Technology" width={190} height={44} />
+            </FadeUp>
           </div>
         </section>
         </ScrollReveal>
 
         {/* ===== Offer Section ===== */}
-        <ScrollReveal>
         <section className="mvp-offer" id="offer">
           <div className="mvp-shell mvp-offer-grid">
-            <div>
-              <Eyebrow>Instant Digital Access</Eyebrow>
-              <h2>The MVP Playbook</h2>
-              <p>Everything you need to go from idea to a validated MVP.</p>
-              <ul>
-                {["Complete PDF guide","Interactive online flipbook","Printable worksheets","Future minor updates"].map(item=>(
-                  <li key={item}><span className="mvp-check-icon bg-blue"><Check /></span>{item}</li>
-                ))}
-              </ul>
-            </div>
-            <BookMockup compact />
-            <div className="mvp-price-card">
-              <div><small>Launch price</small><strong>৳29</strong></div>
-              <a href="#" className="mvp-btn-orange">Get Instant Access <ArrowRight /></a>
-              <p><LockKeyhole /> Secure payment &bull; Immediate delivery</p>
-              <aside><ShieldCheck /><span><b>Optional guarantee</b>7-day satisfaction guarantee (Optional)</span></aside>
-            </div>
+            <SlideReveal from="left">
+              <div>
+                <Eyebrow>Instant Digital Access</Eyebrow>
+                <h2>The MVP Playbook</h2>
+                <p>Everything you need to go from idea to a validated MVP.</p>
+                <StaggerContainer>
+                  {["Complete PDF guide","Interactive online flipbook","Printable worksheets","Future minor updates"].map(item=>(
+                    <StaggerItem key={item}>
+                      <li><span className="mvp-check-icon bg-blue"><Check /></span>{item}</li>
+                    </StaggerItem>
+                  ))}
+                </StaggerContainer>
+              </div>
+            </SlideReveal>
+            <ScaleReveal delay={0.2}>
+              <BookMockup compact />
+            </ScaleReveal>
+            <ScaleReveal delay={0.3}>
+              <div className="mvp-price-card">
+                <div><small>Launch price</small><strong>৳29</strong></div>
+                <GlowPulse>
+                  <a href="#" className="mvp-btn-orange">Get Instant Access <ArrowRight /></a>
+                </GlowPulse>
+                <p><LockKeyhole /> Secure payment &bull; Immediate delivery</p>
+                <aside><ShieldCheck /><span><b>Optional guarantee</b>7-day satisfaction guarantee (Optional)</span></aside>
+              </div>
+            </ScaleReveal>
           </div>
         </section>
-        </ScrollReveal>
 
         {/* ===== Access Steps Section ===== */}
-        <ScrollReveal>
         <section className="mvp-access">
           <div className="mvp-shell">
-            <div className="mvp-access-left">
-              <Eyebrow>How Access Works</Eyebrow>
-              <h2>Get Your Copy in 4 Simple Steps</h2>
-            </div>
-            <div className="mvp-access-steps">
+            <SlideReveal from="left">
+              <div className="mvp-access-left">
+                <Eyebrow>How Access Works</Eyebrow>
+                <h2>Get Your Copy in 4 Simple Steps</h2>
+              </div>
+            </SlideReveal>
+            <StaggerContainer className="mvp-access-steps">
               {[
                 [ShoppingCart, "Purchase securely"],
                 [Mail, "Receive access by email"],
                 [Download, "Read online or download"],
                 [CheckCircle2, "Apply the worksheets"]
               ].map(([Icon, text], index) => (
-                <div key={text} className="mvp-access-step-wrap">
-                  <div className="mvp-access-step">
-                    <div className="mvp-access-step-top">
-                      <strong>{index + 1}</strong>
-                      <Icon />
+                <StaggerItem key={text}>
+                  <div className="mvp-access-step-wrap">
+                    <div className="mvp-access-step">
+                      <div className="mvp-access-step-top">
+                        <strong>{index + 1}</strong>
+                        <Icon />
+                      </div>
+                      <span>{text}</span>
                     </div>
-                    <span>{text}</span>
+                    {index < 3 && <span className="mvp-access-arrow" />}
                   </div>
-                  {index < 3 && <span className="mvp-access-arrow" />}
-                </div>
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerContainer>
           </div>
         </section>
-        </ScrollReveal>
 
         {/* ===== FAQ Section ===== */}
-        <ScrollReveal>
         <section className="mvp-faq" id="faq">
           <div className="mvp-shell mvp-faq-grid">
-            <div className="mvp-faq-left">
-              <Eyebrow>Frequently Asked Questions</Eyebrow>
-              <h2>Still Have Questions?</h2>
-              <p>Here are the most common answers. If you need more help, feel free to contact us.</p>
-            </div>
-            <div className="mvp-faq-list" id="mvp-faq">
+            <SlideReveal from="left">
+              <div className="mvp-faq-left">
+                <Eyebrow>Frequently Asked Questions</Eyebrow>
+                <h2>Still Have Questions?</h2>
+                <p>Here are the most common answers. If you need more help, feel free to contact us.</p>
+              </div>
+            </SlideReveal>
+            <StaggerContainer className="mvp-faq-list" id="mvp-faq">
               {faqs.map(([question,answer])=>(
-                <details key={question} name="mvp-faq-toggle">
-                  <summary>{question}<ChevronDown /></summary>
-                  <p>{answer}</p>
-                </details>
+                <StaggerItem key={question}>
+                  <details name="mvp-faq-toggle">
+                    <summary>{question}<ChevronDown /></summary>
+                    <p>{answer}</p>
+                  </details>
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerContainer>
           </div>
         </section>
-        </ScrollReveal>
 
         {/* ===== Closing CTA Section ===== */}
         <ScrollReveal>
         <section className="mvp-closing">
           <div className="mvp-shell mvp-closing-grid">
-            <div className="mvp-closing-left">
-              <BookMockup compact />
-            </div>
+            <ScaleReveal>
+              <div className="mvp-closing-left">
+                <BookMockup compact />
+              </div>
+            </ScaleReveal>
             <div className="mvp-closing-center">
-              <h2>Stop Building on Assumptions.</h2>
-              <p>Turn your idea into a focused MVP, and learn what the market actually wants.</p>
-              <a href="#offer" className="mvp-btn mvp-btn-orange">Get the MVP Playbook <ArrowRight /></a>
-              <small>Start smarter. Learn faster.</small>
+              <FadeUp>
+                <h2>Stop Building on Assumptions.</h2>
+              </FadeUp>
+              <FadeUp delay={0.1}>
+                <p>Turn your idea into a focused MVP, and learn what the market actually wants.</p>
+              </FadeUp>
+              <FadeUp delay={0.2}>
+                <GlowPulse>
+                  <a href="#offer" className="mvp-btn mvp-btn-orange">Get the MVP Playbook <ArrowRight /></a>
+                </GlowPulse>
+              </FadeUp>
+              <FadeUp delay={0.3}>
+                <small>Start smarter. Learn faster.</small>
+              </FadeUp>
             </div>
-            <div className="mvp-closing-right">
-              <Rocket />
-              <blockquote>&ldquo;A clearer path to a brighter future starts here.&rdquo;</blockquote>
-            </div>
+            <SlideReveal from="right" delay={0.2}>
+              <div className="mvp-closing-right">
+                <Rocket />
+                <blockquote>&ldquo;A clearer path to a brighter future starts here.&rdquo;</blockquote>
+              </div>
+            </SlideReveal>
           </div>
         </section>
         </ScrollReveal>
