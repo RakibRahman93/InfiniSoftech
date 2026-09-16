@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
+import { ChevronLeft, ChevronRight, Maximize2, Minimize2, X } from "lucide-react";
 
 const pages = [
   {
@@ -87,6 +87,9 @@ const pages = [
 export default function FlipBook() {
   const [page, setPage] = useState(0);
   const [direction, setDirection] = useState(1);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isAutoPlay, setIsAutoPlay] = useState(false);
+  const autoPlayRef = useRef(null);
   const total = pages.length;
   const current = pages[page];
 
@@ -100,11 +103,34 @@ export default function FlipBook() {
     });
   };
 
-  return (
-    <div className="mvp-flipbook">
-      {/* Book container */}
+  const goTo = (i) => {
+    setDirection(i > page ? 1 : -1);
+    setPage(i);
+  };
+
+  useEffect(() => {
+    if (isAutoPlay) {
+      autoPlayRef.current = setInterval(() => {
+        setPage((p) => (p + 1) % total);
+      }, 3000);
+    }
+    return () => clearInterval(autoPlayRef.current);
+  }, [isAutoPlay, total]);
+
+  useEffect(() => {
+    if (isFullscreen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [isFullscreen]);
+
+  const toggleAutoPlay = () => setIsAutoPlay((a) => !a);
+
+  const BookContent = () => (
+    <>
       <div className="mvp-flipbook-book">
-        {/* Left page */}
         <div className="mvp-flipbook-page mvp-flipbook-left" key={`l-${page}`}>
           <div className="mvp-flipbook-page-inner">
             <span className="mvp-flipbook-num">{current.num}</span>
@@ -113,11 +139,7 @@ export default function FlipBook() {
             <div className="mvp-flipbook-page-icon">{current.left.icon}</div>
           </div>
         </div>
-
-        {/* Spine */}
         <div className="mvp-flipbook-spine" />
-
-        {/* Right page */}
         <div className="mvp-flipbook-page mvp-flipbook-right" key={`r-${page}`}>
           <div className="mvp-flipbook-page-inner">
             <h4 className="mvp-flipbook-canvas-title">{current.right.title}</h4>
@@ -132,8 +154,6 @@ export default function FlipBook() {
             <em className="mvp-flipbook-quote">&ldquo;{current.right.quote}&rdquo;</em>
           </div>
         </div>
-
-        {/* Nav arrows */}
         <button className="mvp-flipbook-prev" onClick={() => go(-1)} aria-label="Previous page">
           <ChevronLeft />
         </button>
@@ -141,31 +161,52 @@ export default function FlipBook() {
           <ChevronRight />
         </button>
       </div>
-
-      {/* Bottom bar */}
       <div className="mvp-flipbook-bottom">
-        {/* Dots */}
         <div className="mvp-flipbook-dots">
           {pages.map((_, i) => (
             <button
               key={i}
               className={`mvp-flipbook-dot ${i === page ? "active" : ""}`}
-              onClick={() => { setDirection(i > page ? 1 : -1); setPage(i); }}
+              onClick={() => goTo(i)}
               aria-label={`Go to page ${i + 1}`}
             />
           ))}
         </div>
-
-        {/* Counter */}
         <span className="mvp-flipbook-counter">
           {String(page + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
         </span>
-
-        {/* Fullscreen */}
-        <button className="mvp-flipbook-fullscreen" aria-label="Fullscreen">
-          <Maximize2 />
-        </button>
+        <div className="mvp-flipbook-actions">
+          <button
+            className={`mvp-flipbook-autoplay ${isAutoPlay ? "active" : ""}`}
+            onClick={toggleAutoPlay}
+            aria-label="Auto play"
+          >
+            {isAutoPlay ? "⏸" : "▶"}
+          </button>
+          <button className="mvp-flipbook-fullscreen" onClick={() => setIsFullscreen(true)} aria-label="Fullscreen">
+            <Maximize2 />
+          </button>
+        </div>
       </div>
-    </div>
+    </>
+  );
+
+  return (
+    <>
+      <div className="mvp-flipbook">
+        <BookContent />
+      </div>
+
+      {isFullscreen && (
+        <div className="mvp-flipbook-modal" onClick={() => setIsFullscreen(false)}>
+          <div className="mvp-flipbook-modal-inner" onClick={(e) => e.stopPropagation()}>
+            <button className="mvp-flipbook-modal-close" onClick={() => setIsFullscreen(false)} aria-label="Close">
+              <X />
+            </button>
+            <BookContent />
+          </div>
+        </div>
+      )}
+    </>
   );
 }

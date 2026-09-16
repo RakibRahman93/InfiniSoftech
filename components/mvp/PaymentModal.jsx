@@ -3,8 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import { X, Copy, Check, ArrowRight } from "lucide-react";
 
-const BKASH_NUMBER = "1858333238";
-const WHATSAPP_NUMBER = "1858333238";
+const BKASH_NUMBER = "01858333238";
+const WHATSAPP_NUMBER = "01858333238";
 
 export default function PaymentModal({ open, onClose }) {
   const [copied, setCopied] = useState(false);
