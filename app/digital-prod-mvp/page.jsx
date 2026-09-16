@@ -78,7 +78,7 @@ export default function DigitalProductMvpPage() {
       {/* ===== Announcement Bar ===== */}
       <div className="mvp-announcement">
         <span>🚀 For founders who want to validate before they overspend.</span>
-        <a href="#offer">Get Instant Access <ArrowRight /></a>
+        <a href="#offer">Get the Playbook <ArrowRight /></a>
       </div>
 
       {/* ===== MVP Navigation ===== */}
@@ -119,7 +119,7 @@ export default function DigitalProductMvpPage() {
                 <div><BarChart3 /><span>Launch, measure<br />and improve</span></div>
               </div>
               <div className="mvp-actions">
-                <a href="#offer" className="mvp-btn mvp-btn-primary">Get The MVP Playbook <ArrowRight /></a>
+                <a href="#offer" className="mvp-btn mvp-btn-primary">Get the MVP Playbook <ArrowRight /></a>
                 <a href="#preview" className="mvp-btn mvp-btn-outline"><Play /> Preview The Book</a>
               </div>
               <small className="mvp-access-note">Instant PDF access &bull; Practical worksheets &bull; Read online</small>
@@ -143,9 +143,9 @@ export default function DigitalProductMvpPage() {
                 <p>They fail because teams build too much, too early, for the wrong customer.</p>
               </div>
               <div className="mvp-problem-cards">
-                <article><Zap /><h3>Unclear Problem</h3><p>You start with features instead of customer pain.</p></article>
-                <article><PackageCheck /><h3>Bloated Scope</h3><p>Nice-to-have ideas delay real validation.</p></article>
-                <article><CircleHelp /><h3>Guesswork</h3><p>Decisions are made without user evidence.</p></article>
+                <article><span style={{color:'#FF6B45'}}><Zap /></span><h3>Unclear Problem</h3><p>You start with features instead of customer pain.</p></article>
+                <article><span style={{color:'#FF8A22'}}><PackageCheck /></span><h3>Bloated Scope</h3><p>Nice-to-have ideas delay real validation.</p></article>
+                <article><span style={{color:'#8B5CF6'}}><CircleHelp /></span><h3>Guesswork</h3><p>Decisions are made without user evidence.</p></article>
               </div>
             </div>
             <div className="mvp-warning">⚠ <strong>The cost isn&apos;t only money.</strong> It&apos;s months of learning lost.</div>
@@ -166,6 +166,7 @@ export default function DigitalProductMvpPage() {
                   {index<5?<ArrowRight />:null}
                 </div>
               ))}
+              <span className="mvp-handwritten">Ideas to impact</span>
             </div>
           </div>
         </section>
@@ -298,7 +299,7 @@ export default function DigitalProductMvpPage() {
             </div>
             <BookMockup compact />
             <div className="mvp-price-card">
-              <div><small>Launch price</small><strong>$29</strong></div>
+              <div><small>Launch price</small><strong>৳29</strong></div>
               <a href="#" className="mvp-btn-orange">Get Instant Access <ArrowRight /></a>
               <p><LockKeyhole /> Secure payment &bull; Immediate delivery</p>
               <aside><ShieldCheck /><span><b>Optional guarantee</b>7-day satisfaction guarantee (Optional)</span></aside>
@@ -356,15 +357,20 @@ export default function DigitalProductMvpPage() {
 
         {/* ===== Closing CTA Section ===== */}
         <section className="mvp-closing">
-          <div className="mvp-shell">
-            <BookMockup compact />
-            <div>
+          <div className="mvp-shell mvp-closing-grid">
+            <div className="mvp-closing-left">
+              <BookMockup compact />
+            </div>
+            <div className="mvp-closing-center">
               <h2>Stop Building on Assumptions.</h2>
               <p>Turn your idea into a focused MVP, and learn what the market actually wants.</p>
-              <a href="#offer" className="mvp-btn mvp-btn-orange">Get The MVP Playbook <ArrowRight /></a>
+              <a href="#offer" className="mvp-btn mvp-btn-orange">Get the MVP Playbook <ArrowRight /></a>
+              <small>Start smarter. Learn faster.</small>
             </div>
-            <blockquote>&ldquo;A clearer, brighter future starts here.&rdquo;</blockquote>
-            <Rocket />
+            <div className="mvp-closing-right">
+              <Rocket />
+              <blockquote>&ldquo;A clearer path to a brighter future starts here.&rdquo;</blockquote>
+            </div>
           </div>
         </section>
       </main>
@@ -372,17 +378,45 @@ export default function DigitalProductMvpPage() {
       {/* ===== Footer ===== */}
       <footer className="mvp-footer">
         <div className="mvp-shell">
-          <Image src="/assets/images/InfiniSoftLogoblack.png" alt="InfiniSoft Technology" width={170} height={39} />
-          <nav><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="mailto:info@infinisoftech.com">Support</a></nav>
-          <span>www.infinisoftech.com</span>
-          <a href="tel:+8801858333238">+880 1858-333238</a>
+          <div className="mvp-footer-grid">
+            <div className="mvp-footer-brand">
+              <Image src="/assets/images/InfiniSoftLogoblack.png" alt="InfiniSoft Technology" width={170} height={39} />
+              <span>Build Smarter. Scale Faster.</span>
+            </div>
+            <nav className="mvp-footer-links">
+              <a href="/privacy">Privacy</a>
+              <a href="/terms">Terms</a>
+              <a href="mailto:info@infinisoftech.com">Support</a>
+            </nav>
+          <div className="mvp-footer-contact">
+            <span>🌐 www.infinisoftech.com</span>
+            <a href="https://wa.me/8801858333238" target="_blank" rel="noopener noreferrer" className="mvp-whatsapp-link">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              +880 1858-333238
+            </a>
+          </div>
+          </div>
         </div>
       </footer>
 
       {/* ===== Sticky Bar ===== */}
       <div className="mvp-sticky">
-        <span><BookOpen /><b>The MVP Playbook</b></span>
-        <a href="#offer">Get Instant Access <ArrowRight /></a>
+        <div className="mvp-shell">
+          <div className="mvp-sticky-inner">
+            <div className="mvp-sticky-left">
+              <div className="mvp-sticky-thumb">
+                <div className="mvp-sticky-book-mini">
+                  <span>THE MVP<br />PLAYBOOK</span>
+                </div>
+              </div>
+              <div className="mvp-sticky-text">
+                <b>The MVP Playbook</b>
+                <small>Build Fast. Learn Faster.</small>
+              </div>
+            </div>
+            <a href="#offer" className="mvp-sticky-cta">Get Instant Access <ArrowRight /></a>
+          </div>
+        </div>
       </div>
     </div>
   );
