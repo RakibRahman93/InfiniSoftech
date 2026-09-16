@@ -244,12 +244,14 @@ export default function DigitalProductMvpPage() {
             {/* Mobile/tablet artwork strip: shown only <= 768px (see custom.css).
         On desktop the same artwork remains the hero background. */}
             <div className="mvp-hero-artwork" aria-hidden="true">
+              <div className="mvp-hero-artwork-glow" />
               <Image
-                src="/assets/images/mvp-playbook-hero.png"
-                alt=""
+                src="/assets/images/mvp/mvp-playbook-hero.jpg"
+                alt="The MVP Playbook — Build Fast. Learn Faster."
                 width={1672}
                 height={941}
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 768px) 100vw, 48vw"
+                priority
               />
             </div>
           </div>
