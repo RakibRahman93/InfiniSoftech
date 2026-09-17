@@ -8,10 +8,10 @@ export default function ScrollReveal({ children, className = "", delay = 0 }) {
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.1 }}
-      transition={{ duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] }}
+      viewport={{ once: true, margin: "0px 0px -40px 0px" }}
+      transition={{ duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
     </motion.div>
@@ -25,10 +25,10 @@ export function StaggerContainer({ children, className = "", delay = 0 }) {
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: true, margin: "0px 0px -40px 0px" }}
       variants={{
         hidden: {},
-        visible: { transition: { staggerChildren: 0.09, delayChildren: delay } },
+        visible: { transition: { staggerChildren: 0.08, delayChildren: delay } },
       }}
     >
       {children}
@@ -42,11 +42,11 @@ export function StaggerItem({ children, className = "" }) {
     <motion.div
       className={className}
       variants={{
-        hidden: { opacity: 0, y: 28 },
+        hidden: { opacity: 0, y: 20 },
         visible: {
           opacity: 1,
           y: 0,
-          transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+          transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
         },
       }}
     >
@@ -55,33 +55,12 @@ export function StaggerItem({ children, className = "" }) {
   );
 }
 
-/* ---------- Hero Heading (CSS-based, always visible) ---------- */
+/* ---------- Hero Heading (resilient pure CSS entrance) ---------- */
 export function HeroHeading({ line1, line2, className = "" }) {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true });
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => { setMounted(true); }, []);
-
   return (
-    <h1 ref={ref} className={className}>
-      <span className="mvp-hero-line mvp-hero-line-1" style={{
-        display: "block",
-        transform: mounted && inView ? "translateY(0)" : "translateY(105%)",
-        opacity: mounted && inView ? 1 : 0,
-        transition: "transform 0.7s cubic-bezier(0.22,1,0.36,1), opacity 0.5s ease",
-        transitionDelay: "0.2s",
-      }}>
-        {line1}
-      </span>
-      <span className="mvp-hero-line mvp-hero-line-2" style={{
-        display: "block",
-        transform: mounted && inView ? "translateY(0)" : "translateY(105%)",
-        opacity: mounted && inView ? 1 : 0,
-        transition: "transform 0.7s cubic-bezier(0.22,1,0.36,1), opacity 0.5s ease",
-        transitionDelay: "0.4s",
-      }}>
-        {line2}
-      </span>
+    <h1 className={className}>
+      <span className="mvp-hero-line mvp-hero-line-1">{line1}</span>
+      <span className="mvp-hero-line mvp-hero-line-2">{line2}</span>
     </h1>
   );
 }
@@ -91,10 +70,10 @@ export function FadeUp({ children, className = "", delay = 0 }) {
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 22 }}
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}
+      viewport={{ once: true, margin: "0px 0px -40px 0px" }}
+      transition={{ duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
     </motion.div>
@@ -106,10 +85,10 @@ export function SlideReveal({ children, className = "", from = "left", delay = 0
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, x: from === "left" ? -50 : 50 }}
+      initial={{ opacity: 0, x: from === "left" ? -36 : 36 }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] }}
+      viewport={{ once: true, margin: "0px 0px -40px 0px" }}
+      transition={{ duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
     </motion.div>
@@ -121,10 +100,10 @@ export function ScaleReveal({ children, className = "", delay = 0 }) {
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, scale: 0.9 }}
+      initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] }}
+      viewport={{ once: true, margin: "0px 0px -40px 0px" }}
+      transition={{ duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
     </motion.div>
