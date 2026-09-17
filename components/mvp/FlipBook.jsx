@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Maximize2, Minimize2, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, Maximize2, Minimize2, UserRound, X } from "lucide-react";
 
 const pages = [
   {
@@ -85,7 +85,7 @@ const pages = [
 ];
 
 export default function FlipBook() {
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(1);
   const [direction, setDirection] = useState(1);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isAutoPlay, setIsAutoPlay] = useState(false);
@@ -126,41 +126,127 @@ export default function FlipBook() {
     return () => { document.body.style.overflow = ""; };
   }, [isFullscreen]);
 
+  useEffect(() => {
+    const handleOpen = () => setIsFullscreen(true);
+    window.addEventListener("open-flipbook-modal", handleOpen);
+    return () => window.removeEventListener("open-flipbook-modal", handleOpen);
+  }, []);
+
   const toggleAutoPlay = () => setIsAutoPlay((a) => !a);
 
   const BookContent = () => (
     <>
-      <div className="mvp-flipbook-book">
-        <div className="mvp-flipbook-page mvp-flipbook-left" key={`l-${page}`}>
-          <div className="mvp-flipbook-page-inner">
-            <span className="mvp-flipbook-num">{current.num}</span>
-            <h3 className="mvp-flipbook-page-title">{current.left.title}</h3>
-            <p className="mvp-flipbook-page-desc">{current.left.desc}</p>
-            <div className="mvp-flipbook-page-icon">{current.left.icon}</div>
-          </div>
+      <div className="mvp-flipbook-main">
+        {/* Left Dark Sidebar with Prev Button */}
+        <div className="mvp-flipbook-side mvp-flipbook-side-left">
+          <button
+            className="mvp-flipbook-circle-btn mvp-flipbook-prev"
+            onClick={() => go(-1)}
+            aria-label="Previous page"
+          >
+            <ChevronLeft />
+          </button>
         </div>
-        <div className="mvp-flipbook-spine" />
-        <div className="mvp-flipbook-page mvp-flipbook-right" key={`r-${page}`}>
-          <div className="mvp-flipbook-page-inner">
-            <h4 className="mvp-flipbook-canvas-title">{current.right.title}</h4>
-            <div className="mvp-flipbook-fields">
-              {current.right.fields.map((f, i) => (
-                <div key={i} className="mvp-flipbook-field">
-                  <span>{f}</span>
-                  <div className="mvp-flipbook-field-line" />
-                </div>
-              ))}
+
+        {/* Center Book Spread */}
+        <div className="mvp-flipbook-book">
+          {/* Left Page */}
+          <div className="mvp-flipbook-page mvp-flipbook-left" key={`l-${page}`}>
+            <div className="mvp-flipbook-page-inner">
+              <span className="mvp-flipbook-num">{current.num}</span>
+              <h3 className="mvp-flipbook-page-title">
+                {page === 1 ? (
+                  <>
+                    Identify Your <br />
+                    Core Customers
+                  </>
+                ) : (
+                  current.left.title
+                )}
+              </h3>
+              <p className="mvp-flipbook-page-desc">{current.left.desc}</p>
+              <div className="mvp-flipbook-page-icon">
+                {page === 1 ? (
+                  <svg width="48" height="28" viewBox="0 0 44 28" fill="#5298f2" aria-hidden="true">
+                    <circle cx="14" cy="8" r="5" fill="#5298f2" />
+                    <path d="M6 24c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="#5298f2" />
+                    <circle cx="30" cy="8" r="5" fill="#7eb3f8" />
+                    <path d="M22 24c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="#7eb3f8" />
+                    <circle cx="22" cy="11" r="5" fill="#307ee0" />
+                    <path d="M14 27c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="#307ee0" />
+                  </svg>
+                ) : (
+                  current.left.icon
+                )}
+              </div>
             </div>
-            <em className="mvp-flipbook-quote">&ldquo;{current.right.quote}&rdquo;</em>
+          </div>
+
+          {/* Book Spine */}
+          <div className="mvp-flipbook-spine" />
+
+          {/* Right Page */}
+          <div className="mvp-flipbook-page mvp-flipbook-right" key={`r-${page}`}>
+            <div className="mvp-flipbook-page-inner">
+              <h4 className="mvp-flipbook-canvas-title">{current.right.title}</h4>
+              {page === 1 ? (
+                <div className="mvp-persona-body">
+                  <div className="mvp-persona-left-col">
+                    <div className="mvp-persona-avatar-badge" aria-hidden="true">
+                      <UserRound size={26} />
+                    </div>
+                    <div className="mvp-persona-lines" aria-hidden="true">
+                      <span className="line-sm" />
+                      <span className="line-md" />
+                      <span className="line-sm" />
+                    </div>
+                  </div>
+                  <div className="mvp-persona-right-col">
+                    {current.right.fields.map((f, i) => (
+                      <div key={i} className="mvp-flipbook-field">
+                        <span>{f}</span>
+                        <div className="mvp-flipbook-field-line" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <div className="mvp-flipbook-fields">
+                  {current.right.fields.map((f, i) => (
+                    <div key={i} className="mvp-flipbook-field">
+                      <span>{f}</span>
+                      <div className="mvp-flipbook-field-line" />
+                    </div>
+                  ))}
+                </div>
+              )}
+              <em className="mvp-flipbook-quote">
+                &ldquo;Real products <br /> solve real problems.&rdquo;
+              </em>
+            </div>
           </div>
         </div>
-        <button className="mvp-flipbook-prev" onClick={() => go(-1)} aria-label="Previous page">
-          <ChevronLeft />
-        </button>
-        <button className="mvp-flipbook-next" onClick={() => go(1)} aria-label="Next page">
-          <ChevronRight />
-        </button>
+
+        {/* Right Dark Sidebar with Next Button and Fullscreen */}
+        <div className="mvp-flipbook-side mvp-flipbook-side-right">
+          <button
+            className="mvp-flipbook-circle-btn mvp-flipbook-next"
+            onClick={() => go(1)}
+            aria-label="Next page"
+          >
+            <ChevronRight />
+          </button>
+          <button
+            className="mvp-flipbook-fullscreen-btn"
+            onClick={() => setIsFullscreen(true)}
+            aria-label="Fullscreen"
+          >
+            <Maximize2 />
+          </button>
+        </div>
       </div>
+
+      {/* Bottom Toolbar with Centered Dots and Counter */}
       <div className="mvp-flipbook-bottom">
         <div className="mvp-flipbook-dots">
           {pages.map((_, i) => (
@@ -173,20 +259,8 @@ export default function FlipBook() {
           ))}
         </div>
         <span className="mvp-flipbook-counter">
-          {String(page + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
+          {String(page + 1).padStart(2, "0")} / 11
         </span>
-        <div className="mvp-flipbook-actions">
-          <button
-            className={`mvp-flipbook-autoplay ${isAutoPlay ? "active" : ""}`}
-            onClick={toggleAutoPlay}
-            aria-label="Auto play"
-          >
-            {isAutoPlay ? "⏸" : "▶"}
-          </button>
-          <button className="mvp-flipbook-fullscreen" onClick={() => setIsFullscreen(true)} aria-label="Fullscreen">
-            <Maximize2 />
-          </button>
-        </div>
       </div>
     </>
   );

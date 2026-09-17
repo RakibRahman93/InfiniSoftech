@@ -20,6 +20,7 @@ import {
   BarChart3,
   BookOpen,
   Box,
+  Briefcase,
   Check,
   CheckCircle2,
   ChevronDown,
@@ -27,8 +28,10 @@ import {
   ClipboardList,
   Crosshair,
   Download,
+  FileText,
   Gauge,
   Gift,
+  Hourglass,
   Lightbulb,
   List,
   LockKeyhole,
@@ -36,8 +39,10 @@ import {
   PackageCheck,
   Play,
   Rocket,
+  Settings,
   ShieldCheck,
   ShoppingCart,
+  Smartphone,
   Star,
   Target,
   UserRound,
@@ -57,7 +62,7 @@ const roadmap = [
     "Find and understand your earliest users.",
   ],
   [
-    ClipboardList,
+    FileText,
     "Craft Your Value Proposition",
     "Communicate real value, not just features.",
   ],
@@ -162,6 +167,7 @@ export default function DigitalProductMvpPage() {
         {/* ===== Hero Section ===== */}
         <section className="mvp-hero">
           <div className="mvp-hero-background" aria-hidden="true" />
+          <div className="mvp-hero-bg-art" aria-hidden="true" />
 
           <div className="mvp-shell">
             <div className="mvp-hero-grid">
@@ -329,7 +335,17 @@ export default function DigitalProductMvpPage() {
               </StaggerContainer>
             </div>
             <div className="mvp-warning">
-              ⚠ <strong>The cost isn&apos;t only money.</strong> It&apos;s
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="#C02B13"
+                aria-hidden="true"
+                style={{ display: "inline-block", verticalAlign: "-3px", marginRight: "7px" }}
+              >
+                <path d="M12 2L1 21h22L12 2zm0 3.8l8.5 14.2H3.5L12 5.8zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z" />
+              </svg>
+              <strong>The cost isn&apos;t only money.</strong> It&apos;s
               months of learning lost.
             </div>
           </div>
@@ -354,33 +370,50 @@ export default function DigitalProductMvpPage() {
             </FadeUp>
             <div className="mvp-transform-timeline">
               {[
-                [Lightbulb, "Vague Idea"],
-                [ClipboardList, "Clear Problem"],
-                [Users, "Core Customer"],
-                [Gift, "Value Proposition"],
-                [Box, "Lean Features"],
-                [BarChart3, "Real Feedback"],
-              ].map(([Icon, label], index) => (
-                <Fragment key={label}>
+                { icon: <Lightbulb />, label: "Vague Idea" },
+                { icon: <FileText />, label: "Clear Problem" },
+                { icon: <Users />, label: "Core Customer" },
+                { icon: <Gift />, label: "Value Proposition" },
+                { icon: <Settings />, label: "Lean Features" },
+                {
+                  icon: (
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <rect x="2" y="11" width="3.6" height="7" rx="1.8" fill="currentColor" />
+                      <rect x="8.2" y="6.5" width="3.6" height="11.5" rx="1.8" fill="currentColor" />
+                      <rect x="14.4" y="2" width="3.6" height="16" rx="1.8" fill="currentColor" />
+                    </svg>
+                  ),
+                  label: "Real Feedback",
+                },
+              ].map((step, index) => (
+                <Fragment key={step.label}>
                   <div className="mvp-transform-step-wrap">
                     <StaggerItem>
                       <div className="mvp-transform-step">
                         <div className="mvp-transform-icon">
-                          <Icon />
+                          {step.icon}
                         </div>
-                        <span className="mvp-transform-label">{label}</span>
+                        <span className="mvp-transform-label">{step.label}</span>
                       </div>
                     </StaggerItem>
                   </div>
                   {index < 5 && (
-                    <div className="mvp-transform-arrow">
-                      <ArrowRight />
+                    <div className="mvp-transform-arrow" aria-hidden="true">
+                      <svg width="28" height="12" viewBox="0 0 28 12" fill="none">
+                        <line x1="1" y1="6" x2="23" y2="6" stroke="#4ecaff" strokeWidth="1.6" strokeLinecap="round" />
+                        <path d="M19 2.5L23.5 6L19 9.5" stroke="#4ecaff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
                     </div>
                   )}
                 </Fragment>
               ))}
-              <div className="mvp-transform-rocket">
-                <Rocket />
+              <div className="mvp-transform-rocket" aria-hidden="true">
                 <span className="mvp-transform-handwritten">
                   Ideas to
                   <br />
@@ -434,8 +467,25 @@ export default function DigitalProductMvpPage() {
                   book.
                 </p>
                 <GlowPulse>
-                  <a href="#inside" className="mvp-btn mvp-btn-primary">
-                    <BookOpen /> Open Interactive Preview
+                  <a
+                    href="#preview"
+                    className="mvp-btn mvp-btn-primary"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.dispatchEvent(new CustomEvent("open-flipbook-modal"));
+                    }}
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M11 4H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7V4z" />
+                      <path d="M13 4h7a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-7V4z" />
+                    </svg>
+                    Open Interactive Preview
                   </a>
                 </GlowPulse>
                 <small>Preview includes selected pages only.</small>
@@ -454,8 +504,8 @@ export default function DigitalProductMvpPage() {
               <div>
                 <Eyebrow>What Is Inside</Eyebrow>
                 <h2>
-                  Practical Templates. <br />
-                  Real Guidance.
+                  <span className="mvp-inside-h2-line">Practical Templates.</span>
+                  <span className="mvp-inside-h2-line">Real Guidance.</span>
                 </h2>
                 <p>
                   A focused, beautifully designed guide with worksheets and
@@ -508,33 +558,57 @@ export default function DigitalProductMvpPage() {
             </FadeUp>
             <StaggerContainer className="mvp-audience-grid">
               {[
-                [
-                  UserRound,
-                  "Founders & Co-Founders",
-                  "Validate ideas before investing serious time and money.",
-                ],
-                [
-                  ShoppingCart,
-                  "Product Owners",
-                  "Use a structured approach to build what matters.",
-                ],
-                [
-                  Rocket,
-                  "Entrepreneurs",
-                  "Turn ideas into real solutions with less risk.",
-                ],
-                [
-                  ClipboardList,
-                  "Early-Stage Builders",
-                  "Get clarity, focus and momentum.",
-                ],
-              ].map(([Icon, title, text]) => (
+                {
+                  icon: (
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="#0878e8" aria-hidden="true">
+                      <circle cx="12" cy="6.5" r="4.2" />
+                      <path d="M4 20.2c0-4.4 3.6-7.2 8-7.2s8 2.8 8 7.2v.8H4v-.8z" />
+                    </svg>
+                  ),
+                  title: "Founders & Co-Founders",
+                  text: "Validate ideas before investing serious time and money.",
+                },
+                {
+                  icon: (
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="#0878e8" aria-hidden="true">
+                      <path d="M12 2a4 4 0 0 1 4 4c0 1.2-.5 2.3-1.3 3l-.7.6V11h-4V9.6l-.7-.6C8.5 8.3 8 7.2 8 6a4 4 0 0 1 4-4z" />
+                      <path d="M4 17.5c0-2.8 2.2-4.8 5-4.8h6c2.8 0 5 2 5 4.8v3.5H4v-3.5z" />
+                      <path d="M10.8 13h2.4v3.5l-1.2 1-1.2-1V13z" fill="#ffffff" />
+                    </svg>
+                  ),
+                  title: "Product Owners",
+                  text: "Use a structured approach to build what matters.",
+                },
+                {
+                  icon: (
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="#0878e8" aria-hidden="true">
+                      <circle cx="12" cy="4.8" r="3.2" />
+                      <path d="M7 9.5c0 2.8 3.5 4.8 5 5.7 1.5-.9 5-2.9 5-5.7H7z" />
+                      <path d="M6 20.2c0-2.8 4-4.8 6-5.8 2 1 6 3 6 5.8v.8H6v-.8z" />
+                    </svg>
+                  ),
+                  title: "Entrepreneurs",
+                  text: "Turn ideas into real solutions with less risk.",
+                },
+                {
+                  icon: (
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <rect x="4.5" y="2" width="15" height="20" rx="3.5" fill="#0878e8" />
+                      <rect x="7" y="4.5" width="10" height="12" rx="1.5" fill="#ffffff" />
+                      <circle cx="12" cy="19" r="1" fill="#ffffff" />
+                      <path d="M9 7.5h6M9 10.5h4M9 13.5h5" stroke="#0878e8" strokeWidth="1.4" strokeLinecap="round" />
+                    </svg>
+                  ),
+                  title: "Early-Stage Builders",
+                  text: "Get clarity, focus and momentum.",
+                },
+              ].map(({ icon, title, text }) => (
                 <StaggerItem key={title}>
                   <article>
                     <div className="mvp-audience-icon">
-                      <Icon />
+                      {icon}
                     </div>
-                    <div>
+                    <div className="mvp-audience-content">
                       <h3>{title}</h3>
                       <p>{text}</p>
                     </div>
@@ -570,12 +644,15 @@ export default function DigitalProductMvpPage() {
               </div>
             </ScaleReveal>
             <FadeUp delay={0.3}>
-              <Image
-                src="/assets/images/mvp/logo-mvp.png"
-                alt="InfiniSoft Technology"
-                width={190}
-                height={44}
-              />
+              <div className="mvp-author-brand">
+                <Image
+                  src="/assets/images/mvp/logo-mvp.png"
+                  alt="InfiniSoft Technology"
+                  width={180}
+                  height={42}
+                />
+                <span className="mvp-author-tagline">Build Smarter. Scale Faster.</span>
+              </div>
             </FadeUp>
           </div>
         </section>
@@ -732,16 +809,18 @@ export default function DigitalProductMvpPage() {
                       Get the MVP Playbook <ArrowRight />
                     </a>
                   </GlowPulse>
-                  <small>Start smarter. Learn faster.</small>
+                  <small>Start smaller. Learn faster. Build smarter.</small>
                 </div>
               </FadeUp>
             </div>
             <SlideReveal from="right" delay={0.2}>
               <div className="mvp-closing-right">
-                <Rocket />
                 <blockquote>
-                  &ldquo;A clearer path to a brighter future starts
-                  here.&rdquo;
+                  &ldquo;A clearer
+                  <br />
+                  brighter future
+                  <br />
+                  starts here.&rdquo;
                 </blockquote>
               </div>
             </SlideReveal>
