@@ -1,6 +1,7 @@
 import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
 import Home6 from "@/components/homes/home-6";
+import FooterTop from "@/components/homes/home-6/FooterTop";
 import Hero1 from "@/components/homes/home-6/heros/Hero1";
 import { fancyMultipage } from "@/data/menu";
 import { Toaster } from "react-hot-toast";
@@ -39,6 +40,7 @@ export default function Home6MainDemoMultiPage({}) {
 
             <Home6 />
           </main>
+          <FooterTop />
           <footer
             className="footer bg-dark-1 light-content py-5"
             style={{
