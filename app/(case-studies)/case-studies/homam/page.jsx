@@ -57,6 +57,54 @@ const features = [
   { icon: LayoutDashboard, title: "Admin dashboard", text: "Easy product and content management." },
 ];
 
+const experienceHighlights = [
+  { icon: Search, title: "Easy Product Discovery", text: "Browse by country, skin concern, category, and trusted brands to find the right products faster." },
+  { icon: ShieldCheck, title: "Shop With Confidence", text: "Clear authenticity cues, secure payments, and product information help customers make informed decisions." },
+  { icon: PackageCheck, title: "Convenient Shopping", text: "From consultation to cart and nationwide delivery, every step feels simple." },
+];
+
+const globalBeautyHighlights = [
+  { icon: Globe2, title: "Discover Global Brands", text: "Explore handpicked products from your favorite beauty destinations." },
+  { icon: ShieldCheck, title: "Authentic & Trusted", text: "100% original products from verified international brands and distributors." },
+  { icon: Tag, title: "Find What Suits You", text: "Compare products, read details, and choose the best for your routine — by country, by need." },
+];
+
+const bestSellerHighlights = [
+  { icon: ShoppingBag, title: "Curated Selections", text: "Discover top-rated products chosen by real customers for real results." },
+  { icon: Sparkles, title: "Real-Time Availability", text: "See stock status and make confident shopping decisions without the guesswork." },
+  { icon: Globe2, title: "Global Beauty, One Place", text: "Explore authentic products from Korea, Japan, Thailand, India, the UK, the USA and more." },
+];
+
+const bundleHighlights = [
+  { icon: Boxes, title: "Complete Routines", text: "Expertly curated bundles for targeted skincare goals." },
+  { icon: Tag, title: "Better Value", text: "Get more of what you love with exclusive bundle savings." },
+  { icon: Leaf, title: "Trusted & Authentic", text: "100% original products from globally trusted brands." },
+];
+
+const discoveryHighlights = [
+  { icon: LayoutDashboard, title: "Browse by Category", text: "Explore top categories like serum, moisturizer, cleanser, toner and more — all in one place." },
+  { icon: Filter, title: "Smart Filters", text: "Refine by skin concern, country, brand, gender and availability to find your perfect match." },
+  { icon: ShoppingBag, title: "Product Details at a Glance", text: "See real product images, prices, stock status and best seller tags to shop with confidence." },
+];
+
+const navigationHighlights = [
+  { icon: Search, title: "Explore Multiple Ways", text: "Browse by country, category or skin concern to find the right products faster." },
+  { icon: Boxes, title: "Curated Collections", text: "Discover bestsellers, new arrivals and complete routines for every need." },
+  { icon: ShieldCheck, title: "Authentic & Global", text: "Shop trusted beauty brands from Korea, India, Thailand, the UK, the USA and more." },
+];
+
+const consultationHighlights = [
+  { icon: UserRound, title: "Expert-Led Guidance", text: "Get personalized recommendations from experienced beauty advisors." },
+  { icon: Sparkles, title: "Tailored to Your Needs", text: "Share your skin type, concerns and budget to find the perfect routine." },
+  { icon: ShieldCheck, title: "Secure & Confidential", text: "Your information is safe and only used for consultation purposes." },
+];
+
+const dashboardHighlights = [
+  { icon: Gauge, title: "Real-Time Insights", text: "Track revenue, orders, customers and inventory at a glance." },
+  { icon: Boxes, title: "Quick Store Management", text: "Add products, manage orders, handle customers and more — all in one place." },
+  { icon: UserRound, title: "Grow with Confidence", text: "Make data-driven decisions and deliver a better shopping experience." },
+];
+
 export const metadata = {
   title: "HOMAM Skincare E-commerce Case Study | InfiniSoft",
   description: "How InfiniSoft designed a trust-first, conversion-focused skincare shopping experience for HOMAM.",
@@ -76,7 +124,7 @@ export default function HomamCaseStudyPage() {
   return (
     <div className="theme-fancy homam-case-study">
       <div className="page" id="top">
-        <nav className="main-nav transparent stick-fixed wow-menubar wch-unset">
+        <nav className="main-nav stick-fixed wow-menubar wch-unset">
           <Header6 links={fancyMultipage} />
         </nav>
 
@@ -107,6 +155,276 @@ export default function HomamCaseStudyPage() {
                 <div className="homam-hero-media">
                   <div className="homam-orb" />
                   <Image src="/assets/images/demo-fancy/homam-showcase.png" alt="HOMAM store on laptop and mobile" width={1776} height={887} priority />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="homam-experience" id="homam-experience" aria-labelledby="homam-experience-title">
+            <div className="homam-experience-grid">
+              <div className="homam-experience-visual">
+                <Image
+                  src="/assets/images/demo-fancy/homam-case-study-1.png"
+                  alt="Homam beauty store homepage featuring skincare products and shopping benefits"
+                  fill
+                  sizes="100vw"
+                  unoptimized
+                />
+              </div>
+              <div className="homam-experience-copy">
+                <div className="homam-experience-inner">
+                  <span className="homam-experience-eyebrow">The Homam Experience</span>
+                  <h2 id="homam-experience-title">Everything you need to shop with <em>confidence</em></h2>
+                  <p>Explore authentic beauty products from trusted brands, discover what suits your skin, and move from browsing to checkout through a simple, reassuring shopping experience.</p>
+                  <div className="homam-experience-highlights">
+                    {experienceHighlights.map(({ icon: Icon, title, text }, index) => (
+                      <article className="homam-experience-highlight" key={title}>
+                        <span className="homam-experience-icon"><Icon aria-hidden="true" /></span>
+                        <div><h3>{title}</h3><p>{text}</p></div>
+                        <span className="homam-experience-number">0{index + 1}</span>
+                      </article>
+                    ))}
+                  </div>
+                  <div className="homam-experience-badges" aria-label="Shopping benefits">
+                    <span><Leaf aria-hidden="true" /> 100% Original Products</span>
+                    <span><LockKeyhole aria-hidden="true" /> Secure Payments</span>
+                    <span><PackageCheck aria-hidden="true" /> Nationwide Delivery</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="homam-experience homam-global-beauty" aria-labelledby="homam-global-beauty-title">
+            <div className="homam-experience-grid">
+              <div className="homam-experience-visual">
+                <Image
+                  src="/assets/images/demo-fancy/homam-case-study-2.png"
+                  alt="Homam shop by country experience with skincare collections from Korea, India, Thailand, the UK, and the USA"
+                  fill
+                  sizes="100vw"
+                  unoptimized
+                />
+              </div>
+              <div className="homam-experience-copy">
+                <div className="homam-experience-inner">
+                  <span className="homam-experience-eyebrow">Curated Global Beauty</span>
+                  <h2 id="homam-global-beauty-title">Explore beauty from around <em>the world</em></h2>
+                  <p>Discover authentic skincare and beauty products from Korea, India, Thailand, the UK, the USA and more — all in one place. Browse by country to explore trusted brands, unique formulations and beauty traditions tailored to your needs.</p>
+                  <div className="homam-experience-highlights">
+                    {globalBeautyHighlights.map(({ icon: Icon, title, text }, index) => (
+                      <article className="homam-experience-highlight" key={title}>
+                        <span className="homam-experience-icon"><Icon aria-hidden="true" /></span>
+                        <div><h3>{title}</h3><p>{text}</p></div>
+                        <span className="homam-experience-number">0{index + 1}</span>
+                      </article>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="homam-experience homam-best-sellers" aria-labelledby="homam-best-sellers-title">
+            <div className="homam-experience-grid">
+              <div className="homam-experience-visual">
+                <Image
+                  src="/assets/images/demo-fancy/homam-case-study-3.png"
+                  alt="Homam best sellers storefront showing a selection of popular skincare products"
+                  fill
+                  sizes="100vw"
+                  unoptimized
+                />
+              </div>
+              <div className="homam-experience-copy">
+                <div className="homam-experience-inner">
+                  <span className="homam-experience-eyebrow">Shopping Made Simple</span>
+                  <h2 id="homam-best-sellers-title">Handpicked best sellers. <em>Loved worldwide.</em></h2>
+                  <p>Explore customer-favourite skincare and beauty essentials, carefully curated from trusted global brands. Find what works for you — with clear product details, real availability, and a smoother shopping experience.</p>
+                  <div className="homam-experience-highlights">
+                    {bestSellerHighlights.map(({ icon: Icon, title, text }, index) => (
+                      <article className="homam-experience-highlight" key={title}>
+                        <span className="homam-experience-icon"><Icon aria-hidden="true" /></span>
+                        <div><h3>{title}</h3><p>{text}</p></div>
+                        <span className="homam-experience-number">0{index + 1}</span>
+                      </article>
+                    ))}
+                  </div>
+                  <div className="homam-experience-badges" aria-label="Shopping benefits">
+                    <span><Leaf aria-hidden="true" /> 100% Original Products</span>
+                    <span><ShieldCheck aria-hidden="true" /> Secure Payments</span>
+                    <span><PackageCheck aria-hidden="true" /> Nationwide Delivery</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="homam-experience homam-bundles" aria-labelledby="homam-bundles-title">
+            <div className="homam-experience-grid">
+              <div className="homam-experience-visual">
+                <Image
+                  src="/assets/images/demo-fancy/homam-case-study-4.png"
+                  alt="Homam bundle deals storefront showing curated skincare routines and savings"
+                  fill
+                  sizes="100vw"
+                  unoptimized
+                />
+              </div>
+              <div className="homam-experience-copy">
+                <div className="homam-experience-inner">
+                  <span className="homam-experience-eyebrow">More Value, More Radiance</span>
+                  <h2 id="homam-bundles-title">Curated bundle deals for every <em>beauty journey</em></h2>
+                  <p>Save more with thoughtfully curated bundles, designed for real skincare needs. From brightening to anti-aging, find complete routines with trusted global brands — all in one place.</p>
+                  <div className="homam-experience-highlights">
+                    {bundleHighlights.map(({ icon: Icon, title, text }, index) => (
+                      <article className="homam-experience-highlight" key={title}>
+                        <span className="homam-experience-icon"><Icon aria-hidden="true" /></span>
+                        <div><h3>{title}</h3><p>{text}</p></div>
+                        <span className="homam-experience-number">0{index + 1}</span>
+                      </article>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="homam-experience homam-discovery" aria-labelledby="homam-discovery-title">
+            <div className="homam-experience-grid">
+              <div className="homam-experience-visual">
+                <Image
+                  src="/assets/images/demo-fancy/homam-case-study-5.png"
+                  alt="Homam skincare catalog with product categories, filters, and detailed product cards"
+                  fill
+                  sizes="100vw"
+                  unoptimized
+                />
+              </div>
+              <div className="homam-experience-copy">
+                <div className="homam-experience-inner">
+                  <span className="homam-experience-eyebrow">A Seamless Shopping Experience</span>
+                  <h2 id="homam-discovery-title">Make skincare <em>discovery effortless</em></h2>
+                  <p>Explore a wide range of authentic skincare products with intuitive filters, curated categories and detailed product information — all designed to help you find exactly what your skin needs.</p>
+                  <div className="homam-experience-highlights">
+                    {discoveryHighlights.map(({ icon: Icon, title, text }, index) => (
+                      <article className="homam-experience-highlight" key={title}>
+                        <span className="homam-experience-icon"><Icon aria-hidden="true" /></span>
+                        <div><h3>{title}</h3><p>{text}</p></div>
+                        <span className="homam-experience-number">0{index + 1}</span>
+                      </article>
+                    ))}
+                  </div>
+                  <div className="homam-experience-badges" aria-label="Shopping benefits">
+                    <span><Leaf aria-hidden="true" /> 100% Original Products</span>
+                    <span><ShieldCheck aria-hidden="true" /> Secure Payments</span>
+                    <span><PackageCheck aria-hidden="true" /> Nationwide Delivery</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="homam-experience homam-navigation" aria-labelledby="homam-navigation-title">
+            <div className="homam-experience-grid">
+              <div className="homam-experience-visual">
+                <Image
+                  src="/assets/images/demo-fancy/homam-case-study-6.png"
+                  alt="Homam store navigation with shopping by country, category, skin concern and curated collections"
+                  fill
+                  sizes="100vw"
+                  unoptimized
+                />
+              </div>
+              <div className="homam-experience-copy">
+                <div className="homam-experience-inner">
+                  <span className="homam-experience-eyebrow">A World of Beauty, Organized for You</span>
+                  <h2 id="homam-navigation-title">Find exactly what you need, <em>with ease</em></h2>
+                  <p>Shop by country, category or skin concern and discover carefully curated collections. A simpler way to explore authentic global beauty — all in one place.</p>
+                  <div className="homam-experience-highlights">
+                    {navigationHighlights.map(({ icon: Icon, title, text }, index) => (
+                      <article className="homam-experience-highlight" key={title}>
+                        <span className="homam-experience-icon"><Icon aria-hidden="true" /></span>
+                        <div><h3>{title}</h3><p>{text}</p></div>
+                        <span className="homam-experience-number">0{index + 1}</span>
+                      </article>
+                    ))}
+                  </div>
+                  <div className="homam-experience-badges" aria-label="Shopping benefits">
+                    <span><ShieldCheck aria-hidden="true" /> 100% Original Products</span>
+                    <span><PackageCheck aria-hidden="true" /> Nationwide Delivery</span>
+                    <span><LockKeyhole aria-hidden="true" /> Secure Payments</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="homam-experience homam-consultation" aria-labelledby="homam-consultation-title">
+            <div className="homam-experience-grid">
+              <div className="homam-experience-visual">
+                <Image
+                  src="/assets/images/demo-fancy/homam-case-study-7.png"
+                  alt="Homam personalized skincare consultation page and booking form"
+                  fill
+                  sizes="100vw"
+                  unoptimized
+                />
+              </div>
+              <div className="homam-experience-copy">
+                <div className="homam-experience-inner">
+                  <span className="homam-experience-eyebrow">Expert Guidance, Just for You</span>
+                  <h2 id="homam-consultation-title">Your Personal Skincare Consultation, <em>Made Simple</em></h2>
+                  <p>Get expert advice tailored to your skin type, concerns and budget. Share a few details, and our beauty advisors will recommend the right products and routines — all in one easy consultation.</p>
+                  <div className="homam-experience-highlights">
+                    {consultationHighlights.map(({ icon: Icon, title, text }, index) => (
+                      <article className="homam-experience-highlight" key={title}>
+                        <span className="homam-experience-icon"><Icon aria-hidden="true" /></span>
+                        <div><h3>{title}</h3><p>{text}</p></div>
+                        <span className="homam-experience-number">0{index + 1}</span>
+                      </article>
+                    ))}
+                  </div>
+                  <div className="homam-experience-badges" aria-label="Consultation benefits">
+                    <span><Leaf aria-hidden="true" /> 100% Original Products</span>
+                    <span><ShieldCheck aria-hidden="true" /> Secure Your Information</span>
+                    <span><UserRound aria-hidden="true" /> Dedicated Support</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="homam-experience homam-dashboard" aria-labelledby="homam-dashboard-title">
+            <div className="homam-experience-grid">
+              <div className="homam-experience-visual">
+                <Image
+                  src="/assets/images/demo-fancy/homam-case-study-8.png"
+                  alt="Homam store dashboard with revenue, orders, customer, inventory, and consultation insights"
+                  fill
+                  sizes="100vw"
+                  unoptimized
+                />
+              </div>
+              <div className="homam-experience-copy">
+                <div className="homam-experience-inner">
+                  <span className="homam-experience-eyebrow">Powerful Tools, Smoother Operations</span>
+                  <h2 id="homam-dashboard-title">A Smarter Way to Manage Your <em>Beauty Business</em></h2>
+                  <p>Get a complete view of your store performance, manage products, orders, customers and consultations — all from a clean, easy-to-use dashboard.</p>
+                  <div className="homam-experience-highlights">
+                    {dashboardHighlights.map(({ icon: Icon, title, text }, index) => (
+                      <article className="homam-experience-highlight" key={title}>
+                        <span className="homam-experience-icon"><Icon aria-hidden="true" /></span>
+                        <div><h3>{title}</h3><p>{text}</p></div>
+                        <span className="homam-experience-number">0{index + 1}</span>
+                      </article>
+                    ))}
+                  </div>
+                  <div className="homam-experience-badges" aria-label="Dashboard benefits">
+                    <span><ShieldCheck aria-hidden="true" /> Secure &amp; Reliable</span>
+                    <span><Zap aria-hidden="true" /> Built for Growth</span>
+                    <span><Gauge aria-hidden="true" /> All-in-One Control</span>
+                  </div>
                 </div>
               </div>
             </div>

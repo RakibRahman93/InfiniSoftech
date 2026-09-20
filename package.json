@@ -3,17 +3,20 @@
   "version": "5.3.5",
   "private": true,
   "scripts": {
+    "higgsfield:generate": "node --experimental-strip-types index.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@higgsfield/client": "^0.2.6",
     "@popperjs/core": "2.11.8",
     "@supabase/supabase-js": "^2.49.8",
     "autoprefixer": "^10.5.4",
     "bootstrap": "^5.1.3",
     "cors": "^2.8.5",
+    "dotenv": "^18.0.1",
     "framer-motion": "^13.4.0",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",
