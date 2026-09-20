@@ -5167,6 +5167,55 @@ body.appear-animate .pricing-slide-design {
   font-weight: 600;
 }
 
+.recent-client-work-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.recent-client-work-controls > button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #e1e3f0;
+  border-radius: 50%;
+  background: #fff;
+  color: #596587;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.recent-client-work-controls > button:hover,
+.recent-client-work-controls > button:focus-visible {
+  border-color: #9a69e9;
+  color: #9a69e9;
+  transform: translateY(-2px);
+}
+
+.recent-client-work-dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.recent-client-work-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #d9dced;
+}
+
+.recent-client-work-dots button.is-active {
+  width: 26px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e75778, #8876ff);
+}
+
 @media (max-width: 1199px) {
   .recent-client-work-card {
     grid-template-columns: 1.35fr 1fr;
