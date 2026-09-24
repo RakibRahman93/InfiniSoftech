@@ -1,12 +1,15 @@
 import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
 import FooterTop from "@/components/homes/home-6/FooterTop";
+import HomamSliderControls from "@/components/homam/HomamSliderControls";
 import { fancyMultipage } from "@/data/menu";
 import {
-  ArrowLeft,
   ArrowRight,
+  BarChart3,
   Boxes,
   CheckCircle2,
+  CirclePlay,
+  CircleUserRound,
   ExternalLink,
   Filter,
   Gauge,
@@ -14,47 +17,45 @@ import {
   LayoutDashboard,
   Leaf,
   LockKeyhole,
-  MonitorSmartphone,
   PackageCheck,
   Search,
   ShieldCheck,
   ShoppingBag,
   ShoppingCart,
-  Smartphone,
   Sparkles,
   Tag,
   UserRound,
+  UsersRound,
+  XCircle,
   Zap,
 } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
-const goals = [
-  { icon: ShieldCheck, title: "Build customer trust", text: "Showcase authentic products with transparent information." },
-  { icon: Search, title: "Simplify product discovery", text: "Make it easy to find the right products for individual skin goals." },
-  { icon: ShoppingCart, title: "Create a frictionless purchase journey", text: "Deliver a smooth, secure shopping experience from browsing to checkout." },
+const challengeFlow = [
+  { icon: Boxes, title: "A Large Catalog", text: "Thousands of products across countries, brands and categories" },
+  { icon: Search, title: "Discovery", text: "Help customers find relevant products faster" },
+  { icon: ShieldCheck, title: "Confidence", text: "Build trust with clear information and authenticity" },
+  { icon: ShoppingBag, title: "Purchase", text: "A smooth, secure checkout experience" },
 ];
 
-const challenges = [
-  { icon: ShoppingBag, title: "Too many choices", text: "A wide range of products can make it hard to find the right fit." },
-  { icon: Sparkles, title: "Uncertainty about authenticity", text: "Customers want to know they are buying genuine, high-quality skincare." },
-  { icon: ShoppingCart, title: "Complex shopping journeys", text: "Lengthy flows can cause shoppers to abandon their purchase." },
+const frictionPoints = [
+  { icon: LayoutDashboard, title: "Too many ways to choose", text: "Customers can shop by product category, country, brand, skin concern, routine and collection. Without a clear hierarchy, a large catalog can quickly become overwhelming." },
+  { icon: Search, title: "Finding the right product", text: "Beauty shopping is highly personal. A customer looking for pigmentation care, for example, needs a faster path to relevant products to trim unnecessary browsing." },
+  { icon: ShieldCheck, title: "Trust before purchase", text: "For imported skincare, authenticity, product origin, secure payment and clear product information are important confidence signals throughout the experience." },
+  { icon: ShoppingCart, title: "Moving from discovery to checkout", text: "The experience needs to connect browsing, product comparison, bundles, consultation, cart and checkout without making customers feel they are navigating separate systems." },
 ];
 
-const strategy = [
-  { icon: Search, title: "Discover", text: "Understand products and customer needs." },
-  { icon: LayoutDashboard, title: "Guide", text: "Make categories and information easy to navigate." },
-  { icon: ShieldCheck, title: "Reassure", text: "Highlight authenticity and trusted sourcing." },
-  { icon: ShoppingCart, title: "Convert", text: "Remove friction from cart to checkout." },
+const discoveryPaths = [
+  { icon: Globe2, title: "By Country" }, { icon: LayoutDashboard, title: "By Category" },
+  { icon: Sparkles, title: "By Skin Concern" }, { icon: Boxes, title: "Collections" },
+  { icon: CircleUserRound, title: "Personal Guidance" },
 ];
 
-const features = [
-  { icon: ShoppingBag, title: "Smart product catalog", text: "Organized, easy-to-browse product structure." },
-  { icon: Filter, title: "Advanced filtering", text: "Find the right products faster." },
-  { icon: MonitorSmartphone, title: "Responsive interface", text: "Seamless across every device." },
-  { icon: LockKeyhole, title: "Secure checkout", text: "Safe, reliable payment processing." },
-  { icon: PackageCheck, title: "Order management", text: "Streamlined order processing." },
-  { icon: LayoutDashboard, title: "Admin dashboard", text: "Easy product and content management." },
+const experienceGoals = [
+  { icon: Leaf, title: "Make discovery intuitive", text: "Create clear entry points for country, category, skin concern, collections and best sellers." },
+  { icon: ShieldCheck, title: "Build confidence throughout", text: "Surface authenticity, imported-product positioning, secure payment and useful product information where purchase decisions happen." },
+  { icon: UsersRound, title: "Support different shoppers", text: "Allow confident shoppers to browse directly while customers who need guidance can use skin-concern discovery or consultation." },
+  { icon: BarChart3, title: "Encourage higher-value shopping", text: "Introduce curated routines, bundles, complementary products and relevant recommendations naturally instead of relying only on individual product listings." },
 ];
 
 const experienceHighlights = [
@@ -110,16 +111,6 @@ export const metadata = {
   description: "How InfiniSoft designed a trust-first, conversion-focused skincare shopping experience for HOMAM.",
 };
 
-function SectionHeading({ eyebrow, children, intro }) {
-  return (
-    <div className="homam-heading">
-      <span>{eyebrow}</span>
-      <h2>{children}</h2>
-      {intro ? <p>{intro}</p> : null}
-    </div>
-  );
-}
-
 export default function HomamCaseStudyPage() {
   return (
     <div className="theme-fancy homam-case-study">
@@ -142,14 +133,9 @@ export default function HomamCaseStudyPage() {
                     <span className="homam-hero-line homam-hero-accent">can trust.</span>
                   </h1>
                   <p>A conversion-focused e-commerce platform designed to make product discovery simpler, purchasing faster, and authentic skincare easier to access.</p>
-                  <div className="homam-pills">
-                    <span><ShoppingBag /> E-commerce</span>
-                    <span><LayoutDashboard /> UX/UI Design</span>
-                    <span><MonitorSmartphone /> Web Development</span>
-                  </div>
                   <div className="homam-actions">
                     <a href="https://homam.shop" target="_blank" rel="noopener noreferrer" className="homam-button homam-button-primary">Visit Live Website <ExternalLink /></a>
-                    <a href="#project" className="homam-button homam-button-secondary">View the Process</a>
+                    <a href="#homam-experience" className="homam-button homam-button-secondary"><CirclePlay aria-hidden="true" />View Case Study</a>
                   </div>
                 </div>
                 <div className="homam-hero-media">
@@ -160,6 +146,125 @@ export default function HomamCaseStudyPage() {
             </div>
           </section>
 
+          <section className="homam-case-intro" aria-label="HOMAM case study introduction">
+            <div className="container">
+              <div className="homam-case-intro-banner">
+                <div className="homam-case-intro-mark" aria-hidden="true"><Sparkles /></div>
+                <div className="homam-case-intro-copy">
+                  <span>Inside the case study</span>
+                  <h2>From a crowded catalog to a guided beauty journey.</h2>
+                </div>
+                <dl className="homam-case-intro-facts">
+                  <div><dt>Client</dt><dd>HOMAM</dd></div>
+                  <div><dt>Industry</dt><dd>Beauty commerce</dd></div>
+                  <div><dt>Focus</dt><dd>Trust and discovery</dd></div>
+                </dl>
+              </div>
+            </div>
+          </section>
+
+          <section className="homam-section homam-challenge" id="challenge" aria-labelledby="homam-challenge-title">
+            <div className="container">
+              <div className="homam-challenge-opening">
+                <div className="homam-challenge-copy">
+                  <span className="homam-challenge-kicker"><b>01</b> The challenge <i /></span>
+                  <h2 id="homam-challenge-title">Making a large beauty catalog feel <span>simple, trustworthy and easy to shop.</span></h2>
+                  <p>HOMAM brings together skincare and beauty products across multiple countries, brands, categories and skin concerns. The challenge wasn&apos;t simply displaying more products. It was helping customers quickly understand where to start, find products relevant to them, trust what they were buying, and move confidently toward checkout.</p>
+                </div>
+                <div className="homam-challenge-flow" aria-label="From a large catalog to confident purchase">
+                  <span className="homam-script-note">From overwhelming<br />to effortless</span>
+                  <div className="homam-flow-row">
+                    {challengeFlow.map(({ icon: Icon, title, text }, index) => <div className="homam-flow-step" key={title}><span className="homam-flow-icon"><Icon aria-hidden="true" /></span><h3>{title}</h3><p>{text}</p>{index < challengeFlow.length - 1 ? <ArrowRight className="homam-flow-arrow" aria-hidden="true" /> : null}</div>)}
+                  </div>
+                </div>
+                <div className="homam-challenge-photo">
+                  <Image src="/assets/images/demo-fancy/homam-challenge-products.png" alt="Olive serum and skincare cream arranged on travertine with green leaves" fill sizes="(max-width: 900px) 100vw, 24vw" />
+                  <span>Beauty<br />without<br />borders</span>
+                </div>
+              </div>
+
+              <div className="homam-challenge-panel homam-friction-panel">
+                <div className="homam-panel-heading"><span><b>02</b> Where the friction happens <i /></span><small>Real customer pain points</small></div>
+                <div className="homam-friction-grid">
+                  {frictionPoints.map(({ icon: Icon, title, text }, index) => <article key={title}><div><span className="homam-card-icon"><Icon aria-hidden="true" /></span><b>0{index + 1}</b></div><h3>{title}</h3><p>{text}</p></article>)}
+                </div>
+              </div>
+
+              <div className="homam-ux-grid">
+                <div className="homam-ux-copy">
+                  <div className="homam-panel-heading"><span><b>03</b> The UX challenge <i /></span></div>
+                  <h3>One storefront.<br />Multiple ways to find<br />the right product.</h3>
+                  <p>We needed to design an experience that works for different types of shoppers, from first-time visitors to skincare experts, with flexible entry points and a clear path to purchase.</p>
+                  <div className="homam-ux-quote"><span className="homam-card-icon"><Leaf /></span><p>Different journeys.<br />Same beautiful destination.</p></div>
+                </div>
+                <div className="homam-journey-map">
+                  <svg className="homam-journey-lines" viewBox="0 0 600 360" preserveAspectRatio="none" aria-hidden="true">
+                    <defs>
+                      <marker id="homam-arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10" fill="none" stroke="#6f8e75" strokeWidth="1.5" /></marker>
+                    </defs>
+                    <g className="homam-lines-top">
+                      <path d="M60 72 C66 112 94 123 150 126 C210 129 238 143 252 178" />
+                      <path d="M180 72 C180 105 195 125 220 130 C252 136 265 142 274 174" />
+                      <path d="M300 72 C300 105 298 140 305 176" />
+                      <path d="M420 72 C420 105 405 125 380 130 C348 136 335 142 326 174" />
+                      <path d="M540 72 C534 112 506 123 450 126 C390 129 362 143 348 178" />
+                    </g>
+                    <g className="homam-lines-bottom">
+                      <path d="M300 222 L300 246" markerEnd="url(#homam-arrow-green)" />
+                      <path d="M300 246 L300 270" />
+                      <path d="M300 252 L60 252 Q48 252 48 264 L48 272" />
+                      <path d="M300 252 L540 252 Q552 252 552 264 L552 272" />
+                    </g>
+                  </svg>
+                  <div className="homam-paths">{discoveryPaths.map(({ icon: Icon, title }) => <article key={title}><span><Icon /></span><b>{title}</b></article>)}</div>
+                  <div className="homam-map-customer"><span><CircleUserRound /></span><b>Customer</b><small>Different needs. One place.</small></div>
+                  <div className="homam-map-results"><article><span><Search /></span><b>Relevant Products</b><small>Curated results that match their needs</small></article><article><span><PackageCheck /></span><b>Product Details</b><small>Clear information, reviews and recommendations</small></article><article><span><ShoppingCart /></span><b>Secure Checkout</b><small>A seamless and trusted purchase experience</small></article></div>
+                </div>
+                <div className="homam-phone-preview" aria-label="HOMAM mobile storefront preview">
+                  <Image className="homam-phone-screen" src="/assets/images/demo-fancy/homam-mobile-homepage.png" alt="HOMAM mobile storefront homepage" fill sizes="250px" />
+                </div>
+              </div>
+
+              <div className="homam-challenge-panel homam-goals-panel">
+                <div className="homam-panel-heading"><span><b>04</b> What the experience needed to achieve <i /></span><small>A better shopping experience</small></div>
+                <div className="homam-goals-grid">{experienceGoals.map(({ icon: Icon, title, text }, index) => <article key={title}><div><span className="homam-card-icon"><Icon aria-hidden="true" /></span><b>0{index + 1}</b></div><h3>{title}</h3><p>{text}</p></article>)}</div>
+              </div>
+
+              <div className="homam-challenge-panel homam-result-panel">
+                <div className="homam-panel-heading"><span><b>05</b> The result <i /></span></div>
+                <div className="homam-result-grid">
+                  <article className="homam-result-before"><span>Before</span><h3>A complex and fragmented experience</h3>{["Large product catalog with little guidance", "Fragmented browsing experience", "Generic product discovery", "Uncertainty about product authenticity", "Mostly individual-product shopping"].map(item => <p key={item}><XCircle />{item}</p>)}<Image src="/assets/images/demo-fancy/homam-challenge-before.png" alt="Customer overwhelmed by too many skincare choices" width={440} height={550} /><i className="homam-thought homam-thought-a">Too many options...</i><i className="homam-thought homam-thought-b">Which product is right?</i><i className="homam-thought homam-thought-c">Can I trust this?</i></article>
+                  <div className="homam-result-arrow"><ArrowRight /></div>
+                  <article className="homam-result-after"><span>After</span><h3>A guided, trusted and seamless journey</h3>{["Multiple entry points for easy discovery", "Concern-based and personalized navigation", "Clear trust signals and product information", "Guided assistance through consultation", "Bundles and routines for better value", "A smooth and secure purchase journey"].map(item => <p key={item}><CheckCircle2 />{item}</p>)}<Image src="/assets/images/demo-fancy/homam-challenge-after.png" alt="Customer confident in her skincare choices" width={440} height={550} /><i className="homam-thought homam-thought-after">So easy<br />to find what I need!</i><span className="homam-result-heart">♥</span></article>
+                </div>
+                <div className="homam-result-quote"><span className="homam-card-icon"><Leaf /></span><p>The goal wasn&apos;t to make HOMAM look like it had fewer products.<br />It was to make a large catalog feel easier to understand.</p><small>Real people. Real beauty. A brighter you.</small></div>
+              </div>
+            </div>
+          </section>
+
+          <section className="homam-showcase-transition" aria-labelledby="homam-showcase-transition-title">
+            <div className="container">
+              <div className="homam-showcase-transition-card">
+                <div className="homam-showcase-transition-copy">
+                  <span>From strategy to screens</span>
+                  <h2 id="homam-showcase-transition-title">The thinking is complete.<br />Now see it come to life.</h2>
+                  <p>Explore the key pages and interactions that turn HOMAM&apos;s product range into a clear, confident shopping experience.</p>
+                </div>
+                <div className="homam-showcase-transition-previews" aria-hidden="true">
+                  <div className="homam-transition-preview homam-transition-preview-left"><Image src="/assets/images/demo-fancy/homam-case-study-2.png" alt="" fill sizes="220px" /></div>
+                  <div className="homam-transition-preview homam-transition-preview-main"><Image src="/assets/images/demo-fancy/homam-case-study-1.png" alt="" fill sizes="300px" /></div>
+                  <div className="homam-transition-preview homam-transition-preview-right"><Image src="/assets/images/demo-fancy/homam-case-study-3.png" alt="" fill sizes="220px" /></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="homam-showcase-slider" aria-label="HOMAM project screens">
+            <div className="homam-showcase-slider-heading">
+              <div><span>Explore the experience</span><p>Swipe through the key screens</p></div>
+              <HomamSliderControls />
+            </div>
+            <div className="homam-showcase-slider-track" tabIndex="0">
           <section className="homam-experience" id="homam-experience" aria-labelledby="homam-experience-title">
             <div className="homam-experience-grid">
               <div className="homam-experience-visual">
@@ -195,7 +300,7 @@ export default function HomamCaseStudyPage() {
             </div>
           </section>
 
-          <section className="homam-experience homam-global-beauty" aria-labelledby="homam-global-beauty-title">
+          <section className="homam-experience homam-global-beauty" id="homam-slide-global" aria-labelledby="homam-global-beauty-title">
             <div className="homam-experience-grid">
               <div className="homam-experience-visual">
                 <Image
@@ -225,7 +330,7 @@ export default function HomamCaseStudyPage() {
             </div>
           </section>
 
-          <section className="homam-experience homam-best-sellers" aria-labelledby="homam-best-sellers-title">
+          <section className="homam-experience homam-best-sellers" id="homam-slide-best-sellers" aria-labelledby="homam-best-sellers-title">
             <div className="homam-experience-grid">
               <div className="homam-experience-visual">
                 <Image
@@ -260,7 +365,7 @@ export default function HomamCaseStudyPage() {
             </div>
           </section>
 
-          <section className="homam-experience homam-bundles" aria-labelledby="homam-bundles-title">
+          <section className="homam-experience homam-bundles" id="homam-slide-bundles" aria-labelledby="homam-bundles-title">
             <div className="homam-experience-grid">
               <div className="homam-experience-visual">
                 <Image
@@ -290,7 +395,7 @@ export default function HomamCaseStudyPage() {
             </div>
           </section>
 
-          <section className="homam-experience homam-discovery" aria-labelledby="homam-discovery-title">
+          <section className="homam-experience homam-discovery" id="homam-slide-discovery" aria-labelledby="homam-discovery-title">
             <div className="homam-experience-grid">
               <div className="homam-experience-visual">
                 <Image
@@ -325,7 +430,7 @@ export default function HomamCaseStudyPage() {
             </div>
           </section>
 
-          <section className="homam-experience homam-navigation" aria-labelledby="homam-navigation-title">
+          <section className="homam-experience homam-navigation" id="homam-slide-navigation" aria-labelledby="homam-navigation-title">
             <div className="homam-experience-grid">
               <div className="homam-experience-visual">
                 <Image
@@ -360,7 +465,7 @@ export default function HomamCaseStudyPage() {
             </div>
           </section>
 
-          <section className="homam-experience homam-consultation" aria-labelledby="homam-consultation-title">
+          <section className="homam-experience homam-consultation" id="homam-slide-consultation" aria-labelledby="homam-consultation-title">
             <div className="homam-experience-grid">
               <div className="homam-experience-visual">
                 <Image
@@ -395,7 +500,7 @@ export default function HomamCaseStudyPage() {
             </div>
           </section>
 
-          <section className="homam-experience homam-dashboard" aria-labelledby="homam-dashboard-title">
+          <section className="homam-experience homam-dashboard" id="homam-slide-dashboard" aria-labelledby="homam-dashboard-title">
             <div className="homam-experience-grid">
               <div className="homam-experience-visual">
                 <Image
@@ -429,109 +534,28 @@ export default function HomamCaseStudyPage() {
               </div>
             </div>
           </section>
-
-          <section className="homam-meta">
-            <div className="container homam-meta-grid">
-              <div><i><UserRound /></i><p><span>Client</span><strong>Homam</strong></p></div>
-              <div><i><Leaf /></i><p><span>Industry</span><strong>Beauty &amp; Skincare</strong></p></div>
-              <div><i><MonitorSmartphone /></i><p><span>Platform</span><strong>Responsive Web</strong></p></div>
-              <div><i><Globe2 /></i><p><span>Website</span><strong>homam.shop</strong></p></div>
             </div>
+            <nav className="homam-showcase-slider-nav" aria-label="Choose a project screen">
+              <a href="#homam-experience"><span>01</span> Storefront</a>
+              <a href="#homam-slide-global"><span>02</span> Global beauty</a>
+              <a href="#homam-slide-best-sellers"><span>03</span> Best sellers</a>
+              <a href="#homam-slide-bundles"><span>04</span> Bundles</a>
+              <a href="#homam-slide-discovery"><span>05</span> Discovery</a>
+              <a href="#homam-slide-navigation"><span>06</span> Navigation</a>
+              <a href="#homam-slide-consultation"><span>07</span> Consultation</a>
+              <a href="#homam-slide-dashboard"><span>08</span> Dashboard</a>
+            </nav>
           </section>
 
-          <section className="homam-section" id="project">
-            <div className="container homam-project-layout">
-              <div>
-                <SectionHeading eyebrow="The Project">More than an online store. <span>A trusted skincare destination.</span></SectionHeading>
-              </div>
-              <div className="homam-project-content">
-                <p>We partnered with Homam to create a clean, conversion-focused e-commerce platform that helps customers discover authentic skincare products, understand what suits them, and shop with confidence.</p>
-                <div className="homam-card-grid homam-card-grid-3">
-                  {goals.map(({ icon: Icon, title, text }) => <article className="homam-info-card" key={title}><Icon /><h3>{title}</h3><p>{text}</p></article>)}
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="homam-section homam-challenge">
-            <div className="container homam-challenge-grid">
-              <SectionHeading eyebrow="The Challenge" intro="With so many products, ingredients, and claims, customers often feel confused, skeptical, or unsure about what to choose. Homam needed a digital experience that removes this friction and builds confidence at every step.">Skincare shopping can quickly become overwhelming.</SectionHeading>
-              <div className="homam-challenge-list">
-                {challenges.map(({ icon: Icon, title, text }, index) => <article key={title}><Icon /><span>0{index + 1}</span><h3>{title}</h3><p>{text}</p></article>)}
-              </div>
-              <div className="homam-challenge-art" aria-hidden="true">
-                <Image src="/assets/images/demo-fancy/homam-showcase.png" alt="" width={1776} height={887} />
-              </div>
-            </div>
-          </section>
-
-          <section className="homam-section">
-            <div className="container">
-              <div className="homam-project-intro">
-                <SectionHeading eyebrow="The Strategy">We designed every interaction around <span>clarity and confidence.</span></SectionHeading>
-                <p>Our strategy combined user-centered design, clear product storytelling, and a seamless shopping experience to create a storefront that feels as thoughtful as the products it offers.</p>
-              </div>
-              <div className="homam-strategy-line">
-                {strategy.map(({ icon: Icon, title, text }, index) => <article key={title}><div><Icon /></div><h3>{title}</h3><p>{text}</p>{index < strategy.length - 1 ? <ArrowRight className="homam-step-arrow" /> : null}</article>)}
-              </div>
-            </div>
-          </section>
-
-          <section className="homam-section homam-closer">
-            <div className="container">
-              <SectionHeading eyebrow="A Closer Look">A thoughtfully designed experience.</SectionHeading>
-              <div className="homam-closer-stage">
-                <Image src="/assets/images/demo-fancy/homam-showcase.png" alt="Responsive HOMAM skincare shopping experience" width={1776} height={887} />
-                <div className="homam-callout homam-callout-a"><Search /><strong>Clear product hierarchy</strong><span>Clean layouts help shoppers find products faster.</span></div>
-                <div className="homam-callout homam-callout-b"><ShieldCheck /><strong>Trust signals</strong><span>Build confidence with authenticity cues.</span></div>
-                <div className="homam-callout homam-callout-c"><Smartphone /><strong>Responsive experience</strong><span>A seamless experience across devices.</span></div>
-                <div className="homam-callout homam-callout-d"><ShoppingCart /><strong>Focused calls to action</strong><span>Guide customers toward the next step.</span></div>
-              </div>
-            </div>
-          </section>
-
-          <section className="homam-section homam-journey">
-            <div className="container">
-              <SectionHeading eyebrow="Designed for the Full Journey">Key experience screens.</SectionHeading>
-              <div className="homam-journey-grid">
-                {["Product discovery", "Confident product decisions", "Faster checkout"].map((title, index) => <article key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{["An intuitive catalog with search and filters makes it easy to find the right products.", "Detailed pages explain ingredients, benefits, and authenticity information.", "A streamlined checkout gets customers from cart to confirmation faster."][index]}</p><div className={`homam-screen homam-screen-${index + 1}`}><div className="homam-screen-nav">HOMAM <i /><i /><i /></div><div className="homam-screen-body"><div className="homam-product-shape" /><div className="homam-product-shape tall" /><div className="homam-product-shape" /></div></div></article>)}
-              </div>
-            </div>
-          </section>
-
-          <section className="homam-section homam-features">
-            <div className="container">
-              <SectionHeading eyebrow="Features Delivered">Everything needed for modern e-commerce.</SectionHeading>
-              <div className="homam-card-grid homam-card-grid-6">
-                {features.map(({ icon: Icon, title, text }) => <article className="homam-info-card" key={title}><Icon /><h3>{title}</h3><p>{text}</p></article>)}
-              </div>
-            </div>
-          </section>
-
-          <section className="homam-technology">
-            <div className="container homam-tech-grid">
-              <div><span>Technology and Delivery</span><h2>Built for performance. Ready to grow.</h2><p>A modern, scalable technology stack and best practices deliver a reliable foundation for long-term success.</p></div>
-              <div><h3>Technology Stack</h3><div className="homam-tech-pills"><span><Boxes /> React</span><span><Sparkles /> Tailwind CSS</span><span><Zap /> Node.js</span></div></div>
-              <div><h3>Our Delivery Principles</h3><ul><li><Gauge /> <span><strong>Fast</strong>Efficient development and deployment.</span></li><li><CheckCircle2 /> <span><strong>Scalable</strong>Built to grow with the business.</span></li><li><ShieldCheck /> <span><strong>Maintainable</strong>Clean, well-documented foundations.</span></li></ul></div>
-            </div>
-          </section>
-
-          <section className="homam-section homam-outcome">
-            <div className="container">
-              <div className="homam-project-intro"><SectionHeading eyebrow="The Outcome">A premium storefront designed to turn product interest into confident purchases.</SectionHeading><p>The result is a beautiful, easy-to-use e-commerce experience that reflects Homam&apos;s values and helps customers feel informed, confident, and excited about their skincare journey.</p></div>
-              <div className="homam-card-grid homam-card-grid-3">
-                <article className="homam-info-card"><ShieldCheck /><h3>Stronger brand trust</h3><p>A clean, credible experience that reflects the quality of Homam&apos;s products.</p></article>
-                <article className="homam-info-card"><Tag /><h3>Clearer buying journey</h3><p>Customers can find, learn, and buy the right products with ease.</p></article>
-                <article className="homam-info-card"><Gauge /><h3>Scalable commerce foundation</h3><p>A flexible platform ready to support future growth and new product lines.</p></article>
-              </div>
-              <div className="homam-project-nav"><Link href="/case-studies"><ArrowLeft /> All Case Studies</Link><Link href="/case-studies">Next Project <ArrowRight /></Link></div>
-              <div className="homam-final-cta"><div><span>Have a project in mind?</span><h2>Let&apos;s build an experience your customers <b>remember.</b></h2></div><p>Book a free strategy call and discover how we can turn your idea into a growth-focused digital product.</p><Link href="/#contact" className="homam-button homam-button-primary cta-glitter-button">Book A Free Strategy Call <ArrowRight /></Link></div>
-            </div>
-          </section>
         </main>
 
         <FooterTop />
-        <footer className="footer bg-dark-1 light-content py-5"><Footer6 /></footer>
+        <footer
+          className="footer bg-dark-1 light-content py-5"
+          style={{ background: "linear-gradient(220deg, #621ABE 0%, #051D55 50%)" }}
+        >
+          <Footer6 />
+        </footer>
       </div>
     </div>
   );
