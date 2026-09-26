@@ -4,7 +4,7 @@ import { reviews } from "@/data/features";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import ModalVideo from "react-modal-video";
+import HeroVideoModal from "./HeroVideoModal";
 import Slider from "../Slider";
 
 export default function Hero1() {
@@ -151,11 +151,11 @@ export default function Hero1() {
                 </div>
 
                 <div
-                  className="local-scroll mb-4 wow fadeInUp wch-unset"
+                  className="hero-actions local-scroll mb-4 wow fadeInUp wch-unset"
                   data-wow-delay="0.7s"
                   data-wow-duration="1.2s"
                 >
-                  <div className="cta-glitter-wrap me-2 popupButtons">
+                  <div className="cta-glitter-wrap popupButtons">
                     <Link
                       href="/case-studies"
                       className="btn-lg fw-semibold text-white shadow-sm cta-glitter-button w-md-auto"
@@ -165,7 +165,7 @@ export default function Hero1() {
                           "linear-gradient(90deg, #E75778 0%, #8876FF 100%)",
                         border: "none",
                         textDecoration: "none",
-                        minWidth: "18.5rem",
+                        width: "100%",
                         padding: "12px 26px",
                         fontFamily: "Poppins, sans-serif",
                         fontWeight: "600",
@@ -178,6 +178,15 @@ export default function Hero1() {
                       View Case Studies
                     </Link>
                   </div>
+                  <button
+                    type="button"
+                    className="hero-watch-video"
+                    aria-haspopup="dialog"
+                    onClick={() => setOpen(true)}
+                  >
+                    <span className="hero-play-icon" aria-hidden="true">▶</span>
+                    Watch Video
+                  </button>
                 </div>
               </div>
             </div>
@@ -215,14 +224,55 @@ export default function Hero1() {
         </div>
       </div>
 
-      <ModalVideo
-        channel="youtube"
-        youtube={{ mute: 0, autoplay: 0 }}
-        isOpen={isOpen}
-        videoId="viFaDMFAlLo"
-        onClose={() => setOpen(false)}
-      />
+      {isOpen && <HeroVideoModal onClose={() => setOpen(false)} />}
       <style jsx>{`
+        .hero-actions {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 14px;
+        }
+        .hero-actions .cta-glitter-wrap,
+        .hero-watch-video {
+          width: 18.5rem;
+          max-width: 100%;
+        }
+        .hero-watch-video {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          min-height: 3.6rem;
+          padding: 12px 26px;
+          border: 1px solid rgba(136, 118, 255, .4);
+          border-radius: 50px;
+          background: rgba(255, 255, 255, .85);
+          color: #403568;
+          font: 600 16px "Poppins", sans-serif;
+          box-shadow: 0 8px 24px rgba(78, 62, 178, .08);
+          transition: background .2s, box-shadow .2s;
+          cursor: pointer;
+        }
+        .hero-watch-video:hover {
+          background: #f4efff;
+          box-shadow: 0 8px 24px rgba(78, 62, 178, .16);
+        }
+        .hero-watch-video:focus-visible {
+          outline: 3px solid #8876ff;
+          outline-offset: 4px;
+        }
+        .hero-play-icon {
+          display: grid;
+          place-items: center;
+          width: 28px;
+          height: 28px;
+          padding-left: 2px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #e75778, #8876ff);
+          color: white;
+          font-size: 11px;
+        }
         .hero-review-avatar {
           display: inline-flex;
           align-items: center;
