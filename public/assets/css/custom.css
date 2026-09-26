@@ -6932,15 +6932,6 @@ body.appear-animate .pricing-slide-design {
     text-align: left;
   }
   .homam-flow-arrow { display: none; }
-  .homam-friction-grid,
-  .homam-goals-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
-  }
-  .homam-case-study .homam-challenge .homam-goals-grid article h3 {
-    font-size: 18px !important;
-    white-space: normal;
-  }
   .homam-ux-grid {
     display: block;
     padding-inline: 8px;
@@ -7014,7 +7005,27 @@ body.appear-animate .pricing-slide-design {
     display: none;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .homam-friction-grid,
+  .homam-goals-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .homam-case-study .homam-challenge .homam-goals-grid article h3 {
+    font-size: 18px !important;
+    white-space: normal;
+  }
+}
 @media (max-width: 767px) {
+  .homam-panel-heading > span {
+    min-width: 0;
+    font-size: 11px;
+    letter-spacing: .18em;
+  }
+  .homam-panel-heading i {
+    flex: 0 1 40px;
+    min-width: 16px;
+  }
   .homam-hero-copy h1 {
     margin-bottom: 16px;
     font-size: 34px;
