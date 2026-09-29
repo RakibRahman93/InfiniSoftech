@@ -3,8 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
-const videoSource = process.env.NEXT_PUBLIC_HERO_VIDEO_URL ||
-  "https://res.cloudinary.com/dguuo3159/video/upload/v1790431519/infinisoft/hero-videomain-1790431497.mp4";
+const videoSource = "/assets/videos/hero-introduction.mp4";
 
 export default function HeroVideoModal({ onClose }) {
   const dialogRef = useRef(null);
@@ -39,11 +38,24 @@ export default function HeroVideoModal({ onClose }) {
           </div>
           <button type="button" onClick={onClose} aria-label="Close video">×</button>
         </header>
-        <video controls autoPlay playsInline preload="metadata" onError={() => setFailed(true)}>
-          <source src={videoSource} type="video/mp4" />
-          Your browser does not support embedded video. <a href={videoSource}>Watch the video</a>.
+        <video
+          src={videoSource}
+          aria-label="InfiniSoft Technology introduction video"
+          controls
+          autoPlay
+          playsInline
+          preload="metadata"
+          onError={() => setFailed(true)}
+        >
+          Your browser does not support embedded video.{" "}
+          <a href={videoSource}>Watch the video</a>.
         </video>
-        {failed && <p role="alert">The video couldn’t load. <a href={videoSource} target="_blank" rel="noreferrer">Open the video directly</a> or try again.</p>}
+        {failed && (
+          <p role="alert">
+            The video couldn’t load.{" "}
+            <a href={videoSource} target="_blank" rel="noopener noreferrer">Open the video directly</a>.
+          </p>
+        )}
       </div>
       <style jsx>{`
         .hero-video-modal {
